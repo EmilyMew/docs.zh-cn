@@ -19,8 +19,7 @@ ms.locfileid: "57358426"
 若要提供从你应用程序打印的功能，可以只需创建和打开<xref:System.Windows.Controls.PrintDialog>对象。  
   
 ## <a name="example"></a>示例  
- 
-  <xref:System.Windows.Controls.PrintDialog> 控件为 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]、配置和 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 作业提交提供单一入口点。 该控件是易于使用，可以通过使用实例化[!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]标记或代码。 下面的示例演示如何实例化并在 code 中打开该控件以及如何从其打印。 它还演示如何以确保设置特定范围的页面的选项的对话框会给用户。 此代码示例假定 c： 驱动器的根目录中的文件 FixedDocumentSequence.xps。  
+ <xref:System.Windows.Controls.PrintDialog> 控件为 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]、配置和 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 作业提交提供单一入口点。 该控件是易于使用，可以通过使用实例化[!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]标记或代码。 下面的示例演示如何实例化并在 code 中打开该控件以及如何从其打印。 它还演示如何以确保设置特定范围的页面的选项的对话框会给用户。 此代码示例假定 c： 驱动器的根目录中的文件 FixedDocumentSequence.xps。  
   
  [!code-csharp[printdialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml.cs#1)]
  [!code-vb[printdialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintDialog/visualbasic/window1.xaml.vb#1)]  

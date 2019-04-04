@@ -7,12 +7,12 @@ helpviewer_keywords:
 - nologo compiler option [Visual Basic]
 - /nologo compiler option [Visual Basic]
 ms.assetid: 25ef54b6-d676-4639-a2d2-a747a158bc07
-ms.openlocfilehash: 1b9cedc3e45795a66c203d4c86bb071045a1d3f5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c1824e4a086ecdd4b6a776bd6894f6e003d02867
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54550469"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58822552"
 ---
 # <a name="-nologo-visual-basic"></a>-nologo (Visual Basic)
 在编译期间取消显示版权标志和信息性消息。  
@@ -37,5 +37,6 @@ vbc -nologo t2.vb
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)
 - [示例编译命令行](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

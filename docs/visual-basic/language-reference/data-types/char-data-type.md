@@ -10,12 +10,12 @@ helpviewer_keywords:
 - data types [Visual Basic], assigning
 - Char data type [Visual Basic], character literals
 ms.assetid: cd7547a9-7855-4e8e-b216-35d74a362657
-ms.openlocfilehash: f641f3dbcba32c77bcf73b14a9ac890d1ade5a2c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b50c902f69f7602dbad4663dc35bf0a2b932973f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54611912"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832081"
 ---
 # <a name="char-data-type-visual-basic"></a>Char 数据类型 (Visual Basic)
 保存无符号的 16 位 （2 个字节） 码位，取值范围为 0 到 65535 之间。 每个*代码点*，或字符代码，表示单个 Unicode 字符。  
@@ -58,6 +58,7 @@ charVar = "Z"C
 -   **Framework 类型。** .NET Framework 中的对应类型是 <xref:System.Char?displayProperty=nameWithType> 结构。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Char?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>

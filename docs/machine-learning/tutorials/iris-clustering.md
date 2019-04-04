@@ -3,22 +3,22 @@ title: 使用聚类分析学习器对鸢尾花分类 - ML.NET
 description: 了解如何在聚类分析方案中使用 ML.NET
 author: pkulikov
 ms.author: johalex
-ms.date: 02/19/2019
+ms.date: 03/18/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: d8d324cdcad793ac8ade8124f56734bade695421
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: be59760091767b7229d80693cd69434581a8b140
+ms.sourcegitcommit: d938c39afb9216db377d0f0ecdaa53936a851059
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57488157"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58634409"
 ---
 # <a name="tutorial-cluster-iris-flowers-using-a-clustering-learner-with-mlnet"></a>教程：借助 ML.NET 使用聚类分析学习器对鸢尾花分类
 
 > [!NOTE]
 > 本主题引用 ML.NET（目前处于预览状态），且材料可能会更改。 有关详细信息，请参阅 [ML.NET 简介](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet)。
 
-此教程和相关示例目前使用的是 ML.NET 版本 0.10。 有关详细信息，请参阅 [dotnet/machinelearning GitHub 存储库](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)上的发行说明。
+此教程和相关示例目前使用的是 ML.NET 版本 0.11。 有关详细信息，请参阅 [dotnet/machinelearning GitHub 存储库](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)上的发行说明。
 
 本教程演示如何使用 ML.NET 为[鸢尾花数据集](https://en.wikipedia.org/wiki/Iris_flower_data_set)构建[聚类分析模型](../resources/tasks.md#clustering)。
 
@@ -129,18 +129,14 @@ ms.locfileid: "57488157"
 
 [!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#SetupTextLoader)]
 
-使用[泛型 `CreateTextLoader`](xref:Microsoft.ML.TextLoaderSaverCatalog.CreateTextLoader%60%601(Microsoft.ML.DataOperationsCatalog,System.Boolean,System.Char,System.Boolean,System.Boolean,System.Boolean)) 方法从 `IrisData` 类定义推断数据集架构。
-
-使用实例化 <xref:Microsoft.ML.Data.TextLoader> 实例创建 <xref:Microsoft.Data.DataView.IDataView> 实例，这表示定型数据集的数据源：
-
-[!code-csharp[Create IDataView](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreateDataView)]
+使用 [LoadFromTextFile 方法](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29)的泛型 `MLContext.Data.LoadFromTextFile` 包装器加载数据。 它返回 <xref:Microsoft.Data.DataView.IDataView>，该对象从 `IrisData` 数据模型类型推断出数据集架构，使用数据集标头并用逗号分隔。
 
 ## <a name="create-a-learning-pipeline"></a>创建学习管道
 
 对于本教程，聚类分析任务的学习管道包含两个以下步骤：
 
 - 将加载的列连接到“Features”列，由聚类分析训练程序使用；
-- 借助 <xref:Microsoft.ML.Trainers.KMeans.KMeansPlusPlusTrainer> 训练程序使用 k - 平均值 + + 聚类分析算法来定型模型。
+- 借助 <xref:Microsoft.ML.Trainers.KMeansPlusPlusTrainer> 训练程序使用 k - 平均值 + + 聚类分析算法来定型模型。
 
 将以下代码添加到 `Main` 方法中：
 

@@ -23,14 +23,12 @@ ms.locfileid: "57846124"
 
 3. <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A?displayProperty=nameWithType>
 
-
-  [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] 中的 SqlClient 中仍保留了此功能。
+[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] 中的 SqlClient 中仍保留了此功能。
 
 > [!TIP]
 > 从开始[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]，这些旧方法不再需要`Asynchronous Processing=true`连接字符串中。
 
-## <a name="asynchronous-programming-features-added-in-includenetv45includesnet-v45-mdmd"></a>
-  [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] 中增加了异步编程功能
+## <a name="asynchronous-programming-features-added-in-includenetv45includesnet-v45-mdmd"></a>[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] 中增加了异步编程功能
 
 该新的异步编程功能提供了一种用于使代码异步的简单技术。
 
@@ -55,8 +53,7 @@ ms.locfileid: "57846124"
 
 调用 `async` 方法不会分配任何附加线程。 结束时，它可以简单地使用现有 I/O 完成线程。
 
-
-  [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] 中增加了用于支持异步编程以下方法：
+[!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] 中增加了用于支持异步编程以下方法：
 
 - <xref:System.Data.Common.DbConnection.OpenAsync%2A?displayProperty=nameWithType>
 

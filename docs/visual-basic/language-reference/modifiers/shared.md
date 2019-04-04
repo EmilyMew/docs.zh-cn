@@ -11,12 +11,12 @@ helpviewer_keywords:
 - shared [elements VB]
 - elements [Visual Basic], shared
 ms.assetid: 2bf7cf2c-b0dd-485e-8749-b5d674dab4cd
-ms.openlocfilehash: 001baa8d3cbd294772bef634825c67ea13b23458
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 12c81a9a0651088a348afeaff3b71935d289da53
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54597276"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58816274"
 ---
 # <a name="shared-visual-basic"></a>Shared (Visual Basic)
 指定一个或多个声明的编程元素与类或结构在整体上，而不是与类或结构的特定实例相关联。  
@@ -93,6 +93,7 @@ ms.locfileid: "54597276"
  [Sub 语句](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
 - [Static](../../../visual-basic/language-reference/modifiers/static.md)
 - [在 Visual Basic 中的生存期](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)

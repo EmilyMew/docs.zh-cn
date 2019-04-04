@@ -32,6 +32,7 @@ ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
  所含文档介绍了如何使用 `My.Computer.FileSystem` 对象访问文件系统。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 语言功能](../../../visual-basic/programming-guide/language-features/index.md)
 - [编程概念](../../../visual-basic/programming-guide/concepts/index.md)
 - [集合](../../../visual-basic/programming-guide/concepts/collections.md)

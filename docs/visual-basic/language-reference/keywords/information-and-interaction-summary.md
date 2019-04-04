@@ -5,12 +5,12 @@ helpviewer_keywords:
 - information functions [Visual Basic]
 - interaction functions [Visual Basic]
 ms.assetid: 6e698461-e944-4c0f-ae48-87429f1fe740
-ms.openlocfilehash: 001b3947773e767e8c746fce84c8cbda22fdce78
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1157462f743396f8fb4b4304c0529db5377bd41e
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54521304"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58823229"
 ---
 # <a name="information-and-interaction-summary-visual-basic"></a>信息和交互摘要 (Visual Basic)
 Visual Basic 语言关键字和运行时库成员按目的组织和使用。  
@@ -26,5 +26,6 @@ Visual Basic 语言关键字和运行时库成员按目的组织和使用。
 |管理对话框|<xref:Microsoft.VisualBasic.Interaction.InputBox%2A>， <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>|  
   
 ## <a name="see-also"></a>请参阅
+
 - [关键字](../../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic 运行库成员](../../../visual-basic/language-reference/runtime-library-members.md)

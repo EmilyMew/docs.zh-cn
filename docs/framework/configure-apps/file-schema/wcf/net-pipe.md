@@ -2,12 +2,12 @@
 title: <net.pipe>
 ms.date: 03/30/2017
 ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
-ms.openlocfilehash: ddd25d3d25f4c4be1a9e26d444fa799a55c9cccc
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 90d081c1287362669286aaa1185ed3b0bbe09b07
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55283278"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58412105"
 ---
 # <a name="netpipe"></a>\<net.pipe>
 指定命名管道激活服务的配置设置，命名管道激活服务将管理命名管道连接的生存期，并处理通过命名管道到达的激活请求。  
@@ -52,7 +52,8 @@ ms.locfileid: "55283278"
 |---------------|-----------------|  
 |`maxPendingAccepts`|一个整数，指定共享服务侦听终结点上的最大未完成并发接受线程数。 默认值为 2。|  
 |`maxPendingConnections`|一个整数，指定可等待调度的最大连接数。 默认值为 100。|  
-|`receiveTimeout`|`TimeSpan`，它将为读取组帧数据并执行来自基础连接的连接调度指定超时值。 默认值为“00:00:10”|  
+|`receiveTimeout`|
+  <xref:System.TimeSpan>，它将为读取组帧数据并执行来自基础连接的连接调度指定超时值。 默认值为“00:00:10”|  
   
 ### <a name="child-elements"></a>子元素  
   

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Nothing keyword [Visual Basic]
 - Nothing keyword [Visual Basic], syntax
 ms.assetid: 06176e2d-bbf7-4a37-afaa-a86ad21ee99f
-ms.openlocfilehash: b8dfc166681dbadf1d2f4ba5a985011f5427f50a
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 97c651dbcc657fbab0706c9a959bd0031c0fe343
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56981421"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826088"
 ---
 # <a name="nothing-visual-basic"></a>Nothing (Visual Basic)
 表示任何数据类型的默认值。 对于引用类型，默认值是`null`引用。 对于值类型，默认值取决于值类型是否可以为 null。  
@@ -51,6 +51,7 @@ ms.locfileid: "56981421"
  `Nothing` 不同于<xref:System.DBNull>对象，表示未初始化的变量或不存在的数据库列。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Dim 语句](../../visual-basic/language-reference/statements/dim-statement.md)
 - [对象生存期：如何创建和销毁对象](../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)
 - [在 Visual Basic 中的生存期](../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)

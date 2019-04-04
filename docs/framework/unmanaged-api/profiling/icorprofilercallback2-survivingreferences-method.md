@@ -50,8 +50,7 @@ HRESULT SurvivingReferences(
  `cObjectIDRangeLength`  
  [in] 整数数组，其中每个整数均为内存中保留下来的连续对象块的大小。  
   
- 
-  `objectIDRangeStart` 数组中引用的每个块均指定了大小。  
+ `objectIDRangeStart` 数组中引用的每个块均指定了大小。  
   
 ## <a name="remarks"></a>备注  
   

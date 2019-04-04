@@ -13,12 +13,12 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: d4b0e253-092a-4e6e-9fe2-01f562140a29
-ms.openlocfilehash: 1e7d767b1ba370ac7303abfd8aa3606a43c33de9
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 3a09657ee7a79b7f590adba0e4fb0c04a8e89043
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56973283"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58843638"
 ---
 # <a name="how-to-define-an-operator-visual-basic"></a>如何：定义运算符 (Visual Basic)
 如果已定义的类或结构，可以定义标准运算符的行为 (如`*`， `<>`，或`And`) 当一个或两个操作数是类或结构的类型。  
@@ -38,6 +38,7 @@ ms.locfileid: "56973283"
   
   
 ## <a name="see-also"></a>请参阅
+
 - [运算符过程](./operator-procedures.md)
 - [如何：定义转换运算符](./how-to-define-a-conversion-operator.md)
 - [如何：调用运算符过程](./how-to-call-an-operator-procedure.md)

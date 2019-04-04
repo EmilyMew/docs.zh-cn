@@ -7,19 +7,19 @@ dev_langs:
 helpviewer_keywords:
 - WCF, security
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
-ms.openlocfilehash: 83b55ca42a3cebb6ceb2aec128202f14dc35da0a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b5fece86dca524cb3f94f64dcb98361a93bf84a3
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54657553"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410922"
 ---
 # <a name="how-to-secure-a-service-with-windows-credentials"></a>如何：使用 Windows 凭据保护服务
 本主题演示如何启用驻留在 Windows 域，并且由同一个域中的客户端调用的 Windows Communication Foundation (WCF) 服务上的传输安全。 有关此方案的详细信息，请参阅[使用 Windows 身份验证的传输安全性](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md)。 示例应用程序，请参阅[WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md)示例。  
   
  本主题假定您已定义一个现有的协定接口和实现及其加载项。 您还可以修改一个现有的服务和客户端。  
   
- 您完全可以在代码中使用 Windows 凭据来保护服务。 或者，也可以通过使用配置文件省略某些代码。 本主题演示了这两种方法。 请务必仅使用其中一种方法，而不是同时使用两种方法。  
+ 你完全可以在代码中使用 Windows 凭据来保护服务。 或者，也可以通过使用配置文件省略某些代码。 本主题演示了这两种方法。 请务必仅使用其中一种方法，而不是同时使用两种方法。  
   
  前三个过程演示如何使用代码保护服务。 第四个和第五个过程演示如何使用配置文件保护服务。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "54657553"
   
 2.  创建一个名为 <xref:System.Type> 的 `contractType` 变量，并为其分配接口类型 (`ICalculator`)。 当使用 Visual Basic，使用`GetType`运算符; 在使用 C# 中，使用`typeof`关键字。  
   
-3.  创建另一个名为 `Type` 的 `serviceType` 变量，并为其分配所实现的协定的类型 (`Calculator`)。  
+3.  创建另一个名为 <xref:System.Type> 的 `serviceType` 变量，并为其分配所实现的协定的类型 (`Calculator`)。  
   
 4.  使用该服务的基址创建 <xref:System.Uri> 类的一个实例，该实例名为 `baseAddress`。 基址必须具有与传输匹配的方案。 在这种情况下，传输方案为 HTTP，且地址包含特殊的统一资源标识符 (URI)"localhost"和端口号 (8036) 以及终结点基址 ("serviceModelSamples /): `http://localhost:8036/serviceModelSamples/`。  
   
@@ -102,11 +102,11 @@ ms.locfileid: "54657553"
   
 1.  添加[ \<wsHttpBinding >](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)元素[\<绑定 >](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)元素节的配置文件。  
   
-2.  将一个 <`binding`> 元素添加到 <`WSHttpBinding`> 元素中，并将 `configurationName` 属性设置为适合于应用程序的值。  
+2.  添加 <`binding`> 元素为 <`WSHttpBinding`> 元素，并设置`configurationName`属性为适合于你的应用程序的值。  
   
-3.  添加一个 <`security`> 元素，并将 `mode` 属性设置为 Message。  
+3.  添加 <`security`> 元素，并设置`mode`属性为消息。  
   
-4.  添加一个 <`message`> 元素，并将 `clientCredentialType` 属性设置为 Windows。  
+4.  添加 <`message`> 元素，并设置`clientCredentialType`属性到 Windows。  
   
 5.  在服务的配置文件中，使用下面的代码替换 `<bindings>` 节。 如果你还没有服务配置文件，请参阅[到配置服务和客户端使用的绑定](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)。  
   

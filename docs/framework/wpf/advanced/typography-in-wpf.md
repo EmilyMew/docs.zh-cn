@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - typography [WPF], about typography
 ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
-ms.openlocfilehash: 3afb6a9bd62083704a3147df9d1cc5477b4f5921
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: 7378ddc8ada198beb005bc8682e6cb131def4ceb
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58125624"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58412131"
 ---
 # <a name="typography-in-wpf"></a>WPF 中的版式
 本主题介绍 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 的主要版式功能。 这些功能包括改进的文本呈现质量和性能、[!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 版式支持、增强的国际文本、增强的字体支持和新的文本应用程序编程接口 (API)。  
@@ -121,7 +121,7 @@ ms.locfileid: "58125624"
  有关详细信息，请参阅 [WPF 中的文档](documents-in-wpf.md)。  
   
 ### <a name="lightweight-text-drawing"></a>轻量文本绘制  
- 您可以直接向绘制文本[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]通过使用对象<xref:System.Windows.Media.DrawingContext.DrawText%2A>方法的<xref:System.Windows.Media.DrawingContext>对象。 若要使用此方法，您创建<xref:System.Windows.Media.FormattedText>对象。 使用该对象可以绘制多行文本，可对文本中的每个字符单独设置格式。 功能<xref:System.Windows.Media.FormattedText>对象包含很多 Win32 API 中 DrawText 标志的功能。 此外，<xref:System.Windows.Media.FormattedText>对象包含省略号支持，当文本超过其边界时在其中显示一个省略号等功能。 下面的示例演示应用多种格式的文本，其中第二个和第三个单词应用了线性渐变。  
+ 您可以直接向绘制文本[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]通过使用对象<xref:System.Windows.Media.DrawingContext.DrawText%2A>方法的<xref:System.Windows.Media.DrawingContext>对象。 若要使用此方法，您创建<xref:System.Windows.Media.FormattedText>对象。 使用该对象可以绘制多行文本，可对文本中的每个字符单独设置格式。 功能<xref:System.Windows.Media.FormattedText>对象包含的许多 Windows API 中 DrawText 标志的功能。 此外，<xref:System.Windows.Media.FormattedText>对象包含省略号支持，当文本超过其边界时在其中显示一个省略号等功能。 下面的示例演示应用多种格式的文本，其中第二个和第三个单词应用了线性渐变。  
   
  ![使用 FormattedText 对象显示的文本](./media/typography-in-wpf/text-formatted-linear-gradient.jpg) 
   

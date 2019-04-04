@@ -25,12 +25,12 @@ helpviewer_keywords:
 - restrictions [Visual Basic], overloading procedures
 - procedures [Visual Basic], parameter lists
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
-ms.openlocfilehash: 8dfee8a8678fb00fcded4b7da57c3b200ef64d69
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: f14cc28960af28530bda9a78c1309dea10c18b8f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56979525"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58815583"
 ---
 # <a name="considerations-in-overloading-procedures-visual-basic"></a>重载过程注意事项 (Visual Basic)
 重载的过程，您必须使用不同*签名*为每个重载版本。 这通常意味着每个版本必须指定不同的参数列表。 详细信息，请参阅"不同的签名"中[过程重载](./procedure-overloading.md)。  
@@ -122,6 +122,7 @@ ms.locfileid: "56979525"
 -   如果调用代码传递过程不支持的数据类型，编译器不能发出错误信号。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [过程疑难解答](./troubleshooting-procedures.md)

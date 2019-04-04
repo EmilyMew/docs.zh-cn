@@ -1,5 +1,5 @@
 ---
-title: <type1>“<typename>”必须为接口“<methodname>”实现“<interfacename>”
+title: <type1>'<typename>必须实现<methodname>for interface<interfacename>
 ms.date: 07/20/2015
 f1_keywords:
 - vbc30149
@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30149
 ms.assetid: 29d1b7f4-dca7-478c-bbe7-c657f342c183
-ms.openlocfilehash: c5dd7c6889a3fb5344142ee9914f98e8922d748b
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: b8bcb16798284a09608ba6942226ef07c6859d4f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55264424"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824190"
 ---
 # <a name="type1typename-must-implement-methodname-for-interface-interfacename"></a>\<类型 1 >\<类型名称 > 必须实现\<m h o d > 接口\<interfacename >
 类或结构声明实现一个接口，但不实现的接口定义的过程。 必须实现该接口的每个成员。  
@@ -30,5 +30,6 @@ ms.locfileid: "55264424"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [Implements 语句](../../../visual-basic/language-reference/statements/implements-statement.md)
 - [接口](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

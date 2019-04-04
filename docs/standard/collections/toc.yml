@@ -1,0 +1,24 @@
+items:
+- name: 集合和数据结构
+  href: index.md
+  items:
+  - name: 选择集合类
+    href: selecting-a-collection-class.md
+  - name: 常用的集合类型
+    href: commonly-used-collection-types.md
+  - name: 何时使用泛型集合
+    href: when-to-use-generic-collections.md
+  - name: 集合内的比较和排序
+    href: comparisons-and-sorts-within-collections.md
+  - name: 已排序的集合类型
+    href: sorted-collection-types.md
+  - name: 哈希表和字典集合类型
+    href: hashtable-and-dictionary-collection-types.md
+  - name: 线程安全集合
+    href: thread-safe/
+ms.openlocfilehash: c9d534277d71f3cb3f18ac90809698a3e63e5145
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468492"

@@ -29,8 +29,7 @@ HRESULT GetStackPointer(
 ## <a name="remarks"></a>备注  
  此堆栈指针的含义取决于事件类型，如下表所示。  
   
-|事件类型|
-  `pStackPointer` 值的含义|  
+|事件类型|`pStackPointer` 值的含义|  
 |----------------|--------------------------------------|  
 |[MANAGED_EXCEPTION_FIRST_CHANCE](../../../../docs/framework/unmanaged-api/debugging/cordebugrecordformat-enumeration.md)|引发异常的帧的堆栈指针。|  
 |[MANAGED_EXCEPTION_USER_FIRST_CHANCE](../../../../docs/framework/unmanaged-api/debugging/cordebugrecordformat-enumeration.md)|与引发的异常点最接近的用户代码帧的堆栈指针。|  

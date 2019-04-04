@@ -5,12 +5,12 @@ helpviewer_keywords:
 - My feature
 - My reference
 ms.assetid: 6f803bd7-21ff-4569-b1fe-b00a6678b1e3
-ms.openlocfilehash: 637eecf9526c64c47ef3559cd5b65f16dd886a6b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: accf2464f7d8ead8bcd73c9704bea4fd5d2e410b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54618930"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824749"
 ---
 # <a name="my-reference-visual-basic"></a>My 引用 (Visual Basic)
 `My`功能使编程更快、 更容易，从而您的直观访问常用的方法、 属性和事件。 此表列出了中包含的对象`My`，以及与每个可执行的操作。  
@@ -29,5 +29,6 @@ ms.locfileid: "54618930"
 |访问当前项目所引用的 XML Web 服务。|[My.WebServices 对象](../../../visual-basic/language-reference/objects/my-webservices-object.md)|  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 应用程序模型概述](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)
 - [使用 My 开发](../../../visual-basic/developing-apps/development-with-my/index.md)

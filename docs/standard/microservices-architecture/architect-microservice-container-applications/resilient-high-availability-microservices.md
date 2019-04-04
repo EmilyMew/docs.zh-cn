@@ -4,12 +4,12 @@ description: 微服务必须能够承受暂时的网络和依赖项故障，必�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
-ms.openlocfilehash: 5e601ccae8ee3493e6a5d9cd35c4573a9df2da46
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: ebf3a81718cd3423d3c80edb9c2f5b10f4ef47da
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57846618"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465810"
 ---
 # <a name="resiliency-and-high-availability-in-microservices"></a>微服务中的复原和高可用性
 
@@ -59,25 +59,25 @@ ms.locfileid: "57846618"
 ## <a name="additional-resources"></a>其他资源
 
 - **The Twelve-Factor App.XI.日志：将日志视为事件流** \
-  [*https://12factor.net/logs*](https://12factor.net/logs)
+  [https://12factor.net/logs](https://12factor.net/logs)
 
 - Microsoft Diagnostic EventFlow 库 GitHub 存储库。 \
-  [*https://github.com/Azure/diagnostics-eventflow*](https://github.com/Azure/diagnostics-eventflow)
+  [https://github.com/Azure/diagnostics-eventflow](https://github.com/Azure/diagnostics-eventflow)
 
 - 什么是 Azure 诊断 \
-  [*https://docs.microsoft.com/azure/azure-diagnostics*](https://docs.microsoft.com/azure/azure-diagnostics)
+  [https://docs.microsoft.com/azure/azure-diagnostics](https://docs.microsoft.com/azure/azure-diagnostics)
 
 - 将 Windows 计算机连接到 Azure 中的 Log Analytics 服务 \
-  [*https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents*](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents)
+  [https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents)
 
 - **记录你的想法：使用语义日志记录应用程序块** \
   <https://docs.microsoft.com/previous-versions/msp-n-p/dn440729(v=pandp.60)>
 
 - Splunk 官方网站。 \
-  [*https://www.splunk.com/*](https://www.splunk.com/)
+  [https://www.splunk.com/](https://www.splunk.com/)
 
 - Windows 事件跟踪 (ETW) 的 EventSource 类 API \
-  [*https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource*](xref:System.Diagnostics.Tracing.EventSource)
+  [https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource](xref:System.Diagnostics.Tracing.EventSource)
 
 >[!div class="step-by-step"]
 >[上一页](microservice-based-composite-ui-shape-layout.md)

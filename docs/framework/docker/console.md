@@ -4,12 +4,12 @@ description: 了解如何利用现有 .NET Framework 控制台应用程序并在
 author: spboyer
 ms.date: 09/28/2016
 ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
-ms.openlocfilehash: 31da5c4fc8f057709b2abcab49657c2c0992d3e5
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: 481f62b21e223a13e06fe0cb68e4276968992aca
+ms.sourcegitcommit: d938c39afb9216db377d0f0ecdaa53936a851059
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58126079"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58633837"
 ---
 # <a name="running-console-applications-in-windows-containers"></a>在 Windows 容器中运行控制台应用程序
 
@@ -55,7 +55,9 @@ Docker 映像的一个重要特性是映像由基本映像组合而成。 每个
 ## <a name="building-the-application"></a>生成应用程序
 通常，通过安装程序、FTP 或文件共享部署分配控制台应用程序。 部署到容器时，需要编译资产并将其暂存到创建 Docker 映像时可以使用的位置。
 
-在 *build.ps1* 中，脚本使用 [MSBuild](/visualstudio/msbuild/msbuild) 编译应用程序以完成生成资产的任务。 有几个传递到 MSBuild 来完成所需资产的参数。 要编译的项目文件或解决方案的名称、输出位置，最后是配置（版本或调试）。
+以下是示例应用程序：[ConsoleRandomAnswerGenerator](https://github.com/dotnet/samples/tree/master/framework/docker/ConsoleRandomAnswerGenerator)
+
+在 build.ps1 <sup>[[source]](https://github.com/dotnet/samples/blob/master/framework/docker/ConsoleRandomAnswerGenerator/ConsoleRandomAnswerGenerator/build.ps1)</sup>中，脚本使用 [MSBuild](/visualstudio/msbuild/msbuild) 编译应用程序以完成生成资产的任务。 有几个传递到 MSBuild 来完成所需资产的参数。 要编译的项目文件或解决方案的名称、输出位置，最后是配置（版本或调试）。
 
 在对 `Invoke-MSBuild` 的调用中，将 `OutputPath` 设置为 **Publish**，`Configuration` 设置为 **Release**。 
 

@@ -45,8 +45,7 @@ ms.locfileid: "56332335"
  了解这些基本知识后，以下各节将详细介绍与 <xref:System.ServiceModel.NetMsmqBinding> 和 <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> 绑定的传输安全属性。  
   
 #### <a name="msmq-authentication-mode"></a>MSMQ 身份验证模式  
- 
-  <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> 指示是使用 Windows 域安全还是基于外部证书的安全来保护消息。 在这两种身份验证模式，WCF 排队的传输通道使用`CertificateValidationMode`服务配置中指定。 证书验证模式指定用于检查证书有效性的机制。  
+ <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> 指示是使用 Windows 域安全还是基于外部证书的安全来保护消息。 在这两种身份验证模式，WCF 排队的传输通道使用`CertificateValidationMode`服务配置中指定。 证书验证模式指定用于检查证书有效性的机制。  
   
  启用传输安全时，默认的设置为 <xref:System.ServiceModel.MsmqAuthenticationMode.WindowsDomain>。  
   

@@ -1,0 +1,140 @@
+items:
+- name: 基类型
+  href: index.md
+  items:
+  - name: 常规类型系统
+    href: common-type-system.md
+  - name: .NET 中的类型转换
+    href: type-conversion.md
+    items:
+    - name: 类型转换表
+      href: conversion-tables.md
+  - name: 格式设置类型
+    href: formatting-types.md
+    items:
+    - name: 标准数字格式字符串
+      href: standard-numeric-format-strings.md
+    - name: 自定义数字格式字符串
+      href: custom-numeric-format-strings.md
+    - name: 标准日期和时间格式字符串
+      href: standard-date-and-time-format-strings.md
+    - name: 自定义日期和时间格式字符串
+      href: custom-date-and-time-format-strings.md
+    - name: 标准 TimeSpan 格式字符串
+      href: standard-timespan-format-strings.md
+    - name: 自定义的 TimeSpan 格式字符串
+      href: custom-timespan-format-strings.md
+    - name: 枚举格式字符串
+      href: enumeration-format-strings.md
+    - name: 复合格式设置
+      href: composite-formatting.md
+    - name: 执行格式设置操作
+      href: performing-formatting-operations.md
+      items:
+      - name: 如何：用前导零填充数字
+        href: how-to-pad-a-number-with-leading-zeros.md
+      - name: 如何：从特定日期中提取星期几
+        href: how-to-extract-the-day-of-the-week-from-a-specific-date.md
+      - name: 如何：定义和使用自定义数值格式提供程序
+        href: how-to-define-and-use-custom-numeric-format-providers.md
+      - name: 如何：往返行程日期和时间值
+        href: how-to-round-trip-date-and-time-values.md
+      - name: 如何：将用户在 Web 控件中输入的数值转换成数字
+        href: how-to-convert-numeric-user-input-in-web-controls-to-numbers.md
+      - name: 如何：向 Web 用户显示本地化的日期和时间信息
+        href: how-to-display-localized-date-and-time-information-to-web-users.md
+      - name: 如何：显示日期和时间值中的毫秒
+        href: how-to-display-milliseconds-in-date-and-time-values.md
+      - name: 如何：用非公历日历显示日期
+        href: how-to-display-dates-in-non-gregorian-calendars.md
+  - name: 控制字符串
+    href: manipulating-strings.md
+    items:
+    - name: 有关使用字符串的最佳做法
+      href: best-practices-strings.md
+    - name: 基本字符串操作
+      href: basic-string-operations.md
+      items:
+      - name: 新建字符串
+        href: creating-new.md
+      - name: 删减和删除字符
+        href: trimming.md
+      - name: 填充字符串
+        href: padding.md
+      - name: 比较字符串
+        href: comparing.md
+      - name: 更改大小写
+        href: changing-case.md
+      - name: 使用 StringBuilder 类
+        href: stringbuilder.md
+      - name: 如何：执行基本的字符串控制
+        href: basic-manipulations.md
+    - name: .NET 中的正则表达式
+      href: regular-expressions.md
+      items:
+      - name: 正则表达式语言 - 快速参考
+        href: regular-expression-language-quick-reference.md
+        items:
+        - name: 字符转义
+          href: character-escapes-in-regular-expressions.md
+        - name: 字符类
+          href: character-classes-in-regular-expressions.md
+        - name: 定位点
+          href: anchors-in-regular-expressions.md
+        - name: 分组构造
+          href: grouping-constructs-in-regular-expressions.md
+        - name: 数量词
+          href: quantifiers-in-regular-expressions.md
+        - name: 反向引用构造
+          href: backreference-constructs-in-regular-expressions.md
+        - name: 替换构造
+          href: alternation-constructs-in-regular-expressions.md
+        - name: 替代
+          href: substitutions-in-regular-expressions.md
+        - name: 正则表达式选项
+          href: regular-expression-options.md
+        - name: 其他构造
+          href: miscellaneous-constructs-in-regular-expressions.md
+      - name: 有关正则表达式的最佳做法
+        href: best-practices.md
+      - name: 正则表达式对象模型
+        href: the-regular-expression-object-model.md
+      - name: 正则表达式行为的详细信息
+        href: details-of-regular-expression-behavior.md
+        items:
+        - name: 回溯
+          href: backtracking-in-regular-expressions.md
+        - name: 编译和重复使用
+          href: compilation-and-reuse-in-regular-expressions.md
+        - name: 线程安全
+          href: thread-safety-in-regular-expressions.md
+      - name: 正则表达式示例
+        href: regular-expression-examples.md
+        items:
+        - name: 示例:扫描 HREF
+          href: regular-expression-example-scanning-for-hrefs.md
+        - name: 示例:更改日期格式
+          href: regular-expression-example-changing-date-formats.md
+        - name: 如何：从 URL 中提取协议和端口号
+          href: how-to-extract-a-protocol-and-port-number-from-a-url.md
+        - name: 如何：从字符串中剥离无效字符
+          href: how-to-strip-invalid-characters-from-a-string.md
+        - name: 如何：验证字符串是否为有效的电子邮件格式
+          href: how-to-verify-that-strings-are-in-valid-email-format.md
+    - name: .NET 中的字符编码
+      href: character-encoding.md
+  - name: 分析字符串
+    href: parsing-strings.md
+    items:
+    - name: 分析数值字符串
+      href: parsing-numeric.md
+    - name: 分析日期和时间字符串
+      href: parsing-datetime.md
+    - name: 分析其他字符串
+      href: parsing-other.md
+ms.openlocfilehash: 893959894168d56c05f525a167773ee9e69e9f1b
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467900"

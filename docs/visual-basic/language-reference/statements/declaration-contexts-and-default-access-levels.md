@@ -9,12 +9,12 @@ helpviewer_keywords:
 - access levels, Visual Basic
 - access levels, default levels
 ms.assetid: bf63b96e-e825-4745-88c8-5dae222728db
-ms.openlocfilehash: 75c5b16164e9ecb6558e445c59e4a312158ff4f8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0d899342383bdf9d262fc9a1ab5e00bbe43066e3
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54580806"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821694"
 ---
 # <a name="declaration-contexts-and-default-access-levels-visual-basic"></a>声明上下文和默认访问级别 (Visual Basic)
 本主题介绍的 Visual Basic 的类型在声明中的其他类型，以及什么及其访问级别默认为如果未指定。  
@@ -52,6 +52,7 @@ ms.locfileid: "54580806"
  有关详细信息，请参阅[访问 Visual Basic 中的级别](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Friend](../../../visual-basic/language-reference/modifiers/friend.md)
 - [Private](../../../visual-basic/language-reference/modifiers/private.md)
 - [Public](../../../visual-basic/language-reference/modifiers/public.md)

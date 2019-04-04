@@ -14,12 +14,12 @@ helpviewer_keywords:
 - math operators [Visual Basic]
 - order of precedence
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
-ms.openlocfilehash: a87407fe863569ff961f4a2dc320e73719ed4d9d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 568927eb4759c214311ad34a5b45e28094dd80be
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54601751"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58830027"
 ---
 # <a name="operator-precedence-in-visual-basic"></a>Visual Basic 中的运算符优先级
 如果在表达式中出现多个运算，每个部分进行计算，并在预先确定的顺序调用中解析*运算符优先级*。  
@@ -112,6 +112,7 @@ g = (a - (b + c)) / (d * e)
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [= 运算符](../../../visual-basic/language-reference/operators/assignment-operator.md)
 - [Is 运算符](../../../visual-basic/language-reference/operators/is-operator.md)
 - [IsNot 运算符](../../../visual-basic/language-reference/operators/isnot-operator.md)

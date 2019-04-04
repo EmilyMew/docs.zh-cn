@@ -1,5 +1,5 @@
 ---
-title: 如何：旋转、 反射和倾斜图像
+title: 如何：旋转、反射和倾斜图像
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - images [Windows Forms], rotating
 - images [Windows Forms], skewing
 ms.assetid: a3bf97eb-63ed-425a-ba07-dcc65efb567c
-ms.openlocfilehash: 3e539f41667edb505269fe420396c79b68f34e8f
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: dda03c9c1e1390ca6a5250471f047d3747e989e2
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57711494"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58839907"
 ---
-# <a name="how-to-rotate-reflect-and-skew-images"></a>如何：旋转、 反射和倾斜图像
+# <a name="how-to-rotate-reflect-and-skew-images"></a>如何：旋转、反射和倾斜图像
 可以旋转、 反射和倾斜图像通过指定的原始图像的左上角、 右上方和左下角的目标点。 三个目标点确定将原始矩形图像映射到一个平行四边形的仿射转换。  
   
 ## <a name="example"></a>示例  
@@ -30,15 +30,15 @@ ms.locfileid: "57711494"
   
  下图显示了原始映像和映像映射到的平行四边形。 原始图像具有已倾斜、 反映、 旋转、 和转换。 原始图像的上边缘沿 x 轴映射到通过运行的行 （200，20） 和 （110，100）。 沿左边缘原始图像的 y 轴映射到通过运行的行 （200，20） 和 （250，30）。  
   
- ![条带化](./media/stripes1.gif "Stripes1")  
+ ![原始映像，并映射到的平行四边形的图像。](./media/how-to-rotate-reflect-and-skew-images/reflected-skewed-rotated-illustration.gif)  
   
- 下图显示了类似的转换应用于摄影图像。  
+ 下图显示了类似的转换应用于摄影图像：  
   
- ![转换的 Climber](./media/transformedclimber.png "TransformedClimber")  
+ ![Climber 和映射到的平行四边形的图片的图片。](./media/how-to-rotate-reflect-and-skew-images/reflected-skewed-rotated-photo.png)  
   
- 下图显示了类似的转换应用于图元文件。  
+ 下图显示了类似的转换应用于图元文件：  
   
- ![转换图元文件](./media/transformedmetafile.png "TransformedMetafile")  
+ ![形状和文本和映射到的平行四边形的示意图。](./media/how-to-rotate-reflect-and-skew-images/reflected-skewed-rotated-metafile.png)  
   
  下面的示例生成第一个图例中所显示的图像。  
   

@@ -2,18 +2,18 @@
 title: C# 6 中的新增功能 - C# 指南
 description: 了解 C# 版本 6 中的新增功能
 ms.date: 12/12/2018
-ms.openlocfilehash: d7e3392412ad6f01cd150e31cec43aa99c42b437
-ms.sourcegitcommit: d09c77414e9e4fc72c79b04deee7a756a120674e
+ms.openlocfilehash: 1c8c8003f81d4c15f2abdc26dc15849d88582843
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54084675"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654570"
 ---
 # <a name="whats-new-in-c-6"></a>C# 6 中的新增功能
 
 C# 6.0 版本包含许多可提高开发人员工作效率的功能。 这些功能的总体效果是让你编写的代码更简洁、更具可读性。 该语法不像许多常见做法那样繁琐。 可以更轻松地看出设计意图。 好好了解这些功能可以帮助你提高生产力，编写更具可读性的代码。 你可以更专注于功能，而不是语言的构造。
 
-本文的其余部分是对每个功能的概述，并提供用于探索每个功能的链接。 还可以在教程部分的 [C# 6 交互式教程](../tutorials/exploration/csharp-6.yml)中探索这些功能。
+本文的其余部分是对每个功能的概述，并提供用于探索每个功能的链接。 还可以在教程部分的 [C# 6 交互式探索](../tutorials/exploration/csharp-6.yml)中探索这些功能。
 
 ## <a name="read-only-auto-properties"></a>只读自动属性
 

@@ -52,8 +52,7 @@ HRESULT MovedReferences2(
  `cObjectIDRangeLength`  
  [in] 整数数组，其中每个整数均为内存中的连续对象块的大小。  
   
- 
-  `oldObjectIDRangeStart` 和 `newObjectIDRangeStart` 数组中引用的每个块均有指定的大小。  
+ `oldObjectIDRangeStart` 和 `newObjectIDRangeStart` 数组中引用的每个块均有指定的大小。  
   
 ## <a name="remarks"></a>备注  
  压缩垃圾回收器将收回由不活动对象占用的内存，但不会压缩释放的空间。 因此，可能在堆中移动活动对象，并且由以前的通知分发的 `ObjectID` 值也可能更改。  

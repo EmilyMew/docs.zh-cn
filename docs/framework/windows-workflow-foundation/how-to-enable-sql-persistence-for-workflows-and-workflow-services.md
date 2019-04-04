@@ -119,7 +119,7 @@ Windows Server App Fabric 大大简化了配置持久性的过程。 有关详�
 
 ### <a name="using-the-durableinstancingoptions-property"></a>使用 DurableInstancingOptions 属性
 
-应用 `SqlWorkflowInstanceStoreBehavior` 时，`DurableInstancingOptions.InstanceStore` 上的 `WorkflowServiceHost` 设置为使用配置值创建的 `SqlWorkflowInstanceStore` 对象。 如下面的代码示例中所示，您可以通过编程方式设置 <xref:System.ServiceModel.Activities.WorkflowServiceHost.DurableInstancingOptions%2A> 的 `WorkflowServiceHost` 属性（而不使用 `SqlWorkflowInstanceStoreBehavior` 类）来达到相同目的。
+应用 `SqlWorkflowInstanceStoreBehavior` 时，`DurableInstancingOptions.InstanceStore` 上的 `WorkflowServiceHost` 设置为使用配置值创建的 `SqlWorkflowInstanceStore` 对象。 如下面的代码示例中所示，你可以通过编程方式设置 <xref:System.ServiceModel.Activities.WorkflowServiceHost.DurableInstancingOptions%2A> 的 `WorkflowServiceHost` 属性（而不使用 `SqlWorkflowInstanceStoreBehavior` 类）来达到相同目的。
 
 ```csharp
 workflowServiceHost.DurableInstancingOptions.InstanceStore = sqlInstanceStoreObject;
@@ -160,8 +160,7 @@ workflowServiceHost.DurableInstancingOptions.InstanceStore = sqlInstanceStoreObj
 
 ### <a name="machineconfig-elements-related-to-the-sql-workflow-instance-store-feature"></a>与 SQL 工作流实例存储功能相关的 Machine.config 元素
 
-
-  [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 安装将以下与 SQL 工作流实例存储功能相关的元素添加到 Machine.config 文件中：
+[!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] 安装将以下与 SQL 工作流实例存储功能相关的元素添加到 Machine.config 文件中：
 
 - 将以下行为扩展元素添加到 Machine.config 文件中，以便可以使用\<sqlWorkflowInstanceStore > 服务行为元素来为你的服务配置持久性的配置文件中。
 

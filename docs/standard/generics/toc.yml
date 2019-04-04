@@ -1,0 +1,18 @@
+items:
+- name: 泛型
+  href: index.md
+  items:
+  - name: .NET 中的泛型集合
+    href: collections.md
+  - name: 用于操作数组和列表的泛型委托
+    href: delegates-for-manipulating-arrays-and-lists.md
+  - name: 泛型接口
+    href: interfaces.md
+  - name: 协变和逆变
+    href: covariance-and-contravariance.md
+ms.openlocfilehash: 84f8686eb8c70ecc4b36a2335f673319bcc2dd4a
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468000"

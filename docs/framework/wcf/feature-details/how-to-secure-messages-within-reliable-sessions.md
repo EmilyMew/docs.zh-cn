@@ -25,9 +25,9 @@ ms.locfileid: "56333048"
 
 基于此配置过程的示例的源副本，请参阅[WS 可靠会话](../../../../docs/framework/wcf/samples/ws-reliable-session.md)。
 
-项的第二个任务的基本项通过设置来实现`mode`的属性**\<安全 >** 元素中包含**\<绑定 >** 元素的客户端和服务将`Message`。
+项的第二个任务的基本项通过设置来实现 `mode` 的属性 **\<安全>** 元素中包含 **\<绑定>** 元素的客户端和服务将 `Message`。
 
-项的第三个任务的基本项通过设置来实现`clientCredentialType`的属性**\<消息 >** 元素中包含**\<安全 >** 元素的客户端和服务将`Certificate`。
+项的第三个任务的基本项通过设置来实现 `clientCredentialType` 的属性 **\<消息>** 元素中包含 **\<安全>** 元素的客户端和服务将 `Certificate`。
 
 > [!NOTE]
 > 当使用可靠会话消息安全性，可靠消息传递尝试对未经身份验证的客户端进行身份验证，直到发生超时，而不是引发异常后第一次失败。
@@ -44,11 +44,11 @@ ms.locfileid: "56333048"
 
 1. 添加到相应的绑定元素[ **\<绑定 >** ](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)配置文件元素。 以下示例将添加[  **\<wsHttpBinding >** ](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)元素。
 
-1. 添加**\<绑定 >** 元素，并设置其`name`属性为适当的值。 该示例使用名称`MessageSecurity`。
+1. 添加 **\<绑定>** 元素，并设置其 `name` 属性为适当的值。 该示例使用名称`MessageSecurity`。
 
-1. 添加**\<安全 >** 元素，并设置`mode`归于`Message`。
+1. 添加 **\<安全>** 元素，并设置 `mode` 归于 `Message`。
 
-1. 内**\<安全 >** 元素中，添加**\<消息 >** 元素，并设置`clientCredentialType`归于`Certificate`。
+1. 内 **\<安全>** 元素中，添加 **\<消息>** 元素，并设置 `clientCredentialType` 归于 `Certificate`。
 
 ```xml
 <wsHttpBinding>

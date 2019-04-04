@@ -8,12 +8,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], multiple versions
 - procedure calls [Visual Basic], overloaded
 ms.assetid: 3bb331fb-f6bc-406f-9ca0-9609b497014c
-ms.openlocfilehash: f13fdae9617fa2af21978979cad6f90a15140a4a
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 9dda0fbc0cffe8904ab97c46cea40d5cf00c91e9
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56969989"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58843781"
 ---
 # <a name="how-to-call-an-overloaded-procedure-visual-basic"></a>如何：调用重载的过程 (Visual Basic)
 重载过程的优点是在调用的灵活性。 调用代码可以获取要传递给该过程，然后调用单个过程名称，无论它传递哪些参数所需的信息。  
@@ -33,6 +33,7 @@ ms.locfileid: "56969989"
      [!code-vb[VbVbcnProcedures#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#57)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [过程重载](./procedure-overloading.md)

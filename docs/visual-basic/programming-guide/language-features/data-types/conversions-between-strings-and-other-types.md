@@ -9,12 +9,12 @@ helpviewer_keywords:
 - type conversion [Visual Basic], string
 - regional options
 ms.assetid: c3a99596-f09a-44a5-81dd-1b89a094f1df
-ms.openlocfilehash: 292ec8c76695427ab00110d83502f7d16c6504b4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1e42fca7800a76cab10fd60058e34d31ae8b8830
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54719737"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821650"
 ---
 # <a name="conversions-between-strings-and-other-types-visual-basic"></a>字符串和其他类型之间的转换 (Visual Basic)
 可以将转换一个数字`Boolean`，或日期/时间值到`String`。 您还可以将按反向执行转换 — 从为数字、 字符串值`Boolean`，或`Date`— 该字符串的内容可以被解释为有效的目标数据类型的值。 如果它们不能但将发生运行时错误。  
@@ -41,6 +41,7 @@ Str = "The total count is " & count
  当 Visual Basic 将字符串转换为数字值时，它使用**区域选项**在 Windows 中指定的设置**控制面板**来解释千位分隔符、 小数分隔符和货币符号。 这意味着转换可能成功之一但不是能是其他设置。 例如，`"$14.20"`是可接受的英语 （美国） 区域设置但不是法语区域设置。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 Visual Basic 中的类型转换](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
 - [扩大转换和收缩转换](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
 - [隐式转换和显式转换](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

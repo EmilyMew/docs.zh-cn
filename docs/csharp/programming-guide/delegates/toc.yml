@@ -1,0 +1,18 @@
+items:
+- name: 委托
+  href: index.md
+  items:
+  - name: 使用委托
+    href: using-delegates.md
+  - name: 带有命名方法的委托与匿名方法
+    href: delegates-with-named-vs-anonymous-methods.md
+  - name: 如何：合并委托（多播委托）（C# 编程指南）
+    href: how-to-combine-delegates-multicast-delegates.md
+  - name: 如何：声明、实例化和使用委托
+    href: how-to-declare-instantiate-and-use-a-delegate.md
+ms.openlocfilehash: f9857a805966b3b3c9d1c6776027c77c6183235b
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468521"

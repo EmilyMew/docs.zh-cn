@@ -2,12 +2,12 @@
 title: 常见特性 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 11fe4894-1bf9-4525-a36b-cddcd3a5d22b
-ms.openlocfilehash: 9c9e8ba886697b9306a89caed4944fd2752db835
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: e001c9a637d2e5e34e77158704e4ad81d6973a50
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57375397"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58834527"
 ---
 # <a name="common-attributes-visual-basic"></a>常见特性 (Visual Basic)
 本主题介绍在 Visual Basic 程序中最常用的属性。  
@@ -44,7 +44,7 @@ ms.locfileid: "57375397"
   
  下表显示标识特性。  
   
-|特性|目标|  
+|特性|用途|  
 |---------------|-------------|  
 |<xref:System.Reflection.AssemblyName>|详细描述程序集的标识。|  
 |<xref:System.Reflection.AssemblyVersionAttribute>|指定程序集的版本。|  
@@ -54,7 +54,7 @@ ms.locfileid: "57375397"
 ### <a name="informational-attributes"></a>信息性特性  
  信息性特性可用于提供程序集的其他公司或产品信息。 下表显示 <xref:System.Reflection?displayProperty=nameWithType> 命名空间中定义的信息性属性。  
   
-|特性|目标|  
+|特性|用途|  
 |---------------|-------------|  
 |<xref:System.Reflection.AssemblyProductAttribute>|定义为程序集清单指定产品名称的自定义属性。|  
 |<xref:System.Reflection.AssemblyTrademarkAttribute>|定义为程序集清单指定商标的自定义属性。|  
@@ -67,7 +67,7 @@ ms.locfileid: "57375397"
 ### <a name="assembly-manifest-attributes"></a>程序集清单特性  
  程序集清单特性可用于提供程序集清单中的信息。 这些信息包括标题、说明、默认别名和配置。 下表显示 <xref:System.Reflection?displayProperty=nameWithType> 命名空间中定义的程序集清单属性。  
   
-|特性|目标|  
+|特性|用途|  
 |---------------|-------------|  
 |<xref:System.Reflection.AssemblyTitleAttribute>|定义为程序集清单指定程序集标题的自定义属性。|  
 |<xref:System.Reflection.AssemblyDescriptionAttribute>|定义为程序集清单指定程序集说明的自定义属性。|  
@@ -225,7 +225,7 @@ End Class
 ## <a name="VB"></a> Visual Basic 特性  
  下表列出了特定于 Visual Basic 的属性。  
   
-|特性|目标|  
+|特性|用途|  
 |---------------|-------------|  
 |<xref:Microsoft.VisualBasic.ComClassAttribute>|向编译器指示应将此类公开为 COM 对象。|  
 |<xref:Microsoft.VisualBasic.HideModuleNameAttribute>|允许使用所需的模块限定访问模块成员。|  
@@ -255,6 +255,7 @@ End Structure
  使用`VBFixedArrayAttribute`声明固定大小的数组。 类似于 Visual Basic 字符串，数组是默认情况下的可变长度。 此属性是序列化或向文件写入数据时非常有用。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Reflection>
 - <xref:System.Attribute>
 - [Visual Basic 编程指南](../../../../visual-basic/programming-guide/index.md)

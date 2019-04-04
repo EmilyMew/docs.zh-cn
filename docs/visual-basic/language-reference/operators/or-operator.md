@@ -15,12 +15,12 @@ helpviewer_keywords:
 - logical disjunction
 - disjunction operator [Visual Basic]
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
-ms.openlocfilehash: cbfc94ad70695e9a785375f2460f9f9d8f3a20c5
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 0277b6f24e62ed5f0cad3dae225c86fffc4c09b9
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56977534"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58835292"
 ---
 # <a name="or-operator-visual-basic"></a>Or 运算符 (Visual Basic)
 对两个执行逻辑或运算`Boolean`表达式或按位析取两个数值表达式。  
@@ -89,6 +89,7 @@ result = expression1 Or expression2
  前面的示例分别生成 10、 14 和 14 的结果。  
   
 ## <a name="see-also"></a>请参阅
+
 - [逻辑/按位运算符 (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)
 - [Visual Basic 中的运算符优先级](../../../visual-basic/language-reference/operators/operator-precedence.md)
 - [按功能列出的运算符](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)

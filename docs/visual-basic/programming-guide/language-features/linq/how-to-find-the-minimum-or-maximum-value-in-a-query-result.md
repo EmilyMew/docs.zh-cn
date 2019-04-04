@@ -14,12 +14,12 @@ helpviewer_keywords:
 - queries [LINQ in Visual Basic], aggregate queries
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 238b763b-7dcd-4b14-8050-b65500a4f71c
-ms.openlocfilehash: f55dae51d485bfcd5c8e93910776f4c98c96ea2d
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 311ba2d9c4be75e77cf134bf44dc96eab957736d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56976026"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838165"
 ---
 # <a name="how-to-find-the-minimum-or-maximum-value-in-a-query-result-by-using-linq-visual-basic"></a>如何：使用 LINQ (Visual Basic 中) 中的查询结果中查找最小值或最大值
 语言集成查询 (LINQ) 轻松地访问数据库的信息和执行查询。  
@@ -77,6 +77,7 @@ ms.locfileid: "56976026"
 4.  按 F5 以运行您的项目并查看结果。  
   
 ## <a name="see-also"></a>请参阅
+
 - [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
 - [查询](../../../../visual-basic/language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)

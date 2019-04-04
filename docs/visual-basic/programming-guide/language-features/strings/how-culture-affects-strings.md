@@ -5,12 +5,12 @@ helpviewer_keywords:
 - locale [Visual Basic], effect on strings
 - strings [Visual Basic], locale dependence
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
-ms.openlocfilehash: b9e9b4e199e4504e21b365706ea60d63c9d5fb87
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: d3c7ae9da9c18e53da393928e34dcfbf04fc891c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56980940"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58834616"
 ---
 # <a name="how-culture-affects-strings-in-visual-basic"></a>区域性对字符串的影响 (Visual Basic)
 此帮助页讨论了 Visual Basic 如何使用区域性信息来执行的字符串转换和比较。  
@@ -79,6 +79,7 @@ ms.locfileid: "56980940"
  如果你的应用程序做出安全决策基于比较或大小写更改操作的结果，则该操作应使用<xref:System.String.Compare%2A?displayProperty=nameWithType>方法，并传入`Ordinal`或`OrdinalIgnoreCase`为`comparisonType`参数。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Globalization.CultureInfo>
 - [Visual Basic 中的字符串简介](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
 - [类型转换函数](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

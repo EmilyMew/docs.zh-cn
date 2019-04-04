@@ -10,12 +10,12 @@ helpviewer_keywords:
 - names [Visual Basic], naming conventions
 - naming conventions [Visual Basic], classes
 ms.assetid: 164949a4-2a7c-4736-9d82-9c3078e2e56c
-ms.openlocfilehash: ebb9d21e32993f2eb035993d32dc3de7d97b49f6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 46f59403feced4baafef4662065cb7daedbeaa7b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54672131"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58837073"
 ---
 # <a name="visual-basic-naming-conventions"></a>Visual Basic 命名约定
 当在 Visual Basic 应用程序中命名元素时，该名称的第一个字符必须是字母字符或下划线。 但请注意，以下划线开头的名称不符合[语言独立性和与语言无关的组件](../../../standard/language-independence-and-language-independent-components.md)(CLS)。  
@@ -41,6 +41,7 @@ ms.locfileid: "54672131"
 -   避免使用内层作用域的外部作用域中的名称相同的名称。 如果访问错误变量时，会导致错误。 如果变量和具有相同名称的关键字之间发生冲突，则必须标识关键字的前面添加相应的类型库。 例如，如果有一个名为变量`Date`，可以使用内部函数`Date`只是在调用函数<xref:System.DateTime.Date%2A?displayProperty=nameWithType>。  
   
 ## <a name="see-also"></a>请参阅
+
 - [代码中用作元素名称的关键字](../../../visual-basic/programming-guide/program-structure/keywords-as-element-names-in-code.md)
 - [Me、My、MyBase 和 MyClass](../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
 - [已声明的元素名称](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)

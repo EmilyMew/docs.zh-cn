@@ -2,12 +2,12 @@
 title: 对 WCF 使用多个身份验证方案
 ms.date: 03/30/2017
 ms.assetid: f32a56a0-e2b2-46bf-a302-29e1275917f9
-ms.openlocfilehash: 8aa593803354628354e5ed3bf02cbcea44505e5e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9f2c9944b424ba527fb20562706d5ad7fc3f8359
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54593805"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465485"
 ---
 # <a name="using-multiple-authentication-schemes-with-wcf"></a>对 WCF 使用多个身份验证方案
 WCF 现在允许您对单个终结点上指定多个身份验证方案。 此外，Web 承载的服务可以直接从 IIS 继承其身份验证设置。 自承载服务可以指定可使用的身份验证方案。 有关在 IIS 中设置身份验证设置的详细信息，请参阅[IIS 身份验证](https://go.microsoft.com/fwlink/?LinkId=232458)  
@@ -96,7 +96,7 @@ else
     </behaviors>  
 ```  
   
- 然后，您可以在绑定设置中指定 InheritFromHost，如下面的 XML 代码段中所示。  
+ 然后，你可以在绑定设置中指定 InheritFromHost，如下面的 XML 代码段中所示。  
   
 ```xml  
 <bindings>  
@@ -124,6 +124,5 @@ else
 - [终结点：地址、 绑定和协定](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
 - [配置系统提供的绑定](../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
 - [使用自定义绑定的安全功能](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)
-- [绑定](../../../../docs/framework/wcf/feature-details/bindings.md)
 - [绑定](../../../../docs/framework/wcf/feature-details/bindings.md)
 - [自定义绑定](../../../../docs/framework/wcf/extending/custom-bindings.md)

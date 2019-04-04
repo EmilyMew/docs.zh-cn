@@ -1,69 +1,76 @@
 ---
-title: 入门 Tutorial1
-ms.date: 03/30/2017
+title: 教程：开始使用 Windows Communication Foundation 应用程序
+description: 这些教程介绍了用于创建 WCF 应用程序。
+ms.date: 01/25/2019
 helpviewer_keywords:
-- WCF [WCF], getting started
-- Windows Communication Foundation [WCF], getting started
-- getting started [WCF]
+- WCF [WCF], get started
+- Windows Communication Foundation [WCF], get started
+- get started [WCF]
 ms.assetid: df939177-73cb-4440-bd95-092a421516a1
-ms.openlocfilehash: b7ba25795dd69e5bd978c77928f9b9797f4d4e19
-ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
+ms.openlocfilehash: 66211cfcf2b742e43eccbefb2bc7c4bd1147b05b
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57200879"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58408855"
 ---
-# <a name="getting-started-tutorial"></a>入门教程
-在本部分中包含的主题旨在帮助您快速了解到 Windows Communication Foundation (WCF) 编程体验。 这些主题要根据本主题底部的列表中的顺序完成。 通过本教程中，可以初步了解创建 WCF 服务和客户端应用程序所需的步骤。 服务公开一个或多个终结点，其中每个终结点都公开一项或多项服务操作。 *终结点*服务的指定的地址，其中可以找到该服务，包含描述如何在客户端必须与该服务，并定义的功能的协定通信的信息的绑定向其客户端提供服务。
+# <a name="tutorial-get-started-with-windows-communication-foundation-applications"></a>教程：开始使用 Windows Communication Foundation 应用程序
+以下一系列教程向您介绍了为 Windows Communication Foundation (WCF) 编程体验。 通过按顺序这些教程将提供初步了解创建 WCF 应用程序所需的步骤。 完成后，你必须正在运行的 WCF 服务和 WCF 客户端调用服务。 
 
- 在完成本教程中的系列主题之后，您将会得到一个正在运行的服务，以及一个可以调用该服务的客户端。 前三个主题描述如何定义服务协定、如何实现服务协定以及如何承载服务。 创建的服务自承载在控制台应用程序中。 服务还可在 Internet Information Services (IIS) 下承载。 有关如何执行此操作的详细信息，请参阅[如何：承载在 IIS 中的 WCF 服务](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)。 在代码中配置服务；不过，也可以在配置文件中配置服务。 有关使用配置文件的详细信息请参阅[使用配置文件配置服务](../../../docs/framework/wcf/configuring-services-using-configuration-files.md)。
+本教程假定你正在使用 Visual Studio 作为开发环境。 如果你使用的另一个开发环境，忽略的 Visual Studio 的特定说明。 
 
- 后三个主题描述如何创建客户端代理，如何配置客户端应用程序，以及如何使用客户端代理调用由服务公开的操作。 服务发布定义客户端应用程序与服务进行通信所需信息的元数据。 Visual Studio 2012 可访问此元数据的过程进行自动化，并使用它来构建和配置服务的客户端应用程序。 如果不使用 Visual Studio 2012，则可以使用[ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)来构建和配置服务的客户端应用程序。
+对于示例 WCF 应用程序可以下载并运行，请参阅[Windows Communication Foundation 示例](samples/index.md)。 有关示例，请参阅[入门示例](samples/getting-started-sample.md)。
 
-在本部分中的主题假定你使用的 Visual Studio 作为开发环境。 如果使用其他开发环境，忽略的 Visual Studio 的特定说明。
+有关创建服务和客户端的更多详细信息，请参阅[基本 WCF 编程](basic-wcf-programming.md)。
 
-有关示例应用程序，可以下载到您的硬盘和运行，请参阅中的主题[Windows Communication Foundation (WCF) 示例](./samples/index.md)。 本主题中，请参阅，特别是，对于[Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)。
+## <a name="wcf-tutorials"></a>WCF 教程
 
-有关创建服务和客户端的更多详细信息，请参阅[基本 WCF 编程](../../../docs/framework/wcf/basic-wcf-programming.md)。
+前三个教程介绍如何定义 WCF 服务协定、 如何实现它，以及如何承载它。 在创建该服务是自承载在控制台应用程序。 此外可以托管在 Microsoft Internet Information Services (IIS) 服务。 有关详细信息，请参阅[如何：承载在 IIS 中的 WCF 服务](feature-details/how-to-host-a-wcf-service-in-iis.md)。 尽管您可以使用代码服务配置为在本教程中，还可以[配置配置文件中的服务](configuring-services-using-configuration-files.md)。 
 
-## <a name="in-this-section"></a>本节内容
- [如何：定义服务协定](../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)
+- [教程：定义服务协定](how-to-define-a-wcf-service-contract.md)
 
- 介绍如何创建 WCF 协定使用用户定义的接口。 协定定义服务所公开的功能。
+    使用用户定义的接口创建 WCF 协定。 此协定定义服务所公开的功能。
 
- [如何：实现服务协定](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)
+- [教程：实现服务协定](how-to-implement-a-wcf-contract.md)
 
- 描述如何实现服务协定。 定义一个协定后，它必须与服务类实现。
+    定义协定后，您必须与服务类实现它。
 
- [如何：托管并运行基本服务](../../../docs/framework/wcf/how-to-host-and-run-a-basic-wcf-service.md)
+- [教程：托管并运行基本服务](how-to-host-and-run-a-basic-wcf-service.md)
 
- 描述如何在代码中配置服务的终结点，以及如何在控制台应用程序内承载服务。 若要激活服务，必须在运行时环境中配置和承载服务。 此环境将创建服务并控制其上下文和生存期。
+    配置服务的终结点，并将服务托管在一个控制台应用程序。 变为活动状态的服务，必须对其进行配置和运行时环境中托管它。 此运行时环境中创建服务并控制其上下文和生存期。
 
- [如何：创建客户端](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+接下来两个教程介绍如何创建、 配置，并使用客户端应用程序调用该服务的操作公开。 服务发布定义客户端应用程序与服务进行通信所需信息的元数据。 Visual Studio 自动化访问此元数据的过程，并使用它来构造服务的客户端应用程序。 如果你决定不使用 Visual Studio，则可以使用[ServiceModel 元数据实用工具 (*Svcutil.exe*)](servicemodel-metadata-utility-tool-svcutil-exe.md)相反。
 
- 介绍如何检索用于创建 WCF 客户端代理从 WCF 服务的元数据。 此过程使用 Visual Studio 中的添加服务引用功能。
+- [教程：创建客户端](how-to-create-a-wcf-client.md)
 
- [如何：配置客户端](../../../docs/framework/wcf/how-to-configure-a-basic-wcf-client.md)
+    检索用于创建 WCF 客户端代理从 WCF 服务的元数据。 使用 Visual Studio 添加服务引用检索元数据，或者可以使用 ServiceModel 元数据实用工具的工具。 指定客户端用于访问服务的终结点。
 
- 描述如何配置 WCF 客户端。配置客户端需要指定客户端用于访问服务的终结点。
+- [教程：使用客户端](how-to-use-a-wcf-client.md)
 
- [如何：使用客户端](../../../docs/framework/wcf/how-to-use-a-wcf-client.md)
-
- 介绍如何使用 WCF 客户端代理来调用服务操作。
+    使用 WCF 客户端代理调用服务操作。
 
 ## <a name="reference"></a>参考
 
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>
 
-## <a name="related-sections"></a>相关章节
-
-- [Windows Communication Foundation (WCF) 示例](./samples/index.md)
-- [基本编程生命周期](../../../docs/framework/wcf/basic-programming-lifecycle.md)
-
 ## <a name="see-also"></a>请参阅
 
-- [概念性概述](../../../docs/framework/wcf/conceptual-overview.md)
-- [文档使用指南](../../../docs/framework/wcf/guide-to-the-documentation.md)
-- [什么是 Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)
-- [WCF 功能详细信息](../../../docs/framework/wcf/feature-details/index.md)
+- [概念性概述](conceptual-overview.md)
+- [文档指南](guide-to-the-documentation.md)
+- [什么是 Windows Communication Foundation](whats-wcf.md)
+- [WCF 功能详细信息](feature-details/index.md)
+- [基本编程生命周期](basic-programming-lifecycle.md)
+- [生成客户端](building-clients.md)
+- [基本 WCF 编程](basic-wcf-programming.md)
+- [如何：创建双工协定](feature-details/how-to-create-a-duplex-contract.md)
+- [如何：使用双工协定访问服务](feature-details/how-to-access-services-with-a-duplex-contract.md)
+- [ServiceModel 元数据实用工具工具 (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [如何：使用 Svcutil.exe 下载元数据文档](feature-details/how-to-use-svcutil-exe-to-download-metadata-documents.md)
+- [如何：发布使用配置文件服务的元数据](feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
+- [使用绑定配置服务和客户端](using-bindings-to-configure-services-and-clients.md)
+- [入门示例](samples/getting-started-sample.md)
+- [Windows Communication Foundation 示例](samples/index.md)
+- [自承载](samples/self-host.md)
+
+

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - object creation [Visual Basic], COM objects
 - COM objects, walkthroughs
 ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
-ms.openlocfilehash: 6b079db3ccc07494bdfdf7dba49c27fe14dca4e5
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 5fc0105cffb5606f9382aca7b55d6544d04f9fe7
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56973933"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838152"
 ---
 # <a name="walkthrough-creating-com-objects-with-visual-basic"></a>演练：使用 Visual Basic 创建 COM 对象
 创建新的应用程序或组件时，最好创建.NET Framework 程序集。 但是，Visual Basic 还可以轻松公开.NET Framework 组件由 com 使用。 这使您可以提供新的组件需要 COM 组件的早期应用程序套件。 本演练演示如何使用 Visual Basic 来公开[!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]对象作为 COM 对象，使用或不使用 COM 类模板。  
@@ -91,6 +91,7 @@ ms.locfileid: "56973933"
     >  使用 Visual Basic 生成的 COM 对象不能使用其他 Visual Basic 应用程序，因为它们不是真正的 COM 对象。 尝试将引用添加到此类 COM 对象将引发错误。 有关详细信息，请参阅[.NET Framework 应用程序中的 COM 互操作性](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.ComClassAttribute>
 - [COM 互操作](../../../visual-basic/programming-guide/com-interop/index.md)
 - [演练：使用 COM 对象实现继承](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)

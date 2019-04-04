@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - enumerations [Visual Basic]
 ms.assetid: e6e47b5b-3ed9-452d-a481-9c3fed88519a
-ms.openlocfilehash: 826f8fffedb8c983423fbef0fbf1f4014d93be91
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ff2d8c324aee8bbccef050c020e5392368b05b1c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54535016"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58825092"
 ---
 # <a name="when-to-use-an-enumeration-visual-basic"></a>何时使用枚举 (Visual Basic)
 枚举提供了使用相关常量集的简单方法。 一个枚举，或`Enum`，是一组值的符号名称。 枚举被视为数据类型，并可用于创建用变量和属性使用的常数的集。  
@@ -36,6 +36,7 @@ ms.locfileid: "54535016"
  Visual Basic 提供了大量预定义的枚举，如`FirstDayOfWeek`和`MsgBoxResult`，以便于您的代码。 有关这些列表请参阅[常量和枚举](../../../../visual-basic/language-reference/constants-and-enumerations.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：声明枚举](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)
 - [如何：为枚举成员，请参阅](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)
 - [枚举和名称限定](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)

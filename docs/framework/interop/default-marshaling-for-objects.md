@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: c2ef0284-b061-4e12-b6d3-6a502b9cc558
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c226960373783c45594e4a41dfaff353bf0b9db4
-ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.openlocfilehash: 65b13d99873fe1027d0b316d1cf90e766799dbb1
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56219602"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409271"
 ---
 # <a name="default-marshaling-for-objects"></a>对象的默认封送处理
 可将类型化为 <xref:System.Object?displayProperty=nameWithType> 的参数和字段作为下列任一类型向非托管代码公开：  
@@ -26,19 +26,6 @@ ms.locfileid: "56219602"
   
  仅 COM 互操作支持对象类型的封送处理。 默认行为是将对象封送到 COM 变体。 这些规则只适用于 Object 类型，不适用于从 Object 类派生的强类型对象。  
   
- 本主题提供有关封送对象类型的以下附加信息：  
-  
--   [封送选项](#cpcondefaultmarshalingforobjectsanchor7)  
-  
--   [将对象封送到接口](#cpcondefaultmarshalingforobjectsanchor2)  
-  
--   [将对象封送到变体](#cpcondefaultmarshalingforobjectsanchor3)  
-  
--   [将变体封送到对象](#cpcondefaultmarshalingforobjectsanchor4)  
-  
--   [封送 ByRef 变体](#cpcondefaultmarshalingforobjectsanchor6)  
-  
-<a name="cpcondefaultmarshalingforobjectsanchor7"></a>   
 ## <a name="marshaling-options"></a>封送处理选项  
  下表显示 Object 数据类型的封送处理选项。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 属性提供若干个 <xref:System.Runtime.InteropServices.UnmanagedType> 枚举值来封送对象。  
   
@@ -127,11 +114,9 @@ struct ObjectHolder {
 }  
 ```  
   
-<a name="cpcondefaultmarshalingforobjectsanchor2"></a>   
 ## <a name="marshaling-object-to-interface"></a>将对象封送到接口  
  将对象作为接口向 COM 公开时，该接口是托管类型 <xref:System.Object> 的类接口（即 _Object 接口）。 该接口被类型化为 IDispatch (<xref:System.Runtime.InteropServices.UnmanagedType>) 或所得类型库中的 IUnknown (UnmanagedType.IUnknown)。 通过 _Object 接口，COM 客户端可动态调用托管类的成员或由该托管类的派生类实现的任何成员。 客户端还可调用 QueryInterface 获取由托管类型显式实现的任何其他接口。  
   
-<a name="cpcondefaultmarshalingforobjectsanchor3"></a>   
 ## <a name="marshaling-object-to-variant"></a>将对象封送到变体  
  将对象封送到变体时，在运行时根据以下规则确定内部变体类型：  
   
@@ -255,7 +240,6 @@ mo.SetVariant(new CurrencyWrapper(new Decimal(5.25)));
   
  通过调用 IConvertible.To Type 接口确定 COM 变体的值，其中 To Type 是转换例程，它对应于从 IConvertible.GetTypeCode 返回的类型。 例如，将从 IConvertible.GetTypeCode 返回 TypeCode.Double 的对象作为 VT_R8 类型的 COM 变体封送。 通过强制转换为 IConvertible 接口并调用 <xref:System.IConvertible.ToDouble%2A> 方法，可获取变体值（存储在 COM 变体的 dblVal 字段中）。  
   
-<a name="cpcondefaultmarshalingforobjectsanchor4"></a>   
 ## <a name="marshaling-variant-to-object"></a>将变体封送到对象  
  将变体封送到对象时，所封送变体的类型（有时是值）确定生成的对象类型。 下表标识每个变体类型以及变体从 COM 传递给 .NET Framework 时封送拆收器所创建的相应对象类型。  
   
@@ -289,18 +273,17 @@ mo.SetVariant(new CurrencyWrapper(new Decimal(5.25)));
   
  变体类型从 COM 传递给托管代码、再传回 COM，这样的变体类型在调用期间可能不会保留同一变体类型。 请考虑将 VT_DISPATCH 类型的变体从 COM 传递到 .NET Framework 时会发生的情况。 在封送处理期间，变体转换为 <xref:System.Object?displayProperty=nameWithType>。 如果随后对象传回 COM，则将它封送回 VT_UNKNOWN 类型的变体。 将对象从托管代码封送到 COM 时，无法保证产生的变体与最初用于产生该对象的变体为同一类型。  
   
-<a name="cpcondefaultmarshalingforobjectsanchor6"></a>   
 ## <a name="marshaling-byref-variants"></a>封送 ByRef 变体  
- 虽然变体本身可以按值或按引用传递，但 VT_BYREF 标志也可用于任何变体类型，指示变体的内容按引用传递，而不是按值传递。 对于按引用封送变体与使用设置的 VT_BYREF 标志封送变体，人们容易混淆这二者之间的差异。 下图阐明了这些差异。  
+ 虽然变体本身可以按值或按引用传递，但 VT_BYREF 标志也可用于任何变体类型，指示变体的内容按引用传递，而不是按值传递。 对于按引用封送变体与使用设置的 VT_BYREF 标志封送变体，人们容易混淆这二者之间的差异。 下图阐明了这些差异：  
   
- ![堆栈上传递的变体](./media/interopvariant.gif "interopvariant")  
+ ![显示在堆栈上传递的变量的图表。](./media/default-marshaling-for-objects/interop-variant-passed-value-reference.gif)  
 按值和按引用传递的变体  
   
  **值封送对象和变体的默认行为**  
   
--   将对象从托管代码传递给 COM 时，使用在[将对象封送到变体](#cpcondefaultmarshalingforobjectsanchor3)中定义的规则，将对象内容复制到封送拆收器创建的新变体中。 对非托管端的变体所做的更改不会在从调用返回时传回起始对象。  
+-   将对象从托管代码传递给 COM 时，使用在[将对象封送到变体](#marshaling-object-to-variant)中定义的规则，将对象内容复制到封送拆收器创建的新变体中。 对非托管端的变体所做的更改不会在从调用返回时传回起始对象。  
   
--   将变体从 COM 传递给托管代码时，使用[将变体封送到对象](#cpcondefaultmarshalingforobjectsanchor4)中定义的规则，将变体内容复制到新创建的对象。 对托管端的对象所做的更改不会在从调用返回时传回起始变体。  
+-   将变体从 COM 传递给托管代码时，使用[将变体封送到对象](#marshaling-variant-to-object)中定义的规则，将变体内容复制到新创建的对象。 对托管端的对象所做的更改不会在从调用返回时传回起始变体。  
   
  **按引用封送对象和变体的默认行为**  
   
@@ -321,7 +304,7 @@ mo.SetVariant(new CurrencyWrapper(new Decimal(5.25)));
   
  下表总结了变体和对象的传播规则。  
   
-|From|到|传回的更改|  
+|From|功能|传回的更改|  
 |----------|--------|-----------------------------|  
 |变体 v|对象 o|Never|  
 |对象 o|变体 v|Never|  

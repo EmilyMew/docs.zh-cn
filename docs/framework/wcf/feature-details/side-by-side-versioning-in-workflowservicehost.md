@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 60887eed-df40-4412-b812-41e1dd329d15
-ms.openlocfilehash: 05bec31cb0d1dca3dc906c183d001fb526173bb5
-ms.sourcegitcommit: 2eceb05f1a5bb261291a1f6a91c5153727ac1c19
+ms.openlocfilehash: 3f180fa115453be86fa5f99fbabb776eb7198623
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43502546"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465862"
 ---
 # <a name="side-by-side-versioning-in-workflowservicehost"></a>WorkflowServiceHost 中的并行版本控制
 <xref:System.ServiceModel.Activities.WorkflowServiceHost> 中引入的 [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] 并行版本控制功能提供了在单个终结点上承载工作流服务的多个版本的能力。 所提供的并行功能允许配置工作流服务，以便使用新的工作流定义来创建工作流服务的新实例，而对于正在运行的实例则使用现有的定义来完成。 本主题概述了使用 <xref:System.ServiceModel.Activities.WorkflowServiceHost> 的工作流服务并行执行。  
@@ -31,7 +31,7 @@ ms.locfileid: "43502546"
   
 -   在其 <xref:System.ServiceModel.Activities.Receive> 中不得有主版本中不存在的任何 <xref:System.ServiceModel.Activities.SendReply> 或 <xref:System.ServiceModel.Activities.WorkflowService.Body%2A> 活动，并且这些活动必须与操作协定相匹配。  
   
--   具有唯一的 <xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>。 可能有一个且只有一个工作流定义`null` <xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>。  
+-   具有唯一的 <xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>。 有且仅有一个工作流定义可以具有 `null`<xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>。  
   
  允许进行一些更改。 以下各项在各版本间可能有所不同：  
   
@@ -46,7 +46,7 @@ ms.locfileid: "43502546"
 ### <a name="configuring-the-definitionidentity"></a>配置 DefinitionIdentity  
  使用工作流设计器中，创建工作流服务时<xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>使用设置**属性**窗口。 单击外部服务的根活动在设计器中选择工作流服务，并选择**属性窗口**从**视图**菜单。 选择**WorkflowIdentity**旁边显示的下拉列表从**DefinitionIdentity**属性，然后展开，并指定所需<xref:System.Activities.WorkflowIdentity>属性。 在下面的示例<xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>配备<xref:System.Activities.WorkflowIdentity.Name%2A>`MortgageWorkflow`和一个<xref:System.Activities.WorkflowIdentity.Version%2A>的`1.0.0.0`。 <xref:System.Activities.WorkflowIdentity.Package%2A> 是可选的，在此示例中是 `null`。  
   
- ![DefinitionIdentity](../../../../docs/framework/wcf/feature-details/media/workflowservicedefinitionidentityv1.bmp "WorkflowServiceDefinitionIdentityv1")  
+ ![显示 DefinitionIdentity 属性的屏幕截图。](./media/side-by-side-versioning-in-workflowservicehost/definitionidentity-property.bmp)  
   
  如果工作流服务是自承载的，则 <xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A> 在构造工作流服务时配置。 在以下示例中，<xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>配置了相同的值与上面的示例中，有<xref:System.Activities.WorkflowIdentity.Name%2A>`MortgageWorkflow`和一个<xref:System.Activities.WorkflowIdentity.Name%2A>的`1.0.0.0`。  
   
@@ -82,9 +82,9 @@ End With
 >  如果最初部署服务时未配置 <xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>，则这一点非常有用，然后会创建一个更新的版本。  
   
 ### <a name="adding-a-new-version-to-a-web-hosted-workflow-service"></a>将新版本添加到 Web 承载的工作流服务  
- 在 Web 承载的服务中配置新版本工作流服务的第一步是：在与服务文件同名的 `App_Code` 文件夹中创建一个新的文件夹。 如果服务的 `xamlx` 文件命名为 `MortgageWorkflow.xamlx`，则必须将该文件夹命名为 `MortgageWorkflow`。 将原始服务的 `xamlx` 文件的副本放到此文件夹中，并将其重命名为新名称，如 `MortgageWorkflowV1.xamlx`。 对主服务进行所需的更改，更新其 <xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>，然后部署服务。 在下面的示例中，使用 <xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A> <xref:System.Activities.WorkflowIdentity.Name%2A> 和 `MortageWorkflow` <xref:System.Activities.WorkflowIdentity.Version%2A> 更新了 `2.0.0.0`。  
+ 在 Web 承载的服务中配置新版本工作流服务的第一步是：在与服务文件同名的 `App_Code` 文件夹中创建一个新的文件夹。 如果服务的 `xamlx` 文件命名为 `MortgageWorkflow.xamlx`，则必须将该文件夹命名为 `MortgageWorkflow`。 将原始服务的 `xamlx` 文件的副本放到此文件夹中，并将其重命名为新名称，如 `MortgageWorkflowV1.xamlx`。 对主服务进行所需的更改，更新其 <xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>，然后部署服务。 在下面的示例中，使用 <xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A><xref:System.Activities.WorkflowIdentity.Name%2A> 和 `MortageWorkflow`<xref:System.Activities.WorkflowIdentity.Version%2A> 更新了 `2.0.0.0`。  
   
- ![DefinitionIdentity](../../../../docs/framework/wcf/feature-details/media/workflowservicedefinitionidentityv2.bmp "WorkflowServiceDefinitionIdentityv2")  
+ ![显示 DefinitionIdentity 的 WorkflowIdentity 的屏幕截图。](./media/side-by-side-versioning-in-workflowservicehost/definitionidentity-workflowidentity.bmp)  
   
  当该服务重新启动时，以前的版本会自动添加到 <xref:System.ServiceModel.Activities.WorkflowServiceHost.SupportedVersions%2A> 集合，因为它位于指定的 `App_Code` 子文件夹中。 请注意，如果工作流服务的主版本具有`null`<xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>将不会添加以前的版本。 一个版本可能有 `null`<xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A>，但如果有多个版本，则主版本不得是具有 `null`<xref:System.ServiceModel.Activities.WorkflowService.DefinitionIdentity%2A> 的版本，否则以前的版本不会添加到 <xref:System.ServiceModel.Activities.WorkflowServiceHost.SupportedVersions%2A> 集合。  
   

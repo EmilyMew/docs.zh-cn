@@ -6,12 +6,12 @@ helpviewer_keywords:
 - keycontainer compiler option [Visual Basic]
 - /keycontainer compiler option [Visual Basic]
 ms.assetid: 6a9bc861-1752-4db1-9f64-b5252f0482cc
-ms.openlocfilehash: 18aa82610d337354647a74d2f4ebe768925e2de0
-ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
+ms.openlocfilehash: 51cfe4a52af2fbcd51a4f9e2dc738e83fe0852c1
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56746346"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58839588"
 ---
 # <a name="-keycontainer"></a>-keycontainer
 指定密钥对的密钥容器名称从而为程序集赋予强名称。  
@@ -50,7 +50,8 @@ vbc -keycontainer:key1 input.vb
 ```  
   
 ## <a name="see-also"></a>请参阅
-- [在.NET 中的程序集](../../../standard/assembly/index.md)
+
+- [.NET 中的程序集](../../../standard/assembly/index.md)
 - [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md)
 - [示例编译命令行](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

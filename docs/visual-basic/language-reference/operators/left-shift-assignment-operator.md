@@ -11,12 +11,12 @@ helpviewer_keywords:
 - operator<<=
 - compound assignment statements [Visual Basic]
 ms.assetid: 8ad26613-faff-4e2f-89ee-63feee33bfda
-ms.openlocfilehash: b2a642b1187c9a08007ee1eddfa0764198fc0877
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: da2b5ca0b7538d77c3c8d8bc7d45712d656ce63a
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56981642"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58829143"
 ---
 # <a name="-operator-visual-basic"></a>\<\<= 运算符 (Visual Basic)
 对变量或属性的值执行算术左的移位，并将结果赋回给变量或属性。  
@@ -50,6 +50,7 @@ variableorproperty <<= amount
  [!code-vb[VbVbalrOperators#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#13)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [<< 运算符](../../../visual-basic/language-reference/operators/left-shift-operator.md)
 - [赋值运算符](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [移位运算符](../../../visual-basic/language-reference/operators/bit-shift-operators.md)

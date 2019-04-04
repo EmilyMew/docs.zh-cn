@@ -1,0 +1,16 @@
+items:
+- name: 序列化
+  href: index.md
+  items:
+  - name: 如何：将对象数据写入 XML 文件
+    href: how-to-write-object-data-to-an-xml-file.md
+  - name: 如何：从 XML 文件读取对象数据
+    href: how-to-read-object-data-from-an-xml-file.md
+  - name: 演练：保留对象
+    href: walkthrough-persisting-an-object-in-visual-studio.md
+ms.openlocfilehash: fb7160fa8eae06a13bf917fff42316fb608d6a95
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468452"

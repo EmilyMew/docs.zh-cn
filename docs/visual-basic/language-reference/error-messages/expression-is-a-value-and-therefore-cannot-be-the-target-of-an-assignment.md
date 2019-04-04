@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30068
 ms.assetid: d65141e1-f31e-4ac5-a3b8-0b2e02a71ebf
-ms.openlocfilehash: b2c33cb9ba0479df5e69b6979a789253f9fae565
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3027be6ee4ed3664b81c661b6a086a3604573833
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54597328"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826127"
 ---
 # <a name="expression-is-a-value-and-therefore-cannot-be-the-target-of-an-assignment"></a>表达式是一个值，因此不能作为赋值目标
 语句试图将值分配为表达式。 您可以在运行时分配到可写的变量、 属性或数组元素的值。 下面的示例说明了如何可能出现此错误。  
@@ -58,6 +58,7 @@ exitButton.Location = exitLocation
 -   使用变量来访问要为其赋值的属性。  
   
 ## <a name="see-also"></a>请参阅
+
 - [运算符和表达式](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
 - [语句](../../../visual-basic/programming-guide/language-features/statements.md)
 - [过程疑难解答](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)

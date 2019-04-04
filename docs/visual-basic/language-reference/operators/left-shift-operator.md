@@ -8,12 +8,12 @@ helpviewer_keywords:
 - << operator [Visual Basic]
 - operator <<, Visual Basic left shift operator
 ms.assetid: fdb93d25-81ba-417f-b808-41207bfb8440
-ms.openlocfilehash: 329cdf1aea9ca97db000bb5ced8d9e8d6b7a4f58
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 75c16c27dc919ba365cbe3c28c61a1e46496b0ae
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56970548"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824281"
 ---
 # <a name="-operator-visual-basic"></a>\<\< 运算符 (Visual Basic)
 对位模式执行算术左的移位运算。  
@@ -73,6 +73,7 @@ result = pattern << amount
  移位量`result4`计算为 17 和 15，等于 1。  
   
 ## <a name="see-also"></a>请参阅
+
 - [移位运算符](../../../visual-basic/language-reference/operators/bit-shift-operators.md)
 - [赋值运算符](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [<<= 运算符](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)

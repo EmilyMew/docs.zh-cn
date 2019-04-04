@@ -1,0 +1,16 @@
+items:
+- name: 序列化 (C#)
+  href: index.md
+  items:
+  - name: 如何：将对象数据写入 XML 文件
+    href: how-to-write-object-data-to-an-xml-file.md
+  - name: 如何：从 XML 文件读取对象数据
+    href: how-to-read-object-data-from-an-xml-file.md
+  - name: 演练：在 Visual Basic 中保持对象
+    href: walkthrough-persisting-an-object-in-visual-studio.md
+ms.openlocfilehash: ccf7c795b437ff2c4046b6005ec7b05528aa884f
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468325"

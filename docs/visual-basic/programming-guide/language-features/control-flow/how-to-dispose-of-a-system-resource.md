@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Using statement [Visual Basic], Using...End Using
 - Using block
 ms.assetid: 8be2b239-8090-419b-8e7e-bcaa75b0ecc8
-ms.openlocfilehash: 798650bbefc0c5b2ac097b87ab44a2b380117939
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2a399b92c66c8a88d10d661ff41aef58a82bbc2a
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54523215"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58829910"
 ---
 # <a name="how-to-dispose-of-a-system-resource-visual-basic"></a>如何：释放系统资源 (Visual Basic)
 可以使用`Using`块来确保系统在你的代码退出块时释放资源。 这是很有用，如果使用的这样做会消耗大量内存，或其他组件也想要使用的系统资源。  
@@ -45,6 +45,7 @@ ms.locfileid: "54523215"
      对系统资源，例如文件句柄或 COM 包装器，可以使用此相同的技术。 您使用`Using`当你以确保想要保留的资源可供其他组件后您退出时，阻止`Using`块。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Data.SqlClient.SqlConnection>
 - [控制流](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
 - [决策结构](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)

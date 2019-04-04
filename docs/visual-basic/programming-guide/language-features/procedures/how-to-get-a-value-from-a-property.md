@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - properties [Visual Basic], values
 ms.assetid: 3954423e-6ab7-4a4c-b55c-a8d27be47891
-ms.openlocfilehash: de5719527216411c7bd156f2cc0d369442eaee20
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 7dbc9d926ae937dd032c0c054bde440037ab9f0d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56964768"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842910"
 ---
 # <a name="how-to-get-a-value-from-a-property-visual-basic"></a>如何：获取一个值，从属性 (Visual Basic)
 通过将属性名称包含在表达式中检索属性的值。  
@@ -39,6 +39,7 @@ ms.locfileid: "56964768"
  属性的值出现在中，只需为变量表达式或常数那样，或存储在变量或赋值语句左侧的属性。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [属性过程](./property-procedures.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)

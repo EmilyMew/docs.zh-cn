@@ -11,12 +11,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], Sub
 - syntax [Visual Basic], Sub procedures
 ms.assetid: 6a0a4958-ed0a-4d3d-8d31-0772c82bda58
-ms.openlocfilehash: 646d7d217891dc8ea5b78f7ce30fce19fab08316
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: b70594e002bbf08f0890586e78df901ccb26c7ce
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56977573"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58843097"
 ---
 # <a name="sub-procedures-visual-basic"></a>Sub 过程 (Visual Basic)
 一个`Sub`过程是 Visual Basic 语句括在一系列`Sub`和`End Sub`语句。 `Sub`过程执行一项任务，再将控制权返回到调用代码，但它不会向调用代码返回值。  
@@ -73,6 +73,7 @@ ms.locfileid: "56977573"
  [!code-vb[VbVbcnProcedures#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#3)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [Function 过程](./function-procedures.md)
 - [属性过程](./property-procedures.md)

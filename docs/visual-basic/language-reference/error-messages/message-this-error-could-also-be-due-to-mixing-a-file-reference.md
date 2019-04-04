@@ -1,5 +1,5 @@
 ---
-title: <message> 此错误也可能是由于将程序集“<assemblyname>”的文件引用与项目引用混合使用所造成的
+title: <message> 此错误也可能是由于文件引用与程序集的项目引用混合使用<assemblyname>
 ms.date: 07/20/2015
 f1_keywords:
 - bc30971
@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30971
 ms.assetid: 75d2e8b5-2fdc-4623-8b32-cba805dab7db
-ms.openlocfilehash: f28327b4df5b15f368f736e7402179227035a06e
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 0f2e7040de5ea74f3793129d23d4ae8c80b71f25
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55272547"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58841545"
 ---
 # <a name="message-this-error-could-also-be-due-to-mixing-a-file-reference-with-a-project-reference-to-assembly-assemblyname"></a>\<消息 > 此错误也可能是由于文件引用与程序集的项目引用混合使用\<程序集名称 >
 \<消息 > 此错误也可能是由于文件引用与程序集的项目引用混合使用\<程序集名称 >。 在这种情况下，请尝试更换的文件引用 '\<assemblyfilename > 项目中\<projectname1 > 项目引用\<项目名称 2> >。  
@@ -30,6 +30,7 @@ ms.locfileid: "55272547"
 2.  在项目属性中，添加对包含某程序集的项目的引用，该程序集定义正在使用的类型。  
   
 ## <a name="see-also"></a>请参阅
+
 - [管理项目中的引用](/visualstudio/ide/managing-references-in-a-project)
 - [对已声明元素的引用](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
 

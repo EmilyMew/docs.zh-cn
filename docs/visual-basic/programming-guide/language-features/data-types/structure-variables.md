@@ -7,12 +7,12 @@ helpviewer_keywords:
 - variables [Visual Basic], structure variables
 - structure variables [Visual Basic]
 ms.assetid: 156872f8-aabc-4454-8e2d-f2253c3c13c9
-ms.openlocfilehash: f9cc6d0165b0eda8358d250c37910b1362473ab1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9a6e542e297a17f44d929235530ae6058cf13a36
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54640597"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58816325"
 ---
 # <a name="structure-variables-visual-basic"></a>结构变量 (Visual Basic)
 创建结构后，可以将过程级别和模块级变量声明该类型。 例如，可以创建一个结构该记录有关计算机系统的信息。 下面的示例演示这一操作。  
@@ -53,6 +53,7 @@ yourSystem = mySystem
  如果结构元素是引用类型，例如`String`， `Object`，或复制数组，对数据的指针。 在上一示例中，如果`systemInfo`已包含一个对象的变量，则前面的示例将复制从指针`mySystem`到`yourSystem`，和一个结构时，通过该对象的数据的更改都是有效的访问时通过其他结构。  
   
 ## <a name="see-also"></a>请参阅
+
 - [数据类型](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [基本数据类型](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
 - [复合数据类型](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)

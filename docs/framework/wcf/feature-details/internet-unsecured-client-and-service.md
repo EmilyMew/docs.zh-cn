@@ -5,27 +5,27 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
-ms.openlocfilehash: e8aa8d66e667036f09bd5670e779f14fa9401450
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 480242d519fee6ddabac3b39ff21f8e1b76827f0
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54643801"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410662"
 ---
 # <a name="internet-unsecured-client-and-service"></a>不安全的 Internet 客户端和服务
-下图显示了 public、 不安全的 Windows Communication Foundation (WCF) 客户端和服务的示例。  
+下图显示了 public、 不安全的 Windows Communication Foundation (WCF) 客户端和服务的示例：  
   
- ![不安全的 Internet 客户端和服务方案](../../../../docs/framework/wcf/feature-details/media/publicunsecured.gif "publicUnsecured")  
+ ![显示不安全的 Internet 方案的屏幕截图](./media/internet-unsecured-client-and-service/public-unsecured-internet.gif)  
   
 |特征|描述|  
 |--------------------|-----------------|  
-|安全模式|无|  
+|安全模式|None|  
 |传输|HTTP|  
 |绑定|<xref:System.ServiceModel.BasicHttpBinding> 在代码中，或[ \<basicHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)配置中的元素。|  
 |互操作性|与现有的 Web 服务客户端和服务进行互操作|  
-|身份验证|无|  
-|完整性|无|  
-|保密性|无|  
+|身份验证|None|  
+|完整性|None|  
+|保密性|None|  
   
 ## <a name="service"></a>服务  
  下面的代码和配置应独立运行。 执行下列操作之一：  
@@ -72,7 +72,7 @@ ms.locfileid: "54643801"
   
 -   使用代码（和客户端代码）创建独立客户端。  
   
--   创建不定义任何终结点地址的客户端。 而使用将配置名称作为参数的客户端构造函数。 例如：  
+-   创建不定义任何终结点地址的客户端。 而使用将配置名称作为自变量的客户端构造函数。 例如：  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  

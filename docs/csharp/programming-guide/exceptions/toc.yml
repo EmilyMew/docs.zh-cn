@@ -1,0 +1,24 @@
+items:
+- name: 异常和异常处理
+  href: index.md
+  items:
+  - name: 使用异常
+    href: using-exceptions.md
+  - name: 异常处理
+    href: exception-handling.md
+  - name: 创建和引发异常
+    href: creating-and-throwing-exceptions.md
+  - name: 编译器生成的异常
+    href: compiler-generated-exceptions.md
+  - name: 如何：使用 try-catch 处理异常
+    href: how-to-handle-an-exception-using-try-catch.md
+  - name: 如何：使用 finally 执行清除代码
+    href: how-to-execute-cleanup-code-using-finally.md
+  - name: 如何：捕捉非 CLS 异常
+    href: how-to-catch-a-non-cls-exception.md
+ms.openlocfilehash: 391605df4d623451a4a1c830a48322c7a14eef7c
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467908"

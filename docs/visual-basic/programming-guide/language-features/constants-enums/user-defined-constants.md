@@ -9,12 +9,12 @@ helpviewer_keywords:
 - constants [Visual Basic], user-defined
 - circular references between constants [Visual Basic]
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
-ms.openlocfilehash: e519fcaf90c6f18e75d5c409cbe7067d5db36429
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: f0196457235ad77df545a367573f62b43209269d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56975935"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58813907"
 ---
 # <a name="user-defined-constants-visual-basic"></a>用户定义的常量 (Visual Basic)
 常量是有意义的名称采用的数字或字符串不会更改的位置。 顾名思义，常量存储在应用程序的执行过程中保持不变的值。 您可以使用由该控件或组件，定义的常量或可以创建你自己。 创建自己的常量被称为*用户定义*。  
@@ -56,6 +56,7 @@ ms.locfileid: "56975935"
  如果发生一次，Visual Basic 生成编译器错误。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Const 语句](../../../../visual-basic/language-reference/statements/const-statement.md)
 - [常量和文本数据类型](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)
 - [常量和枚举](../../../../visual-basic/programming-guide/language-features/constants-enums/index.md)

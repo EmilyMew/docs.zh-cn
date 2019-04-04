@@ -4,12 +4,12 @@ description: .NET 微服务和 Web 应用程序中的安全性 - 了解 ASP .NET
 author: mjrousos
 ms.author: wiwagn
 ms.date: 10/19/2018
-ms.openlocfilehash: 0c8f827d8e4d80a0bcd69af5ab39ea2b6269f2b6
-ms.sourcegitcommit: 542aa405b295955eb055765f33723cb8b588d0d0
+ms.openlocfilehash: 36cd8eaf7ffe78a29762398044dc1803adc1b200
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362452"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58466356"
 ---
 # <a name="about-authorization-in-net-microservices-and-web-applications"></a>关于 .NET 微服务和 Web 应用中的授权
 
@@ -114,16 +114,16 @@ ASP.NET Core [授权文档](https://docs.asp.net/en/latest/security/authorizatio
 ## <a name="additional-resources"></a>其他资源
 
 - **ASP.NET Core 身份验证** \
-  [*https://docs.microsoft.com/aspnet/core/security/authentication/identity*](/aspnet/core/security/authentication/identity)
+  [https://docs.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
 
 - **ASP.NET Core 授权** \
-  [*https://docs.microsoft.com/aspnet/core/security/authorization/introduction*](/aspnet/core/security/authorization/introduction)
+  [https://docs.microsoft.com/aspnet/core/security/authorization/introduction](/aspnet/core/security/authorization/introduction)
 
 - **基于角色的授权** \
-  [*https://docs.microsoft.com/aspnet/core/security/authorization/roles*](/aspnet/core/security/authorization/roles)
+  [https://docs.microsoft.com/aspnet/core/security/authorization/roles](/aspnet/core/security/authorization/roles)
 
 - **基于自定义策略的授权** \
-  [*https://docs.microsoft.com/aspnet/core/security/authorization/policies*](/aspnet/core/security/authorization/policies)
+  [https://docs.microsoft.com/aspnet/core/security/authorization/policies](/aspnet/core/security/authorization/policies)
 
 >[!div class="step-by-step"]
 >[上一页](index.md)

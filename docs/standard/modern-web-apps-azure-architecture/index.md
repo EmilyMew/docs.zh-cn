@@ -8,7 +8,7 @@ ms.date: 01/30/2019
 
 # <a name="architect-modern-web-applications-with-aspnet-core-and-azure"></a>使用 ASP.NET Core 和 Azure 构建新式 Web 应用程序
 
-![封面图像](./media/cover.png)
+![“架构新式 Web 应用程序”指南的封面图像。](./media/index/web-application-guide-cover-image.png)
 
 发布者
 

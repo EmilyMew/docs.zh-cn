@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Main method [Visual Basic]
 - main function
 ms.assetid: f0db283e-f283-4464-b521-b90858cc1b44
-ms.openlocfilehash: b84bf20acaaa912e47102973b0484d635f1aa244
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 641edd2d0e0dde5f509c8fa77ccf65358fa76a31
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54679417"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58833660"
 ---
 # <a name="main-procedure-in-visual-basic"></a>Visual Basic 中的 Main 过程
 每个 Visual Basic 应用程序必须包含被调用的过程`Main`。 此过程可用作起始点并为应用程序的总体控制。 .NET Framework 调用你`Main`时它已加载你的应用程序并已准备好将控制传递给它的过程。 除非要创建 Windows 窗体应用程序，必须编写`Main`运行其自己的应用程序的过程。  
@@ -109,6 +109,7 @@ ms.locfileid: "54679417"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>
 - <xref:System.Array.Length%2A>
 - <xref:Microsoft.VisualBasic.Information.UBound%2A>

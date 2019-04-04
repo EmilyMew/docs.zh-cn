@@ -2,12 +2,12 @@
 title: 如何：分析字符串 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 896e1b4b-f9bd-4975-8bc1-55b6badce1ac
-ms.openlocfilehash: 513a82cbed796be42eb8e531ec71221ef0ac267f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 815e94b3b41c2c0cc1d18d598307ab292919bea4
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54652444"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827297"
 ---
 # <a name="how-to-parse-a-string-visual-basic"></a>如何：分析字符串 (Visual Basic)
 本主题演示如何创建 XML 树中的C#。  
@@ -50,4 +50,5 @@ Dim contacts as XElement = _
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [分析 XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)

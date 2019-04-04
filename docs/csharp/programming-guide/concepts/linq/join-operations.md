@@ -2,12 +2,12 @@
 title: 联接运算 (C#)
 ms.date: 07/20/2015
 ms.assetid: 5105e0da-1267-4c00-837a-f0e9602279b8
-ms.openlocfilehash: d8753ef0563a665767204c1ebc0af4e4a23b4455
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: db42874becaf9760b7060d7f306cc20f950f143a
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54537941"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411455"
 ---
 # <a name="join-operations-c"></a>联接运算 (C#)
 联接两个数据源就是将一个数据源中的对象与另一个数据源中具有相同公共属性的对象相关联。  
@@ -18,7 +18,7 @@ ms.locfileid: "54537941"
   
  下图显示了一个概念性视图，其中包含两个集合以及这两个集合中的包含在内部联接或左外部联接中的元素。  
   
- ![显示内部/外部的两个重叠圆圈。](../../../../csharp/programming-guide/concepts/linq/media/joincircles.png "JoinCircles")  
+ ![显示内部/外部的两个重叠圆圈。](./media/join-operations/join-method-overlapping-circles.png)  
   
 ## <a name="methods"></a>方法  
   

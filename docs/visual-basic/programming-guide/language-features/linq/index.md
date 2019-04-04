@@ -2,8 +2,14 @@
 title: Visual Basic 中的 LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
-  - 'what''s new [Visual Basic]'
+- what's new [Visual Basic]
 ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
+ms.openlocfilehash: 286e6266ef8f11a7a09a9e9fe898276a6734a96d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824853"
 ---
 # <a name="linq-in-visual-basic"></a>Visual Basic 中的 LINQ
 此部分收录了有助于你了解和使用 Visual Basic 和 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 的概述、示例和背景信息。  
@@ -40,6 +46,7 @@ ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
  通过示例展示了如何将 LINQ 查询结果作为特定类型（而不是匿名类型）返回。  
   
 ## <a name="see-also"></a>请参阅
+
 - [LINQ（语言集成查询）](../../../../visual-basic/programming-guide/concepts/linq/index.md)
 - [Visual Basic 中的 LINQ to XML 概述](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)
 - [LINQ to DataSet 概述](../../../../framework/data/adonet/linq-to-dataset-overview.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - XML comment literal [Visual Basic]
 - XML literals [Visual Basic], comment
 ms.assetid: 634c1cee-5e01-48d0-88d7-2dd55e4a9e52
-ms.openlocfilehash: 1f8526c4b67b7d975b11f6ef5dada2b45bb6b1df
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 149bbac6d301a9c2f166d05698e3780171126cb3
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56964172"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827271"
 ---
 # <a name="xml-comment-literal-visual-basic"></a>XML 注释文本 (Visual Basic)
 一个文本表示<xref:System.Xml.Linq.XComment>对象。  
@@ -56,6 +56,7 @@ ms.locfileid: "56964172"
  [!code-vb[VbXMLSamples#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples4.vb#9)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Xml.Linq.XComment>
 - [XML 元素文本](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
 - [XML 文本](../../../visual-basic/language-reference/xml-literals/index.md)

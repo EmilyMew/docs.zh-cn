@@ -6,12 +6,12 @@ helpviewer_keywords:
 - symbols, operators
 - Visual Basic code, operators
 ms.assetid: cb44c210-686f-4417-a13f-51c0d60161f8
-ms.openlocfilehash: 5a892476be71b74cdac82d9751e3b9806359e64e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3fbb8dd0dafb0d16531f13280a2033e4f085897f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54671481"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58816626"
 ---
 # <a name="operators-summary-visual-basic"></a>运算符摘要 (Visual Basic)
 Visual Basic 语言关键字和运行时库成员按目的组织和使用。  
@@ -26,5 +26,6 @@ Visual Basic 语言关键字和运行时库成员按目的组织和使用。
 |其他操作|[AddressOf](../../../visual-basic/language-reference/operators/addressof-operator.md), [Await](../../../visual-basic/language-reference/operators/await-operator.md), [GetType](../../../visual-basic/language-reference/operators/gettype-operator.md)|  
   
 ## <a name="see-also"></a>请参阅
+
 - [关键字](../../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic 运行库成员](../../../visual-basic/language-reference/runtime-library-members.md)

@@ -1,0 +1,35 @@
+items:
+- name: 迁移指南
+  href: index.md
+  items:
+  - name: 应用程序兼容性
+    href: application-compatibility.md
+    items:
+    - name: 运行时更改
+      href: runtime/index.md
+    - name: 重定目标更改
+      href: retargeting/index.md
+  - name: 版本兼容性
+    href: version-compatibility.md
+  - name: 版本和依赖关系
+    href: versions-and-dependencies.md
+    items:
+    - name: 如何：确定已安装的 .NET Framework 版本
+      href: how-to-determine-which-versions-are-installed.md
+      items:
+      - name: .NET Framework 版本密钥和 Windows 操作系统版本
+        href: release-keys-and-os-versions.md
+    - name: 如何：确定安装了哪些 .NET Framework 更新
+      href: how-to-determine-which-net-framework-updates-are-installed.md
+  - name: 如何：将应用配置为支持 .NET Framework 4 或更高版本
+    href: how-to-configure-an-app-to-support-net-framework-4-or-4-5.md
+  - name: 从 .NET Framework 1.1 迁移
+    href: migrating-from-the-net-framework-1-1.md
+  - name: .NET Framework 4 迁移问题
+    href: net-framework-4-migration-issues.md
+ms.openlocfilehash: c46b7ac4680e6aa988e39055cb51c80a4bb0e8b4
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468384"

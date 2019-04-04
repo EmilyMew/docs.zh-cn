@@ -29,12 +29,12 @@ helpviewer_keywords:
 - Dim statement [Visual Basic], syntax
 - variables [Visual Basic], member and local
 ms.assetid: fae3eca1-f0b2-4400-994b-7aa58a848448
-ms.openlocfilehash: 7bee6bffcfe0660d1661cd2c8e2ddf0528e98620
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: cab1cc07d23a44e57bdb0962a323b014308cb1e5
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57360259"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58836553"
 ---
 # <a name="dim-statement-visual-basic"></a>Dim 语句 (Visual Basic)
 声明，并为一个或多个变量分配存储空间。  
@@ -314,6 +314,7 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
  [!code-vb[VbVbalrStatements#145](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#145)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [Const 语句](../../../visual-basic/language-reference/statements/const-statement.md)
 - [ReDim 语句](../../../visual-basic/language-reference/statements/redim-statement.md)
 - [Option Explicit 语句](../../../visual-basic/language-reference/statements/option-explicit-statement.md)

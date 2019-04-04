@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID28
 ms.assetid: bfcd792b-ac29-4158-81fc-ea0c13f4ffa2
-ms.openlocfilehash: 2f91763888069b6dca90da03995dc1b6812fd426
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 25905e65e74b11d167d3ce2ad258599fb958eb88
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54655486"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814596"
 ---
 # <a name="out-of-stack-space-visual-basic"></a>堆栈空间不足 (Visual Basic)
 堆栈是内存的动态与正在执行程序的需求的增长和压缩的工作区域。 已超出其限制。  
@@ -29,4 +29,5 @@ ms.locfileid: "54655486"
 6.  请确保你不会通过触发的事件的事件过程调用堆栈上的已导致"事件级联"。 级联事件类似于未终止的递归过程调用，但是它不太明显，因为默认情况下，调用由 Visual Basic 而不是在代码中显式调用。 使用`Calls`对话框，以便查看活动在堆栈上的过程。  
   
 ## <a name="see-also"></a>请参阅
+
 - [“内存”窗口](/visualstudio/debugger/memory-windows)

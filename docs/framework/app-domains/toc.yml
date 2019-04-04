@@ -1,0 +1,105 @@
+items:
+- name: 应用程序域和程序集
+  href: index.md
+  items:
+  - name: 公共语言运行时中的程序集
+    href: assemblies-in-the-common-language-runtime.md
+    items:
+    - name: 程序集内容
+      href: assembly-contents.md
+    - name: 程序集清单
+      href: assembly-manifest.md
+    - name: 全局程序集缓存
+      href: gac.md
+    - name: 具有强名称的程序集
+      href: strong-named-assemblies.md
+    - name: 程序集安全注意事项
+      href: assembly-security-considerations.md
+    - name: 程序集版本控制
+      href: assembly-versioning.md
+    - name: 程序集位置
+      href: assembly-placement.md
+    - name: 程序集和并行执行
+      href: assemblies-and-side-by-side-execution.md
+  - name: 应用程序域
+    href: application-domains.md
+  - name: 应用程序域和程序集帮助主题
+    href: application-domains-and-assemblies-how-to-topics.md
+  - name: 使用应用程序域
+    href: use.md
+    items:
+    - name: 如何：创建应用程序域
+      href: how-to-create-an-application-domain.md
+    - name: 如何：卸载应用程序域
+      href: how-to-unload-an-application-domain.md
+    - name: 如何：配置应用程序域
+      href: how-to-configure-an-application-domain.md
+    - name: 从应用程序域中检索安装信息
+      href: retrieve-setup-information.md
+    - name: 如何：将程序集加载到应用程序域中
+      href: how-to-load-assemblies-into-an-application-domain.md
+    - name: 如何：从程序集获得类型和成员信息
+      href: how-to-obtain-type-and-member-information-from-an-assembly.md
+    - name: 卷影复制程序集
+      href: shadow-copy-assemblies.md
+    - name: 如何：接收第一机会异常通知
+      href: how-to-receive-first-chance-exception-notifications.md
+    - name: 解决程序集加载
+      href: resolve-assembly-loads.md
+  - name: 使用程序集编程
+    href: programming-with-assemblies.md
+    items:
+    - name: 创建程序集
+      href: create-assemblies.md
+    - name: 程序集名称
+      href: assembly-names.md
+    - name: 如何：确定程序集的完全限定名
+      href: how-to-determine-assembly-fully-qualified-name.md
+    - name: 在完全信任环境中运行 Intranet 应用程序
+      href: running-intranet-applications-in-full-trust.md
+    - name: 程序集位置
+      href: assembly-location.md
+    - name: 如何：生成单文件程序集
+      href: how-to-build-a-single-file-assembly.md
+    - name: 多文件程序集
+      href: multifile-assemblies.md
+    - name: 如何：生成多文件程序集
+      href: how-to-build-a-multifile-assembly.md
+    - name: 设置程序集特性
+      href: set-assembly-attributes.md
+    - name: 创建和使用具有强名称的程序集
+      href: create-and-use-strong-named-assemblies.md
+      items:
+      - name: 如何：创建公钥/私钥对
+        href: how-to-create-a-public-private-key-pair.md
+      - name: 如何：使用强名称为程序集签名
+        href: how-to-sign-an-assembly-with-a-strong-name.md
+      - name: 改进的强命名
+        href: enhanced-strong-naming.md
+      - name: 如何：引用具有强名称的程序集
+        href: how-to-reference-a-strong-named-assembly.md
+      - name: 如何：禁用强名称跳过功能
+        href: how-to-disable-the-strong-name-bypass-feature.md
+    - name: 延迟为程序集签名
+      href: delay-sign-assembly.md
+    - name: 使用程序集和全局程序集缓存
+      href: working-with-assemblies-and-the-gac.md
+      items:
+      - name: 如何：将程序集安装到全局程序集缓存
+        href: how-to-install-an-assembly-into-the-gac.md
+      - name: 如何：查看全局程序集缓存的内容
+        href: how-to-view-the-contents-of-the-gac.md
+      - name: 如何：从全局程序集缓存中删除程序集
+        href: how-to-remove-an-assembly-from-the-gac.md
+      - name: 在服务组件中使用全局程序集缓存
+        href: use-serviced-components-with-the-gac.md
+    - name: 如何：查看程序集内容
+      href: how-to-view-assembly-contents.md
+    - name: 公共语言运行时中的类型转发
+      href: type-forwarding-in-the-common-language-runtime.md
+ms.openlocfilehash: 8a928eda090b144daf61c768fb5d8b8de079af16
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467986"

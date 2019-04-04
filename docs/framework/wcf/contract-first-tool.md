@@ -2,12 +2,12 @@
 title: 协定优先工具
 ms.date: 03/30/2017
 ms.assetid: 0a880690-f460-4475-a5f4-9f91ce08fcc6
-ms.openlocfilehash: ef19843d6c8a9de0b926dd8512f5a58a5966e1bf
-ms.sourcegitcommit: 69bf8b719d4c289eec7b45336d0b933dd7927841
+ms.openlocfilehash: ad0566eaff08d27e8368f091388adda7376a37ef
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57846176"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819614"
 ---
 # <a name="contract-first-tool"></a>协定优先工具
 服务协定往往需要从现有的服务创建。 在 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 中，可以使用协定优先工具从现有服务自动创建数据协定类。 要使用协定优先工具，必须本地下载 XML 架构定义 (XSD) 文件；该工具无法通过 HTTP 导入远程数据协定。
@@ -61,11 +61,11 @@ ms.locfileid: "57846176"
 ## <a name="configuring-contract-first-options"></a>配置协定优先选项
  协定优先选项可以配置 WCF 项目中的属性菜单中。 若要启用协定优先开发，请选择**XSD 作为类型定义语言**项目属性窗口的 WCF 页中的复选框。
 
- ![WCF 项目选项显示协定&#45;第一个](../../../docs/framework/wcf/media/contractfirstoptions.png "ContractFirstOptions")
+ ![协定优先开发启用 WCF 选项的屏幕截图。](./media/contract-first-tool/contract-first-options.png)
 
  要配置高级属性，请单击“高级”按钮。
 
- ![高级协定&#45;第一个属性](../../../docs/framework/wcf/media/contractfirstadvanced.png "ContractFirstAdvanced")
+ ![高级的协定代码生成设置对话框。](./media/contract-first-tool/advanced-contract-settings.png)
 
  可以从协定中配置下列高级设置用于代码生成。 只能为项目中的所有文件配置设置；目前不能为单独的文件配置设置。
 
@@ -118,9 +118,9 @@ ms.locfileid: "57846176"
 using MyProjectNamespace.ContractTypes;
 ```
 
- 然后，服务协定中定义的类型将在项目中变得可解析，如下所示。
+ 服务协定中定义的类型然后，将在项目中，可解析，如下所示：
 
- ![使用类型派生自服务协定](../../../docs/framework/wcf/media/contractfirsttypes.png "ContractFirstTypes")
+ ![SearchRequest 类键入前几个字母后显示在 IntelliSense 中。](./media/contract-first-tool/service-contract-types.png)
 
  在 GeneratedXSDTypes.cs 文件中创建由工具生成的类型。 中创建的文件\<项目目录 > /obj/\<生成配置 > /XSDGeneratedCode/ 目录默认情况下。 本主题开头的示例架构转换为如下所示：
 

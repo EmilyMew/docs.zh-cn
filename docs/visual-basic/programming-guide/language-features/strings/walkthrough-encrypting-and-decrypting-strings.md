@@ -7,12 +7,12 @@ helpviewer_keywords:
 - decryption [Visual Basic], strings
 - strings [Visual Basic], decrypting
 ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
-ms.openlocfilehash: fe91e0062ac35859a3b85eb080d16fb88a6f9aaf
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: aaf8238a330ceb9e1cf4f9ff5892d1db1d951faa
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56972776"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826790"
 ---
 # <a name="walkthrough-encrypting-and-decrypting-strings-in-visual-basic"></a>演练：加密和解密在 Visual Basic 中的字符串
 本演练演示如何使用<xref:System.Security.Cryptography.DESCryptoServiceProvider>类来加密和解密使用加密服务提供程序 (CSP) 版本的三重数据加密标准字符串 (<xref:System.Security.Cryptography.TripleDES>) 算法。 第一步是创建一个简单的包装器类，它封装 3DES 算法，并将加密的数据存储为 base-64 编码字符串。 然后，该包装器用于安全地存储在可公开访问的文本文件中的私有用户数据。  
@@ -75,6 +75,7 @@ ms.locfileid: "56972776"
      测试应用程序时，请注意，它将解密数据，是否提供了错误的密码。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Security.Cryptography>
 - <xref:System.Security.Cryptography.DESCryptoServiceProvider>
 - <xref:System.Security.Cryptography.DES>

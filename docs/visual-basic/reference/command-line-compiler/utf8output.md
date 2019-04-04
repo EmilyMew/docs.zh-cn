@@ -6,12 +6,12 @@ helpviewer_keywords:
 - utf8output compiler option [Visual Basic]
 - /utf8output compiler option [Visual Basic]
 ms.assetid: 8ab36b1e-027a-49ac-85b4-f48997d9e4d6
-ms.openlocfilehash: e6bb04364c2f92129993e19c746fd7cb9c18dc8a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 75369c3bcb19afbf98bfb80bc3e439f996d2a9d0
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54648529"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58833624"
 ---
 # <a name="-utf8output-visual-basic"></a>-utf8output (Visual Basic)
 显示使用 UTF-8 编码的编译器输出。  
@@ -40,5 +40,6 @@ vbc -utf8output in.vb
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)
 - [示例编译命令行](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

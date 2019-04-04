@@ -3,12 +3,12 @@ title: 使用模式匹配功能来扩展数据类型
 description: 本高级教程展示了如何使用模式匹配技术，通过单独创建的数据和算法来创建功能。
 ms.date: 03/13/2019
 ms.custom: mvc
-ms.openlocfilehash: 0d7c853709d0986710bf4d1a72daeb1f7cda3109
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: c064af5fdf85587d0c4fa1471894122d6fe0d2f7
+ms.sourcegitcommit: e994e47d3582bf09ae487ecbd53c0dac30aebaf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58125806"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58262522"
 ---
 # <a name="tutorial-using-pattern-matching-features-to-extend-data-types"></a>教程：使用模式匹配功能来扩展数据类型
 
@@ -17,9 +17,9 @@ C# 7 引入了基本模式匹配功能。 C# 8 通过新增表达式和模式，
 在本教程中，你将了解：
 
 > [!div class="checklist"]
-> * 如何识别应使用模式匹配的情况。
-> * 如何使用模式匹配表达式来实现基于类型和属性值的行为。
-> * 如何结合使用模式匹配和其他技术来创建完整算法。
+> * 识别应使用模式匹配的情况。
+> * 使用模式匹配表达式来实现基于类型和属性值的行为。
+> * 结合使用模式匹配和其他方法来创建完整算法。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -45,12 +45,12 @@ C# 7 引入了基本模式匹配功能。 C# 8 通过新增表达式和模式，
 
 ## <a name="pattern-matching-designs"></a>模式匹配设计
 
-本教程中的方案重点要解决的问题类型非常适合使用模式匹配来解决： 
+本教程中使用的方案重点介绍了非常适合适用模式匹配解决的问题类型：
 
 - 需要使用的对象不在匹配目标的对象层次结构中。 可能要使用属于不相关系统的类。
 - 要添加的功能不属于这些类的核心抽象。 车辆通行费因不同车辆类型而异，但通行费不是车辆的核心功能。
 
-如果不一起描述数据形状和对相应数据执行的操作，C# 中的模式匹配功能可以简化这一切。 
+如果不一起描述数据形状和对相应数据执行的操作，C# 中的模式匹配功能可以简化这一切。
 
 ## <a name="implement-the-basic-toll-calculations"></a>实现基本通行费计算
 
@@ -61,7 +61,7 @@ C# 7 引入了基本模式匹配功能。 C# 8 通过新增表达式和模式，
 - `Bus` 的通行费为 5.00 美元。
 - `DeliveryTruck` 的通行费为 10.00 美元
 
-新建 `TollCalculator` 类，并对车辆类型实现模式匹配，以获取通行费金额。
+新建 `TollCalculator` 类，并对车辆类型实现模式匹配，以获取通行费金额。 以下代码显示了 `TollCalculator` 的初始实现。
 
 ```csharp
 using System;
@@ -87,7 +87,7 @@ namespace toll_calculator
 }
 ```
 
-上面的代码使用测试类型模式的 switch 表达式（与 [`switch`](../language-reference/keywords/switch.md) 语句不同）。 switch 表达式以变量（上面代码中的 `vehicle`）开头，后跟 `switch` 关键字。 接下来是大括号内的所有 switch 臂。 `switch` 表达式对 `switch` 语句周围的语法进行了其他优化。 不仅省略了 `case` 关键字，还让每个臂的结果成为表达式。 最后两个臂展示了一种新语言功能。 `{ }` 子句匹配与之前的臂不匹配的任何非 null 对象。 此臂捕获传递到这个方法的所有不正确类型。 最后的 `null` 模式在 `null` 传递到此方法时进行捕获。 `null` 模式可以是最后一个，因为其他类型模式仅匹配正确类型的非 null 对象。
+上面的代码使用测试类型模式的 switch 表达式（与 [`switch`](../language-reference/keywords/switch.md) 语句不同）。 switch 表达式以变量（上面代码中的 `vehicle`）开头，后跟 `switch` 关键字。 接下来是大括号内的所有 switch 臂。 `switch` 表达式对 `switch` 语句周围的语法进行了其他优化。 不仅省略了 `case` 关键字，还让每个臂的结果成为表达式。 最后两个臂展示了一种新语言功能。 `{ }` 子句匹配与之前的臂不匹配的任何非 null 对象。 此臂捕获传递到这个方法的所有不正确类型。  `{ }` 事例必须遵循每种车辆类型的情况。 如果订单被撤销，则 `{ }` 事例优先。 最后，`null` 模式检测何时将 `null` 传递给此方法。 `null` 模式可以是最后一个，因为其他类型模式仅匹配正确类型的非 null 对象。
 
 可使用 `Program.cs` 中的以下代码来测试上面的代码：
 
@@ -121,7 +121,7 @@ namespace toll_calculator
             }
             catch (ArgumentException e)
             {
-                Console.WriteLine("Caught an argument exception when using the wrong type", DayOfWeek.Friday);
+                Console.WriteLine("Caught an argument exception when using the wrong type");
             }
             try
             {
@@ -150,7 +150,7 @@ namespace toll_calculator
 - 乘客数不到满载量 50% 的巴士需额外支付 2.00 美元。
 - 乘客数超过满载量 90% 的巴士可享受 1.00 美元折扣。
 
-可使用属性模式在同一 switch 表达式中实现这些规则。 属性模式在类型已确定后检查对象的属性。  `Car` 的一个子句扩展为四个不同的子句：
+可使用属性模式在同一 switch 表达式中实现这些规则。 属性模式在类型已确定后检查对象的属性。 `Car` 的一个子句扩展为四个不同的子句：
 
 ```csharp
 vehicle switch
@@ -158,13 +158,13 @@ vehicle switch
     Car { Passengers: 0}        => 2.00m + 0.50m,
     Car { Passengers: 1 }       => 2.0m,
     Car { Passengers: 2}        => 2.0m - 0.50m,
-    Car c when c.Passengers > 2 => 2.00m - 1.0m,
+    Car c                       => 2.00m - 1.0m,
 
     // ...
 };
 ```
 
-前三个子句测试类型 `Car`，然后检查 `Passengers` 属性的值。 如果两个条件都匹配，系统便会计算并返回相应表达式。 最后一个子句展示了 switch 臂的 `when` 子句。 `when` 子句用于对属性测试条件（相等性除外）。 在上面的示例中，`when` 子句测试条件，以确定在汽车内的乘客数是否超过 2 名。 严格地说，并无必要在此示例中这样做。
+前三个子句测试类型 `Car`，然后检查 `Passengers` 属性的值。 如果两个条件都匹配，系统便会计算并返回相应表达式。
 
 还可以类似方式扩展出租车的子句：
 
@@ -192,14 +192,14 @@ vehicle switch
     // ...
 
     Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
-    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
+    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m,
     Bus b => 5.00m,
-    
+
     // ...
 };
 ```
 
-通行费收取机构并不关注运货卡车中的乘客数。 相反，他们根据运货卡车的重量级别收取更多费用。 超过 5000 磅的运货卡车需额外支付 5.00 美元。 不到 3000 磅的轻型运货卡车可享受 2.00 美元折扣。  此规则通过以下代码实现：
+通行费收取机构并不关注运货卡车中的乘客数。 相反，他们根据运货卡车的重量级别收取更多费用。 超过 5000 磅的运货卡车需额外支付 5.00 美元。 3000 磅以下的轻型卡车可享受 2.00 美元折扣。 此规则通过以下代码实现：
 
 ```csharp
 vehicle switch
@@ -212,7 +212,7 @@ vehicle switch
 };
 ```
 
-完成后的方法如下所示：
+以上代码展示了 switch 臂的 `when` 子句。 `when` 子句用于对属性测试条件（相等性除外）。 完成后的方法如下所示：
 
 ```csharp
 vehicle switch
@@ -220,17 +220,17 @@ vehicle switch
     Car { Passengers: 0}        => 2.00m + 0.50m,
     Car { Passengers: 1}        => 2.0m,
     Car { Passengers: 2}        => 2.0m - 0.50m,
-    Car c when c.Passengers > 2 => 2.00m - 1.0m,
-   
+    Car c                       => 2.00m - 1.0m,
+
     Taxi { Fares: 0}  => 3.50m + 1.00m,
     Taxi { Fares: 1 } => 3.50m,
     Taxi { Fares: 2}  => 3.50m - 0.50m,
     Taxi t            => 3.50m - 1.00m,
-    
+
     Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
-    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
+    Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m,
     Bus b => 5.00m,
-    
+
     DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
     DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
     DeliveryTruck t => 10.00m,
@@ -252,7 +252,7 @@ public decimal CalculateToll(object vehicle) =>
             2 => 2.0m - 0.5m,
             _ => 2.00m - 1.0m
         },
-    
+
         Taxi t => t.Fares switch
         {
             0 => 3.50m + 1.00m,
@@ -260,11 +260,11 @@ public decimal CalculateToll(object vehicle) =>
             2 => 3.50m - 0.50m,
             _ => 3.50m - 1.00m
         },
-    
+
         Bus b when ((double)b.Riders / (double)b.Capacity) < 0.50 => 5.00m + 2.00m,
-        Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m, 
+        Bus b when ((double)b.Riders / (double)b.Capacity) > 0.90 => 5.00m - 1.00m,
         Bus b => 5.00m,
-    
+
         DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
         DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
         DeliveryTruck t => 10.00m,
@@ -309,7 +309,7 @@ public decimal CalculateToll(object vehicle) =>
 
 三个变量有 16 种不同的组合。 通过结合某些条件，将能简化最终的 switch 表达式。
 
-通行费收取系统在收取通行费时对时间使用 <xref:System.DateTime> 结构。 生成根据上表创建变量的成员方法。  以下函数用作模式匹配 switch 表达式，以表示 <xref:System.DateTime> 是表示周末，还是表示工作日：
+通行费收取系统在收取通行费时对时间使用 <xref:System.DateTime> 结构。 生成根据上表创建变量的成员方法。 以下函数用作模式匹配 switch 表达式，以表示 <xref:System.DateTime> 是表示周末，还是表示工作日：
 
 ```csharp
 private static bool IsWeekDay(DateTime timeOfToll) =>
@@ -339,7 +339,7 @@ private static bool IsWeekDay(DateTime timeOfToll) =>
 
 [!code-csharp[FullTuplePattern](~/samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#TuplePatternOne)]
 
-上面的代码虽起作用，但可以进行简化。 周末对应的所有八个组合的通行费都相同。 可以将所有八个组合都替换为下面的一行代码：
+上面的代码虽起作用，但可以进行简化。 周末对应的所有八个组合的通行费都相同。 可以将所有八个组合都替换为下面的代码：
 
 ```csharp
 (false, _, _) => 1.0m,
@@ -372,9 +372,9 @@ public decimal PeakTimePremium(DateTime timeOfToll, bool inbound) =>
 
 [!code-csharp[SimplifiedTuplePattern](../../../samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#FinalTuplePattern)]
 
-此示例重点展示了模式匹配的优势之一： 模式分支是依序计算的。 如果你将它们重排为更早的分支处理后续的子句之一，便会看到编译器发出的警告。 借助这些语言规则，可以更轻松地执行前面的简化，同时确信代码未更改。
+此示例突出了模式匹配的一个优点：模式分支是依序计算的。 如果将它们重排为更早的分支处理后续事例之一，编译器便会提示你无法访问的代码。 借助这些语言规则，可以更轻松地执行前面的简化，同时确信代码未更改。
 
-模式匹配提供了实现解决方案的自然语法，这些解决方案不同于使用面向对象的技术创建的解决方案。 云会导致数据和功能分离。 数据形状和对相应数据执行的操作不一定在一起进行描述。 在本教程中，你通过与原始功能完全不同的方法使用了现有数据。 使用模式匹配，可以针对这些类型编写功能，即使无法扩展类型，也不例外。
+模式匹配使某些类型的代码更具可读性，并且当你无法向类添加代码时，它会提供面向对象技术的替代方法。 云会导致数据和功能分离。 数据形状和对相应数据执行的操作不一定在一起进行描述。 在本教程中，你通过与原始功能完全不同的方法使用了现有数据。 使用模式匹配，可以覆盖这些类型编写功能，即使无法扩展类型，也不例外。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30205
 ms.assetid: 53c7f825-a737-4b76-a1fa-f67745b8bd40
-ms.openlocfilehash: 1e4c46088d3d89d9c2066e33def880941107575f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ab6a4a0e6736e2af9c1fa0dd170b6aa4c42d9e4a
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54565015"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58817144"
 ---
 # <a name="end-of-statement-expected"></a>需要语句结束
 该语句是语法上完成，但其他编程元素如下所示完成该语句的元素。 需要在每个语句末尾行结束符。
@@ -28,5 +28,6 @@ ms.locfileid: "54565015"
 2.  完成该语句的元素之后插入一个行结束符。
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：在代码中拆分和合并语句](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
 - [语句](../../../visual-basic/programming-guide/language-features/statements.md)

@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 14812988-473f-44ae-b75f-fd5c2f21fb7b
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 384fd14a136dbd94725d7ef478c769a1dfce0c4c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9471d98bad9b0fbf7931f80b1e41a5e9169b2896
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54654654"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58466148"
 ---
 # <a name="types-of-isolation"></a>隔离的类型
 独立存储始终仅限创建它的用户访问。 为了实现这种隔离，公共语言运行时使用操作系统识别的相同用户标识，即与存储打开时的代码运行进程相关联的标识。 虽然此标识是已验证用户标识，但模拟可能会导致当前用户的标识发生动态变化。  
@@ -46,10 +46,9 @@ ms.locfileid: "54654654"
   
  这两种隔离都可以与漫游用户策略文件结合使用。 有关详细信息，请参阅[独立存储和漫游](#Roaming)部分。  
   
- 下图展示了存储在不同范围的隔离情况。  
+ 下图展示了存储在不同范围的隔离情况：  
   
- ![按用户和程序集隔离](../../../docs/standard/io/media/typesofisolation.gif "typesofisolation")  
-独立存储的类型  
+ ![显示按用户和程序集隔离的图表。](./media/types-of-isolation/isolated-storage-types.gif)  
   
  请注意，除漫游存储外，独立存储始终按计算机隐式隔离，因为它使用指定计算机的本地存储设备。  
   

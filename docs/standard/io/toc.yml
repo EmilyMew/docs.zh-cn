@@ -1,0 +1,73 @@
+items:
+- name: 文件和流 I/O
+  href: index.md
+  items:
+  - name: Windows 系统中的文件路径格式
+    href: file-path-formats.md
+  - name: 通用 I/O 任务
+    href: common-i-o-tasks.md
+    items:
+    - name: 如何：复制目录
+      href: how-to-copy-directories.md
+    - name: 如何：枚举目录和文件
+      href: how-to-enumerate-directories-and-files.md
+    - name: 如何：对新建的数据文件进行读取和写入
+      href: how-to-read-and-write-to-a-newly-created-data-file.md
+    - name: 如何：打开并追加到日志文件
+      href: how-to-open-and-append-to-a-log-file.md
+    - name: 如何：将文本写入文件
+      href: how-to-write-text-to-a-file.md
+    - name: 如何：从文件中读取文本
+      href: how-to-read-text-from-a-file.md
+    - name: 如何：从字符串中读取字符
+      href: how-to-read-characters-from-a-string.md
+    - name: 如何：向字符串写入字符
+      href: how-to-write-characters-to-a-string.md
+    - name: 如何：添加或删除访问控制列表条目
+      href: how-to-add-or-remove-access-control-list-entries.md
+    - name: 如何：压缩和解压缩文件
+      href: how-to-compress-and-extract-files.md
+    - name: 编写流
+      href: composing-streams.md
+    - name: 如何：在 .NET Framework 流和 Windows 运行时流之间进行转换
+      href: how-to-convert-between-dotnet-streams-and-winrt-streams.md
+  - name: 异步文件 I/O
+    href: asynchronous-file-i-o.md
+  - name: 处理 I/O 错误
+    href: handling-io-errors.md
+  - name: 独立存储
+    href: isolated-storage.md
+    items:
+    - name: 隔离的类型
+      href: types-of-isolation.md
+    - name: 如何：获取独立存储的存储区
+      href: how-to-obtain-stores-for-isolated-storage.md
+    - name: 如何：枚举独立存储的存储区
+      href: how-to-enumerate-stores-for-isolated-storage.md
+    - name: 如何：删除独立存储中的存储区
+      href: how-to-delete-stores-in-isolated-storage.md
+    - name: 如何：预见独立存储中的空间不足条件
+      href: how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
+    - name: 如何：在独立存储中创建文件和目录
+      href: how-to-create-files-and-directories-in-isolated-storage.md
+    - name: 如何：在独立存储中查找现有文件和目录
+      href: how-to-find-existing-files-and-directories-in-isolated-storage.md
+    - name: 如何：在独立存储中读取和写入文件
+      href: how-to-read-and-write-to-files-in-isolated-storage.md
+    - name: 如何：在独立存储中删除文件和目录
+      href: how-to-delete-files-and-directories-in-isolated-storage.md
+  - name: 管道
+    href: pipe-operations.md
+    items:
+    - name: 如何：使用匿名管道进行本地进程间通信
+      href: how-to-use-anonymous-pipes-for-local-interprocess-communication.md
+    - name: 如何：使用命名管道进行网络进程间通信
+      href: how-to-use-named-pipes-for-network-interprocess-communication.md
+  - name: 内存映射文件
+    href: memory-mapped-files.md
+ms.openlocfilehash: 2da7230409fe2ccb8e6b21c21cbee57d3cd134ac
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468588"

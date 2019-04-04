@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Assembly keyword [Visual Basic]
 - attribute blocks, Assembly keyword
 ms.assetid: 925e7471-3bdf-4b51-bb93-cbcfc6efc52f
-ms.openlocfilehash: e6cb7e7a2520d6bb586dab4ed0af75abb04fabd2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 819fa9cf1bd25e9426fb1e75925a269fcf7a71cd
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54726463"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819250"
 ---
 # <a name="assembly-visual-basic"></a>程序集 (Visual Basic)
 指定源文件开头特性应用于整个程序集。  
@@ -28,6 +28,6 @@ ms.locfileid: "54726463"
  您可以还将特性应用于程序集在 AssemblyInfo.vb 文件中，在这种情况下不需要在主源代码文件中使用特性块。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Module \<关键字>](../../../visual-basic/language-reference/modifiers/module-keyword.md)
 - [属性概述](../../../visual-basic/programming-guide/concepts/attributes/index.md)
-

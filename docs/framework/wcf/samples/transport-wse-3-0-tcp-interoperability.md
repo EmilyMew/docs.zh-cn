@@ -1,15 +1,15 @@
 ---
-title: 传输:WSE 3.0 TCP 互操作性
+title: 传输：WSE 3.0 TCP 互操作性
 ms.date: 03/30/2017
 ms.assetid: 5f7c3708-acad-4eb3-acb9-d232c77d1486
-ms.openlocfilehash: 870a0de493a4e60404d11115de58735e5fbb968f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 342c9c39eaa755363615dd83933cf00480e01c91
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54653003"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842351"
 ---
-# <a name="transport-wse-30-tcp-interoperability"></a>传输:WSE 3.0 TCP 互操作性
+# <a name="transport-wse-30-tcp-interoperability"></a>传输：WSE 3.0 TCP 互操作性
 WSE 3.0 TCP 互操作性传输示例演示如何实现 TCP 双工会话作为自定义 Windows Communication Foundation (WCF) 传输。 还演示如何通过网络，使用通道层的扩展性与已经过部署的现有系统进行交互。 以下步骤演示如何生成此自定义 WCF 传输：  
   
 1.  从 TCP 套接字开始，创建 <xref:System.ServiceModel.Channels.IDuplexSessionChannel> 的客户端和服务器实现以使用 DIME 组帧来描述消息边界。  
@@ -157,7 +157,7 @@ Received Body: to me.
 Press enter.  
 ```  
   
- 服务器:  
+ 服务器：  
   
 ```  
 Listening for messages at soap://stockservice.contoso.com/wse/samples/2003/06/TcpSyncStockService  
@@ -195,4 +195,3 @@ Symbols:
   
     8.  TCP 传输测试客户端将在一个新控制台中启动。 客户端从服务请求股票报价，然后将结果显示在其控制台窗口中。  
   
-## <a name="see-also"></a>请参阅

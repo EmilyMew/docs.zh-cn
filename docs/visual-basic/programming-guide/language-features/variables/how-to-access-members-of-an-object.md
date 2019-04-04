@@ -5,12 +5,12 @@ helpviewer_keywords:
 - members [Visual Basic], accessing
 - object variables [Visual Basic], accessing members
 ms.assetid: a0072514-6a79-4dd6-8d03-ca8c13e61ddc
-ms.openlocfilehash: 5e91f1b99a17f4bbdc65a77ab26050ee57e96ac4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2b7e600a23ed326fe3e914957b4e698bc34c6135
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54724838"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819641"
 ---
 # <a name="how-to-access-members-of-an-object-visual-basic"></a>如何：访问对象 (Visual Basic 中) 的成员
 引用的对象的对象变量后，你通常想要与该对象，例如其方法、 属性、 字段和事件的成员。 例如，一次创建一个新<xref:System.Windows.Forms.Form>对象，你可能想要设置其<xref:System.Windows.Forms.Control.Text%2A>属性或调用其<xref:System.Windows.Forms.Control.Focus%2A>方法。  
@@ -71,6 +71,7 @@ ms.locfileid: "54724838"
      若要能够访问分配给对象变量的任何对象的成员，必须设置`Option Strict Off`。 当执行此操作时，编译器无法保证给定的成员由分配给变量的对象。 如果对象未公开的成员尝试访问，<xref:System.MemberAccessException>会发生异常。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Object>
 - <xref:System.Windows.Forms.Form>
 - <xref:System.MemberAccessException>

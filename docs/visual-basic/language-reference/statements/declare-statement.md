@@ -27,12 +27,12 @@ helpviewer_keywords:
 - Visual Basic code, Sub procedures
 - Function procedures [Visual Basic], declaring
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
-ms.openlocfilehash: 4a2e1704e72e608f5b5fd9c6dace42c144f92bb4
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: fbb7b4e118598157e2005469f89831df50de6576
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56973166"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838334"
 ---
 # <a name="declare-statement"></a>Declare Statement
 声明对外部文件中实现的过程的引用。  
@@ -127,7 +127,7 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 -   **机制。** Visual Basic 使用.NET Framework*平台调用*(PInvoke) 机制来解析和访问外部过程。 `Declare`语句和<xref:System.Runtime.InteropServices.DllImportAttribute>这两个类使用此机制自动，并且不需要任何知识的 PInvoke。 有关详细信息，请参见[演练：调用 Windows Api](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)。  
   
 > [!IMPORTANT]
->  如果外部过程外部公共语言运行时 (CLR) 运行，则*非托管代码*。 当调用此类过程，例如 Win32 API 函数或 COM 方法，可能会使你的应用程序的安全风险。 有关详细信息，请参阅[用于非托管代码安全编码准则](../../../framework/security/secure-coding-guidelines-for-unmanaged-code.md)。  
+>  如果外部过程外部公共语言运行时 (CLR) 运行，则*非托管代码*。 当调用此类过程，例如 Windows API 函数或 COM 方法，可能会使你的应用程序的安全风险。 有关详细信息，请参阅[用于非托管代码安全编码准则](../../../framework/security/secure-coding-guidelines-for-unmanaged-code.md)。  
   
 ## <a name="example"></a>示例  
  下面的示例声明的外部引用`Function`返回当前用户名称的过程。 然后，它调用外部过程`GetUserNameA`作为的一部分`getUser`过程。  
@@ -142,6 +142,7 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
  [!code-vb[VbVbalrStatements#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
 - [Imports 语句（.NET 命名空间和类型）](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
 - [AddressOf 运算符](../../../visual-basic/language-reference/operators/addressof-operator.md)

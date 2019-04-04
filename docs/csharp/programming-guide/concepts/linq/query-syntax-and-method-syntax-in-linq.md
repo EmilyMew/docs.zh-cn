@@ -5,12 +5,12 @@ helpviewer_keywords:
 - LINQ [C#], query syntax vs. method syntax
 - queries [LINQ in C#], syntax comparisons
 ms.assetid: eedd6dd9-fec2-428c-9581-5b8783810ded
-ms.openlocfilehash: 6333094230e09220ab5ccf462e20ae3423d42eb6
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 1d6bd14a88f22bfa961ee28f0014b1f89ccb28b5
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56978641"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654037"
 ---
 # <a name="query-syntax-and-method-syntax-in-linq-c"></a>LINQ 中的查询语法和方法语法 (C#)
 介绍性的语言集成查询 ([!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]) 文档中的大多数查询是使用 LINQ 声明性查询语法编写的。 但是在编译代码时，查询语法必须转换为针对 .NET 公共语言运行时 (CLR) 的方法调用。 这些方法调用会调用标准查询运算符（名称为 `Where`、`Select`、`GroupBy`、`Join`、`Max` 和 `Average` 等）。 可以使用方法语法（而不查询语法）来直接调用它们。  
@@ -26,7 +26,7 @@ ms.locfileid: "56978641"
   
  为了了解基于方法的查询，我们来仔细讨论它。 在表达式右侧，请注意，`where` 子句现在表示为 `numbers` 对象上的实例方法，它具有类型 `IEnumerable<int>`（如同你会回忆起的那样）。 如果熟悉泛型 <xref:System.Collections.Generic.IEnumerable%601> 接口，则会知道它没有 `Where` 方法。 但是，如果在 Visual Studio IDE 中调用 IntelliSense 完成列表，则不仅会看到 `Where` 方法，还会看到许多其他方法（如 `Select`、`SelectMany`、`Join` 和 `Orderby`）。 这些都是标准查询运算符。  
   
- ![Intellisense 中的标准查询运算符](../../../../csharp/programming-guide/concepts/linq/media/standardqueryops.png "StandardQueryOps")  
+ ![显示 Intellisense 中的所有标准查询运算符的屏幕截图。](./media/query-syntax-and-method-syntax-in-linq/standard-query-operators.png)  
   
  虽然看起来似乎 <xref:System.Collections.Generic.IEnumerable%601> 进行了重新定义以包括这些其他方法，不过实际上情况并非如此。 标准查询运算符作为一种新类型的方法（称为扩展方法）来实现。 扩展方法可“扩展”现有类型；它们可以如同类型上的实例方法一样进行调用。 标准查询运算符扩展了 <xref:System.Collections.Generic.IEnumerable%601>，因此可以写入 `numbers.Where(...)`。  
   

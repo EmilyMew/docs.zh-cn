@@ -7,12 +7,12 @@ helpviewer_keywords:
 - best practices [WCF], data contract versioning
 - Windows Communication Foundation, data contracts
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
-ms.openlocfilehash: 297d7ea0fbbd5b066539e6f2341b29390b3d38b3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 544ecc3827a698f92ec29855f1e000fce1907386
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54738347"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409466"
 ---
 # <a name="best-practices-data-contract-versioning"></a>最佳做法：数据协定版本管理
 本主题列出了创建容易随时间而改变的数据协定的最佳做法。 有关数据协定的详细信息，请参阅中的主题[Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)。  
@@ -66,11 +66,12 @@ ms.locfileid: "54738347"
   
 8.  在以后的版本中，可以添加新的数据成员。 它们应始终遵循以下规则：  
   
-    1.  <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> 属性应始终保留其默认值 `false`。  
+    1.  
+  <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> 属性应始终保留其默认值 `false`。  
   
     2.  如果对于成员，默认值为 `null` 或零是不可接受的，则应使用 <xref:System.Runtime.Serialization.OnDeserializingAttribute> 提供一个回调方法，以便在传入流中不存在该成员时提供一个合理的默认值。 回调的详细信息，请参阅[版本容错序列化回调](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)。  
   
-    3.  应使用 `Order` 上的 `DataMemberAttribute` 属性，以确保所有新添加的数据成员显示在现有数据成员之后。 推荐的方法来执行此操作是按如下所示：没有任何数据协定的第一个版本中的数据成员应具有其`Order`属性集。 应将添加到数据协定版本 2 中的所有数据成员的 `Order` 属性设置为 2。 将添加到数据协定版本 3 中的所有数据成员的 `Order` 设置为 3，依次类推。 允许将多个数据成员集设置为同一个 `Order` 编号。  
+    3.  <xref:System.Runtime.Serialization.DataMemberAttribute.Order?displayProperty=nameWithType>属性应该用于确保新添加的数据成员的所有现有的数据成员之后显示。 推荐的方法来执行此操作是按如下所示：没有任何数据协定的第一个版本中的数据成员应具有其`Order`属性集。 应将添加到数据协定版本 2 中的所有数据成员的 `Order` 属性设置为 2。 将添加到数据协定版本 3 中的所有数据成员的 `Order` 设置为 3，依次类推。 允许将多个数据成员集设置为同一个 `Order` 编号。  
   
 9. 在以后的版本中，不要移除数据成员，即使在以前的版本中 <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> 属性保留为其默认属性 `false`。  
   

@@ -10,20 +10,19 @@ helpviewer_keywords:
 - Do statement [Visual Basic], Do loops
 - conditional statements [Visual Basic], loop structures
 ms.assetid: ecacb09b-a4c9-42be-98b2-a15d368b5db8
-ms.openlocfilehash: b72eef632b4564abc69e6ebef43b940eb0950e9a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 56165eecce5e73c4e06235dac1691774fb39b794
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54523384"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58833293"
 ---
 # <a name="loop-structures-visual-basic"></a>循环结构 (Visual Basic)
 Visual Basic 循环结构，可运行的代码的一个或多个行重复损坏。 您可以重复循环结构中的语句，直到条件为`True`，直到条件为`False`、 在集合中指定的次数，或者一次的每个元素。  
   
- 下图显示了运行一组语句，直到条件变为 true 的循环结构。  
+ 下图显示了运行一组语句，直到条件变为 true 的循环结构：  
   
- ![执行操作的流图表...Until 循环](../../../../visual-basic/programming-guide/language-features/control-flow/media/dountilloop.gif "DoUntilLoop")  
-运行一组语句，直到条件变为 true  
+ ![流程图，显示操作...Until 循环。](./media/loop-structures/do-until-loop-true-condition.gif)  
   
 ## <a name="while-loops"></a>While 循环  
  `While`...`End While`构造运行一组语句中指定的条件，只要`While`语句是`True`。 有关详细信息，请参阅[时...While 语句结束](../../../../visual-basic/language-reference/statements/while-end-while-statement.md)。  
@@ -38,6 +37,7 @@ Visual Basic 循环结构，可运行的代码的一个或多个行重复损坏�
  `For Each`...`Next`构造为集合中运行一组一次为每个元素的语句。 指定循环控制变量，但不是需要确定启动或为其结束值。 有关详细信息，请参阅[为每个...下一条语句](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [控制流](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
 - [决策结构](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
 - [其他控件结构](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)

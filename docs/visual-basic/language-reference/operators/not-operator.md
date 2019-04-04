@@ -14,12 +14,12 @@ helpviewer_keywords:
 - logical negation
 - operators [Visual Basic], negation
 ms.assetid: 8f2ea83c-d2ed-480a-a474-3042a1cad9b5
-ms.openlocfilehash: db88b61518a52a70553c037fdd95f9a135dcb268
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 4e54fdca9123ad5595eb9a8c5e2ac5bc303a8f6a
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56981213"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824195"
 ---
 # <a name="not-operator-visual-basic"></a>Not 运算符 (Visual Basic)
 对执行逻辑非运算`Boolean`表达式或对数值表达式的按位求反运算。  
@@ -76,6 +76,7 @@ result = Not expression
  前面的示例分别生成-11-9，-7 的结果。  
   
 ## <a name="see-also"></a>请参阅
+
 - [逻辑/按位运算符 (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)
 - [Visual Basic 中的运算符优先级](../../../visual-basic/language-reference/operators/operator-precedence.md)
 - [按功能列出的运算符](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)

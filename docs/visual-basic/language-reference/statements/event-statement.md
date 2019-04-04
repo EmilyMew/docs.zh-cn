@@ -18,12 +18,12 @@ helpviewer_keywords:
 - ByRef keyword [Visual Basic], Event statements
 - declaring user-defined events
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
-ms.openlocfilehash: 13b1d18592379d7a08e68e84ffba62f1cc977caa
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 2f600f3ed37f38ddd7d86300231e0c447f458aa6
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56966068"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58831886"
 ---
 # <a name="event-statement"></a>Event 语句
 声明用户定义的事件。  
@@ -100,8 +100,7 @@ End Event
   
  该示例还使用一个窗体 (`Form1`)，其中包含一个按钮 (`Button1`) 和一个文本框 (`TextBox1`)。 单击该按钮时，第一个文本框显示从 10 秒到 0 秒的倒计时。 经过了全部时间（10 秒）之后，第一个文本框会显示“Done”。  
   
- 
-  `Form1` 的代码指定窗体的初始和最终状态。 它还包含引发事件时执行的代码。  
+ `Form1` 的代码指定窗体的初始和最终状态。 它还包含引发事件时执行的代码。  
   
  若要使用此示例，请打开新的 Windows 窗体项目。 然后向名为 `Form1` 的主窗体添加一个名为 `Button1` 的按钮和一个名为 `TextBox1` 的文本框。 右键单击窗体，然后单击**查看代码**以打开代码编辑器。  
   
@@ -116,10 +115,10 @@ End Event
  按 F5 以运行前面的示例中，并单击标记的按钮**启动**。 第一个文本框中开始倒计时秒数。 经过了全部时间（10 秒）之后，第一个文本框会显示“Done”。  
   
 > [!NOTE]
->  
-  `My.Application.DoEvents` 方法不会按照与窗体相同的方式来处理事件。 若要使窗体可以直接处理事件，可以使用多线程处理。 有关详细信息，请参阅[托管线程处理](../../../standard/threading/index.md)。  
+>  `My.Application.DoEvents` 方法不会按照与窗体相同的方式来处理事件。 若要使窗体可以直接处理事件，可以使用多线程处理。 有关详细信息，请参阅[托管线程处理](../../../standard/threading/index.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [RaiseEvent 语句](../../../visual-basic/language-reference/statements/raiseevent-statement.md)
 - [Implements 语句](../../../visual-basic/language-reference/statements/implements-statement.md)
 - [事件](../../../visual-basic/programming-guide/language-features/events/index.md)

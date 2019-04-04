@@ -10,8 +10,7 @@ ms.lasthandoff: 03/09/2019
 ms.locfileid: "57706398"
 ---
 # <a name="designing-and-implementing-custom-activities"></a>设计和实现自定义活动
-
-  [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] 中自定义活动的创建途径有二：或是将系统提供的活动组装成组合活动，或是创建派生自 <xref:System.Activities.CodeActivity>、<xref:System.Activities.AsyncCodeActivity> 或 <xref:System.Activities.NativeActivity> 的新类型。 本节介绍如何使用任一方法来创建自定义活动。  
+[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] 中自定义活动的创建途径有二：或是将系统提供的活动组装成组合活动，或是创建派生自 <xref:System.Activities.CodeActivity>、<xref:System.Activities.AsyncCodeActivity> 或 <xref:System.Activities.NativeActivity> 的新类型。 本节介绍如何使用任一方法来创建自定义活动。  
   
 > [!IMPORTANT]
 >  自定义活动在工作流设计器中默认显示为一个包含活动名称的简单矩形。 若要在工作流设计器中为您的活动提供自定义可视化表示形式，还必须创建自定义设计器。 有关详细信息，请参阅[使用自定义活动设计器和模板](using-custom-activity-designers-and-templates.md)。  

@@ -114,8 +114,7 @@ ms.locfileid: "57364770"
 
 ### <a name="determining-an-assemblys-trust-level"></a>确定程序集的信任级别
 
-CAS 策略通常用于确定程序集或应用程序域的权限授予集或信任级别。 
-  [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] 公开以下无需解析安全策略的有用属性：
+CAS 策略通常用于确定程序集或应用程序域的权限授予集或信任级别。 [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] 公开以下无需解析安全策略的有用属性：
 
 - <xref:System.Reflection.Assembly.PermissionSet%2A?displayProperty=nameWithType>
 
@@ -127,8 +126,7 @@ CAS 策略通常用于确定程序集或应用程序域的权限授予集或信�
 
 ### <a name="application-domain-sandboxing"></a>应用程序域沙盒
 
-
-  <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=nameWithType> 方法通常用于对应用程序域中的程序集进行沙盒处理。 [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]公开不需要使用的成员<xref:System.Security.Policy.PolicyLevel>实现此目的。 有关详细信息，请参阅[如何：运行沙盒中部分受信任的代码](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)中所述。
+<xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=nameWithType> 方法通常用于对应用程序域中的程序集进行沙盒处理。 [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]公开不需要使用的成员<xref:System.Security.Policy.PolicyLevel>实现此目的。 有关详细信息，请参阅[如何：运行沙盒中部分受信任的代码](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)中所述。
 
 ### <a name="determining-a-safe-or-reasonable-permission-set-for-partially-trusted-code"></a>确定部分受信任的代码的“安全”或“合理”权限集
 

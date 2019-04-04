@@ -1,0 +1,22 @@
+items:
+- name: 事件
+  href: index.md
+  items:
+  - name: 如何：订阅和取消订阅事件
+    href: how-to-subscribe-to-and-unsubscribe-from-events.md
+  - name: 如何：发布符合 .NET Framework 准则的事件
+    href: how-to-publish-events-that-conform-to-net-framework-guidelines.md
+  - name: 如何：在派生类中引发基类事件
+    href: how-to-raise-base-class-events-in-derived-classes.md
+  - name: 如何：实现接口事件
+    href: how-to-implement-interface-events.md
+  - name: 如何：使用字典存储事件实例
+    href: how-to-use-a-dictionary-to-store-event-instances.md
+  - name: 如何：实现自定义事件访问器
+    href: how-to-implement-custom-event-accessors.md
+ms.openlocfilehash: ad3adc4026915e1173dacd33dde9746cfb0adcdd
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468641"

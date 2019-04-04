@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /optioninfer compiler option [Visual Basic]
 - optioninfer compiler option [Visual Basic]
 ms.assetid: f6c09db1-0553-464a-abe3-d4510c61d6ed
-ms.openlocfilehash: 82a8667c32c6396a868375555b003d0082ce1a73
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 89fcd981dbb5442f6150f539db4c7d404fe8d691
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54709970"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58839842"
 ---
 # <a name="-optioninfer"></a>-optioninfer
 允许在变量声明中使用局部类型推理。  
@@ -50,6 +50,7 @@ vbc -optioninfer+ test.vb
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
 - [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)

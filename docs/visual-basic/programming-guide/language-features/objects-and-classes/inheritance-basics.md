@@ -20,12 +20,12 @@ helpviewer_keywords:
 - abstract classes [Visual Basic], inheritance
 - overriding, Overrides keyword
 ms.assetid: dfc8deba-f5b3-4d1d-a937-7cb826446fc5
-ms.openlocfilehash: 3d772fb81eb13b9454f44ff8ae4256bdb4144caa
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 5e4b8511145e758bf3d6328141be0e526965dccf
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56970293"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826569"
 ---
 # <a name="inheritance-basics-visual-basic"></a>继承的基础知识 (Visual Basic)
 `Inherits`语句用于声明一个名为的新类*派生类*基于现有类，称为*基类*。 派生的类继承，并可以扩展属性、 方法、 事件、 字段和基类中定义的常量。 以下部分介绍了一些有关继承的规则和修饰符可用于更改方式类继承，或将继承：  
@@ -143,5 +143,6 @@ End Class
  即使`derivedClass`重写`testMethod`，则`MyClass`中的关键字`useMyClass`使基类版本的调用无效的重写，而编译器解析效果`testMethod`。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Inherits 语句](../../../../visual-basic/language-reference/statements/inherits-statement.md)
 - [Me、My、MyBase 和 MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)

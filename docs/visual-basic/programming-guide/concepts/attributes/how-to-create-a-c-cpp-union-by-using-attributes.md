@@ -2,12 +2,12 @@
 title: 如何：使用特性 (Visual Basic) 创建 C + + 联合
 ms.date: 07/20/2015
 ms.assetid: 9352a7e4-c0da-4d07-aa14-55ed43736fcb
-ms.openlocfilehash: e37aac03db7a24e6519acb4eb843b46b8c60b4f2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0c3ebf248f5d2f20e2fff25fb8326a294b51d153
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54663279"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58829299"
 ---
 # <a name="how-to-create-a-cc-union-by-using-attributes-visual-basic"></a>如何：使用特性 (Visual Basic) 创建 C/c + + 联合
 通过使用特性，可自定义结构在内存中的布局方式。 例如，可使用 `StructLayout(LayoutKind.Explicit)` 和 `FieldOffset` 特性在 C/C++ 中创建所谓的联合。  
@@ -67,6 +67,7 @@ Structure TestExplicit
  两个整数字段 `i1` 和 `i2` 共享与 `lg` 相同的内存位置。 使用平台调用时，这种对结构布局的控制很有用。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Reflection>
 - <xref:System.Attribute>
 - [Visual Basic 编程指南](../../../../visual-basic/programming-guide/index.md)

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - item XML tag
 - <term> XML tag
 ms.assetid: ec35fced-d58e-4520-a764-0691256e014b
-ms.openlocfilehash: 61b0b018b3d06a2307aa280a748b7d07c5fa7915
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 7d7b85867f4c701322c5e6c31f2d89ab38fad05d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57496061"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58818523"
 ---
 # <a name="list-visual-basic"></a>\<列表 > (Visual Basic)
 定义列表或表。  
@@ -63,4 +63,5 @@ ms.locfileid: "57496061"
  [!code-vb[VbVbcnXmlDocComments#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#5)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [XML 注释标记](../../../visual-basic/language-reference/xmldoc/index.md)

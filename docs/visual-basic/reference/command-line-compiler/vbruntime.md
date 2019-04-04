@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -vbruntime compiler option [Visual Basic]
 - /vbruntime compiler option [Visual Basic]
 ms.assetid: 1aa0239e-511a-4c29-957d-fd72877b350a
-ms.openlocfilehash: 31323f3d5b3eed01c56476353d621cfa8fe03a12
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: a1988fcd19c6629d85ae0e739681fd39fe033c0d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57719112"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58843859"
 ---
 # <a name="-vbruntime"></a>-vbruntime
 指定编译器应在不引用 Visual Basic 运行库的情况下进行编译，或在引用特定运行库的情况下进行编译。  
@@ -95,6 +95,7 @@ vbc -vbruntime:C:\VBLibraries\CustomVBLibrary.dll
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 核心 – Visual Studio 2010 SP1 中新的编译模式](https://devblogs.microsoft.com/vbteam/vb-core-new-compilation-mode-in-visual-studio-2010-sp1/)
 - [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)
 - [示例编译命令行](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

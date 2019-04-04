@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - data types [Visual Basic], Visual Basic
 ms.assetid: 4ea2ef2a-3d4d-42d9-9f8f-173a37c96e53
-ms.openlocfilehash: e68a3b5829e694013fd2d53cb6525439c42d9a33
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cb7d77d87e37cd4cdc4872fd862c575737a8d3cb
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54719503"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58841116"
 ---
 # <a name="data-types-summary-visual-basic"></a>数据类型摘要 (Visual Basic)
 Visual Basic 语言关键字和运行时库成员按目的组织和使用。  
@@ -21,5 +21,6 @@ Visual Basic 语言关键字和运行时库成员按目的组织和使用。
 |验证数据类型|<xref:Microsoft.VisualBasic.Information.IsArray%2A>, <xref:Microsoft.VisualBasic.Information.IsDate%2A>, <xref:Microsoft.VisualBasic.Information.IsDBNull%2A>, <xref:Microsoft.VisualBasic.Information.IsError%2A>, <xref:Microsoft.VisualBasic.Information.IsNothing%2A>, <xref:Microsoft.VisualBasic.Information.IsNumeric%2A>, <xref:Microsoft.VisualBasic.Information.IsReference%2A>|  
   
 ## <a name="see-also"></a>请参阅
+
 - [关键字](../../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic 运行库成员](../../../visual-basic/language-reference/runtime-library-members.md)

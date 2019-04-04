@@ -14,12 +14,12 @@ helpviewer_keywords:
 - procedure arguments [Visual Basic], in parentheses
 - arguments [Visual Basic], changing value
 ms.assetid: 77b4f2d2-1055-4c2f-a521-874d1db86946
-ms.openlocfilehash: 7bd78772b35e3f336f49c1d39b5f56a3a2076c30
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 497ae11b858b7d164ba3b5607ff2109254a154de
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56970280"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842039"
 ---
 # <a name="how-to-force-an-argument-to-be-passed-by-value-visual-basic"></a>如何：强制自变量传递的值 (Visual Basic)
 过程声明确定的传递机制。 如果声明的参数[ByRef](../../../../visual-basic/language-reference/modifiers/byref.md)，Visual Basic 希望按引用传递相应的参数。 这将允许过程来更改调用代码中的参数的基础编程元素的值。 如果你想要防止此类更改基础元素，则可以重写`ByRef`传递机制在过程调用将参数名称括在括号中。 这些括号是除了括号之外的参数列表的调用中。  
@@ -53,6 +53,7 @@ ms.locfileid: "56970280"
  允许更改基础调用代码中的自变量的值的过程中始终没有带来潜在的风险。 请确保您希望此值可更改，并且准备好使用它之前检查其有效性。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [如何：将参数传递给过程](./how-to-pass-arguments-to-a-procedure.md)

@@ -2,12 +2,12 @@
 title: WCF 服务和 ASP.NET
 ms.date: 03/30/2017
 ms.assetid: b980496a-f0b0-4319-8e55-a0f0fa32da70
-ms.openlocfilehash: 837d03bbbac01be48d03c9170fc0a9a36c970da0
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 80f4f9a473f223928981ee3f0c2e9f2464cbafaf
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55282602"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58463470"
 ---
 # <a name="wcf-services-and-aspnet"></a>WCF 服务和 ASP.NET
 
@@ -17,7 +17,7 @@ ms.locfileid: "55282602"
 
 在 Internet 信息服务 (IIS) 承载的 WCF 服务可以是与放在一起。ASPX 页和 ASMX Web 服务在单个公共应用程序域内。 ASP.NET 提供公共基础结构服务，例如 AppDomain 管理以及针对 WCF 和 ASP.NET HTTP 运行时动态编译。 WCF 的默认配置是通过并行使用 ASP.NET。
 
-![WCF 服务和 ASP.NET： 共享状态](./media/hostingwcfwithaspnet.gif "HostingWCFwithASPNET")
+![屏幕截图显示 WCF 服务和 ASP.NET： 共享状态。](./media/wcf-services-and-aspnet/windows-communication-foundation-services-asp-dotnet-configuration.gif)
 
 ASP.NET HTTP 运行库处理 ASP.NET 请求但不参与处理的请求发送到 WCF 服务，即使这些服务承载在同一 AppDomain 中按原样 ASP.NET 内容也是如此。 相反，WCF 服务模型会截获消息发送到 WCF 服务，并将其路由通过 WCF 传输协议/通道堆栈。
 

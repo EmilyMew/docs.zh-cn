@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID52
 ms.assetid: d0e96aea-7621-48f6-a78b-5d37d18aaa4e
-ms.openlocfilehash: c57f431350d4f63507ee7374616b62ca32151c86
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b6da1031b60a4cd73c53588cf18992797c3fddab
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54639401"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58839062"
 ---
 # <a name="bad-file-name-or-number"></a>错误的文件名或文件号
 尝试访问指定的文件时出错。 此错误的可能原因是：  
@@ -29,5 +29,6 @@ ms.locfileid: "54639401"
 3.  检查以确保它们符合操作系统约定的文件名称。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>
 - [Visual Basic 命名约定](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)

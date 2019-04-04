@@ -126,7 +126,7 @@ signtool [command] [options] [file_name | ...]
 |`/c` CatFile|通过名称指定目录文件。|  
 |`/d`|指定签名工具应打印描述和描述 URL。|  
 |`/ds` Index|验证指定位置的签名。|  
-|`/hash` (`SHA1`|`SHA256`)|指定在目录中搜索文件时要使用的可选哈希算法。|  
+|`/hash` (`SHA1`&#124;`SHA256`)|指定在目录中搜索文件时要使用的可选哈希算法。|  
 |`/kp`|指定应使用内核模式驱动程序签名策略执行验证。|  
 |`/ms`|使用多个验证语义。 这是 [!INCLUDE[win8](../../../includes/win8-md.md)] 和更高版本上的 [WinVerifyTrust](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) 调用的默认行为。|  
 |`/o` Version|按操作系统版本验证文件。 版本具有以下格式：PlatformID：VerMajor.VerMinor.BuildNumber。 PlatformID 表示 <xref:System.PlatformID> 枚举成员的基础值。 **重要提示：** 建议使用 `/o` 开关。 如果未指定 `/o`，SignTool.exe 可能会返回意外的结果。 例如，如果你未将 `/o` 开关包含在内，则能在旧版操作系统上正确验证的系统目录可能在新版操作系统上无法正确验证。|  

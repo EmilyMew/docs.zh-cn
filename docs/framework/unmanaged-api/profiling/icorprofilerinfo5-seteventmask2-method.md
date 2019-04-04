@@ -41,8 +41,7 @@ HRESULT SetEventMask2(        [in] DWORD dwEventsLow,        [in] DWORD dwEvents
  [in] 一个指定事件类别的 4 字节的值。  每个位都可控制不同的功能、行为或事件类型。 在中描述了这些位[COR_PRF_HIGH_MONITOR](../../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md)枚举。  
   
 ## <a name="remarks"></a>备注  
- 
-  `SetEventMask2` 方法用于设置探查器订阅的回调。 通常情况下，调用[GetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md)方法，以确定设置哪些位，执行逻辑或其`pdwEventsLow`并`pdwEventsHigh`值以及你想要设置，然后调用任何新位`SetEventMask2`方法。  
+ `SetEventMask2` 方法用于设置探查器订阅的回调。 通常情况下，调用[GetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md)方法，以确定设置哪些位，执行逻辑或其`pdwEventsLow`并`pdwEventsHigh`值以及你想要设置，然后调用任何新位`SetEventMask2`方法。  
   
  此方法是为建议的替代项[SetEventMask](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-seteventmask-method.md)方法。  
   

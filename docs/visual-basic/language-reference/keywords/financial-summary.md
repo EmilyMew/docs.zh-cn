@@ -5,12 +5,12 @@ helpviewer_keywords:
 - financial functions
 - payment
 ms.assetid: 474f973e-7103-42b7-aa4d-367c935e07e1
-ms.openlocfilehash: ea980691c4eb9c6fda91dbfdeeeeaa0cceb7f92b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5a7c256b95994db703343338069d7eae3515369c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54720344"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814531"
 ---
 # <a name="financial-summary-visual-basic"></a>财务摘要 (Visual Basic)
 Visual Basic 语言关键字和运行时库成员按目的组织和使用。  
@@ -26,5 +26,6 @@ Visual Basic 语言关键字和运行时库成员按目的组织和使用。
 |计算值。|<xref:Microsoft.VisualBasic.Financial.NPV%2A>， <xref:Microsoft.VisualBasic.Financial.PV%2A>|  
   
 ## <a name="see-also"></a>请参阅
+
 - [关键字](../../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic 运行库成员](../../../visual-basic/language-reference/runtime-library-members.md)

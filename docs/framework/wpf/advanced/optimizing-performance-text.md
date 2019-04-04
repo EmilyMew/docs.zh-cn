@@ -11,12 +11,12 @@ helpviewer_keywords:
 - text [WPF], performance
 - glyphs [WPF]
 ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
-ms.openlocfilehash: db0738008766343fa19454cac14e75b318663f34
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 14751d8241dabd0cf7c41f2920fab32e21dc43e2
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57352761"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409401"
 ---
 # <a name="optimizing-performance-text"></a>优化性能：Text
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 支持通过使用功能丰富的 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] 控件实现的文本内容演示。 通常可以将文本呈现分为三层：  
@@ -133,8 +133,9 @@ ms.locfileid: "57352761"
 ### <a name="showing-underlines-on-hyperlinks-only-on-mouseenter-events"></a>仅在 MouseEnter 事件的超链接中显示下划线  
  一个<xref:System.Windows.TextDecoration>对象是可以添加到文本的视觉装饰; 但是，它可能会占用实例化。 如果充分利用了<xref:System.Windows.Documents.Hyperlink>元素，请考虑仅在触发事件，如时显示下划线<xref:System.Windows.ContentElement.MouseEnter>事件。 有关详细信息，请参阅[指定是否为超链接添加下划线](how-to-specify-whether-a-hyperlink-is-underlined.md)。  
   
- ![显示 TextDecorations 的超](./media/textdecoration03.png "TextDecoration03")  
-MouseEnter 上显示的超链接  
+  下图显示了如何将 MouseEnter 事件触发的带下划线的超链接：
+
+  ![显示 TextDecoration 的超链接](./media/how-to-specify-whether-a-hyperlink-is-underlined/text-decorations-hyperlinks.png)   
   
  以下标记示例演示<xref:System.Windows.Documents.Hyperlink>使用和不使用下划线定义：  
   

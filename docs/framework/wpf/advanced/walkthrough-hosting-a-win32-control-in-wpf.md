@@ -8,12 +8,12 @@ helpviewer_keywords:
 - hosting Win32 control in WPF [WPF]
 - Win32 code [WPF], WPF interoperation
 ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
-ms.openlocfilehash: 1bb5def111aad850a5f74afaba352394ac2587e9
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 13845eb662064e0ac1db913bedc0b21214292db5
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57377399"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58412313"
 ---
 # <a name="walkthrough-hosting-a-win32-control-in-wpf"></a>演练：中承载 Win32 控件在 WPF 中
 Windows Presentation Foundation (WPF) 提供了用于创建应用程序的丰富环境。 但是，当您在 Win32 代码中有大量投入时，可能会重复使用至少某些更有效的在 WPF 应用程序中的代码而不是完全重写。 WPF 提供了一个简单的机制，用于承载 Win32 窗口中，在 WPF 页上。  
@@ -23,9 +23,9 @@ Windows Presentation Foundation (WPF) 提供了用于创建应用程序的丰富
   
 <a name="requirements"></a>   
 ## <a name="requirements"></a>要求  
- 本主题假定你基本熟悉 WPF 和 Win32 编程。 WPF 编程的基本简介，请参阅[Getting Started](../getting-started/index.md)。 有关 Win32 编程的简介，可参考有关该主题的众多书籍特别*Programming Windows* Charles Petzold 的。  
+ 本主题假定你基本熟悉 WPF 和 Windows API 编程。 WPF 编程的基本简介，请参阅[Getting Started](../getting-started/index.md)。 有关 Windows API 编程的介绍，请参阅的众多书籍的任何看法，特别是*Programming Windows* Charles Petzold 的。  
   
- 因为本主题附带的示例中实现C#，它将使用的平台调用服务 (PInvoke) 访问 Win32 API。 熟悉 PInvoke 是有所帮助，但不是必需的。  
+ 因为本主题附带的示例中实现C#，它将使用的平台调用服务 (PInvoke) 来访问 Windows API。 熟悉 PInvoke 是有所帮助，但不是必需的。  
   
 > [!NOTE]
 >  本主题包括来自相关示例的一些代码示例。 但是，出于可读性考虑，不包括完整的示例代码。 获取或查看完整的代码[中承载 Win32 ListBox 控件在 WPF 示例中](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control)。  

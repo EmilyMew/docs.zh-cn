@@ -10,20 +10,19 @@ helpviewer_keywords:
 ms.assetid: 8e40fab9-549d-4731-aec2-ffa47a382de0
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8422c0b22f2286df98acbed874344f7664cb8903
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8acf811b835d5afd8686701fe269b16d4b766458
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54529757"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58676064"
 ---
 # <a name="assembly-manifest"></a>程序集清单
 每一程序集，无论是静态的还是动态的，均包含描述该程序集中各元素彼此如何关联的数据集合。 程序集清单就包含这些程序集元数据。 程序集清单包含指定该程序集的版本要求和安全标识所需的所有元数据，以及定义该程序集的范围和解析对资源和类的引用所需的全部元数据。 程序集清单可以存储在具有 Microsoft 中间语言 (MSIL) 代码的 PE 文件（.exe 或 .dll）中，也可存储在只包含程序集清单信息的独立 PE 文件中。  
   
  以下插图显示了清单的不同存储方法。  
   
- ![单文件程序集](../../../docs/framework/app-domains/media/assemblytypes.gif "assemblytypes")  
-程序集的类型  
+ ![显示单文件程序集和多文件程序集配置中的清单的图表。](./media/assembly-manifest/assembly-types-diagram.gif)  
   
  对于有一个关联文件的程序集，该清单将被合并到 PE 文件中以构成单文件程序集。 您可以创建有独立的清单文件，或清单被合并到同一多文件程序集中某一 PE 文件的多文件程序集。  
   

@@ -2,12 +2,12 @@
 title: XAttribute 类概述 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 7781580a-9583-4a1b-ae1e-91c5936eb0b1
-ms.openlocfilehash: f392d66ed31162f3ada61a8e29818402409536cf
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6b24f429a69067f6af1a61efe4102a5638db3031
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54741753"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58836111"
 ---
 # <a name="xattribute-class-overview-visual-basic"></a>XAttribute 类概述 (Visual Basic)
 属性是与元素关联的名称/值对。 <xref:System.Xml.Linq.XAttribute> 类表示 XML 属性。  
@@ -75,4 +75,5 @@ Console.WriteLine(c)
  这一区别仅对编写在节点级使用 XML 树的代码的开发人员特别重要。 许多开发人员不会关心这种区别。  
   
 ## <a name="see-also"></a>请参阅
+
 - [LINQ to XML 编程概述 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)

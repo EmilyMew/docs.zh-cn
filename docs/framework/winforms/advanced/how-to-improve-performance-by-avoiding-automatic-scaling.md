@@ -10,12 +10,12 @@ helpviewer_keywords:
 - images [Windows Forms], using without automatic scaling
 - performance [Windows Forms], improving image
 ms.assetid: 5fe2c95d-8653-4d55-bf0d-e5afa28f223b
-ms.openlocfilehash: b8238a4f0ce482d63ab33833c4bceaaa2814253d
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 8580bd2212a025edddada9e47b0dc2b6195b53c7
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57705329"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653790"
 ---
 # <a name="how-to-improve-performance-by-avoiding-automatic-scaling"></a>如何：通过避免自动缩放改善性能
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 在绘制时，这会降低性能，可能会自动缩放图像。 或者，可以控制图像缩放通过将传递到目标矩形的尺寸<xref:System.Drawing.Graphics.DrawImage%2A>方法。  
@@ -30,15 +30,15 @@ ms.locfileid: "57705329"
  即使您的屏幕分辨率每英寸 96 点从不同[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]将可能横向图像，像屏幕分辨率每英寸 96 点。 这是因为[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]<xref:System.Drawing.Graphics>对象所关联的设备上下文，以及何时[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]屏幕分辨率，结果的设备上下文通常为 96，而不考虑实际屏幕分辨率的查询。 通过指定目标矩形中的自动缩放，可以避免<xref:System.Drawing.Graphics.DrawImage%2A>方法。  
   
 ## <a name="example"></a>示例  
- 下面的示例绘制两次相同的映像。 在第一种情况下，未指定的宽度和高度的目标矩形，并自动缩放图像。 在第二种情况下，指定的宽度和高度 （以像素为单位） 的目标矩形是相同的宽度和原始图像的高度。 下图显示了两次呈现的图像。  
+ 下面的示例绘制两次相同的映像。 在第一种情况下，未指定的宽度和高度的目标矩形，并自动缩放图像。 在第二种情况下，指定的宽度和高度 （以像素为单位） 的目标矩形是相同的宽度和原始图像的高度。 下图显示了两次呈现的图像：  
   
- ![缩放纹理](./media/csscaledtexture1.png "csscaledtexture1")  
+ ![显示与缩放后的纹理的图像的屏幕截图。](./media/how-to-improve-performance-by-avoiding-automatic-scaling/two-scaled-texture-images.png)  
   
  [!code-csharp[System.Drawing.WorkingWithImages#32](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#32)]
  [!code-vb[System.Drawing.WorkingWithImages#32](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#32)]  
   
 ## <a name="compiling-the-code"></a>编译代码  
- 前面的示例专用于 Windows 窗体，它需要 <xref:System.Windows.Forms.PaintEventArgs> `e`，后者是 <xref:System.Windows.Forms.Control.Paint> 事件处理程序的参数。 将映像名称和在您的系统都有效的路径替换为 Texture.jpg。  
+ 前面的示例专用于 Windows 窗体，并且它需要<xref:System.Windows.Forms.PaintEventArgs> `e`，这是一个参数的<xref:System.Windows.Forms.Control.Paint>事件处理程序。 将映像名称和在您的系统都有效的路径替换为 Texture.jpg。  
   
 ## <a name="see-also"></a>请参阅
 - [图像、位图和图元文件](images-bitmaps-and-metafiles.md)

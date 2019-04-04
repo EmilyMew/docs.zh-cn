@@ -2,12 +2,12 @@
 title: 选择消息编码器
 ms.date: 03/30/2017
 ms.assetid: 2204d82d-d962-4922-a79e-c9a231604f19
-ms.openlocfilehash: 027c9e460e15b4b038147cd79c04bd082bc3356d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0c960505d6c8368396cddebe37c76c8d95550727
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54538422"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409479"
 ---
 # <a name="choosing-a-message-encoder"></a>选择消息编码器
 本主题讨论在包含 Windows Communication Foundation (WCF) 中的消息编码器之间选择条件： 二进制、 文本和消息传输优化机制 (MTOM)。  
@@ -34,10 +34,10 @@ ms.locfileid: "54538422"
 |------------|-----------------|---------------------------------------|  
 |支持的字符集|<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> 并<xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>仅支持 UTF8 和 UTF16 Unicode (*big endian*并*小字节序*) 编码。 如果需要其他编码（如 UTF7 或 ASCII），则必须使用自定义编码器。 自定义编码器示例，请参阅[自定义消息编码器](https://go.microsoft.com/fwlink/?LinkId=119857)。|Text|  
 |检查|检查是在传送期间检查消息的功能。 使用或不使用 SOAP 的文本编码使很多程序不用专用工具就可以检查和分析消息。 请注意，使用传输安全（在消息或传输级别）影响检查消息的能力。 保密性会保护消息免于检查，完整性会保护消息免于修改。|Text|  
-|可靠性|可靠性是编码器传输错误的复原能力。 也可以在消息层、传输层和应用程序层提供可靠性。 所有标准的 WCF 编码器假定其他层提供可靠性。 编码器几乎没有从传输错误恢复的能力。|无|  
+|可靠性|可靠性是编码器传输错误的复原能力。 也可以在消息层、传输层和应用程序层提供可靠性。 所有标准的 WCF 编码器假定其他层提供可靠性。 编码器几乎没有从传输错误恢复的能力。|None|  
 |简单性|简单性表示为编码规范创建编码器和解码器的简便性。 文本编码在简单性方面具有明显的优势，POX 文本编码的另一个优点在于不需要支持处理 SOAP。|文本 (POX)|  
 |大小|编码确定在内容上施加的开销数量。 编码消息的大小与服务操作的最大吞吐量直接相关。 二进制编码通常比文本编码更精简。 当消息大小超出限制时，还可以考虑在编码过程中压缩消息内容。 但是，压缩增加了消息发送方和接收方的处理开销。|二进制|  
-|流式处理|流处理使应用程序可以在整个消息到达之前开始处理此消息。 有效地使用流处理要求消息的重要数据位于消息的开始处，以便接收应用程序无需等待这些数据到达。 而且，使用流传输的应用程序必须在消息中以增量方式组织数据，以使内容没有前向相关性。 在很多情况下，您必须在对内容进行流处理和使内容具有尽可能小的传输大小之间进行折衷选择。|无|  
+|流式处理|流处理使应用程序可以在整个消息到达之前开始处理此消息。 有效地使用流处理要求消息的重要数据位于消息的开始处，以便接收应用程序无需等待这些数据到达。 而且，使用流传输的应用程序必须在消息中以增量方式组织数据，以使内容没有前向相关性。 在很多情况下，您必须在对内容进行流处理和使内容具有尽可能小的传输大小之间进行折衷选择。|None|  
 |第三方工具支持|编码的支持范围包括开发和诊断。 对于用于处理以 POX 格式编码的消息的库和工具包，第三方开发人员已经进行了很大的投入。|文本 (POX)|  
 |互操作性|这一因素是指 WCF 编码器能够与非 WCF 服务进行互操作。|Text<br /><br /> MTOM（部分）|  
   
@@ -65,9 +65,9 @@ IgnoreWhitespace 设置被忽略。
 
 从 WCF 4.5 开始，WCF 二进制编码器添加了对压缩的支持。 这使您能够使用 gzip/deflate 算法从 WCF 客户端发送压缩的消息，此外还以来自自承载 WCF 服务的压缩消息进行响应。 此功能同时对 HTTP 和 TCP 传输启用压缩。 可以始终启用 IIS 承载的 WCF 服务，以通过配置 IIS 主机服务器发送压缩的响应。 可使用 <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A?displayProperty=nameWithType> 属性来配置压缩类型。 此属性设置为 <xref:System.ServiceModel.Channels.CompressionFormat?displayProperty=nameWithType> 枚举值之一：
 
-* `CompressionFormat.Deflate`
-* `CompressionFormat.GZip`
-* `CompressionFormat.None`
+- <xref:System.ServiceModel.Channels.CompressionFormat.Deflate>
+- <xref:System.ServiceModel.Channels.CompressionFormat.GZip>
+- <xref:System.ServiceModel.Channels.CompressionFormat.None>
   
 由于此属性只在 binaryMessageEncodingBindingElement 上公开，因此需要创建如下所示的自定义绑定以使用此功能：
 

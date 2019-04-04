@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - default properties
 ms.assetid: 68b4026e-09ef-4613-808e-f6287494ff63
-ms.openlocfilehash: c7510147e2abdcfbb71cf79412a9125724776685
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: f11b5a184b72df68e302094dee762ec6876a397c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56977547"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58829325"
 ---
 # <a name="how-to-declare-and-call-a-default-property-in-visual-basic"></a>如何：声明并在 Visual Basic 中调用默认属性
 一个*默认属性*是一个类或结构的属性，而无需指定它可以访问你的代码。 当调用代码名称的类或结构，但未一个属性和上下文允许访问某一属性时，Visual Basic 对该类或结构的默认属性解析的访问权限，如果存在。  
@@ -82,6 +82,7 @@ ms.locfileid: "56977547"
  由于这些缺点，应考虑未定义默认属性。 代码的可读性，应该还考虑始终显式引用的所有属性，包括默认属性。  
   
 ## <a name="see-also"></a>请参阅
+
 - [属性过程](./property-procedures.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [Property 语句](../../../../visual-basic/language-reference/statements/property-statement.md)

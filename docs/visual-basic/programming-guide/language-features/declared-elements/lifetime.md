@@ -10,12 +10,12 @@ helpviewer_keywords:
 - lifetime [Visual Basic], Visual Basic
 - lifetime [Visual Basic]
 ms.assetid: bd91e390-690a-469a-9946-8dca70bc14e7
-ms.openlocfilehash: 15fb6895836de95d37081c44973f455622da178e
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 7a8730834c5241ddb1271d689cdda8942741f15f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56976039"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824918"
 ---
 # <a name="lifetime-in-visual-basic"></a>Visual Basic 中的生存期
 *生存期*已声明元素的是的时间段期间它是可供使用。 变量是唯一具有生存期的元素。 为此，编译器将过程参数和函数返回值视为变量的特殊情况。 变量的生存期表示，它可以在此期间保存值的时间的段。 其值可以更改其生存期内，但它始终保持某些值。  
@@ -72,6 +72,7 @@ ms.locfileid: "56976039"
  在前面的示例中，您可以通过声明生成相同的生存期`applesSold`在模块级别。 如果发生这种方式更改变量的作用域，但是，该过程将不再具有独占访问权限。 因为无法访问其他过程`applesSold`并将其值更改、 运行总计可能是不可靠和代码可能会更难以维护。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)
 - [Nothing](../../../../visual-basic/language-reference/nothing.md)
 - [已声明的元素名称](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)

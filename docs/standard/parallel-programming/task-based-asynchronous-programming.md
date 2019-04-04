@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 458b5e69-5210-45e5-bc44-3888f86abd6f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d2a525a8aff6f6b05777de736d97c72c38a2fa62
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 0ecc1090f2697eb0243a081cde70338c0e6fffec
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55268023"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409921"
 ---
 # <a name="task-based-asynchronous-programming"></a>基于任务的异步编程
 
@@ -84,7 +84,7 @@ ms.locfileid: "55268023"
 [!code-csharp[TPL_TaskIntro#21](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/iteration1a.cs#21)]
 [!code-vb[TPL_TaskIntro#21](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/iteration1a.vb#21)]
 
-此状态作为自变量传递给任务委托，并且可通过使用 <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=nameWithType> 属性从任务对象访问。  以下示例在上一示例的基础上演变而来。 它使用 <xref:System.Threading.Tasks.Task.AsyncState%2A> 属性显示关于传递到 lambda 表达式的 `CustomData` 对象的信息。
+此状态作为参数传递给任务委托，并且可通过使用 <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=nameWithType> 属性从任务对象访问。  以下示例在上一示例的基础上演变而来。 它使用 <xref:System.Threading.Tasks.Task.AsyncState%2A> 属性显示关于传递到 lambda 表达式的 `CustomData` 对象的信息。
 
 [!code-csharp[TPL_TaskIntro#23](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/asyncstate.cs#23)]
 [!code-vb[TPL_TaskIntro#23](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/asyncstate.vb#23)]
@@ -97,7 +97,7 @@ ms.locfileid: "55268023"
 
 创建任务的大多数 API 提供接受 <xref:System.Threading.Tasks.TaskCreationOptions> 参数的重载。 通过指定下列选项之一，可指示任务计划程序如何在线程池中安排任务计划。 下表列出了各种任务创建选项。
 
-|<xref:System.Threading.Tasks.TaskCreationOptions> 参数值|说明​​|
+|<xref:System.Threading.Tasks.TaskCreationOptions> 参数值|说明|
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
 |<xref:System.Threading.Tasks.TaskCreationOptions.None>|未指定任何选项时的默认值。 计划程序将使用其默认试探法来计划任务。|
 |<xref:System.Threading.Tasks.TaskCreationOptions.PreferFairness>|指定应当计划任务，以使越早创建的任务将更可能越早执行，而越晚创建的任务将更可能越晚执行。|
@@ -135,7 +135,7 @@ ms.locfileid: "55268023"
 
 使用 <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> 和 <xref:System.Threading.Tasks.Task%601.ContinueWith%2A?displayProperty=nameWithType> 方法，可以指定要在先行任务完成时启动的任务。 延续任务的委托已传递了对先行任务的引用，因此它可以检查先行任务的状态，并通过检索 <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> 属性的值将先行任务的输出用作延续任务的输入。
 
-在下面的示例中，`getData` 任务通过调用 <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%29?displayProperty=nameWithType> 方法来启动。 当 `processData` 完成时，`getData` 任务自动启动，当 `displayData` 完成时，`processData` 启动。 `getData` 产生一个整数数组，通过 `processData` 任务的 `getData` 属性，<xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> 任务可访问该数组。 `processData` 任务处理该数组并返回结果，结果的类型从传递到 <xref:System.Threading.Tasks.Task%601.ContinueWith%60%601%28System.Func%7BSystem.Threading.Tasks.Task%7B%600%7D%2C%60%600%7D%29?displayProperty=nameWithType> 方法的 lambda 表达式的返回类型推断而来。 `displayData` 完成时，`processData` 任务自动执行，而 <xref:System.Tuple%603> 任务可通过 `processData` 任务的 `displayData` 属性访问由 `processData` lambda 表达式返回的 <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> 对象。 `displayData` 任务采用 `processData` 任务的结果，继而得出自己的结果，其类型以相似方式推断而来，且可由程序中的 <xref:System.Threading.Tasks.Task%601.Result%2A> 属性使用。
+在下面的示例中，`getData` 任务通过调用 <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%29?displayProperty=nameWithType> 方法来启动。 当 `processData` 完成时，`getData` 任务自动启动，当 `displayData` 完成时，`processData` 启动。 `getData` 产生一个整数数组，通过 `processData` 任务的 `getData` 属性，<xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> 任务可访问该数组。 `processData` 任务处理该数组并返回结果，结果的类型从传递到 <xref:System.Threading.Tasks.Task%601.ContinueWith%60%601%28System.Func%7BSystem.Threading.Tasks.Task%7B%600%7D%2C%60%600%7D%29?displayProperty=nameWithType> 方法的 Lambda 表达式的返回类型推断而来。 `displayData` 完成时，`processData` 任务自动执行，而 <xref:System.Tuple%603> 任务可通过 `processData` 任务的 `displayData` 属性访问由 `processData` lambda 表达式返回的 <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> 对象。 `displayData` 任务采用 `processData` 任务的结果，继而得出自己的结果，其类型以相似方式推断而来，且可由程序中的 <xref:System.Threading.Tasks.Task%601.Result%2A> 属性使用。
 
 [!code-csharp[TPL_TaskIntro#5](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/continuations1.cs#5)]
 [!code-vb[TPL_TaskIntro#5](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/continuations1.vb#5)]
@@ -236,9 +236,9 @@ ms.locfileid: "55268023"
 
 ## <a name="canceling-tasks"></a>取消任务
 
-`Task` 类支持协作取消，并与 .NET Framework 4 中新增的 <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType> 类和 <xref:System.Threading.CancellationToken?displayProperty=nameWithType> 类完全集成。 <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 类中的大多数构造函数采用 <xref:System.Threading.CancellationToken> 对象作为输入参数。 许多 <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> 和 <xref:System.Threading.Tasks.Task.Run%2A> 重载还包括 <xref:System.Threading.CancellationToken> 参数。
+<xref:System.Threading.Tasks.Task> 类支持协作取消，并与 .NET Framework 4 中新增的 <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType> 类和 <xref:System.Threading.CancellationToken?displayProperty=nameWithType> 类完全集成。 <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> 类中的大多数构造函数采用 <xref:System.Threading.CancellationToken> 对象作为输入参数。 许多 <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> 和 <xref:System.Threading.Tasks.Task.Run%2A> 重载还包括 <xref:System.Threading.CancellationToken> 参数。
 
-你可以创建标记，并使用 <xref:System.Threading.CancellationTokenSource> 类在以后某一时间发出取消请求。 可以将该标记作为自变量传递给 <xref:System.Threading.Tasks.Task>，还可以在执行响应取消请求的工作的用户委托中引用同一标记。
+你可以创建标记，并使用 <xref:System.Threading.CancellationTokenSource> 类在以后某一时间发出取消请求。 可以将该标记作为参数传递给 <xref:System.Threading.Tasks.Task>，还可以在执行响应取消请求的工作的用户委托中引用同一标记。
 
 有关详细信息，请参阅[任务取消](../../../docs/standard/parallel-programming/task-cancellation.md)和[如何：取消任务及其子级](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)。
 
@@ -274,7 +274,7 @@ TPL 有几种在并行和顺序方案中都有用的新公共类型。 它们包
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明​​|
+|Title|说明|
 |-|-|
 |[使用延续任务来链接任务](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md)|描述延续任务的工作方式。|
 |[附加和分离的子任务](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md)|描述附加子任务和分离子任务之间的差异。|

@@ -71,10 +71,8 @@ ms.locfileid: "57356476"
 |-----------|-------------|  
 |<xref:System.Windows.DragDrop.GiveFeedback>|此事件在拖放操作期间持续发生，并且使放置源能够向用户提供反馈信息。 通常通过更改鼠标指针外观来指示拖放目标允许的效果这一方式来提供这种反馈。  这是冒泡事件。|  
 |<xref:System.Windows.DragDrop.QueryContinueDrag>|此事件于拖放操作期间键盘或鼠标按钮状态发生变化时发生，并使放置源能够根据键/按钮状态取消拖放操作。 这是冒泡事件。|  
-|<xref:System.Windows.DragDrop.PreviewGiveFeedback>|
-  <xref:System.Windows.DragDrop.GiveFeedback> 的隧道版本。|  
-|<xref:System.Windows.DragDrop.PreviewQueryContinueDrag>|
-  <xref:System.Windows.DragDrop.QueryContinueDrag> 的隧道版本。|  
+|<xref:System.Windows.DragDrop.PreviewGiveFeedback>|<xref:System.Windows.DragDrop.GiveFeedback> 的隧道版本。|  
+|<xref:System.Windows.DragDrop.PreviewQueryContinueDrag>|<xref:System.Windows.DragDrop.QueryContinueDrag> 的隧道版本。|  
   
 ### <a name="drop-target-events"></a>拖放目标事件  
   
@@ -84,14 +82,10 @@ ms.locfileid: "57356476"
 |<xref:System.Windows.DragDrop.DragLeave>|将对象拖出拖放目标边界时发生此事件。  这是冒泡事件。|  
 |<xref:System.Windows.DragDrop.DragOver>|在拖放目标的边界内拖动（移动）对象时会持续发生此事件。 这是冒泡事件。|  
 |<xref:System.Windows.DragDrop.Drop>|将对象放置在拖放目标上时发生此事件。  这是冒泡事件。|  
-|<xref:System.Windows.DragDrop.PreviewDragEnter>|
-  <xref:System.Windows.DragDrop.DragEnter> 的隧道版本。|  
-|<xref:System.Windows.DragDrop.PreviewDragLeave>|
-  <xref:System.Windows.DragDrop.DragLeave> 的隧道版本。|  
-|<xref:System.Windows.DragDrop.PreviewDragOver>|
-  <xref:System.Windows.DragDrop.DragOver> 的隧道版本。|  
-|<xref:System.Windows.DragDrop.PreviewDrop>|
-  <xref:System.Windows.DragDrop.Drop> 的隧道版本。|  
+|<xref:System.Windows.DragDrop.PreviewDragEnter>|<xref:System.Windows.DragDrop.DragEnter> 的隧道版本。|  
+|<xref:System.Windows.DragDrop.PreviewDragLeave>|<xref:System.Windows.DragDrop.DragLeave> 的隧道版本。|  
+|<xref:System.Windows.DragDrop.PreviewDragOver>|<xref:System.Windows.DragDrop.DragOver> 的隧道版本。|  
+|<xref:System.Windows.DragDrop.PreviewDrop>|<xref:System.Windows.DragDrop.Drop> 的隧道版本。|  
   
  若要处理对象实例的拖放事件，请为上表中所列的事件添加处理程序。 若要处理类级别的拖放事件，请替代相应的虚拟 On*Event 和 On*PreviewEvent 方法。 有关详细信息，请参阅[按控件基类进行的路由事件类处理](marking-routed-events-as-handled-and-class-handling.md#Class_Handling_of_Routed_Events)。  
   

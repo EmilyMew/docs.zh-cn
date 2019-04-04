@@ -2,17 +2,17 @@
 title: 事务协议版本 1.0
 ms.date: 03/30/2017
 ms.assetid: 034679af-0002-402e-98a8-ef73dcd71bb6
-ms.openlocfilehash: c28c013bc791b5358a2282dc21446d5f2129aa2c
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: a1501bbd5364773359f9b62602ba4bb684f076ba
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55258014"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58463899"
 ---
 # <a name="transaction-protocols-version-10"></a>事务协议版本 1.0
 Windows Communication Foundation (WCF) 版本 1 实现 Ws-atomic Transaction 和 Ws-coordination 协议的版本 1.0。 有关版本 1.1 的详细信息，请参阅[事务协议](../../../../docs/framework/wcf/feature-details/transaction-protocols.md)。  
   
-|规范/文档|Link|  
+|规范/文档|链接|  
 |-----------------------------|----------|  
 |WS-Coordination|<http://specs.xmlsoap.org/ws/2004/10/wscoor/wscoor.pdf>|  
 |WS-AtomicTransaction|<http://specs.xmlsoap.org/ws/2004/10/wsat/wsat.pdf>|  
@@ -21,9 +21,9 @@ Windows Communication Foundation (WCF) 版本 1 实现 Ws-atomic Transaction 和
   
  本主题说明 WS-Atomic Transaction (WS-AT) 规范与安全性的组合，并说明用于事务管理器间通信的安全绑定。 本文档中介绍的方法已经使用 WS-AT 和 WS-Coordination 的其他实现（包括 IBM、IONA、Sun Microsystems 等）成功进行了测试。  
   
- 下图描述了两个事务管理器（事务管理器 1 和事务管理器 2）和两个应用程序（应用程序 1 和应用程序 2）之间的互操作性。  
+ 下图描绘了两个事务管理器，事务管理器 1 和事务管理器 2 和两个应用程序，应用程序 1 和 2 应用程序之间的互操作性：  
   
- ![事务协议](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "事务管理器")  
+ ![显示管理器的事务之间的交互的屏幕截图。](./media/transaction-protocols/transaction-managers-flow.gif)  
   
  假设一个典型的 WS-Coordination/WS-Atomic Transaction 方案具有一个发起方 (I) 和一个参与者 (P)。 发起方和参与者都有事务管理器（分别为 ITM 和 PTM）。 两阶段提交在本主题中称为 2PC。  
   
@@ -36,7 +36,7 @@ Windows Communication Foundation (WCF) 版本 1 实现 Ws-atomic Transaction 和
 |5.应用程序消息|16.已准备 (2PC)|  
 |6.使用上下文的 CreateCoordinationContext|17.已准备 (2PC)|  
 |7.注册（持久）|18.已提交（完成）|  
-|8.RegisterResponse|19.提交 (2PC)|  
+|8。RegisterResponse|19.提交 (2PC)|  
 |9.CreateCoordinationContextResponse|20.提交 (2PC)|  
 |10.注册（持久）|21.已提交 (2PC)|  
 |11.RegisterResponse|22.已提交 (2PC)|  
@@ -124,7 +124,7 @@ Windows Communication Foundation (WCF) 版本 1 实现 Ws-atomic Transaction 和
  B2131:实现必须支持`wsa:ReferenceParameters`WS 寻址，若要实现的 WCF 的 2PC 消息的相互关系中所述。  
   
 ## <a name="application-message-exchange"></a>应用程序消息交换  
- 只要绑定满足下面的安全需求，应用程序就可以对应用程序间消息随意使用任何特定的绑定：  
+ 只要绑定满足下面的安全要求，应用程序就可以对应用程序间消息随意使用任何特定的绑定：  
   
 -   R2001:应用程序的消息必须流经`t:IssuedTokens`标头与`CoordinationContext`消息的标头中。  
   

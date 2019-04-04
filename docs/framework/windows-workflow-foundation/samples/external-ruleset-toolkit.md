@@ -2,12 +2,12 @@
 title: 外部 RuleSet 工具包
 ms.date: 03/30/2017
 ms.assetid: a306d283-a031-475e-aa01-9ae86e7adcb0
-ms.openlocfilehash: 510b70f7ebeda784dce4731bb4a08896ac2e8361
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: c453c6137beeae8eee0e356734a1f9cdf8d8568b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57710038"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58840232"
 ---
 # <a name="external-ruleset-toolkit"></a>外部 RuleSet 工具包
 
@@ -28,11 +28,9 @@ Visual Studio 提供了一个 RuleSet 编辑器，Windows Workflow Foundation (W
 
 - 一个 `ExternalPolicy` 活动，该活动从 RuleSet 服务请求 RuleSet，并依工作流运行 RuleSet。
 
-图 1 中演示了各个组件间的交互。 后面几节将对每个组件进行描述。
+组件的交互是在下图中所示。 后面几节将对每个组件进行描述。
 
-![外部 RuleSet 示例概念概述](./media/rulesettoolkitsampleoverview.gif "RuleSetToolkitSampleOverview")
-
-图 1：示例概述
+![显示外部 RuleSet 工具包示例概述关系图。](./media/external-ruleset-toolkit/ruleset-toolkit-overview.gif)
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
@@ -45,19 +43,15 @@ Visual Studio 提供了一个 RuleSet 编辑器，Windows Workflow Foundation (W
 
 ## <a name="ruleset-tool"></a>RuleSet 工具
 
-图 2 演示了 RuleSet 工具的屏幕快照。 从**规则存储**菜单中，可以从数据库加载可用的 Ruleset，并将修改过的 Ruleset 保存回存储区。 应用程序配置文件为 RuleSet 数据库提供了数据库连接字符串。 启动工具时，它会从已配置的数据库自动加载 RuleSet。
+下图是 RuleSet 工具的屏幕截图。 从**规则存储**菜单中，可以从数据库加载可用的 Ruleset，并将修改过的 Ruleset 保存回存储区。 应用程序配置文件为 RuleSet 数据库提供了数据库连接字符串。 启动工具时，它会从已配置的数据库自动加载 RuleSet。
 
-![外部 RuleSet 工具包示例输出](./media/rulesetbrowser.gif "RuleSetBrowser")
-
-图 2：RuleSet 浏览器
+![显示规则集浏览器屏幕截图。](./media/external-ruleset-toolkit/ruleset-browser-dialog.gif)
 
 RuleSet 工具将主版本号和次版本号应用到 RuleSet，使您可以同时维护和存储多个版本（除了提供版本管理功能之外，此工具还提供无锁定或其他配置管理功能）。 使用这个工具，您可以创建新的 RuleSet 版本或删除现有版本。 当您单击**新建**，该工具创建新的 RuleSet 名称并应用 1.0 版。 复制版本时，此工具会为选定的 RuleSet 版本（包括所包含的规则）创建一个副本，并分配唯一的新版本号。 这些版本号基于现有的 RuleSet 版本号。 您可以使用窗体上相关联的字段，更改 RuleSet 的名称和版本号。
 
-当您单击**编辑规则**，启动 RuleSet 编辑器，如图 3 中所示。
+当您单击**编辑规则**，启动 RuleSet 编辑器，如在下图中所示：
 
-![外部 RuleSet 工具包示例输出](./media/ruleseteditor.gif "RuleSetEditor")
-
-图 3：RuleSet 编辑器
+![显示规则集编辑器的屏幕截图。](./media/external-ruleset-toolkit/ruleset-editor-dialog.gif)
 
 这是重新承载的是 Windows Workflow Foundation Visual Studio 外接程序的一部分编辑器对话框。 它可提供相同的功能，包括 Intellisense 支持。 规则是根据与工具; 中 RuleSet 相关联的目标类型 （如工作流） 创作当您单击**浏览**主工具对话框中**工作流/类型选择器**对话框出现，如图 4 所示。
 
@@ -69,21 +63,17 @@ RuleSet 工具将主版本号和次版本号应用到 RuleSet，使您可以同�
 
 程序集文件和类型的路径`name are stored with the`数据库中的规则集，以便从数据库检索 RuleSet 时工具将尝试自动加载目标类型。
 
-当您单击**确定**中**工作流/类型选择器**对话框中，它会验证所选的类型与规则集，以确保目标类型具有规则所引用的所有成员。 错误将显示在**验证错误**对话框 （请参见图 5）。 您可以选择继续此更改忽略错误，或单击**取消**。 从**工具**主工具对话框中的菜单，单击**验证**来重新验证 RuleSet 版本依据目标活动。
+当您单击**确定**中**工作流/类型选择器**对话框中，它会验证所选的类型与规则集，以确保目标类型具有规则所引用的所有成员。 错误将显示在**验证错误**对话框。 您可以选择继续此更改忽略错误，或单击**取消**。 从**工具**主工具对话框中的菜单，单击**验证**来重新验证 RuleSet 版本依据目标活动。
 
-![外部 RuleSet 示例的验证错误](./media/validationerrorsruleset.png "ValidationErrorsRuleSet")
-
-图 5：验证错误
+![显示验证错误对话框的屏幕截图。](./media/external-ruleset-toolkit/validation-errors-dialog.png)
 
 从**数据**菜单在工具中，您可以导入和导出 Ruleset。 当您单击**导入**，此时将显示文件选择器对话框，您可以从中选择.rules 文件。 这可能会也可能不是最初在 Visual Studio 中创建的文件。 此 .rules 文件应包含一个序列化的 `RuleDefinitions` 实例，该实例包含一个条件集合和一个 RuleSet 集合。 该工具不使用条件集合，但它使用`RuleDefinitions`.rules 格式，以允许与 Visual Studio 环境进行交互。
 
-选择.rules 文件后**RuleSet 选择器**对话框 （请参见图 6）。 您可以使用此对话框，从文件中选择想要导入的 RuleSet（默认指定的是所有 RuleSet）。 由于 WF 项目中的版本和程序集的版本相同，所以此 .rules 文件中的 RuleSet 没有版本号。 在导入过程中，该工具会自动分配的下一步提供主版本号 （其中可以更改导入后）;您可以看到已分配的版本号**RuleSet 选择器**列表。
+选择.rules 文件后**RuleSet 选择器**此时将显示对话框。 您可以使用此对话框，从文件中选择想要导入的 RuleSet（默认指定的是所有 RuleSet）。 由于 WF 项目中的版本和程序集的版本相同，所以此 .rules 文件中的 RuleSet 没有版本号。 在导入过程中，该工具会自动分配的下一步提供主版本号 （其中可以更改导入后）;您可以看到已分配的版本号**RuleSet 选择器**列表。
 
-对于导入的每个 RuleSet，工具都会尝试基于 RuleSet 中使用的成员，从 .rules 文件（如果存在）位置下面的 bin\Debug 文件夹查找关联类型。 如果工具找到多个匹配的类型，它将尝试基于 .rules 文件名称和类型名称之间的匹配（例如，`Workflow1` 类型与 Workflow1.rules 相对应）选择一种类型。 如果存在多个匹配，系统会提示您选择类型。 如果此自动标识机制无法找到匹配的程序集或类型，则在导入后，你可以单击**浏览**上主工具对话框以导航到相关联的类型。
+对于导入的每个 RuleSet，工具都会尝试基于 RuleSet 中使用的成员，从 .rules 文件（如果存在）位置下面的 bin\Debug 文件夹查找关联类型。 如果工具找到多个匹配的类型，它将尝试基于 .rules 文件名称和类型名称之间的匹配（例如，`Workflow1` 类型与 Workflow1.rules 相对应）选择一种类型。 如果存在多个匹配，系统会提示您选择类型。 如果此自动标识机制无法找到匹配的程序集或类型，则在导入后，你可以单击**浏览**上主工具对话框以导航到相关联的类型。 下图显示了 RuleSet 选择器：
 
-![Ruleset 选择器](./media/rulesetselector.gif "RuleSetSelector")
-
-图 6：RuleSet 选择器
+![RuleSet 选择器对话框屏幕截图。](./media/external-ruleset-toolkit/ruleset-selector-dialog.gif)
 
 当您单击**数据导出**从主工具菜单**RuleSet 选择器**对话框会再次出现，从中您可以确定从数据库应导出的 Ruleset。 当您单击**确定**即**保存文件**对话框出现时，可以在其中指定的名称和生成的.rules 文件的位置。 由于此 .rules 文件不包含版本信息，因此您只能选择一个具有给定 RuleSet 名称的 RuleSet 版本。
 

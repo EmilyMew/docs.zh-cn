@@ -1,0 +1,32 @@
+items:
+- name: C# 教程
+  href: index.md
+  items:
+  - name: 程序结构
+    href: program-structure.md
+  - name: 类型和变量
+    href: types-and-variables.md
+  - name: 表达式
+    href: expressions.md
+  - name: 语句
+    href: statements.md
+  - name: 类和对象
+    href: classes-and-objects.md
+  - name: 结构
+    href: structs.md
+  - name: 数组
+    href: arrays.md
+  - name: 接口
+    href: interfaces.md
+  - name: 枚举
+    href: enums.md
+  - name: 委托
+    href: delegates.md
+  - name: 特性
+    href: attributes.md
+ms.openlocfilehash: 9f1265c48bea8f76bd352eb95605187b1385cae5
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467976"

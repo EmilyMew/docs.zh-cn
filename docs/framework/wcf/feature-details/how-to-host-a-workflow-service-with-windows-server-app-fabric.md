@@ -2,12 +2,12 @@
 title: 如何：使用 Windows Server App Fabric 的工作流服务主机
 ms.date: 03/30/2017
 ms.assetid: 83b62cce-5fc2-4c6d-b27c-5742ba3bac73
-ms.openlocfilehash: 94eff2a01c70e34e57ff153d0cbdef44b6377b01
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 287067391f47a0b4bcbe11bd4bfab971954cd706
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54651183"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465121"
 ---
 # <a name="how-to-host-a-workflow-service-with-windows-server-app-fabric"></a>如何：使用 Windows Server App Fabric 的工作流服务主机
 在 App Fabric 中承载工作流服务类似于在 IIS/WAS 下承载。 唯一的区别在于 App Fabric 提供的用于部署、监控和管理工作流服务的工具。 本主题使用工作流服务中创建[创建一个长时间运行的工作流服务](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md)。 本主题将指导您创建工作流服务。 本主题将介绍如何使用 App Fabric 承载工作流服务。 有关 Windows Server App Fabric 的详细信息，请参阅[Windows Server App Fabric 文档](https://go.microsoft.com/fwlink/?LinkID=193037&clcid=0x409)。 完成以下步骤之前，请确保已安装 Windows Server App Fabric。  为此，请打开 Internet Information Services (inetmgr.exe)，请单击您的服务器名称**连接**查看，单击站点，然后单击**Default Web Site**。 在屏幕的右侧，您应该看到一个名为部分**App Fabric**。 如果您看不到这一部分（它位于右侧窗格的顶部），则表示您还未安装 App Fabric。 有关安装 Windows Server App Fabric 的详细信息请参阅[安装 Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkId=193136)。  
@@ -56,13 +56,13 @@ ms.locfileid: "54651183"
   
 8.  选择**自动启动**选项卡。这样，您可以为应用程序中的工作流服务指定自动启动设置，如下面的屏幕快照所示。  
   
-     ![App Fabric 自动&#45;启动配置](../../../../docs/framework/wcf/feature-details/media/appfabricconfigurationautostart.gif "AppFabricConfigurationAutostart")  
+     ![显示应用 Fabric 自动的屏幕截图&#45;启动配置。](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/app-fabric-auto-start-configuration.gif)  
   
      有关配置自动启动的详细信息请参阅[使用 App Fabric 配置的自动启动](https://go.microsoft.com/fwlink/?LinkId=193150)。  
   
 9. 选择**限制**选项卡。这样，您可以为工作流服务配置限制设置，如下面的屏幕快照所示。  
   
-     ![App Fabric 配置限制](../../../../docs/framework/wcf/feature-details/media/appfabricconfigurationthrottling.gif "AppFabricConfigurationThrottling")  
+     ![显示限制配置 App Fabric 的屏幕截图。](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/app-fabric-throttling-configuration.gif)  
   
      有关配置限制的详细信息请参阅[使用 App Fabric 配置限制](https://go.microsoft.com/fwlink/?LinkId=193149)。  
   
@@ -82,11 +82,11 @@ ms.locfileid: "54651183"
   
 4.  客户端应用程序将立即调用工作流服务，然后等待。 工作流服务将转为空闲暂留状态。 通过启动 Internet 信息服务 (inetmgr.exe)，在“连接”窗格中导航至 OrderService 并将其选中，可以对此进行验证。 接下来，单击右侧窗格中的“App Fabric 仪表板”图标。 在“暂留的 WF 实例”下，您将看到存在一个暂留的工作流服务实例，如下面的屏幕快照所示。  
   
-     ![App Fabric 仪表板](../../../../docs/framework/wcf/feature-details/media/appfabricdashboard.gif "AppFabricDashboard")  
+     ![显示 App Fabric 仪表板的屏幕截图。](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/app-fabric-dashboard.gif)  
   
      **WF 实例历史记录**列出有关工作流服务工作流服务激活次数、 工作流服务实例的完成数目和工作流实例的失败数等信息。 在活动或空闲实例下将显示一个链接，单击此链接将显示更多有关空闲工作流实例的信息，如下面的屏幕快照所示。  
   
-     ![持久化工作流实例详细信息](../../../../docs/framework/wcf/feature-details/media/persisteddetail.gif "PersistedDetail")  
+     ![显示持久保存工作流实例详细信息的屏幕截图。](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/persisted-workflow-instance-detail.gif)  
   
      详细了解 Windows Server App Fabric 功能以及如何使用它们查看[Windows Server App Fabric 承载功能](https://go.microsoft.com/fwlink/?LinkID=193143&clcid=0x409)  
   

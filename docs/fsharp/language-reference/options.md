@@ -2,12 +2,12 @@
 title: 选项
 description: 了解如何使用F#选项时的实际值可能不存在为命名的值或变量的类型。
 ms.date: 05/16/2016
-ms.openlocfilehash: ebd1c1c39468594de83b3c2af1da48c277bfcbe1
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 6d32693bccc74c2cab642e4f626c9463092e8a39
+ms.sourcegitcommit: d938c39afb9216db377d0f0ecdaa53936a851059
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53613500"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58634097"
 ---
 # <a name="options"></a>选项
 
@@ -40,6 +40,8 @@ ms.locfileid: "53613500"
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1402.fs)]
 
 `openFile`上一示例中的函数具有类型`string -> File option`因为它将返回`File`对象如果成功打开该文件和`None`如果发生异常。 根据具体情况，可能不会捕获异常，而不是允许其传播一个适当的设计选择。
+
+此外，就仍然可以将传递`null`或为 null 值`Some`事例的某个选项。 这通常是为了避免使用，并且通常在例程F#进行编程，但可能是由于在.NET 中的引用类型的特性。
 
 ## <a name="option-properties-and-methods"></a>选项属性和方法
 

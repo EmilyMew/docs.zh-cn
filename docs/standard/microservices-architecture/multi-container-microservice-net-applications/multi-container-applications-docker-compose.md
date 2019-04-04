@@ -4,12 +4,12 @@ description: 如何使用 docker-compose.yml 指定多容器应用程序的微�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/02/2018
-ms.openlocfilehash: bde29f1c67e7c6636932f063f35bc500a27abcef
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: df185950d8155d61b60c9b54e3a8751ec3980408
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57712352"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58463522"
 ---
 # <a name="defining-your-multi-container-application-with-docker-composeyml"></a>使用 docker-compose.yml 定义多容器应用程序
 
@@ -422,11 +422,11 @@ Docker-compose 要求 .env 文件中的每行都是 \<variable\>=\<value\> 格�
 
 #### <a name="additional-resources"></a>其他资源
 
-- **Docker Compose 概述** <br/>
-    [*https://docs.docker.com/compose/overview/*](https://docs.docker.com/compose/overview/)
+- **Docker Compose 概述** \
+    [https://docs.docker.com/compose/overview/](https://docs.docker.com/compose/overview/)
 
-- **多个 Compose 文件** <br/>
-    [*https://docs.docker.com/compose/extends/\#multiple-compose-files*](https://docs.docker.com/compose/extends/#multiple-compose-files)
+- **多个 Compose 文件** \
+    [https://docs.docker.com/compose/extends/\#multiple-compose-files](https://docs.docker.com/compose/extends/#multiple-compose-files)
 
 ### <a name="building-optimized-aspnet-core-docker-images"></a>生成优化的 ASP.NET Core Docker 映像
 
@@ -464,11 +464,11 @@ ENTRYPOINT ["dotnet", "run"]
 
 #### <a name="additional-resources"></a>其他资源
 
-- **Building Optimized Docker Images with ASP.NET Core**（使用 ASP.NET Core 生成优化的 Docker 映像） <br/>
-    [*https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/*](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
+- **Building Optimized Docker Images with ASP.NET Core** \（使用 ASP.NET Core 生成优化的 Docker 映像）
+    [https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
 
-- **为 .NET Core 应用程序生成 Docker 映像** <br/>
-    [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
+- 为 .NET Core 应用程序生成 Docker 映像 \
+    [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](../../../core/docker/building-net-docker-images.md)
 
 > [!div class="step-by-step"]
 > [上一页](data-driven-crud-microservice.md)

@@ -1,0 +1,34 @@
+items:
+- name: 编程概念
+  href: index.md
+  items:
+  - name: 程序集和全局程序集缓存
+    href: assemblies-gac/
+  - name: 使用 Async 和 Await 的异步编程
+    href: async/
+  - name: 特性
+    href: attributes/
+  - name: 调用方信息
+    href: caller-information.md
+  - name: 集合
+    href: collections.md
+  - name: 协变和逆变
+    href: covariance-contravariance/
+  - name: 表达式树
+    href: expression-trees/
+  - name: Iterators
+    href: iterators.md
+  - name: 语言集成查询 (LINQ)
+    href: linq/
+  - name: 面向对象的编程
+    href: object-oriented-programming.md
+  - name: 映像
+    href: reflection.md
+  - name: 序列化 (C#)
+    href: serialization/
+ms.openlocfilehash: 43357f3e4d438d96ba5778100585453792ed29c6
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468529"

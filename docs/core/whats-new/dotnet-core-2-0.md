@@ -4,12 +4,12 @@ description: 了解 .NET Core 的新增功能。
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/13/2017
-ms.openlocfilehash: 5d21d2e07342d52dc438b67f9738f43fca47469a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2d0f6a9faaec4d4438452054624751a40c96c8e5
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54679888"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58464068"
 ---
 # <a name="whats-new-in-net-core-20"></a>.NET Core 2.0 的新增功能
 
@@ -144,7 +144,7 @@ Visual Studio 2017 版本 15.3 和（在某些情况下）Visual Studio for Mac 
 
 若要为多个目标框架生成项目，现在可以从顶级菜单中选择目标平台。 在下图中，名为 SCD1 的项目将目标定为 64 位 macOS X 10.11 (`osx.10.11-x64`) 和 64 位 Windows 10/Windows Server 2016 (`win10-x64`)。 可以先选择目标框架，再选择项目按钮（在此示例中是为了要运行调试版本）。
 
-![生成项目时选择目标框架](media/multitarget.png)
+![显示生成项目时的目标框架选择的屏幕截图。](./media/dotnet-core-2-0/target-framework-selection.png)
 
 ### <a name="side-by-side-support-for-net-core-sdks"></a>对 .NET Core SDK 的并行支持
 

@@ -91,8 +91,7 @@ ms.locfileid: "57377083"
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|此元素包含标准绑定和自定义绑定的集合。|  
   
 ## <a name="remarks"></a>备注  
- 
-  `WSDualHttpBinding` 提供与 `WSHttpBinding` 相同的 Web 服务协议支持，但用于双工协定。 `WSDualHttpBinding` 仅支持 SOAP 安全，且需要可靠的消息传递。 此绑定要求客户端具有可为服务提供回调终结点的公共 URI。 此元素由 `clientBaseAddress` 属性提供。 双向绑定向服务公开客户端的 IP 地址。 客户端应使用安全来确保仅连接到自己信任的服务。  
+ `WSDualHttpBinding` 提供与 `WSHttpBinding` 相同的 Web 服务协议支持，但用于双工协定。 `WSDualHttpBinding` 仅支持 SOAP 安全，且需要可靠的消息传递。 此绑定要求客户端具有可为服务提供回调终结点的公共 URI。 此元素由 `clientBaseAddress` 属性提供。 双向绑定向服务公开客户端的 IP 地址。 客户端应使用安全来确保仅连接到自己信任的服务。  
   
  此绑定可用于通过一个或多个 SOAP 媒介可靠地进行通信。  
   

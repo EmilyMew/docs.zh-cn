@@ -1,19 +1,14 @@
 ---
 title: 无服务器应用：体系结构、模式和 Azure 实现
-description: 无服务器体系结构指南。 了解何时、为何以及如何为企业应用程序实现无服务器体系结构（相对于基础结构即服务 [IaaS] 或平台即服务 [PaaS]）。
+description: '无服务器体系结构指南。 了解何时、为何以及如何为企业应用程序实现无服务器体系结构（相对于基础结构即服务 [IaaS] 或平台即服务 [PaaS]）。'
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 6/26/2018
-ms.openlocfilehash: a19784f42c63914e9cf8f42ee6408ec9aa46e4f3
-ms.sourcegitcommit: 82a3f7882bc03ed733af91fc2a0b113195bf5dc7
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52745311"
 ---
+
 # <a name="serverless-apps-architecture-patterns-and-azure-implementation"></a>无服务器应用：体系结构、模式和 Azure 实现
 
-![](./media/Cover.jpg)
+![显示无服务器应用电子书封面的屏幕截图。](./media/index/serverless-apps-cover.jpg)
 
 > 下载地址：<https://aka.ms/serverless-ebook>
 
@@ -43,7 +38,7 @@ Mac 和 macOS 是 Apple Inc. 的商标
 
 作者:
 
-> [Jeremy Likness](https://twitter.com/jeremylikness)，Microsoft Corp. APEX 高级云开发大使
+> Microsoft Corp. APEX 高级云开发大使，[Jeremy Likness](https://twitter.com/jeremylikness)
 
 参与者：
 
@@ -138,4 +133,4 @@ IaaS 仍然需要大量开销，因为运营仍然负责执行各种任务。 �
 我们正在不断完善指南和相关示例，欢迎你提供反馈！ 如果对如何改进本指南有任何建议，请使用 [GitHub 问题](https://github.com/dotnet/docs/issues)上任何页面底部的反馈部分进行反馈。
 
 >[!div class="step-by-step"]
->[下一篇](architecture-approaches.md)
+>[下一页](architecture-approaches.md)

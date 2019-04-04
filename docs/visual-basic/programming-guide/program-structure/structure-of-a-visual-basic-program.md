@@ -7,12 +7,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], structure
 - Visual Basic code, program structure
 ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
-ms.openlocfilehash: 64ac6da99bf304639dfc0de5e24d6d6bdd3e9795
-ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
+ms.openlocfilehash: 5817d4d37610c87bb7e4ade407421ddce7a3a862
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56746518"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58828116"
 ---
 # <a name="structure-of-a-visual-basic-program"></a>Visual Basic 程序的结构
 从标准构建基块是构建 Visual Basic 程序。 一个*解决方案*由一个或多个项目组成。 一个*项目*又可以包含一个或多个程序集。 每个*程序集*从一个或多个源代码文件编译。 一个*源文件*提供定义和实现的类、 结构、 模块和接口，它们最终包含了所有代码。  
@@ -93,6 +93,7 @@ ms.locfileid: "56746518"
  此过程的最常见类型是`Sub Main()`。 有关详细信息，请参阅[在 Visual Basic 中的 Main 过程](../../../visual-basic/programming-guide/program-structure/main-procedure.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 Visual Basic 中的主要过程](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
 - [Visual Basic 命名约定](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
 - [Visual Basic 限制](../../../visual-basic/programming-guide/program-structure/limitations.md)

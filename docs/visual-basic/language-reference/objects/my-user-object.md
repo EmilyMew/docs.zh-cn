@@ -5,12 +5,12 @@ helpviewer_keywords:
 - My.User property
 - My.User object
 ms.assetid: caa7462e-2149-4bdb-8850-802b80b93cbf
-ms.openlocfilehash: e7195a8651b96bee39ed948d2f91e4e4aa01add3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7154b52f6bbd45756702deccbec3d8d45778b641
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54641130"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58835084"
 ---
 # <a name="myuser-object"></a>My.User 对象
 提供了对当前用户信息的访问权限。  
@@ -24,6 +24,7 @@ ms.locfileid: "54641130"
  **程序集：** Visual Basic 运行库（在 Microsoft.VisualBasic.dll 中）  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Security.Principal.IPrincipal>
 - <xref:System.Threading.Thread.CurrentPrincipal%2A>
 - <xref:System.Web.HttpContext.User%2A>

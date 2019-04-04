@@ -21,12 +21,12 @@ helpviewer_keywords:
 - Visual Basic code, line continuation in
 - statements [Visual Basic], line breaks in
 ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc
-ms.openlocfilehash: a43d09be53eb5a04d154e482f9388e2ca480118a
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 680084c39b90d4f664f48559fa21388ce192d999
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56967173"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58837702"
 ---
 # <a name="how-to-break-and-combine-statements-in-code-visual-basic"></a>如何：拆分和合并语句中的代码 (Visual Basic)
 编写你的代码时，可能有时创建耗时较长的语句都必须采取措施水平滚动代码编辑器中。 尽管这不会影响的方式运行代码，它使得您或任何其他人无法读取代码在监视器上显示。 在这种情况下，应考虑将单个的长语句分成多个行。  
@@ -59,5 +59,6 @@ ms.locfileid: "56967173"
      [!code-vb[VbVbcnConventions#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#10)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [程序结构和代码约定](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
 - [语句](../../../visual-basic/programming-guide/language-features/statements.md)

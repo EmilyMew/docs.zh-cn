@@ -2,12 +2,12 @@
 title: 实体键
 ms.date: 03/30/2017
 ms.assetid: 0d447a6d-fa7a-4db0-8e7a-fd45e385fca0
-ms.openlocfilehash: 02b877efb463e47f9147239c895c482f2d716714
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0c3a809884fc7b7c1f188af9881f784527fa87ba
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54664002"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58408959"
 ---
 # <a name="entity-key"></a>实体键
 *实体键*是[属性](../../../../docs/framework/data/adonet/property.md)或一组的属性[实体类型](../../../../docs/framework/data/adonet/entity-type.md)，用于确定标识。 构成实体键的属性是在设计时选择的。 实体键属性的值必须唯一标识实体类型实例中的[实体集](../../../../docs/framework/data/adonet/entity-set.md)在运行时。 在选择构成实体键的属性时应确保实例在实体集中的唯一性。  
@@ -25,7 +25,7 @@ ms.locfileid: "54664002"
 ## <a name="example"></a>示例  
  下图显示了一个具有三个实体类型的概念模型：`Book`、`Publisher` 和 `Author`。 构成其实体键的每个实体类型的属性均用“(Key)”标示出来。 请注意，`Author` 实体类型有一个包含两个属性（`Name` 和 `Address`）的实体键。  
   
- ![示例模型](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![具有三个实体类型的示例模型](./media/entity-key/example-model-three-entity-types.gif)  
   
  [ADO.NET 实体框架](../../../../docs/framework/data/adonet/ef/index.md)使用称为概念性架构定义语言的特定于域的语言 (DSL) ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) 来定义概念模型。 下面的 CSDL 定义了上图中显示的 `Book` 实体类型。 请注意，实体键通过引用实体类型的 `ISBN` 属性来定义。  
   

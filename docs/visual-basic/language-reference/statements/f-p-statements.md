@@ -2,12 +2,12 @@
 title: F-P 语句 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: cdce7ab0-c52e-4d33-a29b-bf32cdacc79f
-ms.openlocfilehash: 478ee051b3f8ac668d3115b69fa579c474cce85c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f5f1ed4f9d16bb9687e874c97364777494ca6052
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54579259"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842312"
 ---
 # <a name="f-p-statements"></a>F-P 语句
 下表包含 Visual Basic 语言语句的列表。  
@@ -22,6 +22,7 @@ ms.locfileid: "54579259"
 |[Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md)|[Property](../../../visual-basic/language-reference/statements/property-statement.md)|||  
   
 ## <a name="see-also"></a>请参阅
+
 - [A-E 语句](../../../visual-basic/language-reference/statements/a-e-statements.md)
 - [Q-Z 语句](../../../visual-basic/language-reference/statements/q-z-statements.md)
 - [Visual Basic 语言参考](../../../visual-basic/language-reference/index.md)

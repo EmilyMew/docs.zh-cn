@@ -7,17 +7,17 @@ helpviewer_keywords:
 - security [Windows Forms], calling APIs
 - Clipboard [Windows Forms], securing access
 ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
-ms.openlocfilehash: 276def9db2ff610a22b42a88ad658727793b53de
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 6ab7b4d8fe8366a214d70cd73e7e33cafcc584f8
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57718904"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409388"
 ---
 # <a name="additional-security-considerations-in-windows-forms"></a>Windows 窗体中额外的安全注意事项
-[!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 安全设置可能导致应用程序在部分信任环境中运行与在本地计算机上运行有所不同。 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 限制对关键本地资源的访问，如文件系统、网络和非托管 API 等。 安全设置会影响对安全系统无法验证的 Microsoft Win32 API 或其他 API 进行调用的能力。 安全性还会影响应用程序的其他方面，包括文件和数据访问以及打印。 有关在部分信任环境中访问文件和数据的详细信息，请参阅 [Windows 窗体中更加安全的文件和数据访问](more-secure-file-and-data-access-in-windows-forms.md)。 有关在部分信任环境中进行打印的详细信息，请参阅 [Windows 窗体中更加安全的打印](more-secure-printing-in-windows-forms.md)。  
+[!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 安全设置可能导致应用程序在部分信任环境中运行与在本地计算机上运行有所不同。 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 限制对关键本地资源的访问，如文件系统、网络和非托管 API 等。 安全设置会影响 Microsoft Windows API 或其他无法验证由安全系统的 Api 调用的能力。 安全性还会影响应用程序的其他方面，包括文件和数据访问以及打印。 有关在部分信任环境中访问文件和数据的详细信息，请参阅 [Windows 窗体中更加安全的文件和数据访问](more-secure-file-and-data-access-in-windows-forms.md)。 有关在部分信任环境中进行打印的详细信息，请参阅 [Windows 窗体中更加安全的打印](more-secure-printing-in-windows-forms.md)。  
   
- 以下各节讨论从在部分信任环境下运行的应用程序中，如何使用剪贴板，如何执行窗口操作以及如何调用 Win32 API。  
+ 以下部分介绍如何使用剪贴板、 执行窗口操作和从部分信任环境中运行的应用程序调用 Windows API。  
   
 ## <a name="clipboard-access"></a>剪贴板访问  
  <xref:System.Security.Permissions.UIPermission>类控制对剪贴板，并显示关联的访问<xref:System.Security.Permissions.UIPermissionClipboard>枚举值指示的访问级别。 下表显示可能的权限级别。  
@@ -69,8 +69,8 @@ ms.locfileid: "57718904"
   
  若要限制这种潜在风险，应仅使用来自可信任的供应商的第三方控件。 如果所使用的第三方控件是从无法验证的源下载的，则建议检查源代码是否有潜在侵入风险。 确认源无恶意后，应自己编译程序集以确保源与程序集匹配。  
   
-## <a name="win32-api-calls"></a>Win32 API 调用  
- 如果应用程序设计要求从 Win32 API 调用函数，则表示你正在访问非托管代码。 在这种情况下，当使用 Win32 API 调用或值时，无法确定代码将对窗口或操作系统执行的操作。 <xref:System.Security.Permissions.SecurityPermission>类和<xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode>的值<xref:System.Security.Permissions.SecurityPermissionFlag>枚举控制对非托管代码的访问。 应用程序可以访问非托管的代码，仅当向其授予<xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode>权限。 默认情况下，只有本地运行的应用程序才能调用非托管代码。  
+## <a name="windows-api-calls"></a>Windows API 调用  
+ 如果您的应用程序设计需要从 Windows API 调用的函数，您正在访问非托管的代码。 在这种情况下使用 Windows API 调用或值时，无法确定到窗口或操作系统的代码的操作。 <xref:System.Security.Permissions.SecurityPermission>类和<xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode>的值<xref:System.Security.Permissions.SecurityPermissionFlag>枚举控制对非托管代码的访问。 应用程序可以访问非托管的代码，仅当向其授予<xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode>权限。 默认情况下，只有本地运行的应用程序才能调用非托管代码。  
   
  某些 Windows 窗体成员提供需要的非托管的访问<xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode>权限。 下表列出了中的成员<xref:System.Windows.Forms>需要权限的命名空间。 有关各个成员所需权限的详细信息，请参阅 .NET Framework 类库文档。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "57718904"
 |<xref:System.Windows.Forms.Screen>|-   <xref:System.Windows.Forms.Screen.FromHandle%2A> 方法|  
 |<xref:System.Windows.Forms.SendKeys>|-   <xref:System.Windows.Forms.SendKeys.Send%2A> 方法<br />-   <xref:System.Windows.Forms.SendKeys.SendWait%2A> 方法|  
   
- 如果你的应用程序无权调用非托管的代码，你的应用程序必须请求<xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode>权限，或者您必须考虑实现这些功能的其他方法; 在许多情况下，Windows 窗体提供了 Win32 API 的托管替代方法函数。 如果不存在任何备选方法并且应用程序必须访问非托管代码，则必须提升应用程序的权限。  
+ 如果你的应用程序无权调用非托管的代码，你的应用程序必须请求<xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode>权限，或者您必须考虑实现这些功能的其他方法; 在许多情况下，Windows 窗体提供了 Windows 的托管替代方法API 函数。 如果不存在任何备选方法并且应用程序必须访问非托管代码，则必须提升应用程序的权限。  
   
  调用非托管代码的权限使应用程序几乎可以执行任何操作。 因此，应该只向来自于受信任源的应用程序授予调用非托管代码的权限。 另外，根据应用程序的不同，调用非托管代码的应用程序功能块可以是可选的，或者只在完全受信任的环境中启用。 有关危险权限的详细信息，请参阅[危险权限和策略管理](../misc/dangerous-permissions-and-policy-administration.md)。 有关提升权限的详细信息，请参阅[常规安全策略管理](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ed5htz45(v=vs.100))。  
   

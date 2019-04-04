@@ -2,12 +2,12 @@
 title: 属性
 ms.date: 03/30/2017
 ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
-ms.openlocfilehash: bc8f890479e195f1e6ef847219a74f165c722fd6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 80c4bb3ccbab75c17b098723fc10b8b996e40576
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54589420"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409713"
 ---
 # <a name="property"></a>属性
 *属性*是的基本构建基块[实体类型](../../../../docs/framework/data/adonet/entity-type.md)并[复杂类型](../../../../docs/framework/data/adonet/complex-type.md)。 属性定义了实体类型实例或复杂类型实例要包含的数据的形状和特征。 概念模型中的属性类似于为类定义的属性。 正如类的属性定义类的形状和携带有关对象的信息一样，概念模型中的属性也定义实体类型的形状和携带有关实体类型实例的信息。  
@@ -31,7 +31,7 @@ ms.locfileid: "54589420"
 ## <a name="example"></a>示例  
  下图显示了一个具有三个实体类型的概念模型：`Book`、`Publisher` 和 `Author`。 每个实体类型具有多个属性，但图中没有传达每个属性的类型信息。 属性是[实体键](../../../../docs/framework/data/adonet/entity-key.md)用 (Key) 标示出来。  
   
- ![示例模型](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![具有三个实体类型的示例模型](./media/property/example-model-three-entity-types.gif)  
   
  [ADO.NET 实体框架](../../../../docs/framework/data/adonet/ef/index.md)使用称为概念性架构定义语言的特定于域的语言 (DSL) ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) 来定义概念模型。 下面的 CSDL 定义了 `Book` 实体类型（如上图所示）并使用 XML 特性表明了每个属性的类型和名称。 此外，还使用 XML 特性定义了一个可选方面 `Nullable`。  
   

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC36810
 ms.assetid: 9323b5d2-ba14-4e49-91f1-9ad647162144
-ms.openlocfilehash: 17886ececbd418ae60d6321c7a6278a1e982b9af
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 337fc1fb4dfc83c9b4814d3e45eb0cbe0758f7ce
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54611275"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842520"
 ---
 # <a name="errors-occurred-while-compiling-the-xml-schemas-in-the-project"></a>编译项目中的 XML 架构时发生错误
 编译项目中的 XML 架构时发生错误。 因此，XML IntelliSense 不可用。  
@@ -32,5 +32,6 @@ ms.locfileid: "54611275"
 -   如果在 XSD 架构中不标识任何错误，则 XML 编译器可能没有足够的信息来提供详细的错误消息。 你可以获取更详细的错误信息，如果您确保.xsd 文件的 XML 命名空间包含的项目匹配项标识为 Visual Studio 中设置 XML 架构的 XML 命名空间。  
   
 ## <a name="see-also"></a>请参阅
+
 - [“错误列表”窗口](/visualstudio/ide/reference/error-list-window)
 - [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

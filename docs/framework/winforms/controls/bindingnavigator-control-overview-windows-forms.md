@@ -9,20 +9,21 @@ helpviewer_keywords:
 - data [Windows Forms], navigating
 - data navigation
 ms.assetid: 4423eede-f8d1-4d02-822f-5bf8432680d0
-ms.openlocfilehash: 489c60aff7b431617477a381161e1c8f587947e5
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: b6413c8481a021afa34b7de228df14c109a50889
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57703304"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58834226"
 ---
 # <a name="bindingnavigator-control-overview-windows-forms"></a>BindingNavigator 控件概述（Windows 窗体）
 你可以使用 <xref:System.Windows.Forms.BindingNavigator> 控件来创建标准化的方法，以便用户搜索和更改 Windows 窗体上的数据。 频繁对 <xref:System.Windows.Forms.BindingSource> 组件使用 <xref:System.Windows.Forms.BindingNavigator>，以便用户能够在窗体上数据记录之间移动并与记录进行交互。  
   
 ## <a name="how-the-bindingnavigator-works"></a>BindingNavigator 的工作原理  
- <xref:System.Windows.Forms.BindingNavigator> 控件由包含一系列 <xref:System.Windows.Forms.ToolStripItem> 对象的 <xref:System.Windows.Forms.ToolStrip> 组成，以执行大部分常见的与数据相关的操作：添加数据、删除数据，以及在数据中导航。 默认情况下，<xref:System.Windows.Forms.BindingNavigator> 控件包含这些标准按钮。 以下屏幕快照显示窗体上的 <xref:System.Windows.Forms.BindingNavigator> 控件。  
+
+ <xref:System.Windows.Forms.BindingNavigator> 控件由包含一系列 <xref:System.Windows.Forms.ToolStripItem> 对象的 <xref:System.Windows.Forms.ToolStrip> 组成，以执行大部分常见的与数据相关的操作：添加数据、删除数据，以及在数据中导航。 默认情况下，<xref:System.Windows.Forms.BindingNavigator> 控件包含这些标准按钮。 以下屏幕截图显示<xref:System.Windows.Forms.BindingNavigator>窗体上的控件：
   
- ![BindingNavigator Control](./media/cpdatacontainerctrl.gif "cpDataContainerCtrl")  
+ ![BindingNavigator 控件屏幕截图。](./media/bindingnavigator-control-overview-windows-forms/bindingnavigator-control-form.gif)  
   
  下表列出了该控件并介绍了其功能。  
   

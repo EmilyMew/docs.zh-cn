@@ -1,0 +1,28 @@
+items:
+- name: 文件系统和注册表
+  href: index.md
+  items:
+  - name: 如何：循环访问目录树
+    href: how-to-iterate-through-a-directory-tree.md
+  - name: 如何：获取文件、文件夹和驱动器的相关信息
+    href: how-to-get-information-about-files-folders-and-drives.md
+  - name: 如何：创建文件或文件夹
+    href: how-to-create-a-file-or-folder.md
+  - name: 如何：复制、删除和移动文件和文件夹
+    href: how-to-copy-delete-and-move-files-and-folders.md
+  - name: 如何：提供文件操作进度对话框
+    href: how-to-provide-a-progress-dialog-box-for-file-operations.md
+  - name: 如何：写入到文本文件
+    href: how-to-write-to-a-text-file.md
+  - name: 如何：从文本文件读取
+    href: how-to-read-from-a-text-file.md
+  - name: 如何：一次一行地读取文本文件 (Visual C#)
+    href: how-to-read-a-text-file-one-line-at-a-time.md
+  - name: 如何：在注册表中创建注册表项 (Visual C#)
+    href: how-to-create-a-key-in-the-registry.md
+ms.openlocfilehash: 779f7fad6c2ba693a27f2657fc55c5db55ce00ed
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467957"

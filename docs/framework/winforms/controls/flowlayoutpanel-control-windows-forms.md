@@ -14,8 +14,7 @@ ms.lasthandoff: 03/09/2019
 ms.locfileid: "57716148"
 ---
 # <a name="flowlayoutpanel-control-windows-forms"></a>FlowLayoutPanel 控件（Windows 窗体）
-
-  `FlowLayoutPanel` 控件沿水平或纵排方向排列其内容。 可从一行到下一行，或从一列到下列进行内容换行。 还可以剪切内容，而不是进行换行。  
+`FlowLayoutPanel` 控件沿水平或纵排方向排列其内容。 可从一行到下一行，或从一列到下列进行内容换行。 还可以剪切内容，而不是进行换行。  
   
  本节中的主题介绍可用于将 `FlowLayoutPanel` 功能构建到应用程序的概念和技术。  
   

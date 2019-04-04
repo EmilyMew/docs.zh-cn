@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Partial keyword [Visual Basic]
 - type promotion
 ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
-ms.openlocfilehash: e1464421866ee22f27f9cf0a3611bc09a631c004
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 0f74935d58d47e65b5eb614abc86a3fc9c8e6c42
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56975831"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838360"
 ---
 # <a name="partial-visual-basic"></a>分部 (Visual Basic)
 指示类型声明为类型的分部定义。  
@@ -80,8 +80,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
   
      仅当其完全限定的路径相同时，编译器才将合并分部定义。  
   
- 
-  `Partial` 关键字可用于以下上下文中：  
+ `Partial` 关键字可用于以下上下文中：  
   
  [Class 语句](../../../visual-basic/language-reference/statements/class-statement.md)  
   
@@ -95,6 +94,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
  前面示例中的两个分部定义可能在同一源文件中或在两个不同的源文件中。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Class 语句](../../../visual-basic/language-reference/statements/class-statement.md)
 - [Structure 语句](../../../visual-basic/language-reference/statements/structure-statement.md)
 - [类型提升](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)

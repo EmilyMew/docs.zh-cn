@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Object data type [Visual Basic], data types
 - data types [Visual Basic], choosing
 ms.assetid: 64c71a12-9057-4dbf-baca-7379c4aada69
-ms.openlocfilehash: 7e32bf158b91c23c32028eb6877bd0089a9019b2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4808d87322d5b21b70ec38e2eb31b2b204938745
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54655044"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821760"
 ---
 # <a name="miscellaneous-data-types-visual-basic"></a>其他数据类型 (Visual Basic)
 Visual Basic 提供几种数据类型不是针对数字或字符。 相反，它们处理专用数据如是/否值、 日期/时间值和对象地址。  
@@ -31,6 +31,7 @@ Visual Basic 提供几种数据类型不是针对数字或字符。 相反，它
  利用`Object`数据类型是，可以使用它来存储任何数据类型的数据。 缺点是会产生额外的操作，需要更多的执行时间并提高执行速度慢的应用程序。 如果您使用`Object`对于值类型变量，则会产生*装箱*并*取消装箱*。 如果将其用于引用类型，则会产生*后期绑定*。  
   
 ## <a name="see-also"></a>请参阅
+
 - [类型字符](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
 - [基本数据类型](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
 - [数值数据类型](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)

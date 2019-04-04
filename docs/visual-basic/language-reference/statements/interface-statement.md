@@ -7,12 +7,12 @@ helpviewer_keywords:
 - interface statement [Visual Basic]
 - interfaces [Visual Basic], interface definition
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
-ms.openlocfilehash: f65875caa16bfe00866cc3cd6fd0c0b22b034576
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: db39759a804905450e7f8913f45e8ddab39d8416
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56970527"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58823527"
 ---
 # <a name="interface-statement-visual-basic"></a>Interface 语句 (Visual Basic)
 声明接口的名称，并引入了该接口包含成员的定义。  
@@ -113,6 +113,7 @@ End Interface
  请注意，`Property`并`Function`语句不会引入块结尾`End Property`和`End Function`在界面中。 该接口定义仅其成员的签名。 完整`Property`并`Function`块中实现的类显示`thisInterface`。  
   
 ## <a name="see-also"></a>请参阅
+
 - [接口](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
 - [Class 语句](../../../visual-basic/language-reference/statements/class-statement.md)
 - [Module 语句](../../../visual-basic/language-reference/statements/module-statement.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], indefinite number of argument values
 - arrays [Visual Basic], parameter arrays
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
-ms.openlocfilehash: e059f471f78262320f1968c12192de710876aef4
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 8ea4c77056701b8f61c1ed5a53cf20d98ae913bc
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56966575"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58834150"
 ---
 # <a name="parameter-arrays-visual-basic"></a>参数数组 (Visual Basic)
 通常情况下，不能调用有更多参数不是过程声明指定的过程。 当您需要的参数数量不确定时，可以声明*参数数组*，它允许过程接受一个参数的值的数组。 无需知道何时定义过程的参数数组中的元素数。 数组大小由该过程每次调用单独确定。  
@@ -57,6 +57,7 @@ ms.locfileid: "56966575"
  [!code-vb[VbVbcnProcedures#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#49)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.Information.UBound%2A>
 - [过程](./index.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)

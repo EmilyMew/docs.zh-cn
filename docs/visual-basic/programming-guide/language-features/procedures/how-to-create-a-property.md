@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - properties [Visual Basic]
 ms.assetid: 4d229712-6be8-4c5c-bac5-06995ce9185a
-ms.openlocfilehash: 4afcd57a9133515cecc72da856f67e4e3d5ff717
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 3e3f1168a983b2fa608cbadffba0531afef7c92b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56970956"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58816838"
 ---
 # <a name="how-to-create-a-property-visual-basic"></a>如何：创建一个属性 (Visual Basic)
 将属性定义之间`Property`语句和一个`End Property`语句。 在此定义中，定义`Get`过程中，`Set`过程中，或两者。 该属性的所有代码均位于这些过程中。  
@@ -61,6 +61,7 @@ ms.locfileid: "56970956"
  [!code-vb[VbVbcnProcedures#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#9)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [属性过程](./property-procedures.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)

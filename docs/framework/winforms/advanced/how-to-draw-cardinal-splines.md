@@ -9,12 +9,12 @@ helpviewer_keywords:
 - drawing [Windows Forms], cardinal splines
 - graphics [Windows Forms], cardinal splines
 ms.assetid: a4a41e80-4461-4b47-b6bd-2c5e68881994
-ms.openlocfilehash: 687143273a07acba4b4d60acb1be25eee165b91d
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 0f5c7a8555130e884b641648d1ffc9865f44dc1e
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57710480"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58464692"
 ---
 # <a name="how-to-draw-cardinal-splines"></a>如何：绘制基数样条
 基数样条是平滑地通过一组给定的点的曲线。 若要绘制的基数样条，创建<xref:System.Drawing.Graphics>对象并将传递指向数组的地址<xref:System.Drawing.Graphics.DrawCurve%2A>方法。  
@@ -23,16 +23,16 @@ ms.locfileid: "57710480"
   
 -   下面的示例绘制的钟形基数样条通过五个指定点。 下图显示了曲线和五个点。  
   
-     ![基数样条曲线](./media/cardinalspline1.png "CardinalSpline1")  
+     ![图，显示的钟形基数样条。](./media/how-to-draw-cardinal-splines/bell-shaped-cardinal-spline.png)  
   
  [!code-csharp[System.Drawing.ConstructingDrawingCurves#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/CS/Class1.cs#21)]
  [!code-vb[System.Drawing.ConstructingDrawingCurves#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/VB/Class1.vb#21)]  
   
 ### <a name="drawing-a-closed-cardinal-spline"></a>绘制闭合的基数样条  
   
--   使用<xref:System.Drawing.Graphics.DrawClosedCurve%2A>方法的<xref:System.Drawing.Graphics>类来绘制闭合基数样条。 闭合的基数样条曲线持续到数组中的最后一个点并向数组中的第一个点连接。 下面的示例绘制通过六个指定点的闭合基数样条。 下图显示了已关闭的样条曲线和六个点。  
+-   使用<xref:System.Drawing.Graphics.DrawClosedCurve%2A>方法的<xref:System.Drawing.Graphics>类来绘制闭合基数样条。 闭合的基数样条曲线持续到数组中的最后一个点并向数组中的第一个点连接。 下面的示例绘制通过六个指定点的闭合基数样条。 下图显示了已关闭的样条曲线和六个点：  
   
- ![基数样条曲线](./media/cardinalspline1a.png "CardinalSpline1A")  
+ ![图，显示的闭合基数样条。](./media/how-to-draw-cardinal-splines/closed-cardinal-spine.png)  
   
  [!code-csharp[System.Drawing.ConstructingDrawingCurves#22](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/CS/Class1.cs#22)]
  [!code-vb[System.Drawing.ConstructingDrawingCurves#22](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/VB/Class1.vb#22)]  
@@ -41,7 +41,7 @@ ms.locfileid: "57710480"
   
 -   更改的基数样条弯曲的张力自变量表示通过方式<xref:System.Drawing.Graphics.DrawCurve%2A>方法。 下面的示例绘制三个传递一组相同的点的基数样条。 下图显示了其张力值以及三个自由绘制曲线。 请注意张力为 0 时, 点由直线连接。  
   
- ![基数样条曲线](./media/cardinalspline2.png "CardinalSpline2")  
+ ![图，显示三个基本样条。](./media/how-to-draw-cardinal-splines/three-cardinal-splines.png)  
   
  [!code-csharp[System.Drawing.ConstructingDrawingCurves#23](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/CS/Class1.cs#23)]
  [!code-vb[System.Drawing.ConstructingDrawingCurves#23](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/VB/Class1.vb#23)]  

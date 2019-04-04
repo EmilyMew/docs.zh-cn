@@ -9,12 +9,12 @@ helpviewer_keywords:
 - expressions [Visual Basic], lambda
 - inline functions [Visual Basic]
 ms.assetid: 137064b0-3928-4bfa-ba71-c3f9cbd951e2
-ms.openlocfilehash: 02377b0765144064df8d51fa63768412ca4b606a
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: c43739e098a91d54d300fa7074d1563da179c0e9
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57363471"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832107"
 ---
 # <a name="lambda-expressions-visual-basic"></a>Lambda 表达式 (Visual Basic)
 一个*lambda 表达式*是函数或子例程没有可用于任何委托是有效的名称。 Lambda 表达式可以是函数或子例程，并且可以是单行或多行。 可以将值从当前作用域传递到 lambda 表达式中。  
@@ -152,6 +152,7 @@ End Class
      [!code-vb[VbVbalrLambdas#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#5)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [Visual Basic 中的 LINQ 简介](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [委托](../../../../visual-basic/programming-guide/language-features/delegates/index.md)

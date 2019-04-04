@@ -2,12 +2,12 @@
 title: 函数编程与命令式编程 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 6a1f3b57-00e6-447d-9906-74c7c4d5d85c
-ms.openlocfilehash: 762889717d2b20d5a06848ebaa41f3e066a8c061
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dec9fd4b59d96c0548e49276a27103114a7b3e8b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54579805"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827324"
 ---
 # <a name="functional-programming-vs-imperative-programming-visual-basic"></a>函数编程与命令式编程 (Visual Basic)
 本主题对函数编程和更传统的命令性（过程性）编程进行比较。  
@@ -51,6 +51,7 @@ ms.locfileid: "54579805"
  幸运的是，Visual Basic 并不要求完全转变为函数编程，因为它支持命令性和功能性编程方法。 开发人员可以选择哪种方法最适合特定方案。 实际上，程序通常组合使用这两种方法。  
   
 ## <a name="see-also"></a>请参阅
+
 - [纯功能转换 (Visual Basic) 简介](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
 - [XSLT 转换](../../../../standard/data/xml/xslt-transformations.md)
 - [重构为纯函数 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)

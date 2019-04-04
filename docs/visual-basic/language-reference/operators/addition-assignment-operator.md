@@ -10,12 +10,12 @@ helpviewer_keywords:
 - += operator [Visual Basic], appending strings
 - compound assignment statements [Visual Basic]
 ms.assetid: d3e959f4-85d4-4e47-87c4-77b62335a5b3
-ms.openlocfilehash: 7fdf5cd422cf2a4081372bc14e74ed7463393520
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 4b8f36397d0f52866ebe9fa188d6b163364aeffc
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56979848"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838990"
 ---
 # <a name="-operator-visual-basic"></a>+= 运算符 (Visual Basic)
 将数值表达式的值添加到的数值变量或属性的值并将结果赋给变量或属性。 此外可用于串联`String`表达式`String`变量或属性，并且将结果赋给变量或属性。  
@@ -58,6 +58,7 @@ variableorproperty += expression
  值`num1`13 和的值现在是`str1`现在是"103"。  
   
 ## <a name="see-also"></a>请参阅
+
 - [+ 运算符](../../../visual-basic/language-reference/operators/addition-operator.md)
 - [赋值运算符](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [算术运算符](../../../visual-basic/language-reference/operators/arithmetic-operators.md)

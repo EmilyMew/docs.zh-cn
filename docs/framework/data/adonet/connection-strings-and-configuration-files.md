@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 37df2641-661e-407a-a3fb-7bf9540f01e8
-ms.openlocfilehash: 5de30627d6d0e1209b12912437ae3403890f1678
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.openlocfilehash: 5e83d13d24a0b17fd886995e552dd0a7e2cf8ff4
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55828339"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409947"
 ---
 # <a name="connection-strings-and-configuration-files"></a>连接字符串和配置文件
 在应用程序代码中嵌入连接字符串可能导致安全漏洞和维护问题。 使用 [Ildasm.exe（IL 反汇编程序）](../../../../docs/framework/tools/ildasm-exe-il-disassembler.md)工具可以查看编译到应用程序源代码中的未加密连接字符串。 此外，如果连接字符串发生更改，则必须重新编译应用程序。 因此，我们建议您将连接字符串存储在应用程序配置文件中。  
@@ -81,10 +81,10 @@ ms.locfileid: "55828339"
 |<xref:System.Configuration.ConnectionStringSettings.ConnectionString%2A>|连接字符串。 映射到 connectionString 属性。|  
   
 ### <a name="example-listing-all-connection-strings"></a>示例:列出所有连接字符串  
- 此示例循环访问 `ConnectionStringSettings` 集合，并在控制台窗口中显示 <xref:System.Configuration.ConnectionStringSettings.Name%2A>、<xref:System.Configuration.ConnectionStringSettings.ProviderName%2A> 和 <xref:System.Configuration.ConnectionStringSettings.ConnectionString%2A> 属性。  
+ 此示例循环访问<xref:System.Configuration.ConnectionStringSettingsCollection>，并显示<xref:System.Configuration.ConnectionStringSettings.Name%2A?displayProperty=nameWithType>， <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A?displayProperty=nameWithType>，和<xref:System.Configuration.ConnectionStringSettings.ConnectionString%2A?displayProperty=nameWithType>控制台窗口中的属性。  
   
 > [!NOTE]
->  System.Configuration.dll 并不包含在所有项目类型中，您可能需要对其设置引用才能使用配置类。 特定应用程序配置文件的名称和位置因应用程序类型和托管进程的不同而有所不同。  
+>  System.Configuration.dll 并不包含在所有项目类型中，您可能需要对其设置引用才能使用配置类。 特定应用程序配置文件的名称和位置因应用程序类型和宿主进程的不同而有所不同。  
   
  [!code-csharp[DataWorks ConnectionStringSettings.RetrieveFromConfig#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfig/CS/source.cs#1)]
  [!code-vb[DataWorks ConnectionStringSettings.RetrieveFromConfig#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfig/VB/source.vb#1)]  
@@ -139,21 +139,25 @@ ms.locfileid: "55828339"
 |<xref:System.Configuration.RsaProtectedConfigurationProvider>|使用 RSA 加密算法来加密和解密数据。 RSA 算法既可用于公钥加密，也可用于数字签名。 它还称为“公共密钥”或非对称加密，因为它使用两个不同的密钥。 可以使用 [ASP.NET IIS 注册工具 (Aspnet_regiis.exe)](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)) 来加密 Web.config 文件中的节和管理加密密钥。 ASP.NET 在处理配置文件时解密该文件。 ASP.NET 应用程序的标识必须对用于加密和解密各加密节的加密密钥具有读取权限。|  
 |<xref:System.Configuration.DpapiProtectedConfigurationProvider>|使用 Windows Data Protection API (DPAPI) 来加密配置节。 它使用 Windows 内置加密服务，并可为计算机特定或用户帐户特定保护进行配置。 对于同一服务器上需要共享信息的多个应用程序来说，计算机特定保护非常有用。 用户帐户特定保护可与以特定用户标识运行的服务（如共享宿主环境）一起使用。 每个应用程序以单独的标识运行，这样就限制了对文件和数据库等资源的访问。|  
   
- 这两种提供程序都可以对数据进行强加密。 但是，如果计划在多台服务器（如网络场）上使用相同的加密配置文件，则只有通过 `RsaProtectedConfigurationProvider` 才能导出用于加密数据的加密密钥，并将其导入其他服务器。 有关详细信息，请参阅[导入和导出受保护配置的 RSA 密钥容器](https://docs.microsoft.com/previous-versions/aspnet/yxw286t2(v=vs.100))。  
+ 这两种提供程序都可以对数据进行强加密。 但是，如果计划在多台服务器（如网络场）上使用相同的加密配置文件，则只有通过 <xref:System.Configuration.RsaProtectedConfigurationProvider> 才能导出用于加密数据的加密密钥，并将其导入其他服务器。 有关详细信息，请参阅[导入和导出受保护配置的 RSA 密钥容器](https://docs.microsoft.com/previous-versions/aspnet/yxw286t2(v=vs.100))。  
   
 ### <a name="using-the-configuration-classes"></a>使用配置类  
- <xref:System.Configuration> 命名空间提供以编程方式使用配置设置的类。 <xref:System.Configuration.ConfigurationManager> 类可提供对计算机、应用程序和用户配置文件的访问。 如果要创建 ASP.NET 应用程序，可以使用 <xref:System.Web.Configuration.WebConfigurationManager> 类，它可提供相同的功能，同时还允许访问 ASP.NET 应用程序特有的设置（如 \<system.web> 中的设置）。  
+ 
+  <xref:System.Configuration> 命名空间提供以编程方式使用配置设置的类。 
+  <xref:System.Configuration.ConfigurationManager> 类可提供对计算机、应用程序和用户配置文件的访问。 如果要创建 ASP.NET 应用程序，可以使用 <xref:System.Web.Configuration.WebConfigurationManager> 类，它可提供相同的功能，同时还允许访问 ASP.NET 应用程序特有的设置（如 \<system.web> 中的设置）。  
   
 > [!NOTE]
->  <xref:System.Security.Cryptography> 命名空间包含提供用于加密和解密数据的其他选项的类。 如果需要采用在使用受保护配置时不可用的加密服务，请使用这些类。 一些类是非托管 Microsoft CryptoAPI 的包装类，而其他类则是纯托管实现。 有关更多信息，请参阅[加密服务](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/93bskf9z(v=vs.90))。  
+>  
+  <xref:System.Security.Cryptography> 命名空间包含提供用于加密和解密数据的其他选项的类。 如果需要采用在使用受保护配置时不可用的加密服务，请使用这些类。 一些类是非托管 Microsoft CryptoAPI 的包装类，而其他类则是纯托管实现。 有关更多信息，请参阅[加密服务](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/93bskf9z(v=vs.90))。  
   
 ### <a name="appconfig-example"></a>App.config 示例  
- 此示例演示如何对 Windows 应用程序的 app.config 文件中的 connectionStrings 节的加密进行切换。 在此示例中，该过程将应用程序的名称（例如“MyApplication.exe”）作为一个自变量。 然后，将对 app.config 文件进行加密，并采用名称“MyApplication.exe.config”将其复制到包含可执行文件的文件夹中。  
+ 此示例演示如何对 Windows 应用程序的 app.config 文件中的 connectionStrings 节的加密进行切换。 在此示例中，该过程将应用程序的名称（例如“MyApplication.exe”）作为一个参数。 然后，将对 app.config 文件进行加密，并采用名称“MyApplication.exe.config”将其复制到包含可执行文件的文件夹中。  
   
 > [!NOTE]
 >  只能在加密连接字符串的计算机上对其进行解密。  
   
- 代码使用 <xref:System.Configuration.ConfigurationManager.OpenExeConfiguration%2A> 方法打开 app.config 文件以进行编辑，<xref:System.Configuration.ConfigurationManager.GetSection%2A> 方法返回 connectionStrings 节。 然后，代码检查 <xref:System.Configuration.SectionInformation.IsProtected%2A> 属性，调用 <xref:System.Configuration.SectionInformation.ProtectSection%2A> 以加密未加密的节。 调用 <xref:System.Configuration.SectionInformation.UnprotectSection%2A> 方法以加密该节。 <xref:System.Configuration.Configuration.Save%2A> 方法完成该操作并保存所做更改。  
+ 代码使用 <xref:System.Configuration.ConfigurationManager.OpenExeConfiguration%2A> 方法打开 app.config 文件以进行编辑，<xref:System.Configuration.ConfigurationManager.GetSection%2A> 方法返回 connectionStrings 节。 然后，代码检查 <xref:System.Configuration.SectionInformation.IsProtected%2A> 属性，调用 <xref:System.Configuration.SectionInformation.ProtectSection%2A> 以加密未加密的节。 调用 <xref:System.Configuration.SectionInformation.UnprotectSection%2A> 方法以加密该节。 
+  <xref:System.Configuration.Configuration.Save%2A> 方法完成该操作并保存所做更改。  
   
 > [!NOTE]
 >  必须在要运行代码的项目中设置对 `System.Configuration.dll` 的引用。  

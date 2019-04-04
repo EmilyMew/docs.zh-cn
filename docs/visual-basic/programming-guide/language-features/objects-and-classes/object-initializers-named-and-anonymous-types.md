@@ -10,12 +10,12 @@ helpviewer_keywords:
 - initializers [Visual Basic]
 - named types [Visual Basic]
 ms.assetid: e2df3807-a70f-49dd-ac94-f1e07f472b1b
-ms.openlocfilehash: d4f82cab8bcdeb3e0553649f8a569ae24bafc707
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 6602a68555e37bf793ba41076ba8f484b4a0dbc3
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56974349"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821343"
 ---
 # <a name="object-initializers-named-and-anonymous-types-visual-basic"></a>对象初始值设定项：命名和匿名类型 (Visual Basic)
 对象初始值设定项，可以使用单个表达式指定为复杂对象的属性。 它们可以用于创建的命名类型和匿名类型的实例。  
@@ -128,6 +128,7 @@ ms.locfileid: "56974349"
      有关定义匿名类型中的属性的选项的详细信息，请参阅[如何：推断属性名和匿名类型声明中的类型](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [局部类型推理](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
 - [匿名类型](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
 - [Visual Basic 中的 LINQ 简介](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30424
 ms.assetid: 2d402c2f-27ad-428b-b699-d45cd62f7196
-ms.openlocfilehash: 0f4cb04558bf9768de22f432a1c59203643aba6a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f82a548c820aec7d2ae13c30a67d778fc167a8b6
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54595834"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58813101"
 ---
 # <a name="constants-must-be-of-an-intrinsic-or-enumerated-type-not-a-class-structure-type-parameter-or-array-type"></a>常量必须是内部类型或者枚举类型，不能是类、结构、类型参数或数组类型
 已尝试声明为类、 结构或数组类型，或由包含泛型类型定义的类型参数的常量。  
@@ -28,6 +28,7 @@ ms.locfileid: "54595834"
 2.  一个常数，也可以是特殊值，如`True`， `False`，或`Nothing`。 编译器会考虑这些预定义的值为相应的内部类型。  
   
 ## <a name="see-also"></a>请参阅
+
 - [常量和枚举](../../../visual-basic/language-reference/constants-and-enumerations.md)
 - [数据类型](../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [数据类型](../../../visual-basic/language-reference/data-types/index.md)

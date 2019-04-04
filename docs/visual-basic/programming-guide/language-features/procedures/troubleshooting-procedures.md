@@ -8,12 +8,12 @@ helpviewer_keywords:
 - troubleshooting procedures
 - procedures [Visual Basic], about procedures
 ms.assetid: 525721e8-2e02-4f75-b5d8-6b893462cf2b
-ms.openlocfilehash: e29e4a3b216657b398407701530ad9bfe975dbf6
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 492a7474a38a7e41b7e3b3f59dfa118c30256ea4
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56971996"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58830131"
 ---
 # <a name="troubleshooting-procedures-visual-basic"></a>过程疑难解答 (Visual Basic)
 此页列出了在使用过程时可能发生的一些常见问题。  
@@ -124,6 +124,7 @@ ms.locfileid: "56971996"
  如果过程的两个重载具有相同的签名，只不过声明的最后一个参数[可选](../../../../visual-basic/language-reference/modifiers/optional.md)合一和[ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md)中另一个，则编译器将解析对该过程的调用根据最接近的匹配。 有关更多信息，请参见 [Overload Resolution](./overload-resolution.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [Sub 过程](./sub-procedures.md)
 - [Function 过程](./function-procedures.md)

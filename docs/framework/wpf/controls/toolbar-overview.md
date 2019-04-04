@@ -5,12 +5,12 @@ helpviewer_keywords:
 - controls [WPF], ToolBar
 - ToolBar control [WPF]
 ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
-ms.openlocfilehash: 7d591c85211492e4ad0b7e226cffba309e8d418b
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 6bd44e4b8406e945ea8f0913563d2f2f6e0b3822
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57379635"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58464952"
 ---
 # <a name="toolbar-overview"></a>ToolBar 概述
 <xref:System.Windows.Controls.ToolBar> 控件是一组命令或控件通常在功能上相关的容器。 一个<xref:System.Windows.Controls.ToolBar>通常包含调用命令的按钮。  
@@ -28,10 +28,9 @@ ms.locfileid: "57379635"
   
 <a name="ToolBars_with_Overflow_Items"></a>   
 ## <a name="toolbars-with-overflow-items"></a>带有溢出项的 ToolBar  
- 通常<xref:System.Windows.Controls.ToolBar>控件包含更多的项不是可以适合于工具栏的大小。 在此情况下，<xref:System.Windows.Controls.ToolBar>显示溢出按钮。 若要查看溢出项，用户单击了溢出按钮，并且这些项将显示在下方的弹出窗口中<xref:System.Windows.Controls.ToolBar>。 下图显示<xref:System.Windows.Controls.ToolBar>带有溢出项。  
+ 通常<xref:System.Windows.Controls.ToolBar>控件包含更多的项不是可以适合于工具栏的大小。 在此情况下，<xref:System.Windows.Controls.ToolBar>显示溢出按钮。 若要查看溢出项，用户单击了溢出按钮，并且这些项将显示在下方的弹出窗口中<xref:System.Windows.Controls.ToolBar>。 下图显示<xref:System.Windows.Controls.ToolBar>带有溢出项：  
   
- ![存在溢出的工具栏](./media/toolbarwithoverflowitem.png "ToolbarWithOverflowItem")  
-带有溢出项的 ToolBar  
+ ![显示带有溢出项的工具栏的屏幕截图。](./media/toolbar-overview/toolbar-overflow-items.png)  
   
  您可以指定工具栏上的项当通过设置在溢出面板上放置<xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=nameWithType>附加属性设置为<xref:System.Windows.Controls.OverflowMode.Always?displayProperty=nameWithType>， <xref:System.Windows.Controls.OverflowMode.Never?displayProperty=nameWithType>，或<xref:System.Windows.Controls.OverflowMode.AsNeeded?displayProperty=nameWithType>。 以下示例指定工具栏上的最后四个按钮应始终在溢出面板上。  
   

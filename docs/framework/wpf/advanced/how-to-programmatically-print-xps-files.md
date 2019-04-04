@@ -54,7 +54,7 @@ ms.locfileid: "57372719"
   
  其中 *\<PseudoXPSPrinter>* 是任一打印队列。 然后必须重新启动计算机。  
   
- 此伪装允许您传递`true`的最后一个参数作为<xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29>而不会导致异常，但由于*\<出现 >* 并不是真正的 XPSDrv 打印机，仅会打印垃圾。  
+ 此伪装允许您传递`true`的最后一个参数作为<xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29>而不会导致异常，但由于 *\<出现>* 并不是真正的 XPSDrv 打印机，仅会打印垃圾。  
   
  **请注意**为简单起见，上面的示例使用的是否存在\*.xps 扩展为一个文件是其测试[!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]。 但是，[!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] 文件不需要具有此扩展名。 [isXPS.exe（isXPS 合规性工具）](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))是一种测试文件是否具有 [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] 有效性的方法。  
   

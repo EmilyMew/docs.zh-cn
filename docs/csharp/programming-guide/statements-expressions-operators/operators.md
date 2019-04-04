@@ -7,12 +7,12 @@ helpviewer_keywords:
 - C# language, operators
 - operators [C#], about operators
 ms.assetid: 214e7b83-1a41-4f7c-9867-64e9c0bab39f
-ms.openlocfilehash: a0174ca42cb65c7c8f0c8ba2dc9adfd5c43c22b8
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 7d0ceb0cddc49722d7122e4fde6149fe1ea86208
+ms.sourcegitcommit: 4a8c2b8d0df44142728b68ebc842575840476f6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56981577"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545463"
 ---
 # <a name="operators-c-programming-guide"></a>运算符（C# 编程指南）
 
@@ -45,8 +45,8 @@ ms.locfileid: "56981577"
 |x[.](../../../csharp/language-reference/operators/member-access-operator.md)y<br /><br /> x?.y|成员访问<br /><br /> 条件成员访问|  
 |f[(x)](../../../csharp/language-reference/operators/invocation-operator.md)|方法和委托调用|  
 |a[&#91;x&#93;](../../../csharp/language-reference/operators/index-operator.md)<br /><br /> a?[x]|数组和索引器访问<br /><br /> 条件数组和索引器访问|  
-|x[++](../../../csharp/language-reference/operators/increment-operator.md)|后递增|  
-|x[--](../../../csharp/language-reference/operators/decrement-operator.md)|后递减|  
+|x[++](../../../csharp/language-reference/operators/arithmetic-operators.md#increment-operator-)|后递增|  
+|x[--](../../../csharp/language-reference/operators/arithmetic-operators.md#decrement-operator---)|后递减|  
 |[new](../../../csharp/language-reference/keywords/new-operator.md) T(...)|对象和委托创建|  
 |`new` T(...){...}|具有初始值设定项的对象创建。 请参阅[对象和集合初始值设定项](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)。|  
 |`new` {...}|匿名对象初始值设定项。 请参阅[匿名类型](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)。|  
@@ -65,17 +65,17 @@ ms.locfileid: "56981577"
 |[-](../../../csharp/language-reference/operators/subtraction-operator.md)x|求反|  
 |[\!](../../../csharp/language-reference/operators/logical-negation-operator.md)x|逻辑求反|  
 |[~](../../../csharp/language-reference/operators/bitwise-complement-operator.md)x|按位求反|  
-|[++](../../../csharp/language-reference/operators/increment-operator.md)x|前递增|  
-|[--](../../../csharp/language-reference/operators/decrement-operator.md)x|前递减|  
+|[++](../../../csharp/language-reference/operators/arithmetic-operators.md#increment-operator-)x|前递增|  
+|[--](../../../csharp/language-reference/operators/arithmetic-operators.md#decrement-operator---)x|前递减|  
 |[(T)](../../../csharp/language-reference/operators/invocation-operator.md)x|将 x 显式转换为类型 T|  
   
  **乘法运算符**  
   
 |表达式|说明|  
 |----------------|-----------------|  
-|[*](../../../csharp/language-reference/operators/multiplication-operator.md)|乘法|  
-|[/](../../../csharp/language-reference/operators/division-operator.md)|除号|  
-|[%](../../../csharp/language-reference/operators/modulus-operator.md)|余数|  
+|[*](../../../csharp/language-reference/operators/arithmetic-operators.md#multiplication-operator-)|乘法|  
+|[/](../../../csharp/language-reference/operators/arithmetic-operators.md#division-operator-)|除号|  
+|[%](../../../csharp/language-reference/operators/arithmetic-operators.md#remainder-operator-)|余数|  
   
  **相加运算符**  
   
@@ -106,8 +106,8 @@ ms.locfileid: "56981577"
   
 |表达式|说明|  
 |----------------|-----------------|  
-|x [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) y|等于|  
-|x [!=](../../../csharp/language-reference/operators/not-equal-operator.md) y|不等于|  
+|x [==](../../../csharp/language-reference/operators/equality-operators.md#equality-operator-) y|等于|  
+|x [!=](../../../csharp/language-reference/operators/equality-operators.md#inequality-operator-) y|不等于|  
   
  **逻辑、条件和 Null 运算符**  
   
@@ -126,7 +126,7 @@ ms.locfileid: "56981577"
 |表达式|说明|  
 |----------------|-----------------|  
 |[=](../../../csharp/language-reference/operators/assignment-operator.md)|赋值|  
-|x op= y|复合赋值。 支持以下运算符：[+=](../../../csharp/language-reference/operators/addition-assignment-operator.md)、[-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md)、[*=](../../../csharp/language-reference/operators/multiplication-assignment-operator.md)、[/=](../../../csharp/language-reference/operators/division-assignment-operator.md)、[%=](../../../csharp/language-reference/operators/modulus-assignment-operator.md)、[&=](../../../csharp/language-reference/operators/and-assignment-operator.md)、[&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md)、[^=](../../../csharp/language-reference/operators/xor-assignment-operator.md)、[<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md)、[>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md)|  
+|x op= y|复合赋值。 支持以下运算符：[+=](../../../csharp/language-reference/operators/addition-assignment-operator.md)、[-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md)、[*=](../../../csharp/language-reference/operators/arithmetic-operators.md#compound-assignment)、[/=](../../../csharp/language-reference/operators/arithmetic-operators.md#compound-assignment)、[%=](../../../csharp/language-reference/operators/arithmetic-operators.md#compound-assignment)、[&=](../../../csharp/language-reference/operators/and-assignment-operator.md)、[&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md)、[^=](../../../csharp/language-reference/operators/xor-assignment-operator.md)、[<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md)、[>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md)|  
 |(T x) [=>](../../../csharp/language-reference/operators/lambda-operator.md) y|匿名函数（lambda 表达式）|  
   
 ## <a name="associativity"></a>结合性

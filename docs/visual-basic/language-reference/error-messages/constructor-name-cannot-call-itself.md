@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30298
 ms.assetid: 2d77b7f4-0640-4f89-9c65-f101fd2847c0
-ms.openlocfilehash: 67933e9365b1aa18063f0ccf3c2146a261e7eafc
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: ef20f74055a07071ef9634973c6852ac58c3143c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55276037"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824701"
 ---
 # <a name="constructor-name-cannot-call-itself"></a>构造函数\<名称 > 不能调用自身
 一个`Sub New`类或结构中的过程调用其自身。  
@@ -28,4 +28,5 @@ ms.locfileid: "55276037"
 2.  如果您不想要调用的其他构造函数，删除`Sub New`完全调用。  
   
 ## <a name="see-also"></a>请参阅
+
 - [对象生存期：如何创建和销毁对象](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)

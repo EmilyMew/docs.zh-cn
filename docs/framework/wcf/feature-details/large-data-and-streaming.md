@@ -2,12 +2,12 @@
 title: 大型数据和流
 ms.date: 03/30/2017
 ms.assetid: ab2851f5-966b-4549-80ab-c94c5c0502d2
-ms.openlocfilehash: c6514903294147671804b5b8de47fddc764b0547
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8fa49f9da7caf9146f73017ec051381a8e9ef9e2
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54674110"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411052"
 ---
 # <a name="large-data-and-streaming"></a>大型数据和流
 Windows Communication Foundation (WCF) 是基于 XML 的通信基础结构。 因为 XML 数据通常在定义的标准文本格式进行编码[XML 1.0 规范](https://go.microsoft.com/fwlink/?LinkId=94838)、 已连接系统的开发人员和架构师通常会关心发送的消息的线路需求量 （或大小） 之间网络和 XML 的基于文本的编码的二进制数据传输效率使特殊面临挑战。  
@@ -67,7 +67,7 @@ Windows Communication Foundation (WCF) 是基于 XML 的通信基础结构。 �
   
 |编码器绑定元素|描述|  
 |-----------------------------|-----------------|  
-|<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>|文本消息编码器是所有基于 HTTP 的绑定的默认编码器，并且是最关注互操作性的所有自定义绑定的正确选择。 此编码器读取和编写标准 SOAP 1.1/SOAP 1.2 文本消息，而不会对二进制数据进行任何特殊处理。 如果消息的 <xref:System.ServiceModel.Channels.MessageVersion> 设置为 `None`，则 SOAP 信封包装会从输出中省略，只有消息正文内容会进行序列化。|  
+|<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>|文本消息编码器是所有基于 HTTP 的绑定的默认编码器，并且是最关注互操作性的所有自定义绑定的正确选择。 此编码器读取和编写标准 SOAP 1.1/SOAP 1.2 文本消息，而不会对二进制数据进行任何特殊处理。 如果<xref:System.ServiceModel.Channels.MessageVersion?displayProperty=nameWithType>消息的属性设置为<xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>、 输出中省略 SOAP 信封包装器和消息正文内容序列化。|  
 |<xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>|MTOM 消息编码器是一个文本编码器，实现对二进制数据的特殊处理，默认情况下在任何标准绑定中都不会使用，因为它是一个严格按具体情况进行优化的实用工具。 只有当二进制数据的量不超过某个阈值时，MTOM 编码才具有优势，如果消息包含的二进制数据超过了这个阈值，则这些数据会外部化到消息信封之后的 MIME 部分。 请参见本节后面部分中的“启用 MTOM”。|  
 |<xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>|二进制消息编码器是 Net * 绑定和适当的选择的默认编码器，只要这两个通信方基于 WCF。 二进制消息编码器使用 .NET 二进制 XML 格式，该格式是 XML 信息集 (Information Sets, Infosets) 的 Microsoft 特定二进制表示法，与等效的 XML 1.0 表示法相比产生的需求量通常较小，并将二进制数据编码为字节流。|  
   
@@ -166,7 +166,7 @@ class MyData
   
 -   在两个方向均以流模式发送/接收请求/响应 (<xref:System.ServiceModel.TransferMode.Streamed>).  
   
- 你可以通过将传输模式设置为 <xref:System.ServiceModel.TransferMode.Buffered> 来禁用流模式，该设置是所有绑定的默认设置。 下面的代码演示如何在配置中设置传输模式。  
+ 您可以通过将传输模式设置为 <xref:System.ServiceModel.TransferMode.Buffered> 来禁用流模式，该设置是所有绑定的默认设置。 下面的代码演示如何在配置中设置传输模式。  
   
 ```xml  
 <system.serviceModel>  
@@ -180,7 +180,7 @@ class MyData
 <system.serviceModel>  
 ```  
   
- 当通过代码实例化绑定时，必须将该绑定（如果你创建自定义绑定，则为传输绑定元素）的 `TransferMode` 属性设置为上面提到的某个值。  
+ 当通过代码实例化绑定时，必须将该绑定（如果您创建自定义绑定，则为传输绑定元素）的 `TransferMode` 属性设置为上面提到的某个值。  
   
  您可以在不影响功能的情况下在通信双方的任何一方独立地对请求和答复或者同时对两个方向启用流模式。 不过，您应始终认为已传输数据的大小非常大，完全需要在通信链路的两个终结点上均启用流模式。 对于其中一个终结点不使用 WCF 实现的跨平台通信，使用流式处理的能力取决于平台的流式处理功能。 另一个极少见的例外可能是一种内存消耗驱动情形，在这种情形下，客户端或服务必须尽量减小其工作集，并且只能提供较小的缓冲区大小。  
   
@@ -224,10 +224,10 @@ public class UploadStreamMessage
   
  时收到一条消息，WCF 会构造一个流的 Base64 编码的消息正文内容 （或相应的 MIME 部分，如果使用 MTOM） 和读取内容时，流到达 EOF。  
   
- 传输级流还可以与其他任何消息协定类型（参数列表、数据协定自变量和显式消息协定）一起工作，但是由于此类型化消息的序列化和反序列化要求由序列化程序进行缓冲，因此不建议使用此类协定变体。  
+ 传输级流还可以与其他任何消息协定类型（参数列表、数据协定参数和显式消息协定）一起工作，但是由于此类型化消息的序列化和反序列化要求由序列化程序进行缓冲，因此不建议使用此类协定变体。  
   
 ### <a name="special-security-considerations-for-large-data"></a>关于大型数据的特殊安全考虑事项  
- 所有绑定都允许你限制传入消息的大小，以阻止拒绝服务攻击。 <xref:System.ServiceModel.BasicHttpBinding>，例如，公开[System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A)属性限制传入消息的大小，因此还限制在最大访问的内存量处理该消息时。 此单元是以字节为单位设置的，默认值为 65,536 个字节。  
+ 所有绑定都允许您限制传入消息的大小，以阻止拒绝服务攻击。 <xref:System.ServiceModel.BasicHttpBinding>，例如，公开[System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A)属性限制传入消息的大小，因此还限制在最大访问的内存量处理该消息时。 此单元是以字节为单位设置的，默认值为 65,536 个字节。  
   
  大型数据流情形所特有的安全威胁会在接收方希望数据以流模式发送时导致数据缓冲，从而促使拒绝服务。 例如，WCF 始终缓冲消息的 SOAP 标头，因此攻击者可能会构造一个完全由标头以强制缓冲数据组成的大型恶意消息。 当启用流模式时，`MaxReceivedMessageSize` 可能设置为一个极其大的值，因为接收方绝预料不到会一次性地在内存中缓冲整个消息。 如果 WCF 强制缓冲消息，则会发生内存溢出。  
   

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - End statement [Visual Basic]
 - execution [Visual Basic], stopping
 ms.assetid: 0e64467c-0f34-4aab-9ddd-43f8b9d55d90
-ms.openlocfilehash: 8b189449044a48432a6cf05b75f39581be111495
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 4fc4fd36fb6b057195e9d8a79eb0a5b3ac9ff95c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56979524"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832016"
 ---
 # <a name="end-statement"></a>End 语句
 立即终止执行。  
@@ -56,6 +56,7 @@ End
  不支持此语句。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Security.Permissions.SecurityPermissionFlag>
 - [Stop 语句](../../../visual-basic/language-reference/statements/stop-statement.md)
 - [结束\<关键字 > 语句](../../../visual-basic/language-reference/statements/end-keyword-statement.md)

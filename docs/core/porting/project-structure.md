@@ -4,12 +4,12 @@ description: 帮助希望针对 .NET Framework 和 .NET Core 并行编译解决�
 author: conniey
 ms.date: 12/07/2018
 ms.custom: seodec18
-ms.openlocfilehash: 57bb766f1d91c502a508b6362dc642310009c8c4
-ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
+ms.openlocfilehash: ab484ccc2c5b51b2ee1dca57df51669d288f3e6b
+ms.sourcegitcommit: 462dc41a13942e467984e48f4018d1f79ae67346
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55904024"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58186060"
 ---
 # <a name="organize-your-project-to-support-both-net-framework-and-net-core"></a>组织项目以支持 .NET Framework 和 .NET Core
 
@@ -36,7 +36,7 @@ ms.locfileid: "55904024"
 
 请考虑以下存储库：
 
-![现有项目](media/project-structure/project.png)
+![现有项目](./media/project-structure/existing-project-structure.png)
 
 [源代码](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library/)
 
@@ -46,7 +46,7 @@ ms.locfileid: "55904024"
 
 重新组织存储库，以便删除任何现有的 \*.csproj 文件，并创建以多个框架为目标的单一 \*.csproj 文件。 这是一项不错的选择，因为单个项目可以编译不同的框架。 它还可以处理每个目标框架的不同编译选项和依赖项。
 
-![创建以多个框架为目标的 csproj](media/project-structure/project.csproj.png)
+![创建以多个框架为目标的 csproj](./media/project-structure/multi-targeted-project.png)
 
 [源代码](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/)
 
@@ -58,7 +58,7 @@ ms.locfileid: "55904024"
 
 如果存在以较旧框架为目标的现有项目，可能需要保留这些项目并将 .NET Core 项目用作将来框架的目标。
 
-![位于不同文件夹中的现有项目与 .NET Core 项目](media/project-structure/project.csproj.different.png)
+![位于不同文件夹中的现有项目与 .NET Core 项目](./media/project-structure/separate-projects-same-source.png)
 
 [源代码](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj-keep-existing/)
 

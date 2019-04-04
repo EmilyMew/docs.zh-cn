@@ -2,12 +2,12 @@
 title: 创建 XML 树 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: e86ba12b-17de-4579-81bb-66322b84cfbe
-ms.openlocfilehash: fa7afe913c0faffca23b457ce58755f1db55400c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f22dcb111b3c6da01fa60b3ea918b91cb89031b3
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54630939"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819185"
 ---
 # <a name="creating-xml-trees-visual-basic"></a>创建 XML 树 (Visual Basic)
 最常见的 XML 任务之一是构造 XML 树。 本节介绍多种创建 XML 树的方法。  
@@ -25,4 +25,5 @@ ms.locfileid: "54630939"
 |[XElement 和 XDocument 对象的有效内容](../../../../visual-basic/programming-guide/concepts/linq/valid-content-of-xelement-and-xdocument-objects.md)|描述可以传递给构造函数的有效自变量，以及用于向元素和文档添加内容的方法。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [编程指南 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

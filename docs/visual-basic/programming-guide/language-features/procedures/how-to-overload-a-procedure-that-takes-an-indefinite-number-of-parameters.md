@@ -10,12 +10,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], overloading
 - procedures [Visual Basic], multiple versions
 ms.assetid: c7042de2-2422-4039-94e8-ac298896af69
-ms.openlocfilehash: 262812f5e18bb9c46ea5ec573adab914f19eef43
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: bae420e88a74fbe3f7e8ad3592133fdcaf191029
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56979471"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838984"
 ---
 # <a name="how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters-visual-basic"></a>如何：重载的参数 (Visual Basic 中) 的数量不确定的过程
 如果某个过程带有[ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md)参数，不能定义采用一维数组的参数数组的重载的版本。 有关详细信息，请参阅"隐式重载为 ParamArray 参数"中[中重载过程注意事项](./considerations-in-overloading-procedures.md)。  
@@ -54,6 +54,7 @@ ms.locfileid: "56979471"
  每当处理数组可以是无限期较大，则存在无限大的某种内部容量的应用程序的风险。 如果接受一个参数数组时，应测试调用代码传递给它，该数组的长度，并采取相应措施，如果你的应用程序太大。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [可选参数](./optional-parameters.md)

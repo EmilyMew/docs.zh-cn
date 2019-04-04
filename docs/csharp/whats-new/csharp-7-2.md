@@ -2,12 +2,12 @@
 title: C# 7.2 中的新增功能
 description: C# 7.2 中的新增功能概述。
 ms.date: 08/16/2017
-ms.openlocfilehash: 9525d52e5eab4b8213b8a1920531dc4b4d7ac0a3
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.openlocfilehash: b8b2be68aac3cba92e0dbd74dfe4ee3cbbef0e88
+ms.sourcegitcommit: 462dc41a13942e467984e48f4018d1f79ae67346
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57673218"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58185345"
 ---
 # <a name="whats-new-in-c-72"></a>C# 7.2 中的新增功能
 
@@ -35,10 +35,10 @@ C# 7.2 使用[语言版本选择](../language-reference/configure-language-versi
 
 利用 7.2 中引入的语言功能，可在使用引用语义时处理值类型。 它们旨在尽量减少值类型的复制，而不造成与引用类型使用相关的内存分配，进而提升性能。 功能包括：
 
- - 针对实参的 `in` 修饰符，指定形参通过引用传递，但不通过调用方法修改。 将 `in` 修饰符添加到参数是[源兼容的更改](version-update-considerations.md#source-compatible-changes)。
- - 针对方法返回的 `ref readonly` 修饰符，指示方法通过引用返回其值，但不允许写入该对象。 如果向某个值赋予返回值，则添加 `ref readonly` 修饰符是[源兼容的更改](version-update-considerations.md#source-compatible-changes)。 将 `readonly` 修饰符添加到现有的 `ref` 返回语句是[不兼容的更改](version-update-considerations.md#incompatible-changes)。 它要求调用方更新 `ref` 本地变量的声明以包含 `readonly` 修饰符。
- - `readonly struct` 声明，指示结构不可变，且应作为 `in` 参数传递到其成员方法。 将 `readonly` 修饰符添加到现有的结构声明是[二进制兼容的更改](version-update-considerations.md#binary-compatible-changes)。
- - `ref struct` 声明，指示结构类型直接访问托管的内存，且必须始终分配有堆栈。 将 `ref` 修饰符添加到现有 `struct` 声明是[不兼容的更改](version-update-considerations.md#incompatible-changes)。 `ref struct` 不能是类的成员，也不能用于可能在堆上分配的其他位置。
+- 针对实参的 `in` 修饰符，指定形参通过引用传递，但不通过调用方法修改。 将 `in` 修饰符添加到参数是[源兼容的更改](version-update-considerations.md#source-compatible-changes)。
+- 针对方法返回的 `ref readonly` 修饰符，指示方法通过引用返回其值，但不允许写入该对象。 如果向某个值赋予返回值，则添加 `ref readonly` 修饰符是[源兼容的更改](version-update-considerations.md#source-compatible-changes)。 将 `readonly` 修饰符添加到现有的 `ref` 返回语句是[不兼容的更改](version-update-considerations.md#incompatible-changes)。 它要求调用方更新 `ref` 本地变量的声明以包含 `readonly` 修饰符。
+- `readonly struct` 声明，指示结构不可变，且应作为 `in` 参数传递到其成员方法。 将 `readonly` 修饰符添加到现有的结构声明是[二进制兼容的更改](version-update-considerations.md#binary-compatible-changes)。
+- `ref struct` 声明，指示结构类型直接访问托管的内存，且必须始终分配有堆栈。 将 `ref` 修饰符添加到现有 `struct` 声明是[不兼容的更改](version-update-considerations.md#incompatible-changes)。 `ref struct` 不能是类的成员，也不能用于可能在堆上分配的其他位置。
 
 可以在[编写安全高效的代码](../write-safe-efficient-code.md)中详细了解所有这些更改。
 

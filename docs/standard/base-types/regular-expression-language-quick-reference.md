@@ -16,35 +16,23 @@ helpviewer_keywords:
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f44bf779060a2f9ff2de96ccad5f397a9cdd33c7
-ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
+ms.openlocfilehash: 9224e78a422b20f33f19d05e43ed1e2ec8d1c5ce
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56836300"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410519"
 ---
 # <a name="regular-expression-language---quick-reference"></a>正则表达式语言 - 快速参考
-<a name="top"></a> 正则表达式是正则表达式引擎尝试匹配输入文本的一种模式。 模式由一个或多个字符文本、运算符或构造组成。  有关简要介绍，请参阅 [.NET 正则表达式](../../../docs/standard/base-types/regular-expressions.md)。  
+ 正则表达式是正则表达式引擎尝试匹配输入文本的一种模式。 模式由一个或多个字符文本、运算符或构造组成。  有关简要介绍，请参阅 [.NET 正则表达式](../../../docs/standard/base-types/regular-expressions.md)。  
   
- 此快速参考中的每一节都列出了可用于定义正则表达式的字符、运算符和构造的一种特定类别：  
-  
- [字符转义](#character_escapes)  
- [字符类](#character_classes)  
- [定位点](#anchors)  
- [分组构造](#grouping_constructs)  
- [限定符](#quantifiers)  
- [反向引用构造](#backreference_constructs)  
- [替换构造](#alternation_constructs)  
- [替代](#substitutions)  
- [正则表达式选项](#options)  
- [其他构造](#miscellaneous_constructs)  
+ 此快速参考中的每一节都列出了可用于定义正则表达式的字符、运算符和构造的一种特定类别。  
   
  我们还提供此信息的两种格式，你可以下载和打印，以便参考：  
   
  [以 Word (.docx) 格式下载](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
  [以 PDF (.pdf) 格式下载](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)  
   
-<a name="character_escapes"></a>   
 ## <a name="character-escapes"></a>字符转义  
  正则表达式中的反斜杠字符 (\\) 指示其后跟的字符是特殊字符（如下表所示），或应按原义解释该字符。 有关详细信息，请参阅[字符转义](../../../docs/standard/base-types/character-escapes-in-regular-expressions.md)。  
   
@@ -66,7 +54,6 @@ ms.locfileid: "56836300"
   
  [返回页首](#top)  
   
-<a name="character_classes"></a>   
 ## <a name="character-classes"></a>字符类  
  字符类与一组字符中的任何一个字符匹配。 字符类包括下表中列出的语言元素。 有关更多信息，请参见 [字符类](../../../docs/standard/base-types/character-classes-in-regular-expressions.md)。  
   
@@ -103,7 +90,6 @@ ms.locfileid: "56836300"
   
  [返回页首](#top)  
   
-<a name="grouping_constructs"></a>   
 ## <a name="grouping-constructs"></a>分组构造  
  分组构造描述了正则表达式的子表达式，通常用于捕获输入字符串的子字符串。 分组构造包括下表中列出的语言元素。 有关详细信息，请参阅 [分组构造](grouping-constructs-in-regular-expressions.md)。  
   
@@ -122,7 +108,6 @@ ms.locfileid: "56836300"
   
  [返回页首](#top)  
   
-<a name="quantifiers"></a>   
 ## <a name="quantifiers"></a>数量词  
  限定符指定在输入字符串中必须存在上一个元素（可以是字符、组或字符类）的多少个实例才能出现匹配项。 限定符包括下表中列出的语言元素。 有关更多信息，请参见 [数量词](quantifiers-in-regular-expressions.md)。  
   
@@ -143,7 +128,6 @@ ms.locfileid: "56836300"
   
  [返回页首](#top)  
   
-<a name="backreference_constructs"></a>   
 ## <a name="backreference-constructs"></a>反向引用构造  
  反向引用允许在同一正则表达式中随后标识以前匹配的子表达式。 下表列出了 .NET 正则表达式支持的反向引用构造。 有关详细信息，请参阅 [反向引用构造](backreference-constructs-in-regular-expressions.md)。  
   
@@ -154,7 +138,6 @@ ms.locfileid: "56836300"
   
  [返回页首](#top)  
   
-<a name="alternation_constructs"></a>   
 ## <a name="alternation-constructs"></a>替换构造  
  替换构造用于修改正则表达式以启用 either/or 匹配。 这些构造包括下表中列出的语言元素。 有关详细信息，请参阅 [替换构造](alternation-constructs-in-regular-expressions.md)。  
   
@@ -166,7 +149,6 @@ ms.locfileid: "56836300"
   
  [返回页首](#top)  
   
-<a name="substitutions"></a>   
 ## <a name="substitutions"></a>替代  
  替换是替换模式中支持的正则表达式语言元素。 有关更多信息，请参见 [替代](substitutions-in-regular-expressions.md)。 下表中列出的元字符是原子零宽度断言。  
   
@@ -183,7 +165,6 @@ ms.locfileid: "56836300"
   
  [返回页首](#top)  
   
-<a name="options"></a>   
 ## <a name="regular-expression-options"></a>正则表达式选项  
  可以指定控制正则表达式引擎如何解释正则表达式模式的选项。 其中的许多选项可以指定为内联（在正则表达式模式中）或指定为一个或多个 <xref:System.Text.RegularExpressions.RegexOptions> 常量。 本快速参考仅列出内联选项。 有关内联和 <xref:System.Text.RegularExpressions.RegexOptions> 选项的详细信息，请参阅文章 [正则表达式选项](regular-expression-options.md)。  
   
@@ -205,7 +186,6 @@ ms.locfileid: "56836300"
   
  [返回页首](#top)  
   
-<a name="miscellaneous_constructs"></a>   
 ## <a name="miscellaneous-constructs"></a>其他构造  
  其他构造可修改某个正则表达式模式或提供有关该模式的信息。 下表列出了 .NET 支持的其他构造。 有关详细信息，请参阅 [其他构造](miscellaneous-constructs-in-regular-expressions.md)。  
   

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC36635
 ms.assetid: 74609979-9c03-4864-bbce-f588aa2e0917
-ms.openlocfilehash: d56515093020a4c987d132491957ce6db9e21683
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: e51ba4ad0910d0db2b927f84303e5c55515f4b84
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55287789"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58843444"
 ---
 # <a name="lambda-expressions-are-not-valid-in-the-first-expression-of-a-select-case-statement"></a>Lambda 表达式在“Select Case”语句的第一个表达式中无效
 不能使用 lambda 表达式中的测试表达式`Select Case`语句。 返回的函数，测试表达式的 lambda 表达式定义`Select Case`语句必须是基本数据类型。  
@@ -41,6 +41,7 @@ End Select
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [Lambda 表达式](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [If...Then...Else 语句](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
 - [Select...Case 语句](../../../visual-basic/language-reference/statements/select-case-statement.md)

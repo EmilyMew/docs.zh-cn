@@ -1,0 +1,16 @@
+items:
+- name: 接口
+  href: index.md
+  items:
+  - name: 显式接口实现
+    href: explicit-interface-implementation.md
+  - name: 如何：显式实现接口成员
+    href: how-to-explicitly-implement-interface-members.md
+  - name: 如何：显式实现两个接口的成员
+    href: how-to-explicitly-implement-members-of-two-interfaces.md
+ms.openlocfilehash: e57ba8a9916b35c4bfdedba8f720615ea1eaf727
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468508"

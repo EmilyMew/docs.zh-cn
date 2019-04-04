@@ -41,8 +41,7 @@ Windows 窗体包含一组实现拖放行为的方法、事件和类。 本主�
 |<xref:System.Windows.Forms.Control.GiveFeedback>|此事件在执行拖动操作期间发生。 借助此事件，可向用户提供可视提示（例如更改鼠标指针），通知拖放操作正在发生。 此事件的处理程序接收类型为 <xref:System.Windows.Forms.GiveFeedbackEventArgs> 的参数。|  
 |<xref:System.Windows.Forms.Control.QueryContinueDrag>|此事件在拖放操作期间引发，并使拖动源可以确定是否应取消拖放操作。 此事件的处理程序接收类型为 <xref:System.Windows.Forms.QueryContinueDragEventArgs> 的参数。|  
   
- 
-  <xref:System.Windows.Forms.QueryContinueDragEventArgs> 类提供鼠标按钮和键盘修改键的当前状态、指定是否按 ESC 键的值以及 <xref:System.Windows.Forms.DragAction> 值（可设置为指定是否应继续拖放操作）。  
+ <xref:System.Windows.Forms.QueryContinueDragEventArgs> 类提供鼠标按钮和键盘修改键的当前状态、指定是否按 ESC 键的值以及 <xref:System.Windows.Forms.DragAction> 值（可设置为指定是否应继续拖放操作）。  
   
 ## <a name="see-also"></a>请参阅
 - [Windows 窗体应用程序中的鼠标输入](mouse-input-in-a-windows-forms-application.md)

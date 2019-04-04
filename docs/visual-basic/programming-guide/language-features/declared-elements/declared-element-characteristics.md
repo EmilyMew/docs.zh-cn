@@ -13,12 +13,12 @@ helpviewer_keywords:
 - data types [Visual Basic], declared elements
 - declared elements [Visual Basic], visibility
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
-ms.openlocfilehash: c34175a90c2c9c247a37ac186a415a585d1d7e97
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 98f6a7738a462e9f36abdc0380cb1fe8d488fb9d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54582248"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821291"
 ---
 # <a name="declared-element-characteristics-visual-basic"></a>已声明元素的特性 (Visual Basic)
 一个*特征*的已声明的元素是代码与它的交互方式会影响该元素的一个方面。 每个已声明的元素具有一个或多个与之关联的以下特征：  
@@ -48,12 +48,13 @@ ms.locfileid: "54582248"
 |运算符|是|No|是|是|  
 |接口|否|否|是|是|  
 |类|否|否|是|是|  
-|事件|否|否|是|是|  
+|Event|否|否|是|是|  
 |委托|否|否|是|是|  
   
  <sup>1</sup>作用域有时称为*可见性*。  
   
 ## <a name="see-also"></a>请参阅
+
 - [已声明的元素](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)
 - [已声明的元素名称](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
 - [对已声明元素的引用](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)

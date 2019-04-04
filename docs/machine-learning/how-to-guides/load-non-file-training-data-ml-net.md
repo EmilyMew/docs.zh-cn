@@ -1,26 +1,27 @@
 ---
 title: 使用非文本文件数据训练机器学习模型 - ML.NET
 description: 了解如何使用 ML.NET 加载非文件训练数据，用于预测管道中的机器学习模型培训。
-ms.date: 03/05/2019
+ms.date: 03/18/2019
 ms.custom: mvc,how-to
-ms.openlocfilehash: 27b327a63cb55b7fce0f4ff7facd3ee7c4a1c85c
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.openlocfilehash: 32de37e45b9e19669ea06d74c7f252ec885fe004
+ms.sourcegitcommit: 462dc41a13942e467984e48f4018d1f79ae67346
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57678606"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58186086"
 ---
 # <a name="train-a-machine-learning-model-with-data-thats-not-in-a-text-file---mlnet"></a>使用非文本文件数据训练机器学习模型 - ML.NET
 
 > [!NOTE]
 > 本主题引用 ML.NET（目前处于预览状态），且材料可能会更改。 有关详细信息，请访问 [ML.NET 简介](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet)。
 
-此操作说明和相关示例目前使用的是 ML.NET 版本 0.10。 有关详细信息，请参阅 [dotnet/machinelearning GitHub 存储库](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)上的发行说明。
+此操作说明和相关示例目前使用的是“ML.NET 版本 0.11”。 有关详细信息，请参阅 [dotnet/machinelearning GitHub 存储库](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes)上的发行说明。
 
 ML.NET 的常见演示用例是使用 `TextLoader` 读取文件中的培训数据。
 但是，在实际训练情景中，数据可能位于其他位置，例如：
 
 * SQL 表中
+* JSON/XML
 * 从日志文件中提取
 * 动态生成
 
@@ -59,7 +60,7 @@ IEnumerable<CustomerChurnInfo> churnData = GetChurnInfo();
 // Turn the data into the ML.NET data view.
 // We can use CreateDataView or CreateStreamingDataView, depending on whether 'churnData' is an IList,
 // or merely an IEnumerable.
-var trainData = mlContext.Data.ReadFromEnumerable(churnData);
+var trainData = mlContext.Data.LoadFromEnumerable(churnData);
 
 // Build the learning pipeline.
 // In our case, we will one-hot encode the demographic category, and concatenate that with the number of visits.

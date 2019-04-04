@@ -6,17 +6,17 @@ helpviewer_keywords:
 - enumerations [Visual Basic], declaring
 - declaring enumerations [Visual Basic]
 ms.assetid: db4ca1c3-f429-4c81-ae81-29e0157b29fd
-ms.openlocfilehash: 2654860269bc57cf6aed814760414c6ccb6383da
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 1e6ec63688899533b64a6fc5215f77019b64b49c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56968759"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58830157"
 ---
 # <a name="how-to-declare-enumerations-visual-basic"></a>如何：声明枚举 (Visual Basic)
 创建一个枚举，其中`Enum`声明部分中的类或模块的语句。 不能声明一个方法中的枚举。 若要指定适当的访问级别，请使用`Private`， `Protected`， `Friend`，或`Public`。  
   
- `Enum`类型具有名称、 一个基础类型，以及一组字段，每个资源表示常量。 该名称必须是有效的 Visual Basic.NET 限定符。 基础类型必须是一种整数类型-`Byte`， `Short`，`Long`或`Integer`。 默认为 `Integer`。 枚举为始终强类型，不能互换与整数类型。  
+ `Enum`类型具有名称、 一个基础类型，以及一组字段，每个资源表示常量。 该名称必须是有效的 Visual Basic.NET 限定符。 基础类型必须是一种整数类型-`Byte`， `Short`，`Long`或`Integer`。 `Integer` 默认值。 枚举为始终强类型，不能互换与整数类型。  
   
  枚举不能具有浮点值。 如果枚举已分配与浮点值`Option Strict On`，导致编译器错误。 如果`Option Strict`是`Off`，值自动转换为`Enum`类型。  
   
@@ -43,6 +43,7 @@ ms.locfileid: "56968759"
      [!code-vb[VbEnumsTask#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#6)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [枚举和名称限定](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)
 - [如何：为枚举成员，请参阅](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)
 - [如何：循环访问在 Visual Basic 中枚举](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-iterate-through-an-enumeration.md)

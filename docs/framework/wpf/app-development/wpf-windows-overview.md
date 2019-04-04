@@ -28,12 +28,12 @@ helpviewer_keywords:
 - modal dialog boxes [WPF]
 - displaying XAML pages [WPF]
 ms.assetid: 737d04ec-8861-46c3-8d44-fa11d3528d23
-ms.openlocfilehash: d1a93fe81b892b85f77547d48428d3d9a78d5173
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: ab9b36857e2508190a212844f3c6b53d777c0552
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57373092"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58466213"
 ---
 # <a name="wpf-windows-overview"></a>WPF Windows 概述
 用户与 Windows Presentation Foundation (WPF) 独立应用程序通过 windows 进行交互。 窗口的主要用途是托管使数据可视化并使用户能够与数据交互的内容。 独立[!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]应用程序使用来提供自己的窗口<xref:System.Windows.Window>类。 本主题介绍<xref:System.Windows.Window>之前介绍的创建和管理独立应用程序中的 windows 基础知识。  
@@ -44,9 +44,9 @@ ms.locfileid: "57373092"
   
 <a name="TheWindowClass"></a>   
 ## <a name="the-window-class"></a>窗口类  
- 下图展示了窗口的构成部分。  
+ 下图演示了一个窗口的构成部分：  
   
- ![窗口元素](./media/windowoverviewfigure1.PNG "WindowOverviewFigure1")  
+ ![显示窗口元素的屏幕截图。](./media/wpf-windows-overview/window-constituent-elements.png)  
   
  窗口分为两个区域：非工作区和工作区。  
   
@@ -146,7 +146,7 @@ ms.locfileid: "57373092"
   
  通过调用最后打开窗口<xref:System.Windows.Window.Show%2A>方法; 在下图中显示结果。  
   
- ![通过调用 Window.Show 打开的窗口](./media/windowoverviewfigure8.png "WindowOverviewFigure8")  
+ ![通过调用 window.show 而打开窗口](./media/wpf-windows-overview//window-opened-show-method.png)  
   
  通过调用打开的窗口<xref:System.Windows.Window.Show%2A>是无模式窗口中，这意味着在允许用户激活其他窗口在同一应用程序的模式下运行应用程序。  
   
@@ -282,13 +282,13 @@ ms.locfileid: "57373092"
   
 <a name="Window_Lifetime_Events"></a>   
 ### <a name="window-lifetime-events"></a>窗口生存期事件  
- 下图显示窗口生存期中的主体事件的顺序。  
+ 下图显示在窗口生存期中的主体事件的顺序：  
   
- ![窗口生存期](./media/windowlifetimeevents.png "WindowLifetimeEvents")  
+ ![图，显示在窗口的生命周期的事件。](./media/wpf-windows-overview/window-lifetime-events.png)  
   
- 下图显示一个窗口，其中会显示为未激活的生存期中的主体事件的序列 (<xref:System.Windows.Window.ShowActivated%2A>设置为`false`显示窗口之前)。  
+ 下图显示一个窗口，其中会显示为未激活的生存期中的主体事件的序列 (<xref:System.Windows.Window.ShowActivated%2A>设置为`false`显示窗口之前):  
   
- ![窗口生存期 &#40;Window.ShowActivated &#61; False&#41;](./media/windowlifetimenoact.png "WindowLifetimeNoAct")  
+ ![图，显示在窗口的生存期内没有激活的事件。](./media/wpf-windows-overview/window-lifetime-no-activation.png)  
   
 <a name="WindowLocation"></a>   
 ## <a name="window-location"></a>窗口位置  
@@ -351,21 +351,21 @@ ms.locfileid: "57373092"
   
  **对于高度属性：**  
   
-1.  <xref:System.Windows.FrameworkElement.MinHeight%2A?displayProperty=nameWithType> >  
+1.  <xref:System.Windows.FrameworkElement.MinHeight%2A?displayProperty=nameWithType>
   
-2.  <xref:System.Windows.FrameworkElement.MaxHeight%2A?displayProperty=nameWithType> >  
+2.  <xref:System.Windows.FrameworkElement.MaxHeight%2A?displayProperty=nameWithType>
   
-3.  <xref:System.Windows.SizeToContent.Height?displayProperty=nameWithType>/<xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=nameWithType> >  
+3.  <xref:System.Windows.SizeToContent.Height?displayProperty=nameWithType>/<xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=nameWithType>
   
 4.  <xref:System.Windows.FrameworkElement.Height%2A?displayProperty=nameWithType>  
   
  **对于宽度属性：**  
   
-1.  <xref:System.Windows.FrameworkElement.MinWidth%2A?displayProperty=nameWithType> >  
+1.  <xref:System.Windows.FrameworkElement.MinWidth%2A?displayProperty=nameWithType>
   
-2.  <xref:System.Windows.FrameworkElement.MaxWidth%2A?displayProperty=nameWithType> >  
+2.  <xref:System.Windows.FrameworkElement.MaxWidth%2A?displayProperty=nameWithType>
   
-3.  <xref:System.Windows.SizeToContent.Width?displayProperty=nameWithType>/<xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=nameWithType> >  
+3.  <xref:System.Windows.SizeToContent.Width?displayProperty=nameWithType>/<xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=nameWithType>
   
 4.  <xref:System.Windows.FrameworkElement.Width%2A?displayProperty=nameWithType>  
   
@@ -437,9 +437,9 @@ ms.locfileid: "57373092"
   
 -   <xref:System.Windows.WindowStyle.ToolWindow>  
   
- 下图显示了这些窗口样式的效果。  
+ 在下图说明了这些窗口样式的效果：  
   
- ![窗口样式](./media/windowoverviewfigure6.PNG "WindowOverviewFigure6")  
+ ![图窗口的边框样式。](./media/wpf-windows-overview/window-border-styles.png)  
   
  可以设置<xref:System.Windows.Window.WindowStyle%2A>使用[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]标记或代码; 因为它是不太可能更改窗口的生存期内，你将很可能将其配置使用[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]标记。  
   
@@ -448,9 +448,9 @@ ms.locfileid: "57373092"
 #### <a name="non-rectangular-window-style"></a>非矩形窗口样式  
  还有一些情况下的边框样式的<xref:System.Windows.Window.WindowStyle%2A>使你能够在不足够。 例如，你可能想要创建具有非矩形边框的应用程序，如[!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)]使用。  
   
- 下图中显示的对话气泡框就是一个例子。  
+ 例如，考虑下图中所示的对话气泡框：  
   
- ![非矩形窗口](./media/nonrectangularwindowfigure.PNG "NonRectangularWindowFigure")  
+ ![语音气泡窗口，指示拖动我。](./media/wpf-windows-overview/non-rectangular-window-figure.png)  
   
  可以通过设置创建此类型的窗口<xref:System.Windows.Window.WindowStyle%2A>属性设置为<xref:System.Windows.WindowStyle.None>，并通过使用特殊支持<xref:System.Windows.Window>对透明度。  
   
@@ -460,9 +460,10 @@ ms.locfileid: "57373092"
   
 <a name="Task_Bar_Presence"></a>   
 ### <a name="task-bar-presence"></a>任务栏显示  
- 窗口的默认外观包括任务栏按钮，如下图中所示。  
-  
- ![包括任务栏按钮的窗口](./media/windowoverviewfigure7.PNG "WindowOverviewFigure7")  
+
+窗口的默认外观包括任务栏按钮，如下图中所示：
+
+ ![显示具有任务栏按钮的窗口的屏幕截图。](./media/wpf-windows-overview/window-taskbar-button.png)  
   
  某些类型的窗口没有任务栏按钮，如消息框和对话框 (请参阅[对话框概述](dialog-boxes-overview.md))。 您可以控制是否通过设置显示窗口任务栏按钮<xref:System.Windows.Window.ShowInTaskbar%2A>属性 (`true`默认情况下)。  
   

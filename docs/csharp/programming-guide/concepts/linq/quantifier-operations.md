@@ -2,19 +2,19 @@
 title: 限定符运算 (C#)
 ms.date: 07/20/2015
 ms.assetid: 84ac2ac2-7a63-4581-bc4c-14e34be1493b
-ms.openlocfilehash: 22d7b86a5935c7721b7ab13eea1252231d6ac095
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 090bc53c3dcedc82972ab7d16fa2968011a7db65
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54509206"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58412248"
 ---
 # <a name="quantifier-operations-c"></a>限定符运算 (C#)
 限定符运算返回一个 <xref:System.Boolean> 值，该值指示序列中是否有一些元素满足条件或是否所有元素都满足条件。  
   
  下图描述了两个不同源序列上的两个不同限定符运算。 第一个运算询问是否有一个或多个元素为字符“A”，结果为 `true`。 第二个运算询问是否所有元素都为字符“A”，结果为 `true`。  
   
- ![LINQ 限定符运算](../../../../csharp/programming-guide/concepts/linq/media/linq_quantifier.png "LINQ_Quantifier")  
+ ![LINQ 限定符运算](./media/quantifier-operations/linq-quantifier-operations.png)  
   
  下节列出了执行限定符运算的标准查询运算符方法。  
   

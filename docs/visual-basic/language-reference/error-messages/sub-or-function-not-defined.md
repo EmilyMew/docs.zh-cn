@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID35
 ms.assetid: 661fdb90-ee7d-40ce-b30b-5e7267bd957a
-ms.openlocfilehash: 4627f8ddb979780481feadbef06225baf6a7c0ca
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6bca368e13a32559bcb7cbb028dcaa1dea0353e3
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54532170"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819783"
 ---
 # <a name="sub-or-function-not-defined-visual-basic"></a>未定义 Sub 或 Function (Visual Basic)
 一个`Sub`或`Function`必须定义即可调用。 此错误的可能原因包括：  
@@ -31,6 +31,7 @@ ms.locfileid: "54532170"
 3.  检查的例程的名称。  
   
 ## <a name="see-also"></a>请参阅
+
 - [错误类型](../../../visual-basic/programming-guide/language-features/error-types.md)
 - [管理项目中的引用](/visualstudio/ide/managing-references-in-a-project)
 - [Sub 语句](../../../visual-basic/language-reference/statements/sub-statement.md)

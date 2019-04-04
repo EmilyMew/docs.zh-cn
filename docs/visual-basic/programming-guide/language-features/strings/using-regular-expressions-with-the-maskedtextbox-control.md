@@ -5,12 +5,12 @@ helpviewer_keywords:
 - strings [Visual Basic], regular expressions
 - strings [Visual Basic], masked edit
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
-ms.openlocfilehash: 58c0caa9d1df49ec53273e5b0f456cf89fc64c42
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e0165fb8d573878ae19378b2656d89627680b804
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54683685"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826727"
 ---
 # <a name="using-regular-expressions-with-the-maskedtextbox-control-in-visual-basic"></a>在 MaskedTextBox 控件中使用正则表达式 (Visual Basic)
 此示例演示如何将简单的正则表达式以使用<xref:System.Windows.Forms.MaskedTextBox>控件。  
@@ -56,6 +56,7 @@ ms.locfileid: "54683685"
 |`$\d{6}.00`|`$999,999.00`|0 到 999999 的范围中的货币值。 货币、 千分位的十进制字符将替换和在运行时与它们特定于区域性的等效项。|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>
 - <xref:System.Windows.Forms.MaskedTextBox>
 - [在 Visual Basic 中验证字符串](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)

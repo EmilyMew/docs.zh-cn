@@ -2,23 +2,25 @@
 title: <message> 的 <netMsmqBinding>
 ms.date: 03/30/2017
 ms.assetid: 6ebf0240-d7be-4493-b0fe-f00fd5989d77
-ms.openlocfilehash: 306bc56820cdbcba17cce9fc50d426260eb0e0d4
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: c623b7daf1e91c9c1800b9653525cd51b1087506
+ms.sourcegitcommit: 5c2176883dc3107445702724a7caa7ac2f6cb0d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57360662"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58890561"
 ---
 # <a name="message-of-netmsmqbinding"></a>\<message> of \<netMsmqBinding>
 
 在此 `netMsmqBinding` 绑定上定义 SOAP 消息安全设置。
 
-\<system.ServiceModel>\
-\<bindings>\
-\<netMsmqBinding>\
-\<binding>\
-\<安全 > \
-\<message>
+```xml
+<system.ServiceModel>
+  <bindings>
+    <netMsmqBinding>
+      <binding>
+        <security>
+          <message>
+```
 
 ## <a name="syntax"></a>语法
 
@@ -46,13 +48,13 @@ ms.locfileid: "57360662"
 
 ### <a name="child-elements"></a>子元素
 
-无
+None
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netmsmqbinding.md)|定义绑定的安全设置。|
+|[\<安全 >](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netmsmqbinding.md)|定义绑定的安全设置。|
 
 ## <a name="see-also"></a>请参阅
 

@@ -2,12 +2,12 @@
 title: OperationContextScope
 ms.date: 03/30/2017
 ms.assetid: 11c11108-8eb4-4d49-95a0-83285a812262
-ms.openlocfilehash: 46180c47512fd4bdb5955ed0febb63892fc27b19
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 24c4478ac53ab5f1a38476d00d47152cafb7db0d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54656786"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838230"
 ---
 # <a name="operationcontextscope"></a>OperationContextScope
 OperationContextScope 示例演示如何发送 Windows Communication Foundation (WCF) 调用使用标头上的额外信息。 在此示例中，服务器和客户端都是控制台应用程序。  
@@ -18,7 +18,7 @@ OperationContextScope 示例演示如何发送 Windows Communication Foundation 
  此示例演示客户端如何使用 <xref:System.ServiceModel.Channels.MessageHeader> 以 <xref:System.ServiceModel.OperationContextScope> 的方式发送额外的信息。 <xref:System.ServiceModel.OperationContextScope> 对象是通过将其范围设置为通道来创建的。 必须转换为远程服务的头可以添加到 <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders%2A> 集合中。 可以通过访问 <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A> 在服务上检索添加到此集合中的头。 它的调用是在多个通道进行的，添加到客户端的头然后将只应用于用来创建 <xref:System.ServiceModel.OperationContextScope> 的通道。  
   
 ## <a name="messageheaderreader"></a>MessageHeaderReader  
- 这是从客户端接收消息，并尝试在 <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A> 集合中查找头的示例服务。 客户端传递在头中发送的 GUID，服务则检索自定义头，如果存在自定义头，则将其与客户端作为自变量传递的 GUID 进行比较。  
+ 这是从客户端接收消息，并尝试在 <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A> 集合中查找头的示例服务。 客户端传递在头中发送的 GUID，服务则检索自定义头，如果存在自定义头，则将其与客户端作为参数传递的 GUID 进行比较。  
   
 ```csharp
 public bool RetrieveHeader(string guid)  
@@ -130,4 +130,3 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\OperationContextScope`  
   
-## <a name="see-also"></a>请参阅

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - arguments [Visual Basic], passing by value or by reference
 - argument passing [Visual Basic], by value or by reference
 ms.assetid: fd8a9de6-7178-44d5-a9bf-458d4ad907c2
-ms.openlocfilehash: c2c778afea90a90b2b5f83300c2d174db39f3c15
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: c23ca51322f57dc13a85c3ea94e0d335dc50ca13
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56978470"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58830352"
 ---
 # <a name="passing-arguments-by-value-and-by-reference-visual-basic"></a>通过值和通过引用传递参数 (Visual Basic)
 在 Visual Basic 中，您可以传递参数给过程*按值*或*按引用*。 这称为*传递机制*，并确定该过程是否可以修改调用代码中的参数的基础的编程元素。 过程声明确定通过指定每个参数的传递机制[ByVal](../../../../visual-basic/language-reference/modifiers/byval.md)或[ByRef](../../../../visual-basic/language-reference/modifiers/byref.md)关键字。  
@@ -69,6 +69,7 @@ ms.locfileid: "56978470"
  [!code-vb[VbVbcnProcedures#74](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class2.vb#74)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [如何：将参数传递给过程](./how-to-pass-arguments-to-a-procedure.md)

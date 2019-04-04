@@ -3,12 +3,12 @@ title: 生成我的第一个声明感知 ASP.NET Web 应用程序
 ms.date: 03/30/2017
 ms.assetid: 3ee8ee7f-caba-4267-9343-e313fae2876d
 author: BrucePerlerMS
-ms.openlocfilehash: 67489b2bb93719d8182159fbc91703399d5e8bc7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2fd5b36ffe26632240955307eb522cecdf4f1e73
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54588959"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838126"
 ---
 # <a name="building-my-first-claims-aware-aspnet-web-application"></a>生成我的第一个声明感知 ASP.NET Web 应用程序
 ## <a name="applies-to"></a>适用于  
@@ -19,7 +19,7 @@ ms.locfileid: "54588959"
   
  本主题概述了使用 WIF 生成声明感知 ASP.NET Web 应用程序的方案。 声明感知应用程序方案通常涉及三个参与者：应用程序本身、最终用户和安全令牌服务 (STS)。 下图描述了此方案：  
   
- ![WIF 基本 Web 应用](../../../docs/framework/security/media/wifbasicwebapp.gif "WIFBasicWebApp")  
+ ![WIF 基本 Web 应用程序组件的图示。](./media/building-my-first-claims-aware-aspnet-web-app/windows-identity-foundation-basic-web-application.gif)  
   
 1.  声明感知应用程序使用 WIF 来标识未经身份验证的请求并将这些请求重定向到 STS。  
   
@@ -37,7 +37,7 @@ ms.locfileid: "54588959"
   
 -   [Windows Azure 访问控制服务 (ACS)](https://go.microsoft.com/fwlink/?LinkID=247517)
   
- AD FS 2.0 是 Windows Server R2 的一部分并可用作本地方案的 STS。 ACS 是一项云服务，它作为 Microsoft Azure 平台的一部分提供。 出于测试或教学目的，你还可以使用其他 STS 以生成声明感知应用程序。 例如，可以使用属于本地开发 STS[标识和访问工具，用于 Visual Studio](https://go.microsoft.com/fwlink/?LinkID=245849)即联机免费提供。  
+ AD FS 2.0 是 Windows Server R2 的一部分并可用作本地方案的 STS。 ACS 是一项云服务，它作为 Microsoft Azure 平台的一部分提供。 出于测试或教学目的，您还可以使用其他 STS 以生成声明感知应用程序。 例如，可以使用属于本地开发 STS[标识和访问工具，用于 Visual Studio](https://go.microsoft.com/fwlink/?LinkID=245849)即联机免费提供。  
   
  若要使用 WIF 生成您的第一个声明感知 ASP.NET 应用程序，请按照下列主题之一中的说明进行操作：  
   

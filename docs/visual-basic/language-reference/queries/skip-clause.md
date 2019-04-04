@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Skip statement [Visual Basic]
 - Skip clause [Visual Basic]
 ms.assetid: f00eb172-3907-4c43-9745-d8546ab86234
-ms.openlocfilehash: 8441e619cdbd18545be72fd701c2cc9b1cf495d9
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: db2d79596895505ddaa7778e831082a94c7ad44e
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56971232"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821096"
 ---
 # <a name="skip-clause-visual-basic"></a>Skip 子句 (Visual Basic)
 绕过集合中指定数量的元素，然后返回剩余的元素。  
@@ -43,6 +43,7 @@ Skip count
  [!code-vb[VbSimpleQuerySamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 中的 LINQ 简介](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](../../../visual-basic/language-reference/queries/index.md)
 - [Select 子句](../../../visual-basic/language-reference/queries/select-clause.md)

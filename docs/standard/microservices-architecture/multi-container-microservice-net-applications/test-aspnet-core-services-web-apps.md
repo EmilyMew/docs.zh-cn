@@ -4,12 +4,12 @@ description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/02/2018
-ms.openlocfilehash: 99f17f713a1193e82ad64036a4b3f5e0caa20fd7
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: 3adf711fd00ac0ab57764a67a08ce453318fd965
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57845968"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58463132"
 ---
 # <a name="testing-aspnet-core-services-and-web-apps"></a>测试 ASP.NET Core 服务和 Web 应用
 
@@ -103,26 +103,26 @@ public class PrimeWebDefaultRequestShould
 
 #### <a name="additional-resources"></a>其他资源
 
-- **Steve Smith.测试控制器** (ASP.NET Core) <br/>
-    [*https://docs.microsoft.com/aspnet/core/mvc/controllers/testing*](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing)
+- **Steve Smith.测试控制器** (ASP.NET Core) \
+    [https://docs.microsoft.com/aspnet/core/mvc/controllers/testing](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing)
 
-- **Steve Smith.集成测试** (ASP.NET Core) <br/>
-    [*https://docs.microsoft.com/aspnet/core/test/integration-tests*](https://docs.microsoft.com/aspnet/core/test/integration-tests)
+- **Steve Smith.集成测试** (ASP.NET Core) \
+    [https://docs.microsoft.com/aspnet/core/test/integration-tests](https://docs.microsoft.com/aspnet/core/test/integration-tests)
 
-- **使用 dotnet 测试在 .NET Core 中进行单元测试** <br/>
-    [*https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test*](../../../core/testing/unit-testing-with-dotnet-test.md)
+- **在 .NET Core 中使用 dotnet test 的单元测试** \
+    [https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test](../../../core/testing/unit-testing-with-dotnet-test.md)
 
-- **xUnit.net**。 官方网站。 <br/>
-    [*https://xunit.github.io/*](https://xunit.github.io/)
+- **xUnit.net**。 官方网站。 \
+    [https://xunit.github.io/](https://xunit.github.io/)
 
-- 单元测试基本信息。 <br/>
-    [*https://docs.microsoft.com/visualstudio/test/unit-test-basics*](/visualstudio/test/unit-test-basics)
+- 单元测试基本信息。 \
+    [https://docs.microsoft.com/visualstudio/test/unit-test-basics](/visualstudio/test/unit-test-basics)
 
-- **Moq**。 GitHub 存储库。 <br/>
-    [*https://github.com/moq/moq*](https://github.com/moq/moq)
+- **Moq**。 GitHub 存储库。 \
+    [https://github.com/moq/moq](https://github.com/moq/moq)
 
-- **NUnit**。 官方网站。 <br/>
-    [*https://www.nunit.org/*](https://www.nunit.org/)
+- **NUnit**。 官方网站。 \
+    [https://www.nunit.org/](https://www.nunit.org/)
 
 ### <a name="implementing-service-tests-on-a-multi-container-application"></a>在多容器应用程序上实现服务测试
 
@@ -202,11 +202,11 @@ docker-compose -f docker-compose-test.yml -f docker-compose-test.override.yml up
 
 ### <a name="additional-resources"></a>其他资源
 
-- GitHub 上的 eShopOnContainers 存储库中的测试自述文件 <br/>
-    [*https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test*](https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test)
+- GitHub 上的 eShopOnContainers 存储库中的“测试自述文件”\
+    [https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test](https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test)
 
-- GitHub 上的 eShopOnContainers 存储库中的负载测试自述文件 <br/>
-    [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/)
+- GitHub 上的 eShopOnContainers 存储库中的“负载测试自述文件”\
+    [https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/)
 
 > [!div class="step-by-step"]
 > [上一页](subscribe-events.md)

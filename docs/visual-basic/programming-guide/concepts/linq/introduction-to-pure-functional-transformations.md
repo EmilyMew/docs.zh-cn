@@ -2,12 +2,12 @@
 title: 纯功能转换 (Visual Basic) 简介
 ms.date: 07/20/2015
 ms.assetid: 82bf3348-c503-4854-a91f-71f9835779ff
-ms.openlocfilehash: a4e9cdf98dfe3a54ecb9ff4316742d76b51ba782
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 32cd588d527dbc3e995ea8629f024498c80cba2a
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54573016"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824879"
 ---
 # <a name="introduction-to-pure-functional-transformations-visual-basic"></a>纯功能转换 (Visual Basic) 简介
 本节介绍函数转换，包括基本概念和支持的语言构造。 本节对面向对象的编程方法与函数转换编程方法进行了对比，并针对如何转换到后者提供了一些建议。 尽管可以在很多编程方案中都使用函数转换，但此处使用 XML 转换作为具体示例。  
@@ -23,4 +23,5 @@ ms.locfileid: "54573016"
 |[XML 的功能转换 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-transformation-of-xml.md)|描述在转换 XML 树的上下文中的函数转换。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [XML (Visual Basic 中) 的纯功能转换](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)

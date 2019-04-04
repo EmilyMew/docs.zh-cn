@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42104
 ms.assetid: 6909aa0b-b4a1-46f5-a18c-ba3e565c1dd8
-ms.openlocfilehash: 23201b89f44f6384ae9f75d941d264e8d59bef80
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 46551a917aeb794c8d35985076b67a315386f628
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55268829"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819354"
 ---
 # <a name="variable-variablename-is-used-before-it-has-been-assigned-a-value"></a>变量\<变量名 > 在赋值前被使用
 变量\<变量名 > 在赋值前被使用。 可能在运行时导致 null 引用异常。  
@@ -32,6 +32,7 @@ ms.locfileid: "55268829"
 -   若要保证变量始终具有有效的值的一种方法是初始化其作为其声明的一部分。 请参阅中的"初始化" [Dim 语句](../../../visual-basic/language-reference/statements/dim-statement.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Dim 语句](../../../visual-basic/language-reference/statements/dim-statement.md)
 - [变量声明](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
 - [变量疑难解答](../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)

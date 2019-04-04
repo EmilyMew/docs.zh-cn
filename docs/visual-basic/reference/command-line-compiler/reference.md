@@ -9,12 +9,12 @@ helpviewer_keywords:
 - reference compiler option [Visual Basic]
 - -r compiler option [Visual Basic]
 ms.assetid: 66bdfced-bbf6-43d1-a554-bc0990315737
-ms.openlocfilehash: 4c410fd7dcaae4e19043f5f858a2f75c69587311
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 21efca701eb16898dd291d73bf0431641ba75d12
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54662265"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826114"
 ---
 # <a name="-reference-visual-basic"></a>-参考 (Visual Basic)
 使编译器让指定程序集中的类型信息供当前正在编译的项目。  
@@ -58,6 +58,7 @@ vbc -reference:metad1.dll,metad2.dll -out:out.exe input.vb
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
 - [-目标 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)

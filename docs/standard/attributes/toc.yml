@@ -1,0 +1,16 @@
+items:
+- name: 特性
+  href: index.md
+  items:
+  - name: 应用特性
+    href: applying-attributes.md
+  - name: 编写自定义特性
+    href: writing-custom-attributes.md
+  - name: 检索存储在特性中的信息
+    href: retrieving-information-stored-in-attributes.md
+ms.openlocfilehash: d86731782c3b35fe265ef21ae3d32ced4bd8b6d6
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468461"

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - attribute list
 - attributes [Visual Basic], applying
 ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
-ms.openlocfilehash: fb25ecad3b797a4993e7a780823a38a0f0ccbd1f
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 2399ec1342280df101e2818399e0f41f10d9606d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56975623"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58818406"
 ---
 # <a name="attribute-list-visual-basic"></a>特性列表 (Visual Basic)
 指定要应用于声明的编程元素的特性。 用逗号分隔多个属性。 下面是一个属性的语法。  
@@ -54,6 +54,7 @@ ms.locfileid: "56975623"
  <xref:System.Runtime.InteropServices.DllImportAttribute> 指示特性化的过程表示非托管动态链接库 (DLL) 中的入口点。 该属性提供的 DLL 名称作为位置自变量和变量初始值设定项与其他信息。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)
 - [Module \<关键字>](../../../visual-basic/language-reference/modifiers/module-keyword.md)
 - [属性概述](../../../visual-basic/programming-guide/concepts/attributes/index.md)

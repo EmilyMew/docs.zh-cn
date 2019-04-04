@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - WithEvents keyword [Visual Basic]
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
-ms.openlocfilehash: e1a6cecdf724603b8f4617fe4e8b5ef2c0acdeff
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 75d118ee2bd4918c3a936cb341864ddc5315726b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54624556"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826608"
 ---
 # <a name="withevents-visual-basic"></a>WithEvents (Visual Basic)
 指定一个或多个声明的成员变量引用可以引发事件的类的实例。  
@@ -33,6 +33,7 @@ ms.locfileid: "54624556"
  `WithEvents`修饰符可用于在此上下文中：[Dim 语句](../../../visual-basic/language-reference/statements/dim-statement.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
 - [关键字](../../../visual-basic/language-reference/keywords/index.md)
 - [事件](../../../visual-basic/programming-guide/language-features/events/index.md)

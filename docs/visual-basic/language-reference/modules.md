@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - modules, Visual Basic
 ms.assetid: 370bfc90-e8f2-4942-bdec-9897ce605d31
-ms.openlocfilehash: ac331e94c86b16476ba5caf2bfc1bce8a73e3e56
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0bb33b102358fd2d0290fd413b09448255522856
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54582131"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832003"
 ---
 # <a name="modules-visual-basic"></a>模块 (Visual Basic)
 Visual Basic 提供了多个模块，使您能够简化常见任务包括处理字符串、 执行数学计算，获取系统信息、 执行文件和目录操作，在代码中的，依次类推。 下表列出了 Visual basic 提供的模块。  
@@ -30,5 +30,6 @@ Visual Basic 提供了多个模块，使您能够简化常见任务包括处理�
 |<xref:Microsoft.VisualBasic.VBMath>|包含成员执行数学运算。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 语言参考](../../visual-basic/language-reference/index.md)
 - [Visual Basic](../../visual-basic/index.md)

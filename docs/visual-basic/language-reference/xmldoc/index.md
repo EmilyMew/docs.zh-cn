@@ -2,12 +2,18 @@
 title: 建议的用于文档注释的 XML 标记 (Visual Basic)
 ms.date: 07/20/2015
 f1_keywords:
-  - vb.XmlDocComment
+- vb.XmlDocComment
 helpviewer_keywords:
-  - 'tags, XML'
-  - 'XML comments, recommended tags [Visual Basic]'
-  - 'comments, recommended XML tags'
+- tags, XML
+- XML comments, recommended tags [Visual Basic]
+- comments, recommended XML tags
 ms.assetid: 294e0736-ff1e-498e-af83-6db71ed41a72
+ms.openlocfilehash: e59ee25b22c51e47dc83233af33099e6c55de87b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814934"
 ---
 # <a name="recommended-xml-tags-for-documentation-comments-visual-basic"></a>建议的用于文档注释的 XML 标记 (Visual Basic)
 Visual Basic 编译器可以处理 XML 文件在代码中的文档注释。 可以使用其他工具来处理到文档中的 XML 文件。  
@@ -34,6 +40,7 @@ Visual Basic 编译器可以处理 XML 文件在代码中的文档注释。 可�
 >  如果你想的文档注释文本中显示尖括号，使用`&lt;`和`&gt;`。 例如，字符串`"&lt;text in angle brackets&gt;"`将显示为`<text in angle brackets>`。  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用 XML 记录代码](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
 - [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)
 - [如何：创建 XML 文档](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)

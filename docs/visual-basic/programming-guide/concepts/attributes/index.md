@@ -2,6 +2,12 @@
 title: 特性概述 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 1449f69b-c063-41de-8d89-f0bbdcf96ac6
+ms.openlocfilehash: bb012b49c76963306d723d7732b4c7054bf13ebb
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827687"
 ---
 # <a name="attributes-overview-visual-basic"></a>特性概述 (Visual Basic)
 使用特性，可以有效地将元数据或声明性信息与代码（程序集、类型、方法、属性等）相关联。 将特性与程序实体相关联后，可以在运行时使用*反射*这项技术查询特性。 有关详细信息，请参阅[反射 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)。  
@@ -137,6 +143,7 @@ Module: CLSCompliant(True)>
 -   [调用方信息 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 编程指南](../../../../visual-basic/programming-guide/index.md)
 - [反射 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)
 - [属性](../../../../standard/attributes/index.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - decision structures [Visual Basic]
 - conditional statements [Visual Basic], decision structures
 ms.assetid: 2e2e0895-4483-442a-b17c-26aead751ec2
-ms.openlocfilehash: 4aabb1eef717b06222696980d4cbce7a781fb567
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 20b60fb425278dacb56ee5f888967554a1f76aeb
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54735242"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58825373"
 ---
 # <a name="decision-structures-visual-basic"></a>决策结构 (Visual Basic)
 Visual Basic，可以测试条件，然后执行不同操作，具体取决于该测试的结果。 你可以测试条件是 true 或 false 的各种值的表达式，或生成时执行的一系列语句的各种异常。  
@@ -47,6 +47,7 @@ Visual Basic，可以测试条件，然后执行不同操作，具体取决于�
 >  许多控件结构，当您单击某个关键字在结构中的关键字的所有突出显示。 例如，单击`If`中`If...Then...Else`构造、 的所有实例`If`， `Then`， `ElseIf`， `Else`，和`End If`构造中将突出显示。 若要将移动到下一步或上一个突出显示关键字，按 CTRL + SHIFT + 向下键或 CTRL + SHIFT + 向上键。  
   
 ## <a name="see-also"></a>请参阅
+
 - [控制流](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
 - [循环结构](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
 - [其他控件结构](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)

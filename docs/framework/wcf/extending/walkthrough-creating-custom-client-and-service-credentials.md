@@ -22,8 +22,7 @@ ms.locfileid: "56261527"
   
 -   用作 <xref:System.IdentityModel.Selectors.SecurityTokenManager> 实现的工厂。  
   
- 
-  <xref:System.ServiceModel.Description.ClientCredentials> 和 <xref:System.ServiceModel.Description.ServiceCredentials> 类都继承自用于定义返回 <xref:System.ServiceModel.Security.SecurityCredentialsManager> 的协定的抽象 <xref:System.IdentityModel.Selectors.SecurityTokenManager> 类。  
+ <xref:System.ServiceModel.Description.ClientCredentials> 和 <xref:System.ServiceModel.Description.ServiceCredentials> 类都继承自用于定义返回 <xref:System.ServiceModel.Security.SecurityCredentialsManager> 的协定的抽象 <xref:System.IdentityModel.Selectors.SecurityTokenManager> 类。  
   
  WCF 中提供的默认实现支持系统提供的凭据类型，并创建安全令牌管理器能够处理这些凭据类型。  
   

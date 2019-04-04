@@ -2,12 +2,12 @@
 title: LINQ to XML (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: f7386556-a6b9-40d5-92b6-e8701dc2c63e
-ms.openlocfilehash: a6b09bb2384b3da6e106d13aaca178252f47f5d0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1ed438b87d2b53e7e811c22e614c60c759fa07f2
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54648954"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58835851"
 ---
 # <a name="linq-to-xml-visual-basic"></a>LINQ to XML (Visual Basic)
 LINQ to XML 提供使用 .NET 语言集成查询 (LINQ) Framework 的内存中 XML 编程接口。 LINQ to XML 使用最新的 .NET Framework 语言功能，相当于更新的和重新设计的文档对象模型 (DOM) XML 编程接口。  
@@ -25,6 +25,7 @@ LINQ to XML 提供使用 .NET 语言集成查询 (LINQ) Framework 的内存中 X
  提供指向 LINQ to XML 管理的参考文档的链接。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 中的 LINQ to XML 概述](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)
 - [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
 - [语言集成查询 (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)

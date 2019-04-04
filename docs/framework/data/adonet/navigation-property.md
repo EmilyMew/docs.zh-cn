@@ -2,12 +2,12 @@
 title: 导航属性-ADO.NET
 ms.date: 03/30/2017
 ms.assetid: d0bf1a6a-1d84-484c-b7c3-b410fd8dc0b1
-ms.openlocfilehash: 6729b22dbc012d5ccfabd64cd83b710833fe1b9d
-ms.sourcegitcommit: 5dcfeb59179e81071f54840d4902cbe00b184294
+ms.openlocfilehash: b57ecf9329aa9ea8afc07507613c9e3961bfd0a9
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54857939"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58836592"
 ---
 # <a name="navigation-property"></a>导航属性
 
@@ -29,7 +29,7 @@ ms.locfileid: "54857939"
 
 下图显示了一个具有三个实体类型的概念模型：`Book`、`Publisher` 和 `Author`。 导航属性 `Publisher` 和 `Authors` 都是在 Book 实体类型上定义的。 导航属性 `Books` 是同时在 Publisher 实体类型和 `Author` 实体类型上定义的。
 
-![具有导航属性的模型](/media/modelwithnavprops.gif "ModelWithNavProps")
+ ![显示具有三个实体类型的概念模型关系图。](./media/navigation-property/conceptual-model-entity-types-associations.gif)  
 
 [ADO.NET 实体框架](./ef/index.md)使用称为概念性架构定义语言的特定于域的语言 (DSL) ([CSDL](./ef/language-reference/csdl-specification.md)) 来定义概念模型。 下面的 CSDL 定义了上图中显示的 `Book` 实体类型。
 

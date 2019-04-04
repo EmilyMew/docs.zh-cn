@@ -2,12 +2,12 @@
 title: 模型定义函数
 ms.date: 03/30/2017
 ms.assetid: 8bb2edc8-e8e7-44c2-adc7-f44e11bda4f0
-ms.openlocfilehash: 371af3ae090e37cfd425a9e9d5946bb0751dc527
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 67821c68ee79b42bc54e22f1e15673d2d9243a68
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54538877"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653855"
 ---
 # <a name="model-defined-function"></a>模型定义函数
 一个*模型定义函数*是概念模型中定义的函数。 以表示模型定义函数的正文[Entity SQL](../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)、 允许使用函数表示为独立于规则或数据源中支持的语言。  
@@ -30,7 +30,7 @@ ms.locfileid: "54538877"
 ## <a name="example"></a>示例  
  下图显示了一个具有三个实体类型的概念模型：`Book`、`Publisher` 和 `Author`。  
   
- ![模型具有发布日期](../../../../docs/framework/data/adonet/media/modelwithpublisheddate.gif "ModelWithPublishedDate")  
+ ![显示具有发布日期的模型的屏幕截图。](./media/model-defined-function/model-published-date-three-entity-types.gif)  
   
  [ADO.NET 实体框架](../../../../docs/framework/data/adonet/ef/index.md)使用称为概念性架构定义语言的特定于域的语言 (DSL) ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) 来定义概念模型。 下面的 CSDL 在概念模型中定义了一个函数，它返回自某个 `Book` 实例（如上图所示）出版以来的年数。  
   

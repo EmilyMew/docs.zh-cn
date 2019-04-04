@@ -4,12 +4,12 @@ description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: 637e51c45217c9ff214395235348b09119200fe7
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.openlocfilehash: 5174f3ac649ef002c7efff2fcc56effa3f84abba
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57676338"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465290"
 ---
 # <a name="implement-the-infrastructure-persistence-layer-with-entity-framework-core"></a>使用 Entity Framework Core 实现基础结构持久性层
 
@@ -26,16 +26,16 @@ EF 简介已提供于 Microsoft 文档中，因此这里我们只提供指向该
 #### <a name="additional-resources"></a>其他资源
 
 - **Entity Framework Core** \
-  [*https://docs.microsoft.com/ef/core/*](https://docs.microsoft.com/ef/core/)
+  [https://docs.microsoft.com/ef/core/](https://docs.microsoft.com/ef/core/)
 
 - **Getting started with ASP.NET Core and Entity Framework Core using Visual Studio** \（借助 Visual Studio 使用 ASP.NET Core 和 Entity Framework Core 入门）
-  [*https://docs.microsoft.com/aspnet/core/data/ef-mvc/*](https://docs.microsoft.com/aspnet/core/data/ef-mvc/)
+  [https://docs.microsoft.com/aspnet/core/data/ef-mvc/](https://docs.microsoft.com/aspnet/core/data/ef-mvc/)
 
 - **DbContext Class** \（DbContext 类）
-  [*https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.dbcontext*](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.dbcontext)
+  [https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.dbcontext](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.dbcontext)
 
 - **Compare EF Core & EF6.x** \（比较 EF Core 和 EF6.x）
-  [*https://docs.microsoft.com/ef/efcore-and-ef6/index*](https://docs.microsoft.com/ef/efcore-and-ef6/index)
+  [https://docs.microsoft.com/ef/efcore-and-ef6/index](https://docs.microsoft.com/ef/efcore-and-ef6/index)
 
 ## <a name="infrastructure-in-entity-framework-core-from-a-ddd-perspective"></a>Entity Framework Core 中的基础结构（DDD 角度）
 
@@ -235,13 +235,13 @@ builder.RegisterType<OrderRepository>()
 #### <a name="additional-resources"></a>其他资源
 
 - **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application** \（在 ASP.NET MVC 应用程序中实现存储库模式和工作单元模式）
-  [*https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application*](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
+  [https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
 
 - **Jonathan Allen。Implementation Strategies for the Repository Pattern with Entity Framework, Dapper, and Chain** \（Entity Framework、Dapper 和 Chain 中存储库模式的实现策略）
-  [*https://www.infoq.com/articles/repository-implementation-strategies*](https://www.infoq.com/articles/repository-implementation-strategies)
+  [https://www.infoq.com/articles/repository-implementation-strategies](https://www.infoq.com/articles/repository-implementation-strategies)
 
 - **Cesar de la Torre。Comparing ASP.NET Core IoC container service lifetimes with Autofac IoC container instance scopes** \（比较 ASP.NET Core IoC 容器服务生存期和 Autofac IoC 容器实例范围）
-  [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
+  [https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/](https://blogs.msdn.microsoft.com/cesardelatorre/2017/01/26/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
 
 ## <a name="table-mapping"></a>表映射
 
@@ -452,22 +452,22 @@ public IEnumerable<T> List(ISpecification<T> spec)
 #### <a name="additional-resources"></a>其他资源
 
 - **Table Mapping** \（表映射）
-  [*https://docs.microsoft.com/ef/core/modeling/relational/tables*](https://docs.microsoft.com/ef/core/modeling/relational/tables)
+  [https://docs.microsoft.com/ef/core/modeling/relational/tables](https://docs.microsoft.com/ef/core/modeling/relational/tables)
 
 - **Use HiLo to generate keys with Entity Framework Core** \（使用 HiLo 通过 Entity Framework Core 生成键）
-  [*https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/*](https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/)
+  [https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/](https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/)
 
 - **Backing Fields** \（支持字段）
-  [*https://docs.microsoft.com/ef/core/modeling/backing-field*](https://docs.microsoft.com/ef/core/modeling/backing-field)
+  [https://docs.microsoft.com/ef/core/modeling/backing-field](https://docs.microsoft.com/ef/core/modeling/backing-field)
 
 - **Steve Smith.Encapsulated Collections in Entity Framework Core** \（Entity Framework Core 中的封装集合）
-  [*https://ardalis.com/encapsulated-collections-in-entity-framework-core*](https://ardalis.com/encapsulated-collections-in-entity-framework-core)
+  [https://ardalis.com/encapsulated-collections-in-entity-framework-core](https://ardalis.com/encapsulated-collections-in-entity-framework-core)
 
 - 阴影属性 \
-  [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
+  [https://docs.microsoft.com/ef/core/modeling/shadow-properties](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
 
 - **The Specification pattern** \（规范模式）
-  [*https://deviq.com/specification-pattern/*](https://deviq.com/specification-pattern/)
+  [https://deviq.com/specification-pattern/](https://deviq.com/specification-pattern/)
 
 > [!div class="step-by-step"]
 > [上一页](infrastructure-persistence-layer-design.md)

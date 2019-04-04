@@ -5,27 +5,27 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f450f5d4-3547-47ec-9320-2809e6a12634
-ms.openlocfilehash: 7583eab4673dc14380f18456d1713351dbc74f17
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b8cd2c58efb08523050e19c31201be48ae98ba03
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54603113"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58466226"
 ---
 # <a name="intranet-unsecured-client-and-service"></a>不安全的 Intranet 客户端和服务
 下图描绘了开发到 WCF 应用程序安全的专用网络上提供信息的简单 Windows Communication Foundation (WCF) 服务。 不需要安全，因为数据重要性较低、 网络应为本质上是安全的或者在通过以下 WCF 基础结构的层来提供安全性。  
   
- ![不安全的 intranet 客户端和服务方案](../../../../docs/framework/wcf/feature-details/media/unsecuredwebservice.gif "UnsecuredWebService")  
+ ![不安全的 intranet 客户端和服务方案。](./media/intranet-unsecured-client-and-service/unsecured-web-client-service.gif)  
   
 |特征|描述|  
 |--------------------|-----------------|  
-|安全模式|无|  
+|安全模式|None|  
 |传输|TCP|  
 |绑定|<xref:System.ServiceModel.NetTcpBinding>|  
 |互操作性|WCF 仅|  
-|身份验证|无|  
-|完整性|无|  
-|保密性|无|  
+|身份验证|None|  
+|完整性|None|  
+|保密性|None|  
   
 ## <a name="service"></a>服务  
  下面的代码和配置应独立运行。 执行下列操作之一：  
@@ -75,7 +75,7 @@ ms.locfileid: "54603113"
   
 -   使用代码（和客户端代码）创建独立客户端。  
   
--   创建不定义任何终结点地址的客户端。 而使用将配置名称作为参数的客户端构造函数。 例如：  
+-   创建不定义任何终结点地址的客户端。 而使用将配置名称作为自变量的客户端构造函数。 例如：  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  

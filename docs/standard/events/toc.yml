@@ -1,0 +1,25 @@
+items:
+- name: 事件
+  href: index.md
+  items:
+  - name: 如何：引发事件和使用事件
+    href: how-to-raise-and-consume-events.md
+  - name: 如何：使用事件属性处理多个事件
+    href: how-to-handle-multiple-events-using-event-properties.md
+  - name: 如何：在 Web 窗体应用程序中使用事件
+    href: how-to-consume-events-in-a-web-forms-application.md
+  - name: 观察者设计模式
+    href: observer-design-pattern.md
+    items:
+    - name: 观察程序设计模式最佳做法
+      href: observer-design-pattern-best-practices.md
+    - name: 如何：实现提供程序
+      href: how-to-implement-a-provider.md
+    - name: 如何：实现监视程序
+      href: how-to-implement-an-observer.md
+ms.openlocfilehash: 683b3ce9ecf53166bed8101c2ebcd0d4a43024b9
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467897"

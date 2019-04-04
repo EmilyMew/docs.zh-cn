@@ -14,8 +14,7 @@ ms.lasthandoff: 03/09/2019
 ms.locfileid: "57719294"
 ---
 # <a name="soundplayer-class"></a>SoundPlayer 类
-
-  `SoundPlayer` 类使你能够轻松地将声音纳入应用程序。  
+`SoundPlayer` 类使你能够轻松地将声音纳入应用程序。  
   
  还可使用 <xref:System.Media.SystemSounds> 类播放常见的系统声音，包括提示音。  
   

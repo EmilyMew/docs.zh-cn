@@ -10,12 +10,12 @@ helpviewer_keywords:
 - signatures [Visual Basic], procedure
 - overloads [Visual Basic], resolution
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
-ms.openlocfilehash: 435ba13b6d0b2a7d272c7f2bbea7ec410dd3d5e7
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.openlocfilehash: e7a05a5fb0b2053e92d9f947f197bdb2dcfa7ce0
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57678819"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832276"
 ---
 # <a name="overload-resolution-visual-basic"></a>重载决策 (Visual Basic)
 当 Visual Basic 编译器遇到多个重载版本中定义的过程调用时，编译器必须确定哪个重载来调用。 做到这一点，请执行以下步骤：  
@@ -59,6 +59,7 @@ ms.locfileid: "57678819"
 |（包括一个空数组） 任何长度的数组|`ParamArray`|  
   
 ## <a name="see-also"></a>请参阅
+
 - [可选参数](./optional-parameters.md)
 - [参数数组](./parameter-arrays.md)
 - [过程重载](./procedure-overloading.md)

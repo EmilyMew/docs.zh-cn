@@ -1,0 +1,38 @@
+items:
+- name: 内存管理和垃圾回收
+  href: memory-management-and-gc.md
+  items:
+  - name: 清理非托管资源
+    href: unmanaged.md
+    items:
+    - name: 实现 Dispose 方法
+      href: implementing-dispose.md
+    - name: 使用实现 IDisposable 的对象
+      href: using-objects.md
+  - name: 垃圾回收
+    href: index.md
+    items:
+    - name: 垃圾回收的基础
+      href: fundamentals.md
+    - name: 大型对象堆
+      href: large-object-heap.md
+    - name: 垃圾回收和性能
+      href: performance.md
+    - name: 被动回收
+      href: induced.md
+    - name: 滞后时间模式
+      href: latency.md
+    - name: 针对共享 Web 承载优化
+      href: optimization-for-shared-web-hosting.md
+    - name: 垃圾回收通知
+      href: notifications.md
+    - name: 应用程序域资源监控
+      href: app-domain-resource-monitoring.md
+    - name: 弱引用
+      href: weak-references.md
+ms.openlocfilehash: ad426c53df40be9a5222bd0e5a6292d8f1ec8e30
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468537"

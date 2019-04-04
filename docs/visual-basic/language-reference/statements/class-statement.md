@@ -13,12 +13,12 @@ helpviewer_keywords:
 - classes [Visual Basic], data members
 - data members [Visual Basic], of classes
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
-ms.openlocfilehash: 7bc2d6a6b3e01cd7efa00763d3b9bf3a0026be6f
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 68401571645d77a41b827c13b3cfc3674076e218
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56975870"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824567"
 ---
 # <a name="class-statement-visual-basic"></a>Class 语句 (Visual Basic)
 声明类的名称，并引入的变量、 属性、 事件和类构成的过程的定义。  
@@ -108,6 +108,7 @@ End Class
  [!code-vb[VbVbalrStatements#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#62)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [对象和类](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
 - [结构和类](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
 - [Interface 语句](../../../visual-basic/language-reference/statements/interface-statement.md)

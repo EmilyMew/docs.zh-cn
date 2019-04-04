@@ -4,12 +4,12 @@ description: 了解如何使用自 .NET Core 2.1 起可用的 HttpClientFactory 
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 01/07/2019
-ms.openlocfilehash: 73faa847dae2f844784ae5d85ce905b7e1e64cd0
-ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
+ms.openlocfilehash: a55181e787b5c94e13d3945a5d97a12fed61e927
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55479810"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465927"
 ---
 # <a name="use-httpclientfactory-to-implement-resilient-http-requests"></a>使用 HttpClientFactory 实现复原 HTTP 请求
 
@@ -158,10 +158,10 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 ## <a name="additional-resources"></a>其他资源
 
 - **在 .NET Core 中使用 HttpClientFactory**\
-  [*https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1*](/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1)
+  [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1](/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1)
 
 - **HttpClientFactory GitHub 存储库**\
-  [*https://github.com/aspnet/HttpClientFactory*](https://github.com/aspnet/HttpClientFactory)
+  <https://github.com/aspnet/Extensions/tree/master/src/HttpClientFactory>
 
 >[!div class="step-by-step"]
 >[上一页](explore-custom-http-call-retries-exponential-backoff.md)

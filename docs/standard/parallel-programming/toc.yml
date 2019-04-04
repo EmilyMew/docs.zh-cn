@@ -1,0 +1,143 @@
+items:
+- name: 并行编程
+  href: index.md
+  items:
+  - name: 任务并行库 (TPL)
+    href: task-parallel-library-tpl.md
+    items:
+    - name: 数据并行
+      href: data-parallelism-task-parallel-library.md
+      items:
+      - name: 如何：编写简单的 Parallel.For 循环
+        href: how-to-write-a-simple-parallel-for-loop.md
+      - name: 如何：编写简单的 Parallel.ForEach 循环
+        href: how-to-write-a-simple-parallel-foreach-loop.md
+      - name: 如何：编写具有线程局部变量的 Parallel.For 循环
+        href: how-to-write-a-parallel-for-loop-with-thread-local-variables.md
+      - name: 如何：使用分区本地变量编写 Parallel.ForEach 循环
+        href: how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md
+      - name: 如何：取消 Parallel.For 或 ForEach Loop
+        href: how-to-cancel-a-parallel-for-or-foreach-loop.md
+      - name: 如何：处理并行循环中的异常
+        href: how-to-handle-exceptions-in-parallel-loops.md
+      - name: 如何：加快小型循环体的速度
+        href: how-to-speed-up-small-loop-bodies.md
+      - name: 如何：使用并行类循环访问文件目录
+        href: how-to-iterate-file-directories-with-the-parallel-class.md
+    - name: 基于任务的异步编程
+      href: task-based-asynchronous-programming.md
+      items:
+      - name: 使用延续任务来链接任务
+        href: chaining-tasks-by-using-continuation-tasks.md
+      - name: 已附加和已分离的子任务
+        href: attached-and-detached-child-tasks.md
+      - name: 任务取消
+        href: task-cancellation.md
+      - name: 异常处理
+        href: exception-handling-task-parallel-library.md
+      - name: 如何：使用 Parallel.Invoke 执行并行操作
+        href: how-to-use-parallel-invoke-to-execute-parallel-operations.md
+      - name: 如何：从任务中返回值
+        href: how-to-return-a-value-from-a-task.md
+      - name: 如何：取消任务及其子级
+        href: how-to-cancel-a-task-and-its-children.md
+      - name: 如何：创建预先计算的任务
+        href: how-to-create-pre-computed-tasks.md
+      - name: 如何：使用并行任务遍历二叉树
+        href: how-to-traverse-a-binary-tree-with-parallel-tasks.md
+      - name: 如何：解除嵌套任务的包装
+        href: how-to-unwrap-a-nested-task.md
+      - name: 如何：防止子任务附加到父任务
+        href: how-to-prevent-a-child-task-from-attaching-to-its-parent.md
+    - name: 数据流
+      href: dataflow-task-parallel-library.md
+      items:
+      - name: 如何：将消息写入数据流块和从数据流块读取消息
+        href: how-to-write-messages-to-and-read-messages-from-a-dataflow-block.md
+      - name: 如何：实现制造者-使用者数据流模式
+        href: how-to-implement-a-producer-consumer-dataflow-pattern.md
+      - name: 如何：在数据流块收到数据时执行操作
+        href: how-to-perform-action-when-a-dataflow-block-receives-data.md
+      - name: 演练：创建数据流管道
+        href: walkthrough-creating-a-dataflow-pipeline.md
+      - name: 如何：取消链接数据流块
+        href: how-to-unlink-dataflow-blocks.md
+      - name: 演练：在 Windows 窗体应用程序中使用数据流
+        href: walkthrough-using-dataflow-in-a-windows-forms-application.md
+      - name: 如何：取消数据流块
+        href: how-to-cancel-a-dataflow-block.md
+      - name: 演练：创建自定义数据流块类型
+        href: walkthrough-creating-a-custom-dataflow-block-type.md
+      - name: 如何：使用 JoinBlock 从多个源读取数据
+        href: how-to-use-joinblock-to-read-data-from-multiple-sources.md
+      - name: 如何：指定数据流块中的并行度
+        href: how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md
+      - name: 如何：在数据流块中指定任务计划程序
+        href: how-to-specify-a-task-scheduler-in-a-dataflow-block.md
+      - name: 演练：使用 BatchBlock 和 BatchedJoinBlock 提高效率
+        href: walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md
+    - name: 将 TPL 用于其他异步模式
+      href: using-tpl-with-other-asynchronous-patterns.md
+      items:
+      - name: TPL 和传统 .NET Framework 异步编程
+        href: tpl-and-traditional-async-programming.md
+      - name: 如何：在任务中包装 EAP 模式
+        href: how-to-wrap-eap-patterns-in-a-task.md
+    - name: 数据并行和任务并行中的潜在缺陷
+      href: potential-pitfalls-in-data-and-task-parallelism.md
+  - name: 并行 LINQ (PLINQ)
+    href: parallel-linq-plinq.md
+    items:
+    - name: PLINQ 介绍
+      href: introduction-to-plinq.md
+    - name: 了解 PLINQ 中的加速
+      href: understanding-speedup-in-plinq.md
+    - name: PLINQ 中的顺序保留
+      href: order-preservation-in-plinq.md
+    - name: PLINQ 中的合并选项
+      href: merge-options-in-plinq.md
+    - name: PLINQ 的潜在缺陷
+      href: potential-pitfalls-with-plinq.md
+    - name: 如何：创建并执行简单的 PLINQ 查询
+      href: how-to-create-and-execute-a-simple-plinq-query.md
+    - name: 如何：在 PLINQ 查询中控制排序
+      href: how-to-control-ordering-in-a-plinq-query.md
+    - name: 如何：合并并行和顺序 LINQ 查询
+      href: how-to-combine-parallel-and-sequential-linq-queries.md
+    - name: 如何：处理 PLINQ 查询中的异常
+      href: how-to-handle-exceptions-in-a-plinq-query.md
+    - name: 如何：取消 PLINQ 查询
+      href: how-to-cancel-a-plinq-query.md
+    - name: 如何：编写自定义 PLINQ 聚合函数
+      href: how-to-write-a-custom-plinq-aggregate-function.md
+    - name: 如何：在 PLINQ 中指定执行模式
+      href: how-to-specify-the-execution-mode-in-plinq.md
+    - name: 如何：在 PLINQ 中指定合并选项
+      href: how-to-specify-merge-options-in-plinq.md
+    - name: 如何：使用 PLINQ 循环访问文件目录
+      href: how-to-iterate-file-directories-with-plinq.md
+    - name: 如何：衡量 PLINQ 查询性能
+      href: how-to-measure-plinq-query-performance.md
+    - name: PLINQ 数据示例
+      href: plinq-data-sample.md
+  - name: 用于并行编程的数据结构
+    href: data-structures-for-parallel-programming.md
+  - name: 并行诊断工具
+    href: parallel-diagnostic-tools.md
+  - name: PLINQ 和 TPL 的自定义分区程序
+    href: custom-partitioners-for-plinq-and-tpl.md
+    items:
+    - name: 如何：实现动态分区
+      href: how-to-implement-dynamic-partitions.md
+    - name: 如何：实现静态分区程序
+      href: how-to-implement-a-partitioner-for-static-partitioning.md
+  - name: PLINQ 和 TPL 中的 Lambda 表达式
+    href: lambda-expressions-in-plinq-and-tpl.md
+  - name: 其他阅读材料
+    href: for-further-reading-parallel-programming.md
+ms.openlocfilehash: b4b7cd0e6e93175d223cbd076712fe3b9fe436f2
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468473"

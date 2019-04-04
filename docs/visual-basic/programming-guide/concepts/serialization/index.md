@@ -9,7 +9,7 @@ ms.assetid: 67379a76-5465-4af8-a781-0b0b25a62d9a
 ## <a name="how-serialization-works"></a>序列化的工作原理  
  下图展示了序列化的整个过程。  
   
- ![序列化图](../../../../csharp/programming-guide/concepts/serialization/media/serialization.gif "序列化")  
+![图： 序列化](./media/index/serialization-process.gif)
   
  对象被序列化成流，其中不仅包含数据，还包含对象类型的相关信息，如版本、区域性和程序集名称。 可以将此流中的内容存储在数据库、文件或内存中。  
   

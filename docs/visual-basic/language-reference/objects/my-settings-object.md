@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Settings object
 ms.assetid: 41f30dc1-202a-4273-b9b7-5728941f996c
-ms.openlocfilehash: 5d6d56e4a1eddcb687fe042568509ba489aa8bb3
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: a962f7cce961b1ee6829702a6815ba02c534efb4
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56973465"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58840362"
 ---
 # <a name="mysettings-object"></a>My.Settings 对象
 提供用于访问应用程序的设置属性和方法。  
@@ -20,7 +20,7 @@ ms.locfileid: "56973465"
 ## <a name="remarks"></a>备注  
  `My.Settings`对象提供对应用程序的设置的访问，并允许您动态存储和检索属性设置，并且你的应用程序的其他信息。 有关详细信息，请参阅[管理应用程序设置 (.NET)](/visualstudio/ide/managing-application-settings-dotnet)。  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>属性  
  `My.Settings` 对象的属性提供对应用程序设置的访问。 若要添加或删除设置，请使用**设置设计器**。  
   
  每个设置具有**名称**，**类型**，**作用域**，以及**值**，并且这些设置确定如何要访问每个设置的属性将出现在`My.Settings`对象：  
@@ -45,7 +45,7 @@ ms.locfileid: "56973465"
 ## <a name="tasks"></a>任务  
  下表列出了所涉及的任务的示例`My.Settings`对象。  
   
-|到|查看|  
+|功能|查看|  
 |---|---|  
 |读取应用程序设置|[如何：在 Visual Basic 中读取应用程序设置](../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)|  
 |更改用户设置|[如何：在 Visual Basic 中更改用户设置](../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)|  
@@ -60,6 +60,7 @@ ms.locfileid: "56973465"
  若要使此示例正常工作，应用程序必须具有类型为 `String` 的 `Nickname` 设置。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Configuration.ApplicationSettingsBase>
 - [如何：在 Visual Basic 中读取应用程序设置](../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)
 - [如何：在 Visual Basic 中更改用户设置](../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)

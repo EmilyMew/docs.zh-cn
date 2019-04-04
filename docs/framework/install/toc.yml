@@ -1,0 +1,32 @@
+items:
+- name: 安装指南
+  href: index.md
+  items:
+  - name: 在 Windows 10 和 Windows Server 2016 上安装 .NET Framework
+    href: on-windows-10.md
+  - name: 在 Windows 8.1 和 Windows Server 2012 R2 上安装 .NET Framework
+    href: on-windows-8-1.md
+  - name: 在 Windows 8 和 Windows Server 2012 上安装 .NET Framework
+    href: on-windows-8.md
+  - name: 在 Windows 7 SP1 和 Windows Server 2008 R2 上安装 .NET Framework
+    href: on-windows-7.md
+  - name: 在 Windows Vista 和 Windows Server 2008 上安装 .NET Framework
+    href: on-windows-vista.md
+  - name: 在 Windows XP 和 Windows Server 2003 上安装 .NET Framework
+    href: on-windows-xp.md
+  - name: 面向开发人员的安装指南
+    href: guide-for-developers.md
+  - name: 修复 .NET Framework
+    href: repair.md
+  - name: 安装和卸载 .NET Framework 受阻疑难解答
+    href: troubleshoot-blocked-installations-and-uninstallations.md
+  - name: 在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5
+    href: dotnet-35-windows-10.md
+  - name: 在 Windows 8、Windows 8.1 或 Windows 10 上运行 .NET Framework 1.1 应用
+    href: run-net-framework-1-1-apps.md
+ms.openlocfilehash: b7035dfbff4d6e0e7c306f3992240ff560c5170d
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468496"

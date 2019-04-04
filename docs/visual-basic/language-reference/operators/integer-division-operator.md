@@ -17,12 +17,12 @@ helpviewer_keywords:
 - quotients, integer
 - truncation [Visual Basic], integer division
 ms.assetid: 4b0ee347-950c-45c9-8e23-54bc85df208e
-ms.openlocfilehash: 7ce7bdaa2bcbf2ba67f24c7e129f8f9a03a28c52
-ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
+ms.openlocfilehash: 1753199e2ecf3f156b90d8c0a5cacd672397260d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57201906"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58828689"
 ---
 # <a name="-operator-visual-basic"></a>\ 运算符 (Visual Basic)
 使两个数字相除，返回结果为整数。  
@@ -69,6 +69,7 @@ expression1 \ expression2
  在前面的示例表达式分别返回值为 2、 3、 33 和-22。  
   
 ## <a name="see-also"></a>请参阅
+
 - [\\= 运算符](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)
 - [/ 运算符 (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)
 - [Option Strict 语句](../../../visual-basic/language-reference/statements/option-strict-statement.md)

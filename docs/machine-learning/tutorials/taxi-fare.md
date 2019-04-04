@@ -3,15 +3,15 @@ title: 在 ML.NET 中使用回归学习器预测费用
 description: 在 ML.NET 中使用回归学习器预测费用。
 author: aditidugar
 ms.author: johalex
-ms.date: 03/12/2019
+ms.date: 03/20/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-ms.openlocfilehash: 7830849efaff2aa36f9bd436851a22f948908bb6
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: 0a027b3b4930f7dda48d884faf0484cf33856c8d
+ms.sourcegitcommit: 77854e8704b9689b73103d691db34d71c2bf1dad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57846321"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58307975"
 ---
 # <a name="tutorial-predict-prices-using-a-regression-learner-with-mlnet"></a>教程：在 ML.NET 中使用回归学习器预测费用
 
@@ -152,7 +152,7 @@ public static ITransformer Train(MLContext mlContext, string dataPath)
 
 作为 `Transforms` 的输入和输出，`DataView` 是基本的数据管道类型，与 `LINQ` 中的 `IEnumerable` 类似。
 
-在 ML.NET 中，数据类似于 SQL 视图。 它是异源数据，会延迟计算并进行架构化。 该对象是管道的第一部分，并加载数据。 对于本教程，它会加载具有注释和相应正面或负面情绪的数据集。 这用于创建模型并对其进行定型。
+在 ML.NET 中，数据类似于 SQL 视图。 它是异源数据，会延迟计算并进行架构化。 该对象是管道的第一部分，并加载数据。 本教程会加载具有出租车行程定价信息的数据集。 这用于创建模型并对其进行定型。
 
 将以下代码添加为 `Train` 方法的首行：
 
@@ -187,8 +187,6 @@ public static ITransformer Train(MLContext mlContext, string dataPath)
 最后一步是定型模型。 根据已加载和转换的数据集定型模型 <xref:Microsoft.ML.Data.TransformerChain>。 一旦定义了估算器，我们将使用 <xref:Microsoft.ML.Data.EstimatorChain%601.Fit%2A> 定型模型，同时提供已经加载的定型数据。 这将返回要用于预测的模型。 `pipeline.Fit()` 定型管道，并返回基于传入的 `DataView` 的 `Transformer`。 在发生这种情况之前不会执行此试验。
 
 [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#11 "Train the model")]
-
-就是这么简单！ 已成功定型机器学习模型，可以用来预测 NYC 的出租车费。 现在，我们看一下模型的精确性并了解如何用它来预测出租车费的值。
 
 ### <a name="save-the-model"></a>保存模型
 

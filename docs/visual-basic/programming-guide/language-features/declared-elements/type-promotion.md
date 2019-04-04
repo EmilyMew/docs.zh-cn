@@ -10,12 +10,12 @@ helpviewer_keywords:
 - type promotion
 - declared elements [Visual Basic], visibility
 ms.assetid: 035eeb15-e4c5-4288-ab3c-6bd5d22f7051
-ms.openlocfilehash: b00fdd563a6599b3acfaaafa229fdef9400e57b6
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: f7ac6bfb944da8bd50e035ba97b2b513176dc661
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56969188"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838867"
 ---
 # <a name="type-promotion-visual-basic"></a>类型提升 (Visual Basic)
 声明模块中的编程元素时，Visual Basic 会将其范围到包含该模块的命名空间的提升。 这称为*类型提升*。  
@@ -59,6 +59,7 @@ ms.locfileid: "56969188"
 -   **完全限定。** 当你使用模块和相同的命名空间中的其他元素时，最安全的方法是始终使用完全限定的所有编程元素。 如果类型提升大大降低模块成员，并且不完全限定的成员，可能会无意中访问不同的编程元素。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Module 语句](../../../../visual-basic/language-reference/statements/module-statement.md)
 - [Namespace 语句](../../../../visual-basic/language-reference/statements/namespace-statement.md)
 - [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)

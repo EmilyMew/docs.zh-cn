@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ': separator character'
 - Visual Basic code, labeling statements
 ms.assetid: 38f1ff43-2054-42cb-963b-1998e60c6ed4
-ms.openlocfilehash: 2f6f0362fcec170e677d153ad9f936a5c2e55ad7
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 69ec8c7625410f140c59ba8dd492dca76857eb96
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56981200"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58828636"
 ---
 # <a name="how-to-label-statements-visual-basic"></a>如何：标签语句 (Visual Basic)
 语句块组成的代码由冒号分隔行。 标识字符串或整数的代码注释行被称为*标记为*。 语句标签用于标记的一行代码以将其标识用于与语句如`On Error Goto`。  
@@ -35,6 +35,7 @@ ms.locfileid: "56981200"
      [!code-vb[VbVbalrStatements#708](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#708)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [语句](../../../visual-basic/programming-guide/language-features/statements.md)
 - [已声明的元素名称](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
 - [程序结构和代码约定](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)

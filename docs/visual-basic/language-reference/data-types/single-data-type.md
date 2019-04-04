@@ -20,12 +20,12 @@ helpviewer_keywords:
 - zeros, trailing
 - numbers [Visual Basic], floating point
 ms.assetid: 224a2795-4cd5-496c-8f7a-a4f05a06d45d
-ms.openlocfilehash: cd94411629f18557f677a6d1f65bfc0dede43e83
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b90fdb562f9d65858ac477321a18067cc6e621a2
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54534506"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58833297"
 ---
 # <a name="single-data-type-visual-basic"></a>Single 数据类型 (Visual Basic)
 保存有符号 IEEE 32 位 （4 字节） 单精度浮点数，值范围从-3.4028235E + 38 到-1.401298E-45 负值，从 1.401298E-45 到 3.4028235E + 38 对于正值。 单精度的数字存储一个实数的近似值。  
@@ -48,6 +48,7 @@ ms.locfileid: "54534506"
 -   **Framework 类型。** .NET Framework 中的对应类型是 <xref:System.Single?displayProperty=nameWithType> 结构。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Single?displayProperty=nameWithType>
 - [数据类型](../../../visual-basic/language-reference/data-types/index.md)
 - [Decimal 数据类型](../../../visual-basic/language-reference/data-types/decimal-data-type.md)

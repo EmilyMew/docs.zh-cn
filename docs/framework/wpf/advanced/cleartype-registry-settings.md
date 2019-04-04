@@ -5,12 +5,12 @@ helpviewer_keywords:
 - ClearType [WPF], registry settings
 - typography [WPF], ClearType registry settings
 ms.assetid: 56f314bb-b30b-4f67-8492-8b8a9fa432ae
-ms.openlocfilehash: 471a94333260d30bc9c650f13e3a7489d9d5db7e
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: a2b24077145b3b24fa021121450534264aea0c8b
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369716"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675895"
 ---
 # <a name="cleartype-registry-settings"></a>ClearType 注册表设置
 本主题提供的概述[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)][!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)]由注册表设置[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]应用程序。  
@@ -57,7 +57,7 @@ ms.locfileid: "57369716"
   
  对于用户，每个显示设备名称`ClearTypeLevel`定义 DWORD 值。 下面的屏幕截图显示了注册表编辑器设置[!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)]级别。  
   
- ![注册表编辑器中的 ClearType 设置](./media/cleartyperegistry01.png "ClearTypeRegistry01")  
+ ![在注册表编辑器中的 ClearType 设置。](./media/cleartype-registry-settings/cleartype-settings-registry-editor.png)  
   
 > [!NOTE]
 >  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 应用程序呈现文本中使用和不是两种模式之一[!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)]。 无需呈现文本时[!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)]，它被称为灰度呈现。  
@@ -75,13 +75,13 @@ ms.locfileid: "57369716"
   
  对于用户，每个显示设备名称`GammaLevel`定义 DWORD 值。 以下屏幕快照显示了伽马级别的注册表编辑器设置。  
   
- ![注册表编辑器中的 ClearType 设置](./media/cleartyperegistry02.png "ClearTypeRegistry02")  
+ ![ClearType 伽玛级别设置在注册表编辑器中](./media/cleartype-registry-settings/cleartype-gamma-level-settings-registry-editor.png)  
   
 <a name="pixel_structure"></a>   
 ## <a name="pixel-structure"></a>像素结构  
  像素结构描述构成显示设备的像素的类型。 像素结构定义为三种类型之一：  
   
-|类型|“值”|描述|  
+|类型|值|描述|  
 |----------|-----------|-----------------|  
 |平面|0|显示设备没有像素结构。 这意味着每种颜色的光源均匀分布在像素区域上，称为灰度呈现。 这是标准显示设备的工作方式。 [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] 从不应用于呈现的文本。|  
 |RGB|1|显示设备的像素由三种色条按以下顺序构成：红色、绿色和蓝色。 [!INCLUDE[TLA2#tla_ct](../../../../includes/tla2sharptla-ct-md.md)] 应用于呈现的文本。|  
@@ -99,7 +99,7 @@ ms.locfileid: "57369716"
   
  对于用户，每个显示设备名称`PixelStructure`定义 DWORD 值。 以下屏幕快照显示了像素结构的注册表编辑器设置。  
   
- ![注册表编辑器中的 ClearType 设置](./media/cleartyperegistry02.png "ClearTypeRegistry02")  
+ ![ClearType 伽玛级别设置在注册表编辑器中](./media/cleartype-registry-settings/cleartype-gamma-level-settings-registry-editor.png)  
   
 <a name="text_contrast_level"></a>   
 ## <a name="text-contrast-level"></a>文本对比度级别  
@@ -112,7 +112,7 @@ ms.locfileid: "57369716"
   
  对于用户，每个显示设备名称`TextContrastLevel`定义 DWORD 值。 以下屏幕快照显示了文本对比度级别的注册表编辑器设置。  
   
- ![注册表编辑器中的 ClearType 设置](./media/cleartyperegistry01.png "ClearTypeRegistry01")  
+ ![在注册表编辑器中的 ClearType 设置。](./media/cleartype-registry-settings/cleartype-settings-registry-editor.png)  
   
 ## <a name="see-also"></a>请参阅
 - [ClearType 概述](cleartype-overview.md)

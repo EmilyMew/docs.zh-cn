@@ -70,8 +70,7 @@ HRESULT EnumerateCLRs (
   
  在 Windows 操作系统上，`debuggeePID` 映射到 OS 进程标识符。  
   
- 
-  `ppHandleArrayOut` 和 `ppStringArrayOut` 的内存由此函数分配。 若要释放分配的内存，必须调用[CloseCLREnumeration 函数](../../../../docs/framework/unmanaged-api/debugging/closeclrenumeration-function.md)。  
+ `ppHandleArrayOut` 和 `ppStringArrayOut` 的内存由此函数分配。 若要释放分配的内存，必须调用[CloseCLREnumeration 函数](../../../../docs/framework/unmanaged-api/debugging/closeclrenumeration-function.md)。  
   
  为了在目标进程中返回 CLR 计数，可在两个数组参数均设为 null 的情况下调用此函数。 调用方可以从此计数推断将创建的缓冲区的大小：`(sizeof(HANDLE) * count) + (sizeof(LPWSTR) * count) + (sizeof(WCHAR*) * count * MAX_PATH)`。  
   

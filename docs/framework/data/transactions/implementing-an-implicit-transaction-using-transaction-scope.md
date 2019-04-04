@@ -13,8 +13,7 @@ ms.lasthandoff: 03/05/2019
 ms.locfileid: "57375241"
 ---
 # <a name="implementing-an-implicit-transaction-using-transaction-scope"></a>使用事务范围实现隐式事务
-
-  <xref:System.Transactions.TransactionScope> 类提供了一种简单方法，使您无需与事务自身进行交互，就可以在参与事务时对代码块进行标记。 事务范围可以自动选择和管理环境事务。 由于 <xref:System.Transactions.TransactionScope> 具有简单易用性和高效性，因此建议您在开发事务应用程序时使用该类。  
+<xref:System.Transactions.TransactionScope> 类提供了一种简单方法，使您无需与事务自身进行交互，就可以在参与事务时对代码块进行标记。 事务范围可以自动选择和管理环境事务。 由于 <xref:System.Transactions.TransactionScope> 具有简单易用性和高效性，因此建议您在开发事务应用程序时使用该类。  
   
  此外，还无需将资源显式登记到事务。 任何 <xref:System.Transactions> 资源管理器（如 SQL Server 2005）都可以检测范围所创建的环境事务是否存在，并自动对其进行登记。  
   
@@ -35,8 +34,7 @@ ms.locfileid: "57375241"
   
  如果<xref:System.Transactions.TransactionScope>对象最初，创建了事务的提交事务的事务管理器的实际工作中代码的最后一行后发生**使用**块。 如果该对象未创建事务，则每当 <xref:System.Transactions.CommittableTransaction.Commit%2A> 对象的所有者调用 <xref:System.Transactions.CommittableTransaction> 时都会执行提交。 在该点的事务管理器调用资源管理器，并告知用户提交或回滚，根据是否<xref:System.Transactions.TransactionScope.Complete%2A>上调用了方法<xref:System.Transactions.TransactionScope>对象。  
   
- **使用**语句可确保<xref:System.Transactions.TransactionScope.Dispose%2A>方法的<xref:System.Transactions.TransactionScope>对象称为即使发生异常。 
-  <xref:System.Transactions.TransactionScope.Dispose%2A> 方法标志着事务范围的结束。 在调用此方法之后所发生的异常不会影响事务。 此方法还将环境事务还原到其前一状态。  
+ **使用**语句可确保<xref:System.Transactions.TransactionScope.Dispose%2A>方法的<xref:System.Transactions.TransactionScope>对象称为即使发生异常。 <xref:System.Transactions.TransactionScope.Dispose%2A> 方法标志着事务范围的结束。 在调用此方法之后所发生的异常不会影响事务。 此方法还将环境事务还原到其前一状态。  
   
  如果范围创建事务，则会引发 <xref:System.Transactions.TransactionAbortedException>，从而中止事务。 如果事务管理器无法做出提交决定，则会引发 <xref:System.Transactions.TransactionInDoubtException>。 如果已提交事务，则不会引发异常。  
   
@@ -89,9 +87,9 @@ void SomeMethod()
   
 |TransactionScopeOption|参与环境事务|范围参与|  
 |----------------------------|-------------------------|-----------------------------|  
-|必需|No|参与新事务（将成为根范围）|  
-|Requires New|No|参与新事务（将成为根范围）|  
-|Suppress|No|不参与任何事务|  
+|必需|否|参与新事务（将成为根范围）|  
+|Requires New|否|参与新事务（将成为根范围）|  
+|Suppress|否|不参与任何事务|  
 |必需|是|参与环境事务|  
 |Requires New|是|参与新事务（将成为根范围）|  
 |Suppress|是|不参与任何事务|  
@@ -123,11 +121,11 @@ using(TransactionScope scope1 = new TransactionScope())
 }  
 ```  
   
- 下面的示例演示一个不包含任何环境事务的代码块，它使用 `scope1` 创建了一个新范围 (<xref:System.Transactions.TransactionScopeOption.Required>)。 范围 `scope1` 是根范围，因为它创建了一个新事务（事务 A），并使事务 A 成为环境事务。 `Scope1` 然后又创建三个对象，每个都有一个不同的 <xref:System.Transactions.TransactionScopeOption> 值。 例如，`scope2` 是用 <xref:System.Transactions.TransactionScopeOption.Required> 创建的；由于存在环境事务，因此该范围联接 `scope1` 所创建的第一个事务。 请注意，`scope3` 是新事务的根范围，而 `scope4` 则没有环境事务。  
+ 下面的示例演示一个不包含任何环境事务的代码块，它使用 `scope1` 创建了一个新范围 (<xref:System.Transactions.TransactionScopeOption.Required>)。 范围 `scope1` 是根范围，因为它创建了一个新事务（事务 A），并使事务 A 成为环境事务。 `Scope1` 然后，创建三个对象，每个都有一个不同<xref:System.Transactions.TransactionScopeOption>值。 例如，`scope2` 是用 <xref:System.Transactions.TransactionScopeOption.Required> 创建的；由于存在环境事务，因此该范围联接 `scope1` 所创建的第一个事务。 请注意，`scope3` 是新事务的根范围，而 `scope4` 则没有环境事务。  
   
  虽然 <xref:System.Transactions.TransactionScopeOption> 的默认值和最常用的值是 <xref:System.Transactions.TransactionScopeOption.Required>，但其他各值都有其独有的用途。  
   
- 如果要保留代码段所执行的操作，并且不希望在操作失败的情况下中止环境事务，此时 <xref:System.Transactions.TransactionScopeOption.Suppress> 十分有用。 例如，在要执行日志记录或审核操作时，或者在无论环境事务提交还是中止都要将事件发布给订户时。 使用此值，可以在事务范围中包含非事务代码段，如下面的示例所示。  
+ <xref:System.Transactions.TransactionScopeOption.Suppress> 你想要保留在代码部分执行的操作并不希望中止环境事务，如果操作失败时很有用。 例如，在要执行日志记录或审核操作时，或者在无论环境事务提交还是中止都要将事件发布给订户时。 使用此值，可以在事务范围中包含非事务代码段，如下面的示例所示。  
   
 ```csharp  
 using(TransactionScope scope1 = new TransactionScope())  

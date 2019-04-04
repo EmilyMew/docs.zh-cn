@@ -1,0 +1,48 @@
+items:
+- name: 语言集成查询 (LINQ)
+  href: index.md
+  items:
+  - name: 查询表达式基础
+    href: query-expression-basics.md
+  - name: C# 中的 LINQ
+    href: linq-in-csharp.md
+  - name: 在 C# 中编写 LINQ 查询
+    href: write-linq-queries.md
+  - name: 查询对象的集合
+    href: query-a-collection-of-objects.md
+  - name: 从方法中返回查询
+    href: return-a-query-from-a-method.md
+  - name: 在内存中存储查询结果
+    href: store-the-results-of-a-query-in-memory.md
+  - name: 对查询结果进行分组
+    href: group-query-results.md
+  - name: 创建嵌套组
+    href: create-a-nested-group.md
+  - name: 对分组操作执行子查询
+    href: perform-a-subquery-on-a-grouping-operation.md
+  - name: 按连续键对结果进行分组
+    href: group-results-by-contiguous-keys.md
+  - name: 在运行时动态指定谓词筛选器
+    href: dynamically-specify-predicate-filters-at-runtime.md
+  - name: 执行内部联接
+    href: perform-inner-joins.md
+  - name: 执行分组联接
+    href: perform-grouped-joins.md
+  - name: 执行左外部联接
+    href: perform-left-outer-joins.md
+  - name: 对 join 子句的结果进行排序
+    href: order-the-results-of-a-join-clause.md
+  - name: 使用组合键进行联接
+    href: join-by-using-composite-keys.md
+  - name: 执行自定义联接操作
+    href: perform-custom-join-operations.md
+  - name: 在查询表达式中处理 null 值
+    href: handle-null-values-in-query-expressions.md
+  - name: 在查询表达式中处理异常
+    href: handle-exceptions-in-query-expressions.md
+ms.openlocfilehash: 1bc1fb625c7627abe63db2b69071df1ef1b7d11c
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467898"

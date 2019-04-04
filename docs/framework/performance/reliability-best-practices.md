@@ -40,12 +40,12 @@ helpviewer_keywords:
 ms.assetid: cf624c1f-c160-46a1-bb2b-213587688da7
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 37e6b995a84a54dfcb52460d11e9843a933a5684
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 10ed899f1eda3b7fcaa95391b9af6dddb5c94560
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57353070"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409869"
 ---
 # <a name="reliability-best-practices"></a>可靠性最佳做法
 
@@ -241,7 +241,7 @@ HPA 仅影响可托管公共语言运行时且实现主机保护的非托管应�
 
 ### <a name="do-not-block-indefinitely-in-unmanaged-code"></a>不要在非托管代码中无限期阻塞
 
-在非托管代码中而不是在托管代码中阻塞可能导致拒绝服务攻击，因为 CLR 无法中止线程。  已阻塞的线程会阻止 CLR 卸载 <xref:System.AppDomain>，至少是在没有执行某些极端不安全操作的情况下。  使用 Win32 同步基元进行阻塞是我们不允许的一个明显示例。  应尽量避免在套接字上对 `ReadFile` 的调用中阻塞 — 理想情况下，Win32 API 应为此类似的操作提供超时的机制。
+在非托管代码中而不是在托管代码中阻塞可能导致拒绝服务攻击，因为 CLR 无法中止线程。  已阻塞的线程会阻止 CLR 卸载 <xref:System.AppDomain>，至少是在没有执行某些极端不安全操作的情况下。  阻止使用 Windows 同步基元是我们不允许的一个明显示例。  对的调用中阻塞`ReadFile`套接字上应避免在可能的情况 — 理想情况下 Windows API 应提供用于此类似的操作超时的机制。
 
 理想情况下，任何调入本机的方法应使用具有合理、有限的超时的 Win32 调用。  如果允许用户指定超时，则在没有某些特定安全权限的情况下，不应该允许用户指定无限期的超时。  按照一般准则，如果方法将阻塞超过 10 秒，你则需要使用支持超时的版本，或需要其他的 CLR 支持。
 

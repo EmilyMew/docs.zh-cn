@@ -12,8 +12,7 @@ ms.locfileid: "57703733"
 # <a name="rehosting-the-workflow-designer"></a>重新承载工作流设计器
 [!INCLUDE[wfd1](../../../includes/wfd1-md.md)]可以重新承载在 Visual Studio 2012 以外的环境中用于创建、 修改和监视工作流。
 
- 
-  <xref:System.Activities.Presentation.WorkflowDesigner> 类型是画布、属性网格和其他元素的包装，它公开一个基本的编程模型，用于处理大多数设计器重新承载方案。 承载<xref:System.Activities.Presentation.WorkflowDesigner>在 Windows Presentation Foundation (WPF) 应用程序是一种常见重新承载方案为[!INCLUDE[wfd2](../../../includes/wfd2-md.md)]。
+ <xref:System.Activities.Presentation.WorkflowDesigner> 类型是画布、属性网格和其他元素的包装，它公开一个基本的编程模型，用于处理大多数设计器重新承载方案。 承载<xref:System.Activities.Presentation.WorkflowDesigner>在 Windows Presentation Foundation (WPF) 应用程序是一种常见重新承载方案为[!INCLUDE[wfd2](../../../includes/wfd2-md.md)]。
 
 ## <a name="in-this-section"></a>本节内容
  [任务 1:创建新的 Windows Presentation Foundation 应用程序](task-1-create-a-new-wpf-app.md)

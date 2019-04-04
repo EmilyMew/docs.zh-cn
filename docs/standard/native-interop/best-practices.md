@@ -4,12 +4,12 @@ description: 了解与 .NET 中的本机组件交互的最佳做法。
 author: jkoritzinsky
 ms.author: jekoritz
 ms.date: 01/18/2019
-ms.openlocfilehash: 90a707830049b5edf574b83e7ca03ec30527b001
-ms.sourcegitcommit: 5dcfeb59179e81071f54840d4902cbe00b184294
+ms.openlocfilehash: 5b65f80d3a81fab0d74ce26aec3b454c716a5d51
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "56411371"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58412053"
 ---
 # <a name="native-interoperability-best-practices"></a>本机互操作性最佳做法
 
@@ -160,7 +160,7 @@ handle.Free();
 
 ## <a name="common-windows-data-types"></a>常见的 Windows 数据类型
 
-下面是 Win32 API 中常用的数据类型列表以及调用 Win32 代码时要使用的 C# 类型。
+下面是 Windows API 中常用的数据类型列表以及调用 Windows 代码时要使用的 C# 类型。
 
 以下类型在 32 位和 64 位 Windows 上具有相同大小，而不管其名称为何。
 

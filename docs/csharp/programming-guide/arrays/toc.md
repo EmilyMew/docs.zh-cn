@@ -1,8 +1,0 @@
-# [数组](index.md)
-## [作为对象的数组](arrays-as-objects.md)
-## [一维数组](single-dimensional-arrays.md)
-## [多维数组](multidimensional-arrays.md)
-## [交错数组](jagged-arrays.md)
-## [对数组使用 foreach](using-foreach-with-arrays.md)
-## [将数组作为参数传递](passing-arrays-as-arguments.md)
-## [隐式类型化数组](implicitly-typed-arrays.md)

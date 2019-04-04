@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Default keyword [Visual Basic]
 - default properties
 ms.assetid: 45fce9b9-d212-4b2d-ab86-6e359b8b57af
-ms.openlocfilehash: b63fa66c9cda1e439e3917ca62377f68028fc049
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f78ffe42a9d618d44da2a50c0de831396576430c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54497836"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58836722"
 ---
 # <a name="default-visual-basic"></a>Default (Visual Basic)
 一个属性标识为其类、 结构或接口的默认属性。  
@@ -36,5 +36,6 @@ ms.locfileid: "54497836"
  [Property 语句](../../../visual-basic/language-reference/statements/property-statement.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：声明并在 Visual Basic 中调用默认属性](../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md)
 - [关键字](../../../visual-basic/language-reference/keywords/index.md)

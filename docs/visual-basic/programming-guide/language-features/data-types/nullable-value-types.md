@@ -10,12 +10,12 @@ helpviewer_keywords:
 - nullable types [Visual Basic]
 - data types [Visual Basic], nullable
 ms.assetid: 9ac3b602-6f96-4e6d-96f7-cd4e81c468a6
-ms.openlocfilehash: 522526392dd12ede729fe8b96677029c05af57c8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 437107bb522e1635dffa4a2de88c5d10d6707592
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54665690"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58825128"
 ---
 # <a name="nullable-value-types-visual-basic"></a>可以为 Null 的值类型 (Visual Basic)
 有时，你将使用在某些情况下没有已定义的值的值类型。 例如，在数据库中的字段可能需要区分具有分配的值有意义的而不让分配的值。 值类型可以扩展以使其正常值或 null 值。 调用此类扩展*为 null 的类型*。  
@@ -98,6 +98,7 @@ ms.locfileid: "54665690"
  数据库是一个最重要的地方使用可以为 null 的类型。 并非所有数据库对象当前都支持可以为 null 的类型，但设计器生成的表适配器。 请参阅中的"TableAdapter 支持可以为 Null 的类型" [TableAdapter 概述](/visualstudio/data-tools/tableadapter-overview)。
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.InvalidOperationException>
 - <xref:System.Nullable%601.HasValue%2A>
 - [使用可以为 null 的类型](../../../../csharp/programming-guide/nullable-types/using-nullable-types.md)

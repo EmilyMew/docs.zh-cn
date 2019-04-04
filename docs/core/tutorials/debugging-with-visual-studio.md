@@ -3,12 +3,12 @@ title: 使用 Visual Studio 2017 调试 Hello World .NET Core 应用程序
 description: 了解如何使用 Visual Studio 2017 调试用 C# 或 Visual Basic 编写的 Hello World 应用程序。
 ms.date: 12/15/2017
 ms.custom: vs-dotnet, seodec18
-ms.openlocfilehash: b08744e784ffdde6682a6271888ae55d3fbd242b
-ms.sourcegitcommit: e6ad58812807937b03f5c581a219dcd7d1726b1d
+ms.openlocfilehash: 268a0d47b63b8d6baa25305296395d7d8a86729e
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53170660"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58463418"
 ---
 # <a name="debug-your-c-or-visual-basic-net-core-hello-world-application-using-visual-studio-2017"></a>使用 Visual Studio 2017 调试 C# 或Visual Basic .NET Core Hello World 应用程序
 
@@ -39,7 +39,7 @@ ms.locfileid: "53170660"
 
 1. 到达断点时，程序停止执行，然后执行 `Console.WriteLine` 方法。 “自动”窗口显示当前代码行周围使用的变量值。 “局部变量”窗口（可以通过单击“局部变量”选项卡查看）显示当前正在执行的方法中定义的变量值。
 
-   ![Visual Studio 应用程序窗口](./media/debugging-with-visual-studio/break.png)
+   ![Visual Studio 中断点的屏幕截图。](./media/debugging-with-visual-studio/breakpoint-console-window.png)
 
 1. 可更改变量值，查看这样会对程序产生哪些影响。 如果“即时窗口”不可见，请选择“调试” > “Windows” > “即时”菜单项来显示它。 在“即时窗口”中，可以与正在调试的应用程序进行交互。
 

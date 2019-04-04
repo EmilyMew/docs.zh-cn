@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Forms object
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
-ms.openlocfilehash: 3ee93814a4f06c39099c50617a10b8974c6f1555
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 4998097b910a504461a34af3cc159ddb1c74cc62
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56973998"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832549"
 ---
 # <a name="myforms-object"></a>My.Forms 对象
 提供用于访问当前项目中声明每个 Windows 窗体的实例的属性。  
@@ -28,7 +28,7 @@ ms.locfileid: "56973998"
   
  仅适用于 Windows 应用程序对象和其属性。  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>属性  
  每个属性`My.Forms`对象提供对当前项目中的窗体的实例访问。 属性的名称的窗体的属性访问，名称相同，属性类型是窗体的类型相同。  
   
 > [!NOTE]
@@ -67,6 +67,7 @@ ms.locfileid: "56973998"
 |网站|否|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>
 - <xref:System.Windows.Forms.Form>
 - <xref:System.Windows.Forms.Form.Close%2A>

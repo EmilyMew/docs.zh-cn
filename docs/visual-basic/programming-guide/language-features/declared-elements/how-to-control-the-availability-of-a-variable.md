@@ -11,12 +11,12 @@ helpviewer_keywords:
 - declared elements [Visual Basic], access level
 - Protected keyword [Visual Basic], accessing variables
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
-ms.openlocfilehash: 4d5db7fe474d8732e0ae37f3d95d0187eef68ec9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fb7c04ac6c24648dfb2a8cfa5e01bf97c6b0b3be
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54582482"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58841688"
 ---
 # <a name="how-to-control-the-availability-of-a-variable-visual-basic"></a>如何：控制变量 (Visual Basic 中) 的可用性
 通过指定控制变量的可用性及其*访问级别*。 访问级别确定哪些代码有权读取或写入到该变量。  
@@ -87,6 +87,7 @@ Private numberForMeOnly As Integer
  限制性更强的变量的访问级别，使用它的变量越小恶意代码可以进行不正确的机会。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 Visual Basic 中的访问级别](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
 - [Dim 语句](../../../../visual-basic/language-reference/statements/dim-statement.md)
 - [Public](../../../../visual-basic/language-reference/modifiers/public.md)

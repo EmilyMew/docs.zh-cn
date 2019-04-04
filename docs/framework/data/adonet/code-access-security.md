@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 93e099eb-daa1-4f1e-b031-c1e10a996f88
-ms.openlocfilehash: 5712b0f7ef67e0a925207858e17d256dbf50cc60
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.openlocfilehash: af3fe9a233972e939dc14117fc08343bca9d5fd6
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55826250"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411559"
 ---
 # <a name="code-access-security-and-adonet"></a>代码访问安全性和 ADO.NET
 .NET Framework 提供基于角色的安全性和代码访问安全性 (CAS)，这两种安全性都可以通过公共语言运行库 (CLR) 提供的公共基础结构实现。 对于非托管代码，大多数应用程序都可以使用用户或主体权限执行。 因此，当拥有提升权限的用户运行恶意软件或包含错误的软件时，计算机系统可能会受到损坏并危及私有数据。  
@@ -31,7 +31,8 @@ ms.locfileid: "55826250"
   
 -   `Identity permissions`表示标识程序集的特征。 对程序集授予权限需要基于证据，而证据可以包括如数字签名或代码来源等项。 标识权限也从 <xref:System.Security.CodeAccessPermission> 基类派生。  
   
--   `Role-based security permissions`基于主体是否具有指定标识或是否是指定角色的成员。 <xref:System.Security.Permissions.PrincipalPermission> 类允许对活动主体进行声明性和强制性权限检查。  
+-   `Role-based security permissions`基于主体是否具有指定标识或是否是指定角色的成员。 
+  <xref:System.Security.Permissions.PrincipalPermission> 类允许对活动主体进行声明性和强制性权限检查。  
   
  为了确定代码是否获得了访问某一资源或执行某一操作的授权，运行库的安全系统将遍历调用堆栈，将每个调用方已获得的权限与要求的权限进行比较。 如果调用堆栈中的任何调用方没有要求的权限，则会引发 <xref:System.Security.SecurityException> 并拒绝访问。  
   
@@ -73,7 +74,7 @@ ms.locfileid: "55826250"
 |`AllowBlankPassword`|启用或禁用连接字符串中空白密码。 有效值为 `true`（启用空白密码的使用）和 `false`（禁用空白密码的使用）。 从 <xref:System.Data.Common.DBDataPermissionAttribute> 继承。|  
 |`ConnectionString`|标识允许的连接字符串。 可标识多个连接字符串。 **注意：** 连接字符串中不要包含用户 ID 或密码。 此版本中，不能使用 .NET Framework 配置工具更改连接字符串限制。 <br /><br /> 从 <xref:System.Data.Common.DBDataPermissionAttribute> 继承。|  
 |`KeyRestrictions`|标识允许或不允许的连接字符串参数。 在窗体中标识的连接字符串参数 *\<参数名称>=* 。 可指定多个参数，并用分号 (;) 进行分隔。 **注意：** 如果不指定 `KeyRestrictions` 而是将 `KeyRestrictionBehavior` 属性设置为 `AllowOnly` 或 `PreventUsage`，则不允许使用任何其他连接字符串参数。 从 <xref:System.Data.Common.DBDataPermissionAttribute> 继承。|  
-|`KeyRestrictionBehavior`|将连接字符串参数标识为唯一允许的附加参数 (`AllowOnly`)，或标识不允许的附加参数 (`PreventUsage`)。 默认为 `AllowOnly`。 从 <xref:System.Data.Common.DBDataPermissionAttribute> 继承。|  
+|`KeyRestrictionBehavior`|将连接字符串参数标识为唯一允许的附加参数 (`AllowOnly`)，或标识不允许的附加参数 (`PreventUsage`)。 `AllowOnly` 默认值。 从 <xref:System.Data.Common.DBDataPermissionAttribute> 继承。|  
 |`TypeID`|在派生类中实现此属性时获取唯一标识符。 从 <xref:System.Attribute> 继承。|  
 |`Unrestricted`|表明是否声明对该资源的无限制权限。 从 <xref:System.Security.Permissions.SecurityAttribute> 继承。|  
   
@@ -190,7 +191,7 @@ Failed, as expected: Request failed.
 ```  
   
 ## <a name="interoperability-with-unmanaged-code"></a>与非托管代码的互操作性  
- 在 CLR 外部运行的代码称为非托管代码。 因此，安全机制（如 CAS）不能应用于非托管代码。 COM 组件、ActiveX 接口和 Win32 API 函数都是非托管代码的示例。 在执行非托管代码时应考虑特殊安全注意事项，以便不会危害应用程序的整体安全性。 有关详细信息，请参阅[与非托管代码交互操作](../../../../docs/framework/interop/index.md)。  
+ 在 CLR 外部运行的代码称为非托管代码。 因此，安全机制（如 CAS）不能应用于非托管代码。 COM 组件、 ActiveX 接口和 Windows API 函数的非托管代码的示例。 在执行非托管代码时应考虑特殊安全注意事项，以便不会危害应用程序的整体安全性。 有关详细信息，请参阅[与非托管代码交互操作](../../../../docs/framework/interop/index.md)。  
   
  .NET Framework 可以通过 COM 互操作提供访问，因此还支持与现有 COM 组件的向后兼容。 通过使用 COM 互操作工具导入相关的 COM 类型，可以将 COM 组件合并到 .NET Framework 应用程序中。 一旦导入后，就可以使用 COM 类型了。 通过将程序集元数据导出到类型库并将托管组件注册为 COM 组件，COM 互操作还可以使 COM 客户端访问托管代码。 有关详细信息，请参阅[高级 COM 互操作性](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx)。  
   

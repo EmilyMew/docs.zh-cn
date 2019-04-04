@@ -6,12 +6,12 @@ helpviewer_keywords:
 - output, Visual Basic functions
 - I/O [Visual Basic], functions
 ms.assetid: 6b0cbb88-6593-43b8-8a40-a61563bc0ce9
-ms.openlocfilehash: 73db0a9b0d8c56af48f7a5f7c717b5f88dfdf9b7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 13013ee3dd9ee024cd3375003ed23c5ae4d620bd
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54667162"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58836761"
 ---
 # <a name="input-and-output-summary-visual-basic"></a>输入和输出摘要 (Visual Basic)
 Visual Basic 语言关键字和运行时库成员按目的组织和使用。  
@@ -32,5 +32,6 @@ Visual Basic 语言关键字和运行时库成员按目的组织和使用。
 |写入文件。|<xref:Microsoft.VisualBasic.FileSystem.FilePut%2A>, <xref:Microsoft.VisualBasic.FileSystem.FilePutObject%2A>, <xref:Microsoft.VisualBasic.FileSystem.Print%2A>, <xref:Microsoft.VisualBasic.FileSystem.Write%2A>, <xref:Microsoft.VisualBasic.FileSystem.WriteLine%2A>|  
   
 ## <a name="see-also"></a>请参阅
+
 - [关键字](../../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic 运行库成员](../../../visual-basic/language-reference/runtime-library-members.md)

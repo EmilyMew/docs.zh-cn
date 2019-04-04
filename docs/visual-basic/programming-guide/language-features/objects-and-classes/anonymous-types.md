@@ -8,12 +8,12 @@ helpviewer_keywords:
 - anonymous types [Visual Basic]
 - types [Visual Basic], anonymous
 ms.assetid: 7b87532c-4b3e-4398-8503-6ea9d67574a4
-ms.openlocfilehash: 824481c9c73d496998d5810c620b2317c1ec252a
-ms.sourcegitcommit: 41c0637e894fbcd0713d46d6ef1866f08dc321a2
+ms.openlocfilehash: 3dc2083e5b4fd06250a1387c32f0eba28e879b30
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57203436"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58829130"
 ---
 # <a name="anonymous-types-visual-basic"></a>匿名类型 (Visual Basic)
 Visual Basic 支持匿名类型，以便你能够而无需编写的数据类型的类定义创建对象。 此时，编译器将为你生成类。 类已没有可用的名称，直接继承自<xref:System.Object>，且包含在声明该对象指定的属性。 由于未指定数据类型的名称，因此将它称为*匿名类型*。  
@@ -127,6 +127,7 @@ Visual Basic 支持匿名类型，以便你能够而无需编写的数据类型�
  有关由编译器和重写方法的功能创建的代码的详细信息，请参阅[匿名类型定义](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-type-definition.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [对象初始值设定项：命名和匿名类型](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
 - [局部类型推理](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
 - [Visual Basic 中的 LINQ 简介](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

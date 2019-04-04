@@ -1,0 +1,22 @@
+items:
+- name: 互操作性
+  href: index.md
+  items:
+  - name: 互操作性概述
+    href: interoperability-overview.md
+  - name: 如何：使用 Visual C# 功能访问 Office 互操作对象
+    href: how-to-access-office-onterop-objects.md
+  - name: 如何：在 COM 互操作编程中使用已编制索引的属性
+    href: how-to-use-indexed-properties-in-com-interop-rogramming.md
+  - name: 如何：使用平台调用播放波形文件
+    href: how-to-use-platform-invoke-to-play-a-wave-file.md
+  - name: 演练：Office 编程（C# 和 Visual Basic）
+    href: walkthrough-office-programming.md
+  - name: COM 类示例
+    href: example-com-class.md
+ms.openlocfilehash: 73e8696b89fa8ce212bc517f884f0ac615de09fc
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468039"

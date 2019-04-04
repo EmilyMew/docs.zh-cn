@@ -10,12 +10,12 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], codes
 - errors [Visual Basic], simulating
 ms.assetid: 85cd5c59-5224-4f02-aaf5-fcfefab17a29
-ms.openlocfilehash: e819ba043dec2d5e8e792fdf57dc0c273a24e881
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8ac7cee2f9959bc75df165d00d3a0a67e1dd9af0
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54654810"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58837528"
 ---
 # <a name="error-statement"></a>Error 语句
 模拟错误的匹配项。  
@@ -35,7 +35,7 @@ Error errornumber
   
  如果`errornumber`定义，则`Error`语句的属性后调用错误处理程序`Err`对象分配以下默认值：  
   
-|属性|“值”|  
+|属性|值|  
 |--------------|-----------|  
 |`Number`|值指定为参数`Error`语句。 可以是任何有效的错误号。|  
 |`Source`|当前的 Visual Basic 项目的名称。|  
@@ -63,6 +63,7 @@ Error 11   ' Simulate the "Division by zero" error.
  **程序集：** Visual Basic 运行库（在 Microsoft.VisualBasic.dll 中）  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.ErrObject.Clear%2A>
 - <xref:Microsoft.VisualBasic.Information.Err%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.Raise%2A>

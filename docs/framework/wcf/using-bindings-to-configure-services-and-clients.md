@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - bindings [WCF], using
 ms.assetid: c39479c3-0766-4a17-ba4c-97a74607f392
-ms.openlocfilehash: 8aed2b2efa0408371a8da47fef64340fd30fffcc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 45a904eb9e38b13fc3502264f4659bfd25465630
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54577095"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410415"
 ---
 # <a name="using-bindings-to-configure-services-and-clients"></a>使用绑定配置服务和客户端
 绑定是指定连接到终结点所需的通信详细信息的对象。 更具体地说，绑定包含用于创建客户端或服务运行时的配置信息，创建方法是定义用于各个终结点或客户端通道的传输、连网格式（消息编码）和协议的具体内容。 若要创建的正常运行的 Windows Communication Foundation (WCF) 服务，在服务中的每个终结点需要的绑定。 本主题解释什么是绑定、如何定义绑定以及如何为终结点指定特定的绑定。  
@@ -45,16 +45,16 @@ ms.locfileid: "54577095"
 ## <a name="using-bindings"></a>使用绑定  
  使用绑定需要执行两个基本步骤：  
   
-1.  选择或定义绑定。 最简单的方法就是选择一个系统提供的绑定并使用它的默认设置。 您还可以选择一个系统提供的绑定，然后根据您的要求重新设置它的属性值。 或者，您可以创建一个自定义绑定并根据需要设置每一个属性。  
+1.  选择或定义绑定。 最简单的方法就是选择一个系统提供的绑定并使用它的默认设置。 您还可以选择一个系统提供的绑定，然后根据您的要求重新设置它的属性值。 或者，你可以创建一个自定义绑定并根据需要设置每一个属性。  
   
 2.  创建使用此绑定的终结点。  
   
 ## <a name="code-and-configuration"></a>代码和配置  
- 您可以通过代码或配置来定义或配置绑定。 例如，这两种方法不受所用绑定的类型的影响，无论您是使用系统提供的绑定还是使用 <xref:System.ServiceModel.Channels.CustomBinding> 绑定。 通常，使用代码可使你在编译时对绑定的定义拥有完全的控制权。 但是，使用配置，允许系统管理员或 WCF 服务或客户端以更改绑定的参数的用户。 这种灵活性通常是可取的因为没有方法来预测的特定计算机需求和网络在其中部署 WCF 应用程序的条件。 从代码分隔绑定（和寻址）信息允许管理员无需重新编译或重新部署应用程序就可以更改绑定详细信息。 请注意，如果在代码中定义绑定，该绑定将覆盖配置文件中所指定的任何基于配置的定义。 有关这些方法的示例，请参见下面的主题：  
+ 你可以通过代码或配置来定义或配置绑定。 例如，这两种方法不受所用绑定的类型的影响，无论你是使用系统提供的绑定还是使用 <xref:System.ServiceModel.Channels.CustomBinding> 绑定。 通常，使用代码可使你在编译时对绑定的定义拥有完全的控制权。 但是，使用配置，允许系统管理员或 WCF 服务或客户端以更改绑定的参数的用户。 这种灵活性通常是可取的因为没有方法来预测的特定计算机需求和网络在其中部署 WCF 应用程序的条件。 从代码分隔绑定（和寻址）信息允许管理员无需重新编译或重新部署应用程序就可以更改绑定详细信息。 请注意，如果在代码中定义绑定，该绑定将覆盖配置文件中所指定的任何基于配置的定义。 有关这些方法的示例，请参见下面的主题：  
   
 -   [如何：承载 WCF 服务中托管的应用程序](../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)提供了在代码中创建绑定的一个示例。  
   
--   [如何：配置客户端](../../../docs/framework/wcf/how-to-configure-a-basic-wcf-client.md)提供创建客户端使用配置的示例。  
+-   [教程：创建 Windows Communication Foundation 客户端](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)提供了使用配置创建客户端的一个示例。  
   
 ## <a name="see-also"></a>请参阅
 - [终结点创建概述](../../../docs/framework/wcf/endpoint-creation-overview.md)

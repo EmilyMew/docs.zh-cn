@@ -1,0 +1,26 @@
+items:
+- name: 密码设置架构
+  href: index.md
+  items:
+  - name: <cryptoClasses> 元素
+    href: cryptoclasses-element.md
+  - name: <cryptoClass> 元素
+    href: cryptoclass-element.md
+  - name: <cryptographySettings> 元素
+    href: cryptographysettings-element.md
+  - name: <cryptoNameMapping> 元素
+    href: cryptonamemapping-element.md
+  - name: Cryptography 设置的 <mscorlib> 元素
+    href: mscorlib-element-for-cryptography-settings.md
+  - name: <nameEntry> 元素
+    href: nameentry-element.md
+  - name: <oidEntry> 元素
+    href: oidentry-element.md
+  - name: <oidMap> 元素
+    href: oidmap-element.md
+ms.openlocfilehash: 71237984ce59000cbef102480f7610f5a7b1bc43
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468572"

@@ -2,12 +2,12 @@
 title: 使用服务跟踪查看器查看相关跟踪和进行故障诊断
 ms.date: 03/30/2017
 ms.assetid: 05d2321c-8acb-49d7-a6cd-8ef2220c6775
-ms.openlocfilehash: c54585ab8e9d9fc039858b07ab75068e984b78db
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fc1b75d7f2d97103f99b9dbf0fa8cbbfbe2270cd
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54594799"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465056"
 ---
 # <a name="using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting"></a>使用服务跟踪查看器查看相关跟踪和进行故障诊断
 本主题介绍跟踪数据的格式，如何查看它，以及使用服务跟踪查看器对应用程序进行故障诊断的方法。  
@@ -130,20 +130,23 @@ ms.locfileid: "54594799"
 > [!NOTE]
 >  我们显示最初在单独的活动 （处理消息） 中处理的响应消息在 WCF 中，我们将其关联到相应的处理操作活动，其中包括请求消息，通过传输之前。 这发生在基础结构消息和异步请求中，并且归因于以下事实：必须检查消息、读取 activityId 标头以及识别具有该 ID 的现有“处理操作”活动以便与它相关。 对于同步请求，我们将为响应截留这些信息，因此可以知道响应与哪个处理操作相关。  
   
- ![使用跟踪查看器](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace4.gif "e2eTrace4")  
-按创建时间列出的 WCF 客户端活动（左面板）及其嵌套活动和跟踪（右上面板）  
+下图显示了按创建时间 （左面板） 及其嵌套的活动和跟踪 （右上面板） 列出的 WCF 客户端活动：
+
+ ![显示按创建时间列出活动的 WCF 客户端的屏幕截图。](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-client-activities-creation-time.gif)  
   
  在左面板中选择一个活动时，可以在右上面板上看到其嵌套活动和跟踪。 因此，这是左侧活动列表的简化分层视图（基于所选的父活动）。 因为所选处理操作“加”是发出的第一个请求，所以此活动包含“设置安全会话”活动（传输到，再传输回）和对“加”操作实际处理的跟踪。  
   
  如果双击左面板中添加活动的处理操作，我们可以看到添加到与相关的客户端 WCF 活动的图形表示形式。 左侧的第一个活动是根活动 (0000)，它是默认活动。 环境活动之外的 WCF 传输。 如果未定义，WCF 将到 0000 之外传输。 在这里，第二个活动“处理操作添加”在 0 之外传输。 然后可看到“设置安全会话”。  
-  
- ![使用跟踪查看器](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace5.gif "e2eTrace5")  
-WCF 客户端活动的关系图视图：环境活动 (此处为 0)、 处理操作和设置安全会话  
+
+ 下图显示了 WCF 客户端的关系图视图，特别是在环境活动 (此处为 0)，处理操作，并设置安全会话：   
+
+ ![图形中显示环境活动和进程操作的跟踪查看器。](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-activities-graph-ambient-process.gif)   
   
  在右上面板中，可以看到与“处理操作添加”活动相关的所有跟踪。 具体说来，已发送请求消息（“通过通道发送消息”）并在同一活动中收到了响应（“通过通道收到消息”）。 如下图所示。 为清楚起见，在图形中折叠了“设置安全会话”活动。  
   
- ![使用跟踪查看器](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace6.gif "e2eTrace6")  
-处理操作活动的跟踪列表：已发送请求并在同一活动中收到响应。  
+ 下图显示了一系列处理操作活动的跟踪。 我们发送请求，并在同一活动中接收的响应。
+ 
+ ![屏幕截图的跟踪查看器显示的处理操作活动的跟踪列表](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/process-action-traces.gif)  
   
  在这里，我们加载客户端跟踪仅仅是为了清楚起见，但它们也是在该工具中加载，服务跟踪 （收到请求消息和发送响应消息） 将出现在同一活动中并`propagateActivity`已设置为`true.`这更高版本的图中所示。  
   
@@ -162,14 +165,17 @@ WCF 客户端活动的关系图视图：环境活动 (此处为 0)、 处理操�
 6.  对于进程外操作，我们将创建"执行用户代码"活动以隔离在 WCF 中的用户代码中发出的跟踪。 在前面的示例中，"服务发送添加响应"跟踪有可能的话将不在客户端传播的活动的"执行用户代码"活动中发出。  
   
  在下图中，左侧的第一个活动是根活动 (0000)，它是默认活动。 接下来的三个活动用于打开 ServiceHost。 第 5 列中的活动是侦听器，剩余的活动（6 到 8）说明消息的 WCF 处理，从字节处理到用户代码激活。  
+
+ 下图显示了 WCF 服务活动的关系图视图：   
+
+ ![屏幕截图的跟踪查看器显示的 WCF 服务活动的列表](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-service-activities.gif)  
   
- ![使用跟踪查看器](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace7.gif "e2eTrace7")  
-WCF 服务活动的列表  
   
  下面的屏幕快照显示客户端和服务的活动，并突出显示跨进程的“处理操作添加”活动（橙色）。 箭头使客户端和服务发送和接收的请求和响应消息相关。 跨进程处理操作的跟踪在图形中单独显示，但在右上面板中作为同一活动的一部分显示。 在此面板中，可以看到已发送消息的客户端跟踪，后跟已接收和已处理消息的服务跟踪。  
   
- ![使用跟踪查看器](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace8.gif "e2eTrace8")  
-WCF 客户端和服务活动的图形视图  
+ 下图显示了这两个 WCF 客户端和服务活动的关系图视图  
+ 
+ ![图形显示了这两个 WCF 客户端和服务活动的跟踪查看器中。](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-client-service-activities.gif)   
   
  在下面的错误情形中，服务和客户端上的错误和警告跟踪是相关的。 在服务上的用户代码中首先引发异常（最右侧的绿色活动，包括异常“服务无法处理用户代码中的此请求。”的警告跟踪）。 将响应发送到客户端时，会再次发出警告跟踪以指示错误消息（左侧的粉红色活动）。 然后客户端关闭其 WCF 客户端（左下侧的黄色活动），这将中止与服务的连接。 服务引发一个错误（右侧最长的粉红色活动）。  
   
@@ -181,8 +187,9 @@ WCF 客户端和服务活动的图形视图
 ## <a name="troubleshooting-using-the-service-trace-viewer"></a>使用服务跟踪查看器进行故障诊断  
  在服务跟踪查看器工具中加载跟踪文件时，可以在左面板上选择任何红色或黄色的活动，以追踪应用程序中问题的原因。 000 活动通常具有最终归因于用户的未经处理的异常。  
   
- ![使用跟踪查看器](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace10.gif "e2eTrace10")  
-选择红色或黄色活动以找到问题的根本原因  
+  下图显示了如何选择红色或黄色活动，以找到问题的根源。   
+ ![用于查找问题根源的红色或黄色活动的屏幕截图。](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/service-trace-viewer.gif)  
+ 
   
  在右上面板上，可以检查在左侧选择的活动的跟踪。 然后，可以检查该面板中的红色或黄色跟踪以及查看它们是如何相关的。 在前面的图形中，我们看到客户端和服务的警告跟踪都在同一处理操作活动中。  
   
@@ -195,8 +202,9 @@ WCF 客户端和服务活动的图形视图
   
  如果启用了“消息日志记录”，则可以使用“消息”选项卡查看受错误影响的消息。 通过双击红色或黄色的消息，可以看到相关活动的图形视图。 这些活动是与发生错误的请求最紧密相关的活动。  
   
- ![使用跟踪查看器](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace11.gif "e2eTrace11")  
-若要开始进行故障诊断，也可以选取一个红色或黄色的消息跟踪，并双击它以查明根本原因  
+ ![屏幕截图的跟踪查看器已启用消息日志记录。](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/message-logging-enabled.gif)  
+
+若要开始进行故障排除，还可以选择红色或黄色的消息跟踪并双击它以查明根本原因。  
   
 ## <a name="see-also"></a>请参阅
 - [端到端跟踪方案](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)

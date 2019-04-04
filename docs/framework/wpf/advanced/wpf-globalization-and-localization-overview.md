@@ -5,12 +5,12 @@ helpviewer_keywords:
 - globalization [WPF], about globalization
 - localization [WPF], about localization
 ms.assetid: 56e5a5c8-6c96-4d19-b8e1-a5be1dc564af
-ms.openlocfilehash: 55a60a74c246e0eefb854bed3d22cfb97eff15b1
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: c97ae4f277395a75fb7522ffb74061001c10e07d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57492659"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819575"
 ---
 # <a name="wpf-globalization-and-localization-overview"></a>WPF 全球化和本地化概述
 
@@ -94,9 +94,9 @@ ms.locfileid: "57492659"
   
  下图显示了一个基于 XAML 的 BAML 形式的典型本地化工作流。 此关系图假设开发人员以英语编写应用程序。 开发人员创建 WPF 应用程序并将其全球化。 在项目文件中，开发人员设置`<UICulture>en-US</UICulture>`，以便在生成，语言的非特定语言主程序集获取生成的附属项。 包含所有可本地化资源的 resources.dll。 或者，因为 WPF 本地化 API 支持从主程序集进行提取，所以还可以保留主程序集中的源语言。 生成过程结束之后，XAML 会编译为 BAML。 将向说英语的客户提供非特定区域性的 MyDialog.exe.resources.dll。  
   
- ![本地化工作流](./media/localizationworkflow.png "LocalizationWorkflow")  
+ ![本地化工作流的图示。](./media/wpf-globalization-and-localization-overview/localization-workflow.png)  
   
- ![未本地化的工作流](./media/localizationworkflow2.png "LocalizationWorkflow2")  
+ ![未本地化的工作流的图示。](./media/wpf-globalization-and-localization-overview/unlocalized-workflow.png)  
   
 ## <a name="examples-of-wpf-localization"></a>WPF 本地化示例
 
@@ -108,11 +108,11 @@ ms.locfileid: "57492659"
   
  **英语：**  
   
- ![“运行”对话框](./media/rundialogenglish.PNG "RunDialogEnglish")  
+ ![显示英语运行对话框屏幕截图。](./media/wpf-globalization-and-localization-overview/run-dialog-box-english.png)  
   
  **德语：**  
   
- ![德语“运行”对话框](./media/rundialoggerman.PNG "RunDialogGerman")  
+ ![显示德语运行对话框屏幕截图。](./media/wpf-globalization-and-localization-overview/run-dialog-box-german.png)  
   
  **设计全球化“运行”对话框**  
   
@@ -144,9 +144,9 @@ ms.locfileid: "57492659"
   
  请注意，该示例使用的共享大小调整功能<xref:System.Windows.Controls.Grid>。 最后三列通过将自身放置在同一个充分利用这<xref:System.Windows.Controls.DefinitionBase.SharedSizeGroup%2A>。 正如属性名称所示，此属性允许不同的列采用相同大小。 因此如果"浏览..."获取已本地化为较长的字符串"Durchsuchen..."，所有按钮都增加而不是让小型的"确定"按钮和一个极大的"Durchsuchen..."按钮的宽度。  
   
- **Xml:lang**
+ **xml:lang**
   
- `Xml:lang="en-US"`  
+ `xml:lang="en-US"`  
   
  请注意[xml: lang 处理在 XAML 中](../../xaml-services/xml-lang-handling-in-xaml.md)放置在根元素处[!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]。 此属性描述给定元素及其子元素的区域性。 此值由多个功能[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]，应在本地化过程相应地更改。 此值会更改在断字以及对字词进行拼写检查时所使用的字典。 它还会影响数字的显示以及字体回退系统选择所用字体的方式。 最后，该属性会影响数值的显示方式，形成在复杂脚本中编写文本的方式。 默认值为“en-US”。  
   
@@ -178,7 +178,7 @@ ms.locfileid: "57492659"
   
  使用你喜欢的支持 Unicode 的 CSV 编辑器来编辑此文件。 筛选掉本地化类别为“None”的所有项。 应看到下面的项：  
   
-|资源键|本地化类别|“值”|  
+|资源键|本地化类别|值|  
 |-|-|-| 
 |Button_1:System.Windows.Controls.Button.$Content|Button|确定|  
 |Button_2:System.Windows.Controls.Button.$Content|Button|取消|  
@@ -226,13 +226,13 @@ ms.locfileid: "57492659"
   
  **英语：**  
   
- ![英语页面](./media/englishhomepage.jpg "EnglishHomepage")  
+ ![显示英语主页的屏幕截图。](./media/wpf-globalization-and-localization-overview/english-home-page-sample.jpg)  
   
  **阿拉伯语：**  
   
- ![阿拉伯语页面](./media/arabichomepage.jpg "ArabicHomepage")  
+ ![显示阿拉伯语主页的屏幕截图。](./media/wpf-globalization-and-localization-overview/arabic-home-page-sample.jpg)  
   
-### <a name="designing-a-global-microsoft-homepage"></a>设计全球 Microsoft 主页  
+### <a name="designing-a-global-microsoft-home-page"></a>设计全球 Microsoft 主页  
  Microsoft 沙特阿拉伯网站的这个实体模型说明了针对从右向左布局语言提供的全球化功能。 希伯来语和阿拉伯语等语言具有从右到左阅读顺序，因此布局的[!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]通常必须布局不是将英语等从左到右语言中，运行方式完全不同。 从从左到右布局语言本地化到从右到左布局语言可能相当困难，反之亦然。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 可使此类本地化工作变得更容易。  
   
  **FlowDirection**  
@@ -247,11 +247,11 @@ ms.locfileid: "57492659"
   
  **FlowDirection="LeftToRight"**  
   
- ![从左到右显示](./media/lefttoright.PNG "LeftToRight")  
+ ![显示从左到右的渐变流的屏幕截图。](./media/wpf-globalization-and-localization-overview/gradient-flow-left-right.png)  
   
  **FlowDirection="RightToLeft"**  
   
- ![从右到左显示](./media/righttoleft.PNG "RightToLeft")  
+ ![显示从右到左渐变的流的屏幕截图。](./media/wpf-globalization-and-localization-overview/gradient-flow-right-left.png)  
   
  **避免对面板和控件使用固定维度**  
   
@@ -265,7 +265,7 @@ ms.locfileid: "57492659"
   
  此注释将成为与 TextBlock_1 的内容以及在使用 LocBaml 工具的情况下关联 (请参阅[本地化应用程序](how-to-localize-an-application.md))，可在输出.csv 文件的 TextBlock_1 行的第六列：  
   
-|资源键|类别|可读性|可修改性|注释|“值”|  
+|资源键|类别|可读性|可修改性|注释|值|  
 |-|-|-|-|-|-|  
 |TextBlock_1:System.Windows.Controls.TextBlock.$Content|Text|true|true|此字符用作装饰性规则。|&#124;|  
   

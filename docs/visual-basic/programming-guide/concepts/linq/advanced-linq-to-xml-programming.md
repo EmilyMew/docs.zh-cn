@@ -2,12 +2,12 @@
 title: 高级的 LINQ to XML 编程 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 36018532-a55c-4538-8a27-98f475ea3415
-ms.openlocfilehash: 1aae385db8f989aa142f588bb459486b805074e5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f30f8f1c6dcdbabc1f32f4f7e216ce65a50396c6
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54668374"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58835318"
 ---
 # <a name="advanced-linq-to-xml-programming-visual-basic"></a>高级的 LINQ to XML 编程 (Visual Basic)
 本节为高级开发人员提供一些只适用于某些 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 方案的信息。  
@@ -29,4 +29,5 @@ ms.locfileid: "54668374"
 |[使用 LINQ to XML 进行 WPF 数据绑定](/visualstudio/designers/wpf-data-binding-with-linq-to-xml)|介绍如何将 LINQ to XML 用作 Windows Presentation Foundation 应用程序中数据绑定的数据源。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [编程指南 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

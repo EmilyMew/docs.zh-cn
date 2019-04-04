@@ -16,12 +16,12 @@ helpviewer_keywords:
 - UI literal type characters [Visual Basic]
 - data types [Visual Basic], integral
 ms.assetid: db7ddd34-4f23-46f5-84dd-8b0f83bb8729
-ms.openlocfilehash: a79162c6171c764d4c4610fd10f14a5dac6ff1a2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4d93b1e40371b00f9d1ff69ec31ad0983beb493f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54498994"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821486"
 ---
 # <a name="uinteger-data-type"></a>UInteger 数据类型
 
@@ -79,6 +79,7 @@ Dim number = &H_0FAC_14D7ui
 -   **Framework 类型。** .NET Framework 中的对应类型是 <xref:System.UInt32?displayProperty=nameWithType> 结构。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.UInt32>
 - [数据类型](../../../visual-basic/language-reference/data-types/index.md)
 - [类型转换函数](../../../visual-basic/language-reference/functions/type-conversion-functions.md)

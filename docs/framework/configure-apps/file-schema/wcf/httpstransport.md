@@ -2,12 +2,12 @@
 title: <httpsTransport>
 ms.date: 03/30/2017
 ms.assetid: f6ed4bc0-7e38-4348-9259-30bf61eb9435
-ms.openlocfilehash: efc568990c6af87f24f93790886388e4c505456c
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: dc95b1a31d582f255740152a235b9ca5e67cf5c6
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55289778"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411312"
 ---
 # <a name="httpstransport"></a>\<httpsTransport>
 为自定义绑定指定用于传输 SOAP 消息的 HTTP 传输。  
@@ -54,7 +54,7 @@ ms.locfileid: "55289778"
 |maxBufferSize|一个正整数，指定缓冲区的最大大小。 默认值为 524288。|  
 |maxReceivedMessageSize|一个正整数，指定可允许接收的最大消息大小。 默认值为 65536。|  
 |proxyAddress|一个指定 HTTP 代理的地址的 URI。 如果 `useSystemWebProxy` 为 `true`，则此设置必须为 `null`。 默认值为 `null`。|  
-|proxyAuthenticationScheme|指定用于验证 HTTP 代理正在处理的客户端请求的协议。 包括以下有效值：<br /><br /> -None:不执行任何身份验证。<br />-摘要：指定摘要式身份验证。<br />-Negotiate:使用客户端，以确定身份验证方案进行协商。 如果客户端和服务器均支持 Kerberos，则使用 Kerberos；否则使用 NTLM。<br />-Ntlm:指定 NTLM 身份验证。<br />-基本：指定基本身份验证。<br />匿名：指定匿名身份验证。<br /><br /> 默认值为 Anonymous。 此属性的类型为 <xref:System.Net.AuthenticationSchemes>。 请注意，`IntegratedWindowsAuthentication`不受支持。|  
+|proxyAuthenticationScheme|指定用于验证 HTTP 代理正在处理的客户端请求的协议。 包括以下有效值：<br /><br /> -None:不执行任何身份验证。<br />-摘要：指定摘要式身份验证。<br />-Negotiate:使用客户端，以确定身份验证方案进行协商。 如果客户端和服务器均支持 Kerberos，则使用 Kerberos；否则使用 NTLM。<br />-Ntlm:指定 NTLM 身份验证。<br />-基本：指定基本身份验证。<br />匿名：指定匿名身份验证。<br /><br /> 默认值为 Anonymous。 此属性的类型为 <xref:System.Net.AuthenticationSchemes>。 请注意，<xref:System.Net.AuthenticationSchemes.IntegratedWindowsAuthentication?displayProperty=nameWithType>不受支持。|  
 |realm|一个指定要在代理/服务器上使用的领域的字符串。 默认值为一个空字符串。<br /><br /> 服务器使用领域将受保护的资源分区。 每个分区都可以有自己的身份验证方案和/或授权数据库。 领域仅用于基本和摘要式身份验证。 在客户端成功进行身份验证之后，该身份验证对给定领域内的所有资源都有效。 有关领域的详细说明，请参阅在 RFC 2617 [IETF 网站](https://www.ietf.org)。|  
 |requireClientCertificate|一个布尔值，指定服务器是否要求客户端提供一个客户端证书作为 HTTPS 握手的一部分。 默认值为 `false`。|  
 |transferMode|指定对消息进行缓冲处理还是流式处理，或者指定消息是请求还是响应。 包括以下有效值：<br /><br /> 缓冲：请求和响应消息进行缓冲处理。<br />-流式传输：请求和响应消息进行流式处理。<br />-StreamedRequest:对请求消息进行流式处理，对响应消息进行缓冲处理。<br />-StreamedResponse:对请求消息进行缓冲处理，对响应消息进行流式处理。<br /><br /> 默认值为 Buffered。 此属性的类型为 <xref:System.ServiceModel.TransferMode>。|  
@@ -71,7 +71,8 @@ ms.locfileid: "55289778"
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|定义自定义绑定的所有绑定功能。|  
   
 ## <a name="remarks"></a>备注  
- `httpsTransport` 元素是创建实现 HTTPS 传输协议的自定义绑定的起始点。 HTTPS 是用于安全互操作性用途的主要传输。 通过 Windows Communication Foundation (WCF) 以确保与其他 Web 服务堆栈的互操作支持 HTTPS。  
+ 
+  `httpsTransport` 元素是创建实现 HTTPS 传输协议的自定义绑定的起始点。 HTTPS 是用于安全互操作性用途的主要传输。 通过 Windows Communication Foundation (WCF) 以确保与其他 Web 服务堆栈的互操作支持 HTTPS。  
   
 ## <a name="see-also"></a>请参阅
 - <xref:System.ServiceModel.Configuration.HttpsTransportElement>

@@ -2,12 +2,12 @@
 title: 使用 XML 命名空间 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 428bf4b0-e348-4ffd-986b-d905d5a0e7fa
-ms.openlocfilehash: e103920187ecbbfb14a1723556d1fae0265a88d0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b2b9db9ed547858eb5358d5e3c871c6a84d22ae6
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54607902"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58828885"
 ---
 # <a name="working-with-xml-namespaces-visual-basic"></a>使用 XML 命名空间 (Visual Basic)
 本节中的主题描述 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 如何支持命名空间。  
@@ -24,4 +24,5 @@ ms.locfileid: "54607902"
 |[如何：命名空间 (Visual Basic) 中的 XML 编写查询](../../../../visual-basic/programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md)|演示如何在 Visual Basic LINQ to XML 查询指定 XML 命名空间。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [编程指南 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

@@ -25,8 +25,7 @@ Windows Communication Foundation (WCF) 提供用于启用 WCF 应用程序进行
 
 - 实现 <xref:System.Collections.IDictionary> 接口的类，如 <xref:System.Collections.Hashtable>，不能序列化为 XML。
 
-- 
-  <xref:System.Xml.Serialization> 命名空间中的许多属性类型均可添加到 .NET Framework 类及其成员中，用于控制类实例的 XML 表示方式。
+- <xref:System.Xml.Serialization> 命名空间中的许多属性类型均可添加到 .NET Framework 类及其成员中，用于控制类实例的 XML 表示方式。
 
 WCF 应用程序开发通常也开始的复杂类型的定义。 WCF 可为使用相同的.NET Framework 类作为 ASP.NET Web 服务。
 
@@ -146,9 +145,7 @@ public class LineItem
 }
 ```
 
-
-  <xref:System.Runtime.Serialization.DataContractAttribute> 表示要对零个或多个类型字段或属性进行序列化，而 <xref:System.Runtime.Serialization.DataMemberAttribute> 表示要对某个特定字段或属性进行序列化。 <xref:System.Runtime.Serialization.DataContractAttribute> 可应用于类或结构。 
-  <xref:System.Runtime.Serialization.DataMemberAttribute> 可以应用于字段或属性 (Property)，对其应用此属性 (Attribute) 的字段和属性 (Property) 既可以是公共的也可以是私有的。 具有的类型的实例<xref:System.Runtime.Serialization.DataContractAttribute>应用于它们所提及的 WCF 中的数据协定。 它们通过 <xref:System.Runtime.Serialization.DataContractSerializer> 序列化为 XML。
+<xref:System.Runtime.Serialization.DataContractAttribute> 表示要对零个或多个类型字段或属性进行序列化，而 <xref:System.Runtime.Serialization.DataMemberAttribute> 表示要对某个特定字段或属性进行序列化。 <xref:System.Runtime.Serialization.DataContractAttribute> 可应用于类或结构。 <xref:System.Runtime.Serialization.DataMemberAttribute> 可以应用于字段或属性 (Property)，对其应用此属性 (Attribute) 的字段和属性 (Property) 既可以是公共的也可以是私有的。 具有的类型的实例<xref:System.Runtime.Serialization.DataContractAttribute>应用于它们所提及的 WCF 中的数据协定。 它们通过 <xref:System.Runtime.Serialization.DataContractSerializer> 序列化为 XML。
 
 下面是使用 <xref:System.Runtime.Serialization.DataContractSerializer> 和使用 <xref:System.Xml.Serialization.XmlSerializer> 以及 <xref:System.Xml.Serialization> 命名空间的各种属性之间的重大差异列表。
 
@@ -181,8 +178,7 @@ public class LineItem
 
 - 由于 <xref:System.Runtime.Serialization.DataContractSerializer> 可以访问类型的非公共成员，因此，它还要求完全信任，而 <xref:System.Xml.Serialization.XmlSerializer> 不要求。 完全信任代码访问权限，可以使用在其下执行代码的凭据访问的计算机上的所有资源完成的访问。 应谨慎使用此选项，因为完全受信任的代码访问你的计算机上的所有资源。
 
-- 
-  <xref:System.Runtime.Serialization.DataContractSerializer> 中集成了一些对版本管理的支持：
+- <xref:System.Runtime.Serialization.DataContractSerializer> 中集成了一些对版本管理的支持：
 
     - <xref:System.Runtime.Serialization.DataMemberAttribute> 具有一个 <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> 属性，将它赋予 False 值可指示早期版本中不存在将成员添加到的新版本数据协定，因此使得包含新版协定的应用程序可以处理早期的版本。
 
@@ -561,8 +557,7 @@ public interface IEcho
 
 但是，WCF 还响应 Ws-metadataexchange 请求具有其生成的用于描述服务的 WSDL。 ASP.NET Web 服务没有对 WS-MetadataExchange 请求的内置支持。
 
-可以广泛地自定义 WCF 生成的 WSDL。 
-  <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 类提供了一些用于自定义 WSDL 的功能。 WCF 还可以配置为不生成 WSDL，但而不是在给定的 URL，使用静态 WSDL 文件。
+可以广泛地自定义 WCF 生成的 WSDL。 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 类提供了一些用于自定义 WSDL 的功能。 WCF 还可以配置为不生成 WSDL，但而不是在给定的 URL，使用静态 WSDL 文件。
 
 ```xml
 <behaviors>
@@ -648,8 +643,7 @@ WCF 为状态管理提供可扩展对象。 可扩展对象就是实现 <xref:Sy
 public class TradingSystem: ITradingService
 ```
 
-
-  `DealData` 类用于定义可以由某个服务类型的相同实例中运行的任意代码访问的状态。
+`DealData` 类用于定义可以由某个服务类型的相同实例中运行的任意代码访问的状态。
 
 ```csharp
 internal class DealData: IExtension<InstanceContext>

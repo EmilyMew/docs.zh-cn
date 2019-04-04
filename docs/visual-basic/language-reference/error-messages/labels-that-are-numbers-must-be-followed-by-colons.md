@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30801
 ms.assetid: 67743319-2d1c-496e-bfd9-22b046b43b5a
-ms.openlocfilehash: 1472669daf3da8ba529a32bf0620f32f147daa66
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 23d7faa82351ca36b132995495ee0ca4d2bcdfdf
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54536927"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819264"
 ---
 # <a name="labels-that-are-numbers-must-be-followed-by-colons"></a>数字标签后面必须跟冒号
 行号遵循与其他类型的标签，相同的规则，并且必须包含一个冒号。  
@@ -28,4 +28,5 @@ ms.locfileid: "54536927"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [GoTo 语句](../../../visual-basic/language-reference/statements/goto-statement.md)

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - ToolStrip control [Windows Forms], architecture
 ms.assetid: 71df2d18-862e-4701-9ff9-c1fe606f94f2
-ms.openlocfilehash: 6e0c5a426f05590523c178f4b56d07ee98b39d7e
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: bede247ca9e1c2c20ffc8fef9fd4fab89aa78453
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57719380"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654765"
 ---
 # <a name="toolstrip-control-architecture"></a>ToolStrip 控件体系结构
 <xref:System.Windows.Forms.ToolStrip>和<xref:System.Windows.Forms.ToolStripItem>类用于显示工具栏、 状态和菜单项提供一个灵活、 可扩展的系统。 这些类都包含在<xref:System.Windows.Forms>命名空间和它们全部通常具有"ToolStrip"前缀命名 (如<xref:System.Windows.Forms.ToolStripOverflow>) 或带有"带状"后缀 (例如<xref:System.Windows.Forms.MenuStrip>)。  
@@ -19,8 +19,7 @@ ms.locfileid: "57719380"
   
  <xref:System.Windows.Forms.ToolStrip> 是的抽象基类<xref:System.Windows.Forms.MenuStrip>， <xref:System.Windows.Forms.StatusStrip>，和<xref:System.Windows.Forms.ContextMenuStrip>。 下面的对象模型演示<xref:System.Windows.Forms.ToolStrip>继承层次结构。  
   
- ![ToolStrip 对象模型](./media/toolstripobjectmodel.gif "ToolStripObjectModel")  
-ToolStrip 对象模型  
+ ![显示的 ToolStrip 对象模型的关系图。](./media/toolstrip-control-architecture/toolstrip-object-model.gif)  
   
  您可以访问中的所有项<xref:System.Windows.Forms.ToolStrip>通过<xref:System.Windows.Forms.ToolStrip.Items%2A>集合。 您可以访问中的所有项<xref:System.Windows.Forms.ToolStripDropDownItem>通过<xref:System.Windows.Forms.ToolStripDropDownItem.DropDownItems%2A>集合。 在派生类中<xref:System.Windows.Forms.ToolStrip>，还可以使用<xref:System.Windows.Forms.ToolStrip.DisplayedItems%2A>属性访问当前显示这些项。 这些是当前未在溢出菜单中的项。  
   
@@ -198,7 +197,7 @@ ToolStrip 对象模型
 ##### <a name="stack-layouts"></a>堆栈布局  
  堆栈是并排排列项相互的两端<xref:System.Windows.Forms.ToolStrip>。 以下列表介绍了堆栈布局。  
   
--   默认为 <xref:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow>。 此设置会导致<xref:System.Windows.Forms.ToolStrip>若要更改其自动根据所使用的布局<xref:System.Windows.Forms.ToolStrip.Orientation%2A>属性来处理拖动和停靠的方案。  
+-   <xref:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow> 默认值。 此设置会导致<xref:System.Windows.Forms.ToolStrip>若要更改其自动根据所使用的布局<xref:System.Windows.Forms.ToolStrip.Orientation%2A>属性来处理拖动和停靠的方案。  
   
 -   <xref:System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow> 呈现<xref:System.Windows.Forms.ToolStrip>项旁边相互垂直。  
   
@@ -223,8 +222,7 @@ ToolStrip 对象模型
   
 -   可以使用<xref:System.Windows.Forms.ToolStripItem.Dock%2A>和<xref:System.Windows.Forms.ToolStripItem.Anchor%2A>代码以对齐在行中的项中的属性。  
   
--   
-  <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> 属性被忽略。  
+-   <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> 属性被忽略。  
   
 -   在中<xref:System.Windows.Forms.ToolStrip.LayoutCompleted>事件中，可以检查<xref:System.Windows.Forms.ToolStripItem.Placement%2A>属性来确定某项放在主<xref:System.Windows.Forms.ToolStrip>还是无法容纳。  
   
@@ -239,8 +237,7 @@ ToolStrip 对象模型
   
 -   可以使用<xref:System.Windows.Forms.ToolStripItem.Dock%2A>和<xref:System.Windows.Forms.ToolStripItem.Anchor%2A>对齐表格单元格内的项的代码中的属性。  
   
--   
-  <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> 属性被忽略。  
+-   <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> 属性被忽略。  
   
 -   在中<xref:System.Windows.Forms.ToolStrip.LayoutCompleted>事件中，可以检查<xref:System.Windows.Forms.ToolStripItem.Placement%2A>属性来确定某项放在主<xref:System.Windows.Forms.ToolStrip>还是无法容纳。  
   
@@ -253,8 +250,7 @@ ToolStrip 对象模型
   
  <xref:System.Windows.Forms.ToolStripItem> 是进入的所有项的抽象基类<xref:System.Windows.Forms.ToolStrip>。 下面的对象模型演示<xref:System.Windows.Forms.ToolStripItem>继承层次结构。  
   
- ![ToolStripItem 对象模型](./media/toolstripitemobjectmodel.gif "ToolStripItemObjectModel")  
-ToolStripItem 对象模型  
+ ![显示 ToolStripItem 对象模型的关系图。](./media/toolstrip-control-architecture/toolstripitem-object-model.gif)  
   
  <xref:System.Windows.Forms.ToolStripItem> 直接从继承的类<xref:System.Windows.Forms.ToolStripItem>，或间接从继承<xref:System.Windows.Forms.ToolStripItem>通过<xref:System.Windows.Forms.ToolStripControlHost>或<xref:System.Windows.Forms.ToolStripDropDownItem>。  
   
@@ -267,16 +263,16 @@ ToolStripItem 对象模型
   
 |包含的项目|ToolStrip|MenuStrip|ContextMenuStrip|StatusStrip|ToolStripDropDown|  
 |--------------------|---------------|---------------|----------------------|-----------------|-----------------------|  
-|<xref:System.Windows.Forms.ToolStripButton>|是|No|否|否|是|  
+|<xref:System.Windows.Forms.ToolStripButton>|是|否|否|否|是|  
 |<xref:System.Windows.Forms.ToolStripComboBox>|是|是|是|No|是|  
-|<xref:System.Windows.Forms.ToolStripSplitButton>|是|No|否|是|是|  
-|<xref:System.Windows.Forms.ToolStripLabel>|是|No|否|是|是|  
+|<xref:System.Windows.Forms.ToolStripSplitButton>|是|否|否|是|是|  
+|<xref:System.Windows.Forms.ToolStripLabel>|是|否|否|是|是|  
 |<xref:System.Windows.Forms.ToolStripSeparator>|是|是|是|No|是|  
-|<xref:System.Windows.Forms.ToolStripDropDownButton>|是|No|否|是|是|  
+|<xref:System.Windows.Forms.ToolStripDropDownButton>|是|否|否|是|是|  
 |<xref:System.Windows.Forms.ToolStripTextBox>|是|是|是|No|是|  
-|<xref:System.Windows.Forms.ToolStripMenuItem>|No|是|是|No|否|  
+|<xref:System.Windows.Forms.ToolStripMenuItem>|No|是|是|否|否|  
 |<xref:System.Windows.Forms.ToolStripStatusLabel>|否|否|否|是|No|  
-|<xref:System.Windows.Forms.ToolStripProgressBar>|是|No|否|是|No|  
+|<xref:System.Windows.Forms.ToolStripProgressBar>|是|否|否|是|No|  
 |<xref:System.Windows.Forms.ToolStripControlHost>|是|是|No|是|是|  
   
 ### <a name="toolstripbutton"></a>ToolStripButton  

@@ -1,0 +1,28 @@
+items:
+- name: 异常
+  href: index.md
+  items:
+  - name: 异常类和属性
+    href: exception-class-and-properties.md
+  - name: 如何：使用 Try-Catch 块捕获异常
+    href: how-to-use-the-try-catch-block-to-catch-exceptions.md
+  - name: 如何：在 Catch 块中使用特定异常
+    href: how-to-use-specific-exceptions-in-a-catch-block.md
+  - name: 如何：显式引发异常
+    href: how-to-explicitly-throw-exceptions.md
+  - name: 如何：创建用户定义异常
+    href: how-to-create-user-defined-exceptions.md
+  - name: 使用用户筛选的异常处理程序
+    href: using-user-filtered-exception-handlers.md
+  - name: 如何：使用 Finally 块
+    href: how-to-use-finally-blocks.md
+  - name: 处理 COM 互操作异常
+    href: handling-com-interop-exceptions.md
+  - name: 异常的最佳做法
+    href: best-practices-for-exceptions.md
+ms.openlocfilehash: 30a6abc9671ff2728792e74345be12fff7cfefbc
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468460"

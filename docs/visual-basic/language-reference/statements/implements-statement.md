@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Implements statement [Visual Basic]
 - interface implementation [Visual Basic], Implements statement
 ms.assetid: 1fafb83f-f55a-4215-8ea9-681e8622613d
-ms.openlocfilehash: 75776e0d78bc1d8a834333ea4c3cc0a9291d1ed1
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 1f0c6b052ead303e0b43465dac2067422abc4ef8
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56965004"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58818861"
 ---
 # <a name="implements-statement"></a>Implements 语句
 指定一个或多个接口，或必须在类中实现的接口成员或结构定义中的出现。  
@@ -56,6 +56,7 @@ Implements interfacename.interfacemember [, ...]
  [!code-vb[VbVbalrStatements#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#34)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [Implements](../../../visual-basic/language-reference/statements/implements-clause.md)
 - [Interface 语句](../../../visual-basic/language-reference/statements/interface-statement.md)
 - [接口](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

@@ -21,8 +21,7 @@ ms.lasthandoff: 03/09/2019
 ms.locfileid: "57722317"
 ---
 # <a name="datagridview-control-windows-forms"></a>DataGridView 控件（Windows 窗体）
-
-  `DataGridView` 控件提供一种以表格格式显示数据的功能强大且灵活的方法。 可以使用 `DataGridView` 控件来显示少量数据的只读视图，或者可以缩放该控件以显示大型数据集的可编辑视图。  
+`DataGridView` 控件提供一种以表格格式显示数据的功能强大且灵活的方法。 可以使用 `DataGridView` 控件来显示少量数据的只读视图，或者可以缩放该控件以显示大型数据集的可编辑视图。  
   
  可以使用多种方法扩展 `DataGridView` 控件，以便将自定义行为置入你的应用程序中。 例如，可以以编程方式指定自己的排序算法，并且可以创建自己的单元格类型。 可以通过在多个属性之间进行选择来轻松地自定义 `DataGridView` 控件的外观。 许多数据存储类型均可用作数据源，或者，`DataGridView` 控件可以在不绑定任何数据源的情况下进行操作。  
   
@@ -81,8 +80,7 @@ ms.locfileid: "57722317"
  提供关于 <xref:System.Windows.Forms.DataGridView> 控件的参考文档。  
   
  <xref:System.Windows.Forms.BindingSource>  
- 提供关于 <xref:System.Windows.Forms.BindingSource> 组件的参考文档。 
-  <xref:System.Windows.Forms.DataGridView> 控件和 <xref:System.Windows.Forms.BindingSource> 组件设计为需紧密协作。  
+ 提供关于 <xref:System.Windows.Forms.BindingSource> 组件的参考文档。 <xref:System.Windows.Forms.DataGridView> 控件和 <xref:System.Windows.Forms.BindingSource> 组件设计为需紧密协作。  
   
 ## <a name="see-also"></a>请参阅
 - [在 Windows 窗体上使用的控件](controls-to-use-on-windows-forms.md)

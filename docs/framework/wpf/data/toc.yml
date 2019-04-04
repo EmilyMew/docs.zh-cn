@@ -1,0 +1,94 @@
+items:
+- name: 数据
+  href: index.md
+  items:
+  - name: 数据绑定
+    href: data-binding-wpf.md
+    items:
+    - name: 数据绑定概述
+      href: data-binding-overview.md
+    - name: 绑定源概述
+      href: binding-sources-overview.md
+    - name: 数据模板化概述
+      href: data-templating-overview.md
+    - name: 绑定声明概述
+      href: binding-declarations-overview.md
+    - name: 帮助主题
+      href: data-binding-how-to-topics.md
+      items:
+      - name: 创建简单绑定
+        href: how-to-create-a-simple-binding.md
+      - name: 指定绑定源
+        href: how-to-specify-the-binding-source.md
+      - name: 让数据可供 XAML 中的绑定使用
+        href: how-to-make-data-available-for-binding-in-xaml.md
+      - name: 控制文本框文本更新源的时间
+        href: how-to-control-when-the-textbox-text-updates-the-source.md
+      - name: 指定绑定方向
+        href: how-to-specify-the-direction-of-the-binding.md
+      - name: 绑定到集合并根据选择的内容显示信息
+        href: how-to-bind-to-a-collection-and-display-information-based-on-selection.md
+      - name: 绑定到枚举
+        href: how-to-bind-to-an-enumeration.md
+      - name: 绑定两个控件的属性
+        href: how-to-bind-the-properties-of-two-controls.md
+      - name: 实现绑定验证
+        href: how-to-implement-binding-validation.md
+      - name: 在自定义对象上实现验证逻辑
+        href: how-to-implement-validation-logic-on-custom-objects.md
+      - name: 从已绑定的目标属性获取绑定对象
+        href: how-to-get-the-binding-object-from-a-bound-target-property.md
+      - name: 实现 CompositeCollection
+        href: how-to-implement-a-compositecollection.md
+      - name: 转换已绑定的数据
+        href: how-to-convert-bound-data.md
+      - name: 在代码中创建绑定
+        href: how-to-create-a-binding-in-code.md
+      - name: 获取数据集合的默认视图
+        href: how-to-get-the-default-view-of-a-data-collection.md
+      - name: 在数据集合视图中浏览对象
+        href: how-to-navigate-through-the-objects-in-a-data-collectionview.md
+      - name: 在视图中筛选数据
+        href: how-to-filter-data-in-a-view.md
+      - name: 在视图中对数据进行排序
+        href: how-to-sort-data-in-a-view.md
+      - name: 在 XAML 中使用视图对数据进行排序和分组
+        href: how-to-sort-and-group-data-using-a-view-in-xaml.md
+      - name: 将主-详细模式与分层数据结合使用
+        href: how-to-use-the-master-detail-pattern-with-hierarchical-data.md
+      - name: 将主-详细模式与分层 XML 数据结合使用
+        href: how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md
+      - name: 根据已绑定项的列表生成值
+        href: how-to-produce-a-value-based-on-a-list-of-bound-items.md
+      - name: 实现属性更改通知
+        href: how-to-implement-property-change-notification.md
+      - name: 创建和绑定到 ObservableCollection
+        href: how-to-create-and-bind-to-an-observablecollection.md
+      - name: 实现 PriorityBinding
+        href: how-to-implement-prioritybinding.md
+      - name: 使用 XMLDataProvider 和 XPath 查询绑定到 XML 数据
+        href: how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md
+      - name: 绑定到 XDocument、XElement 或 LINQ to XML 查询结果
+        href: how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md
+      - name: 在数据绑定中使用 XML 命名空间
+        href: how-to-use-xml-namespaces-in-data-binding.md
+      - name: 绑定到 ADO.NET 数据源
+        href: how-to-bind-to-an-ado-net-data-source.md
+      - name: 绑定到方法
+        href: how-to-bind-to-a-method.md
+      - name: 设置绑定更新通知
+        href: how-to-set-up-notification-of-binding-updates.md
+      - name: 清除绑定
+        href: how-to-clear-bindings.md
+      - name: 查找由 DataTemplate 生成的元素
+        href: how-to-find-datatemplate-generated-elements.md
+      - name: 绑定到 Web 服务
+        href: how-to-bind-to-a-web-service.md
+      - name: 绑定到 LINQ 查询结果
+        href: how-to-bind-to-the-results-of-a-linq-query.md
+ms.openlocfilehash: 7dd345771eb00e8d40f89ce4a925e2263763e8da
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468003"

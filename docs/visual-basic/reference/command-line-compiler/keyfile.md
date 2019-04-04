@@ -6,12 +6,12 @@ helpviewer_keywords:
 - keyfile compiler option [Visual Basic]
 - -keyfile compiler option [Visual Basic]
 ms.assetid: ffa82a4b-517a-4c6c-9889-5bae7b534bb8
-ms.openlocfilehash: a498ec6f79c68ca924525fe837f356f097b01fd1
-ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
+ms.openlocfilehash: c13f34c23cad9c909c2c5bd3447f1a8fa53f9b4d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56746025"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58833295"
 ---
 # <a name="-keyfile"></a>-keyfile
 指定包含密钥或密钥对的文件从而为程序集赋予强名称。  
@@ -52,7 +52,8 @@ vbc -keyfile:myfile.sn input.vb
 ```  
   
 ## <a name="see-also"></a>请参阅
-- [在.NET 中的程序集](../../../standard/assembly/index.md)
+
+- [.NET 中的程序集](../../../standard/assembly/index.md)
 - [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-参考 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
 - [示例编译命令行](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

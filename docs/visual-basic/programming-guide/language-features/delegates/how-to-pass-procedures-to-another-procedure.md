@@ -5,12 +5,12 @@ helpviewer_keywords:
 - AddressOf operator [Visual Basic]
 - delegates [Visual Basic], passing procedures
 ms.assetid: 5adbba15-5a1d-413f-ab3e-3ff6cc0a4669
-ms.openlocfilehash: e9e6165414db00e7d7182e204d86d23debfbf4f6
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: c2305cd18cfaaa67355dfb342f22e39d37ae0e79
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56967732"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58818470"
 ---
 # <a name="how-to-pass-procedures-to-another-procedure-in-visual-basic"></a>如何：将过程传递给 Visual Basic 中的另一个过程
 此示例演示如何使用委托来将过程传递给另一个过程。  
@@ -46,6 +46,7 @@ ms.locfileid: "56967732"
      当`Test`是其调用，首先显示的结果`AddNumbers`作用于`5`和`3`，也就是 8。 然后的结果`SubtractNumbers`对操作`9`和`3`显示，则其为 6。  
   
 ## <a name="see-also"></a>请参阅
+
 - [委托](../../../../visual-basic/programming-guide/language-features/delegates/index.md)
 - [AddressOf 运算符](../../../../visual-basic/language-reference/operators/addressof-operator.md)
 - [Delegate 语句](../../../../visual-basic/language-reference/statements/delegate-statement.md)

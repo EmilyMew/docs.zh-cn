@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a15ae411-8dc2-4ca3-84d2-01c9d5f1972a
-ms.openlocfilehash: 12d7dd8d47262f8eefe8f71f144c5648f089be45
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 56ebe888b816972f8d72873e4fca9f5204e6c772
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54593571"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58408920"
 ---
 # <a name="serialization"></a>序列化
 本主题介绍[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]序列化功能。 下面几段提供了有关在设计时如何在代码生成期间添加序列化以及 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 类的运行时序列化行为的信息。  
   
- 你可以通过以下任一方法在设计时添加序列化代码：  
+ 您可以通过以下任一方法在设计时添加序列化代码：  
   
 -   在中[!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]，更改**序列化模式**属性设置为**Unidirectional**。  
   
@@ -24,9 +24,10 @@ ms.locfileid: "54593571"
 ## <a name="overview"></a>概述  
  生成的代码[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]默认情况下提供延迟的加载功能。 延迟加载对在中间层以透明方式根据需要加载数据而言非常方便。 但是，它会给序列化过程带来问题，原因是不论是否需要进行延迟加载，序列化程序都会触发延迟加载。 实际上，对对象进行序列化时，会对其在所有出站延迟加载引用下的可传递闭包进行序列化。  
   
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 的序列化功能主要通过以下两种机制来解决此问题：  
+ 
+  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 的序列化功能主要通过以下两种机制来解决此问题：  
   
--   用于关闭延迟加载的 <xref:System.Data.Linq.DataContext> 模式 (<xref:System.Data.Linq.DataContext.ObjectTrackingEnabled%2A>)。 有关详细信息，请参阅<xref:System.Data.Linq.DataContext>。  
+-   用于关闭延迟加载的 <xref:System.Data.Linq.DataContext> 模式 (<xref:System.Data.Linq.DataContext.ObjectTrackingEnabled%2A>)。 有关详细信息，请参阅 <xref:System.Data.Linq.DataContext>。  
   
 -   用于在生成的实体中生成 <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType> 和 <xref:System.Runtime.Serialization.DataMemberAttribute?displayProperty=nameWithType> 属性的代码生成开关。 这方面（包括处于序列化过程中的延迟加载类的行为）是本主题的主要介绍对象。  
   
@@ -50,7 +51,7 @@ ms.locfileid: "54593571"
  [!code-csharp[DLinqSerialization#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs/northwind-ser.cs#3)]
  [!code-vb[DLinqSerialization#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/northwind-ser.vb#3)]  
   
- 对于下例中的 `Order` 类，为简洁起见，只显示与 `Customer` 类对应的反向关联属性。 它没有用来避免出现循环的 `DataMember` 属性。  
+ 对于下例中的 `Order` 类，为简洁起见，只显示与 `Customer` 类对应的反向关联属性。 它没有用来避免出现循环的 <xref:System.Runtime.Serialization.DataMemberAttribute> 属性。  
   
  [!code-csharp[DLinqSerialization#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs/northwind-ser.cs#4)]
  [!code-vb[DLinqSerialization#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/northwind-ser.vb#4)]  
@@ -59,13 +60,13 @@ ms.locfileid: "54593571"
  [!code-vb[DLinqSerialization#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/northwind-ser.vb#5)]  
   
 ### <a name="how-to-serialize-the-entities"></a>如何序列化实体  
- 您可以按如下方式序列化上一节中显示的代码中的实体：  
+ 你可以按如下方式序列化上一节中显示的代码中的实体：  
   
  [!code-csharp[DLinqSerialization#6](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs/Program.cs#6)]
  [!code-vb[DLinqSerialization#6](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/Module1.vb#6)]  
   
 ### <a name="self-recursive-relationships"></a>自递归关系  
- 自递归关系遵循相同的模式。 与外键对应的关联属性 (Property) 不具有 `DataMember` 属性 (Attribute)，而父属性 (Property) 则具有。  
+ 自递归关系遵循相同的模式。 与外键对应的关联属性 (Property) 不具有 <xref:System.Runtime.Serialization.DataMemberAttribute> 属性 (Attribute)，而父属性 (Property) 则具有。  
   
  请考虑以下具有两个自递归关系的类：Employee.manager/reports 和 employee.mentor /。  
   

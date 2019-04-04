@@ -29,12 +29,12 @@ helpviewer_keywords:
 ms.assetid: 864c2344-71dc-46f9-96b2-ed59fb6427a8
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: dd0fef0e8a2c4b94cd5dd7beb140e669c52a07a8
-ms.sourcegitcommit: 3c1c3ba79895335ff3737934e39372555ca7d6d0
+ms.openlocfilehash: 598722c44d8d20adab9ce7d624edb820f67c0fa4
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43862311"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654089"
 ---
 # <a name="profiling-overview"></a>分析概述
 <a name="top"></a> 探查器是一种工具，监视另一个应用程序的执行。 公共语言运行时 (CLR) 探查器是一个动态链接库 (DLL)，具有使用分析 API 从 CLR 中接收消息以及向 CLR 发送消息的功能。 CLR 在运行时加载探查器 DLL。  
@@ -78,13 +78,12 @@ ms.locfileid: "43862311"
   
  下图显示探查器 DLL 如何与所分析应用程序和 CLR 交互。  
   
- ![分析体系结构](../../../../docs/framework/unmanaged-api/profiling/media/profilingarch.png "ProfilingArch")  
-分析体系结构  
+ ![显示分析体系结构的屏幕截图。](./media/profiling-overview/profiling-architecture.png)  
   
 ### <a name="the-notification-interfaces"></a>通知接口  
  [ICorProfilerCallback](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)并[ICorProfilerCallback2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)可视为通知接口。 这些接口如包含方法[ClassLoadStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md)， [ClassLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadfinished-method.md)，并[JITCompilationStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationstarted-method.md)。 每次 CLR 进行加载或卸载类、编译函数等操作时，都会调用探查器的 `ICorProfilerCallback` 或 `ICorProfilerCallback2` 接口中的相应方法。  
   
- 例如，探查器可以测量代码性能，通过两个通知函数： [FunctionEnter2](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md)并[FunctionLeave2](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md)。 它会对每个通知添加时间戳、累积结果并输出一个列表指示在应用程序执行期间哪个函数占用的 CPU 最多或消耗的时钟时间最长。  
+ 例如，探查器可以测量代码性能，通过两个通知函数：[FunctionEnter2](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md)并[FunctionLeave2](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md)。 它会对每个通知添加时间戳、累积结果并输出一个列表指示在应用程序执行期间哪个函数占用的 CPU 最多或消耗的时钟时间最长。  
   
 ### <a name="the-information-retrieval-interfaces"></a>信息检索接口  
  其他主要接口分析涉及[ICorProfilerInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)并[ICorProfilerInfo2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)。 探查器根据需要调用这些接口，以获取更多的信息来帮助进行分析。 例如，每当 CLR 调用[FunctionEnter2](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md)函数，它会提供函数标识符。 探查器可以通过调用来获取有关该函数的详细信息[ICorProfilerInfo2::GetFunctionInfo2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getfunctioninfo2-method.md)方法来发现该函数的父类、 其名称和等等。  
@@ -214,7 +213,7 @@ ms.locfileid: "43862311"
 ### <a name="shadow-stack"></a>阴影堆栈  
  过度频繁使用快照方法很快就会产生性能问题。 如果你想要经常执行的堆栈跟踪，探查器而是应使用生成阴影堆栈[FunctionEnter2](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md)， [FunctionLeave2](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md)， [FunctionTailcall2](../../../../docs/framework/unmanaged-api/profiling/functiontailcall2-function.md)，并[ICorProfilerCallback2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)异常回调。 阴影堆栈始终是最新的，并且在需要堆栈快照时可以快速复制到存储区。  
   
- 阴影堆栈可以获取函数参数、返回值和有关泛型实例化的信息。 泛型实例化信息只能通过阴影堆栈获取，并可能在将控件传递到函数时获取。 然而，后续运行此函数时，此信息可能不可用。  
+ 阴影堆栈可以获取函数自变量、返回值和有关泛型实例化的信息。 泛型实例化信息只能通过阴影堆栈获取，并可能在将控件传递到函数时获取。 然而，后续运行此函数时，此信息可能不可用。  
   
  [返回页首](#top)  
   
@@ -227,7 +226,7 @@ ms.locfileid: "43862311"
 <a name="related_topics"></a>   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|描述|  
 |-----------|-----------------|  
 |[设置分析环境](../../../../docs/framework/unmanaged-api/profiling/setting-up-a-profiling-environment.md)|说明如何初始化探查器、设置事件通知和分析 Windows 服务。|  
 |[Profiling 接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)|描述分析 API 使用的非托管接口。|  

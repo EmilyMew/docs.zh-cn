@@ -7,12 +7,12 @@ helpviewer_keywords:
 - data types [Visual Basic], object variable
 - variables [Visual Basic], object
 ms.assetid: 31555704-58a3-49f1-9a0a-6421f605664f
-ms.openlocfilehash: ce38089e91b25cf50e738d956881f3a44bfa3306
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c17c5f85952596f0a080ca473e8f792740e66b8f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54588713"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58840388"
 ---
 # <a name="object-variable-values-visual-basic"></a>对象变量值 (Visual Basic)
 变量[Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)可以指任何类型的数据。 在中存储的值`Object`变量保存到其他位置在内存中，而变量本身保存一个指针，该数据。  
@@ -67,6 +67,7 @@ If TypeOf frm Is Object Then Debug.WriteLine("frm is Object")
  您可以声明和使用数组`Object`变量。 当您需要处理各种数据类型和对象类时，这很有用。 数组中的所有元素必须都具有相同的声明的数据类型。 声明此数据类型为`Object`可以用于存储对象和类实例及其他数组中的数据类型。  
   
 ## <a name="see-also"></a>请参阅
+
 - [对象变量](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
 - [对象变量声明](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
 - [对象变量赋值](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)

@@ -282,8 +282,7 @@ serviceHost.Credentials.UserNameAuthentication.CustomUserNamePasswordValidator =
 </behavior>
 ```
 
-Windows Communication Foundation (WCF) 提供丰富的基于声明的模型，用于执行访问检查。 
-  <xref:System.ServiceModel.ServiceAuthorizationManager> 对象用于执行访问检查，并确定与客户端关联的声明是否满足访问服务方法的必需要求。
+Windows Communication Foundation (WCF) 提供丰富的基于声明的模型，用于执行访问检查。 <xref:System.ServiceModel.ServiceAuthorizationManager> 对象用于执行访问检查，并确定与客户端关联的声明是否满足访问服务方法的必需要求。
 
 出于演示目的，此示例演示的实现<xref:System.ServiceModel.ServiceAuthorizationManager>，它实现<xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A>方法，以允许对方法的用户的访问权限基于声明的类型`http://example.com/claims/allowedoperation`其值是为该操作的操作 URI允许调用。
 
@@ -378,8 +377,7 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 }
 ```
 
-上面的代码演示了 <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%28System.IdentityModel.Policy.EvaluationContext%2CSystem.Object%40%29> 方法如何检查尚未添加影响处理的新声明，并添加特定的声明。 允许的声明是从 `GetAllowedOpList` 方法中获得的，实现该方法是为了返回允许用户执行的特定操作的列表。 授权策略添加了访问特定操作的声明。 
-  <xref:System.ServiceModel.ServiceAuthorizationManager> 然后使用此授权策略执行访问检查决策。
+上面的代码演示了 <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%28System.IdentityModel.Policy.EvaluationContext%2CSystem.Object%40%29> 方法如何检查尚未添加影响处理的新声明，并添加特定的声明。 允许的声明是从 `GetAllowedOpList` 方法中获得的，实现该方法是为了返回允许用户执行的特定操作的列表。 授权策略添加了访问特定操作的声明。 <xref:System.ServiceModel.ServiceAuthorizationManager> 然后使用此授权策略执行访问检查决策。
 
 实现自定义 <xref:System.IdentityModel.Policy.IAuthorizationPolicy> 后，必须通知服务主机关于要使用的授权策略的信息。
 

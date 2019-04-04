@@ -56,7 +56,7 @@ Dim sales()() As Double = New Double(11)() {}
 
 - 元素中包含的值表示每个年级的学生数量。
 
-![显示学生人数的数组图片](../../language-features/arrays/media/arrayexampleschool.gif "ArrayExampleSchool") "学生"数组的元素
+![显示学生人数的数组的关系图](./media/index/students-array-elements.gif)
 
 下面的示例包含用于创建和使用数组的 Visual Basic 代码：
 

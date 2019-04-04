@@ -30,8 +30,7 @@ ms.locfileid: "57366096"
 
 <xref:System.Transactions.Transaction.EnlistDurable%2A> 方法用于登记要作为持久资源参与事务的资源管理器。  如果持久资源管理器在事务执行期间关闭，则它在重新联机后，应在它作为参与者且未完成第 2 阶段的所有事务中重新登记（使用 <xref:System.Transactions.TransactionManager.Reenlist%2A> 方法）来执行恢复，并在完成恢复处理后调用 <xref:System.Transactions.TransactionManager.RecoveryComplete%2A>。 有关恢复的详细信息，请参阅[Performing Recovery](../../../../docs/framework/data/transactions/performing-recovery.md)。
 
-
-  <xref:System.Transactions.Transaction.EnlistDurable%2A> 方法都采用 <xref:System.Guid> 对象作为其第一个参数。 事务管理器使用 <xref:System.Guid> 将持久登记与特定的资源管理器关联。 因此，资源管理器在重新启动后必须统一使用同一 <xref:System.Guid> 来标识自身，即使跨不同的资源管理器时也是如此；否则恢复操作就可能失败。
+<xref:System.Transactions.Transaction.EnlistDurable%2A> 方法都采用 <xref:System.Guid> 对象作为其第一个参数。 事务管理器使用 <xref:System.Guid> 将持久登记与特定的资源管理器关联。 因此，资源管理器在重新启动后必须统一使用同一 <xref:System.Guid> 来标识自身，即使跨不同的资源管理器时也是如此；否则恢复操作就可能失败。
 
 <xref:System.Transactions.Transaction.EnlistDurable%2A> 方法的第二个参数是对资源管理器所实现的用于接收事务通知的对象的引用。 您所使用的重载会向事务管理器通知资源管理器是否支持单阶段提交 (SPC) 优化。 大多数情况下，应实现 <xref:System.Transactions.IEnlistmentNotification> 接口来参与两阶段提交 (2PC)。 但如果要优化提交过程，可考虑实现 <xref:System.Transactions.ISinglePhaseNotification> 接口来参与 SPC。 有关 SPC 的更多信息，请参阅[单阶段和多阶段中提交事务](../../../../docs/framework/data/transactions/committing-a-transaction-in-single-phase-and-multi-phase.md)并[优化使用 Single Phase Commit and Promotable Single Phase Notification](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md)。
 

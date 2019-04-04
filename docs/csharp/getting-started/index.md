@@ -36,10 +36,6 @@ ms.date: 08/23/2017
 
 ## <a name="related-sections"></a>相关章节
 
-* [使用 Visual Studio C# 开发环境](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
-
-    提供使用 Visual C# 集成开发环境的指南。
-
 * [C# 编程指南](../../csharp/programming-guide/index.md)
 
     提供关于 C# 编程概念的信息并描述如何用 C# 执行各种任务。
@@ -48,14 +44,10 @@ ms.date: 08/23/2017
 
     提供关于 C# 关键字、运算符、预处理器指令、编译器选项以及编译器错误与警告的详细参考信息。
 
-* [Visual Studio 示例](/visualstudio/ide/visual-studio-samples)
-
-    提供有关如何访问联机示例的信息。
-
 * [演练](../../csharp/walkthroughs.md)
 
     提供指向使用 C# 的编程演练和每个演练的简要概述的链接。
 
 ## <a name="see-also"></a>请参阅
 
-- [借助 Visual Studio 开始使用 Visual C# 和 Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+- * [使用 Visual Studio 进行 C# 开发](/visualstudio/get-started/csharp/)

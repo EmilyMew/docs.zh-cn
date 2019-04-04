@@ -1,0 +1,49 @@
+items:
+- name: 语句、表达式和运算符
+  href: index.md
+  items:
+  - name: 语句
+    href: statements.md
+  - name: 表达式
+    href: expressions.md
+    items:
+    - name: Expression-Bodied 成员
+      href: expression-bodied-members.md
+  - name: 运算符
+    href: operators.md
+  - name: 匿名函数
+    href: anonymous-functions.md
+    items:
+    - name: Lambda 表达式
+      href: lambda-expressions.md
+      items:
+      - name: 如何：在查询中使用 Lambda 表达式
+        href: how-to-use-lambda-expressions-in-a-query.md
+      - name: 如何：在 LINQ 外部使用 Lambda 表达式
+        href: how-to-use-lambda-expressions-outside-linq.md
+    - name: 匿名方法
+      href: anonymous-methods.md
+  - name: 可重载运算符
+    href: overloadable-operators.md
+  - name: 转换运算符
+    href: conversion-operators.md
+    items:
+    - name: 使用转换运算符
+      href: using-conversion-operators.md
+    - name: 如何：在结构之间实现用户定义的转换
+      href: how-to-implement-user-defined-conversions-between-structs.md
+  - name: 默认值表达式
+    href: default-value-expressions.md
+  - name: 相等性比较
+    href: equality-comparisons.md
+    items:
+    - name: 如何：为类型定义值相等性
+      href: how-to-define-value-equality-for-a-type.md
+    - name: 如何：测试引用相等性（标识）
+      href: how-to-test-for-reference-equality-identity.md
+ms.openlocfilehash: d5f37fd97cf72c7c8d9b7854753eb25fdea8bbb2
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467969"

@@ -2,12 +2,12 @@
 title: 如何：使用组 (LINQ) (Visual Basic 中) 将一个文件拆分成多个文件
 ms.date: 07/20/2015
 ms.assetid: 5e8b2a2b-0b1d-4933-8a2b-03e91dfaf77f
-ms.openlocfilehash: 806a1f6c5674e670402d3d612f169582df5e0155
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: aa96fb4042d9469fb6ffc5b0dc14a01e492f39a2
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54616974"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58828545"
 ---
 # <a name="how-to-split-a-file-into-many-files-by-using-groups-linq-visual-basic"></a>如何：使用组 (LINQ) (Visual Basic 中) 将一个文件拆分成多个文件
 此示例演示一种进行以下操作的方法：合并两个文件的内容，然后创建一组以新方式整理数据的新文件。  
@@ -29,7 +29,7 @@ ms.locfileid: "54616974"
     Garcia, Debra  
     ```  
   
-2.  将这些名称复制到名为 names2.txt 的文本文件并将其保存在项目文件夹中：请注意，这两个文件拥有一些共同的名称。  
+2.  将下面的姓名复制到名为 names2.txt 的文本文件，然后将此文件保存到项目文件夹：请注意，这两个文件拥有一些共同的名称。  
   
     ```  
     Liu, Jinghao  
@@ -119,5 +119,6 @@ End Class
  创建面向 .NET Framework 3.5 或更高版本的项目，此项目包含对 System.Core.dll 的引用和用于 System.Linq 命名空间的 `Imports` 语句。  
   
 ## <a name="see-also"></a>请参阅
+
 - [LINQ 和字符串 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
 - [LINQ 和文件目录 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)

@@ -2,12 +2,12 @@
 title: 可区分联合
 description: 了解如何使用F#可区分联合。
 ms.date: 05/16/2016
-ms.openlocfilehash: 1bb6dc06fb727f85eb5500719b175fc29090450b
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 9d3f423d068df1c43791919b0d71ca82304ae85e
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53611862"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821421"
 ---
 # <a name="discriminated-unions"></a>可区分联合
 
@@ -156,7 +156,7 @@ Area of rectangle that has height 5.000000 and width 10.000000 is 50.000000
 
 在前面的代码，`resultSumTree`具有值 10。 下图显示的树结构`myTree`。
 
-![Mytree 的树结构](../media/TreeStructureDiagram.png)
+![图，显示 mytree 的树结构。](../media/discriminated-unions/tree-structure-mytree.png)
 
 如果在树中的节点是异类是可行的可区分的联合。 在下面的代码中，类型`Expression`表示一种简单的编程语言支持添加中的表达式的抽象语法树和乘法的数字和变量。 一些联合用例不是递归的表示数字 (`Number`) 或变量 (`Variable`)。 其他情况下是递归的并表示操作 (`Add`和`Multiply`)、 的操作数也是表达式。 `Evaluate`函数使用匹配表达式以递归方式处理语法树。
 

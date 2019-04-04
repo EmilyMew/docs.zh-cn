@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - netTcpBinding Element
 ms.assetid: 5c5104a7-8754-4335-8233-46a45322503e
-ms.openlocfilehash: 54e9a488b9e83b07d1d6d7e18e92ecedc5c74ea6
-ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
+ms.openlocfilehash: d719b5c65eda8299170705cede81907a51b12e79
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55759179"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58412274"
 ---
 # <a name="nettcpbinding"></a>\<netTcpBinding>
 
@@ -65,8 +65,9 @@ ms.locfileid: "55759179"
 |特性|描述|  
 |---------------|-----------------|  
 |`closeTimeout`|一个 <xref:System.TimeSpan> 值，指定为完成关闭操作提供的时间间隔。 此值应大于或等于 <xref:System.TimeSpan.Zero>。 默认值为 00:01:00。|  
-|`hostnameComparisonMode`|指定用于分析 URI 的 HTTP 主机名比较模式。 此属性的类型为 `System.ServiceModel.HostnameComparisonMode`，指示在对 URI 进行匹配时，是否使用主机名来访问服务。 默认值为 `StrongWildcard`，表示忽略匹配项中的主机名。|  
-|`listenBacklog`|一个正整数，指定侦听器上等待接受的最大通道数。 超出此限制的连接会被排队，直到连接数低于限制值。 `connectionTimeout` 属性限制客户端在引发连接异常之前将等待连接的时间。 默认值为 10。|  
+|`hostNameComparisonMode`|指定用于分析 URI 的 HTTP 主机名比较模式。 此属性的类型为 <xref:System.ServiceModel.HostNameComparisonMode>，指示在对 URI 进行匹配时，是否使用主机名来访问服务。 默认值为 <xref:System.ServiceModel.HostNameComparisonMode.StrongWildcard>，表示忽略匹配项中的主机名。|  
+|`listenBacklog`|一个正整数，指定侦听器上等待接受的最大通道数。 超出此限制的连接会被排队，直到连接数低于限制值。 
+  `connectionTimeout` 属性限制客户端在引发连接异常之前将等待连接的时间。 默认值为 10。|  
 |`maxBufferPoolSize`|一个整数，指定此绑定的最大缓冲池大小。 默认值为 512 * 1024 字节。 Windows Communication Foundation (WCF) 的许多部件使用缓冲区。 每次使用缓冲区时，创建和销毁它们都将占用大量资源，而缓冲区的垃圾回收过程也是如此。 利用缓冲池，可以从缓冲池中获得缓冲区，使用缓冲区，然后在完成工作后将其返回给缓冲池。 这样就避免了创建和销毁缓冲区的系统开销。|  
 |`maxBufferSize`|一个正整数，指定内存中用于存储消息的缓冲区的最大大小（字节）。<br /><br /> 如果 `transferMode` 属性等于 `Buffered`，则此属性应等于 `maxReceivedMessageSize` 属性值。<br /><br /> 如果 `transferMode` 属性等于 `Streamed`，则此属性不能大于 `maxReceivedMessageSize` 属性值，应当至少为标头的大小。<br /><br /> 默认值为 65536。 有关详细信息，请参阅 <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxBufferSize%2A>。|  
 |`maxConnections`|一个整数，指定服务将创建/接受的最大出站和入站连接数。 传入和传出连接分别根据此属性指定的限制进行计数。<br /><br /> 超出此限制的入站连接需要排队，直到连接数低于限制值。<br /><br /> 超出此限制的出站连接需要排队，直到连接数低于限制值。<br /><br /> 默认值为 10。|  
@@ -98,7 +99,7 @@ ms.locfileid: "55759179"
 
 默认情况下，此绑定会生成一个运行时通信堆栈，该堆栈使用传输安全、用于消息传递的 TCP 和二进制消息编码机制。 此绑定是用于通过 Intranet 进行通信的相应 Windows Communication Foundation (WCF) 系统提供选择。  
   
- 默认配置`netTcpBinding`比提供的配置更快`wsHttpBinding`，但它只是为 WCF 的通信。 可以使用可选的 `securityMode` 属性配置安全行为。 使用可选的 `reliableSessionEnabled` 属性可以配置 WS-ReliableMessaging 的用法。 但是在默认情况下可靠消息传递为关闭状态。 一般来说，HTTP 系统提供的绑定（如 `wsHttpBinding` 和 `basicHttpBinding`）是默认配置为打开事项，而 `netTcpBinding` 绑定是默认配置为关闭事项，因此，您必须选择性加入所需事项才能获取支持，例如获取对一种 WS-* 规范的支持。 这意味着在终结点之间交换消息时，TCP 的默认配置比 HTTP 绑定的默认配置更快。  
+ 默认配置`netTcpBinding`比提供的配置更快`wsHttpBinding`，但它只是为 WCF 的通信。 可以使用可选的 `securityMode` 属性配置安全行为。 使用可选的 `reliableSessionEnabled` 属性可以配置 WS-ReliableMessaging 的用法。 但是在默认情况下可靠消息传递为关闭状态。 一般来说，HTTP 系统提供的绑定（如 `wsHttpBinding` 和 `basicHttpBinding`）是默认配置为打开事项，而 `netTcpBinding` 绑定是默认配置为关闭事项，因此，你必须选择性加入所需事项才能获取支持，例如获取对一种 WS-* 规范的支持。 这意味着在终结点之间交换消息时，TCP 的默认配置比 HTTP 绑定的默认配置更快。  
   
 ## <a name="example"></a>示例
 

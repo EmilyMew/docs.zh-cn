@@ -2,12 +2,12 @@
 title: 如何：执行表达式树 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 9dfb5ab3-f48f-417e-975f-f8f6f1cdc18d
-ms.openlocfilehash: fde681905cded0e4043f52c5f2a29cee74b91209
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cccb0b301e1da6d82c616d56604ad46dfde83e2a
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54729348"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58837490"
 ---
 # <a name="how-to-execute-expression-trees-visual-basic"></a>如何：执行表达式树 (Visual Basic)
 本主题演示如何执行表达式树。 执行表达式树可能返回一个值，或者它可能只是执行操作，例如调用方法。  
@@ -49,5 +49,6 @@ MsgBox(result)
 -   包括 System.Linq.Expressions 命名空间。  
   
 ## <a name="see-also"></a>请参阅
+
 - [表达式树 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)
 - [如何：修改表达式树 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)

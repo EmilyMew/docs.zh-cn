@@ -2,12 +2,12 @@
 title: 检索段落及其样式 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: d9ed2238-d38e-4ad4-b88b-db7859df9bde
-ms.openlocfilehash: a726c3b609d778d8d91be61091a3627ec1358dfc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3c6554c44c95db13aada0d9edf96cc2df595c6d1
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54716021"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58816936"
 ---
 # <a name="retrieving-the-paragraphs-and-their-styles-visual-basic"></a>检索段落及其样式 (Visual Basic)
 在本示例中，我们编写一个从 WordprocessingML 文档检索段落节点的查询。 它还标识每个段落的样式。  
@@ -135,4 +135,5 @@ StyleName:Code
  在下一主题[检索段落 (Visual Basic 中) 的文本](../../../../visual-basic/programming-guide/concepts/linq/retrieving-the-text-of-the-paragraphs.md)，你将创建一个查询来检索段落的文本。  
   
 ## <a name="see-also"></a>请参阅
+
 - [教程：操作 WordprocessingML 文档 (Visual Basic 中) 中的内容](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

@@ -17,12 +17,12 @@ helpviewer_keywords:
 - members [Visual Basic], Implements keyword
 - reimplementation
 ms.assetid: 5252cdf9-964d-4fc6-af0f-0449b7126b5a
-ms.openlocfilehash: cb0ea5ce52effad4df541e6a9196b1faf279262e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 05de1d9f8966c17d84deba34f27819cce4aff3fe
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54522501"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832614"
 ---
 # <a name="implements-clause-visual-basic"></a>Implements 子句 (Visual Basic)
 指示类或结构成员提供在接口中定义的成员的实现。  
@@ -45,6 +45,7 @@ ms.locfileid: "54522501"
 - [Sub 语句](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [Implements 语句](../../../visual-basic/language-reference/statements/implements-statement.md)
 - [Interface 语句](../../../visual-basic/language-reference/statements/interface-statement.md)
 - [Class 语句](../../../visual-basic/language-reference/statements/class-statement.md)

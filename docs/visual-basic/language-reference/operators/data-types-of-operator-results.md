@@ -9,12 +9,12 @@ helpviewer_keywords:
 - data types [Visual Basic], ranges
 - operators [Visual Basic], result data types
 ms.assetid: 9d524533-e1a1-4aa8-b1b8-622068173d06
-ms.openlocfilehash: 90e3c8b61bd920ab06090f3f889d6cc61c354294
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 45dcc80ee791da1c2731ba32f0ebd34564faf806
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54650478"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814957"
 ---
 # <a name="data-types-of-operator-results-visual-basic"></a>运算符结果的数据类型 (Visual Basic)
 Visual Basic 确定基于操作数的数据类型的操作的结果数据类型。 在某些情况下这可能是更大的范围比的其中一个操作数的数据类型。  
@@ -112,7 +112,7 @@ Visual Basic 确定基于操作数的数据类型的操作的结果数据类型�
 |`Integer`|整数|整数|整数|整数|整数|整数|Long|Long|十进制|  
 |`UInteger`|Long|Long|UInteger|Long|UInteger|Long|UInteger|Long|ULong|  
 |`Long`|Long|Long|Long|Long|Long|Long|Long|Long|十进制|  
-|`ULong`|Decimal|十进制|ULong|十进制|ULong|十进制|ULong|十进制|ULong|  
+|`ULong`|十进制|十进制|ULong|十进制|ULong|十进制|ULong|十进制|ULong|  
   
 ### <a name="-operator"></a>\ 运算符  
  下表显示了结果数据类型为`\`运算符。 请注意，此表是对称;对于操作数数据类型的给定组合，结果数据类型是操作数的顺序相同。  
@@ -176,6 +176,7 @@ Visual Basic 确定基于操作数的数据类型的操作的结果数据类型�
  `Like`运算符定义只进行模式匹配的`String`操作数。 Visual Basic 会尝试将根据需要向每个操作数转换`String`操作之前。 结果数据类型始终是`Boolean`。  
   
 ## <a name="see-also"></a>请参阅
+
 - [数据类型](../../../visual-basic/language-reference/data-types/index.md)
 - [运算符和表达式](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
 - [在 Visual Basic 中的算术运算符](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

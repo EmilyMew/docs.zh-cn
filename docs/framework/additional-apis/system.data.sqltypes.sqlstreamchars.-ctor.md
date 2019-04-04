@@ -3,8 +3,7 @@ title: SqlStreamChars 构造函数 (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein
 ms.date: 12/20/2018
-ms.technology:
-- dotnet-data
+ms.technology: dotnet-data
 topic_type:
 - apiref
 api_name:
@@ -13,12 +12,12 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 9ae990830b748f642290581d29b76284edd41e4f
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.openlocfilehash: 17bfd9af4fe0d255bb1dcd1bd4ce714f4abb6782
+ms.sourcegitcommit: d938c39afb9216db377d0f0ecdaa53936a851059
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55827131"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58633980"
 ---
 # <a name="sqlstreamchars-constructor"></a>SqlStreamChars 构造函数
 

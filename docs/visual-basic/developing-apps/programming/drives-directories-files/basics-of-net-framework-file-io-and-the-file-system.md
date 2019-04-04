@@ -9,12 +9,12 @@ helpviewer_keywords:
 - streams
 - streams, definition
 ms.assetid: 49d837c0-cf28-416f-8606-4d83d7b479ef
-ms.openlocfilehash: 365c3b8f0aa107f7106e0c83d1fa60de6f4903f2
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.openlocfilehash: f0d5c4e48d8a44c2e39942cbe76acbb5ef44ea7d
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57674557"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58462768"
 ---
 # <a name="basics-of-net-framework-file-io-and-the-file-system-visual-basic"></a>.NET Framework 文件 I/O 和文件系统基础知识 (Visual Basic)
 
@@ -29,7 +29,7 @@ ms.locfileid: "57674557"
 
 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 使用流来支持从文件中读取和写入文件。 可以将流视为一维连续数据集，具有开始和结束，并且其中的游标指示流中的当前位置。
 
-![光标显示了 filestream.](../../../../visual-basic/developing-apps/programming/drives-directories-files/media/filestream.gif "FileStream") 中的当前位置
+![光标显示了 Filestream 中的当前位置。](./media/basics-of-net-framework-file-io-and-the-file-system/filestream-cursor-position.gif)
 
 ## <a name="stream-operations"></a>流操作
 
@@ -59,7 +59,7 @@ ms.locfileid: "57674557"
 
 下表列出了通常使用流完成的任务：
 
-|到|查看|
+|功能|查看|
 |---|---|
 |读取和写入数据文件|[如何：对新建的数据文件进行读取和写入](../../../../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|
 |从文件中读取文本|[如何：从文件中读取文本](../../../../standard/io/how-to-read-text-from-a-file.md)|
@@ -77,7 +77,7 @@ ms.locfileid: "57674557"
 
 下表列出涉及文件访问和文件特性的任务：
 
-|到|查看|
+|功能|查看|
 |---|---|
 |打开并追加文本到日志文件|[如何：打开并追加到日志文件](../../../../standard/io/how-to-open-and-append-to-a-log-file.md)|
 |确定文件特性|<xref:System.IO.FileAttributes>|
@@ -92,7 +92,7 @@ ms.locfileid: "57674557"
 
 下表列出了通常与独立文件存储相关联的任务。
 
-|到|查看|
+|功能|查看|
 |---|---|
 |创建独立存储区|[如何：获取独立存储的存储区](../../../../standard/io/how-to-obtain-stores-for-isolated-storage.md)|
 |枚举独立存储区|[如何：枚举独立存储的存储区](../../../../standard/io/how-to-enumerate-stores-for-isolated-storage.md)|

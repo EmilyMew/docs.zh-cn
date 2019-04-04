@@ -2,12 +2,12 @@
 title: 实例化初始化
 ms.date: 03/30/2017
 ms.assetid: 154d049f-2140-4696-b494-c7e53f6775ef
-ms.openlocfilehash: f4162eb454a0cdeb0db68c1e469da289b8e7ba78
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ec44276d56b0a914c742a5a709f2207f8111e57b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54720962"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827908"
 ---
 # <a name="instancing-initialization"></a>实例化初始化
 此示例扩展[池](../../../../docs/framework/wcf/samples/pooling.md)示例通过定义一个接口， `IObjectControl`，这通过激活和停用它来自定义对象的初始化。 客户端调用向池中返回对象以及不向池中返回对象的方法。  
@@ -205,7 +205,7 @@ public class PoolService : IPoolService
   
  对象池就在从池中返回对象之前调用 `Activate` 方法。 当对象重新返回到池中后，将调用 `Deactivate`。 <xref:System.EnterpriseServices.ServicedComponent> 基类还有一个称为 `boolean` 的 `CanBePooled` 属性，它可用于通知池是否可以对对象进一步进行池处理。  
   
- 为了模拟此功能，此示例声明了一个具有上述成员的公共接口 (`IObjectControl`)。 此接口然后由用来提供上下文特定初始化的服务类来实现。 必须修改 <xref:System.ServiceModel.Dispatcher.IInstanceProvider> 实现才能满足这些需求。 现在，每次调用可获取对象`GetInstance`方法，必须检查该对象是否实现`IObjectControl.`如果是这样，您必须调用`Activate`方法正确。  
+ 为了模拟此功能，此示例声明了一个具有上述成员的公共接口 (`IObjectControl`)。 此接口然后由用来提供上下文特定初始化的服务类来实现。 必须修改 <xref:System.ServiceModel.Dispatcher.IInstanceProvider> 实现才能满足这些要求。 现在，每次调用可获取对象`GetInstance`方法，必须检查该对象是否实现`IObjectControl.`如果是这样，您必须调用`Activate`方法正确。  
   
 ```  
 if (obj is IObjectControl)  
@@ -265,4 +265,3 @@ else if (pool.Count < minPoolSize)
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Initialization`  
   
-## <a name="see-also"></a>请参阅

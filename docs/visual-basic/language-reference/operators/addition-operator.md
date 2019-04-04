@@ -10,12 +10,12 @@ helpviewer_keywords:
 - strings [Visual Basic], concatenating
 - sum operator [Visual Basic]
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
-ms.openlocfilehash: 448ca9d52d820029464b75a616dc032a7cc41f59
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 4fc8ce96caea436b63fe346139e27ec8dd048f10
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56979634"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814102"
 ---
 # <a name="-operator-visual-basic"></a>+ 运算符 (Visual Basic)
 两个数字相加或返回数值表达式的正值。 此外可以用于连接两个字符串表达式。  
@@ -109,6 +109,7 @@ expression1 + expression2
  若要消除二义性，应使用`&`运算符而不是`+`的串联。  
   
 ## <a name="see-also"></a>请参阅
+
 - [& 运算符](../../../visual-basic/language-reference/operators/concatenation-operator.md)
 - [串联运算符](../../../visual-basic/language-reference/operators/concatenation-operators.md)
 - [算术运算符](../../../visual-basic/language-reference/operators/arithmetic-operators.md)

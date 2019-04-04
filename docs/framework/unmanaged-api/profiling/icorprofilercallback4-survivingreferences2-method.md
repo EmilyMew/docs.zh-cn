@@ -50,8 +50,7 @@ HRESULT SurvivingReferences2(
  `cObjectIDRangeLength`  
  [in] 整数数组，其中每个整数均为内存中保留下来的连续对象块的大小。  
   
- 
-  `objectIDRangeStart` 数组中引用的每个块均指定了大小。  
+ `objectIDRangeStart` 数组中引用的每个块均指定了大小。  
   
 ## <a name="remarks"></a>备注  
  应按以下方式解释 `objectIDRangeStart` 和 `cObjectIDRangeLength` 数组的元素，以确定垃圾回收后对象是否仍存在。 假定 `ObjectID` 值 (`ObjectID`) 在以下范围内：  

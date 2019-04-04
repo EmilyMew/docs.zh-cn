@@ -15,12 +15,12 @@ helpviewer_keywords:
 - literals [Visual Basic], Date
 - '# specifier for Date literals'
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
-ms.openlocfilehash: 528e63e6b7d978b3bbdfcb78e4260b4590db6d7f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 42a36351ad70bc16b6cad63450ee5fcb3ed4f1ef
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54520017"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821353"
 ---
 # <a name="date-data-type-visual-basic"></a>Date 数据类型 (Visual Basic)
 保存 IEEE 64 位（8 字节）值，它代表从 0001 年 1 月 1 日到 9999 年 12 月 31 日的日期，12:00:00 AM（午夜）到 11:59:59.9999999 PM 的时间。 每个增量表示自公历 1 年 1 月 1 日开始后经过的 100 纳秒的时间。 最大值表示 10000 年 1 月 1 日开始之前的 100 纳秒。  
@@ -33,7 +33,7 @@ ms.locfileid: "54520017"
  可以从 <xref:Microsoft.VisualBasic.DateAndTime> 类获取当前日期和时间。  
   
 ## <a name="format-requirements"></a>格式要求  
- 必须将 `Date` 文字括在数字符号 (`# #`) 内。 必须以 M/d/yyyy 格式（例如 `#5/31/1993#`）或 yyyy-MM-dd 格式（例如 `#1993-5-31#`）指定日期值。 首先指定年份时，可以使用斜杠。  此要求与你所在的区域设置以及计算机的日期和时间格式设置相互独立。  
+ 必须将 `Date` 文字括在数字符号 (`# #`) 内。 必须以 M/d/yyyy 格式（例如 `#5/31/1993#`）或 yyyy-MM-dd 格式（例如 `#1993-5-31#`）指定日期值。 首先指定年份时，可以使用斜杠。  此需求与你所在的区域设置以及计算机的日期和时间格式设置相互独立。  
   
  此限制的原因是，代码的含义永远不会依据应用程序在其中运行的区域设置而改变。 假设硬编码 `Date` 文字 `#3/4/1998#` 意图使其表示 1998 年 3 月 4 日。 在使用 mm/dd/yyyy 的区域，3/4/1998 将按照你的意图进行编译。 但是，假设你在许多国家/地区部署你的应用程序。 在使用 dd/mm/yyyy 的区域，硬编码的文本将编译为 1998 年 4 月 3 日。 在使用 yyyy/mm/dd 的区域，该文字将会无效（0003 年 4 月 1998 日）并导致编译器错误。  
   
@@ -75,6 +75,7 @@ Dim someDateAndTime As Date = #8/13/2002 12:14 PM#
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.DateTime?displayProperty=nameWithType>
 - [数据类型](../../../visual-basic/language-reference/data-types/index.md)
 - [标准日期和时间格式字符串](../../../standard/base-types/standard-date-and-time-format-strings.md)

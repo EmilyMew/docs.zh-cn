@@ -6,12 +6,12 @@ helpviewer_keywords:
 - delegates [Visual Basic], relaxed conversion
 - conversions [Visual Basic], relaxed delegate
 ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
-ms.openlocfilehash: 96941754f17326893437cdcf83c588880e010cc0
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 57e863d9781721a997ae49e1a5c9d8f3562a1bd0
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56979497"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842715"
 ---
 # <a name="relaxed-delegate-conversion-visual-basic"></a>宽松委托转换 (Visual Basic)
 宽松的委托转换，可将子例程和函数分配给委托或处理程序，即使它们的签名不相同。 因此，绑定到委托将与已允许为方法调用的绑定一致。  
@@ -83,6 +83,7 @@ End Sub
  [!code-vb[VbVbalrRelaxedDelegates#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#11)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [Lambda 表达式](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [扩大转换和收缩转换](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
 - [委托](../../../../visual-basic/programming-guide/language-features/delegates/index.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - comparison operators [Visual Basic], comparing numeric values
 - operators [Visual Basic], comparison
 ms.assetid: 0b570339-5407-474f-8421-e183a8b303ee
-ms.openlocfilehash: cd7ee90e749be76012cf7143787bc6f1d096da03
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: d08974a929a723d4037300f9d72ae03c072d47fa
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56969370"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826153"
 ---
 # <a name="comparison-operators-in-visual-basic"></a>Comparison Operators in Visual Basic
 比较运算符比较两个表达式并返回`Boolean`值，该值表示其值的关系。 有运算符用于比较数字值、 字符串、 比较运算符和运算符用于比较的对象。 所有三种类型的运算符是此处所述。  
@@ -89,6 +89,7 @@ ms.locfileid: "56969370"
  有关详细信息，请参阅[TypeOf 运算符](../../../../visual-basic/language-reference/operators/typeof-operator.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [值的比较](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)
 - [比较运算符](../../../../visual-basic/language-reference/operators/comparison-operators.md)
 - [运算符](../../../../visual-basic/language-reference/operators/index.md)

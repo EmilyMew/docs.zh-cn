@@ -2,12 +2,12 @@
 title: 事务协议
 ms.date: 03/30/2017
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
-ms.openlocfilehash: 60b9da567e8c82edf505a974c9884f6f1738747b
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.openlocfilehash: 26dd82936e7131dd41dd1b2ab1cf830c6fe7d591
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55066229"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58463938"
 ---
 # <a name="transaction-protocols"></a>事务协议
 Windows Communication Foundation (WCF) 实现 Ws-atomic Transaction 和 Ws-coordination 协议。  
@@ -21,9 +21,9 @@ Windows Communication Foundation (WCF) 实现 Ws-atomic Transaction 和 Ws-coord
   
  本主题说明 WS-Atomic Transaction (WS-AT) 规范与安全性的组合，并说明用于事务管理器间通信的安全绑定。 本文档中介绍的方法已经使用 WS-AT 和 WS-Coordination 的其他实现（包括 IBM、IONA、Sun Microsystems 等）成功进行了测试。  
   
- 下图描述了两个事务管理器（事务管理器 1 和事务管理器 2）和两个应用程序（应用程序 1 和应用程序 2）之间的互操作性。  
+ 下图描绘了两个事务管理器，事务管理器 1 和事务管理器 2 和两个应用程序，应用程序 1 和 2 应用程序之间的互操作性：  
   
- ![事务协议](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "事务管理器")  
+ ![显示管理器的事务之间的交互的屏幕截图。](./media/transaction-protocols/transaction-managers-flow.gif)  
   
  假设一个典型的 WS-Coordination/WS-Atomic Transaction 方案具有一个发起方 (I) 和一个参与者 (P)。 发起方和参与者都有事务管理器（分别为 ITM 和 PTM）。 两阶段提交在本主题中称为 2PC。  
   
@@ -36,7 +36,7 @@ Windows Communication Foundation (WCF) 实现 Ws-atomic Transaction 和 Ws-coord
 |5.应用程序消息|16.已准备 (2PC)|  
 |6.使用上下文的 CreateCoordinationContext|17.已准备 (2PC)|  
 |7.注册（持久）|18.已提交（完成）|  
-|8.RegisterResponse|19.提交 (2PC)|  
+|8。RegisterResponse|19.提交 (2PC)|  
 |9.CreateCoordinationContextResponse|20.提交 (2PC)|  
 |10.注册（持久）|21.已提交 (2PC)|  
 |11.RegisterResponse|22.已提交 (2PC)|  
@@ -126,7 +126,7 @@ Windows Communication Foundation (WCF) 实现 Ws-atomic Transaction 和 Ws-coord
  B1241:实现必须支持`wsa:ReferenceParameters`WS 寻址，若要实现的 WCF 的 2PC 消息的相互关系中所述。  
   
 ## <a name="application-message-exchange"></a>应用程序消息交换  
- 只要绑定满足下面的安全需求，应用程序就可以对应用程序间消息随意使用任何特定的绑定：  
+ 只要绑定满足下面的安全要求，应用程序就可以对应用程序间消息随意使用任何特定的绑定：  
   
 -   R2001:应用程序的消息必须流经`t:IssuedTokens`标头与`CoordinationContext`消息的标头中。  
   

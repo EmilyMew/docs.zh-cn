@@ -9,12 +9,12 @@ helpviewer_keywords:
 - structures [Visual Basic], structure variables
 - structure variables [Visual Basic]
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
-ms.openlocfilehash: 78c1d529053a10fc208ee5499b759623c227cb25
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3635729705520518d4c950f8a79da7d1249285bf
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54681803"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58841610"
 ---
 # <a name="structures-and-classes-visual-basic"></a>结构和类 (Visual Basic)
 Visual Basic 统一的结构和类，因此这两个实体支持的大多数功能相同的语法。 但是，也有重要区别结构和类。  
@@ -87,6 +87,7 @@ Visual Basic 统一的结构和类，因此这两个实体支持的大多数功�
 -   **相等。** 逐个元素测试，必须执行两个结构相等性测试。 可以使用比较两个对象变量<xref:System.Object.Equals%2A>方法。 <xref:System.Object.Equals%2A> 指示两个变量是否指向同一个实例。  
   
 ## <a name="see-also"></a>请参阅
+
 - [数据类型](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [复合数据类型](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
 - [值类型和引用类型](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)

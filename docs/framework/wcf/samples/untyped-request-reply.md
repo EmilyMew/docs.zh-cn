@@ -2,12 +2,12 @@
 title: 非类型化的请求-答复
 ms.date: 03/30/2017
 ms.assetid: 0bf0f9d9-7caf-4d3d-8c9e-2d468cca16a5
-ms.openlocfilehash: 2eb6a46d339c9277c1622c0cc16d057b186f1d79
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bdd0ae5ac53bf1a35817efba7ae11d947e3a5b33
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54612744"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58830209"
 ---
 # <a name="untyped-requestreply"></a>非类型化请求/答复
 此示例演示如何定义使用 Message 类的操作协定。  
@@ -89,4 +89,3 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Message\Untyped`  
   
-## <a name="see-also"></a>请参阅

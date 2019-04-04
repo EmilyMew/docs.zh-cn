@@ -2,12 +2,12 @@
 title: 查询表达式
 description: 了解有关进行中的 LINQ 查询表达式支持F#编程语言。
 ms.date: 05/16/2016
-ms.openlocfilehash: e3ad2d4ebf09fff17aba80fcb3fc9853ec06af47
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 1a6450bdcec4240fac58f6c27af2298dfd7f45a2
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56977965"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654817"
 ---
 # <a name="query-expressions"></a>查询表达式
 
@@ -60,7 +60,7 @@ query1
 
 此表假定以下窗体中的数据库：
 
-![示例数据库关系图](../media/StudentCourseDB.png)
+![图，显示一个示例数据库。](./media/query-expressions/student-course-database.png)
 
 下面的表中的代码还假定以下数据库连接代码。 项目应添加对 System.Data、 System.Data.Linq 和 FSharp.Data.TypeProviders 程序集的引用。 本主题末尾包含创建此数据库的代码。
 
@@ -1010,7 +1010,7 @@ query {
     for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
-             (student.StudentID, System.Nullable<int>(100), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(100), student.Age)
          else (student.StudentID, student.Age, student.Age))
 }
 </code></pre>
@@ -1034,9 +1034,9 @@ query {
     for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
-             (student.StudentID, System.Nullable<int>(100), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(100), student.Age)
          elif student.Age.HasValue && student.Age.Value = 0 then
-             (student.StudentID, System.Nullable<int>(1000), student.Age)
+             (student.StudentID, System.Nullable&lt;int&gt;(1000), student.Age)
          else (student.StudentID, student.Age, student.Age))
 }
 </code></pre>

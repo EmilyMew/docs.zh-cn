@@ -2,12 +2,12 @@
 title: 调用方信息 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 15d556eb-4d0c-4497-98a3-7f60abb7d6a1
-ms.openlocfilehash: b3d7c999137b1e62de573470b8327bf070f2b1a9
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 004cb003b6cf980f902d7625694e3d2fbfa5ee42
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57375540"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826049"
 ---
 # <a name="caller-information-visual-basic"></a>调用方信息 (Visual Basic)
 通过使用调用方信息特性，可获取有关方法的调用方的信息。 可以获取源代码的文件路径、源代码中的行号和调用方的成员名称。 此信息有助于跟踪、调试和创建诊断工具。  
@@ -75,6 +75,7 @@ End Sub
 |无包含的成员（例如，程序集级别或应用于类型的特性）|可选参数的默认值。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [属性 (Visual Basic)](../../../visual-basic/language-reference/attributes.md)
 - [常见特性 (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md)
 - [可选参数](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)

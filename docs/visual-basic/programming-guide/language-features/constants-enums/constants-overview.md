@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - constants [Visual Basic]
 ms.assetid: 29016fe8-78b3-4dc8-90b8-1cfec2fa8ac9
-ms.openlocfilehash: 34f3dee4edba58375c5c84b579e39a8a29ebc1bb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2939110de77718baf32e2a0d8f1aa52dba997cf3
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54737684"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58841266"
 ---
 # <a name="constants-overview-visual-basic"></a>常量概述 (Visual Basic)
 常量是有意义的名称采用的数字或字符串不会更改的位置。 常量存储值，如名称所示，将保持不变的应用程序执行中。 可以极大地提高代码的可读性并使其更易于维护使用常量。 包含的值会重新出现的代码中使用它们，或这取决于一些很难记住或没有任何明显的意义的数字。  
@@ -45,5 +45,6 @@ ms.locfileid: "54737684"
 |[Option Strict 语句](../../../../visual-basic/language-reference/statements/option-strict-statement.md)|介绍`Option Strict`语句和它的使用。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [枚举概述](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)
 - [如何：初始化数组变量在 Visual Basic 中](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)

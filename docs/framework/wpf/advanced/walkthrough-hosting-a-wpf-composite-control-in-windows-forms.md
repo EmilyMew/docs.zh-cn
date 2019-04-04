@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - hosting WPF content in Windows Forms [WPF]
 ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
-ms.openlocfilehash: 257462cea4d4926ce5ad22a9d97a3a56e1d6c2a1
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: d38a9c67edb5df89554e9e02274410a825b3384b
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57368267"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654544"
 ---
 # <a name="walkthrough-hosting-a-wpf-composite-control-in-windows-forms"></a>演练：承载 WPF 复合控件在 Windows 窗体中
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 提供了用于创建应用程序的丰富环境。 但是，当您有大量投入时[!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]代码，它可以更有效地扩展现有[!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]应用程序与[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]而不是从头开始重新编写。 常见情况是你想要嵌入其中一个或多个控件实现的与[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]在 Windows 窗体应用程序中。 有关自定义 WPF 控件的详细信息，请参阅[控件自定义](../controls/control-customization.md)。  
@@ -31,10 +31,12 @@ ms.locfileid: "57368267"
 若要完成本演练，必须具有 Visual Studio。  
   
 ## <a name="implementing-the-wpf-composite-control"></a>实现 WPF 复合控件  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]此示例中使用的复合控件是一种简单的数据输入形式，采用用户的名称和地址。 当用户单击两个按钮的其中一个以指示任务已完成时，该控件会引发将该信息返回给主机的自定义事件。 下图显示呈现的控件。  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]此示例中使用的复合控件是一种简单的数据输入形式，采用用户的名称和地址。 当用户单击两个按钮的其中一个以指示任务已完成时，该控件会引发将该信息返回给主机的自定义事件。 下图显示呈现的控件。 
+
+ 下图显示了 WPF 复合控件： 
+
   
- ![简单的 WPF 控件](./media/avaloncontrol.png "AvalonControl")  
-WPF 复合控件  
+ ![显示简单的 WPF 控件的屏幕截图。](./media/walkthrough-hosting-a-wpf-composite-control-in-windows-forms/windows-presentation-foundation-composite-control.png)  
   
 ### <a name="creating-the-project"></a>创建项目  
  启动项目：  
@@ -180,9 +182,10 @@ namespace MyControls
 <a name="winforms_host_section"></a>   
 ## <a name="implementing-the-windows-forms-host-application"></a>实现 Windows 窗体主机应用程序  
  Windows 窗体承载应用程序使用<xref:System.Windows.Forms.Integration.ElementHost>对象承载[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]复合控件。 该应用程序处理`OnButtonClick`事件以接收来自复合控件的数据。 该应用程序还具有一组可用于修改控件外观的选项按钮。 下图显示应用程序。  
-  
- ![Windows 窗体承载 Avalon 控件](./media/wfhost.png "WFHost")  
-Windows 窗体应用程序中承载的 WPF 复合控件  
+
+下图显示了在 Windows 窗体应用程序中承载的 WPF 复合控件"  
+
+ ![显示 Windows 窗体承载 Avalon 控件的 Scteenshot。](./media/walkthrough-hosting-a-wpf-composite-control-in-windows-forms/windows-form-hosting-avalon-control.png)  
   
 ### <a name="creating-the-project"></a>创建项目  
  启动项目：  
@@ -228,7 +231,7 @@ Windows 窗体应用程序中承载的 WPF 复合控件
   
 4.  以下代码添加到<xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType>到窗体控件。  
   
-    |name|Text|  
+    |名称|Text|  
     |----------|----------|  
     |groupBox1|背景色|  
     |groupBox2|前景色|  
@@ -240,7 +243,7 @@ Windows 窗体应用程序中承载的 WPF 复合控件
   
 5.  添加以下<xref:System.Windows.Forms.RadioButton?displayProperty=nameWithType>控件添加到<xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType>控件。  
   
-    |GroupBox|name|Text|  
+    |GroupBox|名称|Text|  
     |--------------|----------|----------|  
     |groupBox1|radioBackgroundOriginal|原始|  
     |groupBox1|radioBackgroundLightGreen|LightGreen|  
@@ -261,7 +264,7 @@ Windows 窗体应用程序中承载的 WPF 复合控件
   
 6.  添加以下<xref:System.Windows.Forms.Label?displayProperty=nameWithType>到最后一个控制<xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType>。 这些控件显示返回的数据[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]复合控件。  
   
-    |GroupBox|name|文本|  
+    |GroupBox|名称|文本|  
     |--------------|----------|----------|  
     |groupBox7|lblName|姓名:|  
     |groupBox7|lblAddress|街道地址:|  

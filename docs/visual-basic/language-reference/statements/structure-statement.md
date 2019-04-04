@@ -12,12 +12,12 @@ helpviewer_keywords:
 - UDT (user-defined types)
 - types [Visual Basic], user-defined
 ms.assetid: 9bd1deea-2a89-4cdc-812c-6dcbb947c391
-ms.openlocfilehash: e8d312bc14cf4df3825586de0eba5cba64856268
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: ab446319a9e0ef295387d0d6768e813a158939c9
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56977508"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58828341"
 ---
 # <a name="structure-statement"></a>Structure 语句
 声明结构的名称，并引入的变量、 属性、 事件和结构包含的过程的定义。  
@@ -105,6 +105,7 @@ End Structure
  [!code-vb[VbVbalrStatements#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#57)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [Class 语句](../../../visual-basic/language-reference/statements/class-statement.md)
 - [Interface 语句](../../../visual-basic/language-reference/statements/interface-statement.md)
 - [Module 语句](../../../visual-basic/language-reference/statements/module-statement.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual Basic code, XML
 - XML [Visual Basic], manipulating
 ms.assetid: da32cffb-198d-41b1-9af3-260fe32e3b7d
-ms.openlocfilehash: 70ba038a2bdf4bde092ef6beecf32ac9ad5cbba1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7ed045b79460b3f1b3178d6bc85de9358d61f116
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54506896"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58835890"
 ---
 # <a name="manipulating-xml-in-visual-basic"></a>在 Visual Basic 中操作 XML
 可以使用*XML 文本*从外部源如字符串、 文件或流加载 XML。 然后，可以使用[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]操作 XML，并使用[!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)]查询的 XML。  
@@ -43,6 +43,7 @@ ms.locfileid: "54506896"
  提供指向介绍如何使用的部分[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]在 Visual Basic 中。  
   
 ## <a name="see-also"></a>请参阅
+
 - [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
 - [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
 - [Visual Basic 中的 LINQ 简介](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

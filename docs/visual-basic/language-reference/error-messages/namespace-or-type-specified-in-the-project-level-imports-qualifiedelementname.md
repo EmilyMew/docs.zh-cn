@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40057
 ms.assetid: 4ae3506e-2ebe-4ff3-995d-14ac60db5e9f
-ms.openlocfilehash: 12d20a88179a3d0c93c18f0aed65ca46b001059a
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 554300f87dbfca351ebcd2d544051968e84880ab
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55283304"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58816795"
 ---
 # <a name="namespace-or-type-specified-in-the-project-level-imports-qualifiedelementname-doesnt-contain-any-public-member-or-cannot-be-found"></a>项目级 Imports 中指定的 Namespace 或类型\<qualifiedelementname > 不包含任何公共成员，或者找不到
 项目级 Imports 中指定的 Namespace 或类型\<qualifiedelementname > 不包含任何公共成员，或者找不到。 请确保该命名空间或类型定义，其中包含至少一个公共成员。 请确保别名名称中不包含其他别名。  
@@ -38,6 +38,7 @@ ms.locfileid: "55283304"
 3.  验证包含的元素公开至少一个`Public`成员。  
   
 ## <a name="see-also"></a>请参阅
+
 - [项目设计器 ->“引用”页 (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)
 - [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)
 - [Public](../../../visual-basic/language-reference/modifiers/public.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - declared elements [Visual Basic], about declared elements
 - variables [Visual Basic], hiding inherited
 ms.assetid: 765728d9-7351-4a30-999d-b5f34f024412
-ms.openlocfilehash: 6cf45b12bebc254a0d96516ab262d7aae3d70746
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2b052b44043deba85c8b142a2bf1a684c1159809
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54691250"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842507"
 ---
 # <a name="how-to-hide-an-inherited-variable-visual-basic"></a>如何：隐藏继承的变量 (Visual Basic)
 在派生的类继承其基类的所有定义。 如果你想要定义为基的类的元素使用相同的名称的变量，则可以隐藏，或者*卷影*，当在派生类中定义您的变量时该基类元素。 如果执行此操作时，派生类中的代码访问您的变量，除非显式绕过隐藏机制。  
@@ -56,6 +56,7 @@ ms.locfileid: "54691250"
  隐藏引入了多个版本具有相同名称的变量。 当代码语句引用的变量名称时，编译器将该引用解析的版本取决于代码语句的位置和限定字符串存在等因素。 这可能会增加被隐藏变量的意外版本中引用的风险。 通过完全限定对隐藏变量的所有引用，可以降低该风险。  
   
 ## <a name="see-also"></a>请参阅
+
 - [对已声明元素的引用](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
 - [在 Visual Basic 中隐藏](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
 - [隐藏和重写之间的差异](../../../../visual-basic/programming-guide/language-features/declared-elements/differences-between-shadowing-and-overriding.md)

@@ -2,12 +2,12 @@
 title: 动态更新
 ms.date: 03/30/2017
 ms.assetid: 8b6ef19b-9691-4b4b-824c-3c651a9db96e
-ms.openlocfilehash: a1d5337bf69cb87d790ce4074cde4c18c989a4d8
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: e28a34e500034eec6cf250d94cf7631ca85a7d40
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57724463"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653881"
 ---
 # <a name="dynamic-update"></a>动态更新
 
@@ -64,7 +64,7 @@ DynamicUpdateServices.PrepareForUpdate(ab);
 
 ### <a name="Update"></a> 更新工作流定义以反映所需的更改
 
-一旦工作流定义准备好进行更新，就可以作出所需的更改。 您可以添加或删除活动，添加、移动或删除公共变量，添加或删除参数，并对活动委托的签名进行更改。 您不能删除正在运行的活动或更改正在运行的委托的签名。 这些更改可利用代码，或在预先承载的工作流设计器中进行。 在以下示例中，自定义 `VerifyAppraisal` 活动添加到 Sequence，后者构成前例中 `MortgageWorkflow` 的主体。
+一旦工作流定义准备好进行更新，就可以作出所需的更改。 你可以添加或删除活动，添加、移动或删除公共变量，添加或删除自变量，并对活动委托的签名进行更改。 您不能删除正在运行的活动或更改正在运行的委托的签名。 这些更改可利用代码，或在预先承载的工作流设计器中进行。 在以下示例中，自定义 `VerifyAppraisal` 活动添加到 Sequence，后者构成前例中 `MortgageWorkflow` 的主体。
 
 ```csharp
 // Make desired changes to the definition. In this example, we are
@@ -101,7 +101,7 @@ using (FileStream fs = System.IO.File.Open(@"C:\WorkflowDefinitions\MortgageWork
 }
 ```
 
-当 <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap%2A?displayProperty=nameWithType> 返回时，克隆的工作流定义和其他动态更新信息（在调用 <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=nameWithType> 时添加）被删除，并且可以保存修改的工作流定义，以便在以后恢复更新工作流实例时使用。 在以下示例中，修改的工作流定义保存到 `MortgageWorkflow_v2.xaml` 中。
+当 <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap%2A?displayProperty=nameWithType> 返回时，克隆的工作流定义和其他动态更新信息（在调用 <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=nameWithType> 时添加）被删除，并且可以保存修改的工作流定义，以便在以后恢复更新工作流实例时使用。 在以下示例中，修改的工作流定义保存到 `MortgageWorkflow_v1.1.xaml` 中。
 
 ```csharp
 // Save the modified workflow definition.

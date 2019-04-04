@@ -8,12 +8,12 @@ helpviewer_keywords:
 - iterators [Visual Basic]
 - Yield statement [Visual Basic]
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
-ms.openlocfilehash: 15cfe48797066986f5c4679e85d5899230c516e9
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: fea91731694f18625e43c5545b353851e72234a6
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57484948"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821083"
 ---
 # <a name="yield-statement-visual-basic"></a>Yield 语句 (Visual Basic)
 将发送到集合的下一个元素`For Each...Next`语句。  
@@ -94,4 +94,5 @@ Next
  有关其他示例，请参阅[迭代器](../../programming-guide/concepts/iterators.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [语句](../../../visual-basic/language-reference/statements/index.md)

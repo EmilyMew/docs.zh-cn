@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Application object
 ms.assetid: a0ecfccf-acf7-49ec-a08b-72e6458c5c8d
-ms.openlocfilehash: 9c4073260fa0f43339c6f139b6dce92964c27db2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c88e9da85357df5b0bbbb5957ed2f7ca8276a04b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54507381"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58818407"
 ---
 # <a name="myapplication-object"></a>My.Application 对象
 提供属性、 方法和与当前应用程序相关的事件。  
@@ -31,5 +31,6 @@ ms.locfileid: "54507381"
  **程序集：** Visual Basic 运行库（在 Microsoft.VisualBasic.dll 中）  
   
 ## <a name="see-also"></a>请参阅
+
 - [My.Application.Info 对象](../../../visual-basic/language-reference/objects/my-application-info-object.md)
 - [My.Application.Log 对象](../../../visual-basic/language-reference/objects/my-application-log-object.md)

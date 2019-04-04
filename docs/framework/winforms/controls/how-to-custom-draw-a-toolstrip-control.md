@@ -24,8 +24,7 @@ ms.lasthandoff: 03/09/2019
 ms.locfileid: "57705744"
 ---
 # <a name="how-to-custom-draw-a-toolstrip-control"></a>如何：自定义绘制 ToolStrip 控件
-
-  <xref:System.Windows.Forms.ToolStrip> 控件具有以下关联的呈现（绘制）类：  
+<xref:System.Windows.Forms.ToolStrip> 控件具有以下关联的呈现（绘制）类：  
   
 -   <xref:System.Windows.Forms.ToolStripSystemRenderer> 提供你使用的操作系统的外观和样式。  
   

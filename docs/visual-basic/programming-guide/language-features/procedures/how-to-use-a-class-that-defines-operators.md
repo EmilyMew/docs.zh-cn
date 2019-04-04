@@ -11,12 +11,12 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
-ms.openlocfilehash: 358e81904f48ad844351a20a448b615a0fef8f89
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: bd512adf2f06ed0fbd3d36ed3175a0928bf1c57c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56972505"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58829403"
 ---
 # <a name="how-to-use-a-class-that-defines-operators-visual-basic"></a>如何：使用定义运算符 (Visual Basic) 的类
 如果使用的类或结构，它定义自己的运算符，则可以在 Visual Basic 中访问这些运算符。  
@@ -40,6 +40,7 @@ ms.locfileid: "56972505"
  你的项目必须具有对 System.Data 和 System.XML 的引用。  
   
 ## <a name="see-also"></a>请参阅
+
 - [运算符过程](./operator-procedures.md)
 - [如何：定义运算符](./how-to-define-an-operator.md)
 - [如何：定义转换运算符](./how-to-define-a-conversion-operator.md)

@@ -2,12 +2,12 @@
 title: 如何：创建未签名的友元程序集 (Visual Basic)
 ms.date: 03/14/2018
 ms.assetid: 5735eb79-9729-4c46-ac1f-537ada3acaa7
-ms.openlocfilehash: f5e475f3a0fdc9350e43b89db16724ef0f544071
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 814c2584ea9e1e14c3af003a0515166f53b6d913
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369560"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819380"
 ---
 # <a name="how-to-create-unsigned-friend-assemblies-visual-basic"></a>如何：创建未签名的友元程序集 (Visual Basic)
 本示例演示如何将友元程序集和未签名的程序集一起使用。  
@@ -85,6 +85,7 @@ ms.locfileid: "57369560"
  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性和 <xref:System.Security.Permissions.StrongNameIdentityPermission> 类之间具有相似之处。 主要区别是，<xref:System.Security.Permissions.StrongNameIdentityPermission> 可以要求安全权限来运行一段特定代码，而 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性控制 `Friend` 类型和成员的可见性。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
 - [.NET 中的程序集](../../../../standard/assembly/index.md)
 - [友元程序集](../../../../standard/assembly/friend-assemblies.md)

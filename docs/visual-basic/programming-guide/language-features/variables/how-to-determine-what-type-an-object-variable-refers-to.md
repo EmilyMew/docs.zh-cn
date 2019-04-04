@@ -6,12 +6,12 @@ helpviewer_keywords:
 - variables [Visual Basic], object
 - object variables [Visual Basic], determining type
 ms.assetid: 6f6a138d-58a4-40d1-9f4e-0a3c598eaf81
-ms.openlocfilehash: 149af116f2b848082367b33d826bace8345cee05
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dc6f54719d4f30be00b7b85f0ab18c4cb02b0d7c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54571173"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58816403"
 ---
 # <a name="how-to-determine-what-type-an-object-variable-refers-to-visual-basic"></a>如何：确定哪种类型的对象变量引用 (Visual Basic)
 对象变量包含指向其他位置所存储的数据的指针。 在运行时可以更改该数据的类型。 在任何时刻，您可以使用<xref:System.Type.GetTypeCode%2A>方法，以确定当前的运行时类型，或[TypeOf 运算符](../../../../visual-basic/language-reference/operators/typeof-operator.md)要找出当前运行时类型是否与指定的类型兼容。  
@@ -53,6 +53,7 @@ ms.locfileid: "54571173"
  请注意，指定的类型不能为变量或表达式。 它必须是类型的定义，如类、 结构或接口的名称。 这包括内部类型，如`Integer`和`String`。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Object.GetType%2A>
 - <xref:System.Type?displayProperty=nameWithType>
 - <xref:System.Type.GetTypeCode%2A>

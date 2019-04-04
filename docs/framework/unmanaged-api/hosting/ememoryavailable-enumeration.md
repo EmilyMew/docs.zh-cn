@@ -16,15 +16,15 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f0ffb85dc5f321e45432d6c2fa9448919957f0e3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 55463985a7ac93bf0ec3cda92f91f8a326f92406
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54665196"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410558"
 ---
 # <a name="ememoryavailable-enumeration"></a>EMemoryAvailable 枚举
-包含指示计算机上的可用物理内存量的值。 这些值以逻辑方式映射到事件的内存从返回的上限和下限`CreateMemoryResourceNotification`Win32 API 中的函数。  
+包含指示计算机上的可用物理内存量的值。 这些值以逻辑方式映射到事件的内存从返回的上限和下限`CreateMemoryResourceNotification`Windows API 中的函数。  
   
 ## <a name="syntax"></a>语法  
   

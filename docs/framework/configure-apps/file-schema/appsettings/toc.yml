@@ -1,0 +1,19 @@
+items:
+- name: 应用设置架构
+  href: index.md
+  items:
+  - name: <configuration> 的 <appSettings> 元素
+    href: appsettings-element-for-configuration.md
+    items:
+    - name: <add> 元素
+      href: add-element-for-appsettings.md
+    - name: <clear> 元素
+      href: clear-element-for-appsettings.md
+    - name: <remove> 元素
+      href: remove-element-for-appsettings.md
+ms.openlocfilehash: 691bddd9bb444f3fbf7dd1c4b21bd1463aa9ec29
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468357"

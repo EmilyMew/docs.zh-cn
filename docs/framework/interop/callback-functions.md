@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: c0aa8533-3b3b-42e8-9f60-84919793098c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 66df62262d40b4102b9dbd55969e67b6e8041480
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5b501216649a280e103a3c6e92d0eaf34c54f27a
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54703063"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410909"
 ---
 # <a name="callback-functions"></a>回调函数
 回调函数是托管应用程序中的代码，可帮助非托管 DLL 函数完成一项任务。 对回调函数的调用间接从托管应用程序中进行传递、经过 DLL 函数，再回到托管实现。 一些通过平台调用的 DLL 函数需要托管代码中的回调函数才能正常运行。  
@@ -24,7 +24,7 @@ ms.locfileid: "54703063"
  ![平台调用回调](../../../docs/framework/interop/media/pinvokecallback.gif "pinvokecallback")  
 回调函数和实现  
   
- 回调函数非常适合用于需要重复执行一项任务的情况。 另一个常见用法是与枚举函数配合使用，如 Win32 API 中的 EnumFontFamilies、EnumPrinters 和 EnumWindows。 EnumWindows 函数通过计算机上所有现有的窗口进行枚举，调用每个窗口上的回调函数以执行任务。 有关说明和示例，请参阅[如何：实现回调函数](../../../docs/framework/interop/how-to-implement-callback-functions.md)。  
+ 回调函数非常适合用于需要重复执行一项任务的情况。 另一个常见用法是与枚举函数配合使用，如 Windows API 中的“EnumFontFamilies”、“EnumPrinters”和“EnumWindows”。 EnumWindows 函数通过计算机上所有现有的窗口进行枚举，调用每个窗口上的回调函数以执行任务。 有关说明和示例，请参阅[如何：实现回调函数](../../../docs/framework/interop/how-to-implement-callback-functions.md)。  
   
 ## <a name="see-also"></a>请参阅
 - [如何：实现回调函数](../../../docs/framework/interop/how-to-implement-callback-functions.md)

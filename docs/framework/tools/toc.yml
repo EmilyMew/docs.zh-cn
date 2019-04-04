@@ -1,0 +1,80 @@
+items:
+- name: 工具
+  href: index.md
+  items:
+  - name: Al.exe（程序集链接器）
+    href: al-exe-assembly-linker.md
+  - name: Aximp.exe（Windows 窗体 ActiveX 控件导入程序）
+    href: aximp-exe-windows-forms-activex-control-importer.md
+  - name: Caspol.exe（代码访问安全策略工具）
+    href: caspol-exe-code-access-security-policy-tool.md
+  - name: Cert2spc.exe（软件发行者证书测试工具）
+    href: cert2spc-exe-software-publisher-certificate-test-tool.md
+  - name: Certmgr.exe（证书管理器工具）
+    href: certmgr-exe-certificate-manager-tool.md
+  - name: Clrver.exe（CLR 版本工具）
+    href: clrver-exe-clr-version-tool.md
+  - name: 命令提示
+    href: developer-command-prompt-for-vs.md
+  - name: CorFlags.exe（CorFlags 转换工具）
+    href: corflags-exe-corflags-conversion-tool.md
+  - name: Fuslogvw.exe（程序集绑定日志查看器）
+    href: fuslogvw-exe-assembly-binding-log-viewer.md
+  - name: Gacutil.exe（全局程序集缓存工具）
+    href: gacutil-exe-gac-tool.md
+  - name: Ilasm.exe（IL 汇编程序）
+    href: ilasm-exe-il-assembler.md
+  - name: Ildasm.exe（IL 反汇编程序）
+    href: ildasm-exe-il-disassembler.md
+  - name: Installutil.exe（安装程序工具）
+    href: installutil-exe-installer-tool.md
+  - name: Lc.exe（许可证编译器）
+    href: lc-exe-license-compiler.md
+  - name: Mage.exe（清单生成和编辑工具）
+    href: mage-exe-manifest-generation-and-editing-tool.md
+  - name: MageUI.exe（图形化客户端中的清单生成和编辑工具）
+    href: mageui-exe-manifest-generation-and-editing-tool-graphical-client.md
+  - name: MDbg.exe（.NET Framework 命令行调试程序）
+    href: mdbg-exe.md
+  - name: Mgmtclassgen.exe（管理强类型类生成器）
+    href: mgmtclassgen-exe.md
+  - name: Mpgo.exe（按托管配置文件优化工具）
+    href: mpgo-exe-managed-profile-guided-optimization-tool.md
+  - name: Ngen.exe（本机映像生成器）
+    href: ngen-exe-native-image-generator.md
+  - name: Peverify.exe（PEVerify 工具）
+    href: peverify-exe-peverify-tool.md
+  - name: Regasm.exe（程序集注册工具）
+    href: regasm-exe-assembly-registration-tool.md
+  - name: Regsvcs.exe（.NET 服务安装工具）
+    href: regsvcs-exe-net-services-installation-tool.md
+  - name: Resgen.exe（资源文件生成器）
+    href: resgen-exe-resource-file-generator.md
+  - name: SecAnnotate.exe（.NET 安全批注器工具）
+    href: secannotate-exe-net-security-annotator-tool.md
+  - name: SignTool.exe（签名工具）
+    href: signtool-exe.md
+  - name: Sn.exe（强名称工具）
+    href: sn-exe-strong-name-tool.md
+  - name: SOS.dll（SOS 调试扩展）
+    href: sos-dll-sos-debugging-extension.md
+  - name: SqlMetal.exe（代码生成工具）
+    href: sqlmetal-exe-code-generation-tool.md
+  - name: Storeadm.exe（独立存储工具）
+    href: storeadm-exe-isolated-storage-tool.md
+  - name: Tlbexp.exe（类型库导出程序）
+    href: tlbexp-exe-type-library-exporter.md
+  - name: Tlbimp.exe（类型库导入程序）
+    href: tlbimp-exe-type-library-importer.md
+  - name: Winmdexp.exe（Windows 运行时元数据导出工具）
+    href: winmdexp-exe-windows-runtime-metadata-export-tool.md
+  - name: Winmdexp.exe 错误消息
+    href: winmdexp-exe-error-messages.md
+  - name: Winres.exe（Windows 窗体资源编辑器）
+    href: winres-exe-windows-forms-resource-editor.md
+ms.openlocfilehash: 1e8fb586651d9372e6811ee3d632a49319b142c2
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468014"

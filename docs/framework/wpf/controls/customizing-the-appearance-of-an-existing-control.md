@@ -20,7 +20,7 @@ ms.lasthandoff: 03/05/2019
 ms.locfileid: "57375098"
 ---
 # <a name="customizing-the-appearance-of-an-existing-control-by-creating-a-controltemplate"></a>通过创建 ControlTemplate 自定义现有控件的外观
-<a name="introduction"></a> 一个<xref:System.Windows.Controls.ControlTemplate>指定可视结构和控件的可视行为。 您可以通过提供一个新的 it 自定义控件的外观<xref:System.Windows.Controls.ControlTemplate>。 当你创建<xref:System.Windows.Controls.ControlTemplate>，而无需更改其功能替换现有控件的外观。 例如，您可以将按钮在应用程序中圆形而不是默认的方形，但按钮仍将引发<xref:System.Windows.Controls.Primitives.ButtonBase.Click>事件。  
+<a name="introduction"></a><xref:System.Windows.Controls.ControlTemplate> 指定视觉结构和控件的视觉行为。 可以通过向控件提供一个新的<xref:System.Windows.Controls.ControlTemplate> 对控件外观进行自定义。 创建 <xref:System.Windows.Controls.ControlTemplate> 时，仅替换现有控件的外观，而不会更改其功能。 例如，可在应用程序中将按钮设置为圆形而不是默认的方形，但按钮仍将引发 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件。  
   
  本主题介绍的各个组成部分<xref:System.Windows.Controls.ControlTemplate>，演示如何创建一个简单<xref:System.Windows.Controls.ControlTemplate>为<xref:System.Windows.Controls.Button>，并说明如何了解控件的控件协定，使你可以自定义其外观。 因为您创建<xref:System.Windows.Controls.ControlTemplate>在[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]，可以无需编写任何代码更改控件的外观。 还可以使用设计器（如 Microsoft Expression Blend）创建自定义控件模板。 本主题演示了在[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]的自定义的外观<xref:System.Windows.Controls.Button>并列出了本主题末尾的完整示例。 有关使用 Expression Blend 的详细信息，请参阅[设置支持模板的控件的样式](https://go.microsoft.com/fwlink/?LinkId=161153)。  
   

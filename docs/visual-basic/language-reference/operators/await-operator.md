@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Await operator [Visual Basic]
 - Await [Visual Basic]
 ms.assetid: 6b1ce283-e92b-4ba7-b081-7be7b3d37af9
-ms.openlocfilehash: eb6e2c0e59ae0c29937fb5542e3b4638dd2b7b8d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d9d50433e3bc24df7cda137a145ab3f0f0302a1f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54671442"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58841974"
 ---
 # <a name="await-operator-visual-basic"></a>Await 运算符 (Visual Basic)
 在异步方法或 Lambda 表达式中对操作数应用 `Await` 运算符可暂停执行方法，直到所等待的任务完成。 任务表示正在进行的工作。  
@@ -104,6 +104,7 @@ End Function
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用 Async 和 Await 的异步编程](../../../visual-basic/programming-guide/concepts/async/index.md)
 - [演练：使用 Async 和 Await 访问 Web](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Async](../../../visual-basic/language-reference/modifiers/async.md)

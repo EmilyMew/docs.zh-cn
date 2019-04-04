@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30830
 ms.assetid: 4734bc1d-882e-4555-b498-1f1ec0399d16
-ms.openlocfilehash: 17025e9a3c87d84a10ddaa7aeef616d985143879
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 7616bcdc39ab479049586534fac22f1e2d96a700
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55283200"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58831834"
 ---
 # <a name="line-statements-are-no-longer-supported-visual-basic-compiler-error"></a>不再支持“Line”语句（Visual Basic 编译器错误）
 不再支持行语句。 文件 I/O 功能是可用作`Microsoft.VisualBasic.FileSystem.LineInput`图形功能，可作为`System.Drawing.Graphics.DrawLine`。  
@@ -26,6 +26,7 @@ ms.locfileid: "55283200"
 2.  如果执行图形，则请使用 `System.Drawing.Graphics.Drawline`。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.IO>
 - <xref:System.Drawing>
 - [使用 Visual Basic 访问文件](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)

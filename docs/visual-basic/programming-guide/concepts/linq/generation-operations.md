@@ -2,12 +2,12 @@
 title: 生成操作 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 22b8e380-8eb0-4c93-b4ff-7ac21caf27d5
-ms.openlocfilehash: d62a28404265d99182057d9ee8659a2a090b1255
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cbc3de23fc8ef691c0342b318728c035db9a36b6
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54591521"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58830105"
 ---
 # <a name="generation-operations-visual-basic"></a>生成操作 (Visual Basic)
 生成是指创建新的值序列。  
@@ -24,5 +24,6 @@ ms.locfileid: "54591521"
 |Repeat|生成包含一个重复值的集合。|不适用。|<xref:System.Linq.Enumerable.Repeat%2A?displayProperty=nameWithType>|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Linq>
 - [标准查询运算符概述 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)

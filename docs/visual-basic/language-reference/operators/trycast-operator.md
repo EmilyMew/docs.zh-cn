@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - TryCast keyword [Visual Basic]
 ms.assetid: d1ef5d47-fef4-491e-b014-1d910628f65c
-ms.openlocfilehash: dd50a23f09fa5dd49b86eefe163cea20430e2360
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: c0eea4565d5040bb00743fc7864ac15b0fccdea9
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56981278"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58831587"
 ---
 # <a name="trycast-operator-visual-basic"></a>TryCast 运算符 (Visual Basic)
 引入了不会引发异常的类型转换运算。  
@@ -40,5 +40,6 @@ ms.locfileid: "56981278"
  [!code-vb[VbVbalrKeywords#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#6)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [扩大转换和收缩转换](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
 - [隐式转换和显式转换](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

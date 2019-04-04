@@ -10,8 +10,7 @@ ms.lasthandoff: 03/09/2019
 ms.locfileid: "57703408"
 ---
 # <a name="fundamental-windows-workflow-concepts"></a>Windows 工作流基础概念
-
-  [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]的工作流开发中会运用一些开发人员可能还不熟悉的概念。 本主题介绍其中的一些概念以及如何实现这些概念。  
+[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]的工作流开发中会运用一些开发人员可能还不熟悉的概念。 本主题介绍其中的一些概念以及如何实现这些概念。  
   
 ## <a name="workflows-and-activities"></a>工作流和活动  
  工作流是构成进程模型的操作的结构化集合。 工作流中的每个操作都建模为一个活动。 宿主通过使用 <xref:System.Activities.WorkflowInvoker> 将工作流作为方法调用，使用 <xref:System.Activities.WorkflowApplication> 对单个工作流实例的执行进行显式控制，并使用 <xref:System.ServiceModel.WorkflowServiceHost> 在多实例方案中进行基于消息的交互，从而实现与工作流的交互。 由于工作流的步骤定义为活动的层次结构，因此层次结构中最顶层的活动可以认为是定义工作流本身。 此层次结构模型替代以前版本中的显式 `SequentialWorkflow` 和 `StateMachineWorkflow` 类。 活动自身可作为其他活动的集合（使用 <xref:System.Activities.Activity> 类作为基础，通常使用 XAML 定义）开发；或者使用 <xref:System.Activities.CodeActivity> 类或 <xref:System.Activities.NativeActivity> 类进行自定义创建，前者可以使用运行时进行数据访问，而后者则向活动作者公开工作流运行时范围。 使用 <xref:System.Activities.CodeActivity> 和 <xref:System.Activities.NativeActivity> 类开发的活动是使用符合 CLR 的语言（如 C#）创建的。  
@@ -23,7 +22,7 @@ ms.locfileid: "57703408"
 |-|-|  
 |变量|存储活动中的数据。|  
 |参数|在活动中移入和移出数据。|  
-|Expression|带有在参数绑定中使用的提升的返回值的活动。|  
+|表达式|带有在参数绑定中使用的提升的返回值的活动。|  
   
 ## <a name="workflow-runtime"></a>工作流运行时  
  工作流运行时是工作流在其中执行的环境。  <xref:System.Activities.WorkflowInvoker> 是执行工作流的最简单方法。 宿主为以下操作使用 <xref:System.Activities.WorkflowInvoker>：  
@@ -50,9 +49,9 @@ ms.locfileid: "57703408"
   
 -   添加供活动使用的扩展。  
   
- 活动通过使用相应的 <xref:System.Activities.ActivityContext> 派生类（例如 <xref:System.Activities.NativeActivityContext> 或 <xref:System.Activities.CodeActivityContext>）获得访问工作流运行时环境的权限。 这些元素使用此类来解析参数和变量，以便安排子活动和实现多种其他用途。  
+ 活动通过使用相应的 <xref:System.Activities.ActivityContext> 派生类（例如 <xref:System.Activities.NativeActivityContext> 或 <xref:System.Activities.CodeActivityContext>）获得访问工作流运行时环境的权限。 这些元素使用此类来解析自变量和变量，以便安排子活动和实现多种其他用途。  
   
-## <a name="services"></a>服务  
+## <a name="services"></a>Services  
  工作流提供一种自然的方式，以便使用消息活动实现和访问松耦合服务。 消息传递活动都基于 WCF 和是用于执行和跳出执行工作流中获取数据的主要机制。 您可将消息活动组合在一起，以便对您想要的任何类型的消息交换模式进行建模。 有关详细信息，请参阅[消息传递活动](../wcf/feature-details/messaging-activities.md)。 使用 <xref:System.ServiceModel.Activities.WorkflowServiceHost> 类承载工作流服务。 有关详细信息，请参阅[承载工作流服务概述](../wcf/feature-details/hosting-workflow-services-overview.md)。 有关工作流服务的详细信息请参阅[工作流服务](../wcf/feature-details/workflow-services.md)  
   
 ## <a name="persistence-unloading-and-long-running-workflows"></a>持久性、卸载和长时间运行的工作流  

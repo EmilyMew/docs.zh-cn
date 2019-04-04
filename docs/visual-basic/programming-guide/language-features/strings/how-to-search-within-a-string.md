@@ -6,12 +6,12 @@ helpviewer_keywords:
 - strings [Visual Basic], searching
 - examples [Visual Basic], strings
 ms.assetid: ae4c79e0-08ea-489f-bdb2-5eb6d355f284
-ms.openlocfilehash: c150299efe07809d0d33edf882771f552c3e5b63
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: b690aa78a2cf07b0db5bdd28d7d71ed4a79fbf61
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56982006"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58823293"
 ---
 # <a name="how-to-search-within-a-string-visual-basic"></a>如何：字符串 (Visual Basic 中) 内的搜索
 此示例调用<xref:System.String.IndexOf%2A>方法<xref:System.String>要报告的子字符串的第一个匹配项的索引对象。  
@@ -34,6 +34,7 @@ ms.locfileid: "56982006"
  为了优化错误控制，你可能想要在使用字符串搜索`Try`块[尝试...Catch...Finally 语句](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)构造。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.String.IndexOf%2A>
 - [Try...Catch...Finally 语句](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
 - [Visual Basic 中的字符串简介](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

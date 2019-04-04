@@ -6,12 +6,12 @@ helpviewer_keywords:
 - arrays [Visual Basic], assigning
 - arrays [Visual Basic], covariance
 ms.assetid: 1ae89ea5-f292-4282-bcfc-e9b06b37fbd5
-ms.openlocfilehash: f2617d270caf5ed4ade68934486fee6afb6c413f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 834dad07ec1f4116aca72a184ccffc664d0a42ed
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54572716"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58835279"
 ---
 # <a name="how-to-assign-one-array-to-another-array-visual-basic"></a>如何：将一个数组赋给另一个数组 (Visual Basic)
 由于数组是对象，您可以在赋值语句和其他对象类型一样使用它们。 一个数组变量保留一个指向数据构成的数组元素和等级和长度的信息，并分配只复制此指针。  
@@ -43,6 +43,7 @@ ms.locfileid: "54572716"
  编译器会报告错误如果违反了上述规则，例如如果数据类型不兼容或者数组的秩不相等。 您可以添加错误处理代码，以确保数组赋值前都兼容。 此外可以使用[TryCast 运算符](../../../../visual-basic/language-reference/operators/trycast-operator.md)关键字，如果你想要避免引发异常。  
   
 ## <a name="see-also"></a>请参阅
+
 - [数组](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
 - [数组疑难解答](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)
 - [Enum 语句](../../../../visual-basic/language-reference/statements/enum-statement.md)

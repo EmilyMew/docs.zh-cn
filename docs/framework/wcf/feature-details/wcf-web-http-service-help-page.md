@@ -2,24 +2,24 @@
 title: WCF Web HTTP 服务帮助页
 ms.date: 03/30/2017
 ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
-ms.openlocfilehash: f803d2046684bc1aa148e78b6325f26a8ec5c427
-ms.sourcegitcommit: 15d99019aea4a5c3c91ddc9ba23692284a7f61f3
+ms.openlocfilehash: 60fd909d6e7d3ba0e0c0254024ef7eb40263b59e
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49121202"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826829"
 ---
 # <a name="wcf-web-http-service-help-page"></a>WCF Web HTTP 服务帮助页
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]提供了 WCF WEB HTTP 服务的自动帮助页。 此帮助页列出了每个操作的说明、请求和响应格式以及架构。 默认情况下关闭此功能。 当用户浏览到 WCF WEB HTTP 服务和附加"/help"的 URL，例如末尾`http://localhost:8000/Customers/Help`，如显示以下信息帮助页。  
   
- ![WCF REST 帮助页](../../../../docs/framework/wcf/feature-details/media/wcfresthelppagemain.gif "WCFRESTHELPPAGEMAIN")  
+ ![使用 WCF REST 帮助页的浏览器打开。](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page.gif)  
   
  用户随后可以单击帮助页中列出的任何方法，并且所显示的该操作的详细页中显示了有关该方法的更多信息，其中包括消息格式和示例响应。 下图是方法帮助页的一个示例。  
   
- ![详细介绍了 WCF REST 帮助页](../../../../docs/framework/wcf/feature-details/media/wcfresthelppagedetail2.gif "WCFRESTHELPPAGEDETAIL2")  
+ ![GetCustomers 方法的 WCF REST 帮助页详细信息的浏览器打开。](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page-detail.gif)  
   
 ## <a name="using-the-wcf-web-http-help-page"></a>使用 WCF Web HTTP 帮助页  
- WCF WEB HTTP 帮助页显示了每个操作的简单说明（假设您使用 <xref:System.ComponentModel.DescriptionAttribute> 指定了操作）。 此特性接受一个字符串，该字符串中包含它所应用到的操作的简短说明。 例如，下面的代码演示如何使用 <xref:System.ComponentModel.DescriptionAttribute> 来提供简短说明。  
+ WCF WEB HTTP 帮助页显示了每个操作的简单说明（假设你使用 <xref:System.ComponentModel.DescriptionAttribute> 指定了操作）。 此特性接受一个字符串，该字符串中包含它所应用到的操作的简短说明。 例如，下面的代码演示如何使用 <xref:System.ComponentModel.DescriptionAttribute> 来提供简短说明。  
   
 ```  
 [OperationContract]  
@@ -28,7 +28,7 @@ ms.locfileid: "49121202"
 SyndicationFeedFormatter GetTemplate1();  
 ```  
   
- 若要打开 WCF WEB HTTP 帮助页，您必须向服务的终结点添加一个终结点行为。 可以通过配置或代码完成此操作。 若要通过配置启用 WCF WEB HTTP 帮助页，请使用 `<webHttp>``enableHelp` 元素添加终结点行为，将 `true` 设置为 ，添加一个终结点并将其配置为使用终结点行为。 下面的配置代码演示如何执行此操作。  
+ 若要打开 WCF WEB HTTP 帮助页，你必须向服务的终结点添加一个终结点行为。 可以通过配置或代码完成此操作。 若要通过配置启用 WCF WEB HTTP 帮助页，请使用 `<webHttp>``enableHelp` 元素添加终结点行为，将 `true` 设置为 ，添加一个终结点并将其配置为使用终结点行为。 下面的配置代码演示如何执行此操作。  
   
 ```xml  
 <endpointBehaviors>  

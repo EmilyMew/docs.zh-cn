@@ -2,12 +2,12 @@
 title: 标准查询运算符 (Visual Basic 中) 的查询表达式语法
 ms.date: 07/20/2015
 ms.assetid: eb978d86-d3b5-497b-95ce-a054bea8f510
-ms.openlocfilehash: 49a0b9d70022ee655d87b34a3bb044e1f60b308d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bdbca93d5898e363ccf62b13231163573e2ba972
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54549673"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832510"
 ---
 # <a name="query-expression-syntax-for-standard-query-operators-visual-basic"></a>标准查询运算符 (Visual Basic 中) 的查询表达式语法
 某些使用更频繁的标准查询运算符具有专用的 Visual Basic 语言关键字语法，使他们能够作为的一部分调用*查询表达式*。 查询表达式是比基于方法的等效项更具可读性的另一种查询表示形式。 查询表达式子句在编译时被转换为对查询方法的调用。  
@@ -43,6 +43,7 @@ ms.locfileid: "54549673"
 |<xref:System.Linq.Enumerable.Where%2A>|`Where`<br /><br /> (有关详细信息，请参阅[Where 子句](../../../../visual-basic/language-reference/queries/where-clause.md)。)|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>
 - [标准查询运算符概述 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)

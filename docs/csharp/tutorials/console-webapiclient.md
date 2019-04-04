@@ -3,12 +3,12 @@ title: 使用 .NET Core 创建 REST 客户端
 description: 此教程将介绍 .NET Core 和 C# 语言的许多功能。
 ms.date: 03/06/2017
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
-ms.openlocfilehash: e7859e9db53e8b126fd66b88d9a5e7565ea1a4ad
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: a375215f2d31845333290c85f7701c1a7dfbe780
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57846163"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58412300"
 ---
 # <a name="rest-client"></a>REST 客户端
 
@@ -213,9 +213,9 @@ foreach (var repo in repositories)
 
 ## <a name="controlling-serialization"></a>控制序列化
 
-在添加更多功能之前，让我们来处理一下 `repo` 类型，使其更加遵循标准的 C# 约定。 为此，使用可控制 JSON 序列化程序的工作方式的*特性*对 `repo` 类型添加批注。 在此示例中，将使用这些特性来定义 JSON 键名和 C# 类名及成员名称之间的映射。 使用 `DataContract` 和 `DataMember` 这两个特性。 按照约定，所有特性类均以后缀 `Attribute` 结尾。 不过，在应用特性时无需使用此后缀。
+在添加更多功能之前，让我们来处理一下 `repo` 类型，使其更加遵循标准的 C# 约定。 为此，使用可控制 JSON 序列化程序的工作方式的*特性*对 `repo` 类型添加批注。 在此示例中，将使用这些特性来定义 JSON 键名和 C# 类名及成员名称之间的映射。 使用的是 <xref:System.Runtime.Serialization.DataContractAttribute> 和 <xref:System.Runtime.Serialization.DataMemberAttribute> 两个特性。 按照约定，所有特性类均以后缀 `Attribute` 结尾。 不过，在应用特性时无需使用此后缀。
 
-由于 `DataContract` 和 `DataMember` 特性位于不同的库中，因此需要将相应的库作为依赖项添加到 C# 项目文件中。 将下面这行代码添加到项目文件的 `<ItemGroup>` 部分中：
+由于 <xref:System.Runtime.Serialization.DataContractAttribute> 和 <xref:System.Runtime.Serialization.DataMemberAttribute> 特性位于不同的库中，因此需要将相应的库作为依赖项添加到 C# 项目文件中。 将下面这行代码添加到项目文件的 `<ItemGroup>` 部分中：
 
 ```xml
 <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
@@ -223,7 +223,7 @@ foreach (var repo in repositories)
 
 保存文件后，运行 `dotnet restore`（[请参阅备注](#dotnet-restore-note)）来检索此包。
 
-接下来，打开 `repo.cs` 文件。 让我们改用 Pascal 命名法，完整拼写出全称 `Repository`。 我们仍要将 JSON“repo”节点映射到此类型，所以需要将 `DataContract` 特性添加到类声明。 将特性的 `Name` 属性设置为映射到此类型的 JSON 节点的名称：
+接下来，打开 `repo.cs` 文件。 让我们改用 Pascal 命名法，完整拼写出全称 `Repository`。 我们仍要将 JSON“repo”节点映射到此类型，所以需要将 <xref:System.Runtime.Serialization.DataContractAttribute> 特性添加到类声明。 将特性的 `Name` 属性设置为映射到此类型的 JSON 节点的名称：
 
 ```csharp
 [DataContract(Name="repo")]
@@ -357,7 +357,7 @@ foreach (var repo in repositories)
 private string JsonDate { get; set; }
 ```
 
-`DataMember` 特性指示序列化程序应对此进行处理，即使不是公共成员，也不例外。 接下来，需要编写一个公共只读属性，用于将字符串转换成有效的 <xref:System.DateTime> 对象，并返回 <xref:System.DateTime>：
+<xref:System.Runtime.Serialization.DataMemberAttribute> 特性指示序列化程序应对此进行处理，即使不是公共成员，也不例外。 接下来，需要编写一个公共只读属性，用于将字符串转换成有效的 <xref:System.DateTime> 对象，并返回 <xref:System.DateTime>：
 
 ```csharp
 [IgnoreDataMember]

@@ -4,12 +4,12 @@ description: 通过访问范围的示例从映像处理到移动后端和 ETL �
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: 4299768b701336e427b22b295bc459424bfc5927
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 177fb1d7f79a0067ab185e520778b593d4b8eaf6
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53153782"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653894"
 ---
 # <a name="serverless-business-scenarios-and-use-cases"></a>无服务器业务方案和用例
 
@@ -61,7 +61,7 @@ ms.locfileid: "53153782"
 
 提取、 转换和加载 (ETL) 是集成不同的系统的常见业务函数。 设置专用的 FTP 服务器，然后部署计划的作业来分析文件并将它们转换用于商业用途，通常涉及到传统的方法。 无服务器体系结构使作业更容易，因为该文件上传时为可以激发触发器。 Azure 函数处理任务，如通过专注于特定的问题小代码段其理想组合 ETL。
 
-![ETL 体系结构](./media/csvimport.png)
+![显示 csv 分析过程的屏幕截图。](./media/serverless-business-scenarios/csv-parse-database-import.png)
 
 源代码和动手实验，请参阅[CSV 导入实验室](https://github.com/JeremyLikness/azure-fn-file-process-hol)。
 

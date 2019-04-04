@@ -1,0 +1,22 @@
+items:
+- name: 开发多平台应用程序
+  href: index.md
+  items:
+  - name: 可移植类库
+    href: cross-platform-development-with-the-portable-class-library.md
+  - name: 将可移植类库与 MVVM 配合使用
+    href: using-portable-class-library-with-model-view-view-model.md
+  - name: 面向多个平台的库的应用程序资源
+    href: app-resources-for-libraries-that-target-multiple-platforms.md
+  - name: .NET Framework 对 Windows 应用商店应用程序和 Windows 运行时的支持情况
+    href: support-for-windows-store-apps-and-windows-runtime.md
+  - name: 向 Windows 运行时传递 URI
+    href: passing-a-uri-to-the-windows-runtime.md
+  - name: WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) 方法
+    href: windowsruntimestreamextensions-asrandomaccessstream-method.md
+ms.openlocfilehash: 92ecd411bf13b7906d5faaaf459f9b786f3aba0a
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468353"

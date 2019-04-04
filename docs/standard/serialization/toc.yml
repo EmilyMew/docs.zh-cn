@@ -1,0 +1,96 @@
+items:
+- name: 序列化
+  href: index.md
+  items:
+  - name: 序列化帮助主题
+    href: serialization-how-to-topics.md
+  - name: 二进制序列化
+    href: binary-serialization.md
+    items:
+    - name: 序列化概念
+      href: serialization-concepts.md
+    - name: 基本序列化
+      href: basic-serialization.md
+    - name: 有选择的序列化
+      href: selective-serialization.md
+    - name: 自定义序列化
+      href: custom-serialization.md
+    - name: 序列化过程中的步骤
+      href: steps-in-the-serialization-process.md
+    - name: 版本容错序列化
+      href: version-tolerant-serialization.md
+    - name: 序列化准则
+      href: serialization-guidelines.md
+    - name: 如何：对序列化数据进行分块
+      href: how-to-chunk-serialized-data.md
+    - name: 如何：确定 .NET 标准对象是否可序列化
+      href: how-to-determine-if-netstandard-object-is-serializable.md
+  - name: XML 和 SOAP 序列化
+    href: xml-and-soap-serialization.md
+    items:
+    - name: 如何：控制派生类的序列化
+      href: how-to-control-serialization-of-derived-classes.md
+    - name: XML 序列化简介
+      href: introducing-xml-serialization.md
+    - name: 如何：反序列化对象
+      href: how-to-deserialize-an-object.md
+    - name: XML 序列化示例
+      href: examples-of-xml-serialization.md
+    - name: XML 架构定义工具和 XML 序列化
+      href: the-xml-schema-definition-tool-and-xml-serialization.md
+    - name: 如何：使用 XML 架构定义工具生成类和 XML 架构文档
+      href: xml-schema-def-tool-gen.md
+    - name: 使用属性控制 XML 序列化
+      href: controlling-xml-serialization-using-attributes.md
+    - name: 用来控制 XML 序列化的属性
+      href: attributes-that-control-xml-serialization.md
+    - name: 如何：指定 XML 流的替代元素名称
+      href: how-to-specify-an-alternate-element-name-for-an-xml-stream.md
+    - name: 如何：序列化对象
+      href: how-to-serialize-an-object.md
+    - name: 如何：限定 XML 元素和 XML 属性名
+      href: how-to-qualify-xml-element-and-xml-attribute-names.md
+    - name: 使用 XML Web services 进行 XML 序列化
+      href: xml-serialization-with-xml-web-services.md
+    - name: 如何：将对象序列化为 SOAP 编码的 XML 流
+      href: how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
+    - name: 如何：替代编码的 SOAP XML 序列化
+      href: how-to-override-encoded-soap-xml-serialization.md
+    - name: 用来控制编码的 SOAP 序列化的属性
+      href: attributes-that-control-encoded-soap-serialization.md
+    - name: <system.xml.serialization> 元素
+      href: system-xml-serialization-element.md
+    - name: <dateTimeSerialization> 元素
+      href: datetimeserialization-element.md
+    - name: <schemaImporterExtensions> 元素
+      href: schemaimporterextensions-element.md
+    - name: <schemaImporterExtensions> 的 <add> 元素
+      href: add-element-for-schemaimporterextensions.md
+    - name: <xmlSerializer> 元素
+      href: xmlserializer-element.md
+  - name: 序列化工具
+    href: serialization-tools.md
+    items:
+    - name: XML 序列化程序生成器工具 (Sgen.exe)
+      href: xml-serializer-generator-tool-sgen-exe.md
+    - name: XML Schema Definition Tool (Xsd.exe)
+      href: xml-schema-definition-tool-xsd-exe.md
+  - name: 序列化示例
+    href: serialization-samples.md
+    items:
+    - name: 基本序列化技术示例
+      href: basic-serialization-technology-sample.md
+    - name: 使用 XmlSerializer 自定义序列化顺序
+      href: custom-serialization-order-with-xmlserializer.md
+    - name: SchemaImporterExtension 技术示例
+      href: schemaimporterextension-technology-sample.md
+    - name: 版本容错序列化技术示例
+      href: version-tolerant-serialization-technology-sample.md
+    - name: Web 服务泛型序列化技术示例
+      href: web-services-generics-serialization-technology-sample.md
+ms.openlocfilehash: ab9134268559fadb0e5f586773d5963535d4b12a
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467887"

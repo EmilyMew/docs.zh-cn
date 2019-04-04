@@ -1,0 +1,21 @@
+items:
+- name: 特性
+  href: index.md
+  items:
+  - name: 创建自定义属性
+    href: creating-custom-attributes.md
+    items:
+    - name: AttributeUsage
+      href: attributeusage.md
+  - name: 使用反射访问属性
+    href: accessing-attributes-by-using-reflection.md
+  - name: 如何：使用属性创建 C/C++ 联合
+    href: how-to-create-a-c-cpp-union-by-using-attributes.md
+  - name: 通用属性
+    href: common-attributes.md
+ms.openlocfilehash: 3a416d1213d043be76b6ab2b59b6dc5918331a69
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468027"

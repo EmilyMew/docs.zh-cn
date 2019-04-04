@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - authentication [WCF], user name and password
 ms.assetid: a5415be2-0ef3-464c-9f76-c255cb8165a4
-ms.openlocfilehash: 2fb384fe0012b5c0a72e961f027c3db629891e09
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f6939659249ea40e97f340771017d0587ec6a08f
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54532287"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58412261"
 ---
 # <a name="how-to-authenticate-with-a-user-name-and-password"></a>如何：使用用户名和密码进行身份验证
 
@@ -21,7 +21,7 @@ ms.locfileid: "54532287"
   
 ## <a name="to-configure-a-wcf-service-to-authenticate-using-windows-domain-username-and-password"></a>若要配置使用 Windows 域用户名和密码进行身份验证的 WCF 服务
   
-1.  创建 <xref:System.ServiceModel.WSHttpBinding> 的实例，将绑定的安全模式设置为 `SecurityMode.Message`，将绑定的 `ClientCredentialType` 设置为 `MessageCredentialType.UserName`，并使用配置的绑定将服务终结点添加到服务主机，如下面的代码中所示：  
+1.  创建 <xref:System.ServiceModel.WSHttpBinding> 的实例，将绑定的安全模式设置为 <xref:System.ServiceModel.WSHttpSecurity.Message?displayProperty=nameWithType>，将绑定的 `ClientCredentialType` 设置为 <xref:System.ServiceModel.MessageCredentialType.UserName?displayProperty=nameWithType>，并使用配置的绑定将服务终结点添加到服务主机，如下面的代码中所示：  
   
     ```  
     // ...  
@@ -40,7 +40,7 @@ ms.locfileid: "54532287"
     // ...  
     ```  
   
-     你可以使用你自己的证书，只需修改代码以引用你的证书。 有关创建和使用证书的详细信息请参阅[Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)。 确保证书在本地计算机的受信任人证书存储区中。 您可以执行此操作通过运行 mmc.exe 并选择**文件**，**添加/删除管理单元中...** 菜单项。 在中**添加或删除管理单元**对话框中，选择**管理单元中的证书**然后单击**添加**。 在证书管理单元对话框中选择**计算机帐户**。 默认情况下，从消息安全用户名称示例生成的证书将位于个人/证书文件夹中。  它将列为"localhost"颁发给在 MMC 窗口中的列。 拖放到到证书**受信任的人员**文件夹。 这将允许 WCF 在执行身份验证时，将证书视为受信任的证书。  
+     您可以使用您自己的证书，只需修改代码以引用您的证书。 有关创建和使用证书的详细信息请参阅[Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)。 确保证书在本地计算机的受信任人证书存储区中。 您可以执行此操作通过运行 mmc.exe 并选择**文件**，**添加/删除管理单元中...** 菜单项。 在中**添加或删除管理单元**对话框中，选择**管理单元中的证书**然后单击**添加**。 在证书管理单元对话框中选择**计算机帐户**。 默认情况下，从消息安全用户名称示例生成的证书将位于个人/证书文件夹中。  它将列为"localhost"颁发给在 MMC 窗口中的列。 拖放到到证书**受信任的人员**文件夹。 这将允许 WCF 在执行身份验证时，将证书视为受信任的证书。  
   
 ## <a name="to-call-the-service-passing-username-and-password"></a>调用服务传递用户名和密码  
   

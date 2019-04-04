@@ -8,12 +8,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: seodec18
-ms.openlocfilehash: 22494a87b4f6aaa6bd1a57873493f64df3b1ecb8
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: efb42d773669b949aeafa52fdcc445f18b469a5e
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57359726"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410259"
 ---
 # <a name="publish-net-core-apps-with-the-cli"></a>使用 CLI 发布 .NET Core 应用
 
@@ -50,7 +50,7 @@ ms.locfileid: "57359726"
 
 ### <a name="native-dependencies"></a>本机依赖项
 
-如果应用具有本机依赖项，则只能在相同操作系统上运行。 例如，如果应用使用本机 Win32 API，则不能在 macOS 或 Linux 上运行。 需要提供特定于平台的代码并为每个平台编译可执行文件。
+如果应用具有本机依赖项，则只能在相同操作系统上运行。 例如，如果应用使用本机 Windows API，则不能在 macOS 或 Linux 上运行。 需要提供特定于平台的代码并为每个平台编译可执行文件。
 
 另外，如果引用的库具有本机依赖项，则应用可能无法在每个平台上运行。 但是，引用的 NuGet 包可能包含特定于平台的版本，以便处理所需的本机依赖项。
 

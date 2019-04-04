@@ -2,12 +2,12 @@
 title: 与 ASMX Web 服务互操作
 ms.date: 03/30/2017
 ms.assetid: a7c11f0a-9e68-4f03-a6b1-39cf478d1a89
-ms.openlocfilehash: bab97c405a3958a6c0d6502041648cecf038023e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bef5239a52787629986eada60341cc121b22ba34
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54643411"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58843521"
 ---
 # <a name="interoperating-with-asmx-web-services"></a>与 ASMX Web 服务互操作
 此示例演示如何将 Windows Communication Foundation (WCF) 客户端应用程序与现有 ASMX Web 服务进行集成。  
@@ -54,7 +54,7 @@ public class CalculatorService : System.Web.Services.WebService
 svcutil.exe /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost/servicemodelsamples/service.svc?wsdl /out:generatedClient.cs  
 ```  
   
- 通过使用生成的客户端，您可以通过配置相应的地址和绑定来访问服务终结点。 和服务一样，客户端使用配置文件 (App.config) 来指定要与其通信的终结点。 客户端终结点配置由服务终结点的绝对地址、绑定和协定组成，如下面的示例配置所示。  
+ 通过使用生成的客户端，你可以通过配置相应的地址和绑定来访问服务终结点。 和服务一样，客户端使用配置文件 (App.config) 来指定要与其通信的终结点。 客户端终结点配置由服务终结点的绝对地址、绑定和协定组成，如下面的示例配置所示。  
   
 ```xml  
 <client>  
@@ -131,4 +131,3 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\Interop\ASMX`  
   
-## <a name="see-also"></a>请参阅

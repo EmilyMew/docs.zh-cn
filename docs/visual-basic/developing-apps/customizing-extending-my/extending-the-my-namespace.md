@@ -8,12 +8,12 @@ helpviewer_keywords:
 - My namespace
 - My namespace [Visual Basic], extending
 ms.assetid: 808e8617-b01c-4135-8b21-babe87389e8e
-ms.openlocfilehash: 843ea95cded81aa7870f8a7bef20df586c4085a6
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 4d7bb6eef398746a4bd2dc4dbf3d526da1c1e0f1
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57361195"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814144"
 ---
 # <a name="extending-the-my-namespace-in-visual-basic"></a>扩展 Visual Basic 中的 My 命名空间
 `My`在 Visual Basic 中的命名空间公开属性和方法，您可以轻松地充分利用.NET Framework 的强大功能。 `My`命名空间简化了常见编程问题，通常可一行代码将一个困难的任务。 此外，`My`命名空间可完全扩展，使你可以自定义的行为`My`并将新的服务添加到其层次结构，以适应特定的应用程序需求。 本主题将讨论如何自定义的现有成员`My`命名空间以及如何添加到你自己自定义类`My`命名空间。  
@@ -101,6 +101,7 @@ ms.locfileid: "57361195"
  有关如何部署的详细信息`My`命名空间扩展，请参阅[打包和部署自定义 My 扩展](../../../visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [打包和部署自定义 My 扩展](../../../visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions.md)
 - [扩展 Visual Basic 应用程序模型](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md)
 - [自定义 My 中可用的对象](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)

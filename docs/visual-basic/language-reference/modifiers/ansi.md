@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ANSI, Visual Basic
 - ANSI
 ms.assetid: 4f1fa6ff-5557-41ab-b6da-90baf4c15917
-ms.openlocfilehash: e474bd686cc753a0265df1fc2914a73d1b62f1b5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 98dafab3e524ea371bba228eb231e28d46cc3b4e
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54737317"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819445"
 ---
 # <a name="ansi-visual-basic"></a>Ansi (Visual Basic)
 指定 Visual Basic 应封送到美国国家标准协会 (ANSI) 值，而不考虑所声明的外部过程的名称的所有字符串。  
@@ -33,6 +33,7 @@ ms.locfileid: "54737317"
  不支持此关键字。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Auto](../../../visual-basic/language-reference/modifiers/auto.md)
 - [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)
 - [关键字](../../../visual-basic/language-reference/keywords/index.md)

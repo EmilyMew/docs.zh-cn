@@ -10,8 +10,7 @@ ms.lasthandoff: 03/09/2019
 ms.locfileid: "57714770"
 ---
 # <a name="transaction-activities-in-wf"></a>WF 中的事务活动
-
-  [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]包含几个系统提供的活动，它们用于对事务、补偿和取消进行建模。 通过这些编程模型，工作流可以在业务逻辑和错误处理中发生更改时继续向前推进。 有关事务、 补偿和取消的详细信息，请参阅[事务](workflow-transactions.md)，[补偿](compensation.md)，并[取消](modeling-cancellation-behavior-in-workflows.md)。  
+[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]包含几个系统提供的活动，它们用于对事务、补偿和取消进行建模。 通过这些编程模型，工作流可以在业务逻辑和错误处理中发生更改时继续向前推进。 有关事务、 补偿和取消的详细信息，请参阅[事务](workflow-transactions.md)，[补偿](compensation.md)，并[取消](modeling-cancellation-behavior-in-workflows.md)。  
   
 ## <a name="transaction-activities"></a>事务活动  
   

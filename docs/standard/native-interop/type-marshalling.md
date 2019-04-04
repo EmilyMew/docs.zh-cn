@@ -4,12 +4,12 @@ description: 了解 .NET 如何将类型封送到本机表示形式。
 author: jkoritzinsky
 ms.author: jekoritz
 ms.date: 01/18/2019
-ms.openlocfilehash: 2c62581d34e77f208b7764f955dfa37613615ee4
-ms.sourcegitcommit: b56d59ad42140d277f2acbd003b74d655fdbc9f1
+ms.openlocfilehash: b4846f2e6cd945a25ec6a747c9038d48fe115559
+ms.sourcegitcommit: 462dc41a13942e467984e48f4018d1f79ae67346
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "56411366"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58185410"
 ---
 # <a name="type-marshalling"></a>类型封送
 
@@ -38,8 +38,8 @@ static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 | `uint`    | `uint32_t`              |
 | `long`    | `int64_t`               |
 | `ulong`   | `uint64_t`              |
-| `char`    | `char` 或 `char16_t` 依赖于 P/Invoke 或结构的 `CharSet`。 请参阅[字符集文档](/.charset.md)。 |
-| `string`  | `char*` 或 `char16_t*` 依赖于 P/Invoke 或结构的 `CharSet`。 请参阅[字符集文档](/.charset.md)。 |
+| `char`    | `char` 或 `char16_t` 依赖于 P/Invoke 或结构的 `CharSet`。 请参阅[字符集文档](charset.md)。 |
+| `string`  | `char*` 或 `char16_t*` 依赖于 P/Invoke 或结构的 `CharSet`。 请参阅[字符集文档](charset.md)。 |
 | `System.IntPtr` | `intptr_t`        |
 | `System.UIntPtr` | `uintptr_t`      |
 | .NET 指针类型（例如， `void*`)  | `void*` |
@@ -73,7 +73,7 @@ static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 
 | .NET 类型 | 本机类型（仅参数） |
 |-----------|------------------------------|
-| `System.Text.StringBuilder` | `char*` 或 `char16_t*` 依赖于 P/Invoke 的 `CharSet`。  请参阅[字符集文档](/.charset.md)。 |
+| `System.Text.StringBuilder` | `char*` 或 `char16_t*` 依赖于 P/Invoke 的 `CharSet`。  请参阅[字符集文档](charset.md)。 |
 | `System.ArgIterator` | `va_list`（仅在 Windows x86/x64/arm64 上） |
 | `System.Runtime.InteropServices.ArrayWithOffset` | `void*` |
 | `System.Runtime.InteropServices.HandleRef` | `void*` |

@@ -10,26 +10,26 @@ helpviewer_keywords:
 ms.assetid: c5ac9920-5b6e-4dc9-bf2d-1f6f8ad3b0bf
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 147c22758c68bd3b48ab1c5cf8e26ed0afdbce09
-ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.openlocfilehash: 56ca8e6c077d41552f85b65ba5f6b755165ee11a
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56219459"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654609"
 ---
 # <a name="marshaling-different-types-of-arrays"></a>封送处理不同类型的数组
 数组是包含有一个或多个相同类型的元素的托管代码中的引用类型。 尽管数组是引用类型，但它们却作为 In 参数传递到非托管函数。 此行为与托管数组传递到托管对象的方式不一致，数组作为 In/Out 参数进行传递。 有关其他详细信息，请参阅 [复制和锁定](copying-and-pinning.md)。  
   
  下表列出了数组的封送处理选项，并描述了它们的用法。  
   
-|数组|说明​​|  
+|数组|说明|  
 |-----------|-----------------|  
 |通过值传递的整数。|将整数的数组作为 In 参数进行传递。|  
 |通过引用传递的整数。|将整数的数组作为 In/Out 参数进行传递。|  
 |通过值传递的整数（二维）。|将整数的矩阵作为 In 参数进行传递。|  
 |通过值传递的字符串。|将字符串的数组作为 In 参数进行传递。|  
 |传递具有整数的结构。|将包含整数的结构数组作为 In 参数进行传递。|  
-|传递具有字符串的结构。|将仅包含整数的结构数组作为 In/Out 参数进行传递。 可以更改数组的成员。|  
+|传递具有字符串的结构。|将仅包含字符串的结构数组作为 In/Out 参数进行传递。 可以更改数组的成员。|  
   
 ## <a name="example"></a>示例  
  本示例演示如何传递以下类型的数组：  

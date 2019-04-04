@@ -2,12 +2,12 @@
 title: XML (Visual Basic 中) 的纯功能转换
 ms.date: 07/20/2015
 ms.assetid: 5e19b74a-7773-4b58-b110-953ffd364c55
-ms.openlocfilehash: 1af777296c8b8d9736b701b297b2253326c9da7f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 48149faba1c41583ab4e50c539d52e4caf90592a
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54584735"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58843417"
 ---
 # <a name="pure-functional-transformations-of-xml-visual-basic"></a>XML (Visual Basic 中) 的纯功能转换
 本节提供 XML 的函数转换教程。 它包括使用函数转换所必须理解的主要概念和语言构造的说明以及使用函数转换来操作 XML 文档的示例。 虽然本教程提供 LINQ to XML 代码示例，但所有基础概念也适用于其他 LINQ 技术。  
@@ -27,4 +27,5 @@ ms.locfileid: "54584735"
 |[教程：操作 WordprocessingML 文档 (Visual Basic 中) 中的内容](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)|演示函数转换的教程。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [查询 XML 树 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)

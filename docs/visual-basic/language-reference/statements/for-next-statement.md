@@ -23,12 +23,12 @@ helpviewer_keywords:
 - Exit statement [Visual Basic], For...Next statements
 - For statement [Visual Basic]
 ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
-ms.openlocfilehash: bcadcdfb2cb15bc6012ebe1964a4fc4379ba649d
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 5d47d57b75005d5c13dbf8633981dfb2d57d3e90
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57370301"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826322"
 ---
 # <a name="fornext-statement-visual-basic"></a>For...Next 语句 (Visual Basic)
 将一组语句重复指定的次数。  
@@ -173,6 +173,7 @@ Next [ counter ]
  [!code-vb[VbVbalrStatements#117](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#117)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Collections.Generic.List%601>
 - [循环结构](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
 - [While...End While 语句](../../../visual-basic/language-reference/statements/while-end-while-statement.md)

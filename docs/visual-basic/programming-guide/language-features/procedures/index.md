@@ -2,12 +2,18 @@
 title: Visual Basic 中的过程
 ms.date: 04/28/2017
 helpviewer_keywords:
-  - 'procedures [Visual Basic], structured code'
-  - 'Visual Basic code, procedures'
-  - 'procedures [Visual Basic], types of'
-  - 'structured code [Visual Basic], procedures'
-  - procedures
+- procedures [Visual Basic], structured code
+- Visual Basic code, procedures
+- procedures [Visual Basic], types of
+- structured code [Visual Basic], procedures
+- procedures
 ms.assetid: 9effbcf0-80a0-4d1a-98f4-2c6920592766
+ms.openlocfilehash: dfd366cd823931962af878de59225ea183fff7c0
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814921"
 ---
 # <a name="procedures-in-visual-basic"></a>Visual Basic 中的过程
 一个*过程*是 Visual Basic 语句括在声明语句块 (`Function`， `Sub`， `Operator`， `Get`， `Set`) 和一个匹配`End`声明。 在 Visual Basic 中的所有可执行语句必须位于某个过程内。  
@@ -56,6 +62,7 @@ ms.assetid: 9effbcf0-80a0-4d1a-98f4-2c6920592766
 -   开发可供某一程序使用的过程后，也可在其他程序中使用它们，通常只需很少修改或无需修改。 这有助于避免代码重复。  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：创建过程](./how-to-create-a-procedure.md)
 - [Sub 过程](./sub-procedures.md)
 - [Function 过程](./function-procedures.md)

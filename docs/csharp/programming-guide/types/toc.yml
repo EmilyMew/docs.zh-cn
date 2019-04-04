@@ -1,0 +1,25 @@
+items:
+- name: 类型
+  href: index.md
+  items:
+  - name: 强制转换和类型转换
+    href: casting-and-type-conversions.md
+  - name: 装箱和取消装箱
+    href: boxing-and-unboxing.md
+  - name: 使用类型 dynamic
+    href: using-type-dynamic.md
+    items:
+    - name: 演练：创建并使用动态对象（C# 和 Visual Basic）
+      href: walkthrough-creating-and-using-dynamic-objects.md
+  - name: 如何：将字节数组转换为 int
+    href: how-to-convert-a-byte-array-to-an-int.md
+  - name: 如何：将字符串转换成数字
+    href: how-to-convert-a-string-to-a-number.md
+  - name: 如何：在十六进制字符串与数值类型之间转换
+    href: how-to-convert-between-hexadecimal-strings-and-numeric-types.md
+ms.openlocfilehash: ec544bd0f41d24e9775277ac1968787de9391dd5
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467920"

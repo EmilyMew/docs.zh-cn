@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Object data type
 - Object data type [Visual Basic], reference
 ms.assetid: 61ea4a7c-3b3d-48d4-adc4-eacfa91779b2
-ms.openlocfilehash: 5a37b571e0600927e0e50fdb1a63bcf8ef194d72
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 616110145db2796e05509094b1c023daacd68f03
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54617533"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58835565"
 ---
 # <a name="object-data-type"></a>Object Data Type
 保存引用的对象的地址。 可以将任何引用类型 （字符串、 数组、 类或接口） 分配给`Object`变量。 `Object`变量还可以指任何值类型的数据 (数字`Boolean`， `Char`， `Date`，结构或枚举)。  
@@ -67,6 +67,7 @@ objDb = myCollection.Item(1)
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Object>
 - [数据类型](../../../visual-basic/language-reference/data-types/index.md)
 - [类型转换函数](../../../visual-basic/language-reference/functions/type-conversion-functions.md)

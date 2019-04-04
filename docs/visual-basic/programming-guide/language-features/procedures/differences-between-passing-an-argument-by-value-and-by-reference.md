@@ -1,5 +1,5 @@
 ---
-title: 通过值传递自变量和通过引用传递自变量之间的差异 (Visual Basic)
+title: 通过值传递参数和通过引用传递参数之间的差异 (Visual Basic)
 ms.date: 07/20/2015
 helpviewer_keywords:
 - ByRef keyword [Visual Basic], passing arguments by reference
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - ByVal keyword [Visual Basic], passing arguments by value
 - arguments [Visual Basic], passing by value or by reference
 ms.assetid: 5f5c38fe-3e2d-494c-8fff-f4025b55ec93
-ms.openlocfilehash: 129bb01184d051572ac757a2883aac4de8469d2c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1b85941c14721280a5025db442c4793930244ec8
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54513303"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58837487"
 ---
-# <a name="differences-between-passing-an-argument-by-value-and-by-reference-visual-basic"></a>通过值传递自变量和通过引用传递自变量之间的差异 (Visual Basic)
+# <a name="differences-between-passing-an-argument-by-value-and-by-reference-visual-basic"></a>通过值传递参数和通过引用传递参数之间的差异 (Visual Basic)
 当将一个或多个自变量传递给过程中时，每个自变量对应于调用代码中的基础编程元素。 可以传递此基础元素的值，或者对它的引用。 这称为*传递机制*。  
   
 ## <a name="passing-by-value"></a>按值传递  
@@ -40,6 +40,7 @@ ms.locfileid: "54513303"
 |引用类型 （包含的类或结构实例的指针）|该过程不能更改该变量，但可以更改它所指向的实例的成员。|该过程可以更改变量和它所指向的实例的成员。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [如何：将参数传递给过程](./how-to-pass-arguments-to-a-procedure.md)

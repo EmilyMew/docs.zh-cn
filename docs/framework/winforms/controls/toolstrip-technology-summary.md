@@ -17,8 +17,7 @@ ms.locfileid: "57703262"
 # <a name="toolstrip-technology-summary"></a>ToolStrip 技术摘要
 本主题概述了 `ToolStrip` 控件及支持其使用的类的相关信息。  
   
- 
-  `ToolStrip` 控件及其关联的类提供完整的解决方案用于创建工具栏、状态栏和菜单。  
+ `ToolStrip` 控件及其关联的类提供完整的解决方案用于创建工具栏、状态栏和菜单。  
   
 ## <a name="namespaces"></a>命名空间  
  <xref:System.Windows.Forms?displayProperty=nameWithType>  
@@ -107,8 +106,7 @@ ms.locfileid: "57703262"
   
  *漂浮*是指工具栏共享水平或垂直空间。 Windows 窗体可具有 <xref:System.Windows.Forms.ToolStripContainer>，其中窗体的左侧、右侧、顶部和底部均带有用于定位和漂浮 <xref:System.Windows.Forms.ToolStrip>、<xref:System.Windows.Forms.MenuStrip> 和 <xref:System.Windows.Forms.StatusStrip> 控件的面板。 如果将多个 <xref:System.Windows.Forms.ToolStrip> 控件放置在 <xref:System.Windows.Forms.ToolStripContainer> 左侧或右侧，它们会垂直堆叠。 如果将其放置在 <xref:System.Windows.Forms.ToolStripContainer> 顶部或底部，则水平堆叠。 可使用 <xref:System.Windows.Forms.ToolStripContainer> 的中央 <xref:System.Windows.Forms.ToolStripContentPanel> 将传统控件放置在窗体上。  
   
- 任何或所有 <xref:System.Windows.Forms.ToolStripContainer> 控件都可在设计时选择且可删除。 
-  <xref:System.Windows.Forms.ToolStripContainer> 可扩展、可折叠的，并可调整大小适应其包含的控件。  
+ 任何或所有 <xref:System.Windows.Forms.ToolStripContainer> 控件都可在设计时选择且可删除。 <xref:System.Windows.Forms.ToolStripContainer> 可扩展、可折叠的，并可调整大小适应其包含的控件。  
   
  *停靠*指定控件的简单窗体的左侧、 右侧、 顶部或底部位置。  
   
@@ -116,8 +114,7 @@ ms.locfileid: "57703262"
   
  换用漂浮时，大部分的 <xref:System.Windows.Forms.ToolStrip> 控件可与其他控件一样停靠在窗体。 还可以通过将其从 <xref:System.Windows.Forms.ToolStripContainer> 移除并将 `Dock` 属性设置为 `None` 自由指定 <xref:System.Windows.Forms.ToolStrip> 控件在窗体上的位置，或者可通过设置各自的 <xref:System.Windows.Forms.Control.Location%2A> 属性指定它的绝对位置。 请参阅[如何：将 ToolStrip 从 toolstripcontainer 移到窗体](how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form.md)。  
   
- 为提高灵活性（特别是对于多文档界面 (MDI) 应用程序）或者在无需使用 <xref:System.Windows.Forms.ToolStripContainer> 的情况下，请使用一个或多个 <xref:System.Windows.Forms.ToolStripPanel> 控件。 
-  <xref:System.Windows.Forms.ToolStripPanel> 提供可停靠空间，用于定位和漂浮 <xref:System.Windows.Forms.ToolStrip> 控件（而不是传统控件）。 默认情况下<xref:System.Windows.Forms.ToolStripPanel>不显示在设计器**工具箱**，但您可以通过右键单击将该字段放**工具箱**，然后单击**选择项**。 与任何其他类一样，也可以编程方式访问 <xref:System.Windows.Forms.ToolStripPanel>。  
+ 为提高灵活性（特别是对于多文档界面 (MDI) 应用程序）或者在无需使用 <xref:System.Windows.Forms.ToolStripContainer> 的情况下，请使用一个或多个 <xref:System.Windows.Forms.ToolStripPanel> 控件。 <xref:System.Windows.Forms.ToolStripPanel> 提供可停靠空间，用于定位和漂浮 <xref:System.Windows.Forms.ToolStrip> 控件（而不是传统控件）。 默认情况下<xref:System.Windows.Forms.ToolStripPanel>不显示在设计器**工具箱**，但您可以通过右键单击将该字段放**工具箱**，然后单击**选择项**。 与任何其他类一样，也可以编程方式访问 <xref:System.Windows.Forms.ToolStripPanel>。  
   
  <xref:System.Windows.Forms.ToolStrip>、<xref:System.Windows.Forms.MenuStrip> 和 <xref:System.Windows.Forms.StatusStrip> 允许项溢出。 这与这些项在 Microsoft Office 工具栏中的操作方式很类似。  
   

@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - properties [Visual Basic]
 ms.assetid: c995caf9-8d0e-4fb8-ae02-e9e6087d7651
-ms.openlocfilehash: 658aa2f1cdf150db686ba78a75b44a41d361833f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b7c0040a45da34d6b7c7123b585b0d6e5463278c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54634332"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821607"
 ---
 # <a name="properties-visual-basic"></a>属性 (Visual Basic)
 此页列出了 Visual Basic 模块的成员属性。 中列出了其他成员的 Visual Basic 的特定对象的属性[对象](../../visual-basic/language-reference/objects/index.md)。  
@@ -30,5 +30,6 @@ ms.locfileid: "54634332"
 |<xref:Microsoft.VisualBasic.DateAndTime.Today%2A>|返回或设置`Date`值，该值包含根据您的系统当前日期。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 语言参考](../../visual-basic/language-reference/index.md)
 - [Visual Basic](../../visual-basic/index.md)

@@ -29,12 +29,12 @@ helpviewer_keywords:
 - ByVal keyword [Visual Basic], Sub statements
 - Visual Basic code, Sub procedures
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
-ms.openlocfilehash: 6984e7e9f8695ff5bccdde01171733e740a5d6a7
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: ab94865f4881b40b38f67eb40d2f9fa2e1982af8
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56965951"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58817222"
 ---
 # <a name="sub-statement-visual-basic"></a>Sub 语句 (Visual Basic)
 声明名称、 参数和定义的代码`Sub`过程。  
@@ -227,6 +227,7 @@ End Sub
  [!code-vb[csAsyncMethod#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb/mainwindow.xaml.vb#1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [Implements 语句](implements-statement.md)
 - [Function 语句](function-statement.md)
 - [参数列表](parameter-list.md)

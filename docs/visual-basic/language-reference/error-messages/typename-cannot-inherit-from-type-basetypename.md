@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30910
 ms.assetid: 68fc05c5-5d55-4742-9a3b-ea04312594f4
-ms.openlocfilehash: 226c85f887ecc706a5cb554c2163742f10896141
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: dc979a66c73fdf15a4349a003680156e0ce27ed3
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55269817"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838945"
 ---
 # <a name="typename-cannot-inherit-from-type-basetypename-because-it-expands-the-access-of-the-base-type-outside-the-assembly"></a>\<类型名称 > 不能继承自\<类型 >\<基类型名称 > 扩展的基本访问权限，因此\<类型 > 程序集外部的
 类或接口继承自的基类或接口但具有限制性较弱的访问级别。  
@@ -30,6 +30,7 @@ ms.locfileid: "55269817"
 -   如果需要限制较少的访问级别，请删除`Inherits`语句。 不能从更受限制的基类或接口继承。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Class 语句](../../../visual-basic/language-reference/statements/class-statement.md)
 - [Interface 语句](../../../visual-basic/language-reference/statements/interface-statement.md)
 - [Inherits 语句](../../../visual-basic/language-reference/statements/inherits-statement.md)

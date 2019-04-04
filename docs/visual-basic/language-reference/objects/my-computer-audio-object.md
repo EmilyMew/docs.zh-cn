@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Audio object
 - My.Computer.Audio object
 ms.assetid: ab5bdd04-b0ce-48b2-91c5-6404ceca31d0
-ms.openlocfilehash: 39994edacd7f863137f245698972b52c45f34ffe
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2ec6c71f8871ece2b0c1a2ec9bb47607f6a28871
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54685706"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58837672"
 ---
 # <a name="mycomputeraudio-object"></a>My.Computer.Audio 对象
 提供了用于播放音频的方法。  
@@ -28,4 +28,5 @@ ms.locfileid: "54685706"
  **程序集：** Visual Basic 运行库（在 Microsoft.VisualBasic.dll 中）  
   
 ## <a name="see-also"></a>请参阅
+
 - [My.Computer 对象](../../../visual-basic/language-reference/objects/my-computer-object.md)

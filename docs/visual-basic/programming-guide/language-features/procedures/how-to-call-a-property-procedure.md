@@ -8,12 +8,12 @@ helpviewer_keywords:
 - properties [Visual Basic], property procedures
 - procedure calls [Visual Basic], property procedures
 ms.assetid: 96bc4d74-d9c3-4b7a-954d-58ac8553cd94
-ms.openlocfilehash: 6a7c55433001af5c5695044f41f866c1df8c3651
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 7b85239f80b4bfa87d1dbb1e3207e63d0cef7eeb
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56977846"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827206"
 ---
 # <a name="how-to-call-a-property-procedure-visual-basic"></a>如何：调用 Property 过程 (Visual Basic)
 在属性中存储一个值，或检索其值由调用 property 过程。 访问属性访问的变量的相同方法。  
@@ -53,6 +53,7 @@ ms.locfileid: "56977846"
  在属性中存储生成的赋值语句右侧的值。  
   
 ## <a name="see-also"></a>请参阅
+
 - [属性过程](./property-procedures.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [Property 语句](../../../../visual-basic/language-reference/statements/property-statement.md)

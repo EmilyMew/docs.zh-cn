@@ -70,24 +70,18 @@ UDP 传输示例演示如何实现 UDP 单播和多播作为自定义 Windows Co
 ## <a name="channel-factory-and-channel-listener"></a>通道工厂和通道侦听器  
  编写自定义传输的下一步是为客户端通道创建 <xref:System.ServiceModel.Channels.IChannelFactory> 的实现，并为服务通道创建 <xref:System.ServiceModel.Channels.IChannelListener> 的实现。 通道层使用工厂模式构建通道。 WCF 为此过程提供基类帮助器。  
   
--   
-  <xref:System.ServiceModel.Channels.CommunicationObject> 类实现 <xref:System.ServiceModel.ICommunicationObject> 并强制执行前面步骤 2 中所述的状态机。 
+-   <xref:System.ServiceModel.Channels.CommunicationObject> 类实现 <xref:System.ServiceModel.ICommunicationObject> 并强制执行前面步骤 2 中所述的状态机。 
 
--   
-  <xref:System.ServiceModel.Channels.ChannelManagerBase> 类实现 <xref:System.ServiceModel.Channels.CommunicationObject> 并为 <xref:System.ServiceModel.Channels.ChannelFactoryBase> 和 <xref:System.ServiceModel.Channels.ChannelListenerBase> 提供统一的基类。 
-  <xref:System.ServiceModel.Channels.ChannelManagerBase> 类与 <xref:System.ServiceModel.Channels.ChannelBase>（用来实现 <xref:System.ServiceModel.Channels.IChannel> 的基类）结合使用。  
+-   <xref:System.ServiceModel.Channels.ChannelManagerBase> 类实现 <xref:System.ServiceModel.Channels.CommunicationObject> 并为 <xref:System.ServiceModel.Channels.ChannelFactoryBase> 和 <xref:System.ServiceModel.Channels.ChannelListenerBase> 提供统一的基类。 <xref:System.ServiceModel.Channels.ChannelManagerBase> 类与 <xref:System.ServiceModel.Channels.ChannelBase>（用来实现 <xref:System.ServiceModel.Channels.IChannel> 的基类）结合使用。  
   
 -   <xref:System.ServiceModel.Channels.ChannelFactoryBase>类实现<xref:System.ServiceModel.Channels.ChannelManagerBase>并<xref:System.ServiceModel.Channels.IChannelFactory>并将合并`CreateChannel`成一个重载`OnCreateChannel`抽象方法。  
   
--   
-  <xref:System.ServiceModel.Channels.ChannelListenerBase> 类实现 <xref:System.ServiceModel.Channels.IChannelListener>。 它负责执行基本状态管理。  
+-   <xref:System.ServiceModel.Channels.ChannelListenerBase> 类实现 <xref:System.ServiceModel.Channels.IChannelListener>。 它负责执行基本状态管理。  
   
- 在此示例中，工厂实现包含在 UdpChannelFactory.cs 中，侦听器实现包含在 UdpChannelListener.cs 中。 
-  <xref:System.ServiceModel.Channels.IChannel> 实现位于 UdpOutputChannel.cs 和 UdpInputChannel.cs 中。  
+ 在此示例中，工厂实现包含在 UdpChannelFactory.cs 中，侦听器实现包含在 UdpChannelListener.cs 中。 <xref:System.ServiceModel.Channels.IChannel> 实现位于 UdpOutputChannel.cs 和 UdpInputChannel.cs 中。  
   
 ### <a name="the-udp-channel-factory"></a>UDP 通道工厂  
- 
-  `UdpChannelFactory` 派生自 <xref:System.ServiceModel.Channels.ChannelFactoryBase>。 该示例重写 <xref:System.ServiceModel.Channels.ChannelFactoryBase.GetProperty%2A> 以提供对消息编码器的消息版本的访问。 此示例还重写了 <xref:System.ServiceModel.Channels.ChannelFactoryBase.OnClose%2A>，因此我们可以在状态机转换时拆开 <xref:System.ServiceModel.Channels.BufferManager> 的实例。  
+ `UdpChannelFactory` 派生自 <xref:System.ServiceModel.Channels.ChannelFactoryBase>。 该示例重写 <xref:System.ServiceModel.Channels.ChannelFactoryBase.GetProperty%2A> 以提供对消息编码器的消息版本的访问。 此示例还重写了 <xref:System.ServiceModel.Channels.ChannelFactoryBase.OnClose%2A>，因此我们可以在状态机转换时拆开 <xref:System.ServiceModel.Channels.BufferManager> 的实例。  
   
 #### <a name="the-udp-output-channel"></a>UDP 输出通道  
  `UdpOutputChannel` 实现 <xref:System.ServiceModel.Channels.IOutputChannel>。 构造函数对自变量进行验证，并基于传入的 <xref:System.Net.EndPoint> 来构造目标 <xref:System.ServiceModel.EndpointAddress> 对象。  
@@ -115,8 +109,7 @@ this.socket.SendTo(messageBuffer.Array, messageBuffer.Offset, messageBuffer.Coun
 ```  
   
 ### <a name="the-udpchannellistener"></a>UdpChannelListener  
- `UdpChannelListener`该示例实现派生自<xref:System.ServiceModel.Channels.ChannelListenerBase>类。 它使用单个 UDP 套接字来接收数据报。 
-  `OnOpen` 方法使用该 UDP 套接字以异步循环形式接收数据。 收到的数据随后将借助于消息编码系统转换为消息。  
+ `UdpChannelListener`该示例实现派生自<xref:System.ServiceModel.Channels.ChannelListenerBase>类。 它使用单个 UDP 套接字来接收数据报。 `OnOpen` 方法使用该 UDP 套接字以异步循环形式接收数据。 收到的数据随后将借助于消息编码系统转换为消息。  
   
 ```csharp
 message = MessageEncoderFactory.Encoder.ReadMessage(new ArraySegment<byte>(buffer, 0, count), bufferManager);  
@@ -125,8 +118,7 @@ message = MessageEncoderFactory.Encoder.ReadMessage(new ArraySegment<byte>(buffe
  由于可以用同一个数据报通道来表示来自多个源的消息，因此 `UdpChannelListener` 是一个单一实例侦听器。 不存在，最多一个活动<xref:System.ServiceModel.Channels.IChannel>一次与此侦听器相关联。 只有当随后释放了由 `AcceptChannel` 方法返回的通道时，该示例才生成另一个通道。 收到的消息将排入这个单一实例通道的队列中。  
   
 #### <a name="udpinputchannel"></a>UdpInputChannel  
- 
-  `UdpInputChannel` 类实现 `IInputChannel`。 该类包括一个传入消息队列，该队列由 `UdpChannelListener` 的套接字来填充。 这些消息可以由 `IInputChannel.Receive` 方法取消排队。  
+ `UdpInputChannel` 类实现 `IInputChannel`。 该类包括一个传入消息队列，该队列由 `UdpChannelListener` 的套接字来填充。 这些消息可以由 `IInputChannel.Receive` 方法取消排队。  
   
 <a name="AddingABindingElement"></a>   
 ## <a name="adding-a-binding-element"></a>添加绑定元素  
@@ -155,8 +147,7 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
  绑定中的传输绑定元素负责导出和导入元数据中的寻址信息。 当使用 SOAP 绑定时，传输绑定元素还应在元数据中导出正确的传输 URI。  
   
 #### <a name="wsdl-export"></a>WSDL 导出  
- 若要导出寻址信息，`UdpTransportBindingElement` 需要实现 `IWsdlExportExtension` 接口。 
-  `ExportEndpoint` 方法将正确的寻址信息添加到 WSDL 端口中。  
+ 若要导出寻址信息，`UdpTransportBindingElement` 需要实现 `IWsdlExportExtension` 接口。 `ExportEndpoint` 方法将正确的寻址信息添加到 WSDL 端口中。  
   
 ```csharp
 if (context.WsdlPort != null)  
@@ -198,9 +189,7 @@ if (soapBinding != null)
   
 2.  将配置节添加到与 Svcutil.exe 处于同一目录的 Svcutil.exe.config 中。  
   
- 
-  `UdpBindingElementImporter` 类型实现 `IWsdlImportExtension` 接口。 
-  `ImportEndpoint` 方法从 WSDL 端口中导入地址。  
+ `UdpBindingElementImporter` 类型实现 `IWsdlImportExtension` 接口。 `ImportEndpoint` 方法从 WSDL 端口中导入地址。  
   
 ```csharp
 BindingElementCollection bindingElements = context.Endpoint.Binding.CreateBindingElements();  
@@ -270,8 +259,7 @@ AddWSAddressingAssertion(context, encodingBindingElement.MessageVersion.Addressi
   
 -   通过使用系统提供的、包含我们的绑定元素的绑定。 WCF 提供了几个系统定义的绑定，如`BasicHttpBinding`， `NetTcpBinding`，和`WsHttpBinding`。 这些绑定中的每个绑定与一个准确定义的配置文件相关联。  
   
- 此示例在从 `SampleProfileUdpBinding` 派生的 <xref:System.ServiceModel.Channels.Binding> 中实现配置文件绑定。 
-  `SampleProfileUdpBinding` 中最多包含四个绑定元素：`UdpTransportBindingElement`、`TextMessageEncodingBindingElement CompositeDuplexBindingElement` 和 `ReliableSessionBindingElement`。  
+ 此示例在从 `SampleProfileUdpBinding` 派生的 <xref:System.ServiceModel.Channels.Binding> 中实现配置文件绑定。 `SampleProfileUdpBinding` 中最多包含四个绑定元素：`UdpTransportBindingElement`、`TextMessageEncodingBindingElement CompositeDuplexBindingElement` 和 `ReliableSessionBindingElement`。  
   
 ```csharp
 public override BindingElementCollection CreateBindingElements()  
@@ -318,8 +306,7 @@ if (context.Endpoint.Binding is CustomBinding)
  若要通过配置公开传输，必须实现两个配置节。 第一个是 `BindingElementExtensionElement` 的 `UdpTransportBindingElement`。 这样使 `CustomBinding` 实现可以引用绑定元素。 第二个是 `Configuration` 的 `SampleProfileUdpBinding`。  
   
 ### <a name="binding-element-extension-element"></a>绑定元素扩展元素  
- 
-  `UdpTransportElement` 节是一个 `BindingElementExtensionElement`，它向配置系统公开 `UdpTransportBindingElement`。 通过一些基本重写，我们定义了配置节名称、绑定元素的类型以及如何创建绑定元素。 然后，我们可以注册配置文件中的扩展节，如下面的示例代码所示。  
+ `UdpTransportElement` 节是一个 `BindingElementExtensionElement`，它向配置系统公开 `UdpTransportBindingElement`。 通过一些基本重写，我们定义了配置节名称、绑定元素的类型以及如何创建绑定元素。 然后，我们可以注册配置文件中的扩展节，如下面的示例代码所示。  
   
 ```xml
 <configuration>  
@@ -350,8 +337,7 @@ if (context.Endpoint.Binding is CustomBinding)
 ```  
   
 ### <a name="binding-section"></a>绑定节  
- 
-  `SampleProfileUdpBindingCollectionElement` 节是一个 `StandardBindingCollectionElement`，它向配置系统公开 `SampleProfileUdpBinding`。 批量实现委派给从 `SampleProfileUdpBindingConfigurationElement` 派生的 `StandardBindingElement`。 `SampleProfileUdpBindingConfigurationElement`属性相对应的属性上`SampleProfileUdpBinding`，并从映射的函数`ConfigurationElement`绑定。 最后，在 `OnApplyConfiguration` 中重写 `SampleProfileUdpBinding` 方法，如下面的示例代码所示。  
+ `SampleProfileUdpBindingCollectionElement` 节是一个 `StandardBindingCollectionElement`，它向配置系统公开 `SampleProfileUdpBinding`。 批量实现委派给从 `SampleProfileUdpBindingConfigurationElement` 派生的 `StandardBindingElement`。 `SampleProfileUdpBindingConfigurationElement`属性相对应的属性上`SampleProfileUdpBinding`，并从映射的函数`ConfigurationElement`绑定。 最后，在 `OnApplyConfiguration` 中重写 `SampleProfileUdpBinding` 方法，如下面的示例代码所示。  
   
 ```csharp
 protected override void OnApplyConfiguration(string configurationName)  

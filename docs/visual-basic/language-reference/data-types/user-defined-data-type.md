@@ -23,12 +23,12 @@ helpviewer_keywords:
 - user-defined data types
 - types [Visual Basic], user-defined
 ms.assetid: be913dca-a364-4a51-96a1-549a1b390b0a
-ms.openlocfilehash: 33a9dd3144f6f51eb6a63ff93750019878cb4a03
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5fe12d18c7f403c1a50ed548a260ba39e83280eb
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54507468"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814185"
 ---
 # <a name="user-defined-data-type"></a>用户定义的数据类型
 在您定义的格式保存数据。 `Structure`语句定义的格式。  
@@ -72,6 +72,7 @@ End Structure
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ValueType>
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute>
 - [数据类型](../../../visual-basic/language-reference/data-types/index.md)

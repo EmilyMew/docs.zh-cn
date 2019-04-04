@@ -1,0 +1,228 @@
+### YamlMime:Tutorial
+title: 探索 C# 7.0 - C# 交互教程
+metadata:
+  title: 探索 C# 7.0 - 使用浏览器以交互方式尝试 C# 7.0 中的新功能
+  description: 在本教程中，你将使用浏览器以交互方式探索 C# 7.0。 你将探索可以与 C# 7.0 配合使用的新的习惯用语，这些习惯用语支持较简洁的可读代码。
+  audience: Developer
+  level: intermediate
+  ms.date: 03/20/2019
+  displayType: two-column
+  interactive: csharp
+  ms.openlocfilehash: 70f4e93460c69b54702f160d502163827ec73218
+  ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 03/30/2019
+  ms.locfileid: "58675518"
+items:
+- durationInMinutes: 1
+  content: >
+    通过本教程，使用浏览器编写 C#，并查看代码编译和运行结果，以交互方式探索 C# 7.0 功能。 本教程包含一系列课程，这些课程修改了早期的 C# 做法，以使用更新、更简洁的 C# 7.0 功能。 本文的其余部分是对每个功能的概述，并提供用于探索每个功能的链接。
+- title: 在赋值位置的 out 变量声明
+  durationInMinutes: 2
+  content: "支持 `out` 参数的现有语法已在此版本中得到改进。 单击本页底部的“进入焦点模式”按钮，然后在交互式窗口中，尝试运行以下代码： \n\n[!code-csharp[OutVariableOldStyle](~/samples/snippets/csharp/new-in-7/program.cs#OutVariableOldStyle \"classic out variable declaration\")]\n\n现在可以在方法调用的参数列表中声明 `out` 变量，而不是编写单独的声明语句。 可以将声明移到方法调用中。 在交互式窗口的底部，添加以下代码：\n\n[!code-csharp[OutVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVariableDeclarations \"Out variable declarations\")]\n\n可将 `int` 声明更改为 `var` 声明。 将以下代码添加到交互式窗口：\n\n[!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVarVariableDeclarations \"Implicitly typed Out variable\")]\n\n与现有语法相比，新语法提供了两个重要优势：\n\n* 代码更易于阅读。 \n    - 在使用 out 变量的地方声明 out 变量，而不是在上面的另一行。\n* 无需分配初始值。\n    - 通过在方法调用中使用 `out` 变量的位置声明该变量，使得在分配它之前不可能意外使用它。\n\n声明的变量的作用域是包含 `if` 语句的作用域。 这让你可以在之后使用该变量。 修改上一个 `if` 块，如下面的代码段所示。\n\n```csharp\nif (!int.TryParse(input, out int result))\n{    \n    return null;\n}\n\nConsole.WriteLine(result);\n```\n"
+- title: 元组创建轻量级数据结构
+  durationInMinutes: 1
+  content: "元组是包含多个字段以表示数据成员的轻量级数据结构。 这些字段没有经过验证，并且你无法定义自己的方法。\n\n> [!NOTE]\n> 低于 C# 7.0 的版本中也提供元组，但它们效率低下且不具有语言支持。 这意味着元组元素只能作为 `Item1` 和 `Item2` 等引用。 C# 7.0 引入了对元组的语言支持，可利用更有效的新元组类型向元组字段赋予语义名称。\n\n通过为每个命名成员赋值，可以创建一个元组：\n\n[!code-csharp[NamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#NamedTuple \"Named tuple\")]\n\n`namedLetters` 元组包含称为 `Alpha` 和 `Beta` 的字段。 这些名称仅在编译时存在，并且不会在运行时保留（例如，在使用反射检查元组时）。\n\n在进行元组赋值时，还可以指定赋值右侧的字段的名称： \n\n[!code-csharp[ImplicitNamedTuple](~/samples/snippets/csharp/new-in-7/program.cs#ImplicitNamedTuple \"Implicitly named tuple\")]\n\n可指定赋值左侧和右侧字段的名称，但右侧的名称会被忽略。\n\n元组在作为 `private` 和 `internal` 方法的返回类型时是最有用的。 元组为这些方法提供了一个简单语法来返回多个离散值。\n\n创建元组比创建类或结构更有效且更高效。 它是一种更简单的轻量级语法，用于定义携带多个值的数据结构。 下面的示例方法返回在一个整数序列中找到的最小值和最大值：\n\n[!code-csharp[TupleReturningMethod](~/samples/snippets/csharp/new-in-7/program.cs#TupleReturningMethod \"Tuple returning method\")]\n\n在某些时候，你可能想要解包从方法返回的元组的成员。  可通过为元组中的每个值声明单独的变量来实现此目的。 这称为析构元组。 在浏览器中添加以下代码以进行尝试：\n\n[!code-csharp[CallingWithDeconstructor](~/samples/snippets/csharp/new-in-7/program.cs#CallingWithDeconstructor \"Deconstructing a tuple\")]\n\n使用元组时，通常会发现并未使用元组结果的所有成员。 发生这种情况时，可通过使用 `_` 代替变量来丢弃一个或多个返回值。 在浏览器中添加以下代码以进行尝试：\n\n[!code-csharp[DiscardTupleMember](~/samples/snippets/csharp/new-in-7/program.cs#DiscardMember \"Discard a tuple member\")]\n\n可在[元组相关文章](../../tuples.md)中深入了解有关元组的详细信息。\n可以在[弃元相关文章](../../discards.md)中了解有关弃元的更多信息。\n"
+- title: 配合使用类型模式和 is 表达式
+  durationInMinutes: 2
+  content: >
+    `is` 模式表达式扩展了常用 [`is` 运算符](../../language-reference/keywords/is.md#pattern-matching-with-is)，使其可查询其类型之外的对象。
+
+
+    在浏览器窗口中尝试以下代码：
+
+
+    [!code-csharp[SimpleIs](~/samples/snippets/csharp/new-in-7/patternmatch.cs#SimpleIsPattern "Simple Is pattern")]
+
+
+    将变量声明更改为字符串：
+
+
+    ```csharp
+
+    object count = "5";
+
+    ```
+
+
+    现在，`is` 表达式为 false，因此执行 `else` 分支。 尝试在其他分支中将 `count` 更改为 `number`：
+
+
+    ```csharp
+
+    Console.WriteLine($"{number} is not an integer");
+
+    ```
+
+
+    以上内容无法编译，因为 `else` 分支中未分配 `number`。 它仅在 `if` 语句的 `true` 分支中分配。
+
+
+    当要测试少量类型时，`is` 表达式类型模式很有用。 通常可能需要测试多种类型。 这需要模式匹配 `switch` 语句。
+- title: Switch 语句中的模式匹配
+  durationInMinutes: 2
+  content: >
+    匹配表达式具有熟悉的语法，它基于已属于 C# 语言的 `switch` 语句。 我们首先查看基于在上一页了解的 `is` 表达式语法的小示例：
+
+
+    [!code-csharp[SimpleSwitch](~/samples/snippets/csharp/new-in-7/patternmatch.cs#SimpleSwitchPattern "simple switch")]
+
+
+    上述代码检查是否存在 `int` 或 `null`。 每种其他类型都达到了默认情况。 添加以下两行以验证行为：
+
+
+    [!code-csharp[AddLongCase](~/samples/snippets/csharp/new-in-7/patternmatch.cs#TestLong "Add a case for long")]
+
+
+    `switch` 表达式会将可为 null 的类型转换为其对应的类型。 添加以下内容以验证：
+
+
+    [!code-csharp[NullableCase](~/samples/snippets/csharp/new-in-7/patternmatch.cs#NullableSwitch "Add a nullable case")]
+
+
+    可以向 switch 语句添加任意数量的其他类型模式表达式。 在 `null` 事例之前添加以下内容：
+
+
+    [!code-csharp[MoreTypeCases](~/samples/snippets/csharp/new-in-7/patternmatch.cs#MoreCases "Add more type cases")]
+
+
+    通过添加以下测试确保这些内容生效：
+
+
+    [!code-csharp[AddMoreTests](~/samples/snippets/csharp/new-in-7/patternmatch.cs#MoreTests "Add more type tests")]
+
+
+    匹配表达式也支持常量。 这样可以通过分离出简单 case 来节省时间：
+
+
+    [!code-csharp[ConstantCase](~/samples/snippets/csharp/new-in-7/patternmatch.cs#ConstantCase "Add a constant case")]
+
+
+    必须在 `case int:` 表达式之前添加上面的事例。 如果在该事例之后添加，编译器会警告它已由先前的事例处理过。
+
+
+    可以向任何模式事例添加 `when` 子句，以便可以测试类型或常量值之外的其他条件。 通过在常规 `string` 事例上方添加以下事例来尝试此做法：
+
+
+    [!code-csharp[WhenClause](~/samples/snippets/csharp/new-in-7/patternmatch.cs#WhenClause "Add a when clause")]
+
+
+    用类似下方的代码进行测试：
+
+
+    [!code-csharp[TestWhenClause](~/samples/snippets/csharp/new-in-7/patternmatch.cs#TestWhenClause "Test the when clause")]
+
+
+    模式匹配表达式的新语法使得使用清晰简练的语法创建基于对象的类型或其他属性的分派算法更加容易。 模式匹配表达式可以在因继承而无关的数据类型上实现这些构造。
+
+
+    可在专门介绍 [C# 中的模式匹配](../../pattern-matching.md)的文章中了解有关模式匹配的详细信息。
+- title: 使用 ref 局部变量和返回结果优化内存存储
+  durationInMinutes: 2
+  content: >
+    此功能允许使用并返回对变量的引用的算法，这些变量在其他位置定义。 一个示例是使用大型矩阵并查找具有某些特征的单个位置。 有一个方法可返回矩阵中某单个位置的两个索引：
+
+
+    [!code-csharp[EverythingByValue](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#EverythingByValue "return indices by value")]
+
+
+    可使用以下代码测试此方法：
+
+
+    [!code-csharp[TestByValue](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#TestByValue "test code for return indices by value")]
+
+
+
+    `Find` 方法返回的是矩阵中的项的索引。 这会导致调用方编写使用这些索引的代码来取消引用矩阵并修改单个元素。 与其这样，还不如编写一个方法，返回对你要更改的矩阵的元素的引用。
+
+
+    让我们通过一系列更改来演示 ref 局部变量功能，并展示如何创建返回对内部存储的引用的方法。 与此同时，你将学习 ref 返回结果的规则以及可保护你免于意外误用它的 ref 局部变量功能。
+
+
+    首先修改 `Find` 方法声明，使其返回一个 `ref int`，而不是一个元组。
+
+
+    ```csharp
+
+    ref int Find(int[,] matrix, Func<int, bool> predicate)
+
+    ```
+
+
+    修改返回语句以返回位于正确索引的项：
+
+
+    ```csharp
+
+    return matrix[i,j];
+
+    ```
+
+
+    更改最终返回以引发异常：
+
+
+    ```csharp
+
+    throw new InvalidOperationException("Not found");
+
+    ```
+
+
+    请注意，此时将不会编译。 方法声明指示 `ref` 返回，但返回语句指定值返回。 必须将 `ref` 关键字添加到每个返回语句。 这指示按引用返回，并可帮助以后阅读代码的开发人员记住该方法按引用返回：
+
+
+    ```csharp
+
+    return ref matrix[i,j];
+
+    ```
+
+
+    因为该方法返回对矩阵中的整数值的引用，所以你需要修改调用它的位置。 `var` 声明意味着 `valItem` 现在是 `int` 而不是元组。 将调用代码更改为以下内容：
+
+
+    ```csharp
+
+    var valItem = Find(matrix, (val) => val == 42);
+
+    Console.WriteLine(valItem);
+
+    valItem = 24;
+
+    Console.WriteLine(matrix[4, 2]);
+
+    ```
+
+
+    上例中的第二个 `WriteLine` 语句打印出值 `42`，而不是 `24`。 变量 `valItem` 是 `int`，而不是 `ref int`。 `var` 关键字使编译器能够指定类型，但不会隐式添加 `ref` 修饰符。 相反，`ref return` 引用的值会被复制到赋值左侧的变量。 该变量不是 `ref` 局部变量。
+
+
+    为了修改返回的引用，需要将 `ref` 修饰符添加到局部变量声明中，并在调用 `Find` 之前，使变量在返回值为引用时成为引用。 修改浏览器中的测试代码以匹配以下内容：
+
+
+    [!code-csharp[EverythingByValue](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#TestByValue "test code for return object by reference")]
+
+
+    现在，上例中的第二个 `WriteLine` 语句打印出值 `24`，指示矩阵中的存储已被修改。 局部变量已使用 `ref` 修饰符进行声明，它将返回 `ref`。 必须在声明时初始化 `ref` 变量，不能拆分声明和初始化。
+
+
+    C# 语言还设有三条规则，可防止你误用 `ref` 局部变量和返回结果：
+
+
+    * 不可向 `ref` 本地变量赋予标准方法返回值。
+
+    * 不能将 `ref` 返回给其生存期不超出方法执行的变量。
+
+    * `ref` 局部变量和返回结果不可用于异步方法。
+
+
+    添加 ref 局部变量和 ref 返回结果可通过避免复制值或多次执行取消引用操作，允许更为高效的算法。
+
+
+    有关详细信息，请参阅 [ref 关键字](../../language-reference/keywords/ref.md)一文。
+- title: 使用本地函数最大程度减少对代码的访问
+  durationInMinutes: 2
+  content: "现在可以声明嵌套在其他函数中的本地函数。 这使你可以最大程度减少这些函数的可见性。 本地函数有三个明显的用例：\n\n- 递归函数。\n- 迭代器方法。\n- 异步方法。\n\n我们从递归方法开始。 在浏览器中尝试使用以下代码来计算 `6!`（阶乘）：\n\n```csharp\nint LocalFunctionFactorial(int n)\n{\n    return nthFactorial(n);\n\n    int nthFactorial(int number) => (number < 2) ? \n        1 : number * nthFactorial(number - 1);\n}\n\nConsole.WriteLine(LocalFunctionFactorial(6));\n```\n\n本地函数是实现递归算法的有效方法。 其他常见用途是用于公共迭代器方法和公共异步方法。 这两种类型的方法都生成报告错误的时间晚于程序员期望时间的代码。 在迭代器方法中，只有在调用枚举返回的序列的代码时才会观察到任何异常。 在异步方法中，只有当返回的 `Task` 处于等待状态时才会观察到任何异常。\n\n迭代器方法更便于在浏览器中探索，所以我们在此次探索中使用这些方法。 在浏览器中尝试可调用迭代器方法的以下代码：\n\n[!code-csharp[IteratorMethod](~/samples/snippets/csharp/new-in-7/Iterator.cs#SnippetIteratorMethod \"Iterator method\")]\n\n运行代码。 请注意，当代码开始循环访问第二个结果集时，将会引发异常。 循环访问第一个结果集的代码已经运行。 此示例较小，并且不会更改任何数据结构，因此它不会造成损害且易于修复。 但是，在较大的程序中，两个迭代器对象可能在不同的子方法中创建，因此可能很难找到根本原因。 如果第一个迭代器方法改变了数据状态，它甚至可能导致数据损坏。 最好在尚未完成任何工作前便立刻引发异常。 可以重构代码，以便公共方法验证所有参数以及执行枚举的本地函数：\n\n[!code-csharp[IteratorMethodRefactored](~/samples/snippets/csharp/new-in-7/Iterator.cs#IteratorMethodLocalInteractive \"Iterator method refactored\")]\n\n前面的版本清楚地表明，本地方法仅在外部方法的上下文中引用。 本地函数的规则还确保开发人员不会意外地从类中的另一个位置调用本地函数和绕过参数验证。\n\n可以对 `async` 方法采用相同的技术，以确保在异步工作开始之前引发由参数验证引起的异常。\n\n> [!NOTE]\n> 本地函数支持的某些设计也可以使用 lambda 表达式来完成。 感兴趣的读者可以[阅读有关差异的详细信息](../../local-functions-vs-lambdas.md)。\n"
+- content: 现已完成对 C# 7 中主要新功能的探索。 请立即在应用程序中亲自尝试新功能。 可在 [C# 7 中的新增功能](../../whats-new/csharp-7.md)一文中查看完整列表。

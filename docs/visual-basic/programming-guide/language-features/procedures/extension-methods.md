@@ -7,12 +7,12 @@ helpviewer_keywords:
 - extending data types [Visual Basic]
 - extension methods [Visual Basic]
 ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
-ms.openlocfilehash: a0c1721027307243fbad587afe996cc5f07a6928
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: aca8f18c4bc53318792a119617b1ca0d6c4cc32e
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56970540"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58822071"
 ---
 # <a name="extension-methods-visual-basic"></a>扩展方法 (Visual Basic)
 扩展方法使开发人员能够将自定义功能添加到已定义而无需创建新的派生的类型的数据类型。 扩展方法使其可以编写可以像调用现有类型的实例方法那样调用的方法。  
@@ -175,6 +175,7 @@ End Module
  如果优先级不能解决多义性问题，可以使用完全限定的名称来指定要调用的方法。 如果`Print`前面的示例中的方法定义一个名为模块中`StringExtensions`，完全限定的名是`StringExtensions.Print(example)`而不是`example.Print()`。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Runtime.CompilerServices>
 - <xref:System.Runtime.CompilerServices.ExtensionAttribute>
 - [扩展方法](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)

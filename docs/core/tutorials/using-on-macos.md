@@ -4,12 +4,12 @@ description: 本文档提供使用 Visual Studio Code 创建 .NET Core 解决方
 author: bleroy
 ms.date: 03/23/2017
 ms.custom: seodec18
-ms.openlocfilehash: 8deaab67f7a824f6eb079f49b7fd75e0c02f1025
-ms.sourcegitcommit: 5d9f4b805787f890ca6e0dc7ea30a43018bc9cbb
+ms.openlocfilehash: e5ac6fa04a2a5001146936de56acafeec7dd895d
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57788448"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409492"
 ---
 # <a name="get-started-with-net-core-on-macos"></a>开始在 macOS 上使用 .NET Core
 
@@ -215,7 +215,7 @@ dotnet run -p app/app.csproj
 
 若要打开“调试器”选项卡，请在 Visual Studio Code 工具栏中选择“调试”图标，再从菜单栏中依次选择“视图”>“调试”，或使用键盘快捷方式 <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>D</kbd>：
 
-![Visual Studio Code 调试程序](./media/using-on-macos/vscodedebugger.png)
+![Visual Studio Code 调试程序](./media/using-on-macos/visual-studio-code-debugger.png)
 
 按“开始”按钮，在调试器下启动应用程序。 应用开始执行，运行到断点处停止。 单步执行 `Get` 方法，确保已传入正确的参数。 确认答案是 42。
 

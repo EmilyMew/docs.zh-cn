@@ -2,12 +2,12 @@
 title: 如何：从 Office Open XML 文档 (Visual Basic 中) 中检索段落
 ms.date: 07/20/2015
 ms.assetid: 66053f21-9217-473c-a6f3-a0897be07756
-ms.openlocfilehash: ea577d114c4c736b074311bfb3c927268d18830d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 325f0d981c4988379938385fbfff5d36d0f5bff8
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54624234"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58828571"
 ---
 # <a name="how-to-retrieve-paragraphs-from-an-office-open-xml-document-visual-basic"></a>如何：从 Office Open XML 文档 (Visual Basic 中) 中检索段落
 本主题提供一个示例，该示例打开一个 Office Open XML 文档，然后检索文档中所有段落所构成的集合。  
@@ -173,4 +173,5 @@ StyleName:Code >Hello World<
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [高级查询技术 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

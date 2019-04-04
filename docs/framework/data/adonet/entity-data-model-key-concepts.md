@@ -2,12 +2,12 @@
 title: 实体数据模型关键概念
 ms.date: 03/30/2017
 ms.assetid: c635a16d-6674-45aa-9344-dcb7df992bab
-ms.openlocfilehash: 0a79143f8927a8368eaba1224c27f453ca81bdf7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bcfc9cbb82a23dcb4d33ca8a838a49eac7180111
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54574321"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58825659"
 ---
 # <a name="entity-data-model-key-concepts"></a>实体数据模型关键概念
 实体数据模型 (EDM) 使用三个关键概念来描述数据结构：*实体类型*，*关联类型*，并*属性*。 在任何 EDM 实现中，这些都是描述数据结构的最重要概念。  
@@ -32,7 +32,7 @@ ms.locfileid: "54574321"
 ## <a name="representations-of-a-conceptual-model"></a>概念模型的表示形式  
  一个*概念模型*是为实体和关系的特定表示形式的一些数据结构。 概念模型的一种表示形式是图表。 下图用三个实体类型（`Book`、`Publisher` 和 `Author`）以及两个关联（`PublishedBy` 和 `WrittenBy`）来表示概念模型：  
   
- ![具有导航属性的模型](../../../../docs/framework/data/adonet/media/modelwithnavprops.gif "ModelWithNavProps")  
+ ![显示具有三个实体类型的概念模型关系图。](./media/entity-data-model-key-concepts/conceptual-model-entity-types-associations.gif)  
   
  然而，如果要传达一些有关模型的详细信息，这种表现形式存在一些不足。 例如，图中没有传达属性类型和实体集信息。 域特定语言 (DSL) 可用于更明确地传达有关概念模型的大量信息。 [ADO.NET 实体框架](../../../../docs/framework/data/adonet/ef/index.md)使用名为基于 XML 的 DSL*概念架构定义语言*([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) 来定义概念模型。 下面是上图所示的概念模型的 CSDL 定义。  
   

@@ -43,8 +43,7 @@ HRESULT GetEventMask2(
  [out] 一个指向指定事件类别的 4 字节值的指针。  每个位都可控制不同的功能、行为或事件类型。 在中描述了这些位[COR_PRF_HIGH_MONITOR](../../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md)枚举。  
   
 ## <a name="remarks"></a>备注  
- 
-  `GetEventMask2` 方法用于确定探查器已订阅了哪些回调。 通常情况下，执行的逻辑 OR`pdwEventsLow`并`pdwEventsHigh`值以及你想要设置，然后调用任何新位[SetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md)方法。  
+ `GetEventMask2` 方法用于确定探查器已订阅了哪些回调。 通常情况下，执行的逻辑 OR`pdwEventsLow`并`pdwEventsHigh`值以及你想要设置，然后调用任何新位[SetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md)方法。  
   
  此方法是为建议的替代项[GetEventMask](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-geteventmask-method.md)方法。  
   

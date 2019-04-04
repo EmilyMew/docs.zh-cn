@@ -42,8 +42,7 @@ ms.locfileid: "57677560"
 
 可以用下面三种方法之一指定正则表达式的选项：
 
-- 在 `options` 类构造函数或静态（在 Visual Basic 中为 <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>）模式匹配方法的 `Shared` 参数中，如 <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> 或 <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>。 
-  `options` 参数是 <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> 枚举值的按位“或”组合。
+- 在 `options` 类构造函数或静态（在 Visual Basic 中为 <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>）模式匹配方法的 `Shared` 参数中，如 <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> 或 <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>。 `options` 参数是 <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> 枚举值的按位“或”组合。
 
     当通过使用类构造函数的 `options` 参数，将选项提供给 <xref:System.Text.RegularExpressions.Regex> 实例时，这些选项将分配给 <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> 属性。 然而，<xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> 属性不会在正则表达式模式本身中反映内联选项。
 
@@ -115,8 +114,7 @@ ms.locfileid: "57677560"
 
 ## <a name="default-options"></a>默认选项
 
-
-  <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType> 选项指示尚未指定任何选项，正则表达式引擎使用其默认行为。 这包括：
+<xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType> 选项指示尚未指定任何选项，正则表达式引擎使用其默认行为。 这包括：
 
 - 该模式将被解释为一个规范而非 ECMAScript 正则表达式。
 
@@ -135,8 +133,7 @@ ms.locfileid: "57677560"
 - 正则表达式模式中的捕获组可以是隐式的，也可以是显式的。
 
 > [!NOTE]
-> 
-  <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType> 选项没有内联等效项。 当内联应用正则表达式选项时，默认行为通过关闭特定选项以逐个选项方式存储。 例如， `(?i)` 打开不区分大小写的比较，`(?-i)` 还原默认区分大小写的比较。
+> <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType> 选项没有内联等效项。 当内联应用正则表达式选项时，默认行为通过关闭特定选项以逐个选项方式存储。 例如， `(?i)` 打开不区分大小写的比较，`(?-i)` 还原默认区分大小写的比较。
 
 因为 <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType> 选项表示正则表达式引擎的默认行为，因此它很少显式地在方法调用中指定。 而改为调用构造函数或静态模式匹配的方法，其中不包含 `options` 参数。
 
@@ -146,8 +143,7 @@ ms.locfileid: "57677560"
 
 ## <a name="case-insensitive-matching"></a>不区分大小写的匹配
 
-
-  <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase> 选项或 `i` 内联选项提供了不区分大小写匹配。 默认情况下，使用当前区域性的大小写约定。
+<xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase> 选项或 `i` 内联选项提供了不区分大小写匹配。 默认情况下，使用当前区域性的大小写约定。
 
 下面的示例定义与以“the”开头的所有单词匹配的正则表达式模式 `\bthe\w*\b`。 因为对 <xref:System.Text.RegularExpressions.Regex.Match%2A> 方法的第一次调用使用默认区分大小写的比较，因此输出会指示以字符串“The”开头的句子不匹配。 通过将选项设置为 <xref:System.Text.RegularExpressions.Regex.Match%2A>，调用 <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase> 方法时对其进行匹配。
 
@@ -165,8 +161,7 @@ ms.locfileid: "57677560"
 
 ## <a name="multiline-mode"></a>多行模式
 
-
-  <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 选项或 `m` 内联选项使正则表达式引擎能够处理由多个行组成的输入字符串。 它更改了 `^` 和 `$` 语言元素的解释，以使它们分别与行的开头和结尾匹配，而不是与输入字符串的开头和结尾匹配。
+<xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 选项或 `m` 内联选项使正则表达式引擎能够处理由多个行组成的输入字符串。 它更改了 `^` 和 `$` 语言元素的解释，以使它们分别与行的开头和结尾匹配，而不是与输入字符串的开头和结尾匹配。
 
 默认情况下，`$` 仅与输入字符串的末尾匹配。 如果指定了 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 选项，它将与换行符 (`\n`) 或输入字符串的末尾匹配。 但是，它并不与回车符/换行符的组合匹配。 若要成功匹配它们，使用子表达式 `\r?$` 只替代 `$`。
 
@@ -197,8 +192,7 @@ ms.locfileid: "57677560"
 
 ## <a name="single-line-mode"></a>单行模式
 
-
-  <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> 选项或 `s` 内联选项导致正则表达式引擎将输入字符串视为由单行组成。 它通过更改时间段 (`.`) 语言元素的行为，使其与每个字符匹配，而不是与除换行符 `\n` 或 \u000A 之外的每个字符匹配来执行此操作。
+<xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> 选项或 `s` 内联选项导致正则表达式引擎将输入字符串视为由单行组成。 它通过更改时间段 (`.`) 语言元素的行为，使其与每个字符匹配，而不是与除换行符 `\n` 或 \u000A 之外的每个字符匹配来执行此操作。
 
 下面的示例演示了在使用 `.` 选项时如何更改 <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> 语言元素的行为。 正则表达式 `^.+` 在字符串开头开始并匹配每个字符。 默认情况下，匹配在第一行的结尾结束；正则表达式模式匹配回车符、`\r` 或 \u000D，但不匹配 `\n`。 由于 <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> 选项将整个输入字符串解释为单行，因此它匹配输入字符串中的每个字符，包括 `\n`。
 
@@ -278,8 +272,7 @@ ms.locfileid: "57677560"
 - 静态正则表达式在对正则表达式模式匹配方法的多个调用中使用。 （之所以能够提高性能，是因为静态方法调用中使用的正则表达式由正则表达式引擎缓存。）
 
 > [!NOTE]
-> 
-  <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> 选项与 <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> 方法无关，该方法创建一个特殊用途的程序集，其中包含预定义的已编译的正则表达式。
+> <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> 选项与 <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> 方法无关，该方法创建一个特殊用途的程序集，其中包含预定义的已编译的正则表达式。
 
 [返回页首](#Top)
 
@@ -289,8 +282,7 @@ ms.locfileid: "57677560"
 
 默认情况下，正则表达式模式中的空白非常重要；它会强制正则表达式引擎与输入字符串中的空白字符相匹配。 因此，正则表达式“`\b\w+\s`”和“`\b\w+`”是大致等效的正则表达式。 此外，正则表达式模式中出现数字符号 (#) 时，它被解释为要进行匹配的原义字符。
 
-
-  <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> 选项或 `x` 内联选项更改此默认行为，如下所示：
+<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> 选项或 `x` 内联选项更改此默认行为，如下所示：
 
 - 正则表达式模式中的非转义的空白将被忽略。 作为正则表达式模式的部分，必须避开空白字符（例如 `\s` 或“`\`”）。
 
@@ -335,8 +327,7 @@ ms.locfileid: "57677560"
 > [!NOTE]
 > 仅能通过将 <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> 值提供给 `options` 类构造函数或静态模式匹配方法的 <xref:System.Text.RegularExpressions.Regex> 参数来提供从右到左模式。 它不可作为内联选项使用。
 
-
-  <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> 选项仅更改搜索方向；它不解释正则表达式模式是从右到左。 例如，正则表达式 `\bb\w+\s` 匹配以字母“b”开头的单词,且后跟一个空白字符。 在下面的示例中，输入字符串由其中包括一个或多个“b”字符的三个单词组成。 第一个单词以“b”开头，第二个单词以“b”结尾，第三个单词的中间包括两个“b”字符。 如示例输出所示，只有第一个词与正则表达式模式匹配。
+<xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> 选项仅更改搜索方向；它不解释正则表达式模式是从右到左。 例如，正则表达式 `\bb\w+\s` 匹配以字母“b”开头的单词,且后跟一个空白字符。 在下面的示例中，输入字符串由其中包括一个或多个“b”字符的三个单词组成。 第一个单词以“b”开头，第二个单词以“b”结尾，第三个单词的中间包括两个“b”字符。 如示例输出所示，只有第一个词与正则表达式模式匹配。
 
 [!code-csharp[Conceptual.Regex.Language.Options#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/righttoleft1.cs#17)]
 [!code-vb[Conceptual.Regex.Language.Options#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/righttoleft1.vb#17)]
@@ -367,8 +358,7 @@ ms.locfileid: "57677560"
 > [!NOTE]
 > 仅在通过将 <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType> 值提供给 `options` 类构造函数造函数或静态模式匹配方法的 <xref:System.Text.RegularExpressions.Regex> 参数后，符合 ECMAScript 的行为才可用。 它不可作为内联选项使用。
 
-
-  <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType> 选项只能与 <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> 和 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 选项结合使用。 在正则表达式中使用其他选项会导致 <xref:System.ArgumentOutOfRangeException>。
+<xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType> 选项只能与 <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> 和 <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> 选项结合使用。 在正则表达式中使用其他选项会导致 <xref:System.ArgumentOutOfRangeException>。
 
 ECMAScript 和规范化正则表达式的行为在三个方面不同：字符类语法、自引用捕获组和八进制与反向引用的解释。
 

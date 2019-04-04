@@ -5,12 +5,12 @@ helpviewer_keywords:
 - shadowing, vs. overriding
 - overriding, vs. shadowing
 ms.assetid: 2d014a0b-7630-407d-8f4e-24bd87987923
-ms.openlocfilehash: d60d668c97019418b30b89147e86f7beea1c31f7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b935184f0e4d0378bfea69811aa4e6c068a9776f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54640665"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827921"
 ---
 # <a name="differences-between-shadowing-and-overriding-visual-basic"></a>隐藏和重写之间的差异 (Visual Basic)
 定义从基类继承的类时，你有时想要重新定义一个或多个派生类中的基类元素。 隐藏和重写均可用于此目的。  
@@ -22,8 +22,8 @@ ms.locfileid: "54640665"
   
 ||||  
 |---|---|---|  
-|比较点|隐藏|重写|  
-|目标|防止后续的 base 类修改引入您已经在派生类中定义的成员|通过定义的过程或具有相同的调用顺序属性不同的实现，从而实现多形性<sup>1</sup>|  
+|比较点|阴影操作|重写|  
+|用途|防止后续的 base 类修改引入您已经在派生类中定义的成员|通过定义的过程或具有相同的调用顺序属性不同的实现，从而实现多形性<sup>1</sup>|  
 |重新定义的元素|任何声明的元素类型|只有过程 (`Function`， `Sub`，或`Operator`) 或属性|  
 |重新定义元素|任何声明的元素类型|过程或属性与相同的调用序列<sup>1</sup>|  
 |重定义元素的访问级别|任何访问级别|不能更改重写元素的访问级别|  
@@ -52,6 +52,7 @@ ms.locfileid: "54640665"
 -   你希望可以随意更改的元素类型或调用序列。  
   
 ## <a name="see-also"></a>请参阅
+
 - [对已声明元素的引用](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
 - [在 Visual Basic 中隐藏](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
 - [如何：隐藏与您的变量同名的变量](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-hide-a-variable-with-the-same-name-as-your-variable.md)

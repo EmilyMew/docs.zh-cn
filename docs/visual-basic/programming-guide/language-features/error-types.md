@@ -10,12 +10,12 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], types of errors
 - syntax errors [Visual Basic], Visual Basic
 ms.assetid: 3048aabf-8c97-4e13-9150-853769cb5f6f
-ms.openlocfilehash: dc7cba394f623ae94a0d9ca8285fc12af8f0dacf
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 07db963ac3cf9d1c0d17c420480189d362cdaf2c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54600331"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58831561"
 ---
 # <a name="error-types-visual-basic"></a>错误类型 (Visual Basic)
 在 Visual Basic 中，错误 (也称为*异常*) 分为三个类别之一： 语法错误、 运行时错误和逻辑错误。  
@@ -33,5 +33,6 @@ ms.locfileid: "54600331"
  *逻辑错误*是使用应用程序后出现的。 它们是以响应用户操作的大多数通常不需要的或意外结果。 例如，错误键入的键或其他外部影响可能会导致你的应用程序停止工作中所需的参数，或完全。 逻辑错误通常是最难的类型，若要解决，因为它不是始终清除它们发生的位置。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Try...Catch...Finally 语句](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
 - [调试器基础知识](/visualstudio/debugger/debugger-basics)

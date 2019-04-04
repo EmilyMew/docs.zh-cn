@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID75
 ms.assetid: 6ce3a161-7316-46bd-a785-0d50e5414020
-ms.openlocfilehash: 53f021faa9e4ae69a71d825ca823e1180421afc6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3c364296997f571956caad995581102ed990549d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54522474"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842559"
 ---
 # <a name="pathfile-access-error"></a>路径/文件访问错误
 在文件访问权限或磁盘访问操作中，操作系统无法获得的路径和文件名称之间的连接。  
@@ -25,4 +25,5 @@ ms.locfileid: "54522474"
 4.  请确保未尝试更改数据库或文档中的 Visual Basic 项目。  
   
 ## <a name="see-also"></a>请参阅
+
 - [错误类型](../../../visual-basic/programming-guide/language-features/error-types.md)

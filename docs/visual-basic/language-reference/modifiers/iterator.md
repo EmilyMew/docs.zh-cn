@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - Iterator keyword [Visual Basic]
 ms.assetid: 69cb0b04-ac87-49d0-bcfe-810c0d60daff
-ms.openlocfilehash: 06188560163491284eab0dcfc4bba6b029e65ce8
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 499949d1f4c20e1f465355bd076ba39f1496779b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56969279"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58822695"
 ---
 # <a name="iterator-visual-basic"></a>迭代器 (Visual Basic)
 指定的函数或`Get`访问器是一个迭代器。  
@@ -32,8 +32,7 @@ ms.locfileid: "56969279"
  一个迭代器，可以是匿名函数。 有关更多信息，请参见 [迭代器](../../programming-guide/concepts/iterators.md)。  
   
 ## <a name="usage"></a>用法  
- 
-  `Iterator` 修饰符可用于下面的上下文中：  
+ `Iterator` 修饰符可用于下面的上下文中：  
   
 -   [Function 语句](../../../visual-basic/language-reference/statements/function-statement.md)  
   
@@ -52,6 +51,7 @@ ms.locfileid: "56969279"
  有关其他示例，请参阅[迭代器](../../programming-guide/concepts/iterators.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>
 - [迭代器](../../programming-guide/concepts/iterators.md)
 - [Yield 语句](../../../visual-basic/language-reference/statements/yield-statement.md)

@@ -2,12 +2,12 @@
 title: 具有 Styles2 的 WordprocessingML 文档
 ms.date: 07/20/2015
 ms.assetid: a9136e4d-c368-4661-8049-7d45c679a236
-ms.openlocfilehash: 685e32373f864b9e8cc04b0da5250bd96efd23c9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 977de8e4272ca7cea004127adcf1b15726dcc211
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54729297"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58839714"
 ---
 # <a name="wordprocessingml-document-with-styles"></a>具有样式的 WordprocessingML 文档
 较为复杂的 WordprocessingML 文档具有使用样式格式的段落。  
@@ -17,7 +17,7 @@ ms.locfileid: "54729297"
  访问包时，重要的是通过部分之间的关系来访问包，而不是使用任意路径来访问包。 此问题超出了在 WordprocessingML 文档教程中使用内容的范围，但是本教程包含的示例程序演示了正确的方法。  
   
 ## <a name="a-document-that-uses-styles"></a>使用样式的文档  
- 中提供的 WordML 示例[形状 WordprocessingML 文档的 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/shape-of-wordprocessingml-documents.md)主题是一个非常简单。 以下文档则更为复杂：它具有使用样式格式的段落。 若要查看构成 Office Open XML 文档的 XML 是运行的最简单方法[示例的输出 Office Open XML 文档部件 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/example-that-outputs-office-open-xml-document-parts.md)。  
+ 中提供的 WordML 示例[形状 WordprocessingML 文档的 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/shape-of-wordprocessingml-documents.md)主题是一个非常简单。 以下文档更复杂：它具有使用样式格式的段落。 若要查看构成 Office Open XML 文档的 XML 是运行的最简单方法[示例的输出 Office Open XML 文档部件 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/example-that-outputs-office-open-xml-document-parts.md)。  
   
  在下面的文档中，第一段具有 `Heading1` 样式。 很多段落具有默认样式。 还有一些段落具有 `Code` 样式。 由于这种相对复杂性，这个文档更值得使用 LINQ to XML 来解析。  
   
@@ -138,4 +138,5 @@ ms.locfileid: "54729297"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [详细信息的 Office Open XML WordprocessingML 文档 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)

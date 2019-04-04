@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30002
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
-ms.openlocfilehash: 80a3d31a8a46ce616be2dd2ab27faf0af04876f2
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: c2675d61307d92da1710368668f43af3559060a3
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55275063"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58825031"
 ---
 # <a name="type-typename-is-not-defined"></a>类型\<类型名称 > 未定义
 该语句进行了对未定义的类型引用。 您可以如声明语句中定义的类型`Enum`， `Structure`， `Class`，或`Interface`。  
@@ -32,6 +32,7 @@ ms.locfileid: "55275063"
 -   请确保该类型所在的目标.NET Framework 配置文件的一部分的程序集。 有关详细信息，请参阅 [.NET Framework 目标错误疑难解答](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 Visual Basic 中的命名空间](../../../visual-basic/programming-guide/program-structure/namespaces.md)
 - [Enum 语句](../../../visual-basic/language-reference/statements/enum-statement.md)
 - [Structure 语句](../../../visual-basic/language-reference/statements/structure-statement.md)

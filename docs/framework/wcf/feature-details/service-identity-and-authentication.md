@@ -32,8 +32,7 @@ ms.locfileid: "57212516"
   
  客户端上的标识处理与服务上的客户端身份验证相似。 直到已经对客户端的凭据进行了身份验证，安全服务才会执行代码。 同样，直到基于事先从服务元数据已知的内容对服务凭据进行了身份验证，客户端才会向服务发送消息。  
   
- 
-  <xref:System.ServiceModel.EndpointAddress.Identity%2A> 类的 <xref:System.ServiceModel.EndpointAddress> 属性表示由客户端调用的服务的标识。 服务在其元数据中发布 <xref:System.ServiceModel.EndpointAddress.Identity%2A>。 当客户端开发人员运行时[ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)针对服务终结点，生成的配置包含的值的服务的<xref:System.ServiceModel.EndpointAddress.Identity%2A>属性。 WCF 基础结构 （是否使用安全配置） 验证该服务处理指定的标识。  
+ <xref:System.ServiceModel.EndpointAddress.Identity%2A> 类的 <xref:System.ServiceModel.EndpointAddress> 属性表示由客户端调用的服务的标识。 服务在其元数据中发布 <xref:System.ServiceModel.EndpointAddress.Identity%2A>。 当客户端开发人员运行时[ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)针对服务终结点，生成的配置包含的值的服务的<xref:System.ServiceModel.EndpointAddress.Identity%2A>属性。 WCF 基础结构 （是否使用安全配置） 验证该服务处理指定的标识。  
   
 > [!IMPORTANT]
 >  元数据包含服务的预期标识，因此建议以安全方式公开服务元数据，例如，通过创建服务的 HTTPS 终结点。 有关详细信息，请参阅[如何：保护元数据终结点](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md)。  
@@ -44,14 +43,11 @@ ms.locfileid: "57212516"
 |标识类型|描述|典型的方案|  
 |-------------------|-----------------|----------------------|  
 |域名系统 (DNS)|将此元素用于 X.509 证书或 Windows 帐户。 它将凭据中指定的 DNS 名称与此元素中指定的值进行比较。|DNS 检查让您可以通过 DNS 或使用者名称来使用证书。 如果使用同一个 DNS 或使用者名称来重新颁发证书，则标识检查仍然有效。 在重新颁发证书时，它会获取新的 RSA 密钥，但保留相同的 DNS 或使用者名称。 这意味着客户端不必更新其有关服务的标识信息。|  
-|证书。 
-  `ClientCredentialType` 设置为 Certificate 时的默认值。|此元素指定要与客户端进行比较的 Base64 编码的 X.509 证书值。<br /><br /> 在使用 [!INCLUDE[infocard](../../../../includes/infocard-md.md)] 作为对服务进行身份验证的凭据时也使用此元素。|此元素将身份验证限制为单个基于其指纹值的证书。 这样将启用更为严格的身份验证，因为指纹值是唯一的。 这会带来一点：如果具有相同的使用者名称重新颁发证书时，它还具有一个新的指纹。 因此，客户端无法验证服务，除非新的指纹是已知的。 有关查找证书的指纹的详细信息，请参阅[如何：检索证书的指纹](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)。|  
+|证书。 `ClientCredentialType` 设置为 Certificate 时的默认值。|此元素指定要与客户端进行比较的 Base64 编码的 X.509 证书值。<br /><br /> 在使用 [!INCLUDE[infocard](../../../../includes/infocard-md.md)] 作为对服务进行身份验证的凭据时也使用此元素。|此元素将身份验证限制为单个基于其指纹值的证书。 这样将启用更为严格的身份验证，因为指纹值是唯一的。 这会带来一点：如果具有相同的使用者名称重新颁发证书时，它还具有一个新的指纹。 因此，客户端无法验证服务，除非新的指纹是已知的。 有关查找证书的指纹的详细信息，请参阅[如何：检索证书的指纹](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)。|  
 |证书引用|与前面描述的“证书”选项完全相同。 但是，此元素可让您指定证书名称并存储检索证书的位置。|与前面描述的“证书”方案相同。<br /><br /> 其优点是证书存储位置可以更改。|  
 |RSA|此元素指定要与客户端进行比较的 RSA 密钥值。 这与“证书”选项类似，但并不使用证书的指纹，而是使用证书的 RSA 密钥。|RSA 检查可让您明确地将身份验证限制为单个证书（基于其 RSA 证书）。 这样将启用更为严格的特定 RSA 密钥身份验证，不过与此对应的代价是，如果更改 RSA 密钥值，则该服务不可再用于现有客户端。|  
-|用户主体名称 (UPN)。 
-  `ClientCredentialType` 设置为 Windows 时的默认值，并且服务进程不是在一个系统帐户下运行的。|此元素指定运行服务所依据的 UPN。 请参阅的 Kerberos 协议和标识部分[重写用于身份验证的服务标识](../../../../docs/framework/wcf/extending/overriding-the-identity-of-a-service-for-authentication.md)。|这将确保服务在特定的 Windows 用户帐户下运行。 用户帐户可以是当前已登录用户，也可以是在特定用户帐户下运行的服务。<br /><br /> 如果服务是在 Active Directory 环境内的域帐户下运行，则此设置将利用 Windows Kerberos 安全。|  
-|服务主体名称 (SPN)。 
-  `ClientCredentialType` 设置为 Windows 时的默认值，并且服务进程是在一个系统帐户（LocalService、LocalSystem 或 NetworkService）下运行的。|此元素指定与服务的帐户相关联的 SPN。 请参阅的 Kerberos 协议和标识部分[重写用于身份验证的服务标识](../../../../docs/framework/wcf/extending/overriding-the-identity-of-a-service-for-authentication.md)。|这将确保 SPN 和与 SPN 相关联的特定 Windows 帐户标识服务。<br /><br /> 可以使用 Setspn.exe 工具将计算机帐户与服务的用户帐户进行关联。<br /><br /> 如果服务是在一个系统帐户下或具有与其关联的 SPN 名称的域帐户下运行的，并且计算机是 Active Directory 环境中的域的一个成员，则此设置将利用 Windows Kerberos 安全。|  
+|用户主体名称 (UPN)。 `ClientCredentialType` 设置为 Windows 时的默认值，并且服务进程不是在一个系统帐户下运行的。|此元素指定运行服务所依据的 UPN。 请参阅的 Kerberos 协议和标识部分[重写用于身份验证的服务标识](../../../../docs/framework/wcf/extending/overriding-the-identity-of-a-service-for-authentication.md)。|这将确保服务在特定的 Windows 用户帐户下运行。 用户帐户可以是当前已登录用户，也可以是在特定用户帐户下运行的服务。<br /><br /> 如果服务是在 Active Directory 环境内的域帐户下运行，则此设置将利用 Windows Kerberos 安全。|  
+|服务主体名称 (SPN)。 `ClientCredentialType` 设置为 Windows 时的默认值，并且服务进程是在一个系统帐户（LocalService、LocalSystem 或 NetworkService）下运行的。|此元素指定与服务的帐户相关联的 SPN。 请参阅的 Kerberos 协议和标识部分[重写用于身份验证的服务标识](../../../../docs/framework/wcf/extending/overriding-the-identity-of-a-service-for-authentication.md)。|这将确保 SPN 和与 SPN 相关联的特定 Windows 帐户标识服务。<br /><br /> 可以使用 Setspn.exe 工具将计算机帐户与服务的用户帐户进行关联。<br /><br /> 如果服务是在一个系统帐户下或具有与其关联的 SPN 名称的域帐户下运行的，并且计算机是 Active Directory 环境中的域的一个成员，则此设置将利用 Windows Kerberos 安全。|  
   
 ## <a name="specifying-identity-at-the-service"></a>在服务上指定标识  
  通常情况下不需要设置服务上的标识，因为客户端凭据类型的选择即规定了服务元数据中公开的标识的类型。 有关如何重写或指定服务标识的详细信息，请参阅[重写用于身份验证的服务标识](../../../../docs/framework/wcf/extending/overriding-the-identity-of-a-service-for-authentication.md)。  

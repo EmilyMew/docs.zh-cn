@@ -4,12 +4,12 @@ description: 探索微服务之间的不同通信方式，了解同步和异步�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
-ms.openlocfilehash: 1e8f15e2a02c8f6e7456a2e3a2f6756277ec6314
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: 4b57607897e42ff68ff7566120bc3c932040a2a6
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53127168"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58466187"
 ---
 # <a name="communication-in-a-microservice-architecture"></a>微服务体系结构中的通信
 
@@ -90,10 +90,10 @@ ms.locfileid: "53127168"
 ### <a name="additional-resources"></a>其他资源
 
 - **Martin Fowler。Richardson 成熟度模型** REST 模型的说明。 \
-  [*https://martinfowler.com/articles/richardsonMaturityModel.html*](https://martinfowler.com/articles/richardsonMaturityModel.html)
+  [https://martinfowler.com/articles/richardsonMaturityModel.html](https://martinfowler.com/articles/richardsonMaturityModel.html)
 
 - **Swagger** 官方网站。 \
-  [*https://swagger.io/*](https://swagger.io/)
+  [https://swagger.io/](https://swagger.io/)
 
 ### <a name="push-and-real-time-communication-based-on-http"></a>基于 HTTP 的推送和实时通信
 

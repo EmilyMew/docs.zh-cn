@@ -8,12 +8,12 @@ helpviewer_keywords:
 - event handling, troubleshooting
 - event handlers, troubleshooting
 ms.assetid: e1c8759f-5370-4308-8476-8c48b73509bf
-ms.openlocfilehash: 91bded2f1249bfcbeeca28419ee9bcec819babf6
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 704ca667a6d14ade7be0192e872f5e40791cb864
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56965419"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58830183"
 ---
 # <a name="troubleshooting-inherited-event-handlers-in-visual-basic"></a>有关 Visual Basic 中继承的事件处理程序的疑难解答
 本主题列出了使用继承的组件中的事件处理程序时出现的常见问题。  
@@ -29,4 +29,5 @@ ms.locfileid: "56965419"
 -   如果继承的方法没有`Handles`关键字，验证你的代码不包含一个额外[AddHandler 语句](../../../../visual-basic/language-reference/statements/addhandler-statement.md)或处理相同事件的任何其他方法。  
   
 ## <a name="see-also"></a>请参阅
+
 - [事件](../../../../visual-basic/programming-guide/language-features/events/index.md)

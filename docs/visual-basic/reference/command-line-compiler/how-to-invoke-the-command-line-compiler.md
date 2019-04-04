@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual Basic compiler, starting
 - command line [Visual Basic], arguments
 ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
-ms.openlocfilehash: dd5fadb9c9f248b5fb4f289bb2d24f1b085a79a8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 78bf5b1f19db3a4f39e263cfd71283f0f7718631
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54503724"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58817175"
 ---
 # <a name="how-to-invoke-the-command-line-compiler-visual-basic"></a>如何：调用命令行编译器 (Visual Basic)
 可以通过在命令行中，也称为 MS-DOS 提示符中键入可执行文件的名称来调用命令行编译器。 如果从默认 Windows 命令提示符下进行编译，你必须键入的可执行文件的完全限定的路径。 若要替代此默认行为，可以使用用于 Visual Studio，开发人员命令提示或修改 PATH 环境变量。 同时，可从任何目录编译只需键入编译器名称。  
@@ -58,5 +58,6 @@ ms.locfileid: "54503724"
      例如，如果在名为的目录中存储你的源代码`SourceFiles`，将打开命令提示符并键入`cd SourceFiles`更改为该目录。 如果该目录包含名为源文件`Source.vb`，则可以通过键入来对其进行编译`vbc.exe Source.vb`。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)
 - [条件编译](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)

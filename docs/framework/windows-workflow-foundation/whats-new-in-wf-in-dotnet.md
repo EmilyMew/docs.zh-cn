@@ -102,7 +102,7 @@ ms.locfileid: "57718917"
 
 - 变量
 
-- 参数
+- 自变量
 
 - 表达式
 
@@ -114,7 +114,7 @@ ms.locfileid: "57718917"
 
 ### <a name="BKMK_VariableDeleteContextMenu"></a> 删除变量和自变量设计器中的上下文菜单项
 
-在 [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] 中，只能使用键盘来删除设计器中的变量和自变量。 从 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 开始，可以使用上下文菜单来删除变量和参数。
+在 [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] 中，只能使用键盘来删除设计器中的变量和自变量。 从 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 开始，可以使用上下文菜单来删除变量和自变量。
 
 以下屏幕快照显示了变量和自变量设计器的上下文菜单。
 
@@ -182,7 +182,7 @@ ms.locfileid: "57718917"
 
 ### <a name="BKMK_Annotations"></a> 设计器批注
 
-为促进开发较大型的工作流，设计器现在支持添加批注以帮助跟踪设计过程。 可以向活动、状态、流程图节点、变量和参数添加批注。 以下屏幕快照显示了用于将批注添加到设计器的上下文菜单。
+为促进开发较大型的工作流，设计器现在支持添加批注以帮助跟踪设计过程。 可以向活动、状态、流程图节点、变量和自变量添加批注。 以下屏幕快照显示了用于将批注添加到设计器的上下文菜单。
 
 ![注释上下文菜单](./media/annotationdialog.png "annotationdialog")
 
@@ -192,8 +192,7 @@ ms.locfileid: "57718917"
 
 ### <a name="BKMK_ActivityDelegates"></a> 定义和使用 ActivityDelegate 对象在设计器
 
-
-  [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] 中的活动使用 <xref:System.Activities.ActivityDelegate> 对象来公开执行点，在这些执行点处，工作流的其他部分可与工作流的执行交互；但是，使用这些执行点通常需要数量相当大的代码。 在此版本中，开发人员可以使用工作流设计器来定义和使用活动委托。 有关详细信息，请参阅[如何：定义和使用工作流设计器中的活动委托](/visualstudio/workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer)。
+[!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] 中的活动使用 <xref:System.Activities.ActivityDelegate> 对象来公开执行点，在这些执行点处，工作流的其他部分可与工作流的执行交互；但是，使用这些执行点通常需要数量相当大的代码。 在此版本中，开发人员可以使用工作流设计器来定义和使用活动委托。 有关详细信息，请参阅[如何：定义和使用工作流设计器中的活动委托](/visualstudio/workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer)。
 
 ### <a name="BKMK_BuildTimeValidation"></a> 生成时验证
 

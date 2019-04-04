@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42110
 ms.assetid: ef4442eb-08d1-434f-a03b-4aa2ed4e4414
-ms.openlocfilehash: d7289b8ab0a141d6efdb0f4ca4b4547f15e0e182
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: bcd142785d8ee736c6a1b41950fae80e4d26fa18
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55259236"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838805"
 ---
 # <a name="the-type-for-variable-variablename-will-not-be-inferred-because-it-is-bound-to-a-field-in-an-enclosing-scope"></a>变量的类型\<变量名 >' 绑定到封闭范围中的字段，因此将不会推断
 变量的类型\<变量名 >' 绑定到封闭范围中的字段，因此将不会推断。 请更改名称\<变量名 >，或使用完全限定的名称 （例如，Me.variablename 或 MyBase.variablename）。  
@@ -82,6 +82,7 @@ End Class
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [Option Infer 语句](../../../visual-basic/language-reference/statements/option-infer-statement.md)
 - [For Each...Next 语句](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
 - [For...Next 语句](../../../visual-basic/language-reference/statements/for-next-statement.md)

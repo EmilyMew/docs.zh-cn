@@ -23,12 +23,12 @@ helpviewer_keywords:
 - names [Visual Basic], naming conventions
 - identifiers [Visual Basic], elements
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
-ms.openlocfilehash: 5311bba92043d3fded34a5d9337b6af13e213d4a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5b1f8ccc402f7f5928a33f434664b0f28d108e6d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54573382"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814063"
 ---
 # <a name="declared-element-names-visual-basic"></a>已声明的元素名称 (Visual Basic)
 每个已声明的元素有一个名称，也称为*标识符*，这是代码使用来对其进行引用。  
@@ -90,6 +90,7 @@ ms.locfileid: "54573382"
  比较的名称是独立于区域设置。 如果两个名称匹配在一个区域设置中，可确保在所有区域设置匹配。  
   
 ## <a name="see-also"></a>请参阅
+
 - [已声明的元素](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)
 - [已声明元素的特性](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
 - [对已声明元素的引用](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)

@@ -6,24 +6,22 @@ helpviewer_keywords:
 - strings [Visual Basic], Visual Basic
 - strings [Visual Basic], regular expressions
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
-ms.openlocfilehash: 7262fded93b02c011484919f0504bb7225d8d2af
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 9d2d3c82f5512bc1e37e3b05086fbd364ee12298
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56965980"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58820880"
 ---
 # <a name="string-basics-in-visual-basic"></a>字符串基础 (Visual Basic)
-
-  `String` 数据类型表示一系列字符（每个字符都进而表示 `Char` 数据类型的一个实例）。 本主题介绍在 Visual Basic 中的字符串的基本概念。  
+`String` 数据类型表示一系列字符（每个字符都进而表示 `Char` 数据类型的一个实例）。 本主题介绍在 Visual Basic 中的字符串的基本概念。  
   
 ## <a name="string-variables"></a>字符串变量  
  可以向字符串的实例分配表示一系列字符的文本值。 例如：  
   
  [!code-vb[VbVbalrStrings#63](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#63)]  
   
- 
-  `String` 变量还可以接受计算结果为字符串的任何表达式。 示例如下所示：  
+ `String` 变量还可以接受计算结果为字符串的任何表达式。 示例如下所示：  
   
  [!code-vb[VbVbalrStrings#64](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#64)]  
   
@@ -74,6 +72,7 @@ World]]></xml>.Value
  与其他内部数据类型不同，`String` 是引用类型。 当引用类型的变量作为参数传递给函数或子例程时，会传递对数据存储位置的内存地址的引用（而不是字符串的实际值）。 因此在上面的示例中，变量的名称保持不变，但它会指向 `String` 类的另一个新实例（该实例会保存新值）。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 中的字符串简介](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
 - [String 数据类型](../../../../visual-basic/language-reference/data-types/string-data-type.md)
 - [Char 数据类型](../../../../visual-basic/language-reference/data-types/char-data-type.md)

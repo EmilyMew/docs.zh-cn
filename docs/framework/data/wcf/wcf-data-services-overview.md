@@ -5,12 +5,12 @@ helpviewer_keywords:
 - WCF Data Services
 - WCF Data Services, about
 ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
-ms.openlocfilehash: eb9adf5ff66a8b45bea79a9abaa139a46abb5b39
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: b7e8d0842b705a2fc8897511e1b2e01441d9c6b9
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56094017"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465836"
 ---
 # <a name="wcf-data-services-overview"></a>WCF 数据服务概述
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 支持使用来创建和使用的 Web 或 intranet 的数据服务[!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)]。 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 使您能够将数据公开为通过 Uri 进行寻址的资源。 这样，您就可以通过使用具象状态传输 (REST) 的语义（尤其是标准 HTTP 谓词 GET、PUT、POST 和 DELETE）来访问和更改数据。 本主题概述了 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 定义的模式和做法，另外还介绍 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]提供的帮助在基于 .NET Framework 的应用程序中使用 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 的工具。  
@@ -25,14 +25,12 @@ ms.locfileid: "56094017"
 ## <a name="interoperable-data-access"></a>可互操作的数据访问  
  [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 基于标准 Internet 协议来使数据服务与不使用.NET Framework 的应用程序进行互操作。 因为您可以使用标准 Uri 对数据进行寻址，应用程序可以访问和更改数据，通过使用具象状态传输 (REST)，尤其是标准 HTTP 谓词的语义 GET、 PUT、 POST 和 DELETE。 这样您就可以从任何可分析和访问通过标准 HTTP 协议传输的数据的客户端访问这些服务。  
   
- [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 定义一组对 Atom 发布协议 (AtomPub) 的扩展。 它支持采用多种数据格式的 HTTP 请求和响应，以适应各种客户端应用程序和平台。 
-  [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 源可以采用 Atom、JavaScript 对象表示法 (JSON) 以及纯 XML 格式表示数据。 尽管 Atom 是默认格式，但源的格式会在 HTTP 请求的标头中指定。 有关详细信息，请参阅[OData:Atom 格式](https://go.microsoft.com/fwlink/?LinkID=185794)和[OData:JSON 格式](https://go.microsoft.com/fwlink/?LinkID=185795)。  
+ [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 定义一组对 Atom 发布协议 (AtomPub) 的扩展。 它支持采用多种数据格式的 HTTP 请求和响应，以适应各种客户端应用程序和平台。 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 源可以采用 Atom、JavaScript 对象表示法 (JSON) 以及纯 XML 格式表示数据。 尽管 Atom 是默认格式，但源的格式会在 HTTP 请求的标头中指定。 有关详细信息，请参阅[OData:Atom 格式](https://go.microsoft.com/fwlink/?LinkID=185794)和[OData:JSON 格式](https://go.microsoft.com/fwlink/?LinkID=185795)。  
   
  发布的数据时[!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]馈送，[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]依赖于其他现有的 Internet 功能执行诸如缓存和身份验证等操作。 若要实现此目的，[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]与现有宿主应用程序和服务，如 ASP.NET、 Windows Communication Foundation (WCF) 和 Internet 信息服务 (IIS) 集成。  
   
 ## <a name="storage-independence"></a>存储独立性  
- 尽管可基于实体关系模型对资源进行寻址，但是无论基础数据源是什么，[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]都会公开 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 源。 
-  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 接受针对 URI 标识的资源的 HTTP 请求后，会对该请求进行反序列化，并将该请求的表示形式传递给 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 提供程序。 此提供程序将该请求转换为特定于数据源的格式，并在基础数据源上执行该请求。 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]通过将对 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 规定的资源进行寻址的概念模型与基础数据源的具体架构分离，实现存储独立性。  
+ 尽管可基于实体关系模型对资源进行寻址，但是无论基础数据源是什么，[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]都会公开 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 源。 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 接受针对 URI 标识的资源的 HTTP 请求后，会对该请求进行反序列化，并将该请求的表示形式传递给 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 提供程序。 此提供程序将该请求转换为特定于数据源的格式，并在基础数据源上执行该请求。 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]通过将对 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 规定的资源进行寻址的概念模型与基础数据源的具体架构分离，实现存储独立性。  
   
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 与 ADO.NET 实体框架集成，使您可以创建公开关系数据的数据服务。 可以使用实体数据模型工具创建包含以实体形式存在的可寻址资源的数据模型，同时定义此模型与基础数据库中表之间的映射。 有关详细信息，请参阅[实体框架提供程序](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)。  
   
@@ -55,7 +53,7 @@ ms.locfileid: "56094017"
 ## <a name="architecture-overview"></a>体系结构概述  
  下图演示了[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]体系结构用于公开[!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]源和中使用这些源[!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-启用客户端库：  
   
- ![WCF 数据服务体系结构关系图](../../../../docs/framework/data/wcf/media/astoriaservicearch.gif "AstoriaServiceArch")  
+ ![显示 WCF 数据服务体系结构关系图的屏幕截图。](./media/wcf-data-services-overview/windows-communication-foundation-data-services-architecture.gif)  
   
 ## <a name="see-also"></a>请参阅
 - [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)

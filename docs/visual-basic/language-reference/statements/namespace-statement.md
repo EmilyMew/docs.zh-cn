@@ -12,12 +12,12 @@ helpviewer_keywords:
 - root namespaces
 - declarations [Visual Basic], namespaces
 ms.assetid: a31fbd95-9ace-4c3d-bbb1-51222a2272b2
-ms.openlocfilehash: 1268982eb841327d72ce195992f8c4dcad4440a7
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 7f6b976af7933b3895f6992488d2d1532a8fc2f7
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56966172"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58820927"
 ---
 # <a name="namespace-statement"></a>Namespace 语句
 声明命名空间的名称，并使遵循声明在该命名空间中进行编译的源代码。  
@@ -103,6 +103,7 @@ End Namespace
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [Imports 语句（.NET 命名空间和类型）](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
 - [已声明的元素名称](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
 - [在 Visual Basic 中的命名空间](../../../visual-basic/programming-guide/program-structure/namespaces.md)

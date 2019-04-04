@@ -3,6 +3,12 @@ title: .NET Core 命令行接口 (CLI) 工具
 description: 概述了 .NET Core 命令行接口 (CLI) 工具和功能。
 ms.date: 08/14/2017
 ms.custom: seodec18
+ms.openlocfilehash: e174867ce06e573fc85579183df0196d8276fb37
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826309"
 ---
 # <a name="net-core-command-line-interface-cli-tools"></a>.NET Core 命令行接口 (CLI) 工具
 
@@ -116,11 +122,17 @@ dotnet /build_output/my_app.dll
 
 ### <a name="driver"></a>驱动程序
 
-驱动程序名为 [dotnet](dotnet.md)，并具有两项职责，即运行[依赖于框架的应用](../deploying/index.md)或执行命令。 唯一一次在不使用命令的情况下使用 `dotnet` 是在将其用于启动应用程序时。
+驱动程序名为 [dotnet](dotnet.md)，并具有两项职责，即运行[依赖于框架的应用](../deploying/index.md)或执行命令。 
 
-若要运行依赖于框架的应用，请在驱动程序后指定应用，例如，`dotnet /path/to/my_app.dll`。 从应用的 DLL 驻留的文件夹执行命令时，只需执行 `dotnet my_app.dll` 即可。
+若要运行依赖于框架的应用，请在驱动程序后指定应用，例如，`dotnet /path/to/my_app.dll`。 从应用的 DLL 驻留的文件夹执行命令时，只需执行 `dotnet my_app.dll` 即可。 如果要使用特定版本的 .NET Core 运行时，请使用 `--fx-version <VERSION>` 选项（请参阅 [dotnet 命令](dotnet.md)参考）。
 
-为驱动程序提供命令时，`dotnet.exe` 启动 CLI 命令执行过程。 首先，驱动程序确定要使用的 SDK 版本。 如果在命令选项中未指定版本，则驱动程序使用可用的最新版本。 若要指定某个版本，而不是最新安装的版本，请使用 `--fx-version <VERSION>` 选项（请参阅 [dotnet 命令](dotnet.md) 引用）。 确定 SDK 版本后，驱动程序执行命令。
+为驱动程序提供命令时，`dotnet.exe` 启动 CLI 命令执行过程。 例如:
+
+```bash
+> dotnet build
+```
+
+首先，驱动程序确定要使用的 SDK 版本。 如果没有任何[“global.json”](global-json.md)，则使用可用的最新版本 SDK。 这有可能是预览版或稳定版，具体取决于计算机上的最新版本。  确定 SDK 版本后，它便会执行命令。
 
 ### <a name="command-verb"></a>命令（“谓词”）
 

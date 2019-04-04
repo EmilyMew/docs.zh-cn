@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '#if directive [C#]'
 ms.assetid: 48cabbff-ca82-491f-a56a-eeccd528c7c2
-ms.openlocfilehash: 702d38cf6f3e28d20fbd5d7826cf7f1f56f235a7
-ms.sourcegitcommit: 01ea420eaa4bf76d5fc47673294c8881379b3369
+ms.openlocfilehash: b92660a69194ff2d52cd78427f73510de514ea48
+ms.sourcegitcommit: 4a8c2b8d0df44142728b68ebc842575840476f6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55758633"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545814"
 ---
 # <a name="if-c-reference"></a>#if（C# 参考）
 
@@ -24,7 +24,7 @@ ms.locfileid: "55758633"
 #endif
 ```
 
-仅可以使用运算符 [==](../operators/equality-comparison-operator.md)（相等）和 [!=](../operators/not-equal-operator.md)（不相等）测试 [true](../keywords/true.md) 或 [false](../keywords/false.md)。 True 表示定义该符号。 语句 `#if DEBUG` 具有与 `#if (DEBUG == true)` 相同的含义。 可以使用运算符 [&&](../operators/conditional-and-operator.md) (and)、[&#124;&#124;](../operators/conditional-or-operator.md) (or) 和 [!](../operators/logical-negation-operator.md) (not) 评估是否已经定义了多个符号。 还可以用括号对符号和运算符进行分组。
+仅可以使用运算符 [==](../operators/equality-operators.md#equality-operator-)（相等）和 [!=](../operators/equality-operators.md#inequality-operator-)（不相等）测试 [true](../keywords/true.md) 或 [false](../keywords/false.md)。 True 表示定义该符号。 语句 `#if DEBUG` 具有与 `#if (DEBUG == true)` 相同的含义。 可以使用运算符 [&&](../operators/conditional-and-operator.md) (and)、[&#124;&#124;](../operators/conditional-or-operator.md) (or) 和 [!](../operators/logical-negation-operator.md) (not) 评估是否已经定义了多个符号。 还可以用括号对符号和运算符进行分组。
 
 ## <a name="remarks"></a>备注
 

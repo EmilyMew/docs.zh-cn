@@ -1,19 +1,19 @@
 ---
-title: 如何：使用继承选择器对话框继承窗体
+title: 如何：使用“继承选择器”对话框继承窗体
 ms.date: 03/30/2017
 helpviewer_keywords:
 - inheritance [Windows Forms], forms
 - Inheritance Picker dialog box
 - inherited forms [Windows Forms], creating
 ms.assetid: 969b4c04-12aa-4297-93a2-0ae747447823
-ms.openlocfilehash: 29a40102a9d2f1aa1eac12510005b997de796880
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 4b3e7a3994423c962866b643ffc5173669e3a2e5
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57719347"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58841155"
 ---
-# <a name="how-to-inherit-forms-using-the-inheritance-picker-dialog-box"></a>如何：使用继承选择器对话框继承窗体
+# <a name="how-to-inherit-forms-using-the-inheritance-picker-dialog-box"></a>如何：使用“继承选择器”对话框继承窗体
 继承窗体或其他对象最简单的方法是使用“继承选择器”对话框。 通过该对话框，可以充分利用在其他解决方案中创建的代码或用户界面 (UI)。  
   
 > [!NOTE]
@@ -41,7 +41,7 @@ ms.locfileid: "57719347"
   
 6.  选择组件。  
   
-     在“解决方案资源管理器”中，将组件添加到项目。 如果组件具有 UI，则用标志符号 (![VisualBasicInheritanceSymbol screenshot](./media/vbinheritanceglyph.gif "vbInheritanceGlyph")) 标记属于继承窗体的控件，选中后，超类窗体上将出现一个指示该控件安全级别的边框。 下表中列出了与不同安全级别相对应的行为。  
+     在“解决方案资源管理器”中，将组件添加到项目。 如果它具有 UI，将用标志符号标记属于继承窗体的控件 (![的 Visual Basic 继承符号。 屏幕截图](./media/how-to-inherit-forms-using-the-inheritance-picker-dialog-box/visual-basic-inheritance-glyph.gif))，并选中时，有一个边框指示的控件具有的安全级别超类窗体。 下表中列出了与不同安全级别相对应的行为。  
   
     |控件的安全级别|可以通过设计器和代码编辑器与继承的窗体进行的交互|  
     |-------------------------------|--------------------------------------------------------------------------------|  

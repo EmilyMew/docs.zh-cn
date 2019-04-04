@@ -2,12 +2,12 @@
 title: SAML 令牌提供程序
 ms.date: 03/30/2017
 ms.assetid: eb16e5e2-4c8d-4f61-a479-9c965fcec80c
-ms.openlocfilehash: 1280c2892383ed295884a52e9133624460353309
-ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
+ms.openlocfilehash: 43a6d96716cedc6a732c350bb43ac6d34bebf969
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56304591"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842234"
 ---
 # <a name="saml-token-provider"></a>SAML 令牌提供程序
 本示例演示如何实现一个自定义客户端 SAML 令牌提供程序。 Windows Communication Foundation (WCF) 中的令牌提供程序来提供凭据的安全基础结构。 令牌提供程序一般检查目标并颁发相应的凭据，以使安全基础结构能够确保消息的安全。 WCF 附带了默认凭据管理器令牌提供程序。 WCF 还附带[!INCLUDE[infocard](../../../../includes/infocard-md.md)]令牌提供程序。 自定义令牌提供程序在下列情况下有用：
@@ -158,7 +158,7 @@ ms.locfileid: "56304591"
 
 2.  编写自定义安全令牌管理器。
 
-     <xref:System.IdentityModel.Selectors.SecurityTokenManager> 类用于为在 <xref:System.IdentityModel.Selectors.SecurityTokenProvider> 方法中传入的特定 <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> 创建 `CreateSecurityTokenProvider`。 安全令牌管理器还用于创建令牌身份验证器和令牌序列化程序，但它们不包括在本示例中。 在本示例中，自定义安全令牌管理器继承自 <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> 类并重写 `CreateSecurityTokenProvider` 方法，以便当传递的令牌要求指示请求 SAML 令牌时返回自定义 SAML 令牌提供程序。 如果客户端凭据类（请参见步骤 3）未指定一个断言，则安全令牌管理器将创建一个相应的实例。
+     <xref:System.IdentityModel.Selectors.SecurityTokenManager> 类用于为在 <xref:System.IdentityModel.Selectors.SecurityTokenProvider> 方法中传入的特定 <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> 创建 `CreateSecurityTokenProvider`。 安全令牌管理器还用于创建令牌身份验证器和令牌序列化程序，但它们不包括在本示例中。 在本示例中，自定义安全令牌管理器继承自 <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> 类并重写 `CreateSecurityTokenProvider` 方法，以便当传递的令牌需求指示请求 SAML 令牌时返回自定义 SAML 令牌提供程序。 如果客户端凭据类（请参见步骤 3）未指定一个断言，则安全令牌管理器将创建一个相应的实例。
 
     ```
     public class SamlSecurityTokenManager :
@@ -399,4 +399,3 @@ ms.locfileid: "56304591"
   
 1.  运行完示例后运行示例文件夹中的 Cleanup.bat。  
   
-## <a name="see-also"></a>请参阅

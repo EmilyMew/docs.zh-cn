@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40008
 ms.assetid: 729e3eb5-76ac-4c55-9fdd-78350e0de55e
-ms.openlocfilehash: c6d927ef6681838d8a77a0c6018eb6bbe30913e8
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 545f0f4a56e72e32d2225217225d441a10f0e52e
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55255856"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58836358"
 ---
 # <a name="elementname-is-obsolete-visual-basic-warning"></a>\<elementname > 已过时 （Visual Basic 警告）
 语句试图访问编程元素，此元素已标记有 <xref:System.ObsoleteAttribute> 特性及将其视为警告的指令。  
@@ -28,4 +28,5 @@ ms.locfileid: "55255856"
 -   确保源代码引用的元素名称拼写正确。  
   
 ## <a name="see-also"></a>请参阅
+
 - [属性概述](../../../visual-basic/programming-guide/concepts/attributes/index.md)

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42026
 ms.assetid: 4fde9db6-3bf3-48dc-8e05-981bf08969da
-ms.openlocfilehash: 9382c6b6850036f3ca3795f0aa80f49b892c0a5e
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: a758d05cca5ca71943b0ef08184aef5b2c457739
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55259756"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58836839"
 ---
 # <a name="expression-recursively-calls-the-containing-property-propertyname"></a>表达式递归调用包含属性\<属性名称 >
 中的语句`Set`属性定义的过程将值存储到的属性的名称。  
@@ -64,6 +64,7 @@ End Class
 -   重写属性定义要使用建议的方法，如在前面的示例所示。  
   
 ## <a name="see-also"></a>请参阅
+
 - [属性过程](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
 - [Property 语句](../../../visual-basic/language-reference/statements/property-statement.md)
 - [Set 语句](../../../visual-basic/language-reference/statements/set-statement.md)

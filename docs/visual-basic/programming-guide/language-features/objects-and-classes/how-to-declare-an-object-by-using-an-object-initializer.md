@@ -7,12 +7,12 @@ helpviewer_keywords:
 - initializers [Visual Basic]
 - Video How tos, Visual Basic
 ms.assetid: 0f53a553-efd6-466d-80bf-6b679e5cd174
-ms.openlocfilehash: e0673c9faceb3bd9fc71123a2ae22abbc7061c04
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 314706207800b2e86aa0032a52d8c50fbb726887
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56970202"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58825127"
 ---
 # <a name="how-to-declare-an-object-by-using-an-object-initializer-visual-basic"></a>如何：将对象声明使用对象初始值设定项 (Visual Basic)
 对象初始值设定项，可以声明并实例化单个语句中类的实例。 此外，可以不调用参数化构造函数的情况下一次初始化实例的一个或多个成员。  
@@ -60,6 +60,7 @@ ms.locfileid: "56970202"
      有关详细信息，请参阅[本地类型推断](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [局部类型推理](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
 - [如何：创建的项的列表](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)
 - [对象初始值设定项：命名和匿名类型](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)

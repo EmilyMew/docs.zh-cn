@@ -16,8 +16,7 @@ ms.locfileid: "57717591"
 # <a name="bindingsource-component"></a>BindingSource 组件
 封装数据源以绑定到控件。  
   
- 
-  <xref:System.Windows.Forms.BindingSource> 组件有两个用途。 首先，将一个窗体的控件绑定到数据时，该组件会提供一个间接层。 这是通过将 <xref:System.Windows.Forms.BindingSource> 组件与你的数据源绑定，然后将窗体上的控件绑定到 <xref:System.Windows.Forms.BindingSource> 组件完成的。 与数据的所有进一步交互（包括导航、排序、筛选和更新）都是通过调用 <xref:System.Windows.Forms.BindingSource> 组件来完成的。  
+ <xref:System.Windows.Forms.BindingSource> 组件有两个用途。 首先，将一个窗体的控件绑定到数据时，该组件会提供一个间接层。 这是通过将 <xref:System.Windows.Forms.BindingSource> 组件与你的数据源绑定，然后将窗体上的控件绑定到 <xref:System.Windows.Forms.BindingSource> 组件完成的。 与数据的所有进一步交互（包括导航、排序、筛选和更新）都是通过调用 <xref:System.Windows.Forms.BindingSource> 组件来完成的。  
   
  第二，<xref:System.Windows.Forms.BindingSource> 组件可以充当强类型的数据源。 通过使用 <xref:System.Windows.Forms.BindingSource.Add%2A> 方法向 <xref:System.Windows.Forms.BindingSource> 组件添加一个类型来创建该类型的列表。  
   

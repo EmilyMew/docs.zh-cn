@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: d1247f08-0965-416a-b978-e0b50652dfe3
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c278eca421020bea4f36f87eb6c8a9a8ba7d2a43
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 787406b1fa7e5beb59ff3f8715c1215a734ed895
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54658281"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411299"
 ---
 # <a name="specifying-an-entry-point"></a>指定入口点
 入口点标识 DLL 中的函数位置。 在托管项目中，目标函数的原始名称或序号入口点跨越互操作边界标识该函数。 此外，可将入口点映射到其他名称，有效地重命名该函数。  
@@ -33,60 +33,66 @@ ms.locfileid: "54658281"
 ## <a name="renaming-a-function-in-visual-basic"></a>重命名 Visual Basic 中的函数  
  Visual Basic 在 Declare 语句中使用 Function 关键字设置 <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> 字段。 下面的示例演示了一个基本声明。  
   
-```vb  
-Imports System.Runtime.InteropServices  
-  
-Public Class Win32  
-    Declare Auto Function MessageBox Lib "user32.dll" _  
-       (ByVal hWnd As Integer, ByVal txt As String,_  
-       ByVal caption As String, ByVal Typ As Integer) As Integer  
-End Class  
-```  
+```vb
+Imports System
+
+Friend Class WindowsAPI
+    Friend Shared Declare Auto Function MessageBox Lib "user32.dll" (
+        ByVal hWnd As IntPtr,
+        ByVal lpText As String,
+        ByVal lpCaption As String,
+        ByVal uType As UInteger) As Integer
+End Class
+```
   
  如下例所示，通过在定义中包括 Alias 关键字，可以用 MsgBox 替换 MessageBox 入口点。 在这两个示例中，Auto 关键字使你无需指定入口点的字符集版本。 有关选择字符集的详细信息，请参阅[指定字符集](../../../docs/framework/interop/specifying-a-character-set.md)。  
   
-```vb  
-Imports System.Runtime.InteropServices  
-  
-Public Class Win32  
-    Declare Auto Function MsgBox Lib "user32.dll" _  
-       Alias "MessageBox" (ByVal hWnd As Integer, ByVal txt As String,_  
-       ByVal caption As String, ByVal Typ As Integer) As Integer  
-End Class  
-```  
+```vb
+Imports System
+
+Friend Class WindowsAPI
+    Friend Shared Declare Auto Function MsgBox _
+        Lib "user32.dll" Alias "MessageBox" (
+        ByVal hWnd As IntPtr,
+        ByVal lpText As String,
+        ByVal lpCaption As String,
+        ByVal uType As UInteger) As Integer
+End Class
+```
   
 ## <a name="renaming-a-function-in-c-and-c"></a>重命名 C# 和 C++ 中的函数  
  可使用 <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> 字段通过名称或序号指定 DLL 函数。 如果方法定义中函数的名称与 DLL 中入口点的名称相同，则不必使用 EntryPoint 字段显式地标识函数。 否则，使用以下属性形式之一指示名称或序号：  
   
-```  
-[DllImport("dllname", EntryPoint="Functionname")]  
-[DllImport("dllname", EntryPoint="#123")]  
-```  
+```csharp
+[DllImport("DllName", EntryPoint = "Functionname")]
+[DllImport("DllName", EntryPoint = "#123")]
+```
   
  请注意，序号前必须带有井号 (#)。  
   
  下面的示例演示如何使用 EntryPoint 字段将代码中的 MessageBoxA 替换为 MsgBox。  
   
-```csharp  
-using System.Runtime.InteropServices;  
+```csharp
+using System;
+using System.Runtime.InteropServices;
+
+internal static class WindowsAPI
+{
+    [DllImport("user32.dll", EntryPoint = "MessageBoxA")]
+    internal static extern int MessageBox(
+        IntPtr hWnd, string lpText, string lpCaption, uint uType);
+}
+```
   
-public class Win32 {  
-    [DllImport("user32.dll", EntryPoint="MessageBoxA")]  
-    public static extern int MsgBox(int hWnd, String text, String caption,  
-                                    uint type);  
-}  
-```  
-  
-```cpp  
-using namespace System::Runtime::InteropServices;  
-  
-typedef void* HWND;  
-[DllImport("user32", EntryPoint="MessageBoxA")]  
-extern "C" int MsgBox(HWND hWnd,  
-                      String*  pText,  
-                      String*  pCaption,  
-                      unsigned int uType);  
-```  
+```cpp
+using namespace System;
+using namespace System::Runtime::InteropServices;
+
+typedef void* HWND;
+[DllImport("user32", EntryPoint = "MessageBoxA")]
+extern "C" int MsgBox(
+    HWND hWnd, String* lpText, String* lpCaption, unsigned int uType);
+```
   
 ## <a name="see-also"></a>请参阅
 - <xref:System.Runtime.InteropServices.DllImportAttribute>

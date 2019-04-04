@@ -8,12 +8,12 @@ helpviewer_keywords:
 - limits, Visual Basic code
 - Visual Basic code, limitations
 ms.assetid: cf1646b7-5d24-48c6-9616-bda8a4849d91
-ms.openlocfilehash: 0f356b52304110299ed0af9bbccd5d03893f31a9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 10f67c02d25ec275d1c3e98197d51c25aa250c19
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54596353"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824905"
 ---
 # <a name="visual-basic-limitations"></a>Visual Basic 限制
 早期版本的 Visual Basic 强制执行在代码中，如变量的名称，在模块和模块大小允许的变量数的长度的边界。 在 Visual Basic.NET 中，这些限制已放宽，为您提供编写和安排你的代码以更大的自由度。  
@@ -33,5 +33,6 @@ ms.locfileid: "54596353"
 -   **环境字符串长度。** 没有 32768 个字符作为命令行参数使用任何环境字符串的最大值。 这是在所有平台上的限制。  
   
 ## <a name="see-also"></a>请参阅
+
 - [程序结构和代码约定](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
 - [Visual Basic 命名约定](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)

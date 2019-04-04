@@ -13,12 +13,12 @@ helpviewer_keywords:
 - parentheses [Visual Basic], complex expressions
 - numeric expressions
 ms.assetid: bd22340e-b5be-458b-8772-3916c02309a4
-ms.openlocfilehash: daaf75256b3449209b4e3c030cc6b54692c6a172
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8f5dd6c56b3e4576b9d798e0e5e10b2996f558dc
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54620418"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58841235"
 ---
 # <a name="efficient-combination-of-operators-visual-basic"></a>运算符的有效组合 (Visual Basic)
 复杂表达式可以包含许多不同的运算符。 下面的示例阐释了这一点。  
@@ -46,6 +46,7 @@ ms.locfileid: "54620418"
  在前面的示例中，`z + 2`是首先计算，则其他带括号的表达式。 求幂，正常的优先级高于加法或乘法，是在此示例中最后评估，因为其他表达式括在括号中。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 Visual Basic 中的算术运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
 - [在 Visual Basic 中的比较运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)
 - [在 Visual Basic 中的逻辑和位运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)

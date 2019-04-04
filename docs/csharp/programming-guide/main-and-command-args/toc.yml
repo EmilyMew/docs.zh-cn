@@ -1,0 +1,18 @@
+items:
+- name: Main() 和命令行参数
+  href: index.md
+  items:
+  - name: 命令行参数
+    href: command-line-arguments.md
+  - name: 如何：显示命令行参数
+    href: how-to-display-command-line-arguments.md
+  - name: 如何：使用 foreach 访问命令行参数
+    href: how-to-access-command-line-arguments-using-foreach.md
+  - name: Main() 返回值
+    href: main-return-values.md
+ms.openlocfilehash: f46f240118ac595dc8d933ecd5f7efbf16cb25ab
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468328"

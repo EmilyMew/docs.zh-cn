@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - data contracts [WCF], naming
 ms.assetid: 31f87e6c-247b-48f5-8e94-b9e1e33d8d09
-ms.openlocfilehash: cd878452f3ec99627507334a26873a004e5b5314
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 16a42a2808104a77e56e93564a679dfc578e73f6
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47196689"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58408868"
 ---
 # <a name="data-contract-names"></a>数据协定名称
 
@@ -60,11 +60,12 @@ ms.locfileid: "47196689"
 [!code-csharp[C_DataContractNames#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_datacontractnames/cs/source.cs#2)]
 [!code-vb[C_DataContractNames#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractnames/vb/source.vb#2)]
 
-在此示例中，`Drawing<Square,RegularRedBrush>` 类型具有数据协定名称“DrawingOfSquareRedBrush5HWGAU6h”，其中“5HWGAU6h”是“urn:shapes”和“urn:default”命名空间的哈希值。 `Drawing<Square,SpecialRedBrush>` 类型具有数据协定名称“DrawingOfSquareRedBrushjpB5LgQ_S”，其中“jpB5LgQ_S”是“urn:shapes”和“urn:special”命名空间的哈希值。 请注意，如果不使用哈希值，则这两个名称将完全相同，因此会发生名称冲突。
+在此示例中，`Drawing<Square,RegularRedBrush>` 类型具有数据协定名称“DrawingOfSquareRedBrush5HWGAU6h”，其中“5HWGAU6h”是“urn:shapes”和“urn:default”命名空间的哈希值。 
+  `Drawing<Square,SpecialRedBrush>` 类型具有数据协定名称“DrawingOfSquareRedBrushjpB5LgQ_S”，其中“jpB5LgQ_S”是“urn:shapes”和“urn:special”命名空间的哈希值。 请注意，如果不使用哈希值，则这两个名称将完全相同，因此会发生名称冲突。
 
 ## <a name="customizing-data-contract-names-for-generic-types"></a>泛型类型的自定义数据协定名称
 
-有时不允许为泛型类型生成数据协定名称，如前面所述。 例如，您可能事先知道不会遇到名称冲突并且想删除哈希值。 在这种情况下，您可以使用 <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> 属性 (attribute) 的 `DataContractAttribute` 属性 (property) 指定另一种方式生成名称。 您可以在 `Name` 属性内的大括号中使用数字来引用泛型参数的数据协定名称。 （0 指第一个参数，1 指第二个参数，依此类推。）可以在大括号内使用数字符号 (#) 来引用哈希值。 您可以多次使用这些引用，也可以不使用引用。
+有时不允许为泛型类型生成数据协定名称，如前面所述。 例如，您可能事先知道不会遇到名称冲突并且想删除哈希值。 在这种情况下，可以使用<xref:System.Runtime.Serialization.DataContractAttribute.Name%2A?displayProperty=nameWithType>属性来指定不同的方式生成名称。 您可以在 `Name` 属性内的大括号中使用数字来引用泛型参数的数据协定名称。 （0 指第一个参数，1 指第二个参数，依此类推。）可以在大括号内使用数字符号 (#) 来引用哈希值。 您可以多次使用这些引用，也可以不使用引用。
 
 例如，可能对前面的泛型 `Drawing` 类型进行了声明，如以下示例所示。
 

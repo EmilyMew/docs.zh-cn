@@ -38,7 +38,7 @@ ms.assetid: 149f5ca5-5b34-4746-9542-1ae43b2d0256
 必须添加对程序集的引用，才能使用程序集。 接下来，可以对 C# 使用 [using 指令](../../csharp/language-reference/keywords/using-directive.md)，或者对 Visual Basic 使用 [Imports 语句](../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)，从而选择要使用的项的命名空间。 引用和导入程序集后，应用程序可以使用其名称空间的所有可访问类型、属性、方法和其他成员，就好像它们的代码是源文件的一部分一样。
 
 > [!NOTE]
-> .NET 类库中的大多数程序集都是自动引用的。 但是，在某些情况下，系统程序集可能不会自动引用。 在 .NET Core 中，可以通过在 Visual Studio 中使用 NuGet 包管理器或者通过向 *.csproj 或 *.vbproj 项目添加程序集的 [<PackageReference>](../../core/tools/dependencies.md#the-new-packagereference-element) 元素的方式，添加对包含该程序集的 NuGet 包的引用。 在 .NET Framework 中，可以通过在 Visual Studio 中使用“添加引用”对话框，或者通过使用 [C#](../../csharp/language-reference/compiler-options/reference-compiler-option.md) 或 [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) 编译器的 `-reference` 命令行选项的方式，添加对该程序集的引用。
+> .NET 类库中的大多数程序集都是自动引用的。 但是，在某些情况下，系统程序集可能不会自动引用。 在 .NET Core 中，可以通过在 Visual Studio 中使用 NuGet 包管理器或者通过向 *.csproj 或 *.vbproj 项目添加程序集的 [\<PackageReference>](../../core/tools/dependencies.md#the-new-packagereference-element) 元素的方式，添加对包含该程序集的 NuGet 包的引用。 在 .NET Framework 中，可以通过在 Visual Studio 中使用“添加引用”对话框，或者通过使用 [C#](../../csharp/language-reference/compiler-options/reference-compiler-option.md) 或 [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) 编译器的 `-reference` 命令行选项的方式，添加对该程序集的引用。
 
 在 C# 中，还可以在单个应用程序中使用同一程序集的两个版本。 有关详细信息，请参阅[外部别名](../../csharp/language-reference/keywords/extern-alias.md)。
 

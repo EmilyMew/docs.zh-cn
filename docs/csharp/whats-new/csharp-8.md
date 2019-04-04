@@ -2,12 +2,12 @@
 title: C# 8.0 中的新增功能 - C# 指南
 description: 简要介绍 C# 8.0 中提供的新功能。 本文使用最新的预览版 2。
 ms.date: 02/12/2019
-ms.openlocfilehash: 23197a051109d6c6c22c8855e3772cf4f824264c
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: 07752d6d7784ff4aeb70900ef3bcd90cb29f7c22
+ms.sourcegitcommit: 4a8c2b8d0df44142728b68ebc842575840476f6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57843933"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545554"
 ---
 # <a name="whats-new-in-c-80"></a>C# 8.0 中的新增功能
 
@@ -164,22 +164,39 @@ public class Point
 }
 ```
 
-下面的方法使用位置模式来提取 `x` 和 `y` 的值。 然后，它使用 `when` 子句来确定该点的象限：
+此外，请考虑以下表示象限的各种位置的枚举：
 
 ```csharp
-static string Quadrant(Point p) => p switch
+public enum Quadrant
 {
-    (0, 0) => "origin",
-    (var x, var y) when x > 0 && y > 0 => "Quadrant 1",
-    (var x, var y) when x < 0 && y > 0 => "Quadrant 2",
-    (var x, var y) when x < 0 && y < 0 => "Quadrant 3",
-    (var x, var y) when x > 0 && y < 0 => "Quadrant 4",
-    (var x, var y) => "on a border",
-    _ => "unknown"
+    Unknown,
+    Origin,
+    One,
+    Two,
+    Three,
+    Four,
+    OnBorder
+}
+```
+
+下面的方法使用位置模式来提取 `x` 和 `y` 的值。 然后，它使用 `when` 子句来确定该点的 `Quadrant`：
+
+```csharp
+static Quadrant GetQuadrant(Point point) => point switch
+{
+    (0, 0) => Quadrant.Origin,
+    var (x, y) when x > 0 && y > 0 => Quadrant.One,
+    var (x, y) when x < 0 && y > 0 => Quadrant.Two,
+    var (x, y) when x < 0 && y < 0 => Quadrant.Three,
+    var (x, y) when x > 0 && y < 0 => Quadrant.Four,
+    var (_, _) => Quadrant.OnBorder,
+    _ => Quadrant.Unknown
 };
 ```
 
 当 `x` 或 `y` 为 0（但不是两者同时为 0）时，前一个开关中的弃元模式匹配。 Switch 表达式必须要么生成值，要么引发异常。 如果这些情况都不匹配，则 switch 表达式将引发异常。 如果没有在 switch 表达式中涵盖所有可能的情况，编译器将生成一个警告。
+
+可在此[模式匹配高级教程](../tutorials/pattern-matching.md)中探索模式匹配方法。
 
 ## <a name="using-declarations"></a>using 声明
 
@@ -227,7 +244,7 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 
 ## <a name="static-local-functions"></a>静态本地函数
 
-现在可以向本地函数添加 `static` 修饰符，以确保本地函数不会从封闭范围捕获（引用）任何变量。 这样做会生成 `CS8421`，“静态本地函数不能包含对 <variable> 的引用。” 
+现在可以向本地函数添加 `static` 修饰符，以确保本地函数不会从封闭范围捕获（引用）任何变量。 这样做会生成 `CS8421`，“静态本地函数不能包含对 \<variable> 的引用”。 
 
 考虑下列代码。 本地函数 `LocalFunction` 访问在封闭范围（方法 `M`）中声明的变量 `y`。 因此，不能用 `static` 修饰符来声明 `LocalFunction`：
 

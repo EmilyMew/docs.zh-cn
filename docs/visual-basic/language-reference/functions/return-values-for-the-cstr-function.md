@@ -11,12 +11,12 @@ helpviewer_keywords:
 - dates [Visual Basic]
 - String data type [Visual Basic], converting
 ms.assetid: 3aa744e7-1419-45d5-85e3-e5abc2953673
-ms.openlocfilehash: 22fa31d862259c6dc8607ee44561bc8c18662d88
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3653194c7e48533e664ac7513ca7f4f48d1c69f7
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54642813"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819510"
 ---
 # <a name="return-values-for-the-cstr-function-visual-basic"></a>返回 CStr 函数的值 (Visual Basic)
 下表介绍的返回值`CStr`为不同的数据类型的`expression`。  
@@ -34,6 +34,7 @@ ms.locfileid: "54642813"
 >  `CStr`函数不执行基于应用程序的当前区域性设置其转换。 若要获取特定区域性中的数字的字符串表示形式，请使用数字的`ToString(IFormatProvider)`方法。 例如，使用<xref:System.Double.ToString%2A?displayProperty=nameWithType>类型的值转换时`Double`到`String`。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A>
 - [类型转换函数](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
 - [Boolean 数据类型](../../../visual-basic/language-reference/data-types/boolean-data-type.md)

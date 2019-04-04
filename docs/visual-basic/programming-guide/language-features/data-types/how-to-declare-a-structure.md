@@ -7,12 +7,12 @@ helpviewer_keywords:
 - statements [Visual Basic], structure
 - structures [Visual Basic], declaring
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
-ms.openlocfilehash: cee2768d0e7475d2df123491e2b506bf5c08785f
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.openlocfilehash: 7fc4aed4d405729b64a2f7ba772cdd794df40f2a
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55066111"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58825087"
 ---
 # <a name="how-to-declare-a-structure-visual-basic"></a>如何：声明结构 (Visual Basic)
 在开始使用在结构声明[Structure 语句](../../../../visual-basic/language-reference/statements/structure-statement.md)，并结束与`End Structure`语句。 这两个语句之间必须声明至少一个*元素*。 元素可以是任何数据类型，但至少一个必须为非共享的变量或非共享、 非自定义事件。  
@@ -56,6 +56,7 @@ ms.locfileid: "55066111"
      除了变量，还`Sub`过程和事件，您还可以定义常量、`Function`过程和结构中的属性。 您可以指定最多一个属性作为*默认属性*，提供它采用至少一个自变量。 您可以处理的事件[共享](../../../../visual-basic/language-reference/modifiers/shared.md)`Sub`过程。 有关详细信息，请参阅[如何：声明和调用默认属性在 Visual Basic 中](../../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [数据类型](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [基本数据类型](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
 - [复合数据类型](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)

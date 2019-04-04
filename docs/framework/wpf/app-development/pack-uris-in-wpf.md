@@ -9,12 +9,12 @@ helpviewer_keywords:
 - loading non-resource files
 - application management [WPF]
 ms.assetid: 43adb517-21a7-4df3-98e8-09e9cdf764c4
-ms.openlocfilehash: 9e7ded2869e3553eab302e150d80608b8dd7091f
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: e84f586e621aa54d7e8a8f62e605ec3016cfb757
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57377300"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411273"
 ---
 # <a name="pack-uris-in-wpf"></a>WPF 中的 Pack URI
 在 Windows Presentation Foundation (WPF)[!INCLUDE[TLA#tla_uri#plural](../../../../includes/tlasharptla-urisharpplural-md.md)]用于标识和加载在许多方面，包括以下文件：  
@@ -44,7 +44,7 @@ ms.locfileid: "57377300"
 ## <a name="the-pack-uri-scheme"></a>Pack URI 方案  
  包[!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)]通过使用方案[开放打包约定](https://go.microsoft.com/fwlink/?LinkID=71255)(OPC) 规范，描述用于组织和标识内容的模型。 此模型的关键元素是包和部件，其中*包*是逻辑容器，一个或多个逻辑*部件*。 下图阐释了此概念。  
   
- ![包和部件关系图](./media/wpfpackurischemefigure1.PNG "WPFPackURISchemeFigure1")  
+ ![包和部件示意图](./media/pack-uris-in-wpf/wpf-package-parts-diagram.png)  
   
  为了标识部件，OPC 规范利用 RFC 2396 扩展性 (统一资源标识符 (URI):一般语法） 来定义 pack[!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)]方案。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "57377300"
   
  下图阐释了此概念：  
   
- ![包、授权与路径之间的关系](./media/wpfpackurischemefigure2.PNG "WPFPackURISchemeFigure2")  
+ ![包、颁发机构与路径之间的关系](./media/pack-uris-in-wpf/wpf-relationship-diagram.png)  
   
  包和部件之间的关系类似于应用程序和文件之间的关系，其中应用程序（包）可以包含一个或多个文件（部件），包括：  
   
@@ -72,7 +72,7 @@ ms.locfileid: "57377300"
   
  若要访问这些类型的文件，[!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]支持两种授权： 应用程序: / / 和 siteoforigin:///: / /。 application:/// 授权标识在编译时已知的应用程序数据文件，包括资源文件和内容文件。 siteoforigin:/// 授权标识源站点文件。 下图显示了每种授权的范围。  
   
- ![Pack URI 关系图](./media/wpfpackurischemefigure4.png "WPFPackURISchemeFigure4")  
+ ![Pack URI 示意图](./media/pack-uris-in-wpf/wpf-pack-uri-scheme.png)  
   
 > [!NOTE]
 >  包的证书颁发机构部分[!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)]是一个嵌入式[!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)]的指向包并且必须符合 RFC 2396。 另外，必须用字符“,”替换字符“/”，并且必须对保留字符（如“%”和“?”）进行转义。 有关详细信息，请参阅 OPC。  

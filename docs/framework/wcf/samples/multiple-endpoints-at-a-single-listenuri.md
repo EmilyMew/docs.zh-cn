@@ -2,12 +2,12 @@
 title: 在单个 ListenUri 中承载多个终结点
 ms.date: 03/30/2017
 ms.assetid: 911ffad4-4d47-4430-b7c2-79192ce6bcbd
-ms.openlocfilehash: fbf636acf5e2cf4ef0f417b6b50a93d3e25c3ea6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6852c673ef21c2b2d511b02d4cc146b22c4c7506
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54643463"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821018"
 ---
 # <a name="multiple-endpoints-at-a-single-listenuri"></a>在单个 ListenUri 中承载多个终结点
 此示例演示了一个在单个 `ListenUri` 中承载多个终结点的服务。 此示例基于[Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)实现计算器服务。  
@@ -79,4 +79,3 @@ calcClient.ChannelFactory.Endpoint.Behaviors.Add(
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\MultipleEndpointsSingleUri`  
   
-## <a name="see-also"></a>请参阅

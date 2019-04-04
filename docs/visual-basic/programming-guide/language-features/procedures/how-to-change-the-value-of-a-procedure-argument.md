@@ -13,12 +13,12 @@ helpviewer_keywords:
 - arguments [Visual Basic], ByRef
 - arguments [Visual Basic], changing value
 ms.assetid: 6fad2368-5da7-4c07-8bf8-0f4e65a1be67
-ms.openlocfilehash: ea91e88f6833b9a3abbb349688c277be10312a6c
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 6aee795fefe36c2ad19390c0ac6d1613b2199415
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56974908"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58837479"
 ---
 # <a name="how-to-change-the-value-of-a-procedure-argument-visual-basic"></a>如何：更改过程自变量 (Visual Basic 中) 的值
 在调用过程时，您提供每个自变量对应于一个过程中定义的参数。 在某些情况下，过程代码可以更改基础调用代码中的自变量的值。 在其他情况下，该过程可以更改仅其自变量的本地副本。  
@@ -78,6 +78,7 @@ ms.locfileid: "56974908"
  允许更改基础调用代码中的自变量的值的过程中始终没有带来潜在的风险。 请确保您希望此值可更改，并且准备好使用它之前检查其有效性。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [如何：将参数传递给过程](./how-to-pass-arguments-to-a-procedure.md)

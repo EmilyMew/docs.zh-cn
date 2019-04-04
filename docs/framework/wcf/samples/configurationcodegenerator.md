@@ -2,15 +2,15 @@
 title: ConfigurationCodeGenerator
 ms.date: 03/30/2017
 ms.assetid: 3913aae8-165f-4014-9262-7fe426f90cb2
-ms.openlocfilehash: eb547c89dc5d4af9330a6881d64f433de9bdad94
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a481fe1e3c3aedd74f0e1546259b4eeeb9bed118
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54669076"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821928"
 ---
 # <a name="configurationcodegenerator"></a>ConfigurationCodeGenerator
-ConfigurationCodeGenerator 是一个工具，使用该工具可以向配置系统公开您的自定义通道实现。 这使自定义通道的用户可以通过使用 .config 文件来配置你的通道，就像配置系统提供的绑定（如 `NetTcpBinding`）或使用 `TcpTransportBindingElement` 的自定义绑定一样。  
+ConfigurationCodeGenerator 是一个工具，使用该工具可以向配置系统公开您的自定义通道实现。 这使自定义通道的用户可以通过使用 .config 文件来配置您的通道，就像配置系统提供的绑定（如 `NetTcpBinding`）或使用 `TcpTransportBindingElement` 的自定义绑定一样。  
   
  当您编写自定义通道并使用新的 `BindingElement` 或 `Binding` 将其公开给编程模型时，必须创建一组类，以使 `BindingElement` 或 `Binding` 能够使用 .config 文件进行配置。 您可以使用 ConfigurationCodeGenerator 工具生成这些类，并改善您的客户体验。  
   
@@ -44,10 +44,9 @@ ConfigurationCodeGenerator 是一个工具，使用该工具可以向配置系�
   
     1.  如果您使用了 /be 选项，其中一个 .cs 文件将为您的绑定元素实现 `BindingElementExtensionSection`。 此代码将您的 `BindingElement` 公开给配置系统，从而使其他自定义绑定可以使用您的绑定元素。 其他文件中包含代表默认值和常量的类。 这些文件中包含 `//TODO` 注释，用于提醒您更新默认值。  
   
-    2.  如果您指定了 /sb 选项，两个 .cs 文件将分别实现 `StandardBindingElement` 和 `StandardBindingCollectionElement`，从而将您的标准绑定公开给配置系统。 其他文件中包含代表默认值和常量的类。 这些文件中包含 `//TODO` 注释，用于提醒您更新默认值。  
+    2.  如果你指定了 /sb 选项，两个 .cs 文件将分别实现 `StandardBindingElement` 和 `StandardBindingCollectionElement`，从而将你的标准绑定公开给配置系统。 其他文件中包含代表默认值和常量的类。 这些文件中包含 `//TODO` 注释，用于提醒您更新默认值。  
   
          如果指定了 /sb： 选项 CodeToAddTo\<*YourStdBinding*> 包含的代码，则必须手动添加到实现标准绑定的类。  
   
      必须将 SampleConfig.xml 文件中包含的配置代码添加到注册前面步骤 1 或步骤 2 中定义的处理程序的配置文件中。  
   
-## <a name="see-also"></a>请参阅

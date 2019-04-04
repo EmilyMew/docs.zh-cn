@@ -6,12 +6,12 @@ helpviewer_keywords:
 - references [Visual Basic], declared elements
 - qualified names [Visual Basic]
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
-ms.openlocfilehash: 16f4fb28ab030ccebed2a8d1b93a3a6c29d075c6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5aea43c2dab4eb44ab40449ee6e970a28fdc4abb
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54501251"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821447"
 ---
 # <a name="references-to-declared-elements-visual-basic"></a>对已声明元素的引用 (Visual Basic)
 当你的代码引用已声明的元素时，Visual Basic 编译器匹配中该名称的相应声明您引用的名称。 如果多个元素具有相同名称声明，则可以控制哪些元素是由引用*合格*其名称。  
@@ -190,10 +190,11 @@ Dim xDoc As xD.XmlDocument
   
  通过提供唯一的名称的所有元素，可以避免名称多义性。 然后您可以对进行引用的任何元素而无需限定其名称与命名空间、 模块或类。 您还可以减少意外引用错误的元素的可能性。  
   
-## <a name="shadowing"></a>隐藏  
+## <a name="shadowing"></a>阴影操作  
  当两个编程元素共享相同的名称时，可以隐藏其中一个，或*卷影*，另一个。 隐藏的元素不是可用于引用;相反，当你的代码使用隐藏的元素名称时，Visual Basic 编译器将其解析为隐藏的元素。 有关示例的更多详细说明，请参阅[Visual Basic 中的隐藏](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [已声明的元素名称](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
 - [已声明元素的特性](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
 - [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)

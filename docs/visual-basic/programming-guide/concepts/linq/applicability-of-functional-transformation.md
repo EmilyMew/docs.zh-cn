@@ -2,12 +2,12 @@
 title: 功能转换 (Visual Basic 中) 的适用性
 ms.date: 07/20/2015
 ms.assetid: 3b74e134-e19b-44bc-8d06-e26c48305040
-ms.openlocfilehash: 01ebc25e77e7098d0aad5ec612e57d7f6b078d4f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7efeab82dafc284f64a950eb7f5e4a6ee3f2e73d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54699397"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827609"
 ---
 # <a name="applicability-of-functional-transformation-visual-basic"></a>功能转换 (Visual Basic 中) 的适用性
 纯函数转换适用于多种情况。  
@@ -33,6 +33,7 @@ ms.locfileid: "54699397"
  同样请注意，Visual Basic 支持命令性和功能性方法，因此你的应用程序的最佳设计可能需要合并使用这两个元素。  
   
 ## <a name="see-also"></a>请参阅
+
 - [纯功能转换 (Visual Basic) 简介](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
 - [XML 的功能转换 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-transformation-of-xml.md)
 - [重构为纯函数 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)

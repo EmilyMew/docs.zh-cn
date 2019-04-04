@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - adorners [WPF], about adorners
 ms.assetid: 33d4c5c2-2daf-4e45-ba9a-5b673e2b8280
-ms.openlocfilehash: 9c9d77c9771fd8759530267bd38cb7c0bb59598c
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 94075189d82e5d446b3058b944c789a4288c26ca
+ms.sourcegitcommit: d938c39afb9216db377d0f0ecdaa53936a851059
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57357935"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58634526"
 ---
 # <a name="adorners-overview"></a>装饰器概述
 装饰器是一种特殊的<xref:System.Windows.FrameworkElement>，可用来向用户提供可视提示。 装饰器有很多用途，可用来向元素添加功能句柄，或者提供有关某个控件的状态信息。  
@@ -55,7 +55,7 @@ ms.locfileid: "57357935"
   
  下图显示了应用于 SimpleCircleAdorner <xref:System.Windows.Controls.TextBox>。  
   
- ![装饰器示例：经过装饰的文本框](./media/adornedtextbox.png "AdornedTextBox")  
+ ![显示经过装饰的文本框的屏幕截图。](./media/adorners-overview/simplecircleadorner-textbox.png)  
   
 <a name="rendering_behavior_for_Adorners"></a>   
 ## <a name="rendering-behavior-for-adorners"></a>装饰器的呈现行为  

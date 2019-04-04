@@ -63,11 +63,9 @@ ms.locfileid: "56332515"
  指定 `QueueTransferProtocol` 属性只具有发送的功能。 这是客户端发出的有关要使用哪种队列传输协议的指示。  
   
 ### <a name="using-active-directory"></a>使用 Active Directory  
- MSMQ 带有 Active Directory 集成支持。 安装带有 Active Directory 集成的 MSMQ 时，计算机必须属于 Windows 域。 使用 active Directory 发布供发现; 的队列此类队列称为*公用队列*。 对队列进行寻址时，可以使用 Active Directory 对队列进行解析。 这与使用域名系统 (DNS) 解析网络名称的 IP 地址的方式相似。 
-  `UseActiveDirectory` 中的 `NetMsmqBinding` 属性是一个布尔值，该值指示排队通道是否必须使用 Active Directory 来解析队列 URI。 默认情况下，此属性设置为 `false`。 如果 `UseActiveDirectory` 属性设置为 `true`，则排队通道使用 Active Directory 将 net.msmq:// URI 转换为格式名。  
+ MSMQ 带有 Active Directory 集成支持。 安装带有 Active Directory 集成的 MSMQ 时，计算机必须属于 Windows 域。 使用 active Directory 发布供发现; 的队列此类队列称为*公用队列*。 对队列进行寻址时，可以使用 Active Directory 对队列进行解析。 这与使用域名系统 (DNS) 解析网络名称的 IP 地址的方式相似。 `UseActiveDirectory` 中的 `NetMsmqBinding` 属性是一个布尔值，该值指示排队通道是否必须使用 Active Directory 来解析队列 URI。 默认情况下，此属性设置为 `false`。 如果 `UseActiveDirectory` 属性设置为 `true`，则排队通道使用 Active Directory 将 net.msmq:// URI 转换为格式名。  
   
- 
-  `UseActiveDirectory` 属性仅对发送消息的客户端有意义，因为它用于在发送消息时解析队列的地址。  
+ `UseActiveDirectory` 属性仅对发送消息的客户端有意义，因为它用于在发送消息时解析队列的地址。  
   
 ### <a name="mapping-netmsmq-uri-to-message-queuing-format-names"></a>将 net.msmq URI 映射到消息队列格式名  
  排队通道负责将提供给通道的 net.msmq URI 名称映射到 MSMQ 格式名。 下表总结了用于在它们之间进行映射的规则。  
@@ -94,8 +92,7 @@ ms.locfileid: "56332515"
  WCF 服务将验证它接收的所有消息已都发送到它所侦听的特定队列。 如果消息的目标队列与它所在的队列不匹配，服务不会处理该消息。 这存在一个问题：侦听死信队列的服务必须寻址，因为死信队列中的任何消息都需要传递到别处。 若要从死信队列或病毒队列中读取消息，必须使用带有 `ServiceBehavior` 参数的 <xref:System.ServiceModel.AddressFilterMode.Any>。 有关示例，请参阅[死信队列](../../../../docs/framework/wcf/samples/dead-letter-queues.md)。  
   
 ## <a name="msmqintegrationbinding-and-service-addressing"></a>MsmqIntegrationBinding 和服务寻址  
- 
-  `MsmqIntegrationBinding` 用于与传统 MSMQ 应用程序进行通信。 为了便于与现有 MSMQ 应用程序的互操作，WCF 支持唯一的格式名寻址。 因此，使用此绑定发送的消息必须符合 URI 方案。  
+ `MsmqIntegrationBinding` 用于与传统 MSMQ 应用程序进行通信。 为了便于与现有 MSMQ 应用程序的互操作，WCF 支持唯一的格式名寻址。 因此，使用此绑定发送的消息必须符合 URI 方案。  
   
  msmq.formatname:\<*MSMQ-format-name*>>  
   

@@ -2,12 +2,12 @@
 title: 带 XML 声明 (Visual Basic 中) 的序列化
 ms.date: 07/20/2015
 ms.assetid: 8726f79e-2bb0-4ba0-969d-197cca591647
-ms.openlocfilehash: d0d6ccfdffa76de61c36e4cdb3f68f7cf85f1e68
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f51dacb0f89e1042ba9875bec10a0cb1fe25f889
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54558470"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814115"
 ---
 # <a name="serializing-with-an-xml-declaration-visual-basic"></a>带 XML 声明 (Visual Basic 中) 的序列化
 本主题说明如何控制序列化是否生成 XML 声明。  
@@ -62,4 +62,5 @@ Console.WriteLine(sb.ToString())
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [序列化 XML 树 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)

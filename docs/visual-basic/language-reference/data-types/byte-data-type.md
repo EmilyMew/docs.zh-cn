@@ -21,8 +21,7 @@ ms.locfileid: "56977521"
 
 使用`Byte`数据类型来包含二进制数据。  
   
-
-  `Byte` 的默认值为 0。
+`Byte` 的默认值为 0。
 
 ## <a name="literal-assignments"></a>文本分配
 

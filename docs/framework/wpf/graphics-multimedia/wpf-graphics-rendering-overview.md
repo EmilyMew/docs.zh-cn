@@ -8,12 +8,12 @@ helpviewer_keywords:
 - graphics [WPF], rendering
 - rendering graphics [WPF]
 ms.assetid: 6dec9657-4d8c-4e46-8c54-40fb80008265
-ms.openlocfilehash: c1d7654dc190b00363fa6cc47c362b5f9e90d8f9
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: da455adb23dd70a915e81217c6c30f2d523e001c
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57375527"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58409648"
 ---
 # <a name="wpf-graphics-rendering-overview"></a>WPF 图形呈现疑难解答
 本主题概述 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 可视化层。 它主要关注的角色<xref:System.Windows.Media.Visual>类中呈现支持[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]模型。  
@@ -49,8 +49,7 @@ ms.locfileid: "57375527"
   
  <xref:System.Windows.Media.Visual> 公开为公共抽象类必须从中派生子类。 下图显示了 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 中所公开的视觉对象的层次结构。  
   
- ![从 Visual 对象派生的类关系图](./media/visualclass01.png "VisualClass01")  
-视觉对象类层次结构  
+ ![从 Visual 对象派生的类的示意图](./media/wpf-graphics-rendering-overview/classes-derived-visual-object.png)    
   
 ### <a name="drawingvisual-class"></a>DrawingVisual 类  
  <xref:System.Windows.Media.DrawingVisual>是一个轻量绘图类，用于呈现形状、 图像或文本。 此类之所以为轻量类是因为它不提供布局或事件处理，从而提升其运行时性能。 因此，绘图非常适用于背景和剪贴画。 <xref:System.Windows.Media.DrawingVisual>可用于创建自定义视觉对象。 有关详细信息，请参阅[使用 DrawingVisual 对象](using-drawingvisual-objects.md)。  
@@ -110,8 +109,7 @@ DrawingGroup 操作的顺序
   
  如果你打算枚举包含默认值的视觉对象<xref:System.Windows.Controls.Button>控件，您将看到如下图所示的视觉对象的层次结构：  
   
- ![可视化树层次结构关系图](./media/visuallayeroverview03.gif "VisualLayerOverview03")  
-可视化树层次结构示意图  
+ ![可视化树层次结构示意图](./media/wpf-graphics-rendering-overview/visual-object-diagram.gif) 
   
  <xref:System.Windows.Controls.Button>控件包含<xref:Microsoft.Windows.Themes.ClassicBorderDecorator>元素，它又包含<xref:System.Windows.Controls.ContentPresenter>元素。 <xref:Microsoft.Windows.Themes.ClassicBorderDecorator>元素负责绘制边框和背景的<xref:System.Windows.Controls.Button>。 <xref:System.Windows.Controls.ContentPresenter>元素负责显示的内容<xref:System.Windows.Controls.Button>。 在这种情况下，由于您要显示的文本，<xref:System.Windows.Controls.ContentPresenter>元素包含<xref:System.Windows.Controls.TextBlock>元素。 这一事实，<xref:System.Windows.Controls.Button>控件使用<xref:System.Windows.Controls.ContentPresenter>意味着无法通过其他元素，如表示内容<xref:System.Windows.Controls.Image>或几何形状，如<xref:System.Windows.Media.EllipseGeometry>。  
   
@@ -124,8 +122,7 @@ DrawingGroup 操作的顺序
   
  如果要枚举的视觉对象和矢量图形指令列表的构成<xref:System.Windows.Controls.Button>控件，您将看到如下所示对象的层次结构：  
   
- ![可视化树和呈现数据示意图](./media/visuallayeroverview04.png "VisualLayerOverview04")  
-可视化树和呈现数据示意图  
+ ![可视化树和呈现数据示意图](./media/wpf-graphics-rendering-overview/visual-tree-rendering-data.png)  
   
  <xref:System.Windows.Controls.Button>控件包含<xref:Microsoft.Windows.Themes.ClassicBorderDecorator>元素，它又包含<xref:System.Windows.Controls.ContentPresenter>元素。 <xref:Microsoft.Windows.Themes.ClassicBorderDecorator>元素负责绘制所有离散图形元素的边框和背景的按钮构成。 <xref:System.Windows.Controls.ContentPresenter>元素负责显示的内容<xref:System.Windows.Controls.Button>。 在这种情况下，由于您要显示图像，<xref:System.Windows.Controls.ContentPresenter>元素包含<xref:System.Windows.Controls.Image>元素。  
   
@@ -149,14 +146,12 @@ DrawingGroup 操作的顺序
   
  如果你打算枚举包含的视觉对象<xref:System.Windows.Controls.StackPanel>标记示例中的元素，您将看到如下图所示的视觉对象的层次结构：  
   
- ![可视化树层次结构关系图](./media/visuallayeroverview05.gif "VisualLayerOverview05")  
-可视化树层次结构示意图  
+ ![可视化树层次结构示意图](./media/wpf-graphics-rendering-overview/visual-tree-hierarchy.gif)  
   
 ### <a name="rendering-order"></a>呈现顺序  
  通过可视化树，可以确定 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 可视化对象和绘图对象的呈现顺序。 将从位于可视化树中最顶层节点中的可视化元素根开始遍历。 然后，将按照从左到右的顺序遍历可视化元素根的子级。 如果可视化元素有子级，则将先遍历该可视化元素的子级，然后再遍历其同级。 这意味着子可视化元素的内容先于该可视化元素本身的内容呈现。  
   
- ![可视化树呈现顺序示意图](./media/visuallayeroverview06.gif "VisualLayerOverview06")  
-可视化树呈现顺序示意图  
+ ![可视化树呈现顺序关系图](./media/wpf-graphics-rendering-overview/visual-tree-rendering-order.gif) 
   
 ### <a name="root-visual"></a>可视化元素根  
  **可视化元素根**是可视化树层次结构中最顶层的元素。 在大多数应用程序的根可视化对象的基类是<xref:System.Windows.Window>或<xref:System.Windows.Navigation.NavigationWindow>。 但是，如果在 Win32 应用程序中承载视觉对象，则可视化元素根将是在 Win32 窗口中承载的最顶层的可视化元素。 有关详细信息，请参阅[教程：承载在 Win32 应用程序中的视觉对象](tutorial-hosting-visual-objects-in-a-win32-application.md)。  
@@ -178,9 +173,8 @@ DrawingGroup 操作的顺序
 ### <a name="viewing-the-visual-tree-with-xamlpad"></a>使用 XamlPad 查看可视化树  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 工具 (XamlPad) 提供了一个用来查看和浏览可视化树的选项，该树与当前所定义的 [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] 内容相对应。 单击菜单栏上的“显示可视化树”按钮可显示相应的可视化树。 下面将说明如何在 XamlPad 的“可视化树资源管理器”面板中将 [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] 内容扩展为可视化树节点：  
   
- ![可视化树资源管理器面板中 XamlPad](./media/visuallayeroverview08.png "VisualLayerOverview08")  
-XamlPad 中的“可视化树资源管理器”面板  
-  
+ ![XamlPad 中的“可视化树资源管理器”面板](./media/wpf-graphics-rendering-overview/visual-tree-explorer.png)  
+
  请注意如何<xref:System.Windows.Controls.Label>， <xref:System.Windows.Controls.TextBox>，并<xref:System.Windows.Controls.Button>每个控件都显示在一个单独的视觉对象层次结构**可视化树资源管理器**XamlPad 的面板。 这是因为[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]控件具有<xref:System.Windows.Controls.ControlTemplate>，其中包含该控件的可视化树。 显式引用某个控件时，会隐式引用它的可视化层次结构。  
   
 ### <a name="profiling-visual-performance"></a>分析可视化性能  
@@ -196,14 +190,12 @@ XamlPad 中的“可视化树资源管理器”面板
 ### <a name="retained-mode-graphics"></a>保留的模式图形  
  了解 Visual 对象角色的关键之一是，了解**即时模式**和**保留模式**图形系统之间的区别。 基于 GDI 或 GDI+ 的标准 Win32 应用程序使用即时模式图形系统。 这意味着应用程序负责重新绘制由于某项操作（如重设窗口大小）或者对象的可视化外观发生变化而失效的工作区部分。  
   
- ![Win32 呈现序列示意图](./media/visuallayeroverview01.png "VisualLayerOverview01")  
-Win32 呈现序列示意图  
+ ![Win32 呈现序列示意图](./media/wpf-graphics-rendering-overview/win32-rendering-squence.png)  
   
  相比之下，[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 使用保留模式系统。 这意味着具有可视化外观的应用程序对象定义一组序列化绘图数据。 在定义了绘图数据之后，系统会响应所有的重新绘制请求来呈现应用程序对象。 甚至在运行时，用户可以修改或创建应用程序对象，并仍依赖于系统响应绘制请求。 保留模式图形系统中有一个强大功能，即绘图信息总是由应用程序保持为序列化状态，但是呈现功能仍由系统负责。 以下关系图演示应用程序如何依赖 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 来响应绘制请求。  
   
- ![WPF 呈现序列示意图](./media/visuallayeroverview02.png "VisualLayerOverview02")  
-WPF 呈现序列示意图  
-  
+ ![WPF 呈现序列示意图](./media/wpf-graphics-rendering-overview/wpf-rendering-sequence.png)  
+
 #### <a name="intelligent-redrawing"></a>智能重绘  
  使用保留模型图形的最大好处之一就是，[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 可以高效率地优化需要在应用程序中重绘的内容。 即使存在一个具有各种不透明度的复杂场景，通常也不必编写特殊用途的代码来优化重绘功能。 将该功能与 Win32 编程进行比较，在后者中可以通过最小化更新区域中的重绘量来尽力优化应用程序。 有关在 Win32 应用程序中优化重绘功能时涉及到的复杂度类型的示例，请参阅[在更新区域中重绘](/windows/desktop/gdi/redrawing-in-the-update-region)。  
   
@@ -214,8 +206,7 @@ WPF 呈现序列示意图
   
  下图显示了其大小重设为 300% 的源图像。 请注意，当源图像作为位图图形图像拉伸而不是作为矢量图形图像缩放时会发生失真。  
   
- ![光栅图与矢量图之间的区别](./media/vectorgraphics01.png "VectorGraphics01")  
-光栅图与矢量图之间的区别  
+ ![光栅图与矢量图之间的区别](./media/wpf-graphics-rendering-overview/raster-vector-differences.png)  
   
  以下标记显示了两个<xref:System.Windows.Shapes.Path>定义的元素。 第二个元素使用<xref:System.Windows.Media.ScaleTransform>调整的第一个元素的绘图指令大小 300%。 请注意，中的绘图指令<xref:System.Windows.Shapes.Path>元素保持不变。  
   

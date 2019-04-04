@@ -11,18 +11,17 @@ helpviewer_keywords:
 - inferring type information [LINQ in Visual Basic]
 - relationships [LINQ in Visual Basic]
 ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
-ms.openlocfilehash: d72a55cadce287979fad25396327680e1f0e0aaf
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: fd2bcfad0ae24288887500ae6286e6ac73fddac5
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56979094"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58822331"
 ---
 # <a name="type-relationships-in-query-operations-visual-basic"></a>查询操作中的类型关系 (Visual Basic)
 中使用的变量[!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)]查询操作为强类型，必须相互兼容。 数据源中、 查询本身，以及在查询执行过程中，使用强类型化。 下图标识术语用于描述[!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]查询。 有关查询的部分的详细信息，请参阅[基本查询操作 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md)。  
   
- ![使用突出显示的元素的伪代码查询。](../../../../visual-basic/programming-guide/concepts/linq/media/sjltyperels.png "SJLtypeRels")  
-LINQ 查询的部分  
+ ![显示与突出显示的元素的伪代码查询屏幕截图。](./media/type-relationships-in-query-operations/linq-query-description-terms.png)  
   
  在查询中范围变量的类型必须与数据源中的元素的类型兼容。 查询变量的类型必须与在中定义的序列元素兼容`Select`子句。 最后，序列元素的类型还必须与兼容的类型中使用循环控制变量`For Each`执行查询的语句。 此强类型化便于在编译时识别类型错误。  
   
@@ -118,6 +117,7 @@ Next
 3.  中的迭代变量的类型`For Each`循环是在步骤 2 中创建的匿名类型。 该类型具有没有可用的名称，因为必须隐式确定循环迭代变量的类型。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 中的 LINQ 入门](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [匿名类型](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
 - [局部类型推理](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)

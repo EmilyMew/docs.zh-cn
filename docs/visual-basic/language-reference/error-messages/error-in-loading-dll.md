@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID48
 ms.assetid: 4226cd1f-028c-477d-88a5-cb57f7e0cdc8
-ms.openlocfilehash: 76a0a443fd9f8a6dec5ead24bc75c97d89d6c36b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c3f88a5a3c37c89d23055aa413957b2add38ed67
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54518457"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58816897"
 ---
 # <a name="error-in-loading-dll-visual-basic"></a>加载 DLL 时出错 (Visual Basic)
 动态链接库 (DLL) 是一个库中指定`Lib`子句`Declare`语句。 此错误的可能原因包括：  
@@ -33,4 +33,5 @@ ms.locfileid: "54518457"
 -   如果 DLL 或引用的 DLL 不是由路径指定的目录中，将该 DLL 移动到引用的目录。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Declare 语句](../../../visual-basic/language-reference/statements/declare-statement.md)

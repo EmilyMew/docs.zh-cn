@@ -2,14 +2,20 @@
 title: 关键字 (Visual Basic)
 ms.date: 07/20/2015
 helpviewer_keywords:
-  - 'reserved keywords, Visual Basic'
-  - 'keywords [Visual Basic]'
-  - 'Members [Visual Basic], Visual Basic run-time'
-  - 'Visual Basic code, keywords'
-  - 'Visual Basic, language reference'
-  - 'reserved words, Visual Basic keywords'
-  - 'Visual Basic, keywords'
+- reserved keywords, Visual Basic
+- keywords [Visual Basic]
+- Members [Visual Basic], Visual Basic run-time
+- Visual Basic code, keywords
+- Visual Basic, language reference
+- reserved words, Visual Basic keywords
+- Visual Basic, keywords
 ms.assetid: b5a65ef0-c408-4836-afb6-e6828c0771ca
+ms.openlocfilehash: e00cb8579ba2692acdfbf3fd349e08bb8647e2d0
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814942"
 ---
 # <a name="keywords-visual-basic"></a>关键字 (Visual Basic)
 下表列出了所有 Visual Basic 语言关键字。  
@@ -91,7 +97,7 @@ ms.assetid: b5a65ef0-c408-4836-afb6-e6828c0771ca
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|描述|  
 |-----------|-----------------|  
 |[数组摘要](../../../visual-basic/language-reference/keywords/arrays-summary.md)|列出了用于创建、定义和使用数组的语言元素。|  
 |[集合对象摘要](../../../visual-basic/language-reference/keywords/collection-object-summary.md)|列出了用于集合的语言元素。|  
@@ -112,4 +118,5 @@ ms.assetid: b5a65ef0-c408-4836-afb6-e6828c0771ca
 |[字符串操作摘要](../../../visual-basic/language-reference/keywords/string-manipulation-summary.md)|列出了用于操控字符串的函数。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 运行库成员](../../../visual-basic/language-reference/runtime-library-members.md)

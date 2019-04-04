@@ -1,0 +1,36 @@
+items:
+- name: 泛型
+  href: index.md
+  items:
+  - name: 泛型介绍
+    href: introduction-to-generics.md
+  - name: 泛型优点
+    href: benefits-of-generics.md
+  - name: 泛型类型参数
+    href: generic-type-parameters.md
+  - name: 类型参数的约束
+    href: constraints-on-type-parameters.md
+  - name: 泛型类
+    href: generic-classes.md
+  - name: 泛型接口
+    href: generic-interfaces.md
+  - name: 泛型方法
+    href: generic-methods.md
+  - name: 泛型和数组
+    href: generics-and-arrays.md
+  - name: 泛型委托
+    href: generic-delegates.md
+  - name: C++ 模板和 C# 泛型之间的区别
+    href: differences-between-cpp-templates-and-csharp-generics.md
+  - name: 运行时中的泛型
+    href: generics-in-the-run-time.md
+  - name: 泛型和反射
+    href: generics-and-reflection.md
+  - name: 泛型和属性
+    href: generics-and-attributes.md
+ms.openlocfilehash: daccd9dc4b0c808750866aacad6dacffc1282f6e
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467964"

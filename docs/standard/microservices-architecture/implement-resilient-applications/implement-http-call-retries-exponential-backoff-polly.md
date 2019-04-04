@@ -4,12 +4,12 @@ description: 了解如何使用 Polly 和 HttpClientFactory 处理 HTTP 故障�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 01/07/2019
-ms.openlocfilehash: d0c3042f2831e5f256f43e32e70645213054f247
-ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
+ms.openlocfilehash: 07333b84896c223f076e9c36cc90ab7ea7ac37c7
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55479641"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465719"
 ---
 # <a name="implement-http-call-retries-with-exponential-backoff-with-httpclientfactory-and-polly-policies"></a>通过 HttpClientFactory 和 Polly 策略实现使用指数退避算法的 HTTP 调用重试
 
@@ -72,16 +72,16 @@ Policy
 ## <a name="additional-resources"></a>其他资源
 
 - **重试模式**\
-  [*https://docs.microsoft.com/azure/architecture/patterns/retry*](/azure/architecture/patterns/retry)
+  [https://docs.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
 
 - **Polly 和 HttpClientFactory**\
-  [*https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory*](https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory)
+  [https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory](https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory)
 
 - **Polly（.NET 复原能力和暂时性故障处理库）**\
-  [*https://github.com/App-vNext/Polly*](https://github.com/App-vNext/Polly)
+  [https://github.com/App-vNext/Polly](https://github.com/App-vNext/Polly)
 
 - **Marc Brooker。抖动：随机性使操作变得更好**\
-  [*https://brooker.co.za/blog/2015/03/21/backoff.html*](https://brooker.co.za/blog/2015/03/21/backoff.html)
+  [https://brooker.co.za/blog/2015/03/21/backoff.html](https://brooker.co.za/blog/2015/03/21/backoff.html)
 
 >[!div class="step-by-step"]
 >[上一页](explore-custom-http-call-retries-exponential-backoff.md)

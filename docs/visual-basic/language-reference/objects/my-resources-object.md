@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Resources object
 ms.assetid: 34c3f2dc-7b87-432c-9d5f-17ea666bb266
-ms.openlocfilehash: 758d3334fd9d3b01e088246cf2fe28c5b03576d6
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: ee4d30b82ceada5c4f3fc4ad95dc8eeedd9355b0
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56973725"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821733"
 ---
 # <a name="myresources-object"></a>My.Resources 对象
 提供用于访问应用程序的资源的属性和类。  
@@ -25,7 +25,7 @@ ms.locfileid: "56973725"
   
  您可以访问应用程序的特定于区域性的资源文件从`My.Resources`对象。 默认情况下`My.Resources`对象查找匹配的区域中的资源文件中的资源<xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.UICulture%2A>属性。 但是，可以重写此行为，并指定特定区域性的资源使用。 有关详细信息，请参阅[桌面应用中的资源](../../../framework/resources/index.md)。  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>属性  
  属性`My.Resources`对象提供对应用程序的资源的只读访问。 若要添加或删除资源，请使用**项目设计器**。 您可以访问资源通过添加**项目设计器**通过使用`My.Resources.` *resourceName*。  
   
  此外可以添加或删除选择的项目中的资源文件**解决方案资源管理器**，然后单击**添加新项**或**添加现有项**从**项目**菜单。 您可以访问资源使用，以这种方式添加了`My.Resources.` *resourceFileName*`.`*resourceName*。  
@@ -78,6 +78,6 @@ ms.locfileid: "56973725"
  [!code-vb[VbVbalrMyResources#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#10)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [管理应用程序资源 (.NET)](/visualstudio/ide/managing-application-resources-dotnet)
 - [桌面应用中的资源](../../../framework/resources/index.md)
-

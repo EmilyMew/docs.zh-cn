@@ -2,12 +2,12 @@
 title: 循环访问 C# 中的集合
 ms.date: 08/14/2018
 ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
-ms.openlocfilehash: 386f4145c38e3a573ec04d2a0b8e260bcdc63491
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2b0e1d509cf80e13d2cee3cf0ddf2021d6c84c5b
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54720793"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58464315"
 ---
 # <a name="iterators-c"></a>迭代器 (C#)
 
@@ -324,7 +324,7 @@ public class Stack<T> : IEnumerable<T>
 
 迭代器可用作一种方法，或一个 `get` 访问器。 不能在事件、实例构造函数、静态构造函数或静态终结器中使用迭代器。
 
-必须存在从 `yield return` 语句中的表达式类型到迭代器返回的 IEnumerable<T> 类型参数的隐式转换。
+必须存在从 `yield return` 语句中的表达式类型到迭代器返回的 IEnumerable\<T> 类型参数的隐式转换。
 
 在 C# 中，迭代器方法不能有任何 `in`、`ref` 或 `out` 参数。
 

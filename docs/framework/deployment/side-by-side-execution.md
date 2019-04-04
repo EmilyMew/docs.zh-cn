@@ -6,27 +6,25 @@ helpviewer_keywords:
 ms.assetid: 649f1342-766b-49e6-a90d-5b019a751e11
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ea7a26a5b8ce0f30893e9ca66873ad61f82ff8df
-ms.sourcegitcommit: 3d5d33f384eeba41b2dff79d096f47ccc8d8f03d
+ms.openlocfilehash: 03600a7c7fbff30acab46f875fb8cd2516207457
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33395156"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654596"
 ---
 # <a name="side-by-side-execution-in-the-net-framework"></a>在 .NET Framework 中并行执行
 并行执行是在同一台计算机上运行应用程序或组件的多个版本的能力。 在同一台计算机上，可以同时安装公共语言运行时的多个版本，还可以同时安装使用运行时的某个版本的应用程序和组件的多个版本。  
   
  下图显示了几个应用程序，这些应用程序使用同一计算机上两个不同的运行时版本。 应用程序 A、B 和 C 使用运行时 1.0 版，而应用程序 D 使用运行时 1.1 版。  
   
- ![并行执行](../../../docs/framework/deployment/media/simplesbs.gif "simplesbs")  
-两个运行时版本的并行执行  
+ ![并行执行不同的运行时版本，](./media/side-by-side-execution/side-by-side-runtime-execution.gif)  
   
  .NET Framework 由公共语言运行时和一组包含 API 类型的程序集组成。 运行时和 .NET Framework 程序集分别采用不同的版本。 例如，运行时的 4.0 版实际上是 4.0.319 版，而 .NET Framework 程序集的 1.0 版实际上是 1.0.3300.0 版。  
   
  下图显示了在同一台计算机上使用一个组件的两种不同版本的几个应用程序。 应用程序 A 和 B 使用组件的 1.0 版，而应用程序 C 使用同一组件的 2.0 版。  
   
- ![并行执行](../../../docs/framework/deployment/media/compsbs.gif "compsbs")  
-一个组件的两种版本的并行执行  
+ ![显示组件的并行执行的图表。](./media/side-by-side-execution/side-by-side-component-execution.gif)  
   
  利用并行执行，可更好地控制应用程序所绑定的组件的版本，并可更好地控制应用程序所使用的运行时的版本。  
   
@@ -113,7 +111,7 @@ publicKeyToken=...,
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明|  
 |-----------|-----------------|  
 |[如何：启用和禁用自动绑定重定向](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)|描述如何将应用程序绑定到程序集的特定版本。|  
 |[配置程序集绑定重定向](../../../docs/framework/deployment/configuring-assembly-binding-redirection.md)|说明如何将程序集绑定引用重定向到 .NET Framework 程序集的特定版本。|  

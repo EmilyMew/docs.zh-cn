@@ -30,12 +30,12 @@ helpviewer_keywords:
 - exclamation point operator (!)
 - Visual Basic code, special characters
 ms.assetid: 310dce0c-45b5-4e0d-83e9-32df258d2a3e
-ms.openlocfilehash: 17b5fcc2be2730abfd7ee0090f9f34053e81c5f8
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 65fcd10521742e287c7934080b3352a06668df7a
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56971892"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58835552"
 ---
 # <a name="special-characters-in-code-visual-basic"></a>代码中的特殊字符 (Visual Basic)
 有时您必须在代码中，即，不是字母或数字的字符使用特殊字符。 标点和 Visual Basic 字符集中的特殊字符各有其用途，从组织程序文本到定义编译器或已编译的程序执行的任务。 它们不指定要执行的操作。  
@@ -88,5 +88,6 @@ ms.locfileid: "56971892"
  `!`字符也用作`Single`键入字符。  
   
 ## <a name="see-also"></a>请参阅
+
 - [程序结构和代码约定](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
 - [类型字符](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)

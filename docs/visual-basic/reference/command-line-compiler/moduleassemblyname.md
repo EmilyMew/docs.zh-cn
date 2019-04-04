@@ -6,12 +6,12 @@ helpviewer_keywords:
 - /moduleassemblyname compiler option [Visual Basic]
 - -moduleassemblyname compiler option [Visual Basic]
 ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
-ms.openlocfilehash: a16dd616c8a38dea4bd1779e4feea779b3a18e2d
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: b0279c5ac658c7d0749f62066abbd705d0a271af
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57375293"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832395"
 ---
 # <a name="-moduleassemblyname"></a>-moduleassemblyname
 指定此模块所属程序集的名称。  
@@ -43,6 +43,7 @@ ms.locfileid: "57375293"
 >  `-moduleassemblyname`选项不是可从 Visual Studio 开发环境中; 它是可仅在编译时从命令提示符。  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：生成单文件程序集](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)
 - [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-目标 (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)

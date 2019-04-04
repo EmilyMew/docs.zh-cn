@@ -10,12 +10,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], overloading
 - procedures [Visual Basic], multiple versions
 ms.assetid: 825f9d56-4cde-43fd-993a-b9171717e2eb
-ms.openlocfilehash: 52e31ba2f9d2f5cf87a5597a3c8d639816a75535
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 070d641d5a8b683ddfe06039117cc4a8507102df
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56972659"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827623"
 ---
 # <a name="how-to-overload-a-procedure-that-takes-optional-parameters-visual-basic"></a>如何：重载带有可选参数 (Visual Basic 中) 的过程
 如果过程具有一个或多个[可选](../../../../visual-basic/language-reference/modifiers/optional.md)参数，不能定义任何其隐式重载匹配的重载的版本。 详细信息，请参阅"隐式重载可选参数的"中[中重载过程注意事项](./considerations-in-overloading-procedures.md)。  
@@ -62,6 +62,7 @@ ms.locfileid: "56972659"
 5.  终止与每个过程`End Sub`或`End Function`语句作为相应。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [可选参数](./optional-parameters.md)

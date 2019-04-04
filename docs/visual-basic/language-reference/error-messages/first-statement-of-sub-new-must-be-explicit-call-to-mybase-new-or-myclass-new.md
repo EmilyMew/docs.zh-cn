@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30920
 ms.assetid: e47dc755-4294-4368-b813-2177b7677957
-ms.openlocfilehash: 31f92d1e52e50b2a87fd6a6af6e3c87292f4437f
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 737f9119814e784ebabcbb4629ab6948ce164168
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55268786"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814089"
 ---
 # <a name="first-statement-of-this-sub-new-must-be-an-explicit-call-to-mybasenew-or-myclassnew-because-the-constructorname-in-the-base-class-baseclassname-of-derivedclassname-is-marked-obsolete-errormessage"></a>此 Sub New 的第一个语句必须是对 MyBase.New 或 MyClass.New 的显式调用，因为\<constructorname > 在基类的\<a m e >' 的 '\<derivedclassname > 标记为已过时:\<错误消息 >'
 类构造函数不显式调用基类构造函数，并且隐式基类构造函数标有 <xref:System.ObsoleteAttribute> 特性和将其视为错误的指令。  
@@ -30,5 +30,5 @@ ms.locfileid: "55268786"
 2.  将对 `MyBase.New()` 或 `MyClass.New()` 的调用包括为派生类中 `Sub New` 的第一个语句。  
   
 ## <a name="see-also"></a>请参阅
-- [属性概述](../../../visual-basic/programming-guide/concepts/attributes/index.md)
 
+- [属性概述](../../../visual-basic/programming-guide/concepts/attributes/index.md)

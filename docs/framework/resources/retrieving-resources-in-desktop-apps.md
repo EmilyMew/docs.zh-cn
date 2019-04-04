@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: eca16922-1c46-4f68-aefe-e7a12283641f
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9cbfd608f52a11f267ade25f80bc60bdfcd89364
-ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.openlocfilehash: 6db8f5914a325a276872ff804f679f8b3e0745a0
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56221220"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653920"
 ---
 # <a name="retrieving-resources-in-desktop-apps"></a>检索桌面应用程序中的资源
 使用 .NET Framework 桌面应用中的本地化资源时，最好用主程序集打包默认或非特定区域性的资源，并为应用支持的每种语言或区域性单独创建附属程序集。 可以使用下一节中介绍的 <xref:System.Resources.ResourceManager> 类访问已命名的资源。 如果选择不在主程序集和附属程序集中嵌入资源，也可以按本文后面的 [从 .resources 文件中检索资源](#from_file) 一节中所述直接访问二进制 .resources 文件。  若要检索 [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] 应用中的资源，请参阅 Windows 开发人员中心中的 [在 Windows 应用商店应用中创建和检索资源](https://go.microsoft.com/fwlink/p/?LinkID=241674) 一文。  
@@ -149,10 +149,11 @@ GetObject.exe
  如果选择不在附属程序集中部署资源，你仍可以使用 <xref:System.Resources.ResourceManager> 对象直接访问 .resources 文件中的资源。 要执行此操作，必须正确部署.resources 文件。 然后使用 <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%2A?displayProperty=nameWithType> 方法实例化 <xref:System.Resources.ResourceManager> 对象，并指定包含独立 .resources 文件的目录。  
   
 ### <a name="deploying-resources-files"></a>部署 .resources 文件  
- 将 .resources 文件嵌入应用程序程序集和附属程序集后，每个附属程序集都具有相同的文件名，但被放在反射附属程序集区域性的子目录中。 与此相反，从 .resources 文件直接访问资源时，可以将所有 .resources 文件放在单一目录（通常为应用程序目录的子目录）中。 应用的默认 .resources 文件名称仅包含一个根名称，不带有其区域性的指示（例如 strings.resources）。 每个本地化的区域性资源存储在名称包含根名称，后带有区域性标记所组成的文件中（例如 strings.ja.resources 或 strings.de-DE.resources）。 下图显示资源文件应被放置在目录结构中的何处。  
-  
- ![应用程序主目录](../../../docs/framework/resources/media/resappdir.gif "resappdir")  
-.resources 文件的目录结构和命名约定  
+ 将 .resources 文件嵌入应用程序程序集和附属程序集后，每个附属程序集都具有相同的文件名，但被放在反射附属程序集区域性的子目录中。 与此相反，从 .resources 文件直接访问资源时，可以将所有 .resources 文件放在单一目录（通常为应用程序目录的子目录）中。 应用的默认 .resources 文件名称仅包含一个根名称，不带有其区域性的指示（例如 strings.resources）。 每个本地化的区域性资源存储在名称包含根名称，后带有区域性标记所组成的文件中（例如 strings.ja.resources 或 strings.de-DE.resources）。 
+ 
+ 下图显示资源文件应被放置在目录结构中的何处。 它还提供了.resource 文件的命名约定。  
+
+ ![显示应用程序主目录的插图。](./media/retrieving-resources-in-desktop-apps/resource-application-directory.gif)  
   
 ### <a name="using-the-resource-manager"></a>使用资源管理器  
  创建资源并将其放置在相应的目录中后，通过调用 <xref:System.Resources.ResourceManager> 方法创建 <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%28System.String%2CSystem.String%2CSystem.Type%29> 对象以使用资源。 第一个参数指定应用的默认 .resources 文件的根名称（在上一节的示例中为 "strings"）。 第二个参数指定的资源的位置（上一个示例中为 "Resources"）。 第三个参数指定要使用的 <xref:System.Resources.ResourceSet> 实现。 如果第三个参数为 `null`，则使用默认运行时 <xref:System.Resources.ResourceSet> 。  

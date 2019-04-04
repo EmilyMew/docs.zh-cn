@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID54
 ms.assetid: 74891e96-884b-4c8d-872d-cd11ae272372
-ms.openlocfilehash: 1d85f49ce0aed44dea12c9ba16135425e6e2e431
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d3d0ebd003f178567ec9e9b19d6baccb8bc15f60
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54565743"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819978"
 ---
 # <a name="bad-file-mode"></a>错误的文件模式
 在操作文件内容中使用的语句必须是适用于在其中打开该文件的模式。 可能的原因包括：  
@@ -35,5 +35,6 @@ ms.locfileid: "54565743"
 -   使用 `My.Computer.FileSystem` 对象中的可用功能。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.FileSystem>
-- [故障排除：读取和写入文本文件](../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)
+- [排除故障：读取和写入文本文件](../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)

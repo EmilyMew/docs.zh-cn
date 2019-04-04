@@ -2,12 +2,12 @@
 title: Entity Type — 实体类型
 ms.date: 03/30/2017
 ms.assetid: a6dee9ab-9e4a-48f2-a169-3f79cc15821c
-ms.openlocfilehash: 3955de1873d80e85df713a557750e34e76efeb41
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cb542a1750a6b45dd2fca4d32501719470d9a78a
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54502879"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410883"
 ---
 # <a name="entity-type"></a>Entity Type — 实体类型
 *实体类型*是用于描述实体数据模型 (EDM) 使用的数据结构的基本构建块。 在概念模型中，实体类型表示顶级概念（例如客户或订单）的结构。 实体类型是实体类型实例的模板。 每个模板都包含以下信息：  
@@ -27,7 +27,7 @@ ms.locfileid: "54502879"
 ## <a name="example"></a>示例  
  下图显示了一个具有三个实体类型的概念模型：`Book`、`Publisher` 和 `Author`：  
   
- ![示例模型](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![具有三个实体类型的示例模型](./media/entity-type/example-model-three-entity-types.gif)  
   
  请注意，构成其实体键的每个实体类型的属性均用“(Key)”标示出来。  
   

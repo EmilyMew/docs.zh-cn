@@ -21,12 +21,12 @@ helpviewer_keywords:
 - End keyword [Visual Basic], Select Case statements
 - Case statement [Visual Basic], Select...Case
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
-ms.openlocfilehash: b9770574a1b25f37dcc91c1d0374340f762700be
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: f99db4f1dc224e5f75ee67ba94c3745f28438724
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56968343"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814609"
 ---
 # <a name="selectcase-statement-visual-basic"></a>Select...Case 语句 (Visual Basic)
 在运行的语句，具体取决于表达式的值的多个组之一。  
@@ -83,6 +83,7 @@ End Select
  [!code-vb[VbVbalrStatements#54](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#54)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
 - [End 语句](../../../visual-basic/language-reference/statements/end-statement.md)
 - [If...Then...Else 语句](../../../visual-basic/language-reference/statements/if-then-else-statement.md)

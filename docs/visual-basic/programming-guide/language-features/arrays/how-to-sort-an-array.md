@@ -7,12 +7,12 @@ helpviewer_keywords:
 - arrays [Visual Basic], sorting
 - examples [Visual Basic], arrays
 ms.assetid: 9289aeaa-9626-4698-94a7-1d1fd3702b87
-ms.openlocfilehash: 0b04bfbedf9d7266d1b2e190fa85b8a64cf6efbf
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3f4dbd6dce0957de3451b1f29c3a67ccd6791045
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54558431"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838074"
 ---
 # <a name="how-to-sort-an-array-in-visual-basic"></a>如何：在 Visual Basic 中的对数组进行排序
 此示例中声明的数组`String`对象名为`zooAnimals`，填充它，而按字母顺序排序。  
@@ -44,6 +44,7 @@ End Sub
 -   数组的一个或多个元素不实现<xref:System.IComparable>接口 (<xref:System.InvalidOperationException>类)  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Array.Sort%2A?displayProperty=nameWithType>
 - [数组](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
 - [数组疑难解答](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)

@@ -4,12 +4,12 @@ description: 每个微服务的数据主权是微服务的核心内容之一。 
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
-ms.openlocfilehash: 4900c294f94f4b4d604ba841595fc5c6d7952c10
-ms.sourcegitcommit: 4ac80713f6faa220e5a119d5165308a58f7ccdc8
+ms.openlocfilehash: 8db5e4ae8e0da63493a09c76614d898358bdea98
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54144897"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58464030"
 ---
 # <a name="data-sovereignty-per-microservice"></a>每个微服务的数据主权
 
@@ -50,16 +50,16 @@ DDD 通过获取分布式微服务形式的实际边界而从微服务中获益�
 ### <a name="additional-resources"></a>其他资源
 
 - **Chris Richardson.模式：每个服务一个数据库** \
-  [*https://microservices.io/patterns/data/database-per-service.html*](https://microservices.io/patterns/data/database-per-service.html)
+  [https://microservices.io/patterns/data/database-per-service.html](https://microservices.io/patterns/data/database-per-service.html)
 
 - **Martin Fowler。BoundedContext** \
-  [*https://martinfowler.com/bliki/BoundedContext.html*](https://martinfowler.com/bliki/BoundedContext.html)
+  [https://martinfowler.com/bliki/BoundedContext.html](https://martinfowler.com/bliki/BoundedContext.html)
 
 - **Martin Fowler。PolyglotPersistence** \
-  [*https://martinfowler.com/bliki/PolyglotPersistence.html*](https://martinfowler.com/bliki/PolyglotPersistence.html)
+  [https://martinfowler.com/bliki/PolyglotPersistence.html](https://martinfowler.com/bliki/PolyglotPersistence.html)
 
 - **Alberto Brandolini。Strategic Domain Driven Design with Context Mapping** \（含上下文映射的策略域驱动设计）
-  [*https://www.infoq.com/articles/ddd-contextmapping*](https://www.infoq.com/articles/ddd-contextmapping)
+  [https://www.infoq.com/articles/ddd-contextmapping](https://www.infoq.com/articles/ddd-contextmapping)
 
 >[!div class="step-by-step"]
 >[上一页](microservices-architecture.md)

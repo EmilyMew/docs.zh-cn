@@ -66,10 +66,12 @@ ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
   
 -   CTS 中的每种类型被定义为值类型或引用类型。 这包括 .NET 类库中的所有自定义类型以及你自己的用户定义类型。 使用 [struct](../../../csharp/language-reference/keywords/struct.md) 关键字定义的类型是值类型；所有内置数值类型都是 `structs`。 使用 [class](../../../csharp/language-reference/keywords/class.md) 关键字定义的类型是引用类型。 引用类型和值类型遵循不同的编译时规则和运行时行为。  
   
- 下图展示了 CTS 中值类型和引用类型之间的关系。  
+ 下图展示了 CTS 中值类型和引用类型之间的关系。
+
+ 下图显示 CTS 中的值类型和引用类型： 
   
- ![值类型和引用类型](../../../csharp/programming-guide/types/media/valuetypescts.png "ValueTypesCTS")  
-CTS 中的值类型和引用类型  
+  
+ ![屏幕截图显示了 CTS 值类型和引用类型。](./media/index/value-reference-types-common-type-system.png)  
   
 > [!NOTE]
 >  你可能会发现，最常用的类型全都被整理到了 <xref:System> 命名空间中。 不过，包含类型的命名空间与类型是值类型还是引用类型没有关系。  

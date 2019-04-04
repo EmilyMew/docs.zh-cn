@@ -7,12 +7,12 @@ helpviewer_keywords:
 - contravariance, In keyword [Visual Basic]
 - In keyword [Visual Basic]
 ms.assetid: 59bb13c5-fe96-42b8-8286-86293d1661c5
-ms.openlocfilehash: 91a0b9c1188820f8fc466ce1bb123b704fcd94b7
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: d8d503f0814a89c977cdc208eced026b2d8cb1fd
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56972504"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838922"
 ---
 # <a name="in-generic-modifier-visual-basic"></a>In（泛型修饰符）(Visual Basic)
 对于泛型类型参数，`In` 关键字可指定类型参数是逆变的。  
@@ -47,5 +47,6 @@ ms.locfileid: "56972504"
  [!code-vb[vbVarianceKeywords#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvariancekeywords/vb/module1.vb#2)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [泛型接口中的变体](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
 - [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

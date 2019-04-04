@@ -2,12 +2,12 @@
 title: 如何：使用批注以转换 LINQ to XML 树中 XSLT 样式 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 08e91fa2-dac2-4463-9ef1-87b1ac3fa890
-ms.openlocfilehash: ed31e00b6d67a6707a98977c58e4e7afe35c8ad7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a8db5f9dc29b4053321c81c9da58e12610ef63c7
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54746294"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58824866"
 ---
 # <a name="how-to-use-annotations-to-transform-linq-to-xml-trees-in-an-xslt-style-visual-basic"></a>如何：使用批注以转换 LINQ to XML 树中 XSLT 样式 (Visual Basic)
 使用批注可帮助进行 XML 树的转换。  
@@ -34,7 +34,7 @@ ms.locfileid: "54746294"
   
 -   作为批注添加的新元素可以包含新的子节点，它可以形成一个具有任意形状的子树。  
   
--   还有一个特殊规则：如果将新元素的子节点位于不同的命名空间，实现此目的组成的命名空间 (在此示例中，命名空间是`http://www.microsoft.com/LinqToXmlTransform/2007`)，则该子元素不会复制到新树。 而如果命名空间是上面提到的特殊命名空间，并且元素的本地名称为 `ApplyTransforms`，则会迭代源树中该元素的子节点并将其复制到新树（但批注的子元素本身例外，它们将根据这些规则进行转换）。  
+-   有一条特殊规则：如果新元素的子节点位于不同的命名空间，即专门为此建立的命名空间（在本示例中，此命名空间为 `http://www.microsoft.com/LinqToXmlTransform/2007`），则不会将该子元素复制到新树。 而如果命名空间是上面提到的特殊命名空间，并且元素的本地名称为 `ApplyTransforms`，则会迭代源树中该元素的子节点并将其复制到新树（但批注的子元素本身例外，它们将根据这些规则进行转换）。  
   
 -   这有些类似于 XSL 中的转换规范。 用于选择一组节点的查询类似于用于模板的 XPath 表达式。 用于创建以批注形式保存的新 <xref:System.Xml.Linq.XElement> 的代码类似于 XSL 中的序列构造函数，`ApplyTransforms` 元素的功能类似于 XSL 中的 `xsl:apply-templates` 元素。  
   
@@ -379,4 +379,5 @@ After Transform
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [高级的 LINQ to XML 编程 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

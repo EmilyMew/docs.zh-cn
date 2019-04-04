@@ -10,12 +10,12 @@ helpviewer_keywords:
 - data binding [WPF], about data binding
 - conversion for data binding [WPF]
 ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
-ms.openlocfilehash: ad86577aa4a66d9296c3c1844c9f8fa8c2b89d24
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 9e55714db55168c95f744665165e333d7f2ca730
+ms.sourcegitcommit: d938c39afb9216db377d0f0ecdaa53936a851059
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57364822"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58634552"
 ---
 # <a name="data-binding-overview"></a>数据绑定概述
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 数据绑定为应用程序呈现数据并与数据交互提供了一种简单且一致的方式。 元素能够以 [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] 对象和 [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] 形式绑定到来自各种数据源的数据。 <xref:System.Windows.Controls.ContentControl>如 s<xref:System.Windows.Controls.Button>并<xref:System.Windows.Controls.ItemsControl>如 s<xref:System.Windows.Controls.ListBox>和<xref:System.Windows.Controls.ListView>具有内置功能，使灵活的样式设置单个数据项的集合。 可基于数据生成排序、筛选和分组视图。  
@@ -61,7 +61,7 @@ ms.locfileid: "57364822"
   
  不论要绑定什么元素，也不论数据源的特性是什么，每个绑定都始终遵循下图所示的模型：  
   
- ![基本数据绑定示意图](./media/databindingmostbasic.png "DataBindingMostBasic")  
+ ![显示基本数据绑定模型的关系图。](./media/data-binding-overview/basic-data-binding-diagram.png)  
   
  如上图所示，数据绑定实质上是绑定目标与绑定源之间的桥梁。 该图演示了以下基本的 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 数据绑定概念：  
   
@@ -101,7 +101,7 @@ ms.locfileid: "57364822"
   
  但是，源值是在编辑文本的同时进行更新，还是在结束编辑文本并将鼠标指针从文本框移走后才进行更新呢？ <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A>绑定属性确定触发源更新。 下图中的右箭头的点说明的角色<xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A>属性：  
   
- ![UpdateSourceTrigger 关系图](./media/databindingupdatesourcetrigger.png "DataBindingUpdateSourceTrigger")  
+ ![图，显示的 UpdateSourceTrigger 属性的角色。](./media/data-binding-overview/data-binding-updatesource-trigger.png)  
   
  如果<xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A>值是<xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>，然后值指向的向右箭头<xref:System.Windows.Data.BindingMode.TwoWay>或<xref:System.Windows.Data.BindingMode.OneWayToSource>获取尽快目标属性更改更新绑定。 但是，如果<xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A>值是<xref:System.Windows.Data.UpdateSourceTrigger.LostFocus>，则该值仅获取更新的新值与目标属性失去焦点时。  
   
@@ -132,7 +132,7 @@ ms.locfileid: "57364822"
   
  如果将此示例应用于基本关系图，则生成的图如下所示。 这是<xref:System.Windows.Data.BindingMode.OneWay>绑定，因为 Background 属性支持<xref:System.Windows.Data.BindingMode.OneWay>绑定默认情况下。  
   
- ![数据绑定关系图](./media/databindingbuttonbackgroundexample.png "DataBindingButtonBackgroundExample")  
+ ![图，显示的数据绑定背景属性。](./media/data-binding-overview/data-binding-button-background-example.png)  
   
  您可能想知道为什么这样即使*ColorName*属性的类型是字符串时<xref:System.Windows.Controls.Control.Background%2A>属性属于类型<xref:System.Windows.Media.Brush>。 这是由于进行了默认类型转换，此类型转换在[数据转换](#data_conversion)一节中进行讨论。  
   
@@ -185,7 +185,7 @@ ms.locfileid: "57364822"
   
  若要将此信息添加到[创建绑定](#creating_a_binding)一节的图中，关系图如下所示：  
   
- ![数据绑定关系图](./media/databindingbuttondefaultconversion.png "DataBindingButtonDefaultConversion")  
+ ![图，显示的数据绑定的默认属性。](./media/data-binding-overview/data-binding-button-default-conversion.png)  
   
  但是，如果而不是让您的绑定源对象具有类型字符串的属性*颜色*类型的属性<xref:System.Windows.Media.Color>？ 在这种情况下，为了使绑定能够处理您需要首先*颜色*转换的内容的属性值的<xref:System.Windows.Controls.Control.Background%2A>属性接受。 需要通过实现来创建自定义转换器<xref:System.Windows.Data.IValueConverter>接口，如以下示例所示：  
   
@@ -196,7 +196,7 @@ ms.locfileid: "57364822"
   
  现在使用自定义转换器而不是默认转换，关系图如下所示：  
   
- ![数据绑定关系图](./media/databindingconvertercolorexample.png "DataBindingConverterColorExample")  
+ ![图，显示的数据绑定自定义转换器。](./media/data-binding-overview/data-binding-converter-color-example.png)  
   
  重申一下，由于要绑定到的类型中提供了类型转换器，因此可以使用默认转换。 此行为取决于目标中可用的类型转换器。 如果无法确定，请创建自己的转换器。  
   
@@ -217,7 +217,7 @@ ms.locfileid: "57364822"
   
  幸运的是，基本关系图仍然适用。 如果要绑定<xref:System.Windows.Controls.ItemsControl>到一个集合，该关系图如下所示：  
   
- ![数据绑定 ItemsControl 关系图](./media/databindingitemscontrol.png "DataBindingItemsControl")  
+ ![图，显示的数据绑定 ItemsControl 对象。](./media/data-binding-overview/data-binding-itemscontrol.png)  
   
  如要绑定此关系图中所示<xref:System.Windows.Controls.ItemsControl>的集合对象，<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>属性是要使用的属性。 您可以看作<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>属性的内容作为<xref:System.Windows.Controls.ItemsControl>。 请注意，该绑定是<xref:System.Windows.Data.BindingMode.OneWay>因为<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>属性支持<xref:System.Windows.Data.BindingMode.OneWay>绑定默认情况下。  
   
@@ -340,7 +340,7 @@ ms.locfileid: "57364822"
 ## <a name="data-templating"></a>数据模板化  
  如果不使用数据模板，[什么是数据绑定？](#what_is_data_binding)一节中的应用程序 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 将如下所示：  
   
- ![没有数据模板的数据绑定演示](./media/databindingdemotemplates.png "DataBindingDemoTemplates")  
+ ![没有数据模板的数据绑定演示](./media/data-binding-overview/data-binding-demo-templates.png)  
   
  上一节中的示例中所示同时<xref:System.Windows.Controls.ListBox>控件和<xref:System.Windows.Controls.ContentControl>绑定到整个集合对象 （或更具体地说，集合对象视图） 的*AuctionItem*s。 如果没有特殊说明如何显示数据集合的<xref:System.Windows.Controls.ListBox>显示基础集合中的每个对象的字符串表示形式和<xref:System.Windows.Controls.ContentControl>显示它所绑定到的对象的字符串表示形式。  
   

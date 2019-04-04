@@ -29,8 +29,7 @@ HRESULT GetNativeIP(
 ## <a name="remarks"></a>备注  
  此指令指针的含义取决于事件类型，如下表所示。  
   
-|事件类型|
-  `pStackPointer` 值的含义|  
+|事件类型|`pStackPointer` 值的含义|  
 |----------------|--------------------------------------|  
 |[MANAGED_EXCEPTION_FIRST_CHANCE](../../../../docs/framework/unmanaged-api/debugging/cordebugrecordformat-enumeration.md)|出错指令的地址。|  
 |[MANAGED_EXCEPTION_USER_FIRST_CHANCE](../../../../docs/framework/unmanaged-api/debugging/cordebugrecordformat-enumeration.md)|在框架中的代码地址为由[GetStackPointer](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptiondebugevent-getstackpointer-method.md)如果未不引发任何异常将继续执行的方法。 此异常可能会，也可能不会导致在此帧中执行的不同代码（例如，`try/catch/finally` 子句的 catch 块）。|  

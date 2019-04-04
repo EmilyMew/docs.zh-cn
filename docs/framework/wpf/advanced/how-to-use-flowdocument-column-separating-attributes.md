@@ -6,12 +6,12 @@ helpviewer_keywords:
 - column-separating attributes
 - documents [WPF], FlowDocument column-separating attributes
 ms.assetid: c7a822f8-aeca-45bd-a258-2852ff28005c
-ms.openlocfilehash: 8693c8973442a5c6e65e64c5c66194c11bbff119
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 27491b21da587fa198061ba52d8daed5d3f28de3
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57363774"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410896"
 ---
 # <a name="how-to-use-flowdocument-column-separating-attributes"></a>如何：使用 FlowDocument 列分隔特性
 此示例演示如何使用的列分隔功能<xref:System.Windows.Documents.FlowDocument>。  
@@ -23,4 +23,4 @@ ms.locfileid: "57363774"
   
  下图显示的效果<xref:System.Windows.Documents.FlowDocument.ColumnGap%2A>， <xref:System.Windows.Documents.FlowDocument.ColumnRuleBrush%2A>，并<xref:System.Windows.Documents.FlowDocument.ColumnRuleWidth%2A>特性在所呈现<xref:System.Windows.Documents.FlowDocument>。  
   
- ![屏幕快照：FlowDocument Intra 列](./media/flowdocumentintracolumn.png "FlowDocumentIntraColumn")
+ ![显示 FlowDocument Intra 列属性的屏幕截图。](./media/how-to-use-flowdocument-column-separating-attributes/flowdocument-intra-column.png)

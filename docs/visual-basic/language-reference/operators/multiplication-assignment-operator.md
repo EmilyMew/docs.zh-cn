@@ -10,12 +10,12 @@ helpviewer_keywords:
 - '*= operator [Visual Basic]'
 - compound assignment statements [Visual Basic]
 ms.assetid: 96c86509-6eb8-4682-8226-3852e049376f
-ms.openlocfilehash: d672ac147a4d7b2c21f4fcb7ee6cdf91b8b4924b
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 7c009a6b3acfe1528a2c34ed1e10735ac86507e6
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56965327"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58839309"
 ---
 # <a name="-operator-visual-basic"></a>*= 运算符 (Visual Basic)
 将表达式的值的变量或属性的值相乘并将结果赋给变量或属性。  
@@ -47,6 +47,7 @@ variableorproperty *= expression
  [!code-vb[VbVbalrOperators#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#5)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [* 运算符](../../../visual-basic/language-reference/operators/multiplication-operator.md)
 - [赋值运算符](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [算术运算符](../../../visual-basic/language-reference/operators/arithmetic-operators.md)

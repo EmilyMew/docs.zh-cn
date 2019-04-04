@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID460
 ms.assetid: 71a4a045-65bb-417d-b3bd-99a9fa3c53f6
-ms.openlocfilehash: 0a5d06b381df3af8de1d092b600239c9acfce39a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5ec077be30b0afc8917d431dc9bd73c8dd41be89
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54735774"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58817170"
 ---
 # <a name="clipboard-format-is-not-valid"></a>剪贴板格式无效
 指定的剪贴板格式，与正在执行的方法不兼容。 此错误的可能原因是：  
@@ -25,4 +25,5 @@ ms.locfileid: "54735774"
 -   删除无效的格式，并指定一个有效。  
   
 ## <a name="see-also"></a>请参阅
+
 - [剪贴板：添加其他格式](/cpp/mfc/clipboard-adding-other-formats)

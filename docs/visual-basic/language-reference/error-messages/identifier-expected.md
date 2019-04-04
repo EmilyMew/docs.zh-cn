@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30203
 ms.assetid: c05162ee-55d0-4d7f-84bb-e7758d4c5081
-ms.openlocfilehash: 56d405bfe1079e9862d47bc64566fee62a573be0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 11a305581ba498715f7f24ecb75f737acdf12bfb
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54731031"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58843547"
 ---
 # <a name="identifier-expected"></a>应输入标识符
 不是可识别的已声明的元素名称的编程元素出现在上下文要求元素名称的位置。 一个可能的原因是以外的某处指定了一个属性的语句开始处。  
@@ -26,6 +26,6 @@ ms.locfileid: "54731031"
 -   验证语句中的所有元素名称都拼写正确。  
   
 ## <a name="see-also"></a>请参阅
+
 - [已声明的元素名称](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
 - [属性概述](../../../visual-basic/programming-guide/concepts/attributes/index.md)
-

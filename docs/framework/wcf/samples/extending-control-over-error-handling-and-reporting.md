@@ -2,12 +2,12 @@
 title: 扩展对错误处理和错误报告的控制
 ms.date: 03/30/2017
 ms.assetid: 45f996a7-fa00-45cb-9d6f-b368f5778aaa
-ms.openlocfilehash: 30b36f5373563ec9faba8e655ab1e31d47b23c99
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8a6064d5ebc8f80eb5fe3cba309c0eb1c71ee020
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54622450"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814336"
 ---
 # <a name="extending-control-over-error-handling-and-reporting"></a>扩展对错误处理和错误报告的控制
 此示例演示如何对错误处理和 Windows Communication Foundation (WCF) 服务使用中的错误报告进行扩展控制<xref:System.ServiceModel.Dispatcher.IErrorHandler>接口。 该示例基于[Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)与一些额外的代码添加到服务来处理错误。 客户端强制实施若干个错误条件。 服务将截获这些错误并将其记录到某个文件中。  
@@ -49,7 +49,7 @@ public class CalculatorErrorHandler : IErrorHandler
     }  
 ```  
   
- `ErrorBehaviorAttribute` 作为一种向服务注册错误处理程序的机制存在。 此属性采取单一的类型参数。 该类型应实现 <xref:System.ServiceModel.Dispatcher.IErrorHandler> 接口，还应具有一个公用的空构造函数。 该属性随后实例化该错误处理程序类型的实例，并将其安装到该服务中。 实现此操作的方法是，实现 <xref:System.ServiceModel.Description.IServiceBehavior> 接口，然后使用 <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A> 方法将错误处理程序的实例添加到该服务。  
+ `ErrorBehaviorAttribute` 作为一种向服务注册错误处理程序的机制存在。 此属性采取单一类型的参数。 该类型应实现 <xref:System.ServiceModel.Dispatcher.IErrorHandler> 接口，还应具有一个公用的空构造函数。 该属性随后实例化该错误处理程序类型的实例，并将其安装到该服务中。 实现此操作的方法是，实现 <xref:System.ServiceModel.Description.IServiceBehavior> 接口，然后使用 <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A> 方法将错误处理程序的实例添加到该服务。  
   
 ```  
 // This attribute can be used to install a custom error handler for a service.  
@@ -118,7 +118,7 @@ catch (Exception e)
 }  
 ```  
   
- 运行示例时，操作请求和响应将显示在客户端控制台窗口中。 您将看到除以零的除法运算和参数超出范围的情况被报告为错误。 在客户端窗口中按 Enter 可以关闭客户端。  
+ 运行示例时，操作请求和响应将显示在客户端控制台窗口中。 你将看到除以零的除法运算和自变量超出范围的情况被报告为错误。 在客户端窗口中按 Enter 可以关闭客户端。  
   
 ```  
 Add(15,3) = 18  
@@ -158,4 +158,3 @@ Fault: Reason = Invalid Argument: The argument must be greater than zero.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\ErrorHandling`  
   
-## <a name="see-also"></a>请参阅

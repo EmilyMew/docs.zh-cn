@@ -5,12 +5,12 @@ helpviewer_keywords:
 - typography [WPF], animations
 - animation [WPF], text
 ms.assetid: eec3d26c-0a21-420f-8012-671621c47089
-ms.openlocfilehash: e62c8288460206e7ebfbc18787bd9c2f2144a5bc
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 4cc7932b43f8a3c35d750f9a9020e16257867f76
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57356957"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58463119"
 ---
 # <a name="how-to-apply-animations-to-text"></a>如何：向文本应用动画
 动画可以更改应用程序中文本的显示和外观。 以下示例使用不同类型的动画来影响中文本的显示<xref:System.Windows.Controls.TextBlock>控件。  
@@ -26,9 +26,8 @@ ms.locfileid: "57356957"
   
  下图显示的效果<xref:System.Windows.Controls.TextBlock>控件从其不透明度改`1.00`到`0.00`定义的 5 秒间隔期间<xref:System.Windows.Media.Animation.Timeline.Duration%2A>。  
   
- ![文本不透明度从 1.00 改为 0.00](./media/fadedtext01.png "FadedText01")  
-文本不透明度从 1.00 改为 0.00  
-  
+ ![文本不透明度从 1.00 改为 0.00。](./media/how-to-apply-animations-to-text/faded-text-opacity-change.png)  
+   
  下面的示例使用<xref:System.Windows.Media.Animation.ColorAnimation>进行动画处理的文本块的前景色。 前景色值从一种颜色更改为另一种颜色，持续时间为 5 秒，然后返回到原来的颜色值并继续。  
   
  [!code-xaml[TextAnimationSample#TextAnimationSample3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextAnimationSample/CS/Window1.xaml#textanimationsample3)]  

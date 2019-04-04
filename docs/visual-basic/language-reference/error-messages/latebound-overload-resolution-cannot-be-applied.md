@@ -8,12 +8,12 @@ helpviewer_keywords:
 - overload resolution [Visual Basic], with late-bound argument
 - BC30933
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
-ms.openlocfilehash: 7215be3f454f4a799124620fb5db520282988035
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 7f2ae3bb0e7c09d966c53fb17b1cbe675dfce8b9
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55272626"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58814050"
 ---
 # <a name="latebound-overload-resolution-cannot-be-applied-to-procedurename-because-the-accessing-instance-is-an-interface-type"></a>后期绑定重载决策不能应用于\<过程名称 > 因为访问实例是一个接口类型
 编译器尝试解析对重载的属性或过程中，但引用失败，因为参数的类型`Object`和引用对象具有一个接口的数据类型。 `Object`参数强制编译器将引用解析为后期绑定。  
@@ -65,6 +65,7 @@ refer.s1(CType(o1, Double))
  每个前面几行代码显式强制转换`Object`变量`o1`的重载定义的参数类型之一。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程重载](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
 - [重载决策](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)
 - [CType 函数](../../../visual-basic/language-reference/functions/ctype-function.md)

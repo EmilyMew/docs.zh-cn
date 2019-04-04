@@ -3,17 +3,17 @@ title: WIF 声明编程模型
 ms.date: 03/30/2017
 ms.assetid: 149cb875-9b1c-4695-b88a-fbf1725a02f9
 author: BrucePerlerMS
-ms.openlocfilehash: 91b719967cd4ab9fd412e5c0799bb5e1921a4801
-ms.sourcegitcommit: d88024e6d6d8b242feae5f4007a709379355aa24
+ms.openlocfilehash: 543db91eaa058a87cfe579a23abb710f21ec1b85
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316501"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58462807"
 ---
 # <a name="wif-claims-programming-model"></a>WIF 声明编程模型
 ASP.NET 和 Windows Communication Foundation (WCF) 开发人员通常使用 IIdentity 和 IPrincipal 接口处理用户的标识信息。 .NET 4.5 中集成了 Windows Identity Foundation (WIF)，因此对于任何主体，声明都将始终存在，如下图所示：
 
- ![WIF 声明编程模型](../../../docs/framework/security/media/wifclaimsprogrammingmodel.png "WIFClaimsProgrammingModel")
+ ![图，显示 WIF 声明编程模型。](./media/wif-claims-programming-model/wif-claims-programming-model.png)
 
  在 .NET 4.5 中，System.Security.Claims 包含新的 ClaimsPrincipal 和 ClaimsIdentity 类（如上图所示）。 .NET 中的所有主体现在均派生自 ClaimsPrincipal。 所有内置标识类（如 ASP.NET 的 WindowsIdentity 和 FormsIdentity）现在都派生自 ClaimsIdentity。 同样，所有内置主体类（如 GenericPrincipal 和 WindowsPrincipal）都派生自 ClaimsPrincipal。
 
@@ -45,7 +45,7 @@ ASP.NET 和 Windows Communication Foundation (WCF) 开发人员通常使用 IIde
 ClaimsPrincipal claimsPrincipal = Thread.CurrentPrincipal as ClaimsPrincipal;
 ```
 
-有关详细信息，请参阅 <xref:System.Security.Claims> 。
+有关详细信息，请参阅 <xref:System.Security.Claims>。
 
 ### <a name="role-claim-type"></a>角色声明类型
 配置声明感知应用程序的过程中，应确定使用的角色声明类型。 此声明类型由 System.Security.Claims.ClaimsPrincipal.IsInRole (System.String) 使用。 默认声明类型为 `http://schemas.microsoft.com/ws/2008/06/identity/claims/role`。
@@ -59,7 +59,7 @@ WIF 支持开箱即用的几种身份验证机制组合。 下表列出了 WIF �
 |SAML 2.0|与“SAML 1.1”相同。|与“映射到 Windows 帐户的 SAML 1.1”相同。|
 |X509|1.具有 X500 可分辨名称、emailName、dnsName、SimpleName、UpnName、UrlName、thumbprint、RsaKey（可以使用 RSACryptoServiceProvider.ExportParameters 方法从 X509Certificate2.PublicKey.Key 属性提取）、DsaKey（可以使用 DSACryptoServiceProvider.ExportParameters 方法从 X509Certificate2.PublicKey.Key 属性提取）和 X509 证书中 SerialNumber 属性的声明。<br />2.值为 `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/x509` 的 AuthenticationMethod 声明。 值为证书验证时间的 AuthenticationInstant 声明，格式为 XmlSchema DateTime。|1.它使用 Windows 帐户完全限定的域名作为 `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name` 声明值。 .<br />2.X509 证书中未映射到 Windows 的声明，以及通过将证书映射到 Windows 而获得的 Windows 帐户中的声明。|
 |UPN|1.与 Windows 身份验证部分中的声明类似的声明。<br />2.值为 `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/password` 的 AuthenticationMethod 声明。 值为密码验证时间的 AuthenticationInstant 声明，格式为 XmlSchema DateTime。||
-|Windows（Kerberos 或 NTLM）|1.从访问令牌生成的声明，例如：PrimarySID、DenyOnlyPrimarySID、PrimaryGroupSID、DenyOnlyPrimaryGroupSID、GroupSID、DenyOnlySID 和 Name<br />2.值为 `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/windows` 的 AuthenticationMethod。 值为 Windows 访问令牌创建时间的 AuthenticationInstant，格式为 XMLSchema DateTime。||
+|Windows（Kerberos 或 NTLM）|1.从访问令牌，如生成的声明：PrimarySID、 DenyOnlyPrimarySID、 PrimaryGroupSID、 DenyOnlyPrimaryGroupSID、 GroupSID、 DenyOnlySID 和名称<br />2.值为 `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/windows` 的 AuthenticationMethod。 值为 Windows 访问令牌创建时间的 AuthenticationInstant，格式为 XMLSchema DateTime。||
 |RSA 密钥对|1.值为 RSAKeyValue 的 `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa` 声明。<br />2.值为 `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/signature` 的 AuthenticationMethod 声明。 值为 RSA 密钥验证（即签名验证）时间的 AuthenticationInstant 声明，格式为 XMLSchema DateTime。||
 
 |身份验证类型|“AuthenticationMethod”声明中发出的 URI|

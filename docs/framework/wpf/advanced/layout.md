@@ -9,12 +9,12 @@ helpviewer_keywords:
 - controls [WPF], layout system
 - layout system [WPF]
 ms.assetid: 3eecdced-3623-403a-a077-7595453a9221
-ms.openlocfilehash: 4c114d7ed22ac01b69f9ad77a69b4089f574c13f
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 4c967bf34c66cd2dcc4365a2a3ec214c9bac5623
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369846"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58464562"
 ---
 # <a name="layout"></a>布局
 本主题介绍 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 布局系统。 了解布局计算发生的方式和时间对于在 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 中创建用户界面非常重要。  
@@ -41,7 +41,7 @@ ms.locfileid: "57369846"
   
  下图显示了一个简单的布局。  
   
- ![未添加边界框的典型网格。](./media/boundingbox1.png "boundingbox1")  
+ ![显示的典型网格未添加边界框的屏幕截图。](./media/layout/grid-no-bounding-box-superimpose.png)  
   
  可以通过使用以下 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 实现此布局。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "57369846"
   
  将单个<xref:System.Windows.Controls.TextBlock>内承载元素<xref:System.Windows.Controls.Grid>。 而文本填充第一列，为分配的空间的左上角<xref:System.Windows.Controls.TextBlock>实际上远大。 边界框的任何<xref:System.Windows.FrameworkElement>可以通过使用来检索<xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A>方法。 下图显示的边界框<xref:System.Windows.Controls.TextBlock>元素。  
   
- ![TextBlock 的边界框现在可见。](./media/boundingbox2.png "boundingbox2")  
+ ![屏幕截图显示 TextBlock 的边界框现在可见。](./media/layout/visible-textblock-bounding-box.png)  
   
  黄色矩形，为分配的空间所示<xref:System.Windows.Controls.TextBlock>元素是实际上远大于显示。 其他元素添加到<xref:System.Windows.Controls.Grid>，这种分配可以收缩或扩展，具体取决于类型和添加的元素的大小。  
   

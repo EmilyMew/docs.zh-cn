@@ -10,12 +10,12 @@ helpviewer_keywords:
 - structures [Visual Basic], nested control
 - nested control statements [Visual Basic]
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
-ms.openlocfilehash: 9b10363e2273a22ac7ee3d9a943a1bec4616d232
-ms.sourcegitcommit: 462dc41a13942e467984e48f4018d1f79ae67346
+ms.openlocfilehash: c016722332dafa3d3be91a1e9e98cc0ce9a49717
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58185722"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58835188"
 ---
 # <a name="nested-control-structures-visual-basic"></a>嵌套的控件结构 (Visual Basic)
 您可以控制将语句放在其他控制语句，例如`If...Then...Else`块内`For...Next`循环。 控制语句放在另一个控制语句称为*嵌套*。  
@@ -67,12 +67,12 @@ Next ctl
 ## <a name="overlapping-control-structures"></a>重叠的控制结构  
  不能重叠控制结构。 这意味着，任何嵌套的结构必须完全包含在下一步最内层结构内。 例如，下面的排列是无效因为`For`循环将终止之前内部`With`块终止。  
   
- ![无效嵌套示意图](../../../../visual-basic/programming-guide/language-features/control-flow/media/nestexampleinvalid.gif "NestExampleInvalid")  
-无效嵌套的结构与  
+ ![图，显示无效的嵌套的示例。](./media/nested-control-structures/example-invalid-nesting.gif) 
   
  Visual Basic 编译器检测到这种重叠的控制结构，并发出信号的编译时错误。  
   
 ## <a name="see-also"></a>请参阅
+
 - [控制流](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
 - [决策结构](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
 - [循环结构](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)

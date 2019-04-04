@@ -2,12 +2,12 @@
 title: dotnet 命令
 description: 了解 dotnet 命令（.NET Core CLI 工具的通用驱动程序）及其用法。
 ms.date: 06/04/2018
-ms.openlocfilehash: 53eb96ee6fe809b2e6e42eec4e7e9b5f7c5edf2a
-ms.sourcegitcommit: d9a0071d0fd490ae006c816f78a563b9946e269a
+ms.openlocfilehash: 107a529952cce62dac840874fa5d6d8986376adf
+ms.sourcegitcommit: 462dc41a13942e467984e48f4018d1f79ae67346
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55066436"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58185631"
 ---
 # <a name="dotnet-command"></a>dotnet 命令
 
@@ -81,9 +81,9 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 `--roll-forward-on-no-candidate-fx <N>`
 
 所需的共享框架不可用时，请定义行为。 `N` 可以是：
- * `0` - 禁用次要版本前滚。
- * `1` - 前滚次要版本，但不前滚主版本。 这是默认行为。
- * `2` - 前滚次要和主版本。
+* `0` - 禁用次要版本前滚。
+* `1` - 前滚次要版本，但不前滚主版本。 这是默认行为。
+* `2` - 前滚次要和主版本。
 
  有关详细信息，请参阅[前滚](../whats-new/dotnet-core-2-1.md#roll-forward)。
 

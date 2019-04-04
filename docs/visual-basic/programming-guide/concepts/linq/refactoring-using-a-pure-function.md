@@ -2,12 +2,12 @@
 title: 使用纯函数 (Visual Basic) 重构
 ms.date: 07/20/2015
 ms.assetid: af0ea62f-4f57-4868-b624-a85524055935
-ms.openlocfilehash: 3adaede7bce206d6018f1eb624d9ce04f53c04b0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ac14385b87899490099dd0664264daef538319a8
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54728276"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58833613"
 ---
 # <a name="refactoring-using-a-pure-function-visual-basic"></a>使用纯函数 (Visual Basic) 重构
 下面的示例重构前面的示例中，[使用扩展方法 (Visual Basic) 重构](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-an-extension-method.md)，若要在此示例中，查找段落的文本将移至纯静态方法代码使用纯函数`ParagraphText`.  
@@ -173,6 +173,7 @@ StyleName:Code >Hello World<
 -   [不同的形状 (Visual Basic 中) 中投影 XML](../../../../visual-basic/programming-guide/concepts/linq/projecting-xml-in-a-different-shape.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [教程：操作 WordprocessingML 文档 (Visual Basic 中) 中的内容](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
 - [使用扩展方法 (Visual Basic) 重构](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-an-extension-method.md)
 - [重构为纯函数 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)

@@ -1,0 +1,28 @@
+items:
+- name: 验证码
+  href: index.md
+  items:
+  - name: _AxlGetIssuerPublicKeyHash 函数
+    href: axlgetissuerpublickeyhash-function.md
+  - name: _AxlPublicKeyBlobToPublicKeyToken 函数
+    href: axlpublickeyblobtopublickeytoken-function.md
+  - name: _AxlRSAKeyValueToPublicKeyToken 函数
+    href: axlrsakeyvaluetopublickeytoken-function.md
+  - name: CertFreeAuthenticodeSignerInfo 函数
+    href: certfreeauthenticodesignerinfo-function.md
+  - name: CertFreeAuthenticodeTimestamperInfo 函数
+    href: certfreeauthenticodetimestamperinfo-function.md
+  - name: CertTimestampAuthenticodeLicense 函数
+    href: certtimestampauthenticodelicense-function.md
+  - name: CertVerifyAuthenticodeLicense 函数
+    href: certverifyauthenticodelicense-function.md
+  - name: AXL_AUTHENTICODE_SIGNER_INFO 结构
+    href: axl-authenticode-signer-info-structure.md
+  - name: AXL_AUTHENTICODE_TIMESTAMPER_INFO 结构
+    href: axl-authenticode-timestamper-info-structure.md
+ms.openlocfilehash: 2ef9b3d6a038f9e57375b7c99ab82f00547af726
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467977"

@@ -2,12 +2,12 @@
 title: 对 COM 客户端使用 WCF 标记
 ms.date: 03/30/2017
 ms.assetid: e2799bfe-88bd-49d7-9d6d-ac16a9b16b04
-ms.openlocfilehash: 3cd334dab8574845e10332e90b50fef833447a1d
-ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
+ms.openlocfilehash: e784b40cb16177fe31f8031ea26617122b9b27db
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56303954"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58836202"
 ---
 # <a name="using-the-wcf-moniker-with-com-clients"></a>对 COM 客户端使用 WCF 标记
 此示例演示如何使用 Windows Communication Foundation (WCF) 服务名字对象将 Web 服务集成到基于 COM 的开发环境，如 Microsoft Office Visual Basic for Applications (Office VBA) 或 Visual Basic 6.0。 本示例由 Windows 脚本宿主客户端 (.vbs)、客户端支持库 (.dll) 和 Internet 信息服务 (IIS) 承载的服务库 (.dll) 组成。 该服务是一个计算器服务，COM 客户端将对服务调用数学运算（加、减、乘和除）。 客户端活动显示在消息框窗口中。  
@@ -89,7 +89,7 @@ contractType={9213C6D2-5A6F-3D26-839B-3BA9B82228D3}")
   
 -   服务终结点的地址。  
   
--   客户端应该用来与该终结点连接的绑定。 虽然可以在客户端配置文件中定义自定义绑定，但本例中使用了系统定义的 wsHttpBinding。 自定义绑定在与 Cscript.exe 处于同一目录的 Cscript.exe.config 文件中进行定义，以便可以与 Windows 脚本宿主一起使用。  
+-   客户端应该用来与该终结点连接的绑定。 虽然可以在客户端配置文件中定义自定义绑定，但本例中使用了系统定义的 wsHttpBinding。 自定义绑定在与 Cscript.exe 处于同一目录的 Cscript.exe.config 文件中进行定义，以便可以与 Windows 脚本主机一起使用。  
   
 -   在终结点受支持的协定的类型。 此类型是在上面生成并注册的类型。 由于 Visual Basic 脚本不提供强类型 COM 环境，因此必须指定协定的标识符。 此 GUID 是 CalcProxy.tlb 中的 `interfaceID`，可以通过使用 COM 工具（如 OLE/COM 对象查看器 (OleView.exe)）来查看。 对于强类型环境（如 Office VBA 或 Visual Basic 6.0），可以添加对类型库的显式引用，然后声明代理对象的类型，以此取代协定参数。 这样还可在客户端应用程序开发过程中提供 IntelliSense 支持。  
   
@@ -237,4 +237,3 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
   
 -   出于安全目的，请在示例结束后删除虚拟目录定义和在安装步骤中授予的权限。  
   
-## <a name="see-also"></a>请参阅

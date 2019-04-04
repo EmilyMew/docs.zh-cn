@@ -12,8 +12,7 @@ ms.lasthandoff: 03/15/2019
 ms.locfileid: "58037101"
 ---
 # <a name="bad-record-number"></a>错误的记录号
-
-  `a FileGet`、`FilePut``FileGetObject` 或 `FilePutObject` 语句中的记录号小于或等于零。  
+`a FileGet`、`FilePut``FileGetObject` 或 `FilePutObject` 语句中的记录号小于或等于零。  
   
 ## <a name="to-correct-this-error"></a>更正此错误  
   

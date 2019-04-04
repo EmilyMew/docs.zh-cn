@@ -1,0 +1,127 @@
+items:
+- name: 类和结构
+  href: index.md
+  items:
+  - name: 类
+    href: classes.md
+  - name: 对象
+    href: objects.md
+  - name: 结构
+    href: structs.md
+    items:
+    - name: 使用结构
+      href: using-structs.md
+  - name: 继承
+    href: inheritance.md
+  - name: 多态性
+    href: polymorphism.md
+    items:
+    - name: 使用 Override 和 New 关键字进行版本控制
+      href: versioning-with-the-override-and-new-keywords.md
+    - name: 了解何时使用 Override 和 New 关键字
+      href: knowing-when-to-use-override-and-new-keywords.md
+    - name: 如何：替代 ToString 方法
+      href: how-to-override-the-tostring-method.md
+  - name: 抽象类、密封类及类成员
+    href: abstract-and-sealed-classes-and-class-members.md
+    items:
+    - name: 如何：定义抽象属性
+      href: how-to-define-abstract-properties.md
+  - name: 静态类和静态类成员
+    href: static-classes-and-static-class-members.md
+  - name: 成员
+    href: members.md
+  - name: 访问修饰符
+    href: access-modifiers.md
+  - name: 字段
+    href: fields.md
+  - name: 常量
+    href: constants.md
+    items:
+    - name: 如何：在 C# 中定义常量
+      href: how-to-define-constants.md
+  - name: 属性
+    href: properties.md
+    items:
+    - name: 使用属性
+      href: using-properties.md
+    - name: 接口属性
+      href: interface-properties.md
+    - name: 限制访问器可访问性
+      href: restricting-accessor-accessibility.md
+    - name: 如何：声明和使用读/写属性
+      href: how-to-declare-and-use-read-write-properties.md
+    - name: 自动实现的属性
+      href: auto-implemented-properties.md
+    - name: 如何：使用自动实现的属性实现轻量类
+      href: how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
+  - name: 方法
+    href: methods.md
+    items:
+    - name: 本地函数
+      href: local-functions.md
+    - name: ref 返回值和局部变量
+      href: ref-returns.md
+    - name: 传递参数
+      href: passing-parameters.md
+      items:
+      - name: 传递值类型参数
+        href: passing-value-type-parameters.md
+      - name: 传递引用类型参数
+        href: passing-reference-type-parameters.md
+      - name: 如何：了解向方法传递结构与类引用的区别
+        href: how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md
+    - name: 隐式类型的局部变量
+      href: implicitly-typed-local-variables.md
+      items:
+      - name: 如何：在查询表达式中使用隐式类型本地变量和数组
+        href: how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
+    - name: 扩展方法
+      href: extension-methods.md
+      items:
+      - name: 如何：实现和调用自定义扩展方法
+        href: how-to-implement-and-call-a-custom-extension-method.md
+      - name: 如何：为枚举创建新方法
+        href: how-to-create-a-new-method-for-an-enumeration.md
+    - name: 命名参数和可选参数
+      href: named-and-optional-arguments.md
+      items:
+      - name: 如何：在 Office 编程中使用命名参数和可选参数
+        href: how-to-use-named-and-optional-arguments-in-office-programming.md
+  - name: 构造函数
+    href: constructors.md
+    items:
+    - name: 使用构造函数
+      href: using-constructors.md
+    - name: 实例构造函数
+      href: instance-constructors.md
+    - name: 私有构造函数
+      href: private-constructors.md
+    - name: 静态构造函数
+      href: static-constructors.md
+    - name: 如何：编写复制构造函数
+      href: how-to-write-a-copy-constructor.md
+  - name: 终结器
+    href: destructors.md
+  - name: 对象和集合初始值设定项
+    href: object-and-collection-initializers.md
+    items:
+    - name: 如何：使用对象初始值设定项初始化对象
+      href: how-to-initialize-objects-by-using-an-object-initializer.md
+    - name: 如何：使用集合初始值设定项初始化字典
+      href: how-to-initialize-a-dictionary-with-a-collection-initializer.md
+  - name: 嵌套类型
+    href: nested-types.md
+  - name: 分部类和方法
+    href: partial-classes-and-methods.md
+  - name: 匿名类型
+    href: anonymous-types.md
+    items:
+    - name: 如何：在查询中返回元素属性的子集
+      href: how-to-return-subsets-of-element-properties-in-a-query.md
+ms.openlocfilehash: ab61eea92fcbfb960038eb09b6e83c31d55eb24e
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468026"

@@ -56,8 +56,7 @@ HRESULT QualifierSet_BeginEnumeration (
 
 |返回的常量  |值  |描述  |
 |---------|---------|---------|
-|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 
-  `lFlags` 参数无效。 |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | `lFlags` 参数无效。 |
 |`WBEM_E_UNEXPECTED` | 0x8004101d | 第二次调用`QualifierSet_BeginEnumeration`而无需对的干预调用进行[ `QualifierSet_EndEnumeration` ](qualifierset-endenumeration.md)。 |
 |`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | 没有足够的内存，可开始新的枚举。 |
 |`WBEM_S_NO_ERROR` | 0 | 函数调用成功。  |

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42015
 ms.assetid: 658c070a-113e-4bd8-b294-12c243191160
-ms.openlocfilehash: 5d5d9f21069c7b9aa54940525b7678bc3987b77c
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 64bd7771820c2a4073350b7a5189d3a32c4775be
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55264146"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832355"
 ---
 # <a name="interfacenamemembername-is-already-implemented-by-the-base-class-baseclassname-re-implementation-of-type-assumed"></a>\<interfacename >。\<成员名称 > 已经由基类的实现\<a m e >。 重新实现\<类型 > 假定
 属性、 过程或派生类中的事件使用`Implements`子句，用于指定已在基类中实现的接口成员。  
@@ -30,4 +30,5 @@ ms.locfileid: "55264146"
 -   如果不打算重新实现接口成员，请从属性、过程或事件声明中删除 `Implements` 子句。  
   
 ## <a name="see-also"></a>请参阅
+
 - [接口](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

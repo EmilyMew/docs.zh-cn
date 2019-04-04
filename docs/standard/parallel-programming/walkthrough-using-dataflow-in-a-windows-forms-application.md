@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 49935c471d10e438763e41b07944047b0924af09
-ms.sourcegitcommit: a885cc8c3e444ca6471348893d5373c6e9e49a47
+ms.openlocfilehash: c6d27500332c59f24e121c9c15ac27a36ed93d07
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43864665"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465797"
 ---
 # <a name="walkthrough-using-dataflow-in-a-windows-forms-application"></a>演练：在 Windows 窗体应用程序中使用数据流
 本文档演示如何创建在 Windows 窗体应用程序中执行图像处理的数据流块网络。  
@@ -86,7 +86,7 @@ ms.locfileid: "43864665"
   
  下表描述了网络的成员。  
   
-|成员|类型|描述|  
+|成员|类型|说明|  
 |------------|----------|-----------------|  
 |`loadBitmaps`|<xref:System.Threading.Tasks.Dataflow.TransformBlock%602>|将文件夹路径用作输入，并生成一组 <xref:System.Drawing.Bitmap> 对象作为输出。|  
 |`createCompositeBitmap`|<xref:System.Threading.Tasks.Dataflow.TransformBlock%602>|将一组 <xref:System.Drawing.Bitmap> 对象用作输入，并生成复合位图作为输出。|  
@@ -95,13 +95,13 @@ ms.locfileid: "43864665"
   
  为了连接数据流块以形成网络，此示例使用 <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601.LinkTo%2A> 方法。 <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601.LinkTo%2A> 方法包含重载版本，需要使用 <xref:System.Predicate%601> 对象确定目标数据流块是接受还是拒绝消息。 此筛选机制使消息块只接收特定值。 在此示例中，网络能以两种方式进行分支。 主分支从磁盘加载图像，创建复合图像并在窗体上显示该图像。 备用分支取消当前操作。 借助 <xref:System.Predicate%601> 对象，主分支的数据流块可以拒绝特定消息，从而切换到替换分支。 例如，如果用户取消了操作，数据流块 `createCompositeBitmap` 将生成 `null`（在 Visual Basic 中为 `Nothing`）作为其输出。 数据流块 `displayCompositeBitmap` 拒绝 `null` 输入值，因此该消息将传递到 `operationCancelled`。 数据流块 `operationCancelled` 接受所有消息，并因此显示图像以表示操作取消。  
   
- 下图显示图像处理网络。  
+ 下图显示图像处理网络：  
   
- ![图像处理网络](../../../docs/standard/parallel-programming/media/dataflowwinforms.png "DataflowWinForms")  
+ ![显示图像处理网络的插图。](./media/walkthrough-using-dataflow-in-a-windows-forms-application/dataflow-winforms-image-processing.png)  
   
  因为 `displayCompositeBitmap` 和 `operationCancelled` 数据流块是在用户界面上操作，所以这些操作要在用户界面线程上执行，这一点很重要。 为此，在构造期间，每个对象都提供将 <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.TaskScheduler%2A> 属性设置为 <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=nameWithType> 的 <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions> 对象。 <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=nameWithType> 方法会创建一个在当前同步上下文中执行工作的 <xref:System.Threading.Tasks.TaskScheduler> 对象。 因为 `CreateImageProcessingNetwork` 方法是通过“选择文件夹”按钮的处理程序调用的，而该处理程序在用户界面线程上运行，所以 `displayCompositeBitmap` 和 `operationCancelled` 数据流块的操作也在用户界面线程上运行。  
   
- 此示例使用共享的取消令牌，而不是设置 <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> 属性，因为 <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> 属性永久取消数据流块执行。 利用取消标记，此示例可多次重复使用同一数据流网络，即使用户取消一个或多个操作也是如此。 有关展示了如何使用 <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> 永久取消数据流块执行的示例，请参阅[如何：取消数据流块](../../../docs/standard/parallel-programming/how-to-cancel-a-dataflow-block.md)。  
+ 此示例使用共享的取消令牌，而不是设置 <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> 属性，因为 <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> 属性永久取消数据流块执行。 利用取消标记，此示例可多次重复使用同一数据流网络，即使用户取消一个或多个操作也是如此。 有关使用 <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> 永久取消数据流块执行的示例，请参阅[如何：取消数据流块](../../../docs/standard/parallel-programming/how-to-cancel-a-dataflow-block.md)。  
   
 <a name="ui"></a>   
 ## <a name="connecting-the-dataflow-network-to-the-user-interface"></a>将数据流网络连接到用户界面  

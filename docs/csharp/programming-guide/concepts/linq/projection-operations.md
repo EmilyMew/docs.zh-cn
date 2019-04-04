@@ -2,12 +2,12 @@
 title: 投影运算 (C#)
 ms.date: 07/20/2015
 ms.assetid: 98df573a-aad9-4b8c-9a71-844be2c4fb41
-ms.openlocfilehash: fa9b1d2a0dc63be89e8a93fd5d234f131a2943e9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 74792c1a58aa17c65f3a153216d50c672e0b6cf6
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54723948"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411208"
 ---
 # <a name="projection-operations-c"></a>投影运算 (C#)
 投影是指将对象转换为一种新形式的操作，该形式通常只包含那些将随后使用的属性。 通过使用投影，您可以构造从每个对象生成的新类型。 可以投影属性，并对该属性执行数学函数。 还可以在不更改原始对象的情况下投影该对象。  
@@ -77,11 +77,11 @@ foreach (string s in query)
   
  下图描述 `Select()` 如何返回一个与源集合具有相同元素数目的集合。  
   
- ![Select() 的操作的概念图](../../../../csharp/programming-guide/concepts/linq/media/selectaction.png "SelectAction")  
+ ![显示 Select() 的操作的图](./media/projection-operations/select-action-graphic.png)  
   
  下图描述 `SelectMany()` 如何将中间数组序列串联为一个最终结果值，其中包含每个中间数组中的每个值。  
   
- ![显示 SelectMany() 的操作的图。](../../../../csharp/programming-guide/concepts/linq/media/selectmany.png "SelectMany")  
+ ![显示 SelectMany() 的操作的图。](./media/projection-operations/select-many-action-graphic.png )  
   
 ### <a name="code-example"></a>代码示例  
  下面的示例比较 `Select()` 和 `SelectMany()` 的行为。 代码通过从源集合的每个花卉名称列表中提取前两项来创建一个“花束”。 此示例中，transform 函数 <xref:System.Linq.Enumerable.Select%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> 使用的“单值”本身即是值的集合。 这需要额外的 `foreach` 循环，以便枚举每个子序列中的每个字符串。  

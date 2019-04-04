@@ -1,5 +1,5 @@
 ---
-title: 参数和自变量之间的差异 (Visual Basic)
+title: 参数和变量之间的差异 (Visual Basic)
 ms.date: 07/20/2015
 helpviewer_keywords:
 - procedures [Visual Basic], arguments
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - procedure parameters
 - parameters [Visual Basic], definition
 ms.assetid: c237c056-74f4-4749-9f2c-15864f139a31
-ms.openlocfilehash: ec7c92975bc056fd740033b602b15cd1611c44d1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a69b956c7cffcc2a26916d6fc92f23dd4e2322d7
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54694030"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838971"
 ---
-# <a name="differences-between-parameters-and-arguments-visual-basic"></a>参数和自变量之间的差异 (Visual Basic)
+# <a name="differences-between-parameters-and-arguments-visual-basic"></a>参数和变量之间的差异 (Visual Basic)
 在大多数情况下，一个过程必须有已在其中调用它的情况有关的一些信息。 执行重复或共享任务的过程为每个调用使用不同的信息。 此信息包括变量、 常量和表达式在调用时传递给该过程。  
   
  将此信息传递给该过程，该过程定义*参数*，然后调用代码将传递*自变量*给该参数。 您可以将参数作为一个停车和当作一辆汽车的参数。 就像在不同的时间，不同的汽车可以放置停车空间中，调用代码可传递不同的参数相同的参数每次调用该过程。  
@@ -38,6 +38,7 @@ ms.locfileid: "54694030"
  与参数定义不同的参数没有名称。 每个自变量是一个表达式，它可以包含零或多个变量、 常量和文本。 表达式的计算结果的数据类型通常应匹配定义的相应参数的数据类型，并在任何情况下它都可以转换为参数类型。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [Sub 过程](./sub-procedures.md)
 - [Function 过程](./function-procedures.md)

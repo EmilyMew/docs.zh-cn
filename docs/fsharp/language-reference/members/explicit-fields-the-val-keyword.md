@@ -2,12 +2,12 @@
 title: 显式字段：Val 关键字
 description: 了解如何F#值关键字用于声明类或结构类型中存储一个值，而不初始化该类型的位置。
 ms.date: 05/16/2016
-ms.openlocfilehash: 492541f6eeba94d2177e92de935fa524b9def567
-ms.sourcegitcommit: 0888d7b24f475c346a3f444de8d83ec1ca7cd234
+ms.openlocfilehash: 6557514f13a9e86c7f367713775535db79e99a0c
+ms.sourcegitcommit: d938c39afb9216db377d0f0ecdaa53936a851059
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "53773622"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58634006"
 ---
 # <a name="explicit-fields-the-val-keyword"></a>显式字段：Val 关键字
 
@@ -40,7 +40,7 @@ val [ mutable ] [ access-modifier ] field-name : type-name
 对于可变字段，.NET 编译的表示形式是一个 .NET 字段。
 
 >[!WARNING]
-`Note` .NET Framework 命名空间`System.ComponentModel`包含具有相同名称的属性。 有关该属性的信息，请参见 `System.ComponentModel.DefaultValueAttribute`。
+>.NET Framework 命名空间`System.ComponentModel`包含具有相同名称的属性。 有关该属性的信息，请参见 `System.ComponentModel.DefaultValueAttribute`。
 
 以下代码展示了显式字段的用法，作为对比，还展示了具有主构造函数的类中的 `let` 绑定。 注意：与 `let` 字段绑定的 `myInt1` 是私有的。 当从成员方法引用与 `let` 字段绑定的 `myInt1` 时，不需要自我标识符 `this`。 但如果要引用显式字段 `myInt2` 和 `myString`，则需要自我标识符。
 
@@ -69,7 +69,7 @@ val [ mutable ] [ access-modifier ] field-name : type-name
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-2/snippet6704.fs)]
 
-显式字段不适用于例程使用。 通常，在可能的情况下，应在类中使用 `let` 绑定，而不是显式字段。 显式字段在某些互操作性方案中十分有用，例如，当需要定义一个结构，该结构将用在对本机 API 的平台调用中，或用在 COM 互操作方案中。 有关详细信息，请参阅[外部函数](../functions/external-functions.md)。 另一种要用到显式字段的情况是当使用 F# 代码生成器时，该生成器会发出不具有主构造函数的类。 显式字段对于线程静态变量或类似的构造而言也十分有用。 有关详细信息，请参阅 `System.ThreadStaticAttribute` 。
+显式字段不适用于例程使用。 通常，在可能的情况下，应在类中使用 `let` 绑定，而不是显式字段。 显式字段在某些互操作性方案中十分有用，例如，当需要定义一个结构，该结构将用在对本机 API 的平台调用中，或用在 COM 互操作方案中。 有关详细信息，请参阅[外部函数](../functions/external-functions.md)。 另一种要用到显式字段的情况是当使用 F# 代码生成器时，该生成器会发出不具有主构造函数的类。 显式字段对于线程静态变量或类似的构造而言也十分有用。 有关详细信息，请参阅 `System.ThreadStaticAttribute`。
 
 当关键字 `member val` 在一个类型定义中同时出现，它就是一个自动实现属性的定义。 有关更多信息，请参见 [属性](properties.md)中定义的接口的私有 C++ 特定实现。
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Seek function
 - FileOpen function
 ms.assetid: 4c145456-5453-4bda-aab5-578dc8bee59a
-ms.openlocfilehash: 515c12a87ddab6c616f98325624e7fd31ea926d7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5ebdf2ac42ddd4e6e201559d9fc6711b19cbdd60
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54642917"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827583"
 ---
 # <a name="mycomputerfilesystem-object"></a>My.Computer.FileSystem 对象
 提供了用于处理驱动器、文件和目录的属性和方法。  
@@ -38,5 +38,6 @@ ms.locfileid: "54642917"
  **程序集：** Visual Basic 运行库（在 Microsoft.VisualBasic.dll 中）  
   
 ## <a name="see-also"></a>请参阅
+
 - [My.Computer.FileSystem.SpecialDirectories 对象](../../../visual-basic/language-reference/objects/my-computer-filesystem-specialdirectories-object.md)
 - [My.Computer 对象](../../../visual-basic/language-reference/objects/my-computer-object.md)

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a7eb98da-4a93-4692-8b59-9d670c79ffb2
-ms.openlocfilehash: 3895bb44139a05d1933f1d3af19ccb9799309515
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 13e596ea64fc62ed6280e74636243619178ce069
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57363080"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411429"
 ---
 # <a name="security-considerations-for-data"></a>数据的安全考虑事项
 
@@ -276,7 +276,7 @@ XML 信息集在 WCF 中窗体的所有消息处理的基础。 当接受来自�
 
 - 使用标有 <xref:System.SerializableAttribute> 属性的旧式类型时应小心。 它们中的许多都设计用于 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 远程处理以便仅使用受信任的数据。 标有此属性的现有类型在设计时可能并未考虑状态安全性。
 
-- 考虑到状态安全性，不要依赖 <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> 属性 (Attribute) 的 `DataMemberAttribute` 属性 (Property) 来保证数据的存在。 数据可能总是 `null`、 `zero`或 `invalid`。
+- 考虑到状态安全性，不要依赖 <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> 属性 (Attribute) 的 <xref:System.Runtime.Serialization.DataMemberAttribute> 属性 (Property) 来保证数据的存在。 数据可能总是 `null`、 `zero`或 `invalid`。
 
 - 在未首先验证的情况下，绝不要信任从不受信任的数据源反序列化的对象图。 每个单独的对象可能都处于一致状态，但对象图整体有可能处于不一致状态。 此外，即使禁用对象图保存模式，反序列化的对象图也可能具有对同一对象的多个引用或者具有循环引用。 有关详细信息，请参阅[序列化和反序列化](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md)。
 
@@ -312,33 +312,33 @@ XML 信息集在 WCF 中窗体的所有消息处理的基础。 当接受来自�
 
 - 如果允许部分受信任的代码访问你<xref:System.Runtime.Serialization.DataContractSerializer>实例，或以其他方式控制[数据协定代理项](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)，它可能会进行大量的控制序列化/反序列化过程。 例如，它可能会插入任意类型、导致信息泄漏、篡改生成的对象图或序列化数据，或使产生的序列化流溢出。 “安全地使用 NetDataContractSerializer”一节中介绍了等效的 <xref:System.Runtime.Serialization.NetDataContractSerializer> 威胁。
 
-- 如果对类型应用了 <xref:System.Runtime.Serialization.DataContractAttribute> 属性（或者类型标记为 `[Serializable]` ，但不是 `ISerializable`），即使所有构造函数都不是公共的或者受需求保护，反序列化程序也可以创建这样一个类型的实例。
+- 如果对类型应用了 <xref:System.Runtime.Serialization.DataContractAttribute> 属性（或者类型标记为 <xref:System.SerializableAttribute> ，但不是 <xref:System.Runtime.Serialization.ISerializable>），即使所有构造函数都不是公共的或者受需求保护，反序列化程序也可以创建这样一个类型的实例。
 
 - 绝不要信任反序列化的结果，除非要反序列化的数据是受信任的，并且您确定所有已知类型都是您信任的类型。 请注意，在部分信任情况下运行时，已知类型不是从应用程序配置文件加载的（而是从计算机配置文件加载的）。
 
-- 如果您使用添加到部分受信任代码的代理项来传递 `DataContractSerializer` 实例，则代码可以更改该代理项的任何可修改设置。
+- 如果您使用添加到部分受信任代码的代理项来传递 <xref:System.Runtime.Serialization.DataContractSerializer> 实例，则代码可以更改该代理项的任何可修改设置。
 
 - 对于已反序列化的对象，如果 XML 读取器（或者其中的数据）来自部分受信任的代码，则会将所生成的反序列化对象视为不受信任的数据。
 
 - <xref:System.Runtime.Serialization.ExtensionDataObject> 类型没有公共成员，并不意味着它其中的数据是安全的。 例如，如果从特权数据源反序列化为其中存在一些数据的对象，然后将该对象传递给部分受信任的代码，则这些部分受信任的代码可以通过序列化 `ExtensionDataObject` 来读取该对象中的数据。 当从具有特权的数据源反序列化为之后将传递给部分受信任的代码的对象时，应考虑将 <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> 设置为 `true` 。
 
-- <xref:System.Runtime.Serialization.DataContractSerializer> 和 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 以完全信任的方式支持对私有成员、受保护成员、内部成员和公共成员进行序列化。 但在部分信任的情况下，只可序列化公共成员。 如果应用程序尝试序列化非公共成员，则会引发 `SecurityException` 。
+- <xref:System.Runtime.Serialization.DataContractSerializer> 和 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 以完全信任的方式支持对私有成员、受保护成员、内部成员和公共成员进行序列化。 但在部分信任的情况下，只可序列化公共成员。 如果应用程序尝试序列化非公共成员，则会引发 <xref:System.Security.SecurityException> 。
 
-    若要允许在部分信任的情况下序列化内部成员或受保护成员，则请使用 `System.Runtime.CompilerServices.InternalsVisibleTo` 程序集属性。 此属性允许程序集声明其内部成员对其他程序集可见。 在此情况下，需要序列化其内部成员的程序集可声明其内部成员对 System.Runtime.Serialization.dll 可见。
+    若要允许在部分信任的情况下序列化内部成员或受保护成员，则请使用 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 程序集属性。 此属性允许程序集声明其内部成员对其他程序集可见。 在此情况下，需要序列化其内部成员的程序集可声明其内部成员对 System.Runtime.Serialization.dll 可见。
 
     此方法的优点是，不需要提升的代码生成路径。
 
     不过，此方法还有两大缺点。
 
-    第一个缺点是， `InternalsVisibleTo` 特性的选择加入的属性是程序集范围的。 也就是说，无法指定仅某个类可具有序列化的内部成员。 当然，仍可以通过不将 `DataMember` 属性添加到某个特定的内部成员来选择不对该成员进行序列化。 类似地，出于可见性方面的考虑，开发人员也可选择使某个成员成为内部成员而不是私有成员或受保护成员。
+    第一个缺点是， <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 特性的选择加入的属性是程序集范围的。 也就是说，无法指定仅某个类可具有序列化的内部成员。 当然，仍可以通过不将 <xref:System.Runtime.Serialization.DataMemberAttribute> 属性添加到某个特定的内部成员来选择不对该成员进行序列化。 类似地，出于可见性方面的考虑，开发人员也可选择使某个成员成为内部成员而不是私有成员或受保护成员。
 
     第二个缺点是，此方法仍不支持私有成员或受保护成员。
 
-    若要演示如何在部分信任的情况下使用 `InternalsVisibleTo` 属性，请考虑以下程序：
+    若要演示如何在部分信任的情况下使用 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性，请考虑以下程序：
 
     [!code-csharp[CDF_WCF_SecurityConsiderationsForData#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/cdf_wcf_securityconsiderationsfordata/cs/program.cs#1)]
 
-    在上面的示例中， `PermissionsHelper.InternetZone` 对应于部分信任情况下的 `PermissionSet` 。 现在，如果没有 `InternalsVisibleToAttribute`，则应用程序将失败，并引发一个 `SecurityException` ，它指示无法以部分信任的方式序列化非公共成员。
+    在上面的示例中， `PermissionsHelper.InternetZone` 对应于部分信任情况下的 <xref:System.Security.PermissionSet> 。 现在，如果没有<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>属性，该应用程序将失败，引发<xref:System.Security.SecurityException>，该值指示不能在部分信任中序列化非公共成员。
 
     但如果将以下行添加到源文件，则程序将成功运行。
 

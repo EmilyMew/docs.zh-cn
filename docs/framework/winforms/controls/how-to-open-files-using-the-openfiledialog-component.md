@@ -24,7 +24,7 @@ ms.locfileid: "57723083"
 
 您可以生成并运行这些示例作为从.NET Framework 应用程序C#或 Visual Basic 命令行。 有关详细信息，请参阅[命令行上使用 csc.exe 生成](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)或[中的命令行生成](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)。 
 
-从.NET Core 3.0 开始，你还可以生成并运行示例作为 Windows.NET Core 应用程序从具有.NET Core Windows 窗体的文件夹*\<文件夹名称 >.csproj*项目文件。 
+从.NET Core 3.0 开始，你还可以生成并运行示例作为 Windows.NET Core 应用程序从具有.NET Core Windows 窗体的文件夹 *\<文件夹名称>.csproj* 项目文件。 
 
 ## <a name="example-read-a-file-as-a-stream-with-streamreader"></a>示例:为流使用 StreamReader 读取文件  
   

@@ -4,12 +4,12 @@ description: 微服务体系结构不仅针对后端。 了解微服务在前端
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
-ms.openlocfilehash: 95f6c9dca62f3c524a6530b344daaebb118040b9
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: b481a76052efdd1ce0da406732230d41701ac354
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53126033"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58464835"
 ---
 # <a name="creating-composite-ui-based-on-microservices"></a>创建基于微服务的复合 UI
 
@@ -42,19 +42,19 @@ ms.locfileid: "53126033"
 ## <a name="additional-resources"></a>其他资源
 
 - **使用 ASP.NET（Particular 的 Workshop）的复合 UI** \
-  [*https://github.com/Particular/Workshop/tree/master/demos/asp-net-core*](https://github.com/Particular/Workshop/tree/master/demos/asp-net-core)
+  [https://github.com/Particular/Workshop/tree/master/demos/asp-net-core](https://github.com/Particular/Workshop/tree/master/demos/asp-net-core)
 
 - **Ruben Oostinga。The Monolithic Frontend in the Microservices Architecture** \（微服务体系结构中的整体式前端）
-  [*https://blog.xebia.com/the-monolithic-frontend-in-the-microservices-architecture/*](https://blog.xebia.com/the-monolithic-frontend-in-the-microservices-architecture/)
+  [https://blog.xebia.com/the-monolithic-frontend-in-the-microservices-architecture/](https://blog.xebia.com/the-monolithic-frontend-in-the-microservices-architecture/)
 
 - **Mauro Servienti。The secret of better UI composition** \（优化 UI 组合的秘诀）
-  [*https://particular.net/blog/secret-of-better-ui-composition*](https://particular.net/blog/secret-of-better-ui-composition)
+  [https://particular.net/blog/secret-of-better-ui-composition](https://particular.net/blog/secret-of-better-ui-composition)
 
 - **Viktor Farcic。Including Front-End Web Components Into Microservices** \（在微服务中纳入前端 Web 组件）
-  [*https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/*](https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/)
+  [https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/](https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/)
 
 - **Managing Frontend in the Microservices Architecture** \（在微服务体系结构中管理前端）
-  [*https://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html*](https://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html)
+  [https://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html](https://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html)
 
 >[!div class="step-by-step"]
 >[上一页](microservices-addressability-service-registry.md)

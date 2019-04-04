@@ -13,12 +13,12 @@ helpviewer_keywords:
 - data types [Visual Basic], optimizing
 - ChrW function [Visual Basic], preferred to Chr
 ms.assetid: 28f5e4ba-ec24-4f37-b90a-e8ee822f778a
-ms.openlocfilehash: e0cb67b4b26bf59b074bf5964f253c007fdbe719
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0b517bca3a9e296eb891e30df91c1d32eb357432
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54736164"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58830118"
 ---
 # <a name="efficient-use-of-data-types-visual-basic"></a>有效使用数据类型 (Visual Basic)
 未声明的变量和数据类型未声明的变量分配`Object`数据类型。 这使得可以轻松编写程序快速，但它可能会导致它们执行速度更慢。  
@@ -49,6 +49,7 @@ Protected s As String
  `AscW`和`ChrW`函数以 unicode 格式进行操作。 应使用它们优先于`Asc`和`Chr`，其必须在执行和跳出执行 Unicode 转换。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>
 - <xref:Microsoft.VisualBasic.Strings.Chr%2A>

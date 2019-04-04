@@ -8,12 +8,12 @@ helpviewer_keywords:
 - images [Windows Forms], cropping
 - images [Windows Forms], scaling
 ms.assetid: 053e3360-bca0-4b25-9afa-0e77a6f17b03
-ms.openlocfilehash: 95343ad2c7bc6a83bc4d935f33712ab910d658ff
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: ff0567dca0fd86736e02a9dd827ec15df8bf2df8
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57705813"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654492"
 ---
 # <a name="how-to-crop-and-scale-images"></a>如何：裁剪和缩放图像
 <xref:System.Drawing.Graphics>类提供了若干<xref:System.Drawing.Graphics.DrawImage%2A>方法，其中一些具有可用于裁剪和缩放图像的源和目标矩形参数。  
@@ -27,13 +27,13 @@ ms.locfileid: "57705813"
   
  下图显示了原始 apple 和缩放、 裁剪 apple。  
   
- ![裁剪和缩放](./media/cscropscale1.png "csCropScale1")  
+ ![原始图像和裁剪的同一映像的屏幕截图。](./media/how-to-crop-and-scale-images/original-image-cropped-image.png)  
   
  [!code-csharp[System.Drawing.WorkingWithImages#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#11)]
  [!code-vb[System.Drawing.WorkingWithImages#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#11)]  
   
 ## <a name="compiling-the-code"></a>编译代码  
- 前面的示例专用于 Windows 窗体，它需要 <xref:System.Windows.Forms.PaintEventArgs> `e`，后者是 <xref:System.Windows.Forms.Control.Paint> 事件处理程序的参数。 请务必替换`Apple.gif`与图像文件名称和在您的系统都有效的路径。  
+ 前面的示例专用于 Windows 窗体，并且它需要<xref:System.Windows.Forms.PaintEventArgs> `e`，这是一个参数的<xref:System.Windows.Forms.Control.Paint>事件处理程序。 请务必替换`Apple.gif`与图像文件名称和在您的系统都有效的路径。  
   
 ## <a name="see-also"></a>请参阅
 - [图像、位图和图元文件](images-bitmaps-and-metafiles.md)

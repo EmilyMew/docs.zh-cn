@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC31019
 ms.assetid: 0845b245-11bb-46fd-95ca-f6cef3c318ef
-ms.openlocfilehash: 0f7580c53535c28c97213a5a0488c3fc0365c4ac
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 61ba4dbc668f7b236b0631f797feb4e81068e517
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55274100"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827185"
 ---
 # <a name="unable-to-write-to-output-file-filename-error"></a>无法写入输出文件\<文件名 >:\<错误 >
 创建文件时出现问题。  
@@ -58,4 +58,5 @@ ms.locfileid: "55274100"
 3.  按“确定”。  
   
 ## <a name="see-also"></a>请参阅
+
 - [与我们交流](/visualstudio/ide/talk-to-us)

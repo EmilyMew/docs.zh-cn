@@ -8,12 +8,12 @@ helpviewer_keywords:
 - element literal [Visual Basic]
 - XML literals [Visual Basic], element
 ms.assetid: 95039642-7893-48b7-b23f-45a6c55d8f67
-ms.openlocfilehash: 71e6cf3e6169434ea0a28f8691cf82f6c8e8a030
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 7bd47d2461ba86dfbd1d5ff5993382914116f9ba
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56979914"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842247"
 ---
 # <a name="xml-element-literal-visual-basic"></a>XML 元素文本 (Visual Basic)
 
@@ -160,6 +160,7 @@ ms.locfileid: "56979914"
  请注意，编译器为 XML 命名空间的前缀定义转换的全局 XML 命名空间前缀。 \<Ns:middle > 元素重新定义的 XML 命名空间前缀\<ns:inner1 > 元素。 但是， \<ns:inner2 > 元素使用定义的命名空间`Imports`语句。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Xml.Linq.XElement>
 - [已声明的 XML 元素和特性的名称](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
 - [XML 注释文本](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)

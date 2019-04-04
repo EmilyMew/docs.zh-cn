@@ -55,8 +55,7 @@ HRESULT GetClassLayout(
  [out] 指向包含类的大小（以字节为单位）的位置的指针。  
   
 ## <a name="remarks"></a>备注  
- 
-  `GetClassLayout` 方法仅返回由类自身定义的字段。 如果类的父类也定义了字段，探查器必须对父类调用 `GetClassLayout` 以获取这些字段。  
+ `GetClassLayout` 方法仅返回由类自身定义的字段。 如果类的父类也定义了字段，探查器必须对父类调用 `GetClassLayout` 以获取这些字段。  
   
  如果你通过字符串类使用 `GetClassLayout`，则该方法将失败，错误代码为 E_INVALIDARG。 使用[ICorProfilerInfo2::GetStringLayout](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getstringlayout-method.md)若要获取的布局信息的字符串。 当使用数组类来调用 `GetClassLayout` 时，它也将失败。  
   

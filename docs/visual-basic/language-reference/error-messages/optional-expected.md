@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30202
 ms.assetid: 6f75060c-2db4-4a79-b5d1-5780c09a74cd
-ms.openlocfilehash: 0ad0d0890b73103a0678b13409a24190329d37d4
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: d70a71f8b5f72edbd7f3e50bc099360d02e95389
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55266317"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58840544"
 ---
 # <a name="optional-expected"></a>需要“Optional”
 过程声明中的可选自变量后跟一个必需的参数。 每个自变量跟在可选参数还必须是可选的。  
@@ -26,4 +26,5 @@ ms.locfileid: "55266317"
 2.  如果此参数是为可选，使用`Optional`关键字。  
   
 ## <a name="see-also"></a>请参阅
+
 - [可选参数](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)

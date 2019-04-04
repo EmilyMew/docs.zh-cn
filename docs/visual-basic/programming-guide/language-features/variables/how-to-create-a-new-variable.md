@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Dim statement [Visual Basic]
 - variables [Visual Basic], creating
 ms.assetid: 35300be3-77b0-4bef-a156-034d3cdedde0
-ms.openlocfilehash: db317b160a27c7e38bddba82eb4eac3088886705
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 86236f7e6f4821cc45dfab80273d82b6f167fba8
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54506883"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58823280"
 ---
 # <a name="how-to-create-a-new-variable-visual-basic"></a>如何：创建新的变量 (Visual Basic)
 创建的变量[Dim 语句](../../../../visual-basic/language-reference/statements/dim-statement.md)。  
@@ -56,6 +56,7 @@ ms.locfileid: "54506883"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [变量](../../../../visual-basic/programming-guide/language-features/variables/index.md)
 - [变量声明](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
 - [已声明的元素名称](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)

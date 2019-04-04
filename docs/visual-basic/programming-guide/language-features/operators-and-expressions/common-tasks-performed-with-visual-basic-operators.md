@@ -13,12 +13,12 @@ helpviewer_keywords:
 - operators [Visual Basic], comparison
 - operators [Visual Basic], short-circuiting logical
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
-ms.openlocfilehash: dbd97b23bd67b3c98fb89037205ac12f120ca490
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 88c05b54402733fadb686e3c6f883b2d2d56990c
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54692108"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58815064"
 ---
 # <a name="common-tasks-performed-with-visual-basic-operators"></a>使用 Visual Basic 运算符执行的常规任务
 运算符执行涉及一个或多个名为的表达式的许多常见任务*操作数*。  
@@ -26,7 +26,7 @@ ms.locfileid: "54692108"
 ## <a name="arithmetic-and-bit-shift-tasks"></a>算术和移位任务  
  下表总结了可用的算术和移位运算。  
   
-|到|查看|  
+|功能|查看|  
 |---|---|  
 |添加到另一个数字值|[+ 运算符](../../../../visual-basic/language-reference/operators/addition-operator.md)|  
 |从另一个数值中减去|[-运算符 (Visual Basic)](../../../../visual-basic/language-reference/operators/subtraction-operator.md)|  
@@ -42,7 +42,7 @@ ms.locfileid: "54692108"
 ## <a name="comparison-tasks"></a>比较任务  
  下表总结了可用的比较运算。  
   
-|到|查看|  
+|功能|查看|  
 |---|---|  
 |确定两个值是否相等|`=` 运算符 ([在 Visual Basic 中的比较运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
 |确定两个值是否不相等|`<>` 运算符 ([在 Visual Basic 中的比较运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
@@ -57,7 +57,7 @@ ms.locfileid: "54692108"
 ## <a name="concatenation-tasks"></a>串联任务  
  下表总结了可用的串联运算。  
   
-|到|查看|  
+|功能|查看|  
 |---|---|  
 |将多个字符串联接成单个字符串|`&` 运算符 ([在 Visual Basic 中的串联运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md))|  
 |联接字符串值的数值|`+` 运算符 ([在 Visual Basic 中的串联运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md))|  
@@ -65,7 +65,7 @@ ms.locfileid: "54692108"
 ## <a name="logical-and-bitwise-tasks"></a>逻辑和位任务  
  下表总结了可用的逻辑和按位运算。  
   
-|到|查看|  
+|功能|查看|  
 |---|---|  
 |对布尔值执行逻辑求反|[Not 运算符](../../../../visual-basic/language-reference/operators/not-operator.md)|  
 |对两个布尔值执行逻辑与运算|[And 运算符](../../../../visual-basic/language-reference/operators/and-operator.md)|  
@@ -79,5 +79,6 @@ ms.locfileid: "54692108"
 |对整数值执行按位逻辑求反|[Not 运算符](../../../../visual-basic/language-reference/operators/not-operator.md)|  
   
 ## <a name="see-also"></a>请参阅
+
 - [运算符和表达式](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
 - [按功能列出的运算符](../../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - navigation topologies [WPF]
 - dynamically-generated topology
 ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
-ms.openlocfilehash: 16ce791c300c431b7349293d00648c881f97c372
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 3e5cca90861ccdeaff904a34c6f484cfdd32c975
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57356775"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819588"
 ---
 # <a name="navigation-topologies-overview"></a>导航拓扑概述
 <a name="introduction"></a> 此概述中的导航拓扑介绍了[!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]。 三个常见导航拓扑及示例将在随后讨论。  
@@ -46,7 +46,7 @@ ms.locfileid: "57356775"
   
  本主题介绍三个常见导航拓扑：*固定线性*，*固定分层*，并*动态生成*。 每个导航拓扑演示了一个示例，具有[!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]类似下图中所示：  
   
- ![具有数据项的任务页](./media/navigationtopologyfigure6.png "NavigationTopologyFigure6")  
+ ![具有数据项和导航按钮的任务页。](./media/navigation-topologies-overview/navigation-topology-data-items.png)  
   
 <a name="Structured_Navigation_Topologies"></a>   
 ## <a name="structured-navigation-topologies"></a>结构化导航拓扑  
@@ -60,9 +60,9 @@ ms.locfileid: "57356775"
   
 <a name="Navigation_over_a_Fixed_Linear_Topology"></a>   
 ## <a name="navigation-over-a-fixed-linear-topology"></a>在固定线性拓扑中导航  
- 固定线性拓扑类似于向导的结构，即在固定序列中导航一个或多个向导页。 下图显示具有固定线性拓扑的向导的高级结构和流。  
+ 固定线性拓扑类似于向导的结构，即在固定序列中导航一个或多个向导页。 下图显示的高级结构和流具有固定线性拓扑的向导：  
   
- ![导航拓扑关系图](./media/navigationtopologyfigure1.png "NavigationTopologyFigure1")  
+ ![显示固定线性拓扑的关系图。](./media/navigation-topologies-overview/navigation-topology-fixed-linear.png)  
   
  在固定线性拓扑中导航的典型行为包括以下内容：  
   
@@ -84,13 +84,13 @@ ms.locfileid: "57356775"
   
 <a name="Dynamic_Navigation_over_a_Fixed_Hierarchical_Topology"></a>   
 ## <a name="dynamic-navigation-over-a-fixed-hierarchical-topology"></a>在固定分层拓扑中动态导航  
- 在某些应用程序中，页允许导航到两个或更多其他页，如下图所示。  
+ 在某些应用程序页允许导航到两个或多个其他页，如下图中所示： 
   
- ![一个可以导航到多个页的页面](./media/navigationtopologyfigure2.png "NavigationTopologyFigure2")  
+ ![关系图显示了可以导航到多个页面的页面。](./media/navigation-topologies-overview/navigation-topology-multiple-pages.png)  
   
- 此结构称为固定分层拓扑，分层的遍历序列通常在运行时由应用程序或用户确定。 运行时，对于允许导航到两个或更多其他页的分层中的每个页面，会收集确定导航到的页所需的数据。 下图基于上图说明了其中一种可能的导航序列。  
+ 此结构称为固定分层拓扑，分层的遍历序列通常在运行时由应用程序或用户确定。 运行时，对于允许导航到两个或更多其他页的分层中的每个页面，会收集确定导航到的页所需的数据。 下图说明了根据上图中的多个可能的导航序列之一：  
   
- ![导航拓扑关系图](./media/navigationtopologyfigure3.png "NavigationTopologyFigure3")  
+ ![关系图显示了可能的导航序列。](./media/navigation-topologies-overview/navigation-topology-fixed-hierarchical.png)  
   
  即使固定分层结构中的页导航序列在运行时确定，用户体验仍会与固定线性拓扑的用户体验相同：  
   
@@ -114,13 +114,13 @@ ms.locfileid: "57356775"
   
 <a name="Navigation_over_a_Dynamically_Generated_Topology"></a>   
 ## <a name="navigation-over-a-dynamically-generated-topology"></a>在动态生成的拓扑中导航  
- 在某些应用程序中，两个或更多页的导航序列只能在运行时由用户、应用程序或外部数据确定。 下图说明了一组导航序列未定的页面。  
+ 在某些应用程序中，两个或更多页的导航序列只能在运行时由用户、应用程序或外部数据确定。 下图说明了一组与导航序列未定的页面：  
   
- ![导航拓扑关系图](./media/navigationtopologyfigure4.png "NavigationTopologyFigure4")  
+ ![一组与导航序列未定的页面。](./media/navigation-topologies-overview/navigation-topology-dynamically-generated.png)  
   
- 下图说明了在运行时用户所选的导航序列。  
+ 下图显示了在运行时用户所选的导航序列：  
   
- ![导航关系图](./media/navigationtopologyfigure5.png "NavigationTopologyFigure5")  
+ ![显示导航序列在运行时所选的关系图。](./media/navigation-topologies-overview/navigation-topology-sequence-chosen-run-time.png)  
   
  该导航序列称为动态生成的拓扑。 对于用户而言，与其他导航拓扑一样，用户体验与以前拓扑的用户体验相同：  
   

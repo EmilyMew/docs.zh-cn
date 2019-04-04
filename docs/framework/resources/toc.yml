@@ -1,0 +1,21 @@
+items:
+- name: .NET 应用中的资源
+  href: index.md
+  items:
+  - name: 创建资源文件
+    href: creating-resource-files-for-desktop-apps.md
+    items:
+    - name: 以编程方式使用 .resx 文件
+      href: working-with-resx-files-programmatically.md
+  - name: 创建附属程序集
+    href: creating-satellite-assemblies-for-desktop-apps.md
+  - name: 打包和部署资源
+    href: packaging-and-deploying-resources-in-desktop-apps.md
+  - name: 检索资源
+    href: retrieving-resources-in-desktop-apps.md
+ms.openlocfilehash: b927e35892ced172b528008abe74a26524ffaaa7
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468517"

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - argument passing [Visual Basic], by position
 - arguments [Visual Basic], listing by name
 ms.assetid: 1ad7358f-1da9-48da-a95b-f3c7ed41eff3
-ms.openlocfilehash: 78c5303461ecf25a1487e072f4f6be25bde98dca
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b872eda97d1e349ad781b12810e4b166d6e46fe1
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54587458"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58837307"
 ---
 # <a name="passing-arguments-by-position-and-by-name-visual-basic"></a>按位置和名称传递自变量 (Visual Basic)
 当您调用`Sub`或`Function`过程中，您可以将参数传递*按位置*— 过程的定义中出现的顺序，或将它们传递*按名称*，而无需考虑位置。  
@@ -95,6 +95,7 @@ ms.locfileid: "54587458"
 不能按名称传递参数数组。 这是因为时调用该过程，你会提供以逗号分隔参数数组的参数数量不确定，编译器不能将多个自变量关联与单个名称。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](./index.md)
 - [过程参数和自变量](./procedure-parameters-and-arguments.md)
 - [如何：将参数传递给过程](./how-to-pass-arguments-to-a-procedure.md)

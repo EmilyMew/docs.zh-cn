@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32025
 ms.assetid: 43707bf1-1c6b-4d82-b081-e5a17dca51c1
-ms.openlocfilehash: 2a2f5692518c6784dfc6e3be6302f1e8dcf2aaa7
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: deef3de645040d7c3d95b1a6c8a25fcf10de881b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55265566"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842702"
 ---
 # <a name="region-and-end-region-statements-are-not-valid-within-method-bodiesmultiline-lambdas"></a>“#Region”和“#End Region”语句在方法体/多行 lambda 内无效
 `#Region`块必须声明类、 模块或命名空间级别。 可折叠区域可以包含一个或多个过程，但它不能开始或结束内部过程。  
@@ -26,4 +26,5 @@ ms.locfileid: "55265566"
 2.  絋粄`#Region`和`#End Region`指令是同一个代码块中。  
   
 ## <a name="see-also"></a>请参阅
+
 - [#Region 指令](../../../visual-basic/language-reference/directives/region-directive.md)

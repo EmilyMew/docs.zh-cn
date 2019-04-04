@@ -1,0 +1,111 @@
+items:
+- name: 框架设计准则
+  href: index.md
+  items:
+  - name: 命名准则
+    href: naming-guidelines.md
+    items:
+    - name: 大小写约定
+      href: capitalization-conventions.md
+    - name: 通用命名约定
+      href: general-naming-conventions.md
+    - name: 程序集和 DLL 的名称
+      href: names-of-assemblies-and-dlls.md
+    - name: 命名空间的名称
+      href: names-of-namespaces.md
+    - name: 类、结构和接口的名称
+      href: names-of-classes-structs-and-interfaces.md
+    - name: 类型成员的名称
+      href: names-of-type-members.md
+    - name: 命名参数
+      href: naming-parameters.md
+    - name: 命名资源
+      href: naming-resources.md
+  - name: 类型设计准则
+    href: type.md
+    items:
+    - name: 在类和结构之间选择
+      href: choosing-between-class-and-struct.md
+    - name: 抽象类设计
+      href: abstract-class.md
+    - name: 静态类设计
+      href: static-class.md
+    - name: 接口设计
+      href: interface.md
+    - name: 结构设计
+      href: struct.md
+    - name: 枚举设计
+      href: enum.md
+    - name: 嵌套类型
+      href: nested-types.md
+  - name: 成员设计准则
+    href: member.md
+    items:
+    - name: 成员重载
+      href: member-overloading.md
+    - name: 属性设计
+      href: property.md
+    - name: 构造函数设计
+      href: constructor.md
+    - name: 事件设计
+      href: event.md
+    - name: 字段设计
+      href: field.md
+    - name: 扩展方法
+      href: extension-methods.md
+    - name: 运算符重载
+      href: operator-overloads.md
+    - name: 参数设计
+      href: parameter-design.md
+  - name: 扩展性设计
+    href: designing-for-extensibility.md
+    items:
+    - name: 未密封类
+      href: unsealed-classes.md
+    - name: 受保护的成员
+      href: protected-members.md
+    - name: 事件和回调
+      href: events-and-callbacks.md
+    - name: 虚成员
+      href: virtual-members.md
+    - name: 抽象（抽象类型和接口）
+      href: abstractions-abstract-types-and-interfaces.md
+    - name: 用于实现抽象的基类
+      href: base-classes-for-implementing-abstractions.md
+    - name: 密封
+      href: sealing.md
+  - name: 异常设计准则
+    href: exceptions.md
+    items:
+    - name: 异常引发
+      href: exception-throwing.md
+    - name: 使用标准异常类型
+      href: using-standard-exception-types.md
+    - name: 异常和性能
+      href: exceptions-and-performance.md
+  - name: 使用准则
+    href: usage-guidelines.md
+    items:
+    - name: 数组
+      href: arrays.md
+    - name: 特性
+      href: attributes.md
+    - name: 集合
+      href: guidelines-for-collections.md
+    - name: 序列化
+      href: serialization.md
+    - name: System.Xml 使用情况
+      href: system-xml-usage.md
+    - name: 相等运算符
+      href: equality-operators.md
+  - name: 常见设计模式
+    href: common-design-patterns.md
+    items:
+    - name: 依赖项属性
+      href: dependency-properties.md
+ms.openlocfilehash: 07d831cd24d35a3876b2d7f2d7465aa663d6f3e0
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467981"

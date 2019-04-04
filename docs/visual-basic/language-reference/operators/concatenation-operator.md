@@ -10,12 +10,12 @@ helpviewer_keywords:
 - concatenation operators [Visual Basic], syntax
 - strings [Visual Basic], concatenating
 ms.assetid: fefc3d00-cbf1-475c-8c5e-6fb213b3f85a
-ms.openlocfilehash: 2237da5d64ada6817d3a9a88b04b76f573bd76c0
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: dd85363447e9b405241d608550d9484b4760a739
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56976507"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58817274"
 ---
 # <a name="amp-operator-visual-basic"></a>&amp; 运算符 (Visual Basic)
 生成两个表达式的字符串串联。  
@@ -53,6 +53,7 @@ result = expression1 & expression2
  [!code-vb[VbVbalrOperators#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#2)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [&= 运算符](../../../visual-basic/language-reference/operators/and-assignment-operator.md)
 - [串联运算符](../../../visual-basic/language-reference/operators/concatenation-operators.md)
 - [Visual Basic 中的运算符优先级](../../../visual-basic/language-reference/operators/operator-precedence.md)

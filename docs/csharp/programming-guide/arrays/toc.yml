@@ -1,0 +1,24 @@
+items:
+- name: 数组
+  href: index.md
+  items:
+  - name: 作为对象的数组
+    href: arrays-as-objects.md
+  - name: 单维数组
+    href: single-dimensional-arrays.md
+  - name: 多维数组
+    href: multidimensional-arrays.md
+  - name: 交错数组
+    href: jagged-arrays.md
+  - name: 对数组使用 foreach
+    href: using-foreach-with-arrays.md
+  - name: 将数组作为参数传递
+    href: passing-arrays-as-arguments.md
+  - name: 隐式类型化数组
+    href: implicitly-typed-arrays.md
+ms.openlocfilehash: b587998861fba9ae9f13da1e58fd24e9279c6224
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468580"

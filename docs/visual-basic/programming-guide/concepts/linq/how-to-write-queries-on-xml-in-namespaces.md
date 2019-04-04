@@ -2,12 +2,12 @@
 title: 如何：命名空间 (Visual Basic) 中的 XML 编写查询
 ms.date: 07/20/2015
 ms.assetid: 7d4131b5-3288-414f-b77c-b2edc2a1f465
-ms.openlocfilehash: 00dfc4e14c38357deb3efc4a32fd00a97f6010b8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4efa1de254a0264752514c5ae6e601a66fa56f95
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54609923"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58833433"
 ---
 # <a name="how-to-write-queries-on-xml-in-namespaces-visual-basic"></a>如何：命名空间 (Visual Basic) 中的 XML 编写查询
 若要针对命名空间中的 XML 编写查询，必须使用具有正确命名空间的 <xref:System.Xml.Linq.XName> 对象。  
@@ -89,4 +89,5 @@ End Module
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用 XML 命名空间 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)

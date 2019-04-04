@@ -33,8 +33,7 @@ ms.locfileid: "57717630"
   
  `DataGridView`控件可以显示的数据存储区中的数据行。 支持许多类型的数据存储。 数据存储区可以容纳简单、 非类型化数据，例如一维数组，或它可以保存类型化的数据，如<xref:System.Data.DataSet>。 有关详细信息，请参阅[如何：将数据绑定到 Windows 窗体 DataGridView 控件](how-to-bind-data-to-the-windows-forms-datagridview-control.md)。  
   
- 
-  `DataGridView` 控件提供一种以表格格式显示数据的功能强大且灵活的方法。 可以使用控件来显示规模从小到大数据集的只读或可编辑视图。  
+ `DataGridView` 控件提供一种以表格格式显示数据的功能强大且灵活的方法。 可以使用控件来显示规模从小到大数据集的只读或可编辑视图。  
   
  您可以扩展`DataGridView`以多种方式来构建到应用程序的自定义行为的控件。 例如，可以以编程方式指定自己的排序算法，并且可以创建自己的单元格类型。 可以通过在多个属性之间进行选择来轻松地自定义 `DataGridView` 控件的外观。 许多类型的数据存储可用作数据源，或`DataGridView`控件可以不使用绑定到该数据源进行操作。  
   

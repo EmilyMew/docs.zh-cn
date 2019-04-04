@@ -15,12 +15,12 @@ helpviewer_keywords:
 - scope [Visual Basic], Visual Basic
 - procedure scope [Visual Basic]
 ms.assetid: 208106fe-79c9-4eec-93c6-55f08548895f
-ms.openlocfilehash: 38dd9d6d40780c25f06a35cf1ffbe4743b7da4a4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6139af65958cefe43578f436204fa6836a71de0b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54537228"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58823540"
 ---
 # <a name="scope-in-visual-basic"></a>Visual Basic 中的范围
 *作用域*声明的元素是一组的所有代码都可以引用它而无需限定其名称或使其可通过[Imports 语句 （.NET Namespace 和类型）](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)。 元素可以具有以下级别之一的作用域：  
@@ -135,6 +135,7 @@ Public strMsg As String
  一般情况下，当声明的任何变量或常量时，它编程最佳做法是使其范围尽可能窄 （块范围是最小）。 这有助于节约内存和最大程度减少你错误地引用错误的变量的代码的可能性。 同样，应将变量声明[静态](../../../../visual-basic/language-reference/modifiers/static.md)仅当有必要过程调用之间保留值。  
   
 ## <a name="see-also"></a>请参阅
+
 - [已声明元素的特性](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
 - [如何：控制变量的作用域](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-control-the-scope-of-a-variable.md)
 - [在 Visual Basic 中的生存期](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)

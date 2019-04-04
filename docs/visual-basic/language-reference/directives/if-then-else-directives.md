@@ -18,12 +18,12 @@ helpviewer_keywords:
 - else directive (#else)
 - '#Else directive [Visual Basic]'
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
-ms.openlocfilehash: 23e45d00e63c1f50ad2f6d3f08d16adbd13ae2b6
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 8c0aece749edf144fdd5c8ede9ec7e2e4c96ad54
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56968812"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58823384"
 ---
 # <a name="ifthenelse-directives"></a>#If...Then...#Else 指令
 有条件地编译选定的 Visual Basic 代码块。  
@@ -81,9 +81,8 @@ ms.locfileid: "56968812"
  [!code-vb[VbVbalrConditionalComp#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [#Const 指令](../../../visual-basic/language-reference/directives/const-directive.md)
 - [If...Then...Else 语句](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
 - [条件编译](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
 - <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType>
-
-

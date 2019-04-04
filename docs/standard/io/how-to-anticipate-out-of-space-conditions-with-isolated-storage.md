@@ -37,8 +37,7 @@ ms.locfileid: "57372290"
 
 为有助于确定给定写入尝试是否有可能由于此原因而失败，<xref:System.IO.IsolatedStorage.IsolatedStorage> 类提供了下列三个只读属性：<xref:System.IO.IsolatedStorage.IsolatedStorage.AvailableFreeSpace%2A>、<xref:System.IO.IsolatedStorage.IsolatedStorage.UsedSize%2A> 和 <xref:System.IO.IsolatedStorage.IsolatedStorage.Quota%2A>。 您可以使用这些属性来确定写入存储区是否将导致超过存储区所允许的最大大小。 记住独立存储可能被同时访问；因此，当计算剩余存储量时，该存储空间可能在您尝试写入存储区时已被使用。 但是，您可以使用存储区的最大大小来确定是否将达到可用存储的上限。
 
-
-  <xref:System.IO.IsolatedStorage.IsolatedStorage.Quota%2A> 属性依赖程序集中的证据来正常工作。 因此，只应在使用 <xref:System.IO.IsolatedStorage.IsolatedStorageFile>、<xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly%2A> 或 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> 方法创建的 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> 对象上检索此属性。 以其他任何方式创建的 <xref:System.IO.IsolatedStorage.IsolatedStorageFile> 对象（例如从 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A> 方法返回的对象）将无法返回准确的最大大小。
+<xref:System.IO.IsolatedStorage.IsolatedStorage.Quota%2A> 属性依赖程序集中的证据来正常工作。 因此，只应在使用 <xref:System.IO.IsolatedStorage.IsolatedStorageFile>、<xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForAssembly%2A> 或 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForDomain%2A> 方法创建的 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> 对象上检索此属性。 以其他任何方式创建的 <xref:System.IO.IsolatedStorage.IsolatedStorageFile> 对象（例如从 <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A> 方法返回的对象）将无法返回准确的最大大小。
 
 ## <a name="example"></a>示例
 

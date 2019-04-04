@@ -9,12 +9,12 @@ helpviewer_keywords:
 - visual objects [WPF], hit tests on
 - Geometry objects [WPF], hit tests on visual objects [WPF]
 ms.assetid: 6c8bdbf2-19e0-4fbb-bf89-c1252b2ebc61
-ms.openlocfilehash: 15a33d05cb3ca4fd40f04170bd1756e466631275
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 3d6f4190a5b5c8410a6be01d2645df9c123f9ac4
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57366356"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410610"
 ---
 # <a name="how-to-hit-test-using-geometry-as-a-parameter"></a>如何：将几何图形用作参数的命中测试
 此示例演示如何对视觉对象使用执行命中的测试<xref:System.Windows.Media.Geometry>作为命中测试参数。  
@@ -27,8 +27,7 @@ ms.locfileid: "57366356"
   
  <xref:System.Windows.Media.GeometryHitTestResult.IntersectionDetail%2A>的属性<xref:System.Windows.Media.GeometryHitTestResult>提供了有关使用的命中测试结果信息<xref:System.Windows.Media.Geometry>作为命中测试参数。 下图演示了命中测试几何图形（蓝色圆圈）与目标视觉对象（红色正方形）的呈现内容之间的关系。  
   
- ![中使用的 IntersectionDetail 的关系图进行命中测试](./media/intersectiondetail01.png "IntersectionDetail01")  
-命中测试几何图形与目标视觉对象之间的交集  
+ ![演示在中使用的 IntersectionDetail 的关系图进行命中测试。](./media/how-to-hit-test-using-geometry-as-a-parameter/intersectiondetail-hit-test.png)  
   
  下面的示例演示如何实现命中的测试回叫时<xref:System.Windows.Media.Geometry>用作命中的测试参数。 `result`参数强制转换为<xref:System.Windows.Media.GeometryHitTestResult>以便检索的值<xref:System.Windows.Media.GeometryHitTestResult.IntersectionDetail%2A>属性。 属性值可以确定如果<xref:System.Windows.Media.Geometry>命中的测试参数完全或部分包含在命中的测试目标的呈现内容。 在本示例中，示例代码仅将命中测试结果添加到完全包含在目标边界中的视觉对象的列表中。  
   

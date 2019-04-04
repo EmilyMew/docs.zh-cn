@@ -1,29 +1,23 @@
 ---
-title: C# 运算符
+title: 'C# 运算符'
 ms.date: 04/04/2018
 f1_keywords:
-- cs.operators
+  - cs.operators
 helpviewer_keywords:
-- boolean operators [C#]
-- expressions [C#], operators
-- logical operators [C#]
-- operators [C#]
-- Visual C#, operators
-- indirection operators [C#]
-- assignment operators [C#]
-- shift operators [C#]
-- relational operators [C#]
-- bitwise operators [C#]
-- address operators [C#]
-- keywords [C#], operators
-- arithmetic operators [C#]
+  - 'boolean operators [C#]'
+  - 'expressions [C#], operators'
+  - 'logical operators [C#]'
+  - 'operators [C#]'
+  - 'Visual C#, operators'
+  - 'indirection operators [C#]'
+  - 'assignment operators [C#]'
+  - 'shift operators [C#]'
+  - 'relational operators [C#]'
+  - 'bitwise operators [C#]'
+  - 'address operators [C#]'
+  - 'keywords [C#], operators'
+  - 'arithmetic operators [C#]'
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
-ms.openlocfilehash: 6380fa4ec99f598be0d01db1061900520e94d5f1
-ms.sourcegitcommit: 5c36aaa8299a2437c155700c810585aff19edbec
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54333403"
 ---
 # <a name="c-operators"></a>C# 运算符
 
@@ -47,9 +41,9 @@ C# 提供了许多运算符，这些运算符是指定要在表达式中执行�
 
 [a&#91;x&#93;](index-operator.md)：聚合对象索引。
 
-[x++](increment-operator.md)：后缀递增。 先返回 x 值，然后用加 1（通常加整数 1）后的 x 值更新存储位置。
+[x++](arithmetic-operators.md#increment-operator-)：后缀递增。 先返回 x 值，然后用加 1（通常加整数 1）后的 x 值更新存储位置。
 
-[x--](decrement-operator.md)：后缀递减。 先返回 x 值，然后用减 1（通常减整数 1）后的 x 值更新存储位置。
+[x--](arithmetic-operators.md#decrement-operator---)：后缀递减。 先返回 x 值，然后用减 1（通常减整数 1）后的 x 值更新存储位置。
 
 [new](../keywords/new-operator.md)：类型实例化。
 
@@ -79,9 +73,9 @@ C# 提供了许多运算符，这些运算符是指定要在表达式中执行�
 
 [~x](bitwise-complement-operator.md)：按位求补。
 
-[++x](increment-operator.md)：前缀递增。 先用加 1（通常加整数 1）后的 x 值更新存储位置，然后返回 x 值。
+[++x](arithmetic-operators.md#increment-operator-)：前缀递增。 先用加 1（通常加整数 1）后的 x 值更新存储位置，然后返回 x 值。
 
-[--x](decrement-operator.md)：前缀递减。 先用减 1（通常减整数 1）后的 x 值更新存储位置，然后返回 x 值。
+[--x](arithmetic-operators.md#decrement-operator---)：前缀递减。 先用减 1（通常减整数 1）后的 x 值更新存储位置，然后返回 x 值。
 
 [(T)x](invocation-operator.md)：类型显式转换。
 
@@ -95,19 +89,19 @@ C# 提供了许多运算符，这些运算符是指定要在表达式中执行�
 
 这些运算符的优先级比下一章节高，比上一章节低。
 
-[x * y](multiplication-operator.md)：乘法。
+[x * y](arithmetic-operators.md#multiplication-operator-)：乘法。
 
-[x / y](division-operator.md)：除法。 如果操作数均为整数，则结果为整数，舍去小数（例如，`-7 / 2 is -3`）。
+[x / y](arithmetic-operators.md#division-operator-)：除法。 如果操作数均为整数，则结果为整数，舍去小数（例如，`-7 / 2 is -3`）。
 
-[x % y](remainder-operator.md)：余数。 如果操作数均为整数，则返回 x 除以 y 后的余数。  如果 `q = x / y` 且 `r = x % y`，则 `x = q * y + r`。
+[x % y](arithmetic-operators.md#remainder-operator-)：余数。 如果操作数均为整数，则返回 x 除以 y 后的余数。  如果 `q = x / y` 且 `r = x % y`，则 `x = q * y + r`。
 
 ## <a name="additive-operators"></a>相加运算符
 
 这些运算符的优先级比下一章节高，比上一章节低。
 
-[x + y](addition-operator.md)：加法。
+[x + y](arithmetic-operators.md#addition-operator-)：加法。
 
-[x - y](subtraction-operator.md)：减法。
+[x - y](arithmetic-operators.md#subtraction-operator--)：减法。
 
 ## <a name="shift-operators"></a>移位运算符
 
@@ -137,9 +131,9 @@ C# 提供了许多运算符，这些运算符是指定要在表达式中执行�
 
 这些运算符的优先级比下一章节高，比上一章节低。
 
-[x == y](equality-comparison-operator.md)：相等。 默认情况下，对于 `string` 以外的引用类型，此运算符返回引用相等（标识测试）。 但是，类型可以重载 `==`，因此，如果你想测试标识，最好对 `object` 使用 `ReferenceEquals` 方法。
+[x == y](equality-operators.md#equality-operator-)：相等。 默认情况下，对于 `string` 以外的引用类型，此运算符返回引用相等（标识测试）。 但是，类型可以重载 `==`，因此，如果你想测试标识，最好对 `object` 使用 `ReferenceEquals` 方法。
 
-[x != y](not-equal-operator.md)：不相等。 请参阅有关 `==` 的注释。 如果某个类型重载 `==`，则它必须重载 `!=`。
+[x != y](equality-operators.md#inequality-operator-)：不相等。 请参阅有关 `==` 的注释。 如果某个类型重载 `==`，则它必须重载 `!=`。
 
 ## <a name="logical-and-operator"></a>逻辑 AND 运算符
 
@@ -195,9 +189,9 @@ C# 提供了许多运算符，这些运算符是指定要在表达式中执行�
 
 [x *= y](multiplication-assignment-operator.md)：乘法赋值。 `x` 值乘以 `y` 值，结果存储在 `x` 中，并返回新值。
 
-[x /= y](division-assignment-operator.md)：除法赋值。 `x` 值除以 `y` 值，结果存储在 `x` 中，并返回新值。
+[x /= y](arithmetic-operators.md#compound-assignment)：除法赋值。 `x` 值除以 `y` 值，结果存储在 `x` 中，并返回新值。
 
-[x %= y](remainder-assignment-operator.md)：余数赋值。 `x` 值除以 `y` 值，余数存储在 `x` 中，并返回新值。
+[x %= y](arithmetic-operators.md#compound-assignment)：余数赋值。 `x` 值除以 `y` 值，余数存储在 `x` 中，并返回新值。
 
 [x &= y](and-assignment-operator.md)：AND 赋值。 `y` 值和 `x` 值相与，结果存储在 `x` 中，并返回新值。
 
@@ -210,20 +204,6 @@ C# 提供了许多运算符，这些运算符是指定要在表达式中执行�
 [x >>= y](right-shift-assignment-operator.md)：右移赋值。 将 `x` 值向右移动 `y` 位，结果存储在 `x` 中，并返回新值。
 
 [=>](lambda-operator.md)：lambda 声明。
-
-## <a name="arithmetic-overflow"></a>算术溢出
-
-算术运算符（[+](addition-operator.md)、[-](subtraction-operator.md)、[*](multiplication-operator.md)、[/](division-operator.md)）的计算结果可能会超出所涉数值类型的可取值范围。 详细信息应参考特定运算符的相关章节，而一般情况下：
-
-- 整数算术溢出或者引发 <xref:System.OverflowException>，或者放弃结果的最高有效位。 整数被零除总是引发 <xref:System.DivideByZeroException>。
-
-   发生整数溢出时，具体影响视执行上下文而定，上下文可为 [checked 或 unchecked](../keywords/checked-and-unchecked.md)。 在 checked 上下文中引发 <xref:System.OverflowException>。 在 unchecked 上下文中，放弃结果的最高有效位并继续执行。 因此，C# 让你有机会选择处理或忽略溢出。 默认情况下，算术运算发生在 *unchecked* 上下文中。
-
-   除算术运算以外，整型类型之间的显式转换也会导致溢出（例如，将 [long](../keywords/long.md) 显式转换成 [int](../keywords/int.md)），并受到 checked 或 unchecked 执行的约束。 但是，位运算符和移位运算符永远不会导致溢出。
-
-- 浮点算术溢出或被零除从不引发异常，因为浮点类型基于 IEEE 754，因此可以表示无穷大和 NaN（非数值）。
-
-- [小数](../keywords/decimal.md)算术溢出总是引发 <xref:System.OverflowException>。 小数被零除总是引发 <xref:System.DivideByZeroException>。
 
 ## <a name="see-also"></a>请参阅
 

@@ -3,12 +3,12 @@ title: <wsFederation>
 ms.date: 03/30/2017
 ms.assetid: c537f770-68bd-4f82-96ad-6424ad91369f
 author: BrucePerlerMS
-ms.openlocfilehash: 801970ec05fc88587a5b45b5bb3a855d1a81afb3
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: de79ad6447fe67afc596783eff3fa3e6a02b600c
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57356086"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654583"
 ---
 # <a name="wsfederation"></a>\<wsFederation>
 提供配置<xref:System.IdentityModel.Services.WSFederationAuthenticationModule>(WSFAM)。  
@@ -52,7 +52,7 @@ ms.locfileid: "57356086"
 |---------------|-----------------|  
 |authenticationType|一个认证类型的 URI。 设置 Ws-federation 登录请求 wauth 参数。 可选。 默认值为空字符串，指定不在请求中包括的 wauth 参数。|  
 |新鲜度|身份验证请求所需的最大生存期（以分钟为单位）。 设置 Ws-federation 登录请求 wfresh 参数。 可选。 默认值为零。 可选。 **警告：** 下一版本的.NET Framework 4.5`freshness`属性的类型将为`xs:string`，其默认值将为`null`。|  
-|homeRealm|要用于身份验证标识提供者 (IP) 的主领域。 设置 Ws-federation 登录请求 whr 参数。 可选。 默认值为空字符串，指定不在请求中包括的 whr 参数。|  
+|homeRealm|标识提供者 (IdP) 用于进行身份验证主领域。 设置 Ws-federation 登录请求 whr 参数。 可选。 默认值为空字符串，指定不在请求中包括的 whr 参数。|  
 |issuer|预期的令牌颁发者的 URI。 设置登录请求的基 URL 的 WS 联合身份验证和所需的注销请求。|  
 |persistentCookiesOnPassiveRedirects|指定是否在身份验证颁发永久性 cookie。 可选。 默认值为"false"，不发出 cookies。|  
 |passiveRedirectEnabled|指定是否启用 WSFAM 自动将未经授权的请求重定向到 STS。 可选。 默认值为"true"，未经授权的请求自动重定向。|  
@@ -68,7 +68,7 @@ ms.locfileid: "57356086"
 |signOutReply|在被动注销通过 WS 联合身份验证协议中指定的客户端应被重定向到由安全令牌服务 (STS) 的 URL。 设置 WS 联合身份验证注销请求中的 wreply 参数。 可选。 默认值为空字符串，指定应在请求中包含任何其他参数。|  
   
 ### <a name="child-elements"></a>子元素  
- 无  
+ None  
   
 ### <a name="parent-elements"></a>父元素  
   

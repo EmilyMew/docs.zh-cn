@@ -2,12 +2,12 @@
 title: 如何：查找 Namespace (Visual Basic 中) 中的所有节点
 ms.date: 07/20/2015
 ms.assetid: b735d7da-5727-48a3-ab57-a16378adc32e
-ms.openlocfilehash: 3a89b0eae4baf380787df32b1d327dd1f52b6f05
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c04447df1d4a3e29558a3bad172715d2bdee340b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54640666"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58813842"
 ---
 # <a name="how-to-find-all-nodes-in-a-namespace-visual-basic"></a>如何：查找 Namespace (Visual Basic 中) 中的所有节点
 您可以对每个元素或属性的命名空间进行筛选，以便查找该特定命名空间中的所有节点。  
@@ -54,7 +54,7 @@ Nodes in the http://www.adventure-works.com namespace
 ## <a name="example"></a>示例  
  下面的查询所访问的 XML 文件包含两个位于不同命名空间中的采购订单。 该查询只用其中一个命名空间中的元素创建一个新树。  
   
- 本示例使用下面的 XML 文档：[示例 XML 文件：合并的采购订单](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md)。  
+ 此示例使用下面的 XML 文档：[示例 XML 文件：合并采购单](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md)。  
   
 ```vb  
 Imports <xmlns:aw="http://www.adventure-works.com">  
@@ -110,4 +110,5 @@ End Module
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [基本查询 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

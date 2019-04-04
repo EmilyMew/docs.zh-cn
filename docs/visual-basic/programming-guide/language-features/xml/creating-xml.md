@@ -6,12 +6,12 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], creating XML
 - XML literals [Visual Basic], creating
 ms.assetid: 8ae29ec5-e5fb-4137-9df5-60a288df7045
-ms.openlocfilehash: a9131e62ad0a4f55a88c15a8e0efa9189026eca3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d847f589bc47f8ab3d6691666bbd879e795db0c6
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54615476"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58813036"
 ---
 # <a name="creating-xml-in-visual-basic"></a>在 Visual Basic 中创建 XML
 Visual Basic，能够使用*XML 文本*直接在代码中。 使用 XML 文本语法表示[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]对象，它是类似于 XML 1.0 语法。 这使得更轻松地以编程方式创建 XML 元素、 文档和片段，因为你的代码具有相同的结构与最终的 XML。  
@@ -29,4 +29,5 @@ Visual Basic，能够使用*XML 文本*直接在代码中。 使用 XML 文本�
 |[已声明的 XML 元素和特性的名称](../../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)|介绍命名 XML 元素和属性的指南。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

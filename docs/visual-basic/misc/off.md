@@ -18,8 +18,7 @@ ms.locfileid: "58044045"
 关闭编译器选项。  
   
 ## <a name="remarks"></a>备注  
- 
-  `Off` 关键字可用于以下上下文中：  
+ `Off` 关键字可用于以下上下文中：  
   
  [Option Explicit 语句](../../visual-basic/language-reference/statements/option-explicit-statement.md)  
   

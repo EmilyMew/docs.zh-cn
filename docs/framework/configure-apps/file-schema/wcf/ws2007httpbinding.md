@@ -2,12 +2,12 @@
 title: <ws2007HttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 8586ecc9-bdaa-44d6-8d4d-7038e4ea1741
-ms.openlocfilehash: 35e47d582a6b8534597945a626904d084fbeeade
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 01b8f20607de1cdd9c6b1ad9fc030c1d050ed749
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57376996"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410636"
 ---
 # <a name="ws2007httpbinding"></a>\<ws2007HttpBinding>
 定义一个可互操作的绑定，该绑定为正确版本的 <xref:System.ServiceModel.WSHttpBinding.Security%2A>、<xref:System.ServiceModel.ReliableSession> 和 <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> 绑定元素提供支持。  
@@ -67,7 +67,7 @@ ms.locfileid: "57376996"
 |`allowCookies`|一个值，指示客户端是否接受 cookie 并根据将来的请求对其进行传播。 默认值为 `false`。<br /><br /> 在与使用 Cookie 的 ASP.NET Web 服务 (ASMX) 进行交互时，可以使用此属性。 这确保了服务器返回的 Cookie 会自动复制到客户端今后对该服务的所有请求。|  
 |`bypassProxyOnLocal`|一个值，指示是否对本地地址不使用代理服务器。 默认值为 `false`。|  
 |`closeTimeout`|一个 <xref:System.TimeSpan> 值，指定完成关闭操作的时间间隔。 此值应大于或等于 <xref:System.TimeSpan.Zero>。 默认值为 00:01:00。|  
-|`hostnameComparisonMode`|指定用于分析统一资源标识符 (URI) 的 HTTP 主机名比较模式。 此属性的类型为 <xref:System.ServiceModel.HostNameComparisonMode>，指示在对 URI 进行匹配时，是否使用主机名来访问服务。 默认值为 <xref:System.ServiceModel.HostNameComparisonMode.StrongWildcard>，表示忽略匹配项中的主机名。|  
+|`hostNameComparisonMode`|指定用于分析统一资源标识符 (URI) 的 HTTP 主机名比较模式。 此属性的类型为 <xref:System.ServiceModel.HostNameComparisonMode>，指示在对 URI 进行匹配时，是否使用主机名来访问服务。 默认值为 <xref:System.ServiceModel.HostNameComparisonMode.StrongWildcard>，表示忽略匹配项中的主机名。|  
 |`maxBufferPoolSize`|此绑定的最大缓冲池大小。 默认值为 524,288 字节 (512 × 1,024)。 Windows Communication Foundation (WCF) 的许多部件使用缓冲区。 每次使用缓冲区时，创建和销毁它们会占用大量资源，而缓冲区的垃圾回收过程也是如此。 利用缓冲池，可以从缓冲池中获得缓冲区，使用缓冲区，然后在完成工作后将其返回到缓冲池。 这样就避免了创建和销毁缓冲区的系统开销。|  
 |`maxReceivedMessageSize`|使用此绑定配置的通道可以接收的最大消息大小（包括标头），单位为字节。 如果消息超出此限制，则发送方将收到 SOAP 错误。 接收方将删除该消息，并在跟踪日志中创建事件项。 默认值为 65536。|  
 |`messageEncoding`|定义用于对消息进行编码的编码器。 包括以下有效值：<br /><br /> -   `Text`：使用文本消息编码器。<br />-   `Mtom`：使用消息传输组织机制 1.0 (MTOM) 编码器。<br /><br /> 默认值为 `Text`。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.WSMessageEncoding>。|  
@@ -95,8 +95,7 @@ ms.locfileid: "57376996"
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|此元素包含标准绑定和自定义绑定的集合。|  
   
 ## <a name="remarks"></a>备注  
- 
-  `WS2007HttpBinding` 会添加与 `WSHttpBinding` 类似的系统提供的绑定，但使用 ReliableSession、Security 和 TransactionFlow 协议的结构化信息标准促进组织 (OASIS) 标准版本。 使用此绑定时，无需对对象模型或默认设置进行任何更改。  
+ `WS2007HttpBinding` 会添加与 `WSHttpBinding` 类似的系统提供的绑定，但使用 ReliableSession、Security 和 TransactionFlow 协议的结构化信息标准促进组织 (OASIS) 标准版本。 使用此绑定时，无需对对象模型或默认设置进行任何更改。  
   
 ## <a name="example"></a>示例  
   

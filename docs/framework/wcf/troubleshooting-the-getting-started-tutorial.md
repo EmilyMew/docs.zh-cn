@@ -1,63 +1,100 @@
 ---
-title: 入门教程疑难解答
-ms.date: 03/30/2017
+title: 排查 Get 开始使用 Windows Communication Foundation 教程
+ms.date: 01/25/2019
 ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
-ms.openlocfilehash: 5b8cd04ef4d98e522e255e1b7529e848351b2e0c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8089e0fee262d07be591069982b1aacfbeae2521
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54695655"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410493"
 ---
-# <a name="troubleshooting-the-getting-started-tutorial"></a>入门教程疑难解答
-本主题列出使用“入门教程”时最常遇见的问题及其解决方法。  
+# <a name="troubleshoot-the-get-started-with-windows-communication-foundation-tutorials"></a>排查 Get 开始使用 Windows Communication Foundation 教程
+
+本文提供解决方案的最常见的问题和按照中的步骤时可能遇到的错误[教程：开始使用 Windows Communication Foundation 应用程序](getting-started-tutorial.md)。 
   
+## <a name="common-problems"></a>常见问题
+
 **我找不到我的硬盘驱动器上的项目文件。**
 
- Visual Studio 将项目文件保存在 c:\users\\<user name>\Documents\\< Visual Studio 版本\>\Projects。  
+ Visual Studio 将保存在项目文件中的*C:\Users\\&lt;用户名&gt;\source\repos*。  
+
+**找不到*App.config*生成的文件*Svcutil.exe*。**
+
+ 在 Visual Studio 中，**添加现有项**窗口将仅显示具有以下扩展名的文件默认情况下： 
+- .cs 
+- *.resx* 
+- *.settings*
+- *.xsd* 
+- *.wsdl*
+
+若要显示所有文件类型，请选择**的所有文件 (\*。\*)** 右下角的下拉列表中**添加现有项**窗口。  
   
-**尝试运行服务应用程序：HTTP 无法注册 URL `http://+:8000/ServiceModelSamples/Service/`。**
-**进程不具有此命名空间的访问权限。** 
+## <a name="common-errors"></a>常见错误
 
- 承载 WCF 服务的进程必须使用管理权限运行。 如果您正在运行该服务从在 Visual Studio 中，您必须运行 Visual Studio 以管理员身份。 若要执行操作，请单击**启动**，右键单击**Visual Studio \<*版本*>**  ，然后选择**以管理员身份运行**. 如果从控制台窗口中的命令行提示符下运行该服务，则必须以管理员身份启动控制台窗口，类似的方式。 单击**启动**，右键单击**命令提示符**，然后选择**以管理员身份运行**。  
+### <a name="compile-the-service-application"></a>编译服务应用程序 
+
+**错误 BC30420 GettingStartedHost.Module1 中找不到 Sub Main。**
+
+对于 Visual Basic 应用程序不正确的入口点。 请进行以下更改：
+
+   1. 在中**解决方案资源管理器**窗口中，选择**GettingStartedHost**文件夹，，然后选择**属性**从快捷菜单。
+    a. 在中**GettingStartedHost**窗口中，对于**启动对象**，选择**Service.Program** （或特定应用程序的入口点） 从列表中。 
+    b. 从主菜单中，选择**文件** > **全部保存**。
+
+### <a name="run-the-service-application"></a>运行服务应用程序 
+
+**HTTP 无法注册 URL http:\// +: 8000/GettingStarted/CalculatorService。进程不具有此命名空间的访问权限。** 
+
+ 为适当的访问，启动承载具有管理权限的 Windows Communication Foundation (WCF) 服务的进程：
+- 对于 Visual Studio:选择在 Visual Studio 计划**启动**菜单，并选择**详细** > **以管理员身份运行**从快捷菜单。
+- 控制台窗口：选择**命令提示符**中**启动**菜单，并选择**详细** > **运行以管理员身份**的快捷方式菜单。
+- Windows 资源管理器：选择可执行文件，并选择**以管理员身份运行**从快捷菜单。
+
+### <a name="compile-the-client-application"></a>编译客户端应用程序
+
+**CalculatorClient 不包含的定义\<方法名称 > 和扩展方法\<方法名称 > 接受的第一个参数的类型找不到 CalculatorClient (是否缺少 using 指令或程序集引用？）**  
+
+您会使用标记的那些方法`ServiceOperationAttribute`公开公开属性。 如果省略`ServiceOperationAttribute`属性中的方法从`ICalculator`接口，在编译期间收到此错误消息。  
+
+**找不到 CalculatorClient 的类型或命名空间名称 (是否缺少 using 指令或程序集引用？)**
+
+ 如果你未添加收到此错误*generatedProxy.cs* (或*generatedProxy.vb*) 到你的客户端项目时生成与文件*Svcutil.exe*工具.  
+
+### <a name="run-the-client-application"></a>运行客户端应用程序
+
+**未经处理的异常：System.ServiceModel.EndpointNotFoundException:无法连接到 http:\//localhost:8000/GettingStarted/CalculatorService。TCP 错误代码 10061:由于目标机器主动拒绝，无法建立连接。**
+
+如果而无需第一个启动该服务运行客户端应用程序，会发生此错误。 首先，运行主机应用程序以启动该服务，然后运行客户端应用程序。
+
+### <a name="use-the-svcutilexe-tool"></a>使用 Svcutil.exe 工具
+   
+**Svcutil 不识别为内部或外部命令、 可操作程序或批处理文件。**
+
+ *Svcutil.exe*必须位于系统路径。 最简单的解决方案是使用 Visual Studio 命令提示符。 从**启动**菜单中，选择**Visual Studio\<版本 >** 目录，然后选择**VS 开发人员命令提示\<版本 >**. 此命令提示符下设置为正确的位置的 Visual Studio 中附带的所有工具的系统路径。  
   
-**尝试使用 Svcutil.exe 工具: svcutil 不被识别为内部或外部命令、 可操作程序或批处理文件。**
+### <a name="run-the-service-and-client-applications"></a>运行服务和客户端应用程序
 
- Svcutil.exe 必须位于系统路径中。 最简单的解决方案是使用命令提示符。 单击**启动**，选择**所有程序**， **Visual Studio \<*版本*>**， **Visual Studio 工具**，并**Visual Studio 的开发人员命令提示**。 此命令提示符下设置为正确的位置的 Visual Studio 中附带的所有工具的系统路径。  
+**System.ServiceModel.Security.SecurityNegotiationException:与 SOAP 安全协商 http:\//localhost:8000/GettingStarted/CalculatorService 目标 http:\//localhost:8000/GettingStarted/CalculatorService 失败**  
 
-**无法找到由 Svcutil.exe 生成的 App.config 文件。**
+无网络连接的已加入域的计算机上出现此错误。 将计算机连接到网络或关闭服务和客户端的安全性。 
 
- **添加现有项**对话框仅显示默认情况下具有以下扩展名的文件：.cs、.resx、.settings、.xsd 和.wsdl。 您可以指定你想要通过选择查看所有文件类型**的所有文件 (\*。\*)** 中的下拉列表框中的右下角**添加现有项**对话框。  
+若要关闭安全性：
 
-
-**编译客户端应用程序：CalculatorClient 不包含的定义\<方法名称 > 和扩展方法\<方法名称 > 接受的第一个参数的类型找不到 CalculatorClient (是否缺少 using 指令或程序集引用？）**  
-
-仅向外界公开标记有 `ServiceOperationAttribute` 的那些方法。 如果您省略`ServiceOperationAttribute`属性中的方法之一从`ICalculator`接口，您可以收到此错误消息，编译以下位置缺少该属性的操作调用的客户端应用程序时。  
-
-**编译客户端应用程序：找不到 CalculatorClient 的类型或命名空间名称 (是否缺少 using 指令或程序集引用？)**
-
- 如果未将 Proxy.cs 或 Proxy.vb 文件添加到客户端项目，则会收到此错误。  
-
-**运行客户端：未经处理的异常：System.ServiceModel.EndpointNotFoundException:无法连接到`http://localhost:8000/ServiceModelSamples/Service/CalculatorService`。TCP 错误代码 10061:由于目标机器主动拒绝，无法建立连接。**
-
-如果在未运行服务的情况下运行客户端应用程序，则会出现此错误。  
+- 对于服务，将代码替换为创建`WSHttpBinding`使用以下代码：  
   
-**未经处理的异常：System.ServiceModel.Security.SecurityNegotiationException:与 SOAP 安全协商`http://localhost:8000/ServiceModelSamples/Service/CalculatorService`目标`http://localhost:8000/ServiceModelSamples/Service/CalculatorService`失败**  
+    ```csharp
+    // Step 3: Add a service endpoint.
+    selfhost.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(SecurityMode.None), "CalculatorService");  
+    ```
 
-此错误发生在已加入域但没有网络连接的计算机上。 将计算机连接到网络，或者同时关闭客户端和服务的安全性。 对于服务，将创建 WSHttpBinding 的代码修改为以下代码。  
+- 对于客户端配置文件中更新**\<安全 >** 元素下的**\<绑定 >** 元素，如下所示：  
   
-```csharp
-// Step 3 of the hosting procedure: Add a service endpoint  
-selfhost.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(SecurityMode.None), "CalculatorService");  
-```
+    ```xml
+    <binding name="WSHttpBinding_ICalculator" security mode="None" />
+    ```  
 
-对于客户端，更改**\<安全 >** 元素下的**\<绑定 >** 以下元素：  
-  
-```xml
-<security mode="Node" />  
-```  
-
-## <a name="see-also"></a>请参阅
-- [入门教程](../../../docs/framework/wcf/getting-started-tutorial.md)
-- [WCF 疑难解答快速入门](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md)
-- [安装问题疑难解答](../../../docs/framework/wcf/troubleshooting-setup-issues.md)
+## <a name="see-also"></a>请参阅  
+ [开始使用 WCF 应用程序](getting-started-tutorial.md)  
+ [WCF 疑难解答快速入门](wcf-troubleshooting-quickstart.md)  
+ [安装问题疑难解答](troubleshooting-setup-issues.md)

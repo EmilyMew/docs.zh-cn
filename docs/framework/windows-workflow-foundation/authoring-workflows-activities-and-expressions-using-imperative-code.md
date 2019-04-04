@@ -52,8 +52,7 @@ new Assign<int>
   
  在调用包含 C# 表达式的工作流之前，必须先编译这些表达式。 如果C#表达式未编译，<xref:System.NotSupportedException>使用类似于以下的消息调用工作流时，将引发：`Expression Activity type 'CSharpValue`1 需要编译才能运行。  请确保已编译工作流。 在大多数情况下，涉及在 Visual Studio C# 中创建的工作流表达式会自动编译，但在某些情况下，例如代码工作流中的 C# 表达式必须手动编译。 有关如何编译 C# 表达式的示例，请参阅[在代码工作流中的使用 C# 表达式](csharp-expressions.md#CodeWorkflows)一部分[C# 表达式](csharp-expressions.md)主题。  
   
- 
-  <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> 在 Visual Basic 语法中表示可用作表达式右值的表达式，<xref:Microsoft.CSharp.Activities.CSharpValue%601> 在 C# 语法中表示可用作表达式右值的表达式。 每次执行包含活动时，都会计算这些表达式。 将表达式的结果赋给工作流变量 `n`，工作流中的下一个活动将使用这些结果。 若要在运行时访问工作流变量 `n` 的值，需要 <xref:System.Activities.ActivityContext>。 可使用以下 lambda 表达式进行访问。  
+ <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> 在 Visual Basic 语法中表示可用作表达式右值的表达式，<xref:Microsoft.CSharp.Activities.CSharpValue%601> 在 C# 语法中表示可用作表达式右值的表达式。 每次执行包含活动时，都会计算这些表达式。 将表达式的结果赋给工作流变量 `n`，工作流中的下一个活动将使用这些结果。 若要在运行时访问工作流变量 `n` 的值，需要 <xref:System.Activities.ActivityContext>。 可使用以下 lambda 表达式进行访问。  
   
 > [!NOTE]
 >  请注意，这些代码都是以 C# 为编程语言的示例，但是一个使用 <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>，另一个使用 <xref:Microsoft.CSharp.Activities.CSharpValue%601>。 <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> 和 <xref:Microsoft.CSharp.Activities.CSharpValue%601> 可以在 Visual Basic 和 C# 项目中使用。 默认情况下，在工作流设计器中创建的表达式匹配承载项目的语言。 在代码中创建工作流时，所需的语言由工作流编写者决定。  
@@ -134,7 +133,7 @@ new InvokeMethod<int>
  <xref:System.Random.Next%2A> 不是静态方法，因此为 <xref:System.Random> 属性提供 <xref:System.Activities.Expressions.InvokeMethod%601.TargetObject%2A> 类的实例。 在此示例中，使用 Visual Basic 表达式创建一个新实例，但是它可能已在之前创建并存储在工作流变量中。 在此示例中，更易于使用 <xref:System.Activities.Statements.Assign%601> 活动，而不是 <xref:System.Activities.Expressions.InvokeMethod%601>活动。 如果最终通过长时间运行的 <xref:System.Activities.Statements.Assign%601> 或 <xref:System.Activities.Expressions.InvokeMethod%601> 活动调用该方法，因为有 <xref:System.Activities.Expressions.InvokeMethod%601> 属性，所以 <xref:System.Activities.Expressions.InvokeMethod%601.RunAsynchronously%2A> 具有优势。 如果此属性设置为 `true`，对于工作流，调用的方法将异步运行。 如果存在其他并行的活动，则在方法异步执行时将不会阻止这些活动。 此外，如果要调用的方法没有返回值，则 <xref:System.Activities.Expressions.InvokeMethod%601> 是调用该方法的适当方法。  
   
 ## <a name="arguments-and-dynamic-activities"></a>参数与动态活动  
- 通过将活动组合到活动树中并配置各参数和属性的方式可创建以代码编写的工作流定义。 可绑定现有参数，但无法将新参数添加到活动中。 这包括传递给根活动的工作流参数。 在命令性代码中，工作流参数被指定为新 CLR 类型的属性，而在 XAML 中，它们将使用 `x:Class` 和 `x:Member` 来声明。 将工作流定义创建为内存中对象的树时，由于没有创建新的 CLR 类型，因此无法添加参数。 但是，可将参数添加到 <xref:System.Activities.DynamicActivity>。 在本示例中，将要创建一个 <xref:System.Activities.DynamicActivity%601>，它接受两个整型参数并将它们相加，然后返回结果。 为每个自变量创建一个 <xref:System.Activities.DynamicActivityProperty>，并将运算结果赋给 <xref:System.Activities.Activity%601.Result%2A> 的 <xref:System.Activities.DynamicActivity%601> 自变量。  
+ 通过将活动组合到活动树中并配置各自变量和属性的方式可创建以代码编写的工作流定义。 可绑定现有自变量，但无法将新自变量添加到活动中。 这包括传递给根活动的工作流自变量。 在命令性代码中，工作流自变量被指定为新 CLR 类型的属性，而在 XAML 中，它们将使用 `x:Class` 和 `x:Member` 来声明。 将工作流定义创建为内存中对象的树时，由于没有创建新的 CLR 类型，因此无法添加参数。 但是，可将参数添加到 <xref:System.Activities.DynamicActivity>。 在本示例中，将要创建一个 <xref:System.Activities.DynamicActivity%601>，它接受两个整型自变量并将它们相加，然后返回结果。 为每个自变量创建一个 <xref:System.Activities.DynamicActivityProperty>，并将运算结果赋给 <xref:System.Activities.Activity%601.Result%2A> 的 <xref:System.Activities.DynamicActivity%601> 自变量。  
   
  [!code-csharp[CFX_WorkflowApplicationExample#55](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#55)]  
   

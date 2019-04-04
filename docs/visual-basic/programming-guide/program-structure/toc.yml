@@ -1,0 +1,16 @@
+items:
+- name: 代码中的注释
+  href: comments-in-code.md
+  items:
+  - name: 使用 XML 记录代码
+    href: documenting-your-code-with-xml.md
+  - name: 处理 .xml 文件
+    href: processing-the-xml-file.md
+  - name: 如何：创建 XML 文档
+    href: how-to-create-xml-documentation.md
+ms.openlocfilehash: 9a5c821d3f3de1b47ab4be58835d2562a1228cf2
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468505"

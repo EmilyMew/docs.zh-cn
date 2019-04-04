@@ -6,12 +6,12 @@ helpviewer_keywords:
 - writing extension methods [Visual Basic]
 - extension methods [Visual Basic]
 ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
-ms.openlocfilehash: 019104956b21e527c0498c286d85da27abdc5695
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d6f8b85945bd400d1f4b54a50260d72c750add8b
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54576065"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58819100"
 ---
 # <a name="how-to-write-an-extension-method-visual-basic"></a>如何：编写扩展方法 (Visual Basic)
 扩展方法，可将方法添加到现有类。 可以调用扩展方法，就像该类的实例。  
@@ -82,6 +82,7 @@ End Module
  `Hello!!!!`  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Runtime.CompilerServices.ExtensionAttribute>
 - [扩展方法](./extension-methods.md)
 - [Module 语句](../../../../visual-basic/language-reference/statements/module-statement.md)

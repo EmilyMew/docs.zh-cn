@@ -1,19 +1,19 @@
 ---
-title: 演练：创建可访问的基于 Windows 的应用程序
+title: 演练：创建基于 Windows 的可访问应用程序
 ms.date: 03/30/2017
 helpviewer_keywords:
 - accessibility [Windows Forms], Windows applications
 - Windows applications [Windows Forms], accessibility
 - applications [Windows Forms], accessibility
 ms.assetid: 654c7f2f-1586-480b-9f12-9d9b8f5cc32b
-ms.openlocfilehash: b27203f46c1d89577825e40541d9789d3b9e17de
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 19ff49cfa465cce479a4fd5264c565cbb305c84f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57708270"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58823462"
 ---
-# <a name="walkthrough-creating-an-accessible-windows-based-application"></a>演练：创建可访问的基于 Windows 的应用程序
+# <a name="walkthrough-creating-an-accessible-windows-based-application"></a>演练：创建基于 Windows 的可访问应用程序
 创建具有辅助功能的应用程序具有重要的商业意义。 很多政府都有针对软件购买的辅助功能法规。 Certified for Windows 徽标包括辅助功能需求。 据估计，仅美国就有 3 千万居民（其中很多为潜在客户）受到软件辅助功能的影响。  
   
  此演练将针对 Certified for Windows 徽标的 5 项辅助功能需求。 根据这些要求，具有辅助功能的应用程序将：  
@@ -55,9 +55,9 @@ ms.locfileid: "57708270"
   
 -   确保任何描述 TextBox 控件的 Label 控件均按 Tab 顺序紧排在相应的 TextBox 控件之前。  
   
--   使用“&”字符将访问键添加到用户可能想要导航到的任何控件的 <xref:System.Windows.Forms.Control.Text%2A> 属性。  
+-   添加访问键，使用"&"字符到<xref:System.Windows.Forms.Control.Text%2A>用户可能想要导航到任何控件的属性。  
   
--   使用“&”字符将访问键添加到标签的 <xref:System.Windows.Forms.Control.Text%2A> 属性，此标签位于用户可能想要导航到的控件之前。 将标签的 <xref:System.Windows.Forms.Label.UseMnemonic%2A> 属性设置为 `true`，以便在用户按下访问键时将焦点设置到按 Tab 键顺序的下一控件。  
+-   添加访问键，使用"&"字符到<xref:System.Windows.Forms.Control.Text%2A>的标签位于用户可能想要导航到的控件之前的属性。 将标签的 <xref:System.Windows.Forms.Label.UseMnemonic%2A> 属性设置为 `true`，以便在用户按下访问键时将焦点设置到按 Tab 键顺序的下一控件。  
   
 -   将访问键添加到所有菜单项。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "57708270"
     |PictureBox|名称|徽标|  
     ||AccessibleDescription|一片比萨饼|  
     ||AccessibleName|公司徽标|  
-    ||Image|任何图标或位图|  
+    ||图像|任何图标或位图|  
     |Label|名称|companyLabel|  
     ||Text|美味比萨|  
     ||TabIndex|1|  
@@ -135,10 +135,12 @@ ms.locfileid: "57708270"
     |MenuItem|名称|fileCommands|  
     ||Text|文件(&F)|  
     |MenuItem|名称|exitApp|  
-    ||Text|退出(&X)|  
-  
-     ![比萨订购窗体](./media/vbpizzaorderform.gif "vbPizzaOrderForm")  
-窗体外观将类似于：  
+    ||Text|退出(&X)|
+    
+      你的窗体将类似于下图：
+    
+      ![使用名称文本框中，以及大小和浇头选择比萨订购窗体。](./media/walkthrough-creating-an-accessible-windows-based-application/visual-basic-pizza-order-form.gif)  
+
   
 ## <a name="supporting-high-contrast-mode"></a>支持高对比度模式  
  高对比度模式是一种 Windows 系统设置，它通过使用有益于视力受损用户的对比颜色和字体大小提高可读性。 <xref:System.Windows.Forms.SystemInformation.HighContrast%2A>提供属性以确定是否设置高对比度模式。  

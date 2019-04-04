@@ -9,12 +9,12 @@ helpviewer_keywords:
 - resources [Visual Basic], disposing
 - Using statement [Visual Basic]
 ms.assetid: 665d1580-dd54-4e96-a9a9-6be2a68948f1
-ms.openlocfilehash: 1cf0772bf4e9a77474849c59454617261475fa76
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: fe53ea58dc98a4de793fe9dad1c3ceeac71622fc
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56966081"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58843196"
 ---
 # <a name="using-statement-visual-basic"></a>Using 语句 (Visual Basic)
 声明的开头`Using`阻止并根据需要获取块控制的系统资源。  
@@ -110,6 +110,7 @@ End Try
  [!code-vb[VbVbalrStatements#50](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#50)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.IDisposable>
 - [Try...Catch...Finally 语句](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
 - [如何：释放系统资源](../../../visual-basic/programming-guide/language-features/control-flow/how-to-dispose-of-a-system-resource.md)

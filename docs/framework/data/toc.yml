@@ -1,0 +1,16 @@
+items:
+- name: 数据和建模
+  href: index.md
+  items:
+  - name: WCF 数据服务 4.5
+    href: wcf/
+  - name: ADO.NET
+    href: adonet/
+  - name: 事务处理
+    href: transactions/
+ms.openlocfilehash: c6e43c7118d1fa415fa676f803b247e37c7c725a
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58467960"

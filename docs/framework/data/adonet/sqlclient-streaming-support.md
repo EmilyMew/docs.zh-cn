@@ -74,8 +74,7 @@ SQL Server 和应用程序之间的流支持 (中的新增功能[!INCLUDE[net_v4
 
 <xref:System.Data.SqlClient.SqlParameter.SqlValue%2A> 可接受类型 <xref:System.Xml.XmlReader>、<xref:System.IO.TextReader> 和 <xref:System.IO.Stream> 的值。
 
-
-  <xref:System.Xml.XmlReader>、<xref:System.IO.TextReader> 和 <xref:System.IO.Stream> 对象将转移到由 <xref:System.Data.SqlClient.SqlParameter.Size%2A> 定义的值。
+<xref:System.Xml.XmlReader>、<xref:System.IO.TextReader> 和 <xref:System.IO.Stream> 对象将转移到由 <xref:System.Data.SqlClient.SqlParameter.Size%2A> 定义的值。
 
 ## <a name="sample----streaming-from-sql-server"></a>从 SQL Server 流式处理示例-
 

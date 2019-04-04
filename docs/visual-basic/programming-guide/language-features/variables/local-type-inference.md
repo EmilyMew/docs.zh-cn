@@ -12,12 +12,12 @@ helpviewer_keywords:
 - inference [Visual Basic]
 - type inference [Visual Basic]
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
-ms.openlocfilehash: 62f46f8f9691dd260e4a4c40c0ffccbce4c5beb7
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: e6214938262b987a1bae4a9ca1d5c945f8b7fe6e
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56973400"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58826816"
 ---
 # <a name="local-type-inference-visual-basic"></a>局部类型推理 (Visual Basic)
 使用 Visual Basic 编译器*类型推理*以确定未声明的局部变量的数据类型`As`子句。 编译器将推断变量的初始化表达式的类型的类型。 这使您无需显式声明一个类型，声明变量，如下面的示例中所示。 由于声明，而两者`num1`和`num2`强类型为整数。  
@@ -72,6 +72,7 @@ ms.locfileid: "56973400"
  有关详细信息，请参阅[Option Infer 语句](../../../../visual-basic/language-reference/statements/option-infer-statement.md)并[编译页，项目设计器 (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [匿名类型](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
 - [早期绑定和后期绑定](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
 - [For Each...Next 语句](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)

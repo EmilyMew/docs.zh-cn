@@ -1,0 +1,16 @@
+items:
+- name: 索引器
+  href: index.md
+  items:
+  - name: 使用索引器
+    href: using-indexers.md
+  - name: 接口中的索引器
+    href: indexers-in-interfaces.md
+  - name: 属性与索引器之间的比较
+    href: comparison-between-properties-and-indexers.md
+ms.openlocfilehash: 8f620f2864f6d4569bf4d999f437519551809067
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468009"

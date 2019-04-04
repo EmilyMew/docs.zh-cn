@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
 author: guardrex
 ms.author: mairaw
-ms.openlocfilehash: 232ad7527e65fd38fa471cccc917752aef766a88
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bfc2a916e37ac27d45746eb268912b3752f4d80f
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54628833"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58464432"
 ---
 # <a name="custom-element-for-singletagsectionhandler"></a>Singletagsectionhandler 的自定义元素
 
-在定义的自定义配置节中定义设置 <section> 元素，并使用<xref:System.Configuration.SingleTagSectionHandler>类。
+在定义的自定义配置节中定义设置\<部分 > 元素，并使用<xref:System.Configuration.SingleTagSectionHandler>类。
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
 &nbsp;&nbsp;*\<sectionName>*
@@ -40,7 +40,7 @@ ms.locfileid: "54628833"
 
 ## <a name="child-elements"></a>子元素
 
-无
+None
 
 ## <a name="remarks"></a>备注
 

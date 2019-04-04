@@ -8,12 +8,12 @@ helpviewer_keywords:
 - graphics [Windows Forms], managing state
 - graphics [Windows Forms], clipping
 ms.assetid: 6207cad1-7a34-4bd6-bfc1-db823ca7a73e
-ms.openlocfilehash: fc961b59dabc2f7f123b792e7e45a4ff3b535fc1
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: a0166d2ee5a16916fdc2ece95eaf130ebd2598d5
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57717617"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653777"
 ---
 # <a name="managing-the-state-of-a-graphics-object"></a>管理 Graphics 对象的状态
 <xref:System.Drawing.Graphics>类的核心是[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]。 若要绘制任何内容，您可以获得<xref:System.Drawing.Graphics>对象，设置其属性，并调用其方法<xref:System.Drawing.Graphics.DrawLine%2A>， <xref:System.Drawing.Graphics.DrawImage%2A>， <xref:System.Drawing.Graphics.DrawString%2A>，等等)。  
@@ -95,7 +95,7 @@ graphics.DrawEllipse(pen, 0, 0, 100, 50);
   
  下图显示了两个椭圆。 请注意，30 度旋转的坐标系统 （客户端区域的左上角） 来源，而不椭圆的中心。 另请注意钢笔的宽度为 1 的第二个椭圆意味着 1 像素的第一个椭圆和 1 毫米。  
   
- ![椭圆](./media/csgraphicsascon1.png "csgraphicsascon1")  
+ ![显示两个椭圆的图示： 旋转和笔的宽度。](./media/managing-the-state-of-a-graphics-object/set-rotation-pen-width-drawellipse-method.png)  
   
 ### <a name="clipping-region"></a>剪辑区域  
  一个<xref:System.Drawing.Graphics>对象维护应用于由，绘制的所有项的剪辑区域<xref:System.Drawing.Graphics>对象。 可以通过调用设置的剪辑区域<xref:System.Drawing.Graphics.SetClip%2A>方法。  
@@ -146,9 +146,9 @@ graphics.DrawLine(pen, 0, 30, 150, 160);
 graphics.DrawLine(pen, 40, 20, 190, 150);  
 ```  
   
- 下图显示了裁剪后的行。  
+ 下图显示了裁剪后的行：  
   
- ![有限的剪辑区域](./media/graphicsascon2.png "graphicsascon2")  
+ ![图，显示受限的剪辑区域。](./media/managing-the-state-of-a-graphics-object/set-clipping-region-setclip-method.png)  
   
 ## <a name="see-also"></a>请参阅
 - [Windows 窗体中的图形和绘制](graphics-and-drawing-in-windows-forms.md)

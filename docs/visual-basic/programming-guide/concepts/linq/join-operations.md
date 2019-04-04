@@ -2,12 +2,12 @@
 title: 联接操作 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 39ab4854-ac84-4738-9d0b-3cb79be84db4
-ms.openlocfilehash: 6113949986aafdcaa2afa55d0a56d8e2186811b7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c7bd81f729558c8ec41baacda99765eb2f862b29
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54527856"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411143"
 ---
 # <a name="join-operations-visual-basic"></a>联接操作 (Visual Basic)
 联接两个数据源就是将一个数据源中的对象与另一个数据源中具有相同公共属性的对象相关联。  
@@ -18,13 +18,13 @@ ms.locfileid: "54527856"
   
  下图显示了一个概念性视图，其中包含两个集合以及这两个集合中的包含在内部联接或左外部联接中的元素。  
   
- ![显示内部/外部的两个重叠圆圈。](../../../../csharp/programming-guide/concepts/linq/media/joincircles.png "JoinCircles")  
+ ![显示内部的两个重叠圆圈&#47;外部。](./media/join-operations/join-method-overlapping-circles.png)  
   
 ## <a name="methods"></a>方法  
   
 |方法名|描述|Visual Basic 查询表达式语法|详细信息|  
 |-----------------|-----------------|------------------------------------------|----------------------|  
-|联接|根据键选择器函数联接两个序列并提取值对。|`From x In …, y In … Where x.a = y.a`<br /><br /> - 或 -<br /><br /> `Join … [As …]In … On …`|<xref:System.Linq.Enumerable.Join%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Join%2A?displayProperty=nameWithType>|  
+|联接|根据键选择器函数联接两个序列并提取值对。|`From x In …, y In … Where x.a = y.a`<br /><br /> 或<br /><br /> `Join … [As …]In … On …`|<xref:System.Linq.Enumerable.Join%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Join%2A?displayProperty=nameWithType>|  
 |GroupJoin|根据键选择器函数联接两个序列，并对每个元素的结果匹配项进行分组。|`Group Join … In … On …`|<xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupJoin%2A?displayProperty=nameWithType>|  
   
 ## <a name="see-also"></a>请参阅

@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - application management [WPF]
 ms.assetid: 32b1c054-5aca-423b-b4b5-ed8dc4dc637d
-ms.openlocfilehash: ef9771f44ce5bc61787f2060469d7a0b244e96b7
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 395077b7c82ee54a51b8086df0c59f731e3a2b70
+ms.sourcegitcommit: d938c39afb9216db377d0f0ecdaa53936a851059
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57356502"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58634214"
 ---
 # <a name="application-management-overview"></a>应用程序管理概述
 所有应用程序都可能会共享一组适用于实现和管理应用程序的常见功能。 本主题概述中的功能的<xref:System.Windows.Application>类用于创建和管理应用程序。  
@@ -323,7 +323,7 @@ ms.locfileid: "57356502"
 ### <a name="unhandled-exceptions"></a>未经处理的异常  
  有时，应用程序可能会在异常条件下关闭，如引发意外异常时。 在这种情况下，应用程序可能没有可用于检测和处理异常的代码。 这类异常就是未经处理的异常；应用程序会在关闭之前显示一个与下图所示内容类似的通知。  
   
- ![未经处理的异常的相关通知](./media/applicationmanagementoverviewfigure2.png "ApplicationManagementOverviewFigure2")  
+ ![显示未处理的异常通知的屏幕截图。](./media/application-management-overview/unhandled-exception-notification.png)  
   
  从用户体验的角度来看，应用程序最好通过执行以下部分或全部操作来避免这种默认行为：  
   

@@ -2,12 +2,12 @@
 title: 迭代器 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: f26b5c1e-fe9d-4004-b287-da7919d717ae
-ms.openlocfilehash: 0e090106dbedbeb9fb0d6c272deb0299ca5fac56
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 313ce0c79a71af1b602ecd4ccc9bd0ebceb5696e
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57359115"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58820826"
 ---
 # <a name="iterators-visual-basic"></a>迭代器 (Visual Basic)
 迭代器可用于逐步迭代集合，例如列表和数组。  
@@ -445,6 +445,7 @@ End Class
 -   在迭代器中封装生成列表。 使用迭代器方法，可生成该列表，然后在循环中产出每个结果。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [For Each...Next 语句](../../../visual-basic/language-reference/statements/for-each-next-statement.md)

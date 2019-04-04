@@ -5,12 +5,12 @@ helpviewer_keywords:
 - lambda expressions [Visual Basic]
 - expressions [Visual Basic], lambda
 ms.assetid: 3279bd5c-80f7-410a-a7ba-f7085ed36aa5
-ms.openlocfilehash: 35df64848c0506a1c0a97bd8cd34f158f9febcd7
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 8754049e493ab23b1e7b01d0f315b00bdebf0378
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56970163"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58841415"
 ---
 # <a name="how-to-create-a-lambda-expression-visual-basic"></a>如何：创建一个 Lambda 表达式 (Visual Basic)
 一个*lambda 表达式*是函数或不具有名称的子例程。 委托类型有效的任何地方，可以使用 lambda 表达式。  
@@ -105,6 +105,7 @@ ms.locfileid: "56970163"
  [!code-vb[VbVbalrLambdas#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class5.vb#11)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Linq.Enumerable>
 - [Lambda 表达式](./lambda-expressions.md)
 - [Function 语句](../../../../visual-basic/language-reference/statements/function-statement.md)

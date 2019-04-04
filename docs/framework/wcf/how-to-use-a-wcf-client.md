@@ -1,34 +1,38 @@
 ---
-title: 如何：使用 Windows Communication Foundation 客户端
-ms.date: 09/14/2018
+title: 教程：使用 Windows Communication Foundation 客户端
+ms.date: 03/19/2019
 helpviewer_keywords:
 - WCF clients [WCF], using
 dev_langs:
 - CSharp
 - VB
 ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
-ms.openlocfilehash: 780a51e3e0f61f292c997202614e43a85dd90820
-ms.sourcegitcommit: a532e8314c3a4b5b039656567fedff9787a31957
+ms.openlocfilehash: 4d883277f795ea84c59aee91ffcb9b9802b0933b
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57250918"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411715"
 ---
-# <a name="how-to-use-a-windows-communication-foundation-client"></a>如何：使用 Windows Communication Foundation 客户端
+# <a name="tutorial-use-a-windows-communication-foundation-client"></a>教程：使用 Windows Communication Foundation 客户端
 
-这是创建基本 Windows Communication Foundation (WCF) 应用程序所需的六项任务的最后一个。 有关全部六项任务的概述，请参阅[入门教程](../../../docs/framework/wcf/getting-started-tutorial.md)主题。
+本教程介绍了五个任务创建一个基本的 Windows Communication Foundation (WCF) 应用程序所需的最后一个。 有关教程的概述，请参阅[教程：开始使用 Windows Communication Foundation 应用程序](getting-started-tutorial.md)。
 
-一旦创建并配置 Windows Communication Foundation (WCF) 代理，可以创建一个客户端实例和可以编译客户端应用程序，并将其用于与 WCF 服务进行通信。 本主题介绍用于实例化和使用 WCF 客户端的过程。 此过程执行三项操作：
+已创建并配置 Windows Communication Foundation (WCF) 代理后，创建客户端实例，并编译客户端应用程序。 然后将它与 WCF 服务进行通信。 
 
-1.  实例化 WCF 客户端。
+在本教程中，你将了解：
+> [!div class="checklist"]
+> - 添加代码以使用 WCF 客户端。
+> - 测试 WCF 客户端。
 
-2.  从生成的代理调用服务操作。
+## <a name="add-code-to-use-the-wcf-client"></a>添加代码以使用 WCF 客户端
 
-3.  在完成操作调用后关闭客户端。
+客户端代码执行以下步骤操作：
+- 实例化 WCF 客户端。
+- 从生成的代理调用服务操作。
+- 完成操作调用后关闭客户端。
 
-## <a name="use-a-windows-communication-foundation-client"></a>使用 Windows Communication Foundation 客户端
-
-打开 GettingStartedClient 项目中的 Program.cs 或 program.vb 文件，然后将现有代码替换为以下代码：
+打开**Program.cs**或**Module1.vb**从文件**GettingStartedClient**项目，其代码替换为以下代码：
 
 ```csharp
 using System;
@@ -71,7 +75,9 @@ namespace GettingStartedClient
             result = client.Divide(value1, value2);
             Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result);
 
-            //Step 3: Closing the client gracefully closes the connection and cleans up resources.
+            // Step 3: Close the client to gracefully close the connection and clean up resources.
+            Console.WriteLine("\nPress <Enter> to terminate the client.");
+            Console.ReadLine();
             client.Close();
         }
     }
@@ -83,89 +89,108 @@ Imports System
 Imports System.Collections.Generic
 Imports System.Text
 Imports System.ServiceModel
-Imports GettingStartedClientVB2.ServiceReference1
+Imports GettingStartedClient.ServiceReference1
 
 Module Module1
 
     Sub Main()
-        ' Step 1: Create an instance of the WCF proxy
+        ' Step 1: Create an instance of the WCF proxy.
         Dim Client As New CalculatorClient()
 
-        'Step 2: Call the service operations.
-        'Call the Add service operation.
+        ' Step 2: Call the service operations.
+        ' Call the Add service operation.
         Dim value1 As Double = 100D
         Dim value2 As Double = 15.99D
         Dim result As Double = Client.Add(value1, value2)
         Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)
 
-        'Call the Subtract service operation.
+        ' Call the Subtract service operation.
         value1 = 145D
         value2 = 76.54D
         result = Client.Subtract(value1, value2)
         Console.WriteLine("Subtract({0},{1}) = {2}", value1, value2, result)
 
-        'Call the Multiply service operation.
+        ' Call the Multiply service operation.
         value1 = 9D
         value2 = 81.25D
         result = Client.Multiply(value1, value2)
         Console.WriteLine("Multiply({0},{1}) = {2}", value1, value2, result)
 
-        'Call the Divide service operation.
+        ' Call the Divide service operation.
         value1 = 22D
         value2 = 7D
         result = Client.Divide(value1, value2)
         Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result)
 
-        ' Step 3: Closing the client gracefully closes the connection and cleans up resources.
-        Client.Close()
-
+        ' Step 3: Close the client to gracefully close the connection and clean up resources.
         Console.WriteLine()
-        Console.WriteLine("Press <ENTER> to terminate client.")
+        Console.WriteLine("Press <Enter> to terminate the client.")
         Console.ReadLine()
+        Client.Close()
 
     End Sub
 
 End Module
 ```
 
-请注意`using`或`Imports`导入语句`GettingStartedClient.ServiceReference1`。 这将生成的代码导入**添加服务引用**Visual Studio 中。 该代码实例化 WCF 代理然后调用由计算器服务公开的服务操作的每个，关闭代理，并终止。
+请注意`using`(视觉对象C#) 或`Imports`（对于 Visual Basic) 语句导入`GettingStartedClient.ServiceReference1`。 此语句将导入 Visual Studio 使用生成的代码**添加服务引用**函数。 该代码实例化 WCF 代理，并调用每个计算器服务公开的服务操作。 然后，关闭代理并结束程序。
 
-现在，您已经完成了教程。 您定义了服务协定、实现了服务协定、生成了 WCF 代理、配置了 WCF 客户端应用程序，然后使用代理调用了服务操作。 若要测试应用程序，首先运行 GettingStartedHost 以启动服务，然后运行 GettingStartedClient。
+## <a name="test-the-wcf-client"></a>测试 WCF 客户端
 
-GettingStartedHost 的输出应类似于：
+### <a name="test-the-application-from-visual-studio"></a>测试从 Visual Studio 应用程序
 
-```text
-The service is ready.
-Press <ENTER> to terminate service.
+1. 保存并生成解决方案。
 
-Received Add(100,15.99)
-Return: 115.99
-Received Subtract(145,76.54)
-Return: 68.46
-Received Multiply(9,81.25)
-Return: 731.25
-Received Divide(22,7)
-Return: 3.14285714285714
-```
+2. 选择**GettingStartedLib**文件夹，，然后选择**设为启动项目**从快捷菜单。
 
-GettingStartedClient 的输出应类似于：
+3. 从**启动项目**，选择**GettingStartedLib**从下拉列表中，然后选择**运行**或按**F5**。
 
-```text
-Add(100,15.99) = 115.99
-Subtract(145,76.54) = 68.46
-Multiply(9,81.25) = 731.25
-Divide(22,7) = 3.14285714285714
+### <a name="test-the-application-from-a-command-prompt"></a>测试应用程序从命令提示符
 
-Press <ENTER> to terminate client.
-```
+1. 打开命令提示符以管理员身份，，然后导航到你的 Visual Studio 解决方案目录。 
 
-## <a name="see-also"></a>请参阅
+2. 若要启动服务：输入*GettingStartedHost\bin\Debug\GettingStartedHost.exe*。
 
-- [生成客户端](../../../docs/framework/wcf/building-clients.md)
-- [如何：创建客户端](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
-- [入门教程](../../../docs/framework/wcf/getting-started-tutorial.md)
-- [基本 WCF 编程](../../../docs/framework/wcf/basic-wcf-programming.md)
-- [如何：创建双工协定](../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
-- [如何：使用双工协定访问服务](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
-- [入门](../../../docs/framework/wcf/samples/getting-started-sample.md)
-- [自承载](../../../docs/framework/wcf/samples/self-host.md)
+3. 若要启动客户端：打开另一个命令提示符，导航到 Visual Studio 解决方案目录，然后输入*GettingStartedClient\bin\Debug\GettingStartedClient.exe*。
+
+   *GettingStartedHost.exe*生成以下输出：
+
+   ```text
+   The service is ready.
+   Press <Enter> to terminate the service.
+
+   Received Add(100,15.99)
+   Return: 115.99
+   Received Subtract(145,76.54)
+   Return: 68.46
+   Received Multiply(9,81.25)
+   Return: 731.25
+   Received Divide(22,7)
+   Return: 3.14285714285714
+   ```
+
+   *GettingStartedClient.exe*生成以下输出：
+
+   ```text
+   Add(100,15.99) = 115.99
+   Subtract(145,76.54) = 68.46
+   Multiply(9,81.25) = 731.25
+   Divide(22,7) = 3.14285714285714
+
+   Press <Enter> to terminate the client.
+   ```
+
+## <a name="next-steps"></a>后续步骤
+
+现在已在 WCF 入门教程中完成所有任务。 在本教程中，你将了解：
+
+在本教程中，你将了解：
+> [!div class="checklist"]
+> - 添加代码以使用 WCF 客户端。
+> - 测试 WCF 客户端。
+
+如果您有问题或错误中的任何步骤，按照要解决这些问题的故障排除文章中的步骤。
+
+> [!div class="nextstepaction"]
+> [排查 Get 开始使用 WCF 教程](troubleshooting-the-getting-started-tutorial.md)
+

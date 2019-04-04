@@ -10,12 +10,12 @@ helpviewer_keywords:
 - XML child axis property [Visual Basic]
 - XML [Visual Basic], accessing
 ms.assetid: 89a59d00-985e-4f5c-b59f-29b47bad11cb
-ms.openlocfilehash: f8c0ab8f52e5819f799d21f7e23eb83684144605
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 8f8283e7ed09e657a20addab0b203b3d99420d3a
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56964445"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58838803"
 ---
 # <a name="xml-child-axis-property-visual-basic"></a>XML 子轴属性 (Visual Basic)
 提供对以下一项的子级的访问：<xref:System.Xml.Linq.XElement> 对象、<xref:System.Xml.Linq.XDocument> 对象、<xref:System.Xml.Linq.XElement> 对象的集合或 <xref:System.Xml.Linq.XDocument> 对象的集合。  
@@ -30,8 +30,7 @@ object.<child>
   
 |术语|定义|  
 |---|---|  
-|`object`|必需。 
-  <xref:System.Xml.Linq.XElement> 对象、<xref:System.Xml.Linq.XDocument> 对象、<xref:System.Xml.Linq.XElement> 对象的集合或 <xref:System.Xml.Linq.XDocument> 对象的集合。|  
+|`object`|必需。 <xref:System.Xml.Linq.XElement> 对象、<xref:System.Xml.Linq.XDocument> 对象、<xref:System.Xml.Linq.XElement> 对象的集合或 <xref:System.Xml.Linq.XDocument> 对象的集合。|  
 |.<|必需。 表示子轴属性的开头。|  
 |`child`|必需。 若要访问，窗体的子节点的名称 [`prefix:]name`。<br /><br /> -   `Prefix` -可选。 子节点的 XML 命名空间前缀。 必须是使用 `Imports` 语句定义的全局 XML 命名空间。<br />-   `Name` 必需。 本地子节点名。 请参阅[声明的 XML 元素和特性的名称](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)。|  
 |>|必需。 表示子轴属性的结尾。|  
@@ -75,6 +74,7 @@ object.<child>
  `Patrick Hines`  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Xml.Linq.XElement>
 - [XML 轴属性](../../../visual-basic/language-reference/xml-axis/index.md)
 - [XML 文本](../../../visual-basic/language-reference/xml-literals/index.md)

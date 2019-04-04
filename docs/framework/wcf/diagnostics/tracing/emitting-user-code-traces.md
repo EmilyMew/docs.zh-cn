@@ -2,12 +2,12 @@
 title: 发出用户代码跟踪
 ms.date: 03/30/2017
 ms.assetid: fa54186a-8ffa-4332-b0e7-63867126fd49
-ms.openlocfilehash: 5ecc0c2110362f715275729b5e4c4c7e1ec03496
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: eadfe1a77f815f904fb54b8bab51440f3d9f5532
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54492659"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58831769"
 ---
 # <a name="emitting-user-code-traces"></a>发出用户代码跟踪
 除了启用跟踪以收集检测数据生成由 Windows Communication Foundation (WCF)，您还可以发出以编程方式在用户代码中的跟踪。 这样，您就可以主动创建检测数据，过后您可以细读这些数据以进行诊断。 本主题讨论如何实现这一目的。  
@@ -15,7 +15,7 @@ ms.locfileid: "54492659"
  此外，[扩展跟踪](../../../../../docs/framework/wcf/samples/extending-tracing.md)示例包含演示以下各节中的所有代码。  
   
 ## <a name="creating-a-trace-source"></a>创建跟踪源  
- 您可以使用下列代码创建用户跟踪源。  
+ 你可以使用下列代码创建用户跟踪源。  
   
 ```csharp
 TraceSource ts = new TraceSource("myUserTraceSource");  
@@ -94,7 +94,7 @@ ts.TraceEvent(TraceEventType.Stop, 0, "Add Activity");
 ```  
   
 ## <a name="tracing-exceptions-thrown-in-code"></a>跟踪代码中引发的异常  
- 当您引发代码中的异常时，您还可以使用下面的代码跟踪“警告”级别或更高级别的异常。  
+ 当你引发代码中的异常时，你还可以使用下面的代码跟踪“警告”级别或更高级别的异常。  
   
 ```csharp
 ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessage");  
@@ -126,19 +126,21 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
  ![跟踪查看器：发出用户&#45;代码跟踪](../../../../../docs/framework/wcf/diagnostics/tracing/media/242c9358-475a-4baf-83f3-4227aa942fcd.gif "242c9358-475a-4baf-83f3-4227aa942fcd")  
 按创建时间（左面板）及其嵌套活动（右上面板）排列的活动列表  
   
- 如果活动代码引发的异常会导致客户端引发异常（例如，当客户端没有获得请求的响应时），将在同一个直接相关的活动中显示服务和客户端警告或错误消息。 在下图中，该服务会引发一个异常，指示"服务拒绝处理在用户代码中的此请求。" 客户端还会引发一个异常，指示"服务器无法处理请求，因为出现内部错误。"  
+ 如果活动代码引发的异常会导致客户端引发异常（例如，当客户端没有获得请求的响应时），将在同一个直接相关的活动中显示服务和客户端警告或错误消息。 在下图中，该服务会引发一个异常，指示"服务拒绝处理在用户代码中的此请求。" 客户端还会引发一个异常，指示"服务器无法处理请求，因为出现内部错误。"
+ 
+ 下图显示了针对给定请求的终结点之间的错误出现在相同活动中，是否传播了请求活动 id:       
   
- ![使用跟踪查看器来发出用户&#45;代码跟踪](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace2.gif "e2eTrace2")  
-如果传播了请求活动 ID，给定请求的各终结点上的错误将显示在同一个活动中  
+ ![在给定请求的终结点之间显示的错误的屏幕截图。](./media/emitting-user-code-traces/trace-viewer-endpoint-errors.gif)  
   
- 在左面板上双击“乘”活动将显示下图，图中包含所涉及的每个进程的“乘”活动中的跟踪。 我们首先会看到服务上发生了一个警告（引发的异常），随后因无法处理请求而在客户端上显示警告和错误。 因此，我们可以由此获知终结点之间存在因果错误关系并推理出错误的根本原因。  
+ 在左面板上双击“乘”活动将显示下图，图中包含所涉及的每个进程的“乘”活动中的跟踪。 我们首先会看到服务上发生了一个警告（引发的异常），随后因无法处理请求而在客户端上显示警告和错误。 因此，我们可以由此获知终结点之间存在因果错误关系并推理出错误的根源。 
+
+ 下图显示错误关联的关系图的视图：    
   
- ![使用跟踪查看器来发出用户&#45;代码跟踪](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace3.gif "e2eTrace3")  
-错误关联的图形视图  
+ ![显示错误关联的图形视图的屏幕截图。](./media/emitting-user-code-traces/trace-viewer-error-correlation.gif)  
   
  若要获取之前的跟踪，我们为用户跟踪源设置 `ActivityTracing` 并为 `propagateActivity=true` 跟踪源设置 `System.ServiceModel`。 我们没有为 `ActivityTracing` 跟踪源设置 `System.ServiceModel`，以便实现用户代码活动之间的传播。 （当 ServiceModel 活动跟踪时，客户端中定义的活动 ID 不会传播到服务用户代码;传输，但是，将相关联的客户端和服务的用户代码活动与中间的 WCF 活动。）  
   
- 定义活动和传播活动 ID 使得我们可以对各终结点执行直接错误关联。 这样，我们就可以更快地找到错误的根本原因。  
+ 定义活动和传播活动 ID 使得我们可以对各终结点执行直接错误关联。 这样，我们就可以更快地找到错误的根源。  
   
 ## <a name="see-also"></a>请参阅
 - [扩展跟踪](../../../../../docs/framework/wcf/samples/extending-tracing.md)

@@ -15,12 +15,10 @@ ms.lasthandoff: 03/09/2019
 ms.locfileid: "57724457"
 ---
 # <a name="bindingsource-component-overview"></a>BindingSource 组件概述
-
-  <xref:System.Windows.Forms.BindingSource> 组件旨在简化将控件绑定到基础数据源的过程。 <xref:System.Windows.Forms.BindingSource> 组件同时充当管道和其他控件可以绑定的数据源。 将命令传递到基础数据列表时，它提供窗体数据连接的抽象。 此外，可以直接向其添加数据，以便组件本身可用作数据源。  
+<xref:System.Windows.Forms.BindingSource> 组件旨在简化将控件绑定到基础数据源的过程。 <xref:System.Windows.Forms.BindingSource> 组件同时充当管道和其他控件可以绑定的数据源。 将命令传递到基础数据列表时，它提供窗体数据连接的抽象。 此外，可以直接向其添加数据，以便组件本身可用作数据源。  
   
 ## <a name="bindingsource-component-as-an-intermediary"></a>作为中介的 BindingSource 组件  
- 
-  <xref:System.Windows.Forms.BindingSource> 组件为窗体上的某些或全部控件充当数据源。 在 Visual Studio 中，<xref:System.Windows.Forms.BindingSource>可以绑定到通过控件`DataBindings`属性，它是从可访问**属性**窗口。 另请参阅[如何：将 Windows 窗体控件与 BindingSource 组件使用设计器绑定](bind-wf-controls-with-the-bindingsource.md)。  
+ <xref:System.Windows.Forms.BindingSource> 组件为窗体上的某些或全部控件充当数据源。 在 Visual Studio 中，<xref:System.Windows.Forms.BindingSource>可以绑定到通过控件`DataBindings`属性，它是从可访问**属性**窗口。 另请参阅[如何：将 Windows 窗体控件与 BindingSource 组件使用设计器绑定](bind-wf-controls-with-the-bindingsource.md)。  
   
  可以将 <xref:System.Windows.Forms.BindingSource> 组件同时绑定到两个简单的数据源（如一个对象或一个基本集合（如 <xref:System.Collections.ArrayList>）的单个属性）和复杂的数据源（如数据库表）。 <xref:System.Windows.Forms.BindingSource> 组件充当提供绑定和货币管理服务的中介。 在设计时或运行时中，通过将 <xref:System.Windows.Forms.BindingSource> 组件的 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 和 <xref:System.Windows.Forms.BindingSource.DataMember%2A> 属性分别设置为数据库和表，可将其绑定到复杂的数据源。 下图演示 <xref:System.Windows.Forms.BindingSource> 组件在何处能够融入现有的绑定数据的体系结构。  
   

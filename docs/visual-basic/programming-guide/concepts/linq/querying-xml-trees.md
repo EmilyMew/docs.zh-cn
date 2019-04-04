@@ -2,12 +2,12 @@
 title: 查询 XML 树 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 2e35c1ab-08c8-4378-9ca8-8ff344756eda
-ms.openlocfilehash: bb0024a6cfb93be5f1f78f33ad29c22f3400de48
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0d3855a562ce5ec43b28fba21b2ab4db0583a2d3
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54671377"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58839621"
 ---
 # <a name="querying-xml-trees-visual-basic"></a>查询 XML 树 (Visual Basic)
 本节提供 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 查询的示例。  
@@ -27,5 +27,6 @@ ms.locfileid: "54671377"
 |[XML (Visual Basic 中) 的纯功能转换](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)|提供以函数编程样式编写查询的小型教程。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [编程指南 (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
 - [Visual Basic 中的 LINQ 入门](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)

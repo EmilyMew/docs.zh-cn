@@ -154,8 +154,7 @@ ms.locfileid: "57846462"
   
 <a name="Types"></a>   
 ### <a name="types-and-type-member-signatures"></a>类型和类型成员签名  
- 
-  <xref:System.Object?displayProperty=nameWithType> 类型符合 CLS，并且是 .NET Framework 类型系统中所有对象类型的基础类型。 .NET Framework 中的继承要么是隐式的（例如，<xref:System.String> 类从 <xref:System.Object> 类隐式继承），要么是显式的（例如，<xref:System.Globalization.CultureNotFoundException> 类从 <xref:System.ArgumentException> 类显式继承，其中后者从 <xref:System.SystemException> 类显式继承，而该类又从 <xref:System.Exception> 类显式继承）。 对于要符合 CLS 的派生类型，其基本类型也必须符合 CLS。  
+ <xref:System.Object?displayProperty=nameWithType> 类型符合 CLS，并且是 .NET Framework 类型系统中所有对象类型的基础类型。 .NET Framework 中的继承要么是隐式的（例如，<xref:System.String> 类从 <xref:System.Object> 类隐式继承），要么是显式的（例如，<xref:System.Globalization.CultureNotFoundException> 类从 <xref:System.ArgumentException> 类显式继承，其中后者从 <xref:System.SystemException> 类显式继承，而该类又从 <xref:System.Exception> 类显式继承）。 对于要符合 CLS 的派生类型，其基本类型也必须符合 CLS。  
   
  下面的示例显示基本类型不符合 CLS 的派生类型。 它定义使用无符号 32 位整数作为计数器的基本 `Counter` 类。 由于类通过对无符号整数进行换行来提供计数器功能，因此类标记为不符合 CLS。 因此，派生类 `NonZeroCounter` 也不符合 CLS。  
   
@@ -495,9 +494,7 @@ ms.locfileid: "57846462"
   
 <a name="CLSAttribute"></a>   
 ## <a name="the-clscompliantattribute-attribute"></a>CLSCompliantAttribute 特性  
- 
-  <xref:System.CLSCompliantAttribute> 特性用于指示程序元素是否使用公共语言规范进行编译。 
-  <xref:System.CLSCompliantAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> 构造函数包含一个所需参数（`isCompliant`），此参数指示该程序元素是否符合 CLS。  
+ <xref:System.CLSCompliantAttribute> 特性用于指示程序元素是否使用公共语言规范进行编译。 <xref:System.CLSCompliantAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> 构造函数包含一个所需参数（`isCompliant`），此参数指示该程序元素是否符合 CLS。  
   
  编译时，编译器检测到假定为符合 CLS 的不合规元素，并发出警告。 编译器不会对显式声明为不符合标准的类型或成员发出警告。  
   
@@ -510,8 +507,7 @@ ms.locfileid: "57846462"
 > [!WARNING]
 >  在某些情况下，语言编译器执行符合 CLS 的规则，而不管是否使用 <xref:System.CLSCompliantAttribute> 特性。 例如，在接口中定义静态成员会违反 CLS 规则。 就这一点而言，如果在接口中定义 `static`（在 C# 中）或 `Shared`（在 Visual Basic 中）成员，C# 和 Visual Basic 编译器都会显示错误消息，且无法编译应用。  
   
- 
-  <xref:System.CLSCompliantAttribute> 特性标记为具有 <xref:System.AttributeUsageAttribute> 值的 <xref:System.AttributeTargets.All?displayProperty=nameWithType> 特性。 利用此值，您可以将 <xref:System.CLSCompliantAttribute> 特性应用于任何程序元素，包括程序集、模块、类型（类、结构、枚举、接口和委托）、类型成员（构造函数、方法、属性、字段和事件）、参数、泛型参数和返回值。 但实际上，您只应将该特性应用于程序集、类型和类型成员。 否则，编译器在库的公共接口中遇到不符合标准的参数、泛型参数或返回值时，将忽略此特性并继续生成编译器警告。  
+ <xref:System.CLSCompliantAttribute> 特性标记为具有 <xref:System.AttributeUsageAttribute> 值的 <xref:System.AttributeTargets.All?displayProperty=nameWithType> 特性。 利用此值，您可以将 <xref:System.CLSCompliantAttribute> 特性应用于任何程序元素，包括程序集、模块、类型（类、结构、枚举、接口和委托）、类型成员（构造函数、方法、属性、字段和事件）、参数、泛型参数和返回值。 但实际上，您只应将该特性应用于程序集、类型和类型成员。 否则，编译器在库的公共接口中遇到不符合标准的参数、泛型参数或返回值时，将忽略此特性并继续生成编译器警告。  
   
  <xref:System.CLSCompliantAttribute> 特性的值由包含的程序元素继承。 例如，如果程序集标记为符合 CLS，则其类型也符合 CLS。 如果类型标记为符合 CLS，则其嵌套的类型和成员也符合 CLS。  
   

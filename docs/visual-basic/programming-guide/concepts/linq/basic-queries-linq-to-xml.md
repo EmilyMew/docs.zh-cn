@@ -2,12 +2,12 @@
 title: 基本查询 (LINQ to XML) (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: aec6ef60-f6f4-4548-b3db-cf6c94bb0008
-ms.openlocfilehash: c0f1d34360b0336109cb2ba9471274e061deffca
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9f4a0508fddd5140ff2cc8f82f9c613a66b2d7ca
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54650806"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821387"
 ---
 # <a name="basic-queries-linq-to-xml-visual-basic"></a>基本查询 (LINQ to XML) (Visual Basic)
 本节提供基本 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 查询的示例。  
@@ -31,4 +31,5 @@ ms.locfileid: "54650806"
 |[如何：调试空查询结果集 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md)|显示在对针对默认命名空间中 XML 的查询进行调试时相应的修补程序。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [查询 XML 树 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)

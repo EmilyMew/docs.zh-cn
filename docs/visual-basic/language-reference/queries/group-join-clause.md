@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Group Join statement [Visual Basic]
 - queries [Visual Basic], Group Join
 ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
-ms.openlocfilehash: 32f16d7f52665182dd82966693baa50ac9551f87
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 3da4ca2db299a65b2c0f1fa259bbaabe4f53aa33
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56972945"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821942"
 ---
 # <a name="group-join-clause-visual-basic"></a>Group Join 子句 (Visual Basic)
 将两个集合合并为单个分层集合。 联接运算基于匹配键。  
@@ -56,6 +56,7 @@ Group Join element [As type] In collection _
  [!code-vb[VbSimpleQuerySamples#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#14)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 中的 LINQ 简介](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](../../../visual-basic/language-reference/queries/index.md)
 - [Select 子句](../../../visual-basic/language-reference/queries/select-clause.md)

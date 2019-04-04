@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32053
 ms.assetid: 281564b7-99f7-451f-b10d-f985e831bb25
-ms.openlocfilehash: c5d427495e8eedae9dc0163c97401338fb6d0bbd
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: fa8607bf72dfb344048ec82514182dcb6810274d
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55276609"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58817149"
 ---
 # <a name="copying-the-value-of-byref-parameter-parametername-back-to-the-matching-argument-narrows-from-type-typename1-to-type-typename2"></a>复制的 ByRef 参数值\<parametername > 返回到匹配的参数用于限制从类型\<typename1 > 类型\<typename2 >
 加宽到相应的参数类型，由自变量调用过程时，从参数的参数转换为收缩转换。  
@@ -34,6 +34,7 @@ ms.locfileid: "55276609"
 -   如果你需要将值返回到调用的参数，定义反向转换运算符用作[Widening](../../../visual-basic/language-reference/modifiers/widening.md)如有可能。  
   
 ## <a name="see-also"></a>请参阅
+
 - [过程](../../../visual-basic/programming-guide/language-features/procedures/index.md)
 - [过程参数和自变量](../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)
 - [按值和按引用传递自变量](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

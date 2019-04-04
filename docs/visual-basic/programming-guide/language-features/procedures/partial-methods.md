@@ -11,12 +11,12 @@ helpviewer_keywords:
 - methods [Visual Basic], partial methods
 - inserting custom logic into code
 ms.assetid: 74b3368b-b348-44a0-a326-7d7dc646f4e9
-ms.openlocfilehash: 4b35985aa67cea7b58ddf05611cf4e0813a2d442
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 765a667f18340c53909c3ff1e9fcc5f2ffc0f9bc
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56977456"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58837463"
 ---
 # <a name="partial-methods-visual-basic"></a>分部方法 (Visual Basic)
 分部方法使开发人员能够将自定义逻辑插入到代码。 通常情况下，代码是类的一个设计器生成的一部分。 分部方法中创建的代码生成器的分部类定义和它们通常用于提供的内容已更改的通知。 它们使开发人员指定自定义行为响应更改。  
@@ -71,6 +71,7 @@ End Sub
  `Quantity was changed to 100`  
   
 ## <a name="see-also"></a>请参阅
+
 - [Sub 语句](../../../../visual-basic/language-reference/statements/sub-statement.md)
 - [Sub 过程](./sub-procedures.md)
 - [可选参数](./optional-parameters.md)

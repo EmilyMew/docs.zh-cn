@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 28116714-da77-45f7-826d-fa035d121948
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 27bbc1b382d962379a50fba4557e3f2a408d9bc4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2be1aad4d222917364a57abc93b414af40b1e9ae
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54649162"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675648"
 ---
 # <a name="assembly-contents"></a>程序集内容
 通常，静态程序集可能由以下四个元素组成：  
@@ -31,15 +31,13 @@ ms.locfileid: "54649162"
   
  程序集中的这些元素有分组几种方法。 您可以将所有元素分组到单个物理文件中，如下图所示。  
   
- ![MyAssembly.dll](../../../docs/framework/app-domains/media/assemblyover1.gif "assemblyover1")  
-单文件程序集  
+ ![显示名为 MyAssembly.dll 的单文件程序集的图表。](./media/assembly-contents/single-file-assembly.gif)  
   
  或者，可以将一个程序集的元素包含在几个文件中。 这些文件可以是应用程序所需的编译代码 (.netmodule)、资源（例如，.bmp 或 .jpg 文件）或其他文件的模块。 在您希望组合以不同语言编写的模块并优化应用程序的下载过程时，可创建一个多文件程序集，优化下载过程的方法是将很少使用的类型放入只在需要时才下载的模块中。  
   
  在下图中，一个假想应用程序的开发人员已选择将一些实用工具代码单独放入另一个模块中，同时在其原文件中保留一个较大的资源文件（在此例中为一个 .bmp 图像）。 .NET Framework 只在文件被引用时下载该文件；通过将很少引用的代码保留在独立于应用程序的文件中来优化代码下载。  
   
- ![MyAssembly.dll](../../../docs/framework/app-domains/media/assemblyover2.gif "assemblyover2")  
-多文件程序集  
+ ![显示多文件程序集的图表。](./media/assembly-contents/multifile-assembly-diagram.gif) 
   
 > [!NOTE]
 >  构成多文件程序集的那些文件实际上并非由文件系统来链接。 它们而是通过程序集清单进行链接，公共语言运行时将这些文件作为一个单元来管理。  

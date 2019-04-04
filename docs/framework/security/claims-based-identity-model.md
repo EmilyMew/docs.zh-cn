@@ -3,12 +3,12 @@ title: 基于声明的标识模型
 ms.date: 03/30/2017
 ms.assetid: 4a96a9af-d980-43be-bf91-341a23401431
 author: BrucePerlerMS
-ms.openlocfilehash: 7248cf51946d4bf798209c047ec2c7ed3bb04ebe
-ms.sourcegitcommit: fb78d8abbdb87144a3872cf154930157090dd933
+ms.openlocfilehash: 21ed5b7616b51109ef21ee91bdf93b2808e00715
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47197937"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58411729"
 ---
 # <a name="claims-based-identity-model"></a>基于声明的标识模型
 在生成声明感知应用程序时，用户标识在应用程序中表示为一组声明。 一个声明可能是用户的名称，另一个可能是电子邮件地址。 其理念是，配置外部标识系统以便为您的应用程序提供所需的一切，是其了解用户及用户发出的每个请求和加密，从而确保您收到的标识数据来自受信任的源。  
@@ -73,10 +73,10 @@ ms.locfileid: "47197937"
   
  此关系图显示一个已配置为使用 WIF 进行身份验证的网站（依赖方应用程序，RP）、一个客户端和一个要使用该网站的 Web 浏览器。  
   
-1.  当未经过身份验证的用户请求页时，其浏览器将重定向到标识提供程序 (IP) 页。  
+1.  在未经身份验证的用户请求页面时，其浏览器重定向到标识提供者 (IdP) 页。  
   
-2.  此 IP 要求用户提供其凭据，例如，用户名/密码、Kerberos 等。  
+2.  IdP 要求用户提供其凭据，例如用户名/密码或 Kerberos 身份验证。  
   
-3.  IP 会将令牌发送回已返回到浏览器的页。  
+3.  返回到的令牌返回到浏览器 IdP 问题。  
   
 4.  浏览器现在将重定向回最初请求的页，其中 WIF 将确定此令牌是否满足访问该页的要求。 如果是这样，则会发出一个 cookie 以建立会话，以便只需进行一次身份验证并将控制传递给应用程序。

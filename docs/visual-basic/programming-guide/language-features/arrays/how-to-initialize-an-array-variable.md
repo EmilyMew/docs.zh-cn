@@ -7,12 +7,12 @@ helpviewer_keywords:
 - arrays [Visual Basic], initializing
 - arrays [Visual Basic], declaring
 ms.assetid: aadd7a60-7ca4-4608-b986-091f19e7fc10
-ms.openlocfilehash: 069c03cc9666cffec2edd26afeb86f0230f9bc6f
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 4aa783d6179c72760a12d0259d587b5b38bb9140
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56980927"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58832237"
 ---
 # <a name="how-to-initialize-an-array-variable-in-visual-basic"></a>如何：初始化数组变量在 Visual Basic 中
 通过包括数组文本中初始化数组变量`New`子句并指定数组的初始值。 你可以指定的类型，或允许其从数组文本中的值推断出来。 有关如何推断出的类型的详细信息，请参阅"填充数组初始值"中[数组](../../../../visual-basic/programming-guide/language-features/arrays/index.md)。  
@@ -54,5 +54,6 @@ ms.locfileid: "56980927"
      [!code-vb[VbVbalrArrays#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#32)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [数组](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
 - [数组疑难解答](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)

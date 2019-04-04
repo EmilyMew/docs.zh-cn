@@ -13,8 +13,7 @@ ms.locfileid: "57844296"
 [!INCLUDE[arrowhead](../../../includes/arrowhead-md.md)] 是供客户端不需要整个框架的完整的.NET Framework 的轻量版本。 客户端框架并不支持 Windows Communication Foundation 的全部功能。  
   
 ## <a name="wcf-features-supported-by-the-net-framework-client-profile"></a>支持的.NET Framework Client Profile 的 WCF 功能  
- 
-  [!INCLUDE[arrowhead](../../../includes/arrowhead-md.md)] 支持以下 Windows Communication Foundation 功能：  
+ [!INCLUDE[arrowhead](../../../includes/arrowhead-md.md)] 支持以下 Windows Communication Foundation 功能：  
   
 -   支持除 Cardspace 和 Web 承载以外的所有 WCF 功能。  
   

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - operators [Visual Basic], Boolean
 - Visual Basic code, expressions
 ms.assetid: d3d90406-55c8-4404-8143-50fd7f0d0d1a
-ms.openlocfilehash: 065df7d6217dd6f817dee1d11dd0fd4a68b6323c
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: ce9146791935a488108d110134e9273507b0da6f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56965535"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58825529"
 ---
 # <a name="boolean-expressions-visual-basic"></a>布尔表达式 (Visual Basic)
 一个*布尔表达式*是表达式的计算结果为值[布尔数据类型](../../../../visual-basic/language-reference/data-types/boolean-data-type.md):`True`或`False`。 `Boolean` 表达式可以采用多种形式。 简单的方法是直接的值的比较`Boolean`变量`Boolean`文本，如下面的示例中所示。  
@@ -67,6 +67,7 @@ ms.locfileid: "56965535"
  可以使用括号来控制的布尔表达式计算顺序。 首先计算由括号括起来的表达式。 多个层级的嵌套，优先将授予嵌套最深的表达式。 在括号内，评估会继续按照运算符优先级规则。 有关详细信息，请参阅[在 Visual Basic 中的运算符优先级](../../../../visual-basic/language-reference/operators/operator-precedence.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 Visual Basic 中的逻辑和位运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
 - [值的比较](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)
 - [语句](../../../../visual-basic/programming-guide/language-features/statements.md)

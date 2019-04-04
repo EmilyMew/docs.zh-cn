@@ -14,8 +14,7 @@ ms.lasthandoff: 03/09/2019
 ms.locfileid: "57719450"
 ---
 # <a name="contextmenustrip-control"></a>ContextMenuStrip 控件
-
-  <xref:System.Windows.Forms.ContextMenuStrip> 控件提供与控件关联的快捷菜单。  
+<xref:System.Windows.Forms.ContextMenuStrip> 控件提供与控件关联的快捷菜单。  
   
 ## <a name="in-this-section"></a>本节内容  
  [ContextMenuStrip 控件概述](contextmenustrip-control-overview.md)  

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - DirectCast keyword [Visual Basic]
 ms.assetid: 63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8
-ms.openlocfilehash: 03e632bad538f65d010dfaa12f7eb5da15c11091
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 628ce4f06b91d0f514f71dea3aad8ea0fee6dccf
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56979822"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821499"
 ---
 # <a name="directcast-operator-visual-basic"></a>DirectCast 运算符 (Visual Basic)
 引入了基于继承或实现的类型转换运算。  
@@ -42,6 +42,7 @@ ms.locfileid: "56979822"
  在前面的示例中，运行时类型`q`是`Double`。 `CType` 会成功，因为`Double`可转换为`Integer`。 但是，第一个`DirectCast`在运行时失败，因为运行时类型的`Double`具有不到具有继承关系`Integer`，即使已存在的转换。 第二个`DirectCast`成功，因为它将从类型转换<xref:System.Windows.Forms.Form>键入<xref:System.Windows.Forms.Control>，从其<xref:System.Windows.Forms.Form>继承。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType>
 - [扩大转换和收缩转换](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
 - [隐式转换和显式转换](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

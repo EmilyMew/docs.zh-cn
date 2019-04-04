@@ -1,0 +1,52 @@
+items:
+- name: C# 编程指南
+  href: index.md
+  items:
+  - name: 在 C# 程序内部
+    href: inside-a-program/
+  - name: Main() 和命令行参数
+    href: main-and-command-args/
+  - name: 编程概念
+    href: concepts/
+  - name: 语句、表达式和运算符
+    href: statements-expressions-operators/
+  - name: 类型
+    href: types/
+  - name: 类和结构
+    href: classes-and-structs/
+  - name: 接口
+    href: interfaces/
+  - name: 枚举类型
+    href: enumeration-types.md
+  - name: 委托
+    href: delegates/index.md
+  - name: 数组
+    href: arrays/
+  - name: 字符串
+    href: strings/
+  - name: 索引器
+    href: indexers/
+  - name: 事件
+    href: events/
+  - name: 泛型
+    href: generics/
+  - name: 命名空间
+    href: namespaces/
+  - name: 可以为 null 的类型
+    href: nullable-types/
+  - name: 不安全代码和指针
+    href: unsafe-code-pointers/
+  - name: XML 文档注释
+    href: xmldoc/
+  - name: 异常和异常处理
+    href: exceptions/
+  - name: 文件系统和注册表
+    href: file-system/
+  - name: 互操作性
+    href: interop/
+ms.openlocfilehash: 735c939dd903ff7e713fc9870afeda99786f8e77
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468643"

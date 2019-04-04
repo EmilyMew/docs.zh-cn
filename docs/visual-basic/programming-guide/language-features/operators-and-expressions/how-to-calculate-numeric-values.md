@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual Basic code, expressions
 - numeric expressions
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
-ms.openlocfilehash: 036985a7b60afedc1e8ef0854c619ea8515e5ffe
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 33184d9be275f5e777ffd79c6dd4e3182d865de7
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56974297"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58825743"
 ---
 # <a name="how-to-calculate-numeric-values-visual-basic"></a>如何：计算数值 (Visual Basic)
 您可以计算通过使用数值表达式的数字值。 一个*数值表达式*会包含文本、 常量和变量表示数字值的表达式并处理这些值的运算符。  
@@ -63,6 +63,7 @@ ms.locfileid: "56974297"
      有关详细信息，请参阅[在 Visual Basic 中的运算符优先级](../../../../visual-basic/language-reference/operators/operator-precedence.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [运算符和表达式](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
 - [值的比较](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)
 - [语句](../../../../visual-basic/language-reference/statements/index.md)

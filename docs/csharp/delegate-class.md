@@ -3,12 +3,12 @@ title: System.Delegate 和 `delegate` 关键字
 description: 详细介绍 .NET Framework 中支持委托的类以及这些类映射到“delegate”关键字的方式。
 ms.date: 06/20/2016
 ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
-ms.openlocfilehash: 88179af0ac072464d8e9903f685ff578ca591bf0
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: 4cf2b113fc9e2c6621f648af7ecb272a42b1f056
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58126170"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58465771"
 ---
 # <a name="systemdelegate-and-the-delegate-keyword"></a>System.Delegate 和 `delegate` 关键字
 
@@ -92,7 +92,7 @@ phrases.Sort(CompareLength);
 
 请注意，在不带括号的情况下使用方法名称。 将方法用作参数会告知编译器将方法引用转换为可以用作委托调用目标的引用，并将该方法作为调用目标进行附加。
 
-还可以通过声明“Comparison<string>”类型的变量并进行分配来显式执行操作：
+还可以通过声明“`Comparison<string>`”类型的变量并进行分配来显式执行操作：
 
 ```csharp
 Comparison<string> comparer = CompareLength;

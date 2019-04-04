@@ -2,12 +2,12 @@
 title: 使用全局命名空间 (Visual Basic) (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 0a8064d5-e02f-4315-ad48-6deaa443a2f0
-ms.openlocfilehash: 0922c6973baeb3e0ca51d984b332fd7a3e0b13f6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d8e74e949815d36f06f522460cc31ca6c3ccabb3
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54733904"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58827375"
 ---
 # <a name="working-with-global-namespaces-visual-basic-linq-to-xml"></a>使用全局命名空间 (Visual Basic) (LINQ to XML)
 在 Visual Basic 中的 XML 文本的主要功能之一是能够使用声明 XML 命名空间`Imports`语句。 使用此功能时，您可以声明使用前缀的 XML 命名空间，也可以声明默认的 XML 命名空间。  
@@ -122,7 +122,7 @@ End Module
 ```  
   
 ## <a name="using-namespaces-with-xml-properties"></a>与 XML 属性一起使用命名空间  
- 如果您使用位于某一命名空间中的 XML 树并使用 XML 属性，则必须使用全局命名空间，以使 XML 属性也位于正确的命名空间中。 下面的示例在一个命名空间中一个声明 XML 树。 然后打印 `Child` 元素的计数。  
+ 如果你使用位于某一命名空间中的 XML 树并使用 XML 属性，则必须使用全局命名空间，以使 XML 属性也位于正确的命名空间中。 下面的示例在一个命名空间中一个声明 XML 树。 然后打印 `Child` 元素的计数。  
   
 ```vb  
 Dim root As XElement = _  
@@ -198,4 +198,5 @@ http://www.adventure-works.com
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用 XML 命名空间 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)

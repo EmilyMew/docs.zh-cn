@@ -9,21 +9,21 @@ helpviewer_keywords:
 - text [Windows Forms], drawing in a rectangle
 - strings [Windows Forms], drawing in a rectangle
 ms.assetid: e1fb432a-dc90-48b5-9b6b-acc14507133d
-ms.openlocfilehash: 5c4e76cda37527d0167b21c0d206749ba6dab4a9
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 35eca2fc0fe40db1b590f4c599baee01c9a9faf3
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57708855"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654520"
 ---
 # <a name="how-to-draw-wrapped-text-in-a-rectangle"></a>如何：在矩形中绘制换行文本
 可以通过使用在矩形中绘制换行的文本<xref:System.Drawing.Graphics.DrawString%2A>重载的方法<xref:System.Drawing.Graphics>采用类<xref:System.Drawing.Rectangle>或<xref:System.Drawing.RectangleF>参数。 你还将使用<xref:System.Drawing.Brush>和一个<xref:System.Drawing.Font>。  
   
  您还可以绘制换行的文本在矩形中通过使用<xref:System.Windows.Forms.TextRenderer.DrawText%2A>重载的方法<xref:System.Windows.Forms.TextRenderer>采用<xref:System.Drawing.Rectangle>和一个<xref:System.Windows.Forms.TextFormatFlags>参数。 你还将使用<xref:System.Drawing.Color>和一个<xref:System.Drawing.Font>。  
   
- 下图显示了当你使用的矩形中绘制文本的输出<xref:System.Drawing.Graphics.DrawString%2A>方法。  
+ 下图显示了当你使用的矩形中绘制文本的输出<xref:System.Drawing.Graphics.DrawString%2A>方法：
   
- ![字体文本](./media/csfontstext2.png "csfontstext2")  
+ ![显示时使用 DrawString 方法的输出的屏幕截图。](./media/how-to-draw-wrapped-text-in-a-rectangle/drawstring-method-font-text.png)  
   
 ### <a name="to-draw-wrapped-text-in-a-rectangle-with-gdi"></a>若要绘制换行中使用 GDI + 矩形文本  
   

@@ -1,0 +1,39 @@
+items:
+- name: 不安全代码和指针
+  href: index.md
+  items:
+  - name: 固定大小的缓冲区
+    href: fixed-size-buffers.md
+  - name: 指针类型
+    href: pointer-types.md
+    items:
+    - name: 指针转换
+      href: pointer-conversions.md
+    - name: 指针表达式
+      href: pointer-expressions.md
+      items:
+      - name: 如何：获取指针变量的值
+        href: how-to-obtain-the-value-of-a-pointer-variable.md
+      - name: 如何：获取变量的地址
+        href: how-to-obtain-the-address-of-a-variable.md
+      - name: 如何：通过指针访问成员
+        href: how-to-access-a-member-with-a-pointer.md
+      - name: 如何：通过指针访问数组元素
+        href: how-to-access-an-array-element-with-a-pointer.md
+      - name: 操作指针
+        href: manipulating-pointers.md
+        items:
+        - name: 如何：递增和递减指针
+          href: how-to-increment-and-decrement-pointers.md
+        - name: 指针的算术运算
+          href: arithmetic-operations-on-pointers.md
+        - name: 指针比较
+          href: pointer-comparison.md
+    - name: 如何：使用指针复制字节数组
+      href: how-to-use-pointers-to-copy-an-array-of-bytes.md
+ms.openlocfilehash: 094fa68222bcb4d92ab19a57373789a8234d2606
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58468309"

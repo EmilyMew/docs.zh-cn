@@ -5,17 +5,19 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - object equality [C#]
 ms.assetid: 10b865ea-4e7b-4127-9242-c9b8f57d9f04
-ms.openlocfilehash: 2572599071fdddd15be620e1322d2e38614182c7
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 7cbd1a2c1a9968ae8ed4f96d503d472bbe9b32c4
+ms.sourcegitcommit: 4a8c2b8d0df44142728b68ebc842575840476f6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56972919"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545450"
 ---
-# <a name="equality-comparisons-c-programming-guide"></a>相等比较（C# 编程指南）
+# <a name="equality-comparisons-c-programming-guide"></a>相等性比较（C# 编程指南）
+
 有时需要比较两个值是否相等。 在某些情况下，测试的是“值相等性”，也称为“等效性”，这意味着两个变量包含的值相等。 在其他情况下，必须确定两个变量是否引用内存中的同一基础对象。 此类型的相等性称为“引用相等性”或“标识”。 本主题介绍这两种相等性，并提供指向其他主题的链接，供用户了解详细信息。  
   
-## <a name="reference-equality"></a>引用相等性  
+## <a name="reference-equality"></a>引用相等性
+
  引用相等性指两个对象引用均引用同一基础对象。 这可以通过简单的赋值来实现，如下面的示例所示。  
   
  [!code-csharp[csProgGuideStatements#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#18)]  
@@ -23,9 +25,10 @@ ms.locfileid: "56972919"
  在此代码中，创建了两个对象，但在赋值语句后，这两个引用所引用的是同一对象。 因此，它们具有引用相等性。 使用 <xref:System.Object.ReferenceEquals%2A> 方法确定两个引用是否引用同一对象。  
   
  引用相等性的概念仅适用于引用类型。 由于在将值类型的实例赋给变量时将产生值的副本，因此值类型对象无法具有引用相等性。 因此，永远不会有两个未装箱结构引用内存中的同一位置。 此外，如果使用 <xref:System.Object.ReferenceEquals%2A> 比较两个值类型，结果将始终为 `false`，即使对象中包含的值都相同也是如此。 这是因为会将每个变量装箱到单独的对象实例中。 有关详细信息，请参阅[如何：测试引用相等性（标识）](../../../csharp/programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md)。  
-  
-## <a name="value-equality"></a>值相等性  
- 值相等性指两个对象包含相同的一个或多个值。 对于基元值类型（例如 [int](../../../csharp/language-reference/keywords/int.md) 或 [bool](../../../csharp/language-reference/keywords/bool.md)），针对值相等性的测试简单明了。 可以使用 [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) 运算符，如下面的示例所示。  
+
+## <a name="value-equality"></a>值相等性
+
+ 值相等性指两个对象包含相同的一个或多个值。 对于基元值类型（例如 [int](../../../csharp/language-reference/keywords/int.md) 或 [bool](../../../csharp/language-reference/keywords/bool.md)），针对值相等性的测试简单明了。 可以使用 [==](../../../csharp/language-reference/operators/equality-operators.md#equality-operator-) 运算符，如下面的示例所示。  
   
 ```csharp  
 int a = GetOriginalValue();  
@@ -42,7 +45,8 @@ if( b == a)
   
  但是，并不要求类型中的所有字段均相等。 只需子集相等即可。 比较不具所有权的类型时，应确保明确了解相等性对于该类型是如何定义的。 若要详细了解如何在自己的类和结构中定义值相等性，请参阅[操作说明：为类型定义值相等性](../../../csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md)。  
   
-### <a name="value-equality-for-floating-point-values"></a>浮点值的值相等性  
+### <a name="value-equality-for-floating-point-values"></a>浮点值的值相等性
+
  由于二进制计算机上的浮点算法不精确，因此浮点值（[double](../../../csharp/language-reference/keywords/double.md) 和 [float](../../../csharp/language-reference/keywords/float.md)）的相等比较会出现问题。 有关更多信息，请参阅 <xref:System.Double?displayProperty=nameWithType> 主题中的备注部分。  
   
 ## <a name="related-topics"></a>相关主题  

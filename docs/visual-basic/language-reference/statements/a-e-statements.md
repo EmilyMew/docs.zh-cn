@@ -2,12 +2,12 @@
 title: A-E 语句 (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: af97c2bf-dddb-48a8-8eb6-798cd219430b
-ms.openlocfilehash: e9fbf04260329ca7ddf1afc002f9ed7fd11a1580
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4135f7154a73823400d8b1698421e138650d4854
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54672352"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58816743"
 ---
 # <a name="a-e-statements"></a>A-E 语句
 下表包含 Visual Basic 语言语句的列表。  
@@ -21,6 +21,7 @@ ms.locfileid: "54672352"
 |[Exit](../../../visual-basic/language-reference/statements/exit-statement.md)||||  
   
 ## <a name="see-also"></a>请参阅
+
 - [F-P 语句](../../../visual-basic/language-reference/statements/f-p-statements.md)
 - [Q-Z 语句](../../../visual-basic/language-reference/statements/q-z-statements.md)
 - [Visual Basic 语言参考](../../../visual-basic/language-reference/index.md)

@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1e40f4d3-fb7d-4f19-b334-b6076d469ea9
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 31dcaeb6d3adcd658a9844ae5cf8e758172bd7bc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5799ab8e827305fca565064a0ae7290c6c19eb01
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54516507"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58463002"
 ---
 # <a name="using-the-assert-method"></a>使用 Assert 方法
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -57,8 +57,7 @@ ms.locfileid: "54516507"
   
 -   方法 A 包含在程序集 A 中，方法 B 包含在程序集 B 中，依次类推。  
   
- ![](../../../docs/framework/misc/media/assert.gif "assert")  
-使用断言  
+ ![显示断言方法程序集的关系图。](./media/using-the-assert-method/assert-method-assemblies.gif)    
   
  在此方案中，方法 A 调用 B，B 调用 C、 C 调用 E、 E 调用 f。 方法 C 断言权限来读取 C 驱动器 （权限 P1） 上的文件，方法 E 要求权限以读取 C 驱动器 （权限 P1A） 上的.txt 文件。 当在运行时遇到 F 中的要求时，执行堆栈审核检查 F 的所有调用方的权限从 E 开始已授予 P1A 权限，因此堆栈遍历继续探讨的 C，其中发现 C 的断言的权限。 因为要求的权限 (P1A) 是断言的权限 (P1) 的子集，所以堆栈审核将停止且安全检查会自动成功。 未向程序集 A 和 B 授予权限 P1A 并不重要。 通过断言 P1，方法 C 确保其调用方可以访问受 P1 保护的资源，即使尚未授予调用方访问该资源的权限也是如此。  
   

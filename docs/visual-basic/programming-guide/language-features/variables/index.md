@@ -2,9 +2,15 @@
 title: 变量 (Visual Basic)
 ms.date: 07/20/2015
 helpviewer_keywords:
-  - 'variables [Visual Basic]'
-  - 'values [Visual Basic], storing'
+- variables [Visual Basic]
+- values [Visual Basic], storing
 ms.assetid: 4cfaa06d-4ae3-4307-897b-cf599dc24caa
+ms.openlocfilehash: 9a39c53ea2d57bca379297897d6d4d1b9f7a1a9f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58840375"
 ---
 # <a name="variables-in-visual-basic"></a>变量 (Visual Basic)
 通常需要执行使用 Visual Basic 的计算时存储的值。 例如，可能需要计算、比较多个值，并根据比较结果对这些值执行不同的运算。 若要进行比较，必须保留这些值。  
@@ -28,6 +34,7 @@ ms.assetid: 4cfaa06d-4ae3-4307-897b-cf599dc24caa
  与变量一样，属性表示可访问的值。 不过，它比变量更复杂。 属性使用代码块来控制如何设置并检索值。 有关详细信息，请参阅 [Visual Basic 中属性和变量的差异](../../../../visual-basic/programming-guide/language-features/procedures/differences-between-properties-and-variables.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [变量声明](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
 - [对象变量](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
 - [变量疑难解答](../../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)

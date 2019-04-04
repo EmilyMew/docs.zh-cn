@@ -2,12 +2,12 @@
 title: 如何：查找子元素根据位置 (XPATH-LINQ to XML) (Visual Basic)
 ms.date: 07/20/2015
 ms.assetid: 6831e1db-5e97-444f-a7a1-d0a87104b005
-ms.openlocfilehash: 023ad921a5ba03adb306cd6ed93e38ad92406c20
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 57b9f3d7986bd85a65716c833165e7b073414ef0
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54626042"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58831600"
 ---
 # <a name="how-to-find-child-elements-based-on-position-xpath-linq-to-xml-visual-basic"></a>如何：查找子元素根据位置 (XPATH-LINQ to XML) (Visual Basic)
 有时需要根据元素的位置查找元素。 您可能想查找第二个元素，或者查找第三到第五个元素。  
@@ -21,7 +21,7 @@ ms.locfileid: "54626042"
 ## <a name="example"></a>示例  
  本示例查找第二到第四个 `Test` 元素。 结果是一个元素集合。  
   
- 本示例使用下面的 XML 文档：[示例 XML 文件：测试配置 (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md)。  
+ 此示例使用下面的 XML 文档：[示例 XML 文件：测试配置 (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md)。  
   
 ```vb  
 Dim testCfg As XElement = XElement.Load("TestConfig.xml")  
@@ -79,4 +79,5 @@ Results are identical
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [LINQ to XML 针对 XPath 用户 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

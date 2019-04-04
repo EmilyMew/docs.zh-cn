@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a483d1b5-64aa-45b6-86ef-11b859f7f02e
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6b4c1b075d54189d195ea38d421463ea6b9e6161
-ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
+ms.openlocfilehash: ebd54afb312de0796b5a96b3d41f1e98dd97bd1b
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56835351"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58654349"
 ---
 # <a name="memory-mapped-files"></a>内存映射文件
 内存映射文件包含虚拟内存中文件的内容。 借助文件和内存空间之间的这种映射，应用（包括多个进程）可以直接对内存执行读取和写入操作，从而修改文件。 自 [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] 起，可以使用托管代码访问内存映射文件，就像本机 Windows 函数访问内存映射文件（如[管理内存映射文件](https://docs.microsoft.com/previous-versions/ms810613(v=msdn.10))所述）一样。  
@@ -42,10 +42,11 @@ ms.locfileid: "56835351"
   
  由于内存映射文件是通过操作系统的内存管理程序进行访问，因此文件会被自动分区到很多页面，并根据需要进行访问。 无需自行处理内存管理。  
   
- 下图展示了多个进程如何同时对同一个内存映射文件有多个重叠视图。  
+ 下图展示了多个进程如何同时对同一个内存映射文件有多个重叠视图。
+
+ 下图显示了内存映射文件的多个重叠视图：  
   
- ![显示内存映射文件的视图。](../../../docs/standard/io/media/memmappersisted.png "MemMapPersisted")  
-内存映射文件的多个重叠视图  
+ ![显示内存映射文件的视图的屏幕截图。](./media/memory-mapped-files/memory-map-persist-file.png)  
   
 ## <a name="programming-with-memory-mapped-files"></a>使用内存映射文件编程  
  下表列出了与使用内存映射文件对象及其成员相关的指南。  

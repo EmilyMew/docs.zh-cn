@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC2012
 ms.assetid: 73270fe4-a638-42c7-be21-5e156e2b18f6
-ms.openlocfilehash: a5a7103358bcbeca21433d126a66430d5f0cb475
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 289b024569900b94c9f41fe0f98a817ce907de0f
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55279768"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58843612"
 ---
 # <a name="cant-open-filename-for-writing"></a>无法打开\<文件名 > 进行写入
 指定的文件不能打开进行写入，可能因为已经打开。  
@@ -26,6 +26,7 @@ ms.locfileid: "55279768"
 2.  检查文件的权限。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>
 - [写入文件](../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

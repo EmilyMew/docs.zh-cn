@@ -4,12 +4,12 @@ description: 使用 ASP.NET Core 和 Azure 构建新式 Web 应用 | 在 ASP.NET
 author: ardalis
 ms.author: wiwagn
 ms.date: 01/30/2019
-ms.openlocfilehash: 914a10724c416f453d93f6efc16f9ad192798264
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.openlocfilehash: 23c0995c512a07c41b3e2dbe8bc7528723379efa
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55827170"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58463730"
 ---
 # <a name="working-with-data-in-aspnet-core-apps"></a>在 ASP.NET Core 应用中使用数据
 
@@ -51,7 +51,7 @@ public class CatalogContext : DbContext
 }
 ```
 
-DbContext 必须包含可接受 DbContextOptions 的构造函数，可将此参数传递给基础 DbContext 构造函数。 注意：如果应用程序中只有一个 DbContext，可传递 DbContextOptions 的实例，但如果有多个 DbContext，则必须使用泛型 DbContextOptions<T>，在 DbContext 类型中作为泛型参数传递。
+DbContext 必须包含可接受 DbContextOptions 的构造函数，可将此参数传递给基础 DbContext 构造函数。 注意：如果应用程序中只有一个 DbContext，可传递 DbContextOptions 的实例，但如果有多个 DbContext，则必须使用泛型 DbContextOptions\<T>，在 DbContext 类型中作为泛型参数传递。
 
 ### <a name="configuring-ef-core"></a>配置 EF Core
 
@@ -89,7 +89,7 @@ var brandItems = await _context.CatalogBrands
     .ToListAsync();
 ```
 
-请务必在上述示例中添加对 ToListAsync 的调用，以立即执行查询。 否则，语句会将 IQueryable<SelectListItem> 分配给 brandItems，brandItems 在被枚举前不会执行。 从方法中返回 IQueryable 结果有优点，也有缺点。 如果将操作添加到 EF Core 无法转换的查询中，它仍允许对 EF Core 将构造的查询进行进一步修改，但会导致出现仅在运行时发生的错误。 将任何筛选器传递给执行数据访问的方法，并返回内存中集合（例如，List<T>）作为结果，这通常会更安全。
+请务必在上述示例中添加对 ToListAsync 的调用，以立即执行查询。 否则，语句会将 IQueryable\<SelectListItem> 分配给 brandItems，brandItems 在被枚举前不会执行。 从方法中返回 IQueryable 结果有优点，也有缺点。 如果将操作添加到 EF Core 无法转换的查询中，它仍允许对 EF Core 将构造的查询进行进一步修改，但会导致出现仅在运行时发生的错误。 将任何筛选器传递给执行数据访问的方法，并返回内存中集合（例如，List\<T>）作为结果，这通常会更安全。
 
 EF Core 可跟踪它从持久性提取的实体上的更改。 要将更改保存到被跟踪实体，只需对 DbContext 调用 SaveChanges 方法，确保它是用于提取实体的同一 DbContext 实例。 直接对相应的 DbSet 属性添加和删除实体，再次通过调用 SaveChanges 执行数据库命令。 下面的示例演示如何从持久性中添加、更新和删除实体。
 

@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - objects [Visual Basic]
 ms.assetid: 651c73e4-dca8-402b-9c6b-e3902b3a3f4b
-ms.openlocfilehash: 59558583a35f83baa953cfc94a17c6c002f91b83
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 161edd2cb3afeb6ba8b10455a1c3a2c43b90dac1
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54703492"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58821643"
 ---
 # <a name="objects-visual-basic"></a>对象 (Visual Basic)
 本主题收录了记录 Visual Basic 运行时对象的其他主题的链接，并包含这些对象的成员过程、属性和事件表。  
@@ -46,5 +46,6 @@ ms.locfileid: "54703492"
 |<xref:Microsoft.VisualBasic.FileIO.TextFieldParser>|提供分析结构化文本文件的方法和属性。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [Visual Basic 语言参考](../../../visual-basic/language-reference/index.md)
 - [Visual Basic](../../../visual-basic/index.md)

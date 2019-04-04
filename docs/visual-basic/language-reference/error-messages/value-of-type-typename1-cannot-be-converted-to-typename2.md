@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30955
 ms.assetid: 966b61eb-441e-48b0-bedf-ca95384ecb8b
-ms.openlocfilehash: cd2f6e4b51bc327826301d3c7b39c97a4bed3793
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 5f313a43bc3a2f983dabbd45477d120fdb80d063
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55261238"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58829014"
 ---
 # <a name="value-of-type-typename1-cannot-be-converted-to-typename2"></a>类型的值\<typename1 > 无法转换为\<typename2 >
 类型的值\<typename1 > 无法转换为\<typename2 >。 类型不匹配可能是由于的文件引用的程序集的项目引用混合使用\<程序集名称 >。 请尝试更换的文件引用\<文件路径 > 项目中\<projectname1 > 项目引用\<项目名称 2> >。  
@@ -60,6 +60,6 @@ ms.locfileid: "55261238"
 -   更改的项目引用的文件引用。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 Visual Basic 中的类型转换](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
 - [管理项目中的引用](/visualstudio/ide/managing-references-in-a-project)
-

@@ -2,12 +2,12 @@
 title: 如何：最大的文件或目录树 (LINQ) (Visual Basic 中) 中的查询
 ms.date: 07/20/2015
 ms.assetid: 8c1c9f0c-95dd-4222-9be2-9ec026a13e81
-ms.openlocfilehash: cc41fb29a765e8824526dcd78c9ecab377f06d22
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7ba330b18020b7c3b823b70d0541cdda199aa898
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54724052"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58820708"
 ---
 # <a name="how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq-visual-basic"></a>如何：最大的文件或目录树 (LINQ) (Visual Basic 中) 中的查询
 此示例演示与文件大小（以字节为单位）相关的五个查询：  
@@ -121,5 +121,6 @@ End Module
  创建面向 .NET Framework 3.5 或更高版本的项目，此项目包含对 System.Core.dll 的引用和用于 System.Linq 命名空间的 `Imports` 语句。  
   
 ## <a name="see-also"></a>请参阅
+
 - [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
 - [LINQ 和文件目录 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)

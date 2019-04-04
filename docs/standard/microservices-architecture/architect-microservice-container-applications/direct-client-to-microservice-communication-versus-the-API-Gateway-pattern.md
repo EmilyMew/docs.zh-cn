@@ -4,12 +4,12 @@ description: 了解 API 网关模式与客户端到微服务直接通信之间�
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 01/07/2019
-ms.openlocfilehash: 35bebd9429dabbe0e3ddc3549a504719321e47e1
-ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
+ms.openlocfilehash: 0e2db3629d504065a122a69b916f19aa3b838aab
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "55675447"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58462950"
 ---
 # <a name="the-api-gateway-pattern-versus-the-direct-client-to-microservice-communication"></a>API 网关模式与客户端到微服务直接通信
 
@@ -173,25 +173,25 @@ API 管理系统中提供的见解有助于理解 API 的使用方式与性能�
 ## <a name="additional-resources"></a>其他资源
 
 - **Charles Richardson。模式：API 网关/用于前端的后端** \
-  [*https://microservices.io/patterns/apigateway.html*](https://microservices.io/patterns/apigateway.html)
+  [https://microservices.io/patterns/apigateway.html](https://microservices.io/patterns/apigateway.html)
 
 - **API 网关模式** \
-  [*https://docs.microsoft.com/azure/architecture/microservices/gateway*](https://docs.microsoft.com/azure/architecture/microservices/gateway)
+  [https://docs.microsoft.com/azure/architecture/microservices/gateway](https://docs.microsoft.com/azure/architecture/microservices/gateway)
 
 - **聚合和组合模式** \
-  [*https://microservices.io/patterns/data/api-composition.html*](https://microservices.io/patterns/data/api-composition.html)
+  [https://microservices.io/patterns/data/api-composition.html](https://microservices.io/patterns/data/api-composition.html)
 
 - **Azure API 管理** \
-  [*https://azure.microsoft.com/services/api-management/*](https://azure.microsoft.com/services/api-management/)
+  [https://azure.microsoft.com/services/api-management/](https://azure.microsoft.com/services/api-management/)
 
 - **Udi Dahan.Service Oriented Composition** \（面向服务的组合）
-  [*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
+  [http://udidahan.com/2014/07/30/service-oriented-composition-with-video/](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
 
 - **Clemens Vasters。Messaging and Microservices at GOTO 2016 (video)** \（2016 年 GOTO 消息传递和微服务（视频））
-  [*https://www.youtube.com/watch?v=rXi5CLjIQ9k*](https://www.youtube.com/watch?v=rXi5CLjIQ9k)
+  [https://www.youtube.com/watch?v=rXi5CLjIQ9k](https://www.youtube.com/watch?v=rXi5CLjIQ9k)
 
 - **API Gateway in a Nutshell**（Nutshell 中的 API 网关）（ASP.net Core API 网关教程系列）
-  [*https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html*](https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html)
+  [https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html](https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html)
 
 >[!div class="step-by-step"]
 >[上一页](identify-microservice-domain-model-boundaries.md)

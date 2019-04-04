@@ -10,12 +10,12 @@ helpviewer_keywords:
 - message boxes [WPF]
 - modal dialog boxes [WPF]
 ms.assetid: 0d23d544-a393-4a02-a3aa-d8cd5d3d6511
-ms.openlocfilehash: e0a52dcd3b403b3b5795dc0d025ac93176f009c3
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 14ed5655f31c8c73e6d7b8e987d1856fc869c9de
+ms.sourcegitcommit: d938c39afb9216db377d0f0ecdaa53936a851059
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57359128"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58634448"
 ---
 # <a name="dialog-boxes-overview"></a>对话框概述
 独立应用程序通常会在主窗口中同时显示应用程序对其进行操作和公开的功能来处理通过该数据的主数据[!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]等机制，菜单栏、 工具栏和状态栏。 重要的应用程序可能还会显示其他窗口来执行以下操作：  
@@ -40,7 +40,7 @@ ms.locfileid: "57359128"
 ## <a name="message-boxes"></a>消息框  
  一个*消息框*是可以用于显示文本信息并允许用户使用按钮做出决定的对话框。 下图显示的消息框显示文本信息、提出问题并向用户提供了三个按钮来回答问题。  
   
- ![“字处理器”对话框](./media/dialogboxesoverviewfigure1.png "DialogBoxesOverviewFigure1")  
+ ![字处理器对话框，询问你是否想要将所做的更改保存到文档，再进行应用程序关闭。](./media/dialog-boxes-overview/word-processor-dialog.png)  
   
  若要创建一个消息框，您可以使用<xref:System.Windows.MessageBox>类。 <xref:System.Windows.MessageBox> 您可以配置消息框文本、 标题、 图标和按钮，使用如下所示的代码。  
   
@@ -73,7 +73,7 @@ ms.locfileid: "57359128"
 ### <a name="open-file-dialog"></a>打开文件对话框  
  如下图中所示的打开文件对话框由文件打开功能用于检索要打开文件的名称。  
   
- ![打开对话框](./media/dialogboxesoverviewfigure2.png "DialogBoxesOverviewFigure2")  
+ ![打开的对话框显示用于检索文件的位置。](./media/dialog-boxes-overview/open-file-dialog-box.png)  
   
  作为实现常见的打开文件对话框<xref:Microsoft.Win32.OpenFileDialog>类，它位于<xref:Microsoft.Win32>命名空间。 以下代码显示了如何创建、配置和显示保存文件对话框以及如何处理结果。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "57359128"
 ### <a name="save-file-dialog-box"></a>保存文件对话框  
  如下图中所示的保存文件对话框由文件保存功能用以检索要保存的文件的名称。  
   
- ![另存为对话框](./media/dialogboxesoverviewfigure3.png "DialogBoxesOverviewFigure3")  
+ ![另存为对话框显示要保存该文件的位置。](./media/dialog-boxes-overview/save-file-dialog-box.png)  
   
  作为实现常见的保存文件对话框<xref:Microsoft.Win32.SaveFileDialog>类，并位于<xref:Microsoft.Win32>命名空间。 以下代码显示了如何创建、配置和显示保存文件对话框以及如何处理结果。  
   
@@ -102,7 +102,7 @@ ms.locfileid: "57359128"
 ### <a name="print-dialog-box"></a>打印对话框  
  如下图中所示的打印对话框由打印功能用以选择和配置用户想要将数据打印到的打印机。  
   
- ![打印对话框](./media/dialogboxesoverviewfigure4.png "DialogBoxesOverviewFigure4")  
+ ![显示打印对话框的屏幕截图。](./media/dialog-boxes-overview/print-data-dialog-box.png)  
   
  作为实现通用打印对话框<xref:System.Windows.Controls.PrintDialog>类，并位于<xref:System.Windows.Controls>命名空间。 以下代码显示了如何创建、配置和显示打印对话框。  
   
@@ -119,7 +119,7 @@ ms.locfileid: "57359128"
 ### <a name="creating-a-modal-custom-dialog-box"></a>创建模式自定义对话框  
  本主题演示如何使用<xref:System.Windows.Window>若要创建典型模式对话框实现，使用`Margins`对话框中的作为示例 (请参阅[对话框示例](https://go.microsoft.com/fwlink/?LinkID=159984))。 `Margins`对话框显示下图中。  
   
- ![边距对话框](./media/dialogboxesoverviewfigure5.png "DialogBoxesOverviewFigure5")  
+ ![字段以定义左边的距、 上边距、 右边距和下边距边距对话框。](./media/dialog-boxes-overview/margin-size-dialog-box.png)  
   
 #### <a name="configuring-a-modal-dialog-box"></a>配置模式对话框  
  典型对话框的用户界面包括以下内容：  
@@ -208,7 +208,7 @@ ms.locfileid: "57359128"
   
  一旦验证规则已关联，[!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]会自动将其应用时数据输入到绑定控件。 当控件包含无效数据，[!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)]下图中所示，将显示在无效控件四周的红色边框。  
   
- ![无效左边距](./media/dialogboxesoverviewfigure7.png "DialogBoxesOverviewFigure7")  
+ ![无效左边的距值四周的红色边框边距对话框。](./media/dialog-boxes-overview/invalid-left-margin-dialog.png)  
   
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 不会在用户输入有效数据之前限制其对无效控件的访问。 这对于对话框来说很好，无论数据是否有效用户都应该可以自由导航到对话框中的控件。 但是，这意味着用户可以输入无效数据并按**确定**按钮。 出于此原因，代码还需要验证所有控件在对话框中，当**确定**通过处理按下按钮<xref:System.Windows.Controls.Primitives.ButtonBase.Click>事件。  
   
@@ -277,7 +277,7 @@ ms.locfileid: "57359128"
 ### <a name="creating-a-modeless-custom-dialog-box"></a>创建无模式自定义对话框  
  无模式对话框（如下图中所示的“查找”对话框）与模式对话框具有相同的基本外观。  
   
- ![“查找”对话框](./media/dialogboxesoverviewfigure6.PNG "DialogBoxesOverviewFigure6")  
+ ![显示查找对话框的屏幕截图。](./media/dialog-boxes-overview/find-modeless-dialog-box.png)  
   
  但行为稍有不同，如以下各节中所述。  
   

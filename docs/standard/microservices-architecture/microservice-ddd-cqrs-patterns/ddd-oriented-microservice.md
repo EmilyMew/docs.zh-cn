@@ -4,12 +4,12 @@ description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/08/2018
-ms.openlocfilehash: 65a1a58d0c70c7e788aea420006c1ad617628f93
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: e41f84a79dc075de05a9e30ccbf3de38175900a2
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53145603"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58464900"
 ---
 # <a name="design-a-ddd-oriented-microservice"></a>设计面向 DDD 的微服务
 
@@ -39,7 +39,7 @@ ms.locfileid: "53145603"
 
 图 7-5 演示如何在 eShopOnContainers 应用程序中实现分层设计。
 
-![DDD 微服务（例如，订购）中的三个层。 每一层都是一个 VS 项目：应用层是 Ordering.API，域层是 Ordering.Domain，基础结构层是 Ordering.Infrastructure。](./media/image6.png)
+![DDD 微服务（例如，订购）中的三个层。 每层都是一个 VS 项目：应用程序层是 Ordering.API，域层是 Ordering.Domain，基础结构层是 Ordering.Infrastructure。](./media/image6.png)
 
 **图 7-5**。 eShopOnContainers 订单微服务中的 DDD 层
 
@@ -71,7 +71,7 @@ ms.locfileid: "53145603"
 
 现在我们来了解应用层，这里可以再次引用 Eric Evans 的[域驱动设计](https://domainlanguage.com/ddd/)一书中的内容：
 
-**应用层：** 定义软件要完成的作业并指导富有表现力的域对象解决问题。 这一层负责执行对业务具有意义的任务或与其他系统的应用层进行交互时需执行的任务。 这一层很“薄”。 它不包含业务规则或知识，仅针对下一层中域对象之间的协作，协调任务和委派工作。 它不具有反映业务状况的状态，但它可以具有状态，用于反映用户或程序的任务的进度。
+**应用程序层：** 定义软件要完成的作业并指导富有表现力的域对象解决问题。 这一层负责执行对业务具有意义的任务或与其他系统的应用层进行交互时需执行的任务。 这一层很“薄”。 它不包含业务规则或知识，仅针对下一层中域对象之间的协作，协调任务和委派工作。 它不具有反映业务状况的状态，但它可以具有状态，用于反映用户或程序的任务的进度。
 
 .NET 中微服务的应用层通常被编码为 ASP.NET Core Web API 项目。 该项目实现微服务的交互、远程网络访问和从 UI 或客户端应用中使用的外部 Web API。 它包括查询（如果使用 CQRS 方法）、微服务接受的命令，甚至是微服务之间的事件驱动的通信（集成事件）。 表示应用程序层的 ASP.NET Core Web API 不能包含业务规则或域知识（尤其是用于事务或更新的域规则）；这些规则和知识应由域模型类库所有。 应用层须只能协调任务，不能保有或定义任何域状态（域模型）。 它将业务规则的执行委托给域模型类自身（聚合根和域实体），最终在这些域实体内更新数据。
 
@@ -96,13 +96,13 @@ ms.locfileid: "53145603"
 #### <a name="additional-resources"></a>其他资源
 
 - **DevIQ.Persistence Ignorance principle** \（持久性无感知原则）
-  [*https://deviq.com/persistence-ignorance/*](https://deviq.com/persistence-ignorance/)
+  [https://deviq.com/persistence-ignorance/](https://deviq.com/persistence-ignorance/)
 
 - **Oren Eini。Infrastructure Ignorance** \（基础结构无感知）
-  [*https://ayende.com/blog/3137/infrastructure-ignorance*](https://ayende.com/blog/3137/infrastructure-ignorance)
+  [https://ayende.com/blog/3137/infrastructure-ignorance](https://ayende.com/blog/3137/infrastructure-ignorance)
 
 - **Angel Lopez。Layered Architecture In Domain-Driven Design** \（域驱动设计中的分层体系结构）
-  [*https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/*](https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/)
+  [https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/](https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/)
 
 >[!div class="step-by-step"]
 >[上一页](cqrs-microservice-reads.md)

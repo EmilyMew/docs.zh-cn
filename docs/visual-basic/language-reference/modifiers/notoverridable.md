@@ -16,12 +16,12 @@ helpviewer_keywords:
 - methods [Visual Basic], sealed
 - properties [Visual Basic], overriding
 ms.assetid: 66ec6984-f5f5-4857-b362-6a3907aaf9e0
-ms.openlocfilehash: d2495e9d44a32e080d20deb4232ab27bfbd4051a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 41c08a48fdb7501081e887fb5cf9f99c334c72ac
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54595805"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58822310"
 ---
 # <a name="notoverridable-visual-basic"></a>NotOverridable (Visual Basic)
 指定属性或过程不能在派生类中重。  
@@ -50,6 +50,7 @@ ms.locfileid: "54595805"
  [Sub 语句](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [修饰符](../../../visual-basic/language-reference/modifiers/index.md)
 - [继承的基础知识](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
 - [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)

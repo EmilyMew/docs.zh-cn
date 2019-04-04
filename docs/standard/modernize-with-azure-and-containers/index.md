@@ -4,16 +4,10 @@ description: 了解如何迁移并更新现有应用程序对 Azure 云以及与
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/28/2018
-ms.openlocfilehash: 0cfb052daa41264ae00d48906477eae99ea159d8
-ms.sourcegitcommit: c93fd5139f9efcf6db514e3474301738a6d1d649
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50200080"
 ---
 # <a name="modernize-existing-net-applications-with-azure-cloud-and-windows-containers-2nd-edition"></a>更新现有.NET 应用程序使用 Azure 云和 Windows 容器 （第二版）
 
-![封面图像](./media/cover.png)
+![实现现代化.NET 应用程序指南的封面图像。](./media/index/web-application-guide-cover-image.png)
 
 发布者  
 Microsoft Press 和 Microsoft DevDiv  
@@ -36,12 +30,12 @@ Redmond, Washington 98052-6399
 Microsoft 和 <https://www.microsoft.com> 上“商标”网页列出的商标是 Microsoft 集团公司的商标。 所有其他标记均为其各自所有者的财产。
 
 作者:
-> **Cesar de la Torre**，Microsoft Corp. .NET 产品团队的高级项目经理。
+> **Cesar de la Torre**，Sr.PM，.NET 产品团队，Microsoft corp.
 
 参与者和审阅者：
 > **Scott Hunter**，Microsoft .NET 团队的合作伙伴总监项目经理  
 > **Paul Yuknewicz**，Microsoft Visual Studio Tools 团队的主要项目经理  
-> **Lisa Guthrie**，Microsoft Visual Studio Tools 团队的高级项目经理  
+> **Lisa Guthrie**，Sr.PM，Microsoft Visual Studio Tools 团队  
 > **Ankit Asthana**，Microsoft .NET 团队的主要项目经理  
 > **Unai Zorrilla**，Plain Concepts 的开发者领导  
 > **Javier Valero**，Grupo Solutio 的首席运营官  
@@ -80,27 +74,27 @@ Microsoft 和 <https://www.microsoft.com> 上“商标”网页列出的商标�
 
 定义和每个应用程序成熟度级别的简短说明如下所示：
 
-**级别 1： 云基础结构准备就绪**应用程序： 在此迁移方法，你只需将迁移或重新托管基础结构即服务为你当前的本地应用程序 ([IaaS](https://azure.microsoft.com/overview/what-is-iaas/)) 平台。 应用的组成与之前基本一致，但现在可将它们部署到云中的 VM。
+**级别 1:云基础结构就绪**应用程序：您可以在此迁移方法，只需将迁移或重新托管基础结构即服务为你当前的本地应用程序 ([IaaS](https://azure.microsoft.com/overview/what-is-iaas/)) 平台。 应用的组成与之前基本一致，但现在可将它们部署到云中的 VM。
 这种简单的迁移通常称为"提升和切换"。 在业界
 
-**级别 2： 云优化**应用程序： 在此级别而仍无需重新架构或更改重要的代码，您可以获得其他好处使用现代技术等容器和其他云中运行您的应用程序云托管服务。 通过优化企业开发操作 (DevOps) 流程，可以提高应用程序的敏捷性，以实现更快交付。 通过使用 Windows 容器，基于 Docker 引擎等技术来实现此目的。 容器中删除时在多个阶段中部署应用程序依赖项导致的冲突。 在此成熟度模型中，你可以部署在 IaaS 上的容器或同时使用附加的 PaaS 云托管服务与数据库相关的缓存即服务、 监视和持续集成/持续部署 (CI/CD) 管道。
+**级别 2:云优化**应用程序：在此级别而仍无需重新架构或更改重要的代码，可以获得从使用现代技术，例如容器和其他云托管服务在云中运行您的应用程序的其他好处。 通过优化企业开发操作 (DevOps) 流程，可以提高应用程序的敏捷性，以实现更快交付。 通过使用 Windows 容器，基于 Docker 引擎等技术来实现此目的。 容器中删除时在多个阶段中部署应用程序依赖项导致的冲突。 在此成熟度模型中，你可以部署在 IaaS 上的容器或同时使用附加的 PaaS 云托管服务与数据库相关的缓存即服务、 监视和持续集成/持续部署 (CI/CD) 管道。
 
 第三个成熟度级别是云中的最终目标，但对于很多应用它是可选的，并不是本指南的主要重点：
 
-**级别 3： 云原生**应用程序： 此迁移方法通常由业务需求和更新任务关键型应用程序。 在此级别，使用 PaaS 服务将应用移动到 PaaS 计算平台。 实现[云原生](https://www.gartner.com/doc/3181919/architect-design-cloudnative-applications)应用程序和微服务体系结构，以改进应用程序，使其具有长期的敏捷性并扩展至新的限制。 此类更新通常需要专门针对云进行构建。 通常必须编写新代码，尤其是移动到基于云原生应用程序和微服务的模型时。 此方法有助于获得一些益处，这些益处在单片和本地应用程序环境中很难实现。
+**级别 3:云原生**应用程序：此迁移方法通常是由业务需求和目标更新任务关键型应用程序驱动。 在此级别，使用 PaaS 服务将应用移动到 PaaS 计算平台。 实现[云原生](https://www.gartner.com/doc/3181919/architect-design-cloudnative-applications)应用程序和微服务体系结构，以改进应用程序，使其具有长期的敏捷性并扩展至新的限制。 此类更新通常需要专门针对云进行构建。 通常必须编写新代码，尤其是移动到基于云原生应用程序和微服务的模型时。 此方法有助于获得一些益处，这些益处在单片和本地应用程序环境中很难实现。
 
 表 1-1 介绍了选择每种迁移或更新方法的主要优点和原因。
 
-| **云基础结构就绪** <br /> *直接迁移* | **云优化** <br /> *实现现代化* | **云原生** <br /> *实现现代化、 重构和重写* |
+| **云基础结构就绪** <br /> *直接迁移* | **Cloud-Optimized** <br /> *实现现代化* | **Cloud-Native** <br /> *实现现代化、 重构和重写* |
 |---|---|---|
 | **应用程序的计算目标** |
 | 部署到 Azure 中 VM 的应用程序 | 单体或 N 层应用程序部署到 Azure 应用服务、 Azure 容器实例 (ACI)、 虚拟机与容器、 Azure Service Fabric 或 AKS （Azure Kubernetes 服务） | Azure Kubernetes 服务 (AKS)、 Service Fabric 和/或基于 Azure Functions 的无服务器微服务上的容器化微服务。 |
 | **数据目标** |
 | VM 中的 SQL 或任何关系数据库 | Azure SQL 数据库托管实例或另一个在云中托管的数据库。 | 每个微服务，基于 Azure SQL 数据库、 Azure Cosmos DB 或在云中的另一个托管的数据库的细粒度数据库 |
 | **优点**|
-| <li>没有任何新的重构代码 <li> 需要的工作量最少，实现快速迁移 <li> Azure 中支持最小公分母 <li> 保证基本可用性 <li> 移动到云后，更容易更新 | <li> 不重新架构 <li> 更改最小代码/配置 <li> 由于容器的原因，改进了部署和 DevOps 发布敏捷性 <li> 增加了密度，降低了部署成本 <li> 应用的可移植性和依赖项 <li> 主机目标的灵活性： PaaS 方法或 IaaS | <li> 架构师的云，则获得最大的好处从云中，但需要新的代码 <li> 微服务云原生方法 <li> 新式任务关键型应用程序，云复原的可高度扩展 <li> 完全托管服务 <li> 优化了规模 <li> 通过子系统优化了自主敏捷性 <li> 基于部署和 DevOps |
+| <li>没有任何新的重构代码 <li> 需要的工作量最少，实现快速迁移 <li> Azure 中支持最小公分母 <li> 保证基本可用性 <li> 移动到云后，更容易更新 | <li> 不重新架构 <li> 更改最小代码/配置 <li> 由于容器的原因，改进了部署和 DevOps 发布敏捷性 <li> 增加了密度，降低了部署成本 <li> 应用的可移植性和依赖项 <li> 主机目标的灵活性：PaaS 方法或 IaaS | <li> 架构师的云，则获得最大的好处从云中，但需要新的代码 <li> 微服务云原生方法 <li> 新式任务关键型应用程序，云复原的可高度扩展 <li> 完全托管服务 <li> 优化了规模 <li> 通过子系统优化了自主敏捷性 <li> 基于部署和 DevOps |
 | **挑战** |
-| <li> 除了转移运营费用或关闭数据中心之外，云价值较小 <li> 少托管： 无 OS 或中间件修补;可以使用基础结构解决方案，如 Terraform、 Spinnaker 或 Puppet | <li> 容器化是学习曲线，为开发人员和 IT 运营中一个额外的步骤 <li> DevOps 和 CI/CD 管道通常是必需的这种方法。 如果不是当前的区域性组织中存在，它可能是其他挑战| <li> 有关云本机应用程序和微服务体系结构需要体系结构重建而且通常需要大量的代码重构或重写现代化 （增加了的时间和预算） <li> DevOps 和 CI/CD 管道通常是必需的这种方法。 如果不是当前的区域性组织中存在，它可能是其他挑战|
+| <li> 除了转移运营费用或关闭数据中心之外，云价值较小 <li> 少托管：无 OS 或中间件修补;可以使用基础结构解决方案，如 Terraform、 Spinnaker 或 Puppet | <li> 容器化是学习曲线，为开发人员和 IT 运营中一个额外的步骤 <li> DevOps 和 CI/CD 管道通常是必需的这种方法。 如果不是当前的区域性组织中存在，它可能是其他挑战| <li> 有关云本机应用程序和微服务体系结构需要体系结构重建而且通常需要大量的代码重构或重写现代化 （增加了的时间和预算） <li> DevOps 和 CI/CD 管道通常是必需的这种方法。 如果不是当前的区域性组织中存在，它可能是其他挑战|
 > **表 1-1**。 现有 .NET 应用程序和服务的更新途径的优势和挑战
 
 ### <a name="key-technologies-and-architectures-by-maturity-level"></a>各成熟度级别使用的关键技术和体系结构
@@ -119,11 +113,11 @@ Microsoft 和 <https://www.microsoft.com> 上“商标”网页列出的商标�
 
 更新流程中的每个成熟度级别与以下关键技术和方法相关：
 
-- **云基础结构就绪**（重新托管或基本提升和切换）： 第一步，许多组织只想快速执行云迁移策略。 在这种情况下，是重新承载的应用程序。 大多数重新托管均可使用 [Azure Migrate](https://aka.ms/azuremigrate) 自动完成，该服务提供指南、见解和机制，帮助迁移到基于 Azure 的云工具（如 [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/) 和 [Azure 数据库迁移服务](https://azure.microsoft.com/campaigns/database-migration/)）。 也可以手动设置重新托管，以便在将旧版应用移动到云时了解关于这些资产的基础结构详细信息。 例如，您可以将应用程序移到 Vm 在 Azure 中进行少量修改甚至修改可能与仅配置做出细微更改。 这种情况下的网络类似于本地环境，尤其是在 Azure 中创建虚拟网络时。
+- **云基础结构就绪**（重新托管或基本提升和切换）：第一步，许多组织只想快速执行云迁移策略。 在这种情况下，是重新承载的应用程序。 大多数重新托管均可使用 [Azure Migrate](https://aka.ms/azuremigrate) 自动完成，该服务提供指南、见解和机制，帮助迁移到基于 Azure 的云工具（如 [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/) 和 [Azure 数据库迁移服务](https://azure.microsoft.com/campaigns/database-migration/)）。 也可以手动设置重新托管，以便在将旧版应用移动到云时了解关于这些资产的基础结构详细信息。 例如，您可以将应用程序移到 Vm 在 Azure 中进行少量修改甚至修改可能与仅配置做出细微更改。 这种情况下的网络类似于本地环境，尤其是在 Azure 中创建虚拟网络时。
 
-- **云计算得到优化**（托管服务和 Windows 容器）： 此模型是使几个重要部署优化，以获得部分显著好处从云，而无需更改应用程序的核心体系结构。 此处的基本步骤是对现有 .NET Framework 应用程序增加 [Windows 容器](https://docs.microsoft.com/virtualization/windowscontainers/about/) 支持。 此重要步骤 （容器化） 不需要触及代码，因此总体的提升和转变工作量较轻。 可以使用 [Image2Docker](https://github.com/docker/communitytools-image2docker-win) 或 Visual Studio 之类的工具，Visual Studio 带有适用于 [Docker](https://www.docker.com/) 的工具。 Visual Studio 自动为 ASP.NET 应用程序和 Windows 容器映像选择智能默认值。 这些工具提供快速内部循环，并提供将容器迁移到 Azure 的快速途径。 部署到多个环境中时，敏捷性得到提高。 然后，转到生产环境，你可以部署到 Windows 容器[用于容器的 Azure Web 应用](https://azure.microsoft.com/services/app-service/containers/)，[Azure 容器实例 (ACI) 和 Windows Server 2016 和容器，如果偏好使用 IaaS 方案的 Azure Vm。 对于稍微复杂多容器应用程序，到业务流程协调程序，如[Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)或[Azure Kubernetes 服务 (AKS/ACS)](https://azure.microsoft.com/services/container-service/)。 在此初次更新期间你还可以添加资产从云中，例如使用之类的工具监视[Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview);使用你的应用程序生命周期的 CI/CD 管道[Azure DevOps 服务](https://visualstudio.microsoft.com/team-services/); 和许多其他数据资源服务在 Azure 中可用。 例如，可以修改单片 Web 应用，该应用最初使用传统 [ASP.NET Web 窗体](https://www.asp.net/web-forms)或 [ASP.NET MVC](https://www.asp.net/mvc) 开发，但现在使用 Windows 容器部署。 使用 Windows 容器时，还需要将数据迁移到 [Azure SQL 数据库托管实例](https://docs.microsoft.com/azure/sql-database/)中的数据库，但不需要更改应用程序的核心体系结构。
+- **云计算得到优化**（托管服务和 Windows 容器）：此模型是有关进行几个重要部署优化，以获得部分显著好处从云，而无需更改应用程序的核心体系结构。 此处的基本步骤是对现有 .NET Framework 应用程序增加 [Windows 容器](https://docs.microsoft.com/virtualization/windowscontainers/about/) 支持。 此重要步骤 （容器化） 不需要触及代码，因此总体的提升和转变工作量较轻。 可以使用 [Image2Docker](https://github.com/docker/communitytools-image2docker-win) 或 Visual Studio 之类的工具，Visual Studio 带有适用于 [Docker](https://www.docker.com/) 的工具。 Visual Studio 自动为 ASP.NET 应用程序和 Windows 容器映像选择智能默认值。 这些工具提供快速内部循环，并提供将容器迁移到 Azure 的快速途径。 部署到多个环境中时，敏捷性得到提高。 然后，转到生产环境，你可以部署到 Windows 容器[用于容器的 Azure Web 应用](https://azure.microsoft.com/services/app-service/containers/)，[Azure 容器实例 (ACI) 和 Windows Server 2016 和容器，如果偏好使用 IaaS 方案的 Azure Vm。 对于稍微复杂多容器应用程序，到业务流程协调程序，如[Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)或[Azure Kubernetes 服务 (AKS/ACS)](https://azure.microsoft.com/services/container-service/)。 在此初次更新期间你还可以添加资产从云中，例如使用之类的工具监视[Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview);使用你的应用程序生命周期的 CI/CD 管道[Azure DevOps 服务](https://visualstudio.microsoft.com/team-services/); 和许多其他数据资源服务在 Azure 中可用。 例如，可以修改单片 Web 应用，该应用最初使用传统 [ASP.NET Web 窗体](https://www.asp.net/web-forms)或 [ASP.NET MVC](https://www.asp.net/mvc) 开发，但现在使用 Windows 容器部署。 使用 Windows 容器时，还需要将数据迁移到 [Azure SQL 数据库托管实例](https://docs.microsoft.com/azure/sql-database/)中的数据库，但不需要更改应用程序的核心体系结构。
 
-- **云原生**： 由于介绍，您应该考虑构建[云原生](https://www.gartner.com/doc/3181919/architect-design-cloudnative-applications)时你面向的大型复杂应用程序与多个独立的开发团队处理的应用程序不同的微服务，可以开发和自主部署。 此外，由于每个微服务 granularized 和独立可伸缩性。 这些体系结构方法面临的非常重要的挑战和复杂性，但可以大大简化了云 PaaS 和业务流程协调程序喜欢[Azure Kubernetes 服务 (AKS/ACS)](https://azure.microsoft.com/services/container-service/) （托管 Kubernetes） [Azure 服务Fabric 中，并[Azure Functions](https://azure.microsoft.com/services/functions/)使用无服务器的方法。 所有这些方法 （如微服务和无服务器） 通常要求您针对云构建和编写新代码，经过调整以适应特定的 PaaS 平台的代码或符合特定的体系结构，例如微服务的代码。
+- **云原生**:中引入，你应该看待构建[云原生](https://www.gartner.com/doc/3181919/architect-design-cloudnative-applications)时你面向的大型复杂应用程序与多个独立的开发团队致力于不同的微服务，可以是应用程序开发和自主部署。 此外，由于每个微服务 granularized 和独立可伸缩性。 这些体系结构方法面临的非常重要的挑战和复杂性，但可以大大简化了云 PaaS 和业务流程协调程序喜欢[Azure Kubernetes 服务 (AKS/ACS)](https://azure.microsoft.com/services/container-service/) （托管 Kubernetes） [Azure 服务Fabric 中，并[Azure Functions](https://azure.microsoft.com/services/functions/)使用无服务器的方法。 所有这些方法 （如微服务和无服务器） 通常要求您针对云构建和编写新代码，经过调整以适应特定的 PaaS 平台的代码或符合特定的体系结构，例如微服务的代码。
 
 图 1-3 显示了每个成熟度级别可使用的内部技术：
 
@@ -166,15 +160,18 @@ Microsoft 和 <https://www.microsoft.com> 上“商标”网页列出的商标�
 
 本指南的重点具有一定的针对性。 它将显示可用于实现的提升和转变现有.NET 应用程序，而无需重新架构，且无需更改代码的路径。 从根本上讲，它演示如何使应用程序云计算得到优化。
 
-本指南不演示如何创建云本机应用程序，如如何改进到微服务体系结构。 若要重新构建您的应用程序或创建基于微服务的全新应用程序，请参阅电子书[.NET 微服务： 容器化.NET 应用程序体系结构](https://aka.ms/microservicesebook)。
+本指南不演示如何创建云本机应用程序，如如何改进到微服务体系结构。 若要重新构建您的应用程序或创建基于微服务的全新应用程序，请参阅电子书[.NET 微服务：容器化.NET 应用程序体系结构](https://aka.ms/microservicesebook)。
 
 ### <a name="additional-resources"></a>其他资源
 
-- **适用于容器化 Docker 应用程序生命周期使用 Microsoft 平台和工具**（可下载电子书）： [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
+- **适用于容器化 Docker 应用程序生命周期使用 Microsoft 平台和工具**（可下载电子书） \
+  [https://aka.ms/dockerlifecycleebook](https://aka.ms/dockerlifecycleebook)
 
-- **.NET 微服务： 容器化.NET 应用程序体系结构**（可下载电子书）： [*https://aka.ms/microservicesebook*](https://aka.ms/microservicesebook)
+- **.NET 微服务：容器化.NET 应用程序体系结构**（可下载电子书） \
+  [https://aka.ms/microservicesebook](https://aka.ms/microservicesebook)
 
-- **构建现代 web 应用程序使用 ASP.NET Core 和 Azure** （可下载电子书）： [*https://aka.ms/webappebook*](https://aka.ms/webappebook)
+- **构建现代 web 应用程序使用 ASP.NET Core 和 Azure** （可下载电子书） \
+  [https://aka.ms/webappebook](https://aka.ms/webappebook)
 
 ## <a name="who-should-use-this-guide"></a>本指南的目标读者
 
@@ -199,4 +196,4 @@ GitHub 上的 [EShopModernizing](https://github.com/dotnet-architecture/eShopMod
 本指南旨在帮助你了解改进和更新现有.NET web 应用程序的选项。 本指南以及相关示例应用程序不断更新。 你的反馈是欢迎使用 ！ 如有关于本指南的改进建议，请将其发送到 [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com?subject=Feedback%20for%20.NET%20Container%20&%20Microservices%20Architecture%20book)。
 
 >[!div class="step-by-step"]
-[下一篇](lift-and-shift-existing-apps-azure-iaas.md)
+>[下一页](lift-and-shift-existing-apps-azure-iaas.md)

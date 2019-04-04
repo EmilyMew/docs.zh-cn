@@ -10,29 +10,20 @@ helpviewer_keywords:
 ms.assetid: 8a3cca8b-dd94-4e3d-ad9a-9ee7590654bc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ae339b18032becffcaece1924a22b958ed86d364
-ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.openlocfilehash: c2b5646a1a556c57814602790d5f17104d2148e5
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56219680"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58410740"
 ---
 # <a name="default-marshaling-for-arrays"></a>数组的默认封送处理
 在完全由托管代码组成的应用程序中，公共语言运行时将数组类型作为 In/Out 参数传递。 而互操作封送拆收器默认将数组作为 In 参数传递。  
   
  使用[固定优化](copying-and-pinning.md)，blittable 数组在与同一单元中的对象交互时，可能看上去像是作为 In/Out 参数运行。 但是，如果随后将代码导出到用于生成跨计算机代理的类型库，且该库用于跨单元封送调用，则调用可还原为真正的 In 参数行为。  
   
- 数组本就很复杂，而托管数组和非托管数组之间的差异使它们比其他 blittable 类型具有更多信息。 本主题提供封送处理数组的以下信息：  
+ 数组本就很复杂，而托管数组和非托管数组之间的差异使它们比其他 blittable 类型具有更多信息。  
   
--   [托管数组](#cpcondefaultmarshalingforarraysanchor1)  
-  
--   [非托管数组](#cpcondefaultmarshalingforarraysanchor2)  
-  
--   [将数组参数传递给 .NET 代码](#cpcondefaultmarshalingforarraysanchor3)  
-  
--   [将数组传递给 COM](#cpcondefaultmarshalingforarraysanchor4)  
-  
-<a name="cpcondefaultmarshalingforarraysanchor1"></a>   
 ## <a name="managed-arrays"></a>托管数组  
  可以有各种托管数组类型；但是，<xref:System.Array?displayProperty=nameWithType> 类是所有数组类型的基类。 System.Array 类的属性可确定数组的秩、长度、下限和上限，其方法可用于访问、搜索、复制、创建数组以及对数组排序。  
   
@@ -46,11 +37,9 @@ ms.locfileid: "56219680"
 |ELEMENT_TYPE_CLASS|未知|未知|未知|**System.Array**|  
 |ELEMENT_TYPE_SZARRAY|由类型指定。|1|0|type [ n ]|  
   
-<a name="cpcondefaultmarshalingforarraysanchor2"></a>   
 ## <a name="unmanaged-arrays"></a>非托管数组  
  非托管数组是 COM 样式安全数组或 C 样式数组，其长度固定或可变。 安全数组是自我描述的数组，带有关联数组数据的类型、秩和界限。 C 样式数组是具有固定下限 0 的一维类型化数组。 封送处理服务对两种数组类型的支持均有限。  
   
-<a name="cpcondefaultmarshalingforarraysanchor3"></a>   
 ## <a name="passing-array-parameters-to-net-code"></a>将数组参数传递给 .NET 代码  
  C 样式数组和安全数组都可以作为安全数组或 C 样式数组从非托管代码传递给 .NET 代码。 下表显示非托管类型值和导入的类型。  
   
@@ -190,7 +179,6 @@ void New3(ref String ar);
   
  互操作封送拆收器使用 CoTaskMemAlloc 和 CoTaskMemFree 方法分配和检索内存。 非托管代码所执行的内存分配也必须使用这些方法。  
   
-<a name="cpcondefaultmarshalingforarraysanchor4"></a>   
 ## <a name="passing-arrays-to-com"></a>将数组传递给 COM  
  所有托管数组类型都可以从托管代码传递给非托管代码。 根据托管类型和应用于它的属性，可将数组作为安全数组或 C 样式数组进行访问，如下表所示。  
   

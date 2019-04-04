@@ -9,12 +9,12 @@ helpviewer_keywords:
 - XML literals [Visual Basic], reference
 - literals [Visual Basic], XML
 ms.assetid: 16b28c40-8768-423f-bd9c-22ff10de2b54
-ms.openlocfilehash: 1c10fd5fe3d6aa5566976b08db6c26ee49521850
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 98f81bfb4a49bbac2a1e07533e1584d7c2b23302
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54491254"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58842013"
 ---
 # <a name="xml-literals-visual-basic"></a>XML 文本 (Visual Basic)
 在本部分中的主题记录 Visual Basic 中的 XML 文本的语法。 使用 XML 文本语法，可以将 XML 直接合并到代码中。  
@@ -30,4 +30,5 @@ ms.locfileid: "54491254"
 |[XML 处理指令文本](../../../visual-basic/language-reference/xml-literals/xml-processing-instruction-literal.md)|介绍了表示 <xref:System.Xml.Linq.XProcessingInstruction> 对象的文本语法。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

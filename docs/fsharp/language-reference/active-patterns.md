@@ -2,12 +2,12 @@
 title: 活动模式
 description: 了解如何使用活动模式以定义细分输入的数据中的命名的分区F#编程语言。
 ms.date: 05/16/2016
-ms.openlocfilehash: c830011b69809bd399aab0c8a8bc25d40d5c82cc
-ms.sourcegitcommit: fa38fe76abdc8972e37138fcb4dfdb3502ac5394
+ms.openlocfilehash: 0f1f57de425836738201d2d8f84ab67a0df142ee
+ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53612837"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58412079"
 ---
 # <a name="active-patterns"></a>活动模式
 
@@ -86,23 +86,23 @@ BlanchedAlmond
 Something else : Not matched.
 ```
 
-当使用部分活动模式时，有时单项选择可以是不连续或互斥的但它们不需要。 在以下示例中，模式正方形和多维数据集的模式不是连续的因为一些数字是平方和多维数据集，例如 64。 下面的程序将最多是平方和多维数据集的 1000000 输出所有整数。
+当使用部分活动模式时，有时单项选择可以是不连续或互斥的但它们不需要。 在以下示例中，模式正方形和多维数据集的模式不是连续的因为一些数字是平方和多维数据集，例如 64。 以下程序使用 AND 模式合并的正方形和立方体的模式。 它打印最大 1000 是同时平方和多维数据集，以及是只有多维数据集的所有整数。 
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5005.fs)]
 
 输出如下所示：
 
 ```
-1
-64
-729
-4096
-15625
-46656
-117649
-262144
-531441
-1000000
+1 is a cube and a square
+8 is a cube
+27 is a cube
+64 is a cube and a square
+125 is a cube
+216 is a cube
+343 is a cube
+512 is a cube
+729 is a cube and a square
+1000 is a cube
 ```
 
 ## <a name="parameterized-active-patterns"></a>参数化活动模式
