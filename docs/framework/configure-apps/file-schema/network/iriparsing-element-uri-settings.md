@@ -1,19 +1,19 @@
 ---
-title: <iriParsing> 元素（Uri 设置）
+title: <iriParsing> 元素 （Uri 设置）
 ms.date: 03/30/2017
 ms.assetid: 953d0b53-445e-41f9-b302-77c4030852ce
-ms.openlocfilehash: a4d4df8c214efb955f8f9d6678aaf8d56de71ebc
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 710d82b70eb16e88404d4d8bbf38d2d030693103
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55256651"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59092495"
 ---
 # <a name="iriparsing-element-uri-settings"></a>\<iriParsing > 元素 （Uri 设置）
 指定是否对 <xref:System.Uri> 应用国际资源标识符 (IRI) 分析以及是否应该应用 IRI 分析规则。  
   
 ## <a name="schema-hierarchy"></a>架构层次结构  
- [\<configuration> 元素](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)  
+ [\<配置 > 元素](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)  
   
  [\<Uri > 元素 （Uri 设置）](../../../../../docs/framework/configure-apps/file-schema/network/uri-element-uri-settings.md)  
   
@@ -32,16 +32,16 @@ ms.locfileid: "55256651"
   
 ### <a name="attributes"></a>特性  
   
-|**元素**|**说明**|  
+|**元素**|**描述**|  
 |-----------------|---------------------|  
 |`enabled`|指定是否启用 IRI 分析。 默认值为 `false`。|  
   
 ### <a name="child-elements"></a>子元素  
- 无  
+ None  
   
 ### <a name="parent-elements"></a>父元素  
   
-|**元素**|**说明**|  
+|**元素**|**描述**|  
 |-----------------|---------------------|  
 |[uri](../../../../../docs/framework/configure-apps/file-schema/network/uri-element-uri-settings.md)|包含指定.NET Framework 如何处理使用统一资源标识符 (Uri) 表示的 web 地址的设置。|  
   
@@ -80,6 +80,7 @@ ms.locfileid: "55256651"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>
 - [网络设置架构](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

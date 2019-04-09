@@ -1,5 +1,5 @@
 ---
-title: 如何：在数据集合视图中的对象之间导航
+title: 如何：在数据集合视图中浏览对象
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - data binding [WPF], navigating through objects in data CollectionView
 - navigating through objects in data CollectionView [WPF]
 ms.assetid: fcd37590-bce1-4ac9-8b74-3b96c7458b8a
-ms.openlocfilehash: 9272a2f635a62abdac2746f2c8cce515812706f6
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 1507ab4db0c91b670d8bca754f6fd67d887c7041
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57355774"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59138172"
 ---
-# <a name="how-to-navigate-through-the-objects-in-a-data-collectionview"></a>如何：在数据集合视图中的对象之间导航
+# <a name="how-to-navigate-through-the-objects-in-a-data-collectionview"></a>如何：在数据集合视图中浏览对象
 利用视图，可以通过不同方式查看同一数据集合，具体取决于排序、筛选或分组。 视图还提供了当前记录指针的概念，并允许移动指针。 此示例演示如何获取当前对象，以及使用 <xref:System.Windows.Data.CollectionView> 类提供的功能在数据集合的对象之间导航。  
   
 ## <a name="example"></a>示例  
@@ -30,8 +30,9 @@ ms.locfileid: "57355774"
  [!code-vb[CollectionView#OnButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CollectionView/VisualBasic/Page1.xaml.vb#onbutton)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [数据绑定概述](data-binding-overview.md)
 - [在视图中对数据进行排序](how-to-sort-data-in-a-view.md)
-- [在视图中筛选数据](how-to-filter-data-in-a-view.md)
+- [筛选视图中的数据](how-to-filter-data-in-a-view.md)
 - [在 XAML 中使用视图对数据进行排序和分组](how-to-sort-and-group-data-using-a-view-in-xaml.md)
 - [帮助主题](data-binding-how-to-topics.md)

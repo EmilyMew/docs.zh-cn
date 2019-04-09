@@ -9,17 +9,16 @@ helpviewer_keywords:
 - dependency properties [WPF], XAML loading and
 - loading XML data [WPF]
 ms.assetid: 6eea9f4e-45ce-413b-a266-f08238737bf2
-ms.openlocfilehash: ed608a658b5077a20ed56419c4ac731641610e3d
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 4db87c5f266a9eed136f0651f48d11720abede65
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57373070"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083825"
 ---
 # <a name="xaml-loading-and-dependency-properties"></a>XAML 加载和依赖项属性
 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 处理器的当前 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 实现固有地知道依赖属性。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 处理器在加载二进制 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 和处理作为依赖属性的特性时对依赖属性使用属性系统方法。 这会有效地跳过属性包装器。 实现自定义依赖属性时，必须考虑到这种行为，应避免在之外的其他属性系统在属性包装器中放置的任何其他代码<xref:System.Windows.DependencyObject.GetValue%2A>和<xref:System.Windows.DependencyObject.SetValue%2A>。  
-  
-  
+
 <a name="prerequisites"></a>   
 ## <a name="prerequisites"></a>系统必备  
  本主题假定你已从使用者和创作者角度了解依赖属性，并已阅读[依赖属性概述](dependency-properties-overview.md)和[自定义依赖属性](custom-dependency-properties.md)。 你应也已阅读 [XAML 概述 (WPF)](xaml-overview-wpf.md) 和 [XAML 语法详述](xaml-syntax-in-detail.md)。  
@@ -42,9 +41,10 @@ ms.locfileid: "57373070"
  [!code-vb[WPFAquariumSln#AGWithWrapper](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agwithwrapper)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [依赖项属性概述](dependency-properties-overview.md)
 - [XAML 概述 (WPF)](xaml-overview-wpf.md)
-- [依赖属性元数据](dependency-property-metadata.md)
-- [集合类型依赖属性](collection-type-dependency-properties.md)
-- [依赖属性的安全性](dependency-property-security.md)
+- [依赖项属性元数据](dependency-property-metadata.md)
+- [集合类型依赖项属性](collection-type-dependency-properties.md)
+- [依赖项属性的安全性](dependency-property-security.md)
 - [DependencyObject 的安全构造函数模式](safe-constructor-patterns-for-dependencyobjects.md)

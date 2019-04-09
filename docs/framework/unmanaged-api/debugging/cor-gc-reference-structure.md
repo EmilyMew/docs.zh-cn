@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 0375fdd6f86ae89171545cfdcb44ac37074084e9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e1e31e95473136bf7e7c196eacc278fa8a1caab2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54718710"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59093652"
 ---
 # <a name="corgcreference-structure"></a>COR_GC_REFERENCE 结构
 包含有关要进行垃圾回收的对象的信息。  
@@ -57,11 +57,11 @@ typedef struct _COR_GC_REFERENCE {
   
  `extraData`字段包含额外数据，具体取决于所引用的源 （或类型）。 可能的值有：  
   
--   `DependentSource`。 如果`type`是`CorGCREferenceType.CorHandleStrongDependent`，此字段是对象保持活动状态，如果根对对象进行垃圾回收在`COR_GC_REFERENCE.Location`。  
+-   `DependentSource`. 如果`type`是`CorGCREferenceType.CorHandleStrongDependent`，此字段是对象保持活动状态，如果根对对象进行垃圾回收在`COR_GC_REFERENCE.Location`。  
   
--   `RefCount`。 如果`type`是`CorGCREferenceType.CorHandleStrongRefCount`，此字段是句柄的引用计数。  
+-   `RefCount`. 如果`type`是`CorGCREferenceType.CorHandleStrongRefCount`，此字段是句柄的引用计数。  
   
--   `Size`。 如果`type`是`CorGCREferenceType.CorHandleStrongSizedByref`，此字段是垃圾回收器为其计算对象根的对象树的最后大小。 请注意，此计算不一定是最新。  
+-   `Size`. 如果`type`是`CorGCREferenceType.CorHandleStrongSizedByref`，此字段是垃圾回收器为其计算对象根的对象树的最后大小。 请注意，此计算不一定是最新。  
   
 ## <a name="requirements"></a>要求  
  **平台：** 请参阅[系统需求](../../../../docs/framework/get-started/system-requirements.md)。  
@@ -70,8 +70,9 @@ typedef struct _COR_GC_REFERENCE {
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [调试结构](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [调试](../../../../docs/framework/unmanaged-api/debugging/index.md)

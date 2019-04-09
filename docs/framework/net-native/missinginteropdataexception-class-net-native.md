@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: eab4bcf8-9f5f-4731-87d8-842748a6062a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1a6d5755507ca00de612677235912d86caf98553
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 31208a63caaf9158f12742f1547b0e1e2781de4c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54698058"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59137951"
 ---
 # <a name="missinginteropdataexception-class-net-native"></a>缺少互操作数据异常类 (.NET Native)
-**适用于 Windows 10 的 .NET for Windows 应用，仅 [!INCLUDE[net_native](../../../includes/net-native-md.md)]**  
+**仅适用于 Windows 10、[!INCLUDE[net_native](../../../includes/net-native-md.md)] 的用于 Windows 应用的 .NET**  
   
  当手动封送方法被调用但一个类型的元数据无法通过动态分析找到或无法在运行时指令文件中找到时，会引发该异常。  
   
@@ -80,6 +80,7 @@ ms.locfileid: "54698058"
  `MissingInteropDataException` 类包含单个唯一成员，即 `MissingType` 属性，它表示一种类型，而如果想成功完成方法调用需使用到该类型的元数据。 所有剩余成员均继承自基类 <xref:System.Exception?displayProperty=nameWithType>。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Exception?displayProperty=nameWithType>
 - [MissingMetadataException 类](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)
-- [运行时指令 (rd.xml) 配置文件参考](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [运行时指令 (rd.xml) 配置文件引用](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

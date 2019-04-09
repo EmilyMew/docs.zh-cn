@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 694ea153-e4db-41ae-96ac-9ac66dcb69a9
-ms.openlocfilehash: e90a2f9c5681ffddb2a3ca0312bdd2f3f4078328
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cbe00fb792ab5f2a7586a958ddbe5bdf004656dc
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54589514"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089546"
 ---
 # <a name="committing-a-transaction-in-single-phase-and-multi-phase"></a>在单阶段和多阶段中提交事务
 事务中所使用的每个资源都由资源管理器 (RM) 进行管理，而资源管理器的操作则由事务管理器 (TM) 进行协调。 [将资源登记为参与者在事务中](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)主题将讨论如何在事务中登记一个资源 （或多个资源）。 本主题讨论如何在已登记的资源之间协调事务提交。  
@@ -110,5 +110,6 @@ public void InDoubt (Enlistment enlistment)
  单阶段提交协议在运行时更有效，因为使用它，无需进行任何显式协调就可执行所有更新。 有关此协议的详细信息，请参阅[优化使用 Single Phase Commit and Promotable Single Phase Notification](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用单阶段提交和可提升的单阶段通知进行优化](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md)
 - [在事务中将资源登记为参与者](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)

@@ -1,18 +1,18 @@
 ---
-title: 如何：执行返回嵌套的集合的查询
+title: 如何：执行返回嵌套集合的查询
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f7f385f3-ffcf-4f3b-af35-de8818938e5f
-ms.openlocfilehash: 466187bf340d8cc2088615ae942131658399d65f
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.openlocfilehash: b3319d3b833ab50ec426c8059bccf818b1407a60
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55827092"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115292"
 ---
-# <a name="how-to-execute-a-query-that-returns-nested-collections"></a>如何：执行返回嵌套的集合的查询
+# <a name="how-to-execute-a-query-that-returns-nested-collections"></a>如何：执行返回嵌套集合的查询
 这些内容演示如何使用 <xref:System.Data.EntityClient.EntityCommand> 对象针对概念模型执行命令，以及如何使用 <xref:System.Data.EntityClient.EntityDataReader> 检索嵌套集合结果。  
   
 ### <a name="to-run-the-code-in-this-example"></a>运行本示例中的代码  
@@ -31,4 +31,5 @@ ms.locfileid: "55827092"
  [!code-vb[DP EntityServices Concepts#ReturnNestedCollectionWithEntityCommand](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#returnnestedcollectionwithentitycommand)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [用于实体框架的 EntityClient 提供程序](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)

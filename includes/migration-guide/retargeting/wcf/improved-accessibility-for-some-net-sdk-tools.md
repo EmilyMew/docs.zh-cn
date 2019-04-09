@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 79005f19ac31ba32e7e468ef61eb867a052eff40
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58760169"
+---
 ### <a name="improved-accessibility-for-some-net-sdk-tools"></a>某些 .NET SDK 工具的改进的辅助功能
 
 |   |   |

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: d1ad722b-5b49-4040-bff3-431b94bb8095
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b33750e5792dcc83e261bc9bb8d1c5dbe35808aa
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 74a897c1fca51c92e8290f6362d947730349344c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54627221"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59104853"
 ---
 # <a name="how-to-run-partially-trusted-code-in-a-sandbox"></a>如何：运行沙盒中部分受信任的代码
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -40,7 +40,7 @@ AppDomain.CreateDomain( string friendlyName,
   
  <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> 方法重载的参数指定 <xref:System.AppDomain> 的名称、<xref:System.AppDomain> 的证据、标识沙盒的应用程序基的 <xref:System.AppDomainSetup> 对象、要使用的权限集和完全受信任的程序集的强名称。  
   
- 出于安全原因，在 `info` 参数中指定的应用程序基不应为宿主应用程序的应用程序基。  
+ 出于安全原因，在 `info` 参数中指定的应用程序基不应为主机应用程序的应用程序基。  
   
  对于 `grantSet` 参数，可以指定已显式创建的权限集或由 <xref:System.Security.SecurityManager.GetStandardSandbox%2A> 方法创建的标准权限集。  
   
@@ -63,7 +63,7 @@ AppDomain.CreateDomain( string friendlyName,
     PermissionSet internetPS = SecurityManager.GetStandardSandbox(ev);  
     ```  
   
-     <xref:System.Security.SecurityManager.GetStandardSandbox%2A> 方法返回 `Internet` 权限集或 `LocalIntranet` 权限集，具体取决于证据中的区域。 <xref:System.Security.SecurityManager.GetStandardSandbox%2A> 还为一些作为引用传递的证据对象构造标识权限。  
+     <xref:System.Security.SecurityManager.GetStandardSandbox%2A> 方法返回 `Internet` 权限集或 `LocalIntranet` 权限集，具体取决于证据中的区域。 <xref:System.Security.SecurityManager.GetStandardSandbox%2A> 构造标识权限的一些作为引用传递的证据对象。  
   
 2.  为包含调用不受信任的代码的宿主类（在此示例中，命名为 `Sandboxer`）的程序集签名。 将用于对程序集签名的 <xref:System.Security.Policy.StrongName> 添加到 <xref:System.AppDomain.CreateDomain%2A> 调用的 `fullTrustAssemblies` 参数的 <xref:System.Security.Policy.StrongName> 数组中。 主机类必须作为完全受信任的类运行，以启用部分信任代码的执行或为部分信任应用程序提供服务。 这就是读取程序集的 <xref:System.Security.Policy.StrongName> 的方式：  
   
@@ -73,7 +73,7 @@ AppDomain.CreateDomain( string friendlyName,
   
      不需要将 .NET framework 程序集（如 mscorlib 和 System.dll）添加到完全信任列表中，因为它们是作为完全受信任的程序集从全局程序集缓存中加载的。  
   
-3.  初始化 <xref:System.AppDomain.CreateDomain%2A> 方法的 <xref:System.AppDomainSetup> 参数。 使用此参数，可以控制新的 <xref:System.AppDomain> 的许多设置。 <xref:System.AppDomainSetup.ApplicationBase%2A> 属性是一个重要设置，并且应不同于宿主应用程序的 <xref:System.AppDomain> 的 <xref:System.AppDomainSetup.ApplicationBase%2A> 属性。 如果 <xref:System.AppDomainSetup.ApplicationBase%2A> 设置相同，则部分信任应用程序可以获取宿主应用程序以加载（作为完全受信任的应用程序）它定义的异常，从而攻击它。 这是为什么不建议使用 catch（异常）的另一个原因。 将主机的应用程序基设置为与沙盒应用程序的应用程序基不同，这可降低攻击风险。  
+3.  初始化 <xref:System.AppDomain.CreateDomain%2A> 方法的 <xref:System.AppDomainSetup> 参数。 使用此参数，可以控制新的 <xref:System.AppDomain> 的许多设置。 <xref:System.AppDomainSetup.ApplicationBase%2A> 属性是一个重要设置，并且应不同于宿主应用程序的 <xref:System.AppDomain> 的 <xref:System.AppDomainSetup.ApplicationBase%2A> 属性。 如果 <xref:System.AppDomainSetup.ApplicationBase%2A> 设置相同，则部分信任应用程序可以获取主机应用程序以加载（作为完全受信任的应用程序）它定义的异常，从而攻击它。 这是为什么不建议使用 catch（异常）的另一个原因。 将主机的应用程序基设置为与沙盒应用程序的应用程序基不同，这可降低攻击风险。  
   
     ```csharp
     AppDomainSetup adSetup = new AppDomainSetup();  
@@ -167,7 +167,7 @@ AppDomain.CreateDomain( string friendlyName,
     }  
     ```  
   
-     <xref:System.Reflection> 用于获取部分受信任的程序集中的方法的句柄。 该句柄可以用于以安全的方式、使用最小权限来执行代码。  
+     <xref:System.Reflection> 用于在部分受信任的程序集中获取方法的句柄。 该句柄可以用于以安全的方式、使用最小权限来执行代码。  
   
      在前面的代码中，请在打印 <xref:System.Security.SecurityException> 之前备注完全信任权限的 <xref:System.Security.PermissionSet.Assert%2A>。  
   
@@ -274,4 +274,5 @@ class Sandboxer : MarshalByRefObject
 ```  
   
 ## <a name="see-also"></a>请参阅
-- [安全编码准则](../../../docs/standard/security/secure-coding-guidelines.md)
+
+- [代码安全维护指南](../../../docs/standard/security/secure-coding-guidelines.md)

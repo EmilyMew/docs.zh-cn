@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 26ada5af-175c-4576-931a-9f07fa1723e9
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 663ceda1c0621e1152e795db79c3953be0090d5d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 88f23c2e03966bffccc9153e18e1b54e6847987d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54681785"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59127603"
 ---
 # <a name="bindingfailure-mda"></a>bindingFailure MDA
 当程序集加载失败时，将激活 `bindingFailure` 托管调试助手 (MDA)。  
@@ -48,7 +48,7 @@ ms.locfileid: "54681785"
   
 -   根据上述所确定事项解决失败原因。 可能的解决方案选项如下：  
   
-    -   在全局程序集缓存中安装请求的程序集，并调用  <xref:System.Reflection.Assembly.Load%2A> 方法以按标识加载程序集。  
+    -   在全局程序集缓存中安装请求的程序集，并调用  <xref:System.Reflection.Assembly.Load%2A> 以按标识加载程序集的方法。  
   
     -   将请求的程序集复制到应用程序目录中，并调用 <xref:System.Reflection.Assembly.Load%2A> 方法以按标识加载程序集。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "54681785"
 ## <a name="effect-on-the-runtime"></a>对运行时的影响  
  此 MDA 对 CLR 无任何影响。 它只报告与绑定失败有关的数据。  
   
-## <a name="output"></a>输出  
+## <a name="output"></a>Output  
  MDA 会报告加载失败的程序集，包括请求的路径和/或显示名称、绑定上下文、请求加载的应用程序域，以及失败的原因。  
   
  显示名称或请求的路径可能为空（如果该数据对 CLR 不可用）。 如果失败的调用是对 <xref:System.Reflection.Assembly.Load%2A> 方法的调用，则运行时有可能无法确定程序集的显示名称。  
@@ -99,4 +99,5 @@ namespace ConsoleApplication1
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用托管调试助手诊断错误](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

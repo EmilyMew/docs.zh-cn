@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f553870399a8f2ddb78e01d27a7f7e5bd32d786b
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: ccfe83707b6354c42a4c3c81e911918b2ea79ec4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57473989"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59108909"
 ---
 # <a name="icordebugmodule3createreaderforinmemorysymbols-method"></a>ICorDebugModule3::CreateReaderForInMemorySymbols 方法
 创建动态模块的调试符号读取器。  
@@ -72,6 +72,7 @@ HRESULT CreateReaderForInMemorySymbols (
  **.NET framework 版本：** 4.5，4，3.5 SP1  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICorDebugRemoteTarget 接口](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
 - [ICorDebug 接口](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 

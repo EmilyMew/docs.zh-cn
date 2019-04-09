@@ -2,12 +2,12 @@
 title: <issuerMetadata>
 ms.date: 03/30/2017
 ms.assetid: e7eae2c0-cc17-4281-af59-e4eb8d54f92a
-ms.openlocfilehash: c557bd903462ccf4029b7317cbd45610e3fba165
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 0dffad6a17720dd0506acbcd60efe4aafe24ed28
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55264448"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59090103"
 ---
 # <a name="issuermetadata"></a>\<issuerMetadata>
 \<system.serviceModel>  
@@ -48,7 +48,7 @@ ms.locfileid: "55264448"
   
 |特性|描述|  
 |---------------|-----------------|  
-|address|必选的 `string` 特性。<br /><br /> 指定终结点的地址。 该地址必须为绝对 URI。 默认值为一个空字符串。|  
+|地址|必选的 `string` 特性。<br /><br /> 指定终结点的地址。 该地址必须为绝对 URI。 默认值为一个空字符串。|  
   
 ### <a name="child-elements"></a>子元素  
   
@@ -64,6 +64,7 @@ ms.locfileid: "55264448"
 |[\<message>](../../../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-wsfederationhttpbinding.md)|定义的消息级安全性设置[ \<wsFederationHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)元素。|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress%2A>
 - <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.IssuerMetadata%2A>
 - [服务标识和身份验证](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)

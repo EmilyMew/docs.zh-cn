@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c787a93ac98a086dfb6218d1b4891de87e0e107d
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: c29e581a77ac90882d102cfee2c715e9c309e1a3
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57486978"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59116020"
 ---
 # <a name="icordebugmetadatalocatorgetmetadata-method"></a>ICorDebugMetaDataLocator::GetMetaData 方法
 要求调试器返回模块（完成该调试器请求的操作需要其元数据）的完整路径。  
@@ -69,7 +69,7 @@ HRESULT GetMetaData(
   
 |HRESULT|描述|  
 |-------------|-----------------|  
-|S_OK|该方法已成功完成。 `wszPathBuffer` 包含文件的完整路径，以 null 结尾。|  
+|S_OK|该方法已成功完成。 `wszPathBuffer` 包含该文件的完整路径，以 null 结尾。|  
 |E_NOT_SUFFICIENT_BUFFER|`wszPathBuffer` 的当前大小不足以容纳完整路径。 在这种情况下，`pcchPathBuffer` 包含所需的 `WCHAR` 计数（包括终止 null 字符），并且使用请求的缓冲区大小第二次调用 `GetMetaData`。|  
   
 ## <a name="remarks"></a>备注  
@@ -82,9 +82,10 @@ HRESULT GetMetaData(
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICorDebugThread4 接口](../../../../docs/framework/unmanaged-api/debugging/icordebugthread4-interface.md)
 - [调试接口](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [调试](../../../../docs/framework/unmanaged-api/debugging/index.md)

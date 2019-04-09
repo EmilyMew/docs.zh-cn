@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ae3766e2045b5834fbf6ea20415942413b1590c0
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58761271"
+---
 ### <a name="wcf-services-that-use-nettcp-with-ssl-security-and-md5-certificate-authentication"></a>使用带有 SSL 安全和 MD5 证书身份验证的 NETTCP 的 WCF 服务
 
 |   |   |

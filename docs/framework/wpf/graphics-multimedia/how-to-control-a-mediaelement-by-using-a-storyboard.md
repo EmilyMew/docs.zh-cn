@@ -1,5 +1,5 @@
 ---
-title: 如何：使用演示图板控制 MediaElement
+title: 如何：使用情节提要控制 MediaElement
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - media [WPF], controlling playback with Storyboards
 - playback of media [WPF], controlling with Storyboards
 ms.assetid: 6128ca77-b826-4e36-b968-6f237157c543
-ms.openlocfilehash: 51d567101ee49095e27e9d440016a81cd49fa876
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: ae785e11b1da0f2c408b24021ad46ab071419378
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369105"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59100309"
 ---
-# <a name="how-to-control-a-mediaelement-by-using-a-storyboard"></a>如何：使用演示图板控制 MediaElement
+# <a name="how-to-control-a-mediaelement-by-using-a-storyboard"></a>如何：使用情节提要控制 MediaElement
 此示例演示如何控制<xref:System.Windows.Controls.MediaElement>通过使用<xref:System.Windows.Media.MediaTimeline>中<xref:System.Windows.Media.Animation.Storyboard>。  
   
 ## <a name="example"></a>示例  
@@ -36,6 +36,7 @@ ms.locfileid: "57369105"
  [!code-vb[MediaGallery_snip#CodeBehindMediaTimelineExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaGallery_snip/VB/MediaTimelineExample.xaml.vb#codebehindmediatimelineexamplewholepage)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.MediaElement>
 - <xref:System.Windows.Media.MediaTimeline>
 - <xref:System.Windows.Media.Animation.Storyboard>

@@ -1,5 +1,5 @@
 ---
-title: 如何：处理错误和因数据绑定而发生的异常
+title: 如何：处理因数据绑定而发生的错误和异常
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - data binding [Windows Forms], error handling
 - BindingSource component [Windows Forms], handling errors and exceptions
 ms.assetid: eddc5bad-9513-47df-ab28-f02d8dff7892
-ms.openlocfilehash: 8400ce602d15c195aea43f9e5a162fddb1783830
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 709db2a98074e3322adad8b1275b3c4418c14636
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57703144"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59084617"
 ---
-# <a name="how-to-handle-errors-and-exceptions-that-occur-with-databinding"></a>如何：处理错误和因数据绑定而发生的异常
+# <a name="how-to-handle-errors-and-exceptions-that-occur-with-databinding"></a>如何：处理因数据绑定而发生的错误和异常
 将基础业务对象绑定到控件时，此类对象上时常发生异常和错误。 可以截获这些错误和异常，然后通过为特定的 <xref:System.Windows.Forms.Binding>、<xref:System.Windows.Forms.BindingSource> 或 <xref:System.Windows.Forms.CurrencyManager> 组件处理 <xref:System.Windows.Forms.Binding.BindingComplete> 事件恢复错误信息或将此信息传递至用户。  
   
 ## <a name="example"></a>示例  
@@ -40,6 +40,7 @@ ms.locfileid: "57703144"
  Visual Basic 或 Visual C# 生成命令行中的此示例的信息，请参阅[从命令行生成](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)或[命令行上使用 csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)。 也可以通过将代码粘贴到新的项目中生成此示例在 Visual Studio 中。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.Binding.BindingComplete?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.BindingSource.BindingComplete?displayProperty=nameWithType>
 - [BindingSource 组件](bindingsource-component.md)

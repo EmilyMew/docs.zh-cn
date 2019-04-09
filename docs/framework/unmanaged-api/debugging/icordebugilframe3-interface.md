@@ -12,12 +12,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9c87578c3a5e2bec9bbd754929308645f7862ee5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b46c74ec0bfc1fc44bcaca07439c472b0fd8393f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54701672"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59113758"
 ---
 # <a name="icordebugilframe3-interface"></a>ICorDebugILFrame3 接口
 提供用于封装函数的返回值的方法。 `ICorDebugILFrame3` 是的 ICorDebugILFrame 和 ICorDebugILFrame2 接口的逻辑扩展。  
@@ -40,8 +40,9 @@ ms.locfileid: "54701672"
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICorDebugCode3 接口](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)
 - [调试接口](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

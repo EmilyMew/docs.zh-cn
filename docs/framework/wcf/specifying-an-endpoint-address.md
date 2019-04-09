@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - endpoints [WCF], addressing
 ms.assetid: ac24f5ad-9558-4298-b168-c473c68e819b
-ms.openlocfilehash: 0d74e94aed00d480459aec3c63d961c82af42ef1
-ms.sourcegitcommit: acd8ed14fe94e9d4e3a7fb685fe83d05e941073c
+ms.openlocfilehash: 4fe21bb5b91143dff4d0a9f24bbc39be5e529985
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56442993"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59097520"
 ---
 # <a name="specifying-an-endpoint-address"></a>指定终结点地址
 与 Windows Communication Foundation (WCF) 服务的所有通信都是通过其终结点。 每个 <xref:System.ServiceModel.Description.ServiceEndpoint> 都包含一个 <xref:System.ServiceModel.Description.ServiceEndpoint.Address%2A>、一个 <xref:System.ServiceModel.Description.ServiceEndpoint.Binding%2A> 和一个 <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A>。 协定指定可用的操作。 绑定指定如何与服务进行通信，而地址指定查找服务的位置。 每个终结点都必须具有一个唯一的地址。 终结点的地址由 <xref:System.ServiceModel.EndpointAddress> 类表示，该类包含一个表示服务地址的统一资源定位符 (URI)，一个表示服务的安全标识的 <xref:System.ServiceModel.EndpointAddress.Identity%2A> 和一个可选的 <xref:System.ServiceModel.EndpointAddress.Headers%2A> 集合。 可选标头提供用于标识终结点或与终结点交互的更多详细寻址信息。 例如，标头可指示如何处理传入消息，终结点应发送答复消息的位置，或在多个实例可用时应使用哪个服务实例处理来自特定用户的传入消息。  
@@ -56,9 +56,7 @@ ms.locfileid: "56442993"
   
 ## <a name="endpoint-address-in-metadata"></a>元数据中的终结点地址  
  终结点地址在 Web 服务描述语言 (WSDL) 中表示为对应终结点的 `EndpointReference` 元素内的 WS-Addressing `wsdl:port` (EPR) 元素。 EPR 包含终结点的地址以及所有的地址属性。 请注意，`wsdl:port` 内的 EPR 可替换 `soap:Address`，如下面的示例所示。  
-  
-  
-  
+
 ## <a name="defining-endpoint-addresses-in-code"></a>在代码中定义终结点地址  
  在代码中可以使用 <xref:System.ServiceModel.EndpointAddress> 类创建终结点地址。 为终结点地址指定的 URI 可以是完全限定的路径，也可以是相对于服务的基址的路径。 下面的代码演示如何创建 <xref:System.ServiceModel.EndpointAddress> 类的实例，并将其添加到承载服务的 <xref:System.ServiceModel.ServiceHost> 实例中。  
   
@@ -83,7 +81,8 @@ ms.locfileid: "56442993"
  如果显式提供了终结点，则仍可以添加默认终结点，方法是先在 <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A> 上调用 <xref:System.ServiceModel.ServiceHost>，然后调用 <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>。 有关默认终结点、绑定和行为的详细信息，请参阅[简化配置](../../../docs/framework/wcf/simplified-configuration.md)和 [WCF 服务的简化配置](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.EndpointAddress>
 - [服务标识和身份验证](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
 - [终结点创建概述](../../../docs/framework/wcf/endpoint-creation-overview.md)
-- [承载](../../../docs/framework/wcf/feature-details/hosting.md)
+- [宿主](../../../docs/framework/wcf/feature-details/hosting.md)

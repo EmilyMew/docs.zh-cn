@@ -1,5 +1,5 @@
 ---
-title: 如何：使用颜色矩阵进行转换一种颜色
+title: 如何：使用颜色矩阵对单色进行转换
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - image colors [Windows Forms], transforming
 - color matrices [Windows Forms], using
 ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
-ms.openlocfilehash: f19039c69f27f78e838ea1a891690451af3f0cdc
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 66ddd85d4f841edf9cabf338fbb66a8e2dda491a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57705592"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59075155"
 ---
-# <a name="how-to-use-a-color-matrix-to-transform-a-single-color"></a>如何：使用颜色矩阵进行转换一种颜色
+# <a name="how-to-use-a-color-matrix-to-transform-a-single-color"></a>如何：使用颜色矩阵对单色进行转换
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 提供了<xref:System.Drawing.Image>和<xref:System.Drawing.Bitmap>用于存储和操作图像的类。 <xref:System.Drawing.Image> 和<xref:System.Drawing.Bitmap>对象存储为 32 位数字，每个像素的颜色：各 8 位红色、 绿色、 蓝色和 alpha。 每四个组件是一个介于 0 到 255 之间，其中 0 表示没有亮度，255 表示最大亮度。 Alpha 分量指定颜色的透明度：0 表示完全透明，255 表示完全不透明。  
   
  颜色向量是窗体 （红色、 绿色、 蓝色、 alpha） 4 元组。 例如，颜色向量 （0，255，0，255） 表示没有红色或蓝色，但绿色达到最大亮度不透明颜色。  
@@ -61,8 +61,9 @@ ms.locfileid: "57705592"
  [!code-vb[System.Drawing.RecoloringImages#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RecoloringImages/VB/Class1.vb#21)]  
   
 ## <a name="compiling-the-code"></a>编译代码  
- 前面的示例专用于 Windows 窗体，它需要 <xref:System.Windows.Forms.PaintEventArgs> `e`，后者是 <xref:System.Windows.Forms.Control.Paint> 事件处理程序的参数。  
+ 前面的示例专用于 Windows 窗体，并且它需要<xref:System.Windows.Forms.PaintEventArgs> `e`，这是一个参数的<xref:System.Windows.Forms.Control.Paint>事件处理程序。  
   
 ## <a name="see-also"></a>请参阅
+
 - [对图像重新着色](recoloring-images.md)
-- [坐标系统和转换](coordinate-systems-and-transformations.md)
+- [坐标系和坐标转换](coordinate-systems-and-transformations.md)

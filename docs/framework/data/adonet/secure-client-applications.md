@@ -2,12 +2,12 @@
 title: 保证客户端应用程序的安全
 ms.date: 03/30/2017
 ms.assetid: 6239592e-fa7d-4dea-9f00-d296d0048b01
-ms.openlocfilehash: c8efdf4c4baceb22ee60bdcf333ad1fec9ebd2d0
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: 0c14089247e916b91cb385c7d715cce54acee57c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56092704"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59119608"
 ---
 # <a name="secure-client-applications"></a>保证客户端应用程序的安全
 应用程序通常由多个部件组成，所有这些部件均不能包含漏洞，否则可能导致数据丢失或以其他方式危害系统。 在攻击者可访问数据或系统资源之前将其阻止，以此可创建安全的用户界面来防止出现许多问题。  
@@ -36,7 +36,7 @@ ms.locfileid: "56092704"
  [Windows 窗体安全](../../../../docs/framework/winforms/windows-forms-security.md)  
  讨论如何保证 Windows 窗体应用程序的安全并提供相关主题的链接。  
   
- [Windows Forms and Unmanaged Applications](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)  
+ [Windows 窗体和非托管应用程序](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)  
  描述如何与 Windows 窗体应用程序中的非托管应用程序进行交互。  
   
  [Windows 窗体的 ClickOnce 部署](../../winforms/clickonce-deployment-for-windows-forms.md)  
@@ -45,14 +45,14 @@ ms.locfileid: "56092704"
 ## <a name="aspnet-and-xml-web-services"></a>ASP.NET 和 XML Web services  
  ASP.NET 应用程序通常需要限制对 Web 站点某些部分的访问，并提供其他数据保护机制和站点安全机制。 这些链接可提供用于保护 ASP.NET 应用程序的有用信息。  
   
- XML Web services 能够提供可由 ASP.NET 应用程序、Windows 窗体应用程序或其他 Web 服务使用的数据。 您需要管理 Web 服务自身的安全性以及客户端应用程序的安全性。  
+ XML Web services 能够提供可由 ASP.NET 应用程序、Windows 窗体应用程序或其他 Web 服务使用的数据。 你需要管理 Web 服务自身的安全性以及客户端应用程序的安全性。  
   
  有关更多信息，请参见以下资源。  
   
 |资源|描述|  
 |--------------|-----------------|  
 |[保护 ASP.NET 网站](https://docs.microsoft.com/previous-versions/aspnet/91f66yxt(v=vs.100))|讨论如何保证 ASP.NET 应用程序的安全。|  
-|[保护使用 ASP.NET 创建的 XML Web Services](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w67h0dw7(v=vs.100))|讨论如何实现 ASP.NET Web 服务的安全性。|  
+|[保证使用 ASP.NET 创建的 XML Web services 的安全](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w67h0dw7(v=vs.100))|讨论如何实现 ASP.NET Web 服务的安全性。|  
 |[脚本侵入概述](https://docs.microsoft.com/previous-versions/aspnet/w1sw53ds(v=vs.100))|讨论如何抵御脚本攻击，该攻击会尝试将恶意字符插入网页。|  
 |[Web 应用程序的基本安全实践](https://docs.microsoft.com/previous-versions/aspnet/zdh19h94(v=vs.100))|常规安全信息和指向更多讨论的链接，|  
   
@@ -62,12 +62,13 @@ ms.locfileid: "56092704"
 |资源|描述|  
 |--------------|-----------------|  
 |[远程应用程序的配置](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b8tysty8(v=vs.100))|讨论如何配置远程处理应用程序以避免出现常见问题。|  
-|[远程处理中的安全性](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/9hwst9th(v=vs.100))|描述身份验证和加密以及与远程处理相关的其他安全主题。|  
+|[远程处理的安全性](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/9hwst9th(v=vs.100))|描述身份验证和加密以及与远程处理相关的其他安全主题。|  
 |[安全性和远程处理注意事项](../../../../docs/framework/misc/security-and-remoting-considerations.md)|描述与受保护对象和应用程序域交叉相关的安全问题。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [保证 ADO.NET 应用程序的安全](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [有关数据访问策略建议](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))
-- [保护应用程序](/visualstudio/ide/securing-applications)
+- [保证应用程序的安全](/visualstudio/ide/securing-applications)
 - [保护连接信息](../../../../docs/framework/data/adonet/protecting-connection-information.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

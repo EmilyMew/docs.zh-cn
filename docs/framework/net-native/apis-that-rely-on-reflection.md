@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: f9532629-6594-4a41-909f-d083f30a42f3
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 26a198db13e5855d9473cf7780dade9ce95e9298
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e7ec1280f3b7ba25367fac21d5160046915636a5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54610832"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59076856"
 ---
 # <a name="apis-that-rely-on-reflection"></a>利用反射的 API
 在某些情况下，在代码中对反射的使用不是明显的，并且 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 工具链并不保存在运行时间需要的元数据。 该主题介绍了一些常见的 API 或常见编程模式，它们不被视为是反射 API 的一部分，而依赖反射成功执行。 如果在源代码中使用了它们，可以将有关它们的信息添加到运行时指令 (.rd.xml) 文件，以便对这些 API 的调用不会在运行时内引发 [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) 异常或某种其他异常。  
@@ -51,9 +51,9 @@ App1.AppClass`1<System.Int32>.
   
  要成功运行，此代码需要几个元数据项：  
   
--   你想要调用的方法的类型的 `Browse` 元数据。  
+-   `Browse` 你想要调用其方法的类型的元数据。  
   
--   你想要调用的方法 `Browse` 元数据。  如果它是一个公共方法，为包含类型添加的公共 `Browse` 元数据也包括方法。  
+-   `Browse` 你想要调用的方法的元数据。  如果它是一个公共方法，为包含类型添加的公共 `Browse` 元数据也包括方法。  
   
 -   你想要调用的方法的动态元数据，保证反射调用委托不会遭到 [!INCLUDE[net_native](../../../includes/net-native-md.md)] 工具链的删除。 如果该方法的动态元数据丢失，当 <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> 方法得到调用时会引发以下异常：  
   
@@ -86,12 +86,13 @@ App1.Class1[]
 Unfortunately, no further information is available.  
 ```  
   
- 需要数组类型的 `Browse` 元数据才能将其动态实例化。  以下运行时指令允许对 `Class1[]` 的进行动态实例化。  
+ `Browse` 数组类型的元数据需要动态实例化。  以下运行时指令允许对 `Class1[]` 的进行动态实例化。  
   
 ```xml  
 <Type Name="App1.Class1[]" Browse="Required Public" />  
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [入门](../../../docs/framework/net-native/getting-started-with-net-native.md)
-- [运行时指令 (rd.xml) 配置文件参考](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [运行时指令 (rd.xml) 配置文件引用](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

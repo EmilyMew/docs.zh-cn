@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ControlTemplates [WPF], finding elements
 - finding ControlTemplate elements [WPF]
 ms.assetid: d7b25447-ceff-4bb4-9be5-fd7c40ef00af
-ms.openlocfilehash: 9a6609d70a6b863f16533aac81ffce4daf171bcf
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 426f6c93433711ac72fe67eff2ee3006aa4d9166
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57364497"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59092101"
 ---
 # <a name="how-to-find-controltemplate-generated-elements"></a>如何：查找由 ControlTemplate 生成的元素
 此示例演示如何查找由 <xref:System.Windows.Controls.ControlTemplate> 生成的元素。  
@@ -29,6 +29,7 @@ ms.locfileid: "57364497"
  [!code-vb[FindGeneratedItems#CTFindElement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FindGeneratedItems/VisualBasic/Window1.xaml.vb#ctfindelement)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [查找由 DataTemplate 生成的元素](../data/how-to-find-datatemplate-generated-elements.md)
 - [样式设置和模板化](styling-and-templating.md)
 - [WPF XAML 名称范围](../advanced/wpf-xaml-namescopes.md)

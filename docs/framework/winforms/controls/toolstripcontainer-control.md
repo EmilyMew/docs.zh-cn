@@ -6,15 +6,15 @@ helpviewer_keywords:
 - ToolStripContainer control [Windows Forms]
 - ToolStrip control [Windows Forms], ToolStripContainer
 ms.assetid: 378fa5b4-38e1-46f4-8e5c-d0c19dcd0200
-ms.openlocfilehash: d0b8d812fd13be090f42bf4fb3ea84cedd1c07a7
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 5a962b30771414e4b20711b001dc38ff8dc69823
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57716844"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59082563"
 ---
 # <a name="toolstripcontainer-control"></a>ToolStripContainer 控件
-<xref:System.Windows.Forms.ToolStrip> 控件通过使用 <xref:System.Windows.Forms.ToolStripContainer> 而具有内置漂浮功能（停靠时在工具区域中共享水平或垂直空间）。  
+<xref:System.Windows.Forms.ToolStrip> 控件通过使用功能内置漂浮 （停靠时在工具区域中水平或垂直空间的共享） <xref:System.Windows.Forms.ToolStripContainer>。  
   
  本节中的主题介绍可用于将 <xref:System.Windows.Forms.ToolStripContainer> 功能构建到应用程序中的概念和技术。  
   
@@ -42,4 +42,5 @@ ms.locfileid: "57716844"
  提供关于 <xref:System.Windows.Forms.ToolStripPanel> 控件的参考文档。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 Windows 窗体上使用的控件](controls-to-use-on-windows-forms.md)

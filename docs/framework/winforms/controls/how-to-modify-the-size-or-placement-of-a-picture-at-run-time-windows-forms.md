@@ -11,12 +11,12 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], picture size and alignment
 - pictures [Windows Forms], controlling placement in PictureBox control [Windows Forms]
 ms.assetid: d0b332a3-fae2-4891-957c-dc3e17743326
-ms.openlocfilehash: 021cb448e5dbcb3ea1405d5cedaed1ae6d4f1b53
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
-ms.translationtype: MT
+ms.openlocfilehash: 5d817d34e47253b2e35afa7bb41c59eea06e1f94
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57709773"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59178823"
 ---
 # <a name="how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms"></a>如何：在运行时 （Windows 窗体） 中修改的大小或位置的图片
 如果使用 Windows 窗体<xref:System.Windows.Forms.PictureBox>控件在窗体上可以设置<xref:System.Windows.Forms.PictureBox.SizeMode%2A>到其上的属性：  
@@ -83,6 +83,7 @@ ms.locfileid: "57709773"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.PictureBox>
 - [如何：使用设计器加载图片](how-to-load-a-picture-using-the-designer-windows-forms.md)
 - [PictureBox 控件概述](picturebox-control-overview-windows-forms.md)

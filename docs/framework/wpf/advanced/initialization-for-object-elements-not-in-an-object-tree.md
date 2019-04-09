@@ -10,18 +10,16 @@ helpviewer_keywords:
 - elements [WPF], initializing
 - initializing elements [WPF]
 ms.assetid: 7b8dfc9b-46ac-4ce8-b7bb-035734d688b7
-ms.openlocfilehash: f1d31a5916f0c2a1763d8f24076ae7c1000a8296
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 6f3c8611b83977431038573eb1c5c880acbefdc4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57376361"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59108961"
 ---
 # <a name="initialization-for-object-elements-not-in-an-object-tree"></a>不在对象树中的对象元素的初始化
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 初始化时某些方面会被推迟，在通常依赖连接到逻辑树或可视化树的元素的进程中执行。 本主题介绍了针对未连接到两种树之一的元素，将其初始化可能需要的步骤。  
-  
- 
-  
+
 ## <a name="elements-and-the-logical-tree"></a>元素和逻辑树  
  在代码中创建 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 类的实例时，应该注意在调用类构造函数时所执行的代码中，需要有意地不包含 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 类的对象初始化的几个方面。 特别是对于控件类，该控件的大部分可视化表示形式都不是由构造函数定义的。 而是由控件的模板定义。 模板可能来自各种源，但最常见的情况是来自于主题样式。 模板实际上是晚期绑定的；在控件已准备好布局之后，才会将所需模板附加到相关控件。 并且控件只有在已附加到连接到根级别的呈现图面的逻辑树时，才能准备好应用布局。 正是该根级别元素启动逻辑树中定义的所有子元素的呈现。  
   
@@ -43,6 +41,7 @@ ms.locfileid: "57376361"
  [!code-vb[InitializeElements#Main](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InitializeElements/VisualBasic/initializeelements.vb#main)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [WPF 中的树](trees-in-wpf.md)
-- [WPF 图形呈现概述](../graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [WPF 图形呈现疑难解答](../graphics-multimedia/wpf-graphics-rendering-overview.md)
 - [XAML 概述 (WPF)](xaml-overview-wpf.md)

@@ -3,15 +3,20 @@ title: .NET Framework 中的新增功能
 ms.custom: updateeachrelease
 ms.date: 04/10/2018
 dev_langs:
-  - csharp
-  - vb
+- csharp
+- vb
 helpviewer_keywords:
-  - 'what''s new [.NET Framework]'
+- what's new [.NET Framework]
 ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
 author: rpetrusha
 ms.author: ronpet
+ms.openlocfilehash: 5e6ce15c344ecd6e5f8d73cb98a06c8ccb40c9e7
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58466434"
 ---
-
 # <a name="whats-new-in-the-net-framework"></a>.NET Framework 中的新增功能
 
 本文总结了以下版本的 .NET Framework 中的主要新功能和改进：

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 745e880db08c5fa7e5514a71758f7fbb042e7ef4
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58760178"
+---
 ### <a name="the-default-hash-algorithm-for-wpf-packagedigitalsignaturemanager-is-now-sha256"></a>WPF PackageDigitalSignatureManager 现在的默认哈希算法是 SHA256
 
 |   |   |

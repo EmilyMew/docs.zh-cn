@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 29dde982-6d8b-4099-8867-ad0d7733f6dc
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: dd6d6d9e192fdf43ba9436cda54920bdeba9ab64
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 6ba411114bfb853e06c83adb42713d43f1452d9c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55279170"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59135065"
 ---
 # <a name="etwenable-element"></a>\<etwEnable > 元素
 指定是否为公共语言运行时事件启用 Windows 事件跟踪 (ETW)。  
@@ -38,7 +38,7 @@ ms.locfileid: "55279170"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |true|启用 ETW。 这是 Windows 从开始，在 Windows Vista 和 Windows Server 2008 操作系统的版本的默认值。|  
 |False|禁用 ETW。 这是早期版本的 Windows 的默认值。|  
@@ -71,6 +71,7 @@ ms.locfileid: "55279170"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [运行时设置架构](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [配置文件架构](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [控制 .NET Framework 日志记录](../../../../../docs/framework/performance/controlling-logging.md)

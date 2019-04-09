@@ -1,5 +1,5 @@
 ---
-title: 如何：执行对象的迟缓初始化
+title: 如何：执行对象的延迟初始化
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 8cd68620-dcc3-4f20-8835-c728a6820e71
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 7d1ddbd9649d82ffe55c16e0657a1c020b50acbb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 28463bfd3e54e49461d9ce785d26e5dfca62e438
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54610859"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59188957"
 ---
-# <a name="how-to-perform-lazy-initialization-of-objects"></a>如何：执行对象的迟缓初始化
+# <a name="how-to-perform-lazy-initialization-of-objects"></a>如何：执行对象的延迟初始化
 <xref:System.Lazy%601?displayProperty=nameWithType> 类可简化执行迟缓初始化和对象实例化的工作。 通过以迟缓方式初始化对象，可在不需要对象的情况下避免创建所有对象，或可在首次访问对象之后再进行迟缓初始化。 若要了解详细信息，请参阅[迟缓初始化](../../../docs/framework/performance/lazy-initialization.md)  
   
 ## <a name="example"></a>示例  
@@ -77,5 +77,6 @@ End Sub
  [!code-vb[CDS#13](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds/vb/lazyhowto.vb#13)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Threading.LazyInitializer?displayProperty=nameWithType>
 - [迟缓初始化](../../../docs/framework/performance/lazy-initialization.md)

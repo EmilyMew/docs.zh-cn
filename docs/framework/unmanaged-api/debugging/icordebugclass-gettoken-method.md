@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: f7532c34dca070b07bd3124002eaf72a2f939238
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: c4f33bb15a351be5fe8318dcc3339d429dec039e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57493058"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59183698"
 ---
 # <a name="icordebugclassgettoken-method"></a>ICorDebugClass::GetToken 方法
 获取`TypeDef`元数据标记所引用的此类定义。  
@@ -46,7 +46,8 @@ HRESULT GetToken (
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [元数据接口](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)

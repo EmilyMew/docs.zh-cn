@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - data contracts [WCF], schema reference
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
-ms.openlocfilehash: decde09c2225da0af420813b477b86f4564d42f7
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: a4ddaaea2133a8adf5271628f442644194a7f453
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58411793"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59131932"
 ---
 # <a name="data-contract-schema-reference"></a>数据协定架构参考
 本主题介绍 <xref:System.Runtime.Serialization.DataContractSerializer> 用来描述 XML 序列化的公共语言运行库 (CLR) 类型的 XML 架构 (XSD) 的子集。  
@@ -54,15 +54,15 @@ ms.locfileid: "58411793"
   
 |内容|架构|  
 |--------------|------------|  
-|`include`|支持。 `DataContractSerializer` 支持 xs:include 和 xs:import。 但是，从本地文件加载元数据时，Svcutil.exe 会限制下面的 `xs:include/@schemaLocation` 和 `xs:import/@location` 引用。 在这种情况下，必须通过带外机制而非通过 `include` 来传递架构文件的列表；将忽略 `include`架构文档。|  
+|`include`|支持。 `DataContractSerializer` 支持 xs： 包括和 xs: import。 但是，从本地文件加载元数据时，Svcutil.exe 会限制下面的 `xs:include/@schemaLocation` 和 `xs:import/@location` 引用。 在这种情况下，必须通过带外机制而非通过 `include` 来传递架构文件的列表；将忽略 `include`架构文档。|  
 |`redefine`|已禁止。 出于安全方面的原因， `xs:redefine` 禁止使用 `DataContractSerializer` ： `x:redefine` 要求后跟 `schemaLocation` 。 在某些情况下，使用 DataContract 的 Svcutil.exe 会限制 `schemaLocation`的使用。|  
-|`import`|支持。 `DataContractSerializer` 支持 `xs:include` 和 `xs:import`。 但是，从本地文件加载元数据时，Svcutil.exe 会限制下面的 `xs:include/@schemaLocation` 和 `xs:import/@location` 引用。 在这种情况下，必须通过带外机制而非通过 `include` 来传递架构文件的列表；将忽略 `include`架构文档。|  
+|`import`|支持。 `DataContractSerializer` 支持`xs:include`和`xs:import`。 但是，从本地文件加载元数据时，Svcutil.exe 会限制下面的 `xs:include/@schemaLocation` 和 `xs:import/@location` 引用。 在这种情况下，必须通过带外机制而非通过 `include` 来传递架构文件的列表；将忽略 `include`架构文档。|  
 |`simpleType`|支持。 请参见“ `xs:simpleType` ”一节。|  
 |`complexType`|支持，将映射到数据协定。 请参见“ `xs:complexType` ”一节。|  
-|`group`|已忽略。 `DataContractSerializer` 不支持使用 `xs:group`、 `xs:attributeGroup`和 `xs:attribute`。 这些声明将作为 `xs:schema`子级被忽略，但无法从 `complexType` 或其他支持的结构内引用。|  
-|`attributeGroup`|已忽略。 `DataContractSerializer` 不支持使用 `xs:group`、 `xs:attributeGroup`和 `xs:attribute`。 这些声明将作为 `xs:schema`子级被忽略，但无法从 `complexType` 或其他支持的结构内引用。|  
+|`group`|已忽略。 `DataContractSerializer` 不支持使用`xs:group`， `xs:attributeGroup`，和`xs:attribute`。 这些声明将作为 `xs:schema`子级被忽略，但无法从 `complexType` 或其他支持的结构内引用。|  
+|`attributeGroup`|已忽略。 `DataContractSerializer` 不支持使用`xs:group`， `xs:attributeGroup`，和`xs:attribute`。 这些声明将作为 `xs:schema`子级被忽略，但无法从 `complexType` 或其他支持的结构内引用。|  
 |`element`|支持。 请参见“全局元素声明 (GED)”。|  
-|`attribute`|已忽略。 `DataContractSerializer` 不支持使用 `xs:group`、 `xs:attributeGroup`和 `xs:attribute`。 这些声明将作为 `xs:schema`子级被忽略，但无法从 `complexType` 或其他支持的结构内引用。|  
+|`attribute`|已忽略。 `DataContractSerializer` 不支持使用`xs:group`， `xs:attributeGroup`，和`xs:attribute`。 这些声明将作为 `xs:schema`子级被忽略，但无法从 `complexType` 或其他支持的结构内引用。|  
 |`notation`|已忽略。|  
   
 ## <a name="complex-types--xscomplextype"></a>复杂类型 – \<xs:complexType >  
@@ -118,7 +118,7 @@ ms.locfileid: "58411793"
 ## <a name="elements--xselement"></a>元素 – \<xs: element >  
   
 ### <a name="general-information"></a>常规信息  
- `<xs:element>` 会在以下上下文中发生：  
+ `<xs:element>` 可以出现在以下上下文中：  
   
 -   在描述常规（非集合）数据协定的数据成员的 `<xs:sequence>`内发生。 在这种情况下， `maxOccurs` 属性必须为 1。 （不允许值为 0。）  
   
@@ -329,7 +329,7 @@ public enum MyEnum
 ```  
   
 ### <a name="xslist"></a>\<xs:list>  
- `DataContractSerializer` 将用 `System.FlagsAttribute` 标记的枚举类型映射到从 `xs:list` 派生的 `xs:string`。 不支持其他 `xs:list` 变体。  
+ `DataContractSerializer` 枚举类型映射标记有`System.FlagsAttribute`到`xs:list`派生自`xs:string`。 不支持其他 `xs:list` 变体。  
   
 ### <a name="xslist-attributes"></a>\<xs: list >： 属性  
   
@@ -475,55 +475,55 @@ public class Employee : Person
   
 |XSD 类型|.NET 类型|  
 |--------------|---------------|  
-|`anyType`|<xref:System.Object>。|  
-|`anySimpleType`|<xref:System.String>。|  
-|`duration`|<xref:System.TimeSpan>。|  
-|`dateTime`|<xref:System.DateTime>。|  
-|`dateTimeOffset`|表示偏移量的<xref:System.DateTime> 和 <xref:System.TimeSpan> 。 请参见下面的“DateTimeOffset 序列化”。|  
-|`time`|<xref:System.String>。|  
-|`date`|<xref:System.String>。|  
-|`gYearMonth`|<xref:System.String>。|  
-|`gYear`|<xref:System.String>。|  
-|`gMonthDay`|<xref:System.String>。|  
-|`gDay`|<xref:System.String>。|  
-|`gMonth`|<xref:System.String>。|  
+|`anyType`|<xref:System.Object>.|  
+|`anySimpleType`|<xref:System.String>.|  
+|`duration`|<xref:System.TimeSpan>.|  
+|`dateTime`|<xref:System.DateTime>.|  
+|`dateTimeOffset`|<xref:System.DateTime> 和<xref:System.TimeSpan>偏移量。 请参见下面的“DateTimeOffset 序列化”。|  
+|`time`|<xref:System.String>.|  
+|`date`|<xref:System.String>.|  
+|`gYearMonth`|<xref:System.String>.|  
+|`gYear`|<xref:System.String>.|  
+|`gMonthDay`|<xref:System.String>.|  
+|`gDay`|<xref:System.String>.|  
+|`gMonth`|<xref:System.String>.|  
 |`boolean`|<xref:System.Boolean>|  
 |`base64Binary`|<xref:System.Byte> 数组。|  
-|`hexBinary`|<xref:System.String>。|  
-|`float`|<xref:System.Single>。|  
-|`double`|<xref:System.Double>。|  
-|`anyURI`|<xref:System.Uri>。|  
-|`QName`|<xref:System.Xml.XmlQualifiedName>。|  
-|`string`|<xref:System.String>。|  
-|`normalizedString`|<xref:System.String>。|  
-|`token`|<xref:System.String>。|  
-|`language`|<xref:System.String>。|  
-|`Name`|<xref:System.String>。|  
-|`NCName`|<xref:System.String>。|  
-|`ID`|<xref:System.String>。|  
-|`IDREF`|<xref:System.String>。|  
-|`IDREFS`|<xref:System.String>。|  
-|`ENTITY`|<xref:System.String>。|  
-|`ENTITIES`|<xref:System.String>。|  
-|`NMTOKEN`|<xref:System.String>。|  
-|`NMTOKENS`|<xref:System.String>。|  
-|`decimal`|<xref:System.Decimal>。|  
-|`integer`|<xref:System.Int64>。|  
-|`nonPositiveInteger`|<xref:System.Int64>。|  
-|`negativeInteger`|<xref:System.Int64>。|  
-|`long`|<xref:System.Int64>。|  
-|`int`|<xref:System.Int32>。|  
-|`short`|<xref:System.Int16>。|  
-|`Byte`|<xref:System.SByte>。|  
-|`nonNegativeInteger`|<xref:System.Int64>。|  
-|`unsignedLong`|<xref:System.UInt64>。|  
-|`unsignedInt`|<xref:System.UInt32>。|  
-|`unsignedShort`|<xref:System.UInt16>。|  
-|`unsignedByte`|<xref:System.Byte>。|  
-|`positiveInteger`|<xref:System.Int64>。|  
+|`hexBinary`|<xref:System.String>.|  
+|`float`|<xref:System.Single>.|  
+|`double`|<xref:System.Double>.|  
+|`anyURI`|<xref:System.Uri>.|  
+|`QName`|<xref:System.Xml.XmlQualifiedName>.|  
+|`string`|<xref:System.String>.|  
+|`normalizedString`|<xref:System.String>.|  
+|`token`|<xref:System.String>.|  
+|`language`|<xref:System.String>.|  
+|`Name`|<xref:System.String>.|  
+|`NCName`|<xref:System.String>.|  
+|`ID`|<xref:System.String>.|  
+|`IDREF`|<xref:System.String>.|  
+|`IDREFS`|<xref:System.String>.|  
+|`ENTITY`|<xref:System.String>.|  
+|`ENTITIES`|<xref:System.String>.|  
+|`NMTOKEN`|<xref:System.String>.|  
+|`NMTOKENS`|<xref:System.String>.|  
+|`decimal`|<xref:System.Decimal>.|  
+|`integer`|<xref:System.Int64>.|  
+|`nonPositiveInteger`|<xref:System.Int64>.|  
+|`negativeInteger`|<xref:System.Int64>.|  
+|`long`|<xref:System.Int64>.|  
+|`int`|<xref:System.Int32>.|  
+|`short`|<xref:System.Int16>.|  
+|`Byte`|<xref:System.SByte>.|  
+|`nonNegativeInteger`|<xref:System.Int64>.|  
+|`unsignedLong`|<xref:System.UInt64>.|  
+|`unsignedInt`|<xref:System.UInt32>.|  
+|`unsignedShort`|<xref:System.UInt16>.|  
+|`unsignedByte`|<xref:System.Byte>.|  
+|`positiveInteger`|<xref:System.Int64>.|  
   
 ## <a name="iserializable-types-mapping"></a>ISerializable 类型映射  
- 在 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 版本 1.0 中，已引入 <xref:System.Runtime.Serialization.ISerializable> 作为一种用于序列化持久性或数据传输对象的机制。 有许多实现 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 的 `ISerializable` 类型，这些类型可以在应用程序之间进行传递。 <xref:System.Runtime.Serialization.DataContractSerializer> 自然支持 `ISerializable` 类。 `DataContractSerializer` 映射到 `ISerializable` 实现架构类型，这些类型仅在类型的 QName（限定名）上存在不同，并且实际上是属性集合。 例如，`DataContractSerializer`映射<xref:System.Exception>到中的以下 XSD 类型 `http://schemas.datacontract.org/2004/07/System` 命名空间。  
+ 在 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 版本 1.0 中，已引入 <xref:System.Runtime.Serialization.ISerializable> 作为一种用于序列化持久性或数据传输对象的机制。 有许多实现 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 的 `ISerializable` 类型，这些类型可以在应用程序之间进行传递。 <xref:System.Runtime.Serialization.DataContractSerializer> 天生支持`ISerializable`类。 `DataContractSerializer` 映射到 `ISerializable` 实现架构类型，这些类型仅在类型的 QName（限定名）上存在不同，并且实际上是属性集合。 例如，`DataContractSerializer`映射<xref:System.Exception>到中的以下 XSD 类型 `http://schemas.datacontract.org/2004/07/System` 命名空间。  
   
 ```xml  
 <xs:complexType name="Exception">  
@@ -609,14 +609,14 @@ public class Employee : Person
   
  应注意以下事项：  
   
--   已引入`ser:char` 来表示 <xref:System.Char>类型的 Unicode 字符。  
+-   `ser:char` 引入来表示类型的 Unicode 字符<xref:System.Char>。  
   
 -   `valuespace` 的 `xs:duration` 已简化为一个有序集，因此可以将其映射到 <xref:System.TimeSpan>。  
   
--   在从派生自`FactoryType` 的类型中导出的架构中使用 <xref:System.Runtime.Serialization.ISerializable>。  
+-   `FactoryType` 从派生自的类型导出的架构中使用<xref:System.Runtime.Serialization.ISerializable>。  
   
 ## <a name="importing-non-datacontract-schemas"></a>导入非 DataContract 架构  
- `DataContractSerializer` 具有 `ImportXmlTypes` 选项，可允许导入不符合 `DataContractSerializer` XSD 配置文件的架构（请参见 <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> 属性）。 将此选项设置为 `true` 可接受不符合要求的架构类型，并将其映射到下面的实现，即包装 <xref:System.Xml.Serialization.IXmlSerializable> 数组的 <xref:System.Xml.XmlNode> （仅类名称不同）。  
+ `DataContractSerializer` 具有`ImportXmlTypes`选项可允许的不符合的架构导入`DataContractSerializer`XSD 配置文件 (请参阅<xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A>属性)。 将此选项设置为 `true` 可接受不符合要求的架构类型，并将其映射到下面的实现，即包装 <xref:System.Xml.Serialization.IXmlSerializable> 数组的 <xref:System.Xml.XmlNode> （仅类名称不同）。  
   
 ```csharp  
 [GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]  
@@ -682,6 +682,7 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>

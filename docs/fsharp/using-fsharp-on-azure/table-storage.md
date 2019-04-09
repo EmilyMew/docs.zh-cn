@@ -3,12 +3,12 @@ title: 开始使用 Azure 表存储使用F#
 description: 使用 Azure 表存储或 Azure Cosmos DB 在云中存储结构化的数据。
 author: sylvanc
 ms.date: 03/26/2018
-ms.openlocfilehash: 2b74a33023065ea809c2d7eb6202b1a254018422
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 54c777acd454e4f675175b814675c185e41ad9a4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56966003"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59086697"
 ---
 # <a name="get-started-with-azure-table-storage-and-the-azure-cosmos-db-table-api-using-f"></a>开始使用 Azure 表存储和使用 F 在 Azure Cosmos DB 表 API\#
 
@@ -35,7 +35,6 @@ Azure Cosmos DB 提供的表 API 的应用程序，针对 Azure 表存储编写�
 ## <a name="prerequisites"></a>系统必备
 
 若要使用本指南，您必须首先[创建 Azure 存储帐户](/azure/storage/storage-create-storage-account)或[Azure Cosmos DB 帐户](https://azure.microsoft.com/try/cosmosdb/)。
-
 
 ## <a name="create-an-f-script-and-start-f-interactive"></a>创建F#脚本并启动F#交互式
 
@@ -128,7 +127,6 @@ Azure Cosmos DB 提供的表 API 的应用程序，针对 Azure 表存储编写�
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L84-L85)]
 
-
 ### <a name="retrieve-a-range-of-entities-in-a-partition"></a>检索分区中的实体的一部分
 
 如果不想查询分区中的所有实体，则可以通过结合使用分区键筛选器与行键筛选器指定范围。 在这里，你使用两个筛选器来获取"Smith"分区的所有实体的行键 （名字） 以字母开头早于字母表中的"M"。
@@ -148,7 +146,6 @@ Azure Cosmos DB 提供的表 API 的应用程序，针对 Azure 表存储编写�
 现在打印结果：
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L113-L115)]
-
 
 ### <a name="replace-an-entity"></a>替换实体
 

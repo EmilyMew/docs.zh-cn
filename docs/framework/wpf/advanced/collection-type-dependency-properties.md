@@ -10,18 +10,16 @@ helpviewer_keywords:
 - dependency properties [WPF]
 - collection-type properties [WPF]
 ms.assetid: 99f96a42-3ab7-4f64-a16b-2e10d654e97c
-ms.openlocfilehash: a2a664f0672f4585649cebad6e62635125db0983
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 9ce0b70bfdd70b47857167ff14e62ed2bbda569d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57354890"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59077454"
 ---
 # <a name="collection-type-dependency-properties"></a>集合类型依赖项属性
 本主题就如何实现属性类型为集合类型的依赖属性提供相应指导和建议模式。  
-  
- 
-  
+
 <a name="implementing"></a>   
 ## <a name="implementing-a-collection-type-dependency-property"></a>实现集合类型依赖属性  
  依赖属性的一般情况下，遵循的实现模式是您定义[!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)]属性的包装器，该属性由<xref:System.Windows.DependencyProperty>标识符而不是字段或其他构造。 实现集合类型属性时也应按照此相同模式。 但是，集合类型属性带来了一些复杂性的模式时该集合内包含的类型本身<xref:System.Windows.DependencyObject>或<xref:System.Windows.Freezable>派生的类。  
@@ -57,9 +55,10 @@ ms.locfileid: "57354890"
  若要启用依赖项对象集合中的子属性绑定，将集合属性创建为类型<xref:System.Windows.FreezableCollection%601>，任何对该集合的类型约束<xref:System.Windows.DependencyObject>派生的类。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.FreezableCollection%601>
 - [XAML 及 WPF 的自定义类](xaml-and-custom-classes-for-wpf.md)
 - [数据绑定概述](../data/data-binding-overview.md)
 - [依赖项属性概述](dependency-properties-overview.md)
-- [自定义依赖属性](custom-dependency-properties.md)
-- [依赖属性元数据](dependency-property-metadata.md)
+- [自定义依赖项属性](custom-dependency-properties.md)
+- [依赖项属性元数据](dependency-property-metadata.md)

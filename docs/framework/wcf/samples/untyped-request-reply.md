@@ -2,12 +2,12 @@
 title: 非类型化的请求-答复
 ms.date: 03/30/2017
 ms.assetid: 0bf0f9d9-7caf-4d3d-8c9e-2d468cca16a5
-ms.openlocfilehash: bdd0ae5ac53bf1a35817efba7ae11d947e3a5b33
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.openlocfilehash: ae3c89f9eec9b1684f8c87af200ba87ca8dec093
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58830209"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59101183"
 ---
 # <a name="untyped-requestreply"></a>非类型化请求/答复
 此示例演示如何定义使用 Message 类的操作协定。  
@@ -88,4 +88,3 @@ Press <ENTER> to terminate client.
 >  如果此目录不存在，请转到[Windows Communication Foundation (WCF) 和.NET Framework 4 的 Windows Workflow Foundation (WF) 示例](https://go.microsoft.com/fwlink/?LinkId=150780)若要下载所有 Windows Communication Foundation (WCF) 和[!INCLUDE[wf1](../../../../includes/wf1-md.md)]示例。 此示例位于以下目录：  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Message\Untyped`  
-  

@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - XmlSerializer [WCF], using
 ms.assetid: c680602d-39d3-44f1-bf22-8e6654ad5069
-ms.openlocfilehash: 084a31ec008d1651bb66f7d59731a21d4ef0ece7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 29ce9b165c3823d7d06008431294f67716ccf8e1
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54732851"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59105438"
 ---
 # <a name="using-the-xmlserializer-class"></a>使用 XmlSerializer 类
 Windows Communication Foundation (WCF) 可以使用两种不同的序列化技术将客户端和服务，名为序列化的进程之间进行传输的 XML 应用程序中的数据。  
@@ -48,7 +48,7 @@ Windows Communication Foundation (WCF) 可以使用两种不同的序列化技�
   
 -   创建遵循旧式 SOAP 编码标准的服务时。  
   
- 在这些情况和其他情况下，您可以通过将 <xref:System.Xml.Serialization.XmlSerializer> 属性应用于您的服务来手动切换到 `XmlSerializerFormatAttribute` 类，如以下代码所示。  
+ 在这些情况和其他情况下，你可以通过将 <xref:System.Xml.Serialization.XmlSerializer> 属性应用于你的服务来手动切换到 `XmlSerializerFormatAttribute` 类，如以下代码所示。  
   
  [!code-csharp[c_XmlSerializer#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_xmlserializer/cs/source.cs#1)]
  [!code-vb[c_XmlSerializer#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_xmlserializer/vb/source.vb#1)]  
@@ -67,11 +67,11 @@ Windows Communication Foundation (WCF) 可以使用两种不同的序列化技�
   
  即使 <xref:System.Runtime.Serialization.DataContractSerializer> 类为默认值，您也可以通过将 <xref:System.ServiceModel.DataContractFormatAttribute> 属性应用于服务协定类型来为您的服务显式选择此类（虽然从不要求进行此项操作）。  
   
- 用于服务的序列化程序是协定的不可分割的一部分，您无法通过选择不同的绑定或更改其他配置设置来对其进行更改。  
+ 用于服务的序列化程序是协定的不可分割的一部分，你无法通过选择不同的绑定或更改其他配置设置来对其进行更改。  
   
  此外，在使用 <xref:System.Xml.Serialization.XmlSerializer> 类时还需注意以下重要安全事项。 首先，我们强烈建议，任何 WCF 应用程序的使用<xref:System.Xml.Serialization.XmlSerializer>类不会泄露的密钥进行签名。 在执行手动切换到 <xref:System.Xml.Serialization.XmlSerializer> 和执行自动切换（通过 Svcutil.exe、添加服务引用或类似工具）时都适合采用此建议。 这是因为<xref:System.Xml.Serialization.XmlSerializer>序列化引擎支持的加载*预生成序列化程序集*，只要它们使用与应用程序相同的密钥进行签名。 如果某恶意程序集的名称与放置在应用程序文件夹或全局程序集缓存中的预生成序列化程序集的预期名称相匹配，则未签名的应用程序对于此类恶意程序集的攻击完全没有防御能力。 当然，攻击者必须首先获取对这两个位置中某个位置的写权限才能尝试进行攻击。  
   
- 您使用 <xref:System.Xml.Serialization.XmlSerializer> 时存在的另一个威胁与系统临时文件夹的写权限有关。 <xref:System.Xml.Serialization.XmlSerializer>序列化引擎创建，并使用临时*序列化程序集*此文件夹中。 您应该注意，任何对临时文件夹具有写权限的进程都可能用恶意代码覆盖这些序列化程序集。  
+ 您使用 <xref:System.Xml.Serialization.XmlSerializer> 时存在的另一个威胁与系统临时文件夹的写权限有关。 <xref:System.Xml.Serialization.XmlSerializer>序列化引擎创建，并使用临时*序列化程序集*此文件夹中。 你应该注意，任何对临时文件夹具有写权限的进程都可能用恶意代码覆盖这些序列化程序集。  
   
 ## <a name="rules-for-xmlserializer-support"></a>XmlSerializer 支持的规则  
  您不能直接将与兼容 <xref:System.Xml.Serialization.XmlSerializer> 的属性应用于协定操作参数或返回值。 但是，可将这些属性应用于类型化消息（消息协定正文部分），如以下代码所示。  
@@ -129,7 +129,7 @@ Windows Communication Foundation (WCF) 可以使用两种不同的序列化技�
  同样的全局元素声明规则也适用于旧数据集类型。 请注意，`XmlRootAttribute` 无法重写通过自定义代码添加的全局元素声明，无论是使用构架提供程序方法添加到 `XmlSchemaSet` 中的，还是通过旧数据集类型的 `GetSchema` 添加的。  
   
 ### <a name="ixmlserializable-element-types"></a>IXmlSerializable 元素类型  
- `IXmlSerializable` 元素类型将 `IsAny` 属性设为 `true`，或使它们的架构提供程序方法返回 `null`。  
+ `IXmlSerializable` 元素类型`IsAny`属性设置为`true`或使其架构提供程序方法返回`null`。  
   
  序列化和反序列化元素类型与序列化和反序列化内容类型极其相似。 但是，也有一些重要的区别：  
   
@@ -141,7 +141,7 @@ Windows Communication Foundation (WCF) 可以使用两种不同的序列化技�
   
 -   如果在构造期间没有指定根名称和命名空间的情况下在顶层序列化元素类型，则 <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A> 和 <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> 实质上不执行任何操作，且 <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A> 将调用 `WriteXml`。 在此模式下，要序列化的对象不能为 `null`，且不能以多态形式进行分配。 另外，不能启用对象图保留，也不能使用 `NetDataContractSerializer`。  
   
--   如果在构造时没有指定根名称和命名空间的情况下在顶级反序列化某一元素类型，则在找到任何元素的开头时，<xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> 将返回 `true`。 <xref:System.Runtime.Serialization.XmlObjectSerializer.ReadObject%2A> 参数设置为 `verifyObjectName` 的 `true` 在行为上与实际读取该对象前 `IsStartObject` 的行为相同。 然后，`ReadObject` 将控制传递到 `ReadXml` 方法。  
+-   如果在构造时没有指定根名称和命名空间的情况下在顶级反序列化某一元素类型，则在找到任何元素的开头时，<xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> 将返回 `true`。 <xref:System.Runtime.Serialization.XmlObjectSerializer.ReadObject%2A> 与`verifyObjectName`参数设置为`true`的行为方式与`IsStartObject`之前实际读取该对象。 `ReadObject` 然后将控制权传递给`ReadXml`方法。  
   
  如上节所述，元素类型的导出架构与 `XmlElement` 类型的导出架构相同，只是架构提供程序方法可以像处理内容类型那样将任何其他架构添加到 <xref:System.Xml.Schema.XmlSchemaSet> 中。 不允许使用元素类型的 `XmlRootAttribute` 属性，也从不为这些类型发出全局元素声明。  
   
@@ -206,10 +206,11 @@ Windows Communication Foundation (WCF) 可以使用两种不同的序列化技�
 >  `<xmlSerializer useLegacySerializerGeneration="true"/>`交换机仅适用于运行.NET Framework 4.5 或更高版本的计算机。 上述`appSettings`方法适用于所有.NET Framework 版本上。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.DataContractFormatAttribute>
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Xml.Serialization.XmlSerializer>
 - <xref:System.ServiceModel.MessageHeaderArrayAttribute>
 - [在服务协定中指定数据传输](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
 - [使用数据协定](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
-- [如何：改善启动时间的 WCF 客户端应用程序的使用 XmlSerializer](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
+- [如何：使用 XmlSerializer 改善 WCF 客户端应用程序的启动时间](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)

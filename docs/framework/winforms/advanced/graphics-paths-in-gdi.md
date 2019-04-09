@@ -10,12 +10,12 @@ helpviewer_keywords:
 - paths [Windows Forms], drawing
 - drawing [Windows Forms], paths
 ms.assetid: a5500dec-666c-41fd-9da3-2169dd89c5eb
-ms.openlocfilehash: b6f0ebd500aa3503c0c0d473ebe21a61f4438862
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: c9a43065210f5ef0fffcae01cc7eb88349696b6b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57720418"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59140499"
 ---
 # <a name="graphics-paths-in-gdi"></a>GDI+ 中的图形路径
 路径是通过将线条、 矩形和简单的曲线相结合形成的。 还记得[向量图形概述](vector-graphics-overview.md)以下基本构建基块已证明是最适用于绘制图片：  
@@ -67,8 +67,9 @@ ms.locfileid: "57720418"
  ![Paths](./media/aboutgdip02-art16.gif "Aboutgdip02_Art16")  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Drawing2D.GraphicsPath?displayProperty=nameWithType>
 - <xref:System.Drawing.Point?displayProperty=nameWithType>
-- [直线、曲线和形状](lines-curves-and-shapes.md)
-- [如何：创建用于绘制图形对象](how-to-create-graphics-objects-for-drawing.md)
-- [构造并绘制路径](constructing-and-drawing-paths.md)
+- [直线、曲线和图形](lines-curves-and-shapes.md)
+- [如何：创建用于绘制的 Graphics 对象](how-to-create-graphics-objects-for-drawing.md)
+- [构造并绘制轨迹](constructing-and-drawing-paths.md)

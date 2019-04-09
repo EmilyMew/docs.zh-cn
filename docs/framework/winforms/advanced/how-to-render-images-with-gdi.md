@@ -1,5 +1,5 @@
 ---
-title: 如何：使用 GDI + 呈现图像
+title: 如何：使用 GDI+ 呈现图像
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - images [Windows Forms], creating
 - GDI+, rendering existing images
 ms.assetid: c128b79a-3e31-47d8-9e66-3470f570a056
-ms.openlocfilehash: d2c626f46862e5fdc7c51b509a6419a3d67c4102
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: cb43536f941ea7a6e1a48e78046089636360eef5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57702823"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59079443"
 ---
-# <a name="how-to-render-images-with-gdi"></a>如何：使用 GDI + 呈现图像
+# <a name="how-to-render-images-with-gdi"></a>如何：使用 GDI+ 呈现图像
 可在应用程序中使用 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 呈现以文件形式存在的图像。 为此，可创建新的对象的<xref:System.Drawing.Image>类 (如<xref:System.Drawing.Bitmap>)，则创建<xref:System.Drawing.Graphics>对象，是指你想要使用，请在绘图图面，并调用<xref:System.Drawing.Graphics.DrawImage%2A>方法<xref:System.Drawing.Graphics>对象。 将在图形类所表示的绘图表面上绘制图像。 可在设计时使用图像编辑器创建和编辑图像文件，而在运行时使用 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 呈现图像。 有关详细信息，请参阅[图标的图像编辑器](/cpp/windows/image-editor-for-icons)。  
   
 ### <a name="to-render-an-image-with-gdi"></a>使用 GDI+ 呈现图像  
@@ -82,10 +82,11 @@ ms.locfileid: "57702823"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [图形编程入门](getting-started-with-graphics-programming.md)
-- [如何：创建用于绘制图形对象](how-to-create-graphics-objects-for-drawing.md)
+- [如何：创建用于绘制的 Graphics 对象](how-to-create-graphics-objects-for-drawing.md)
 - [GDI+ 中的笔、直线和矩形](pens-lines-and-rectangles-in-gdi.md)
 - [如何：在 Windows 窗体上绘制文本](how-to-draw-text-on-a-windows-form.md)
 - [Windows 窗体中的图形和绘制](graphics-and-drawing-in-windows-forms.md)
-- [绘制线条或闭合的图形](/cpp/windows/drawing-lines-or-closed-figures-image-editor-for-icons)
+- [绘制线条或闭合图形](/cpp/windows/drawing-lines-or-closed-figures-image-editor-for-icons)
 - [图标的图像编辑器](/cpp/windows/image-editor-for-icons)

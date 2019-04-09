@@ -2,12 +2,12 @@
 title: 查看消息日志
 ms.date: 03/30/2017
 ms.assetid: 3012fa13-f650-45fb-aaea-c5cca8c7d372
-ms.openlocfilehash: f368d4f8f2a214feaa24b732513a99edf2e28296
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2322d2a6e0c5a6f26ad103be72230666f6bca191
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54603564"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59139056"
 ---
 # <a name="viewing-message-logs"></a>查看消息日志
 本主题描述如何查看消息日志。  
@@ -61,6 +61,7 @@ incomingMessage.Headers[i].Name.Equals("Action", StringComparison.InvariantCultu
 -   已启用编码以转换到 UTF-8。  
   
 ## <a name="see-also"></a>请参阅
+
 - [服务跟踪查看器工具 (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
-- [使用服务跟踪查看器查看相关跟踪和进行故障排除](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [使用服务跟踪查看器查看相关跟踪和进行故障诊断](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
 - [消息日志记录](../../../../docs/framework/wcf/diagnostics/message-logging.md)

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d48519443aeee05617538cf2cc12bea49ad3e16d
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58761237"
+---
 ### <a name="x509certificate2tostringboolean-does-not-throw-now-when-net-cannot-handle-the-certificate"></a>现在，当 .NET 无法处理证书时，不会引发 X509Certificate2.ToString(Boolean)
 
 |   |   |

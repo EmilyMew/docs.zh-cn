@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 5e903e04-17d0-4014-ac9a-a43330ec8b1c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 414526d498b39e894c6bd3530a446f8c06f46378
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1d20bc002e52c3c6a42b45c0d1c5d559e65dc52c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54572742"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59113693"
 ---
 # <a name="silverlight-debugging"></a>Silverlight 调试
 本部分中的主题描述了公共语言运行时 (CLR) 提供用于支持调试在 Windows 操作系统或在 Macintosh 平台上运行的基于 Silverlight 的应用程序的环境和接口。  
@@ -55,7 +55,8 @@ ms.locfileid: "54572742"
  关闭用于远程目标计算机连接的传输管理器。  
   
 ## <a name="see-also"></a>请参阅
-- [调试组件类](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)
+
+- [调试 Coclass](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)
 - [调试接口](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [调试全局静态函数](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
 - [调试枚举](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

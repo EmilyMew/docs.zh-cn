@@ -9,12 +9,12 @@ helpviewer_keywords:
 - graphics [Windows Forms], clipping
 - graphics [Windows Forms], transformations in nested objects
 ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
-ms.openlocfilehash: a66edd0297b723b81c31675c9b0e6b6def9ed10a
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: 6bbf7918ccff184e597204b35aa005ab17d8d8af
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58125858"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59104294"
 ---
 # <a name="using-nested-graphics-containers"></a>使用嵌套的 Graphics 容器
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 提供了可用于临时替换或增加中状态的一部分的容器<xref:System.Drawing.Graphics>对象。 通过调用创建一个容器<xref:System.Drawing.Graphics.BeginContainer%2A>方法的<xref:System.Drawing.Graphics>对象。 您可以调用<xref:System.Drawing.Graphics.BeginContainer%2A>重复以形成嵌套的容器。 每次调用<xref:System.Drawing.Graphics.BeginContainer%2A>必须通过调用配对<xref:System.Drawing.Graphics.EndContainer%2A>。  
@@ -57,5 +57,6 @@ ms.locfileid: "58125858"
  ![显示从嵌套容器绘制的字符串的图例。](./media/using-nested-graphics-containers/nested-containers-three-strings.png)  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Graphics>
-- [管理图形对象的状态](managing-the-state-of-a-graphics-object.md)
+- [管理 Graphics 对象的状态](managing-the-state-of-a-graphics-object.md)

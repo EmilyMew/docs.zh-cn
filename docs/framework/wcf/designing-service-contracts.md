@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - service contracts [WCF]
 ms.assetid: 8e89cbb9-ac84-4f0d-85ef-0eb6be0022fd
-ms.openlocfilehash: 37639bfc71918dd92a2334f4076dc2b4d6ff9698
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 68ea866b736350b8a393d1f4788e4b08754e5ab4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54583189"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102734"
 ---
 # <a name="designing-service-contracts"></a>设计服务协定
 本主题介绍什么是服务协定、如何定义服务协定、可用的操作（以及基础消息交换的含义）、使用的数据类型以及可帮助您设计能满足方案需求的操作的其他问题。  
@@ -175,7 +175,7 @@ End Interface
  此外，使用 `out` 或 `ref` 参数要求操作具有基础响应消息，才可以将已修改的对象传回。 如果操作是单向操作，则将在运行时引发 <xref:System.InvalidOperationException> 异常。  
   
 ### <a name="specify-message-protection-level-on-the-contract"></a>指定协定上的消息保护级别  
- 设计协定时，还必须确定实现您的协定的服务的消息保护级别。 仅当消息安全应用于协定终结点中的绑定时，才有必要这么做。 如果绑定将安全关闭（也就是说，如果系统提供的绑定将 <xref:System.ServiceModel.SecurityMode?displayProperty=nameWithType> 设置为值 <xref:System.ServiceModel.SecurityMode.None?displayProperty=nameWithType>），则不必确定协定的消息保护级别。 大部分情况下，系统提供的绑定应用的是消息级别的安全，可提供充分的保护级别，您不必考虑每个操作或每条消息的保护级别。  
+ 设计协定时，还必须确定实现您的协定的服务的消息保护级别。 仅当消息安全应用于协定终结点中的绑定时，才有必要这么做。 如果绑定将安全关闭（也就是说，如果系统提供的绑定将 <xref:System.ServiceModel.SecurityMode?displayProperty=nameWithType> 设置为值 <xref:System.ServiceModel.SecurityMode.None?displayProperty=nameWithType>），则不必确定协定的消息保护级别。 大部分情况下，系统提供的绑定应用的是消息级别的安全，可提供充分的保护级别，你不必考虑每个操作或每条消息的保护级别。  
   
  保护级别是一个值，它指定了支持服务的消息（或消息部分）是进行签名、签名并加密，还是未经签名或加密即发送。 可以在不同范围内设置保护级别：在特定的操作，此操作或消息部分中的消息的服务级别。 在一个范围设置的值会成为比该范围小的范围的默认值（除非显式重写该值）。 如果绑定配置无法提供协定中要求的最小保护级别，则将引发异常。 如果未在协定上显式设置保护级别值，并且绑定具有消息安全，则绑定配置将控制所有消息的保护级别。 这是默认行为。  
   
@@ -259,23 +259,24 @@ End Interface
   
  有关保护级别以及如何使用它们的详细信息，请参阅[了解保护级别](../../../docs/framework/wcf/understanding-protection-level.md)。 有关安全性的详细信息，请参阅[Securing Services](../../../docs/framework/wcf/securing-services.md)。  
   
-##### <a name="other-operation-signature-requirements"></a>其他操作签名需求  
+##### <a name="other-operation-signature-requirements"></a>其他操作签名要求  
  某些应用程序功能要求特定种类的操作签名。 例如，<xref:System.ServiceModel.NetMsmqBinding> 绑定支持持久性服务和客户端，即应用程序可以在通信期间重新启动，并在其停止的位置处拾取，不会遗漏任何消息。 (有关详细信息，请参阅[WCF 中的队列](../../../docs/framework/wcf/feature-details/queues-in-wcf.md)。)但是，持久性操作只能接受一个 `in` 参数，并且没有返回值。  
   
  另一个示例是在操作中使用 <xref:System.IO.Stream> 类型。 由于 <xref:System.IO.Stream> 参数包括整个消息正文，如果输入或输出（也就是 `ref` 参数、`out` 参数或返回值）的类型为 <xref:System.IO.Stream>，则它必须是在操作中指定的唯一输入或输出。 此外，参数或返回类型必须是 <xref:System.IO.Stream>, <xref:System.ServiceModel.Channels.Message?displayProperty=nameWithType> 或 <xref:System.Xml.Serialization.IXmlSerializable?displayProperty=nameWithType>。 有关流的详细信息，请参阅[Large Data and Streaming](../../../docs/framework/wcf/feature-details/large-data-and-streaming.md)。  
   
-##### <a name="names-namespaces-and-obfuscation"></a>名称、命名空间和混淆处理  
+##### <a name="names-namespaces-and-obfuscation"></a>名称、命名空间和模糊处理  
  在将协定转换为 WSDL 以及创建和发送协定消息时，协定与操作的定义中的 .NET 类型的名称和命名空间意义重大。 因此，强烈建议使用所有支持协定属性 (Attribute)（如 `Name`、`Namespace`、<xref:System.ServiceModel.ServiceContractAttribute>、<xref:System.ServiceModel.OperationContractAttribute> 和其他协定属性 (Attribute)）的 <xref:System.Runtime.Serialization.DataContractAttribute> 和 <xref:System.Runtime.Serialization.DataMemberAttribute> 属性 (Property) 显式设置服务协定名称和命名空间。  
   
  这样做的一个原因在于，如果未显式设置名称和命名空间，则在程序集上使用 IL 混淆处理时会改变协定类型名称和命名空间，并产生已修改的 WSDL 以及通常会失败的网络交换。 如果未显式设置协定名称和命名空间，但确实想使用混淆处理，请使用 <xref:System.Reflection.ObfuscationAttribute> 和 <xref:System.Reflection.ObfuscateAssemblyAttribute> 属性，以防止修改协定类型名称和命名空间。  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：创建请求-答复协定](../../../docs/framework/wcf/feature-details/how-to-create-a-request-reply-contract.md)
 - [如何：创建单向协定](../../../docs/framework/wcf/feature-details/how-to-create-a-one-way-contract.md)
 - [如何：创建双工协定](../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
 - [在服务协定中指定数据传输](../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
-- [在协定和服务中指定并处理错误](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [在协定和服务中指定和处理错误](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
 - [使用会话](../../../docs/framework/wcf/using-sessions.md)
 - [同步和异步操作](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)
-- [Reliable Services](../../../docs/framework/wcf/reliable-services.md)
+- [可靠服务](../../../docs/framework/wcf/reliable-services.md)
 - [服务和事务](../../../docs/framework/wcf/services-and-transactions.md)

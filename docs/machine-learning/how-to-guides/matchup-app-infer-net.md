@@ -50,7 +50,7 @@ dotnet add package Microsoft.ML.Probabilistic.Compiler
 
 ## <a name="design-your-model"></a>设计模型
 
-示例使用在 Office 中进行的乒乓球或桌上足球比赛。 你具有参赛者的信息和每场比赛的结果。  你想要通过此数据推断玩家的实力。 假设每位玩家的潜在实力呈正态分布，且他们在给定比赛中的表现是此实力受干扰后的状态。 此数据会将胜者的表现约束在优于败者的表现。 这是热门的 [TrueSkill](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/) 模型的简化版，此模型也支持团队、平局及其他扩展项。 热销的 Halo 和 Gears of War 游戏中的比赛安排使用了此模型的[高级版](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)。
+该示例采用在办公室中进行的乒乓球或桌上足球比赛。 你具有参赛者的信息和每场比赛的结果。 你想通过此数据推断玩家的实力。 假设每位玩家的潜在实力呈正态分布，且他们在给定比赛中的表现是此实力受干扰后的状态。 此数据会将胜者的表现约束在优于败者表现的水平上。 这是常见 [TrueSkill](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/) 模型的简化版，此模型也支持团队、平局及其他扩展项。 热销的 Halo 和 Gears of War 游戏中的比赛安排使用了此模型的[高级版](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/)。
 
 需要列出所推断玩家的实力及其方差（实力不确定性的度量值）。
 

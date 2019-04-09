@@ -2,12 +2,12 @@
 title: LINQ to Entities 查询中的标准查询运算符
 ms.date: 08/21/2018
 ms.assetid: 7fa55a9b-6219-473d-b1e5-2884a32dcdff
-ms.openlocfilehash: 558ee35c433475bf3b2d5a3cdb4b24b612197c13
-ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
+ms.openlocfilehash: 5c666bad40d0e433ee5f8d2b1155e881d7042a85
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55904645"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59118139"
 ---
 # <a name="standard-query-operators-in-linq-to-entities-queries"></a>LINQ to Entities 查询中的标准查询运算符
 在查询中，您可以指定要从数据源检索哪些信息。 查询也可以指定返回信息之前信息的排序、分组和表现方式。 LINQ 提供了一组可在查询中使用的标准查询方法。 这些方法中的大多数都作用于序列;在此上下文中，序列是一个对象，其类型实现<xref:System.Collections.Generic.IEnumerable%601>接口或<xref:System.Linq.IQueryable%601>接口。 标准查询运算符查询功能包括筛选、投影、聚合、排序、分组和分页等。 一些更为频繁使用的标准查询运算符包含专用关键字语法，以便可通过查询表达式语法调用。 查询表达式是另一种比基于方法的等式更具可读性的查询表达方法。 查询表达式子句在编译时被转换为对查询方法的调用。 有关包含等效查询表达式子句的标准查询运算符的列表，请参阅[标准查询运算符概述](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb397896(v=vs.120))。  
@@ -19,14 +19,14 @@ ms.locfileid: "55904645"
   
  *筛选*指限制结果集包含与指定的条件匹配的元素的操作。 筛选方法为 `Where`。  
   
- [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] 中支持大多数投影和筛选方法的重载，除了那些接受位置参数的方法。  
+ [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] 中支持大多数投影和筛选方法的重载，除了那些接受位置自变量的方法。  
   
 ## <a name="join-methods"></a>联接方法  
  在面向相互之间没有可导航关系的数据源的查询中，联接是一项重要的操作。 联接两个数据源就是将一个数据源中的对象与另一个数据源中具有相同属性的对象相关联。 联接方法有 `Join` 和 `GroupJoin`。  
   
  大多数联接方法的重载都受支持，除了使用 <xref:System.Collections.Generic.IEqualityComparer%601> 的方法。 这是因为比较器不能转换为数据源。  
   
-## <a name="set-methods"></a>集方法  
+## <a name="set-methods"></a>设置方法  
  LINQ 中的集运算是根据包含或不包含本集合或其他集合（或集）中的等价元素，对其结果集执行查询运算。 集方法有 `All`、`Any`、`Concat`、`Contains`、`DefaultIfEmpty`、`Distinct`、`EqualAll`、`Except`、`Intersect` 和 `Union`。  
   
  [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] 中支持大多数集方法的重载，只是与 LINQ to Objects 在行为上有所不同。 但是，并不支持使用 <xref:System.Collections.Generic.IEqualityComparer%601> 的集方法，原因是比较器不能转换为数据源。  
@@ -69,7 +69,7 @@ ms.locfileid: "55904645"
 ## <a name="type-methods"></a>类型方法  
  同时支持实体框架的上下文中处理类型转换和测试的两个 LINQ 方法。 这意味着仅支持的类型为映射到相应的实体框架类型的类型。 有关这些类型的列表，请参阅[概念模型类型 (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl)。 类型方法有 `Convert` 和 `OfType`。  
   
- 对于实体类型支持 `OfType`。 对概念模型基元类型支持 `Convert`。  还支持 C# 的 `is` 和 `as` 方法。  
+ `OfType` 支持对实体类型。 `Convert` 支持对概念模型基元类型。  还支持 C# 的 `is` 和 `as` 方法。  
   
 ## <a name="paging-methods"></a>分页方法  
  分页操作从序列中返回单个元素或多个元素。 支持的分页方法为`First`， `FirstOrDefault`， `Single`， `SingleOrDefault`， `Skip`，并`Take`。  
@@ -77,5 +77,6 @@ ms.locfileid: "55904645"
  大量的分页方法不支持，原因可能是不能将函数映射到数据源或缺乏隐式排序数据源上的集。 返回默认值的方法仅限于默认值为 null 的概念模型基元类型和引用类型。 对空序列执行的分页方法将返回 null。  
   
 ## <a name="see-also"></a>请参阅
+
 - [支持和不支持的 LINQ 方法 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)
 - [标准查询运算符概述](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb397896(v=vs.120))

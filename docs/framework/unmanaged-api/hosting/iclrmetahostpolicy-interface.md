@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 46576552db6e3c9aa06646b260e74cb4b7890d9d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 93507ac72b79210dc3a267fea39a6a7b2874916a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54559224"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59188560"
 ---
 # <a name="iclrmetahostpolicy-interface"></a>ICLRMetaHostPolicy 接口
 提供了[GetRequestedRuntime](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md)方法，它将指针返回到策略条件的一个公共语言运行时 (CLR) 接口，托管程序集、 版本和配置文件。  
@@ -53,9 +53,10 @@ HRESULT hr = CLRCreateInstance(CLSID_CLRMetaHostPolicy,
   
  **库：** 包含为 MSCorEE.dll 中的资源  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [.NET Framework 4 和 4.5 中添加的 CLR 承载接口](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)
 - [承载接口](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [承载](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [宿主](../../../../docs/framework/unmanaged-api/hosting/index.md)

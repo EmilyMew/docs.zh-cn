@@ -5,12 +5,12 @@ helpviewer_keywords:
 - timing behaviors [WPF]
 - behaviors [WPF], timing
 ms.assetid: 5b714d46-bd46-48b8-b467-b4be89ba3091
-ms.openlocfilehash: f7c1aa81a5d3c283fdea06dd812f879f096c2ee2
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: c3403a8602cc874e993bd649851b77d7bf652cce
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57355514"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59129585"
 ---
 # <a name="timing-behaviors-overview"></a>计时行为概述
 本主题介绍动画和其他的计时行为<xref:System.Windows.Media.Animation.Timeline>对象。  
@@ -38,11 +38,11 @@ ms.locfileid: "57355514"
 ## <a name="properties-that-control-the-length-of-a-timeline"></a>用于控制时间线长度的属性  
  一个<xref:System.Windows.Media.Animation.Timeline>表示的时间段和时间线的长度可以描述不同的方式。 下表定义了几个用于描述时间线长度的术语。  
   
-|术语|描述|Properties||||  
+|术语|描述|属性||||  
 |----------|-----------------|----------------|-|-|-|  
 |简单持续时间|时间线向前迭代一次所需的时间长度。|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>||||  
-|一次重复|时间线向前播放一次，如果它采用的时间长度<xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>属性为 true 时，反向播放一次。|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>， <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>||||  
-|活动期|时间长度所需时间线，以完成由指定的所有重复其<xref:System.Windows.Media.Animation.RepeatBehavior>属性。|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>, <xref:System.Windows.Media.Animation.RepeatBehavior>||||  
+|一次重复|时间线向前播放一次，如果它采用的时间长度<xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>属性为 true 时，反向播放一次。|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>||||  
+|活动期|时间长度所需时间线，以完成由指定的所有重复其<xref:System.Windows.Media.Animation.RepeatBehavior>属性。|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>中， <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>中， <xref:System.Windows.Media.Animation.RepeatBehavior>||||  
   
 <a name="duration"></a>   
 ### <a name="the-duration-property"></a>Duration 属性  
@@ -123,6 +123,7 @@ ms.locfileid: "57355514"
 -   <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> -指定的百分比<xref:System.Windows.Media.Animation.Timeline.Duration%2A>以时间线的所用减速。 有关示例，请参见 [如何：加速或减速播放动画](how-to-accelerate-or-decelerate-an-animation.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [动画概述](animation-overview.md)
 - [动画和计时系统概述](animation-and-timing-system-overview.md)
 - [计时事件概述](timing-events-overview.md)

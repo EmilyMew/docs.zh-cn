@@ -2,12 +2,12 @@
 title: 路由服务
 ms.date: 03/30/2017
 ms.assetid: ca7c216a-5141-4132-8193-102c181d2eba
-ms.openlocfilehash: b0d58e70d482532e3f148d3f4f92741f46221982
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 905c84d801a27e588e2c539f987d6280aae7b994
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54495300"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59129436"
 ---
 # <a name="routing-service"></a>路由服务
 路由服务是充当消息路由器的泛型 SOAP 中介。 路由服务的核心功能是基于消息内容来路由消息，通过该功能，可基于消息本身（标头或消息正文）中的值将消息转发到客户端终结点。  
@@ -65,7 +65,7 @@ ms.locfileid: "54495300"
  当迁移到新版解决方案时，您可能需要并行维护旧版本，以便向现有客户提供服务。 通常，这要求连接到较新版本的客户端在与解决方案通信时必须使用不同的地址。 路由服务允许您根据消息中包含的版本特定信息将消息路由至相应解决方案，从而公开一个可为解决方案的两个版本提供服务的服务终结点。 有关此类实现的示例，请参阅[How To:服务版本控制](../../../../docs/framework/wcf/feature-details/how-to-service-versioning.md)。  
   
 ### <a name="priority-routing"></a>优先级路由  
- 向多个客户端提供服务时，您可以与某些合作伙伴达成服务级别协议 (SLA)，该协议要求对来自这些合作伙伴的所有数据与其他客户端数据单独处理。 使用查找消息中包含的客户特定信息的筛选器，您可以轻松地将来自特定合作伙伴的消息路由至为满足其 SLA 要求而创建的终结点。  
+ 向多个客户端提供服务时，您可以与某些合作伙伴达成服务级别协议 (SLA)，该协议要求对来自这些合作伙伴的所有数据与其他客户端数据单独处理。 使用查找消息中包含的客户特定信息的筛选器，您可以轻松地将来自特定合作伙伴的消息路由至为满足其 SLA 需求而创建的终结点。  
   
 ## <a name="dynamic-configuration"></a>动态配置  
  若要支持任务关键型系统（在其中处理消息时不得出现任何服务中断），能够在运行时修改系统中组件的配置非常重要。 为了支持此需求，路由服务提供了一种 <xref:System.ServiceModel.IExtension%601> 实现（即 <xref:System.ServiceModel.Routing.RoutingExtension>），该实现允许在运行时动态更新路由服务的配置。  
@@ -78,7 +78,7 @@ ms.locfileid: "54495300"
  为了支持在具有不同传输方式的终结点之间路由消息，路由服务使用系统提供的绑定，这些绑定使服务可以起到不同协议之间的桥梁的作用。 如果路由服务公开的服务终结点与消息路由到的客户端终结点使用的协议不同，这种情况将自动发生。  
   
 ## <a name="soap-processing"></a>SOAP 处理  
- 常见路由需求是在具有不同 SOAP 需求的终结点之间路由消息。 若要支持此要求，路由服务提供了<xref:System.ServiceModel.Routing.SoapProcessingBehavior>的自动创建一个新**MessageVersion**消息路由到它之前满足目标终结点的要求。 此行为还会创建一个新**MessageVersion**之前返回到请求客户端应用程序，以确保任何响应消息**MessageVersion**的响应的对应项匹配原始请求。  
+ 常见路由要求是在具有不同 SOAP 要求的终结点之间路由消息。 若要支持此要求，路由服务提供了<xref:System.ServiceModel.Routing.SoapProcessingBehavior>的自动创建一个新**MessageVersion**消息路由到它之前满足目标终结点的要求。 此行为还会创建一个新**MessageVersion**之前返回到请求客户端应用程序，以确保任何响应消息**MessageVersion**的响应的对应项匹配原始请求。  
   
  有关 SOAP 处理的详细信息，请参阅[路由简介](../../../../docs/framework/wcf/feature-details/routing-introduction.md)。  
   
@@ -95,7 +95,7 @@ ms.locfileid: "54495300"
  有关备份终结点的详细信息，请参阅[路由简介](../../../../docs/framework/wcf/feature-details/routing-introduction.md)并[消息筛选器](../../../../docs/framework/wcf/feature-details/message-filters.md)。  
   
 ## <a name="streaming"></a>流式处理  
- 如果您设置绑定以支持流式处理，则路由服务可以成功对消息进行流式处理。  但是，在某些情况下可能需要对消息进行缓冲：  
+ 如果你设置绑定以支持流式处理，则路由服务可以成功对消息进行流式处理。  但是，在某些情况下可能需要对消息进行缓冲：  
   
 -   多播（缓冲以创建更多消息副本）  
   
@@ -106,6 +106,7 @@ ms.locfileid: "54495300"
 -   动态配置  
   
 ## <a name="see-also"></a>请参阅
+
 - [路由简介](../../../../docs/framework/wcf/feature-details/routing-introduction.md)
 - [路由协定](../../../../docs/framework/wcf/feature-details/routing-contracts.md)
 - [消息筛选器](../../../../docs/framework/wcf/feature-details/message-filters.md)

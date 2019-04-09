@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DataGridView control [Windows Forms], column types
 - data grids [Windows Forms], columns
 ms.assetid: f0a0a9f1-8757-4bfd-891f-d7d12870dbed
-ms.openlocfilehash: 8fd3ad0da369702c2a5e27c0b8b9a39a71c372ac
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: a33cf4cd865921c04ef10c7fccf3a67c3d22de73
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57724565"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115669"
 ---
 # <a name="column-types-in-the-windows-forms-datagridview-control"></a>Windows 窗体 DataGridView 控件中的列类型
 <xref:System.Windows.Forms.DataGridView>控件使用几种列类型来显示其信息，并使用户能够修改或添加信息。  
@@ -81,6 +81,7 @@ ms.locfileid: "57724565"
  <xref:System.Windows.Forms.DataGridViewLinkColumn>类提供多个属性用于修改链接的外观之前,、 期间和之后在被单击。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridViewColumn>
 - <xref:System.Windows.Forms.DataGridViewButtonColumn>
@@ -91,5 +92,5 @@ ms.locfileid: "57724565"
 - <xref:System.Windows.Forms.DataGridViewLinkColumn>
 - [DataGridView 控件](datagridview-control-windows-forms.md)
 - [如何：在 Windows 窗体 DataGridView 控件的单元格中显示图像](how-to-display-images-in-cells-of-the-windows-forms-datagridview-control.md)
-- [如何：使用的 Windows 窗体 DataGridView 控件中的图像列](how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md)
+- [如何：使用 Windows 窗体 DataGridView 控件中的图像列](how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md)
 - [自定义 Windows 窗体 DataGridView 控件](customizing-the-windows-forms-datagridview-control.md)

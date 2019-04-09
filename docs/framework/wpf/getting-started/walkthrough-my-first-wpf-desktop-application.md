@@ -11,14 +11,14 @@ ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 author: mairaw
 ms.author: mairaw
 ms.custom: vs-dotnet
-ms.openlocfilehash: b7ad8afbad212d5c79c9391bd9f6d1da7ff8fb28
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: dbfc40bd1fcc97810ea1397731bd8c232297cbd1
+ms.sourcegitcommit: 68eb5c4928e2b082f178a42c16f73fedf52c2ab8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57358180"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59055243"
 ---
-# <a name="walkthrough-my-first-wpf-desktop-application"></a>演练：我第一个 WPF 桌面应用程序
+# <a name="walkthrough-my-first-wpf-desktop-application"></a>演练：我的第一个 WPF 桌面应用程序
 
 本文介绍如何开发一个简单的 Windows Presentation Foundation (WPF) 应用程序，其中包括大多数 WPF 应用程序共有的元素：Extensible Application Markup Language (XAML) 标记、 代码隐藏、 应用程序定义、 控件、 布局、 数据绑定和样式。
 
@@ -215,7 +215,7 @@ ms.locfileid: "57358180"
 
     下图显示了与应用程序<xref:System.Windows.Navigation.NavigationWindow>按钮：
 
-    ![ExpenseIt 示例屏幕快照](./media/gettingstartedfigure1.png)
+    ![ExpenseIt 示例屏幕截图](./media/gettingstartedfigure1.png)
 
 2. 关闭要返回到 Visual Studio 的应用程序。
 
@@ -285,7 +285,7 @@ ms.locfileid: "57358180"
 
 下图显示了刚创建的控件：
 
-![ExpenseIt 示例屏幕快照](./media/gettingstartedfigure2.png)
+![ExpenseIt 示例屏幕截图](./media/gettingstartedfigure2.png)
 
 ## <a name="add-an-image-and-a-title"></a>添加图像和标题
 
@@ -321,7 +321,7 @@ ms.locfileid: "57358180"
 
 下图显示了刚添加的结果：
 
-![ExpenseIt 示例屏幕快照](./media/gettingstartedfigure3.png)
+![ExpenseIt 示例屏幕截图](./media/gettingstartedfigure3.png)
 
 ## <a name="add-code-to-handle-events"></a>添加代码以处理事件
 
@@ -361,7 +361,7 @@ ms.locfileid: "57358180"
 
 下图显示了添加到的 UI 元素*ExpenseReportPage.xaml*。
 
-![ExpenseIt 示例屏幕快照](./media/gettingstartedfigure4.png)
+![ExpenseIt 示例屏幕截图](./media/gettingstartedfigure4.png)
 
 ## <a name="style-controls"></a>控件的样式
 
@@ -375,17 +375,17 @@ ms.locfileid: "57358180"
 
     此 XAML 将添加以下样式：
 
-    - `headerTextStyle`：设置页标题的格式<xref:System.Windows.Controls.Label>。
+    - `headerTextStyle`:设置页标题的格式<xref:System.Windows.Controls.Label>。
 
-    - `labelStyle`：若要设置格式<xref:System.Windows.Controls.Label>控件。
+    - `labelStyle`:若要设置格式<xref:System.Windows.Controls.Label>控件。
 
-    - `columnHeaderStyle`：若要设置格式<xref:System.Windows.Controls.Primitives.DataGridColumnHeader>。
+    - `columnHeaderStyle`:若要设置格式<xref:System.Windows.Controls.Primitives.DataGridColumnHeader>。
 
-    - `listHeaderStyle`：若要设置列表标头的格式<xref:System.Windows.Controls.Border>控件。
+    - `listHeaderStyle`:若要设置列表标头的格式<xref:System.Windows.Controls.Border>控件。
 
-    - `listHeaderTextStyle`：若要设置列表标头的格式<xref:System.Windows.Controls.Label>。
+    - `listHeaderTextStyle`:若要设置列表标头的格式<xref:System.Windows.Controls.Label>。
 
-    - `buttonStyle`：若要设置格式<xref:System.Windows.Controls.Button>上`ExpenseItHome.xaml`。
+    - `buttonStyle`:若要设置格式<xref:System.Windows.Controls.Button>上`ExpenseItHome.xaml`。
 
     请注意，这些样式是资源和子级的<xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType>属性元素。 在此位置中，这些样式将应用到应用程序中的所有元素。 在.NET Framework 应用程序中使用的资源的示例，请参阅[使用应用程序资源](../advanced/how-to-use-application-resources.md)。
 
@@ -475,12 +475,12 @@ ms.locfileid: "57358180"
 
 下图显示的两个页面`ExpenseIt`控件、 布局、 样式、 数据绑定和数据模板应用与应用程序：
 
-![ExpenseIt 示例屏幕快照](./media/gettingstartedfigure5.png)
+![ExpenseIt 示例屏幕截图](./media/gettingstartedfigure5.png)
 
 > [!NOTE]
 > 此示例演示了 WPF 的特定功能并不遵循所有最佳实践等安全、 本地化和可访问性。 WPF 和.NET Framework 应用程序开发最佳做法的全面介绍，请参阅以下主题：
 >
-> - [辅助功能](../../ui-automation/accessibility-best-practices.md)
+> - [可访问性](../../ui-automation/accessibility-best-practices.md)
 >
 > - [安全性](../security-wpf.md)
 >
@@ -500,7 +500,7 @@ ms.locfileid: "57358180"
 有关创建应用程序的详细信息，请参阅以下主题：
 
 - [应用程序开发](../app-development/index.md)
-- [控件](../controls/index.md)
+- [Controls](../controls/index.md)
 - [数据绑定概述](../data/data-binding-overview.md)
 - [图形和多媒体](../graphics-multimedia/index.md)
 - [WPF 中的文档](../advanced/documents-in-wpf.md)

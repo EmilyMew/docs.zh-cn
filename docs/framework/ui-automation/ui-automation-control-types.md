@@ -7,12 +7,12 @@ helpviewer_keywords:
 - UI Automation, control types
 - control types, UI Automation
 ms.assetid: 261dcc59-3a62-4e40-91dd-63ff9d2241c0
-ms.openlocfilehash: 9cfd0678b21c61cc776162c6daeb1b7262e602cb
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.openlocfilehash: 54a2157d469acad6d20a44afe72432138894cfe8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57674973"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59116098"
 ---
 # <a name="ui-automation-control-types"></a>UI 自动化控件类型
 **请注意**本文档适用于.NET Framework 开发人员想要使用的托管[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]中定义的类<xref:System.Windows.Automation>命名空间。 有关最新信息[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]，请参阅[Windows 自动化 API:UI 自动化](https://go.microsoft.com/fwlink/?LinkID=156746)。  
@@ -64,4 +64,5 @@ ms.locfileid: "57674973"
  <xref:System.Windows.Automation.ControlType>  
   
 ## <a name="see-also"></a>请参阅
+
 - [UI 自动化控件模式](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)

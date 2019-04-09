@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 060da3ebc60057554fd572bd2569652afee6bd0f
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58760975"
+---
 ### <a name="il-ret-not-allowed-in-a-try-region"></a>试用区域中不允许 IL ret
 
 |   |   |

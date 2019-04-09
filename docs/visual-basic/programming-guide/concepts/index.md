@@ -2,8 +2,13 @@
 title: 编程概念的 Visual Basic
 ms.date: 02/27/2017
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
+ms.openlocfilehash: 4c550002e1049fb716d2836737b6c3fa5b9df4f1
+ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57677469"
 ---
-
 # <a name="programming-concepts-visual-basic"></a>编程概念 (Visual Basic)
 
 此部分介绍了 Visual Basic 语言中的编程概念。

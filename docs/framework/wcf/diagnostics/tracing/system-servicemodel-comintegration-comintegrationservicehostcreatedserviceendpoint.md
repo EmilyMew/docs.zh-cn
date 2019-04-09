@@ -2,12 +2,12 @@
 title: System.ServiceModel.Channels.MsmqMoveOrDeleteAttemptFailed
 ms.date: 03/30/2017
 ms.assetid: d75d39da-7502-4a6a-91b9-eaa05b8e24d5
-ms.openlocfilehash: ade49ceb86a401cd27a9381b1ea5d0c1ad624548
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d56bbf145c85902d8e5f1fd21f760633121da6da
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54623087"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115279"
 ---
 # <a name="systemservicemodelchannelsmsmqmoveordeleteattemptfailed"></a>System.ServiceModel.Channels.MsmqMoveOrDeleteAttemptFailed
 无法移动或删除消息。  
@@ -20,6 +20,7 @@ ms.locfileid: "54623087"
  此跟踪不会指示出全部的系统失败。 但是，它会指示某条消息的选定病毒消息处理失败。 请参阅[病毒消息处理](https://go.microsoft.com/fwlink/?LinkID=99546)有关消息何时成为病毒和如何将服务配置为适当地处理更多详细信息。  
   
 ## <a name="see-also"></a>请参阅
+
 - [跟踪](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
 - [使用跟踪来排除应用程序故障](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
 - [管理和诊断](../../../../../docs/framework/wcf/diagnostics/index.md)

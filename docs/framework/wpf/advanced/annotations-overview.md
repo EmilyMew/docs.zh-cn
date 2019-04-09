@@ -9,19 +9,18 @@ helpviewer_keywords:
 - documents [WPF], annotations
 - sticky notes [WPF]
 ms.assetid: 716bf474-29bd-4c74-84a4-8e0744bdad62
-ms.openlocfilehash: a0c6260eee10487034655b5e4abbfa1f1a7bce71
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: faf2e9bbe23acfd46ee98e1f0fca01b7563ede73
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57355176"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59122442"
 ---
 # <a name="annotations-overview"></a>批注概述
 在纸质文档上编写说明或注释毫不稀奇，我们几乎认为这是理所当然的。 这些说明或注释就是“批注”，我们将其添加到文档，用于标注信息或突出显示兴趣项以供日后参考。 虽然在打印文档上编写注释很简单也很平常，但是就算在所有电子文档上添加个人注释，功能上却通常有很多限制。  
   
  本主题介绍几个常见类型的批注，特别是粘滞便笺和突出显示，并说明了如何将[!INCLUDE[TLA#tla_caf](../../../../includes/tlasharptla-caf-md.md)]简化这些类型的应用程序可以通过 Windows Presentation Foundation (WPF) 文档中的批注查看控件。  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 支持批注的文档查看控件包括<xref:System.Windows.Controls.FlowDocumentReader>并<xref:System.Windows.Controls.FlowDocumentScrollViewer>，以及控件派生自<xref:System.Windows.Controls.Primitives.DocumentViewerBase>如<xref:System.Windows.Controls.DocumentViewer>和<xref:System.Windows.Controls.FlowDocumentPageViewer>。  
-  
-  
+
 <a name="caf1_type_stickynotes"></a>   
 ## <a name="sticky-notes"></a>便笺  
  平常的便笺是将信息写在小块彩纸上，随后将这张彩纸“粘贴”到文档。 数字便笺为电子文档提供类似的功能，但灵活性更高，可包括许多其他类型的内容，如键入文本、手写注释（如 [!INCLUDE[TLA#tla_tpc](../../../../includes/tlasharptla-tpc-md.md)]“墨迹”笔划）或 Web 链接。  
@@ -65,13 +64,14 @@ ms.locfileid: "57355176"
  另一个示例方案涉及到应用程序，使交换批注和文档通过电子邮件的读取者之间的粘滞便笺。 凭借此功能，这些应用程序可以将读取器导航到包含要交换的批注的页面。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.Primitives.DocumentViewerBase>
 - <xref:System.Windows.Controls.DocumentViewer>
 - <xref:System.Windows.Controls.FlowDocumentPageViewer>
 - <xref:System.Windows.Controls.FlowDocumentScrollViewer>
 - <xref:System.Windows.Controls.FlowDocumentReader>
 - <xref:System.Windows.Annotations.IAnchorInfo>
-- [注释架构](annotations-schema.md)
+- [批注架构](annotations-schema.md)
 - [ContextMenu 概述](../controls/contextmenu-overview.md)
 - [命令概述](commanding-overview.md)
 - [流文档概述](flow-document-overview.md)

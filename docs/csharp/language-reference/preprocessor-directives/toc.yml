@@ -10,17 +10,17 @@ items:
     href: preprocessor-elif.md
   - name: '#endif'
     href: preprocessor-endif.md
-  - name: '#定义'
+  - name: '#define'
     href: preprocessor-define.md
   - name: '#undef'
     href: preprocessor-undef.md
-  - name: '#警告'
+  - name: '#warning'
     href: preprocessor-warning.md
-  - name: '#错误'
+  - name: '#error'
     href: preprocessor-error.md
   - name: '#line'
     href: preprocessor-line.md
-  - name: '#区域'
+  - name: '#region'
     href: preprocessor-region.md
   - name: '#endregion'
     href: preprocessor-endregion.md

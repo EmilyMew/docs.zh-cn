@@ -1,5 +1,5 @@
 ---
-title: 如何：模拟鼠标和键盘事件中的代码
+title: 如何：在代码中模拟鼠标和键盘事件
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - mouse clicks [Windows Forms], simulating
 - mouse [Windows Forms], event simulation
 ms.assetid: 6abcb67e-3766-4af2-9590-bf5dabd17e41
-ms.openlocfilehash: bb51cd5ac3c4961381ceff89054d79dc52531627
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
-ms.translationtype: MT
+ms.openlocfilehash: aa0139c4b51bf33f9156eeb9dab6b9b6093524d8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57713756"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59123443"
 ---
-# <a name="how-to-simulate-mouse-and-keyboard-events-in-code"></a>如何：模拟鼠标和键盘事件中的代码
+# <a name="how-to-simulate-mouse-and-keyboard-events-in-code"></a>如何：在代码中模拟鼠标和键盘事件
 Windows 窗体提供多个选项，用于以编程方式模拟鼠标和键盘输入。 本主题将简要阐述这些选项。  
   
 ## <a name="simulating-mouse-input"></a>模拟鼠标输入  
@@ -27,7 +27,7 @@ Windows 窗体提供多个选项，用于以编程方式模拟鼠标和键盘输
   
 #### <a name="to-programmatically-click-the-right-mouse-button"></a>若要以编程方式单击鼠标右键按钮  
   
-1.  创建 <xref:System.Windows.Forms.MouseEventArgs>，其 <xref:System.Windows.Forms.MouseEventArgs.Button%2A> 属性设置为 <xref:System.Windows.Forms.MouseButtons.Right?displayProperty=nameWithType> 值。  
+1.  创建 <xref:System.Windows.Forms.MouseEventArgs> ，其 <xref:System.Windows.Forms.MouseEventArgs.Button%2A> 属性设置为 <xref:System.Windows.Forms.MouseButtons.Right?displayProperty=nameWithType> 值。  
   
 2.  调用 <xref:System.Windows.Forms.Control.OnMouseClick%2A> 方法，其中参数为此 <xref:System.Windows.Forms.MouseEventArgs> 。  
   
@@ -90,4 +90,5 @@ Windows 窗体提供多个选项，用于以编程方式模拟鼠标和键盘输
  Visual Basic 或 Visual C# 生成命令行中的此示例的信息，请参阅[从命令行生成](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)或[命令行上使用 csc.exe](../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)。 也可以通过将代码粘贴到新的项目中生成此示例在 Visual Studio 中。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Windows 窗体中的用户输入](user-input-in-windows-forms.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - templates [WPF], inline
 - inline styles [WPF]
 ms.assetid: 69a1a3f9-acb5-4e2c-9c43-2e376c055ac4
-ms.openlocfilehash: 6225e1abd2b6bb8c3598b08bb2a717340c435e77
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: b566e157e2d4a9e9be21a678541bf5d5341a898c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57373382"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59091429"
 ---
 # <a name="inline-styles-and-templates"></a>内联样式和模板
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 提供了<xref:System.Windows.Style>对象和模板对象 (<xref:System.Windows.FrameworkTemplate>子类) 作为一种方式在资源中定义的元素的可视外观，以便它们可以使用多次。 出于此原因中的属性[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]采用类型<xref:System.Windows.Style>和<xref:System.Windows.FrameworkTemplate>几乎总是进行对现有样式和模板的资源引用而不是内联定义新的。  
@@ -37,4 +37,5 @@ ms.locfileid: "57373382"
  其他情况下，返回的对象标记扩展启用的语法也可使用的样式和模板。 有可能的方案的两个此类扩展包括[TemplateBinding](templatebinding-markup-extension.md)和<xref:System.Windows.Data.Binding>。  
   
 ## <a name="see-also"></a>请参阅
+
 - [样式设置和模板化](../controls/styling-and-templating.md)

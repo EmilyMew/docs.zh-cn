@@ -2,12 +2,12 @@
 title: <add> 的 <transportConfigurationType>
 ms.date: 03/30/2017
 ms.assetid: 03d79db9-571d-4534-acef-d05e5467b257
-ms.openlocfilehash: 84ad745e7789fc2de8dcc23f3607b63702af05a1
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: c71a58b13e89bedb5eed24d784c82fb1525f7625
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55263442"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59126719"
 ---
 # <a name="add-of-transportconfigurationtype"></a>\<add> of \<transportConfigurationType>
 此元素是一个键/值对，可标识特定传输的类型。  
@@ -39,7 +39,7 @@ ms.locfileid: "55263442"
 |transportConfigurationType|一个包含实现特定传输的类型的字符串。|  
   
 ### <a name="child-elements"></a>子元素  
- 无  
+ None  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -59,7 +59,8 @@ ms.locfileid: "55263442"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [承载](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [宿主](../../../../../docs/framework/wcf/feature-details/hosting.md)

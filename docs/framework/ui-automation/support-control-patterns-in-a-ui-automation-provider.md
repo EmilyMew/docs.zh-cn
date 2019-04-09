@@ -8,12 +8,12 @@ helpviewer_keywords:
 - control patterns, supporting in UI Automation provider
 - UI Automation, supporting control patterns in provider
 ms.assetid: 0d635c35-ffa8-4dc8-bbc9-12fcd5445776
-ms.openlocfilehash: b3fda706f4f2a4aa44b3627a6e6339ef0e3acb03
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
-ms.translationtype: MT
+ms.openlocfilehash: dd8bc880126cd6fa82f7f3a775edf47f0725b6d9
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57673153"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59123924"
 ---
 # <a name="support-control-patterns-in-a-ui-automation-provider"></a>在 UI 自动化提供程序中支持控件模式
 > [!NOTE]
@@ -25,7 +25,7 @@ ms.locfileid: "57673153"
   
 1.  为元素应支持的控件模式实现相应的接口，例如为 为 <xref:System.Windows.Automation.Provider.IInvokeProvider> 实现 <xref:System.Windows.Automation.InvokePattern>。  
   
-2.  返回包含 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPatternProvider%2A?displayProperty=nameWithType>实现中每个控件接口的实现的对象  
+2.  返回包含的每个控件接口的实现中实现的对象 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPatternProvider%2A?displayProperty=nameWithType>  
   
 ## <a name="example"></a>示例  
  下面的示例演示了对单项选择自定义列表框实现 <xref:System.Windows.Automation.Provider.ISelectionProvider> 。 它返回三个属性并获取当前所选的项。  
@@ -40,5 +40,6 @@ ms.locfileid: "57673153"
  [!code-vb[UIAFragmentProvider_snip#120](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#120)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [UI 自动化提供程序概述](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
-- [服务器端 UI 自动化提供程序实现](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+- [服务器端 UI 自动化提供程序的实现](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)

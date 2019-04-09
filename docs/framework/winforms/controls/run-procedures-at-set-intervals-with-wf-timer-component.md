@@ -1,5 +1,5 @@
 ---
-title: 如何：使用 Windows 窗体 Timer 组件的设定间隔运行过程
+title: 如何：使用 Windows 窗体计时器组件以设置的间隔运行过程
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - Timer component [Windows Forms], initializing
 - procedures [Windows Forms], specific time intervals
 ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
-ms.openlocfilehash: 03f386917e554cfdf9d65778474ae809d81d1939
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
-ms.translationtype: MT
+ms.openlocfilehash: ed433ee03bc82931e9b640f45ebd798e0ef73204
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57705566"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59127031"
 ---
-# <a name="how-to-run-procedures-at-set-intervals-with-the-windows-forms-timer-component"></a>如何：使用 Windows 窗体 Timer 组件的设定间隔运行过程
+# <a name="how-to-run-procedures-at-set-intervals-with-the-windows-forms-timer-component"></a>如何：使用 Windows 窗体计时器组件以设置的间隔运行过程
 有时可能需要创建一个在循环完成之前以特定时间间隔运行或者在设定时间间隔之后运行的过程。 <xref:System.Windows.Forms.Timer> 组件可实现此过程。  
   
  此组件专为 Windows 窗体环境设计。 如果需要适合服务器环境的计时器，请参阅[基于服务器的计时器介绍](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90))。  
@@ -243,6 +243,7 @@ private:
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.Timer>
 - [Timer 组件](timer-component-windows-forms.md)
 - [Timer 组件概述](timer-component-overview-windows-forms.md)

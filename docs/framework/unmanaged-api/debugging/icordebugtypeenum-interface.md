@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e9fd108e488cc83dfb55e48fa14df30e085ec1d9
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: 121c4bca3419ef1e34a03ff7600285948ca4c237
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56978942"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59137600"
 ---
 # <a name="icordebugtypeenum-interface"></a>ICorDebugTypeEnum 接口
 实现"ICorDebugEnum"方法，并枚举"ICorDebugType"数组。  
@@ -44,7 +44,8 @@ ms.locfileid: "56978942"
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [调试接口](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a105ca8838820b62e81dae4c0149734339bed7a8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b5904083be66d4bd6dc69729bebc28db8a800e77
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54620209"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089225"
 ---
 # <a name="icordebugprocess5-interface"></a>ICorDebugProcess5 接口
 扩展 ICorDebugProcess 接口以支持对托管堆，以提供有关垃圾回收的托管对象信息的访问，并确定调试器是否从应用程序本地本机映像缓存加载图像。  
@@ -56,8 +56,9 @@ ms.locfileid: "54620209"
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [调试接口](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [调试](../../../../docs/framework/unmanaged-api/debugging/index.md)

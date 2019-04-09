@@ -2,12 +2,12 @@
 title: 数据绑定和 LINQ to DataSet
 ms.date: 03/30/2017
 ms.assetid: 310bff4a-32dd-4f20-a271-6dbd82912631
-ms.openlocfilehash: 91349de3b12b45e645ad4080c9fc972f28c669ca
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b081a648023aa21eea3a20ec409600d3bcbe9878
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54655772"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073554"
 ---
 # <a name="data-binding-and-linq-to-dataset"></a>数据绑定和 LINQ to DataSet
 *数据绑定*是应用程序 UI 和业务逻辑之间建立连接的过程。 如果绑定具有正确的设置，并且数据提供适当的通知，则在数据更改其值时，绑定到该数据的元素会自动反映更改。 <xref:System.Data.DataSet> 是数据驻留在内存中的表示形式，不管包含的数据来自什么数据源，它都可以提供一致的关系编程模型。 使用 ADO.NET 2.0 <xref:System.Data.DataView> 可以对存储在 <xref:System.Data.DataTable> 中的数据进行排序和筛选。 数据绑定应用程序中经常会使用此功能。 通过使用 <xref:System.Data.DataView>，您可以使用不同的排序顺序公开表中的数据，并且可以按行状态或基于筛选器表达式来筛选数据。 有关详细信息<xref:System.Data.DataView>对象，请参阅[Dataview](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)。  
@@ -36,4 +36,5 @@ ms.locfileid: "54655772"
  说明如何将 <xref:System.Data.DataView> 对象绑定到 <xref:System.Windows.Forms.DataGridView>。  
   
 ## <a name="see-also"></a>请参阅
+
 - [编程指南](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)

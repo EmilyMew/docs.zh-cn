@@ -2,12 +2,12 @@
 title: 对等通道安全性
 ms.date: 03/30/2017
 ms.assetid: 2c59b164-3729-44f0-a967-f247c42de662
-ms.openlocfilehash: 09979cee48522355631c79e0bdf4c0fba6be782e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bc17c35bf088472cfbf36b2c6d7c868c8cc85f20
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54541750"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59129449"
 ---
 # <a name="peer-channel-security"></a>对等通道安全性
 对等通道启用依赖于多方消息传递的多种分布式应用程序类型。 示例包括在 Internet 范围内由受信任源分发内容（如媒体或软件更新）、朋友们一起交换音乐和图片或同事们一起协作编辑一个文档。 这些方案都需要一个独特的安全模型。 对等通道安全模型就是为满足这些方案而设计的，此模型为不同标识、身份验证和授权模型的各自需要提供可靠的安全模型。  
@@ -34,6 +34,7 @@ ms.locfileid: "54541750"
  只要应用程序选择了一种受支持的令牌类型，对等通道就不再需要特定的标识模型。 应用程序可以完全控制这些标识和身份验证决策的生命周期。  
   
 ## <a name="see-also"></a>请参阅
+
 - [保护对等通道应用程序](../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
 - [对等通道概念](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)
 - [生成对等通道应用程序](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

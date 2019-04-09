@@ -1,5 +1,5 @@
 ---
-title: 如何：通过 Columns 属性操作表列
+title: 如何：通过 Columns 属性操作表的列
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - tables [WPF], manipulating columns
 - Columns property [WPF]
 ms.assetid: 3f8884f4-7e1f-456b-be06-fbd3cf469bf3
-ms.openlocfilehash: e7b2c1923f7262417f44cb5ac2ea057ef6c83690
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: d379d1a98bff614ff9e16cdd340bb69644988743
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57358504"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59078416"
 ---
-# <a name="how-to-manipulate-a-tables-columns-through-the-columns-property"></a>如何：通过 Columns 属性操作表列
+# <a name="how-to-manipulate-a-tables-columns-through-the-columns-property"></a>如何：通过 Columns 属性操作表的列
 此示例演示了一些较常见的操作可通过表的列上执行<xref:System.Windows.Documents.Table.Columns%2A>属性。  
   
 ## <a name="example"></a>示例  
@@ -66,9 +66,10 @@ ms.locfileid: "57358504"
  [!code-vb[TableSnippets2#_Table_Columns_Clear](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets2/visualbasic/window1.xaml.vb#_table_columns_clear)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [表概述](table-overview.md)
 - [使用 XAML 定义表](how-to-define-a-table-with-xaml.md)
 - [以编程方式生成表](how-to-build-a-table-programmatically.md)
 - [通过 RowGroups 属性操作表的行组](how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)
-- [通过 Blocks 属性控制 FlowDocument](how-to-manipulate-a-flowdocument-through-the-blocks-property.md)
+- [通过 Blocks 属性操作 FlowDocument](how-to-manipulate-a-flowdocument-through-the-blocks-property.md)
 - [通过 RowGroups 属性操作表的行组](how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)

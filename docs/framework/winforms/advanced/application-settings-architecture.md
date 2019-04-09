@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - application settings [Windows Forms], architecture
 ms.assetid: c8eb2ad0-fac6-4ea2-9140-675a4a44d562
-ms.openlocfilehash: dd527234b90e94b5883d15b336f5e5abc9709880
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: f686fa00662ad29323c1883c45ed0e790b133f2c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57710675"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59099776"
 ---
 # <a name="application-settings-architecture"></a>应用程序设置体系结构
 本主题介绍应用程序设置体系结构的工作原理，并探讨了体系结构的高级功能，如分组设置和设置键。  
@@ -147,10 +147,11 @@ ms.locfileid: "57710675"
  您的提供程序不需要支持所有特性中定义的设置<xref:System.Configuration?displayProperty=nameWithType>命名空间，但它必须在最低支持<xref:System.Configuration.ApplicationScopedSettingAttribute>并<xref:System.Configuration.UserScopedSettingAttribute>，此外还应支持<xref:System.Configuration.DefaultSettingValueAttribute>。 对于其不支持的特性，提供程序应直接失败，而不另行通知；提供程序不应引发异常。 如果设置类使用无效的特性组合，但是 — 例如，应用<xref:System.Configuration.ApplicationScopedSettingAttribute>和<xref:System.Configuration.UserScopedSettingAttribute>为相同的设置，您的提供程序应引发异常并终止操作。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Configuration.ApplicationSettingsBase>
 - <xref:System.Configuration.SettingsProvider>
 - <xref:System.Configuration.LocalFileSettingsProvider>
 - [应用程序设置概述](application-settings-overview.md)
-- [Application Settings for Custom Controls](application-settings-for-custom-controls.md)
+- [自定义控件的应用程序设置](application-settings-for-custom-controls.md)
 - [ClickOnce 和应用程序设置](/visualstudio/deployment/clickonce-and-application-settings)
 - [应用程序设置架构](../../configure-apps/file-schema/application-settings-schema.md)

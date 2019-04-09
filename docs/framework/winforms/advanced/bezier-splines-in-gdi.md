@@ -9,12 +9,12 @@ helpviewer_keywords:
 - splines [Windows Forms], Bezier
 - GDI+, Bezier splines
 ms.assetid: 5774ce1e-87d4-4bc7-88c4-4862052781b8
-ms.openlocfilehash: 7648f7f9da72abea4bfc87603eea290614294eff
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: ff4e9eb18610b70c88e057d3d44020321bbb9f4f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57707256"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59107323"
 ---
 # <a name="b233zier-splines-in-gdi"></a>B&#233;zier GDI + 中的样条
 贝塞尔样条是由四个点指定的曲线： 两个终结点 （p1 和 p2） 和两个控点 （c1 和 c2）。 曲线开始于 p1 和 p2 结束。 曲线不会经历的控点，但控制点的作用像磁铁一样，在某些方向上拉拽曲线并影响曲线弯曲的方式。 下图显示了其终结点和控制点一个贝塞尔曲线。  
@@ -38,9 +38,10 @@ ms.locfileid: "57707256"
  ![Paths](./media/aboutgdip02-art13.gif "Aboutgdip02_art13")  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Graphics?displayProperty=nameWithType>
 - <xref:System.Drawing.Pen?displayProperty=nameWithType>
-- [直线、曲线和形状](lines-curves-and-shapes.md)
+- [直线、曲线和图形](lines-curves-and-shapes.md)
 - [构造并绘制曲线](constructing-and-drawing-curves.md)
-- [如何：创建用于绘制图形对象](how-to-create-graphics-objects-for-drawing.md)
+- [如何：创建用于绘制的 Graphics 对象](how-to-create-graphics-objects-for-drawing.md)
 - [如何：创建钢笔](how-to-create-a-pen.md)

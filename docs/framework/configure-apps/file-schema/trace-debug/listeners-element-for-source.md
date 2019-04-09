@@ -1,5 +1,5 @@
 ---
-title: <listeners> 的 <source> 元素
+title: <listeners> 元素 <source>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners
@@ -7,12 +7,12 @@ helpviewer_keywords:
 - listeners element for <source>
 - <listeners> element for <source>
 ms.assetid: a2991f43-b4d3-4614-a8e7-da392de9697f
-ms.openlocfilehash: 34085d06ec3f3b91e5efdba6220d79032baaea52
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: b15a30fb6d356f92312bf33bc1964c7922ba1383
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55266768"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089648"
 ---
 # <a name="listeners-element-for-source"></a>\<侦听器 > 元素\<源 >
 添加或删除中的侦听器<xref:System.Diagnostics.TraceSource.Listeners%2A>集合<xref:System.Diagnostics.TraceSource>。 侦听器将定向到适当的目标，如日志、 窗口或文本文件的跟踪输出。  
@@ -88,6 +88,7 @@ ms.locfileid: "55266768"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Diagnostics.TraceListener>
 - [跟踪和调试设置架构](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
 - [跟踪侦听器](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

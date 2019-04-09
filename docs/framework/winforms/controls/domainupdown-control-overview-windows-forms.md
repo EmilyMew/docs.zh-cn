@@ -7,12 +7,12 @@ helpviewer_keywords:
 - spin button control [Windows Forms], about spin button
 - DomainUpDown control [Windows Forms], about DomainUpDown control
 ms.assetid: 3f40f9c1-20ad-4331-b9b5-b0127eb36eb3
-ms.openlocfilehash: 851c02747a2414e34a5e9d35bdc7d1df916efce0
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: bfe3e7239f77c6f1a0d9bb46a96c704653b43364
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57718891"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102851"
 ---
 # <a name="domainupdown-control-overview-windows-forms"></a>DomainUpDown 控件概述（Windows 窗体）
 Windows 窗体<xref:System.Windows.Forms.DomainUpDown>控件是一对用于列表中向上或向下移动按钮和实质上是组合的文本框。 该控件显示并从选项列表中设置一个文本字符串。 用户可以选择字符串，通过单击向上和向下按钮以浏览列表中，通过按向上和向下箭头键，或通过键入与匹配列表中的项的字符串。 此控件的可能用途之一是从名称按字母顺序排序列表中选择项。  
@@ -28,5 +28,6 @@ Windows 窗体<xref:System.Windows.Forms.DomainUpDown>控件是一对用于列�
  此控件只显示文本字符串。 如果你想显示的数字值的控件，使用<xref:System.Windows.Forms.NumericUpDown>控件。 有关详细信息，请参阅[NumericUpDown 控件概述](numericupdown-control-overview-windows-forms.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.DomainUpDown>
 - [DomainUpDown 控件](domainupdown-control-windows-forms.md)

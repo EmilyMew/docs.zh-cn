@@ -7,12 +7,12 @@ helpviewer_keywords:
 - graphics [WPF], GeometryDrawing class
 - classes [WPF], GeometryDrawing
 ms.assetid: 11d3c096-91ba-4d41-9bba-aeac0db70f97
-ms.openlocfilehash: 6eb604a8446000ef308c2b5a99480fb6a476c949
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: f5cdcfdb68ad8030bcbd6c689f45a8baddd000e1
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57373811"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59179785"
 ---
 # <a name="how-to-create-a-geometrydrawing"></a>如何：创建 GeometryDrawing
 此示例演示如何创建和显示<xref:System.Windows.Media.GeometryDrawing>。 一个<xref:System.Windows.Media.GeometryDrawing>使您能够通过关联来创建具有填充和边框的形状<xref:System.Windows.Media.Pen>和一个<xref:System.Windows.Media.Brush>与<xref:System.Windows.Media.Geometry>。 <xref:System.Windows.Media.GeometryDrawing.Geometry%2A>描述形状的结构<xref:System.Windows.Media.GeometryDrawing.Brush%2A>描述形状的填充和<xref:System.Windows.Media.GeometryDrawing.Pen%2A>描述形状的轮廓。  
@@ -30,6 +30,7 @@ ms.locfileid: "57373811"
  若要创建更复杂的图形，可以将多个图形对象组合到一个单个复合图形使用<xref:System.Windows.Media.DrawingGroup>。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.DrawingGroup>
 - [Drawing 对象概述](drawing-objects-overview.md)
 - [Geometry 概述](geometry-overview.md)

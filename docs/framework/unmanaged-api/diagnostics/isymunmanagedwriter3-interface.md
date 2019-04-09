@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 7c14706068e50fd79fb39ac9d75afacd181f7ab4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e26d79a5b597b8585f2fffd7f3945f00832ca134
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54504075"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59138445"
 ---
 # <a name="isymunmanagedwriter3-interface"></a>ISymUnmanagedWriter3 接口
 表示符号编写器，并提供方法用于定义文档、 序列点、 词法作用域和变量。 此接口扩展[ISymUnmanagedWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)接口。  
@@ -37,6 +37,7 @@ ms.locfileid: "54504075"
  **标头：** CorSym.idl CorSym.h  
   
 ## <a name="see-also"></a>请参阅
+
 - [诊断符号存储区接口](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
 - [ISymUnmanagedWriter 接口](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
 - [ISymUnmanagedWriter2 接口](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)

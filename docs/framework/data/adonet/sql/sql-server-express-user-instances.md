@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 00c12376-cb26-4317-86ad-e6e9c089be57
-ms.openlocfilehash: 4546ce2a08fc2ac20717bbaa55d4688b43d34b47
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: b456549daefa0fdf67524b0b039a091652cf41ff
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56093809"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59111145"
 ---
 # <a name="sql-server-express-user-instances"></a>SQL Server Express 用户实例
 Microsoft SQL Server 学习版 (SQL Server Express) 支持用户实例功能，只有在使用用于 SQL Server 的 .NET Framework 数据提供程序 (`SqlClient`) 时该功能才可用。 用户实例是 SQL Server Express 数据库引擎的单独实例，该单独实例由父实例生成。 不是其本地计算机的管理员的用户可以将用户实例附加和连接到 SQL Server Express 数据库。 在每个用户一个实例的基础上，每个实例在单个用户的安全上下文中运行。  
@@ -37,20 +37,17 @@ sp_configure 'user instances enabled','0'
  用于用户实例的网络协议必须为本地命名管道。 无法对 SQL Server 的远程实例启动用户实例，且不允许使用 SQL Server 登录名。  
   
 ## <a name="connecting-to-a-user-instance"></a>连接到用户实例  
- `User Instance`并`AttachDBFilename`<xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>关键字允许<xref:System.Data.SqlClient.SqlConnection>连接到用户实例。 
-  <xref:System.Data.SqlClient.SqlConnectionStringBuilder>
-  `UserInstance` 和 `AttachDBFilename` 属性也支持用户实例。  
+ `User Instance`并`AttachDBFilename`<xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>关键字允许<xref:System.Data.SqlClient.SqlConnection>连接到用户实例。 用户实例也受<xref:System.Data.SqlClient.SqlConnectionStringBuilder>`UserInstance`和`AttachDBFilename`属性。  
   
  请注意如下所示的有关连接字符串示例的内容：  
   
--   
-  `Data Source` 关键字是指生成用户实例的 SQL Server Express 的父实例。 默认实例为 .\sqlexpress。  
+-   `Data Source` 关键字是指生成用户实例的 SQL Server Express 的父实例。 默认实例为 .\sqlexpress。  
   
--   将 `Integrated Security` 设置为 `true`。 若要连接到用户实例，需要 Windows 身份验证；不支持 SQL Server 登录名。  
+-   `Integrated Security` 设置为`true`。 若要连接到用户实例，需要 Windows 身份验证；不支持 SQL Server 登录名。  
   
 -   `User Instance` 设置为 `true`，这样就可调用用户实例。 （默认值为 `false`。）  
   
--   `AttachDbFileName` 连接字符串关键字用于附加主数据库文件 (.mdf)，该文件必须包含完整路径名。 `AttachDbFileName` 还与 <xref:System.Data.SqlClient.SqlConnection> 连接字符串中的“extended properties”和“initial file name”键相对应。  
+-   `AttachDbFileName` 连接字符串关键字用于附加主数据库文件 (.mdf)，该文件必须包含完整路径名。 `AttachDbFileName` 此外将对应于"extended 的 properties"和"initial file name"中的密钥<xref:System.Data.SqlClient.SqlConnection>连接字符串。  
   
 -   包含在管道符号中的 `|DataDirectory|` 替代字符串是指打开连接的应用程序的数据目录，该字符串提供指示 .mdf 和 .ldf 数据库以及日志文件位置的相对路径。 如果要在其他位置查找这些文件，则必须提供这些文件的完整路径。  
   
@@ -61,10 +58,10 @@ Initial Catalog=InstanceDB;
 ```  
   
 > [!NOTE]
->  您也可以使用 <xref:System.Data.SqlClient.SqlConnectionStringBuilder><xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance%2A> 和 <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename%2A> 属性在运行时构建连接字符串。  
+>  此外可以使用<xref:System.Data.SqlClient.SqlConnectionStringBuilder><xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance%2A>和<xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename%2A>属性，以生成连接字符串在运行时。  
   
 ### <a name="using-the-124datadirectory124-substitution-string"></a>使用&#124;DataDirectory&#124;替代字符串  
- 在 ADO.NET 2.0 中，随着 `AttachDbFileName`（包含在管道符号中）替代字符串的引入，对 `|DataDirectory|` 进行了扩展。 `DataDirectory` 与 `AttachDbFileName` 结合使用可指示数据文件的相对路径，从而允许开发人员创建基于数据源的相对路径（而无需指定完整路径）的连接字符串。  
+ `AttachDbFileName` 在 ADO.NET 2.0 中引入了扩展`|DataDirectory|`（括在管道符号中） 替代字符串。 `DataDirectory` 结合使用`AttachDbFileName`若要指示数据文件的相对路径，从而允许开发人员创建基于数据源而不是相对路径的连接字符串无需指定完整路径。  
   
  `DataDirectory` 点的物理位置取决于应用程序的类型。 在此示例中，要附加的 Northwind.mdf 文件位于应用程序的 \app_data 文件夹中。  
   
@@ -80,7 +77,7 @@ Initial Catalog=Northwind;
  如果连接字符串的替代字符串格式不正确，将会引发 <xref:System.ArgumentException>。  
   
 > [!NOTE]
->  <xref:System.Data.SqlClient> 会将替代字符串解析为本地计算机文件系统的完整路径。 因此，不支持远程服务器、HTTP 和 UNC 路径名。 如果在服务器未在本地计算机上的情况下打开连接，会引发异常。  
+>  <xref:System.Data.SqlClient> 将替换字符串解析为针对本地计算机文件系统的完整路径。 因此，不支持远程服务器、HTTP 和 UNC 路径名。 如果在服务器未在本地计算机上的情况下打开连接，会引发异常。  
   
  打开 <xref:System.Data.SqlClient.SqlConnection> 时，会将其从默认 SQL Server Express 实例重定向到在调用方帐户下运行的已启动运行时的实例。  
   
@@ -154,7 +151,8 @@ private static void OpenSqlConnection()
 -   使用 Windows 身份验证的专用 ASP.NET 宿主。 Intranet 上可以承载单个 SQL Server Express 实例。 应用程序使用 ASPNET Windows 帐户进行连接，而不是使用模拟进行连接。 用户实例不应用于第三方或共享宿主方案中，在这样的方案中，所有应用程序将共享同一用户实例，而不再保持彼此独立。  
   
 ## <a name="see-also"></a>请参阅
+
 - [SQL Server 和 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
 - [连接字符串](../../../../../docs/framework/data/adonet/connection-strings.md)
 - [连接到数据源](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

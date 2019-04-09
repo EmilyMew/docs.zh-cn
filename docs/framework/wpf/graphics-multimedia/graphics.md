@@ -7,12 +7,12 @@ helpviewer_keywords:
 - visual effects [WPF]
 - graphics [WPF], effects
 ms.assetid: 3bfc652e-91b7-4697-a4f4-83ff0e98327e
-ms.openlocfilehash: 20051b176be4372643855441ee5f6c3b62a27780
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: c59d19c925d99ac8f5dd07da84295ee002c956de
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57361156"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102344"
 ---
 # <a name="graphics"></a>图形
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 产品/服务集成的多媒体、 矢量图形、 动画和内容复合，便于开发人员能够生成有趣的用户界面和内容的支持。  
@@ -29,6 +29,7 @@ ms.locfileid: "57361156"
  [帮助主题](graphics-how-to-topics.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Shapes.Shape>
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.Imaging.BitmapImage>
@@ -36,6 +37,6 @@ ms.locfileid: "57361156"
 - <xref:System.Windows.Media.Drawing>
 - <xref:System.Windows.Media.Brush>
 - <xref:System.Windows.Media.Effects.BitmapEffect>
-- [2D 图形和图像处理](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [二维图形和图像处理](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
 - [图形和多媒体](index.md)
-- [WPF 图形呈现概述](wpf-graphics-rendering-overview.md)
+- [WPF 图形呈现疑难解答](wpf-graphics-rendering-overview.md)

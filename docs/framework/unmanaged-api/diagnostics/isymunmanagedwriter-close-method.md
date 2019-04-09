@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 780c19acd3d6980c0fb3e31d01e569a61fd04d6d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4d3497d3167715d3e8a04f10a6687260949e4a36
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54647304"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59104697"
 ---
 # <a name="isymunmanagedwriterclose-method"></a>ISymUnmanagedWriter::Close 方法
 将符号提交到符号存储区后关闭的符号编写器。  
@@ -43,4 +43,5 @@ HRESULT Close();
  **标头：** CorSym.idl CorSym.h  
   
 ## <a name="see-also"></a>请参阅
+
 - [ISymUnmanagedWriter 接口](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

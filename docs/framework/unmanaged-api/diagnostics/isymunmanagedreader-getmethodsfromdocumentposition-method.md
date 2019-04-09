@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f15e4c9b2421b9d2cafdbabf5f9ca12d1b8b9493
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 64d7f138094e03ca76ec78a50a6f37aa3d9ca2f0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57492694"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59091728"
 ---
 # <a name="isymunmanagedreadergetmethodsfromdocumentposition-method"></a>ISymUnmanagedReader::GetMethodsFromDocumentPosition 方法
 返回方法的数组，其中每个包含在文档中的给定位置处的断点。  
@@ -66,4 +66,5 @@ HRESULT GetMethodsFromDocumentPosition (
  **标头：** CorSym.idl CorSym.h  
   
 ## <a name="see-also"></a>请参阅
+
 - [ISymUnmanagedReader 接口](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

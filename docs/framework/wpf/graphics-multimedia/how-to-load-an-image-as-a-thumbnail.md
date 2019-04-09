@@ -9,12 +9,12 @@ helpviewer_keywords:
 - images [WPF], loading as thumbnails
 - thumbnails [WPF], loading images as
 ms.assetid: 02e055a0-54df-499a-b8b6-ab6ff7535cff
-ms.openlocfilehash: 0b5435e9b06f37dae7dc762e9035b1eca8156ca6
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: f984293a395e925368b20cef6aa0cd902bd6fc15
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57353382"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59134038"
 ---
 # <a name="how-to-load-an-image-as-a-thumbnail"></a>如何：将图像作为缩略图加载
 下面的示例显示如何加载<xref:System.Windows.Controls.Image>作为缩略图以节省应用程序内存。  
@@ -31,4 +31,5 @@ ms.locfileid: "57353382"
  [!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [图像处理概述](imaging-overview.md)

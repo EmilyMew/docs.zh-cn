@@ -12,12 +12,12 @@ helpviewer_keywords:
 - DataGridView control [Windows Forms], large data sets
 - virtual mode [Windows Forms], just-in-time data loading
 ms.assetid: c2a052b9-423c-4ff7-91dc-d8c7c79345f6
-ms.openlocfilehash: 44c985cef035e33e88ba246584efcb30fe0e9b97
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 641db19cc6493a20c9f9a34622f466e3623c32ad
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57705553"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59088647"
 ---
 # <a name="implementing-virtual-mode-with-just-in-time-data-loading-in-the-windows-forms-datagridview-control"></a>在 Windows 窗体 DataGridView 控件中实现实时数据加载的虚拟模式
 实现中的虚拟模式的一个原因<xref:System.Windows.Forms.DataGridView>控件是仅在需要时检索数据。 这称为*中实时数据加载*。  
@@ -71,10 +71,11 @@ ms.locfileid: "57705553"
  若要提高你的应用程序的滚动性能，可以增加本地存储的数据量。 若要提高启动时间，但是，必须避免最初加载过多的数据。 你可能想要修改`Cache`类，以增加可以存储的数据页的数目。 使用多个数据页可提高滚动效率，但将需要确定的理想数据页中，具体取决于可用带宽和服务器延迟中的行数。 使用较小的页，服务器将更频繁地访问，但需要更少的时间才能返回所请求的数据。 如果延迟的带宽比问题的详细信息，你可能想要使用较大的数据页。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.VirtualMode%2A>
-- [Windows 窗体 DataGridView 控件中的性能调整](performance-tuning-in-the-windows-forms-datagridview-control.md)
-- [有关缩放 Windows 窗体 DataGridView 控件的最佳做法](best-practices-for-scaling-the-windows-forms-datagridview-control.md)
+- [Windows 窗体 DataGridView 控件中的性能优化](performance-tuning-in-the-windows-forms-datagridview-control.md)
+- [缩放 Windows 窗体 DataGridView 控件的最佳做法](best-practices-for-scaling-the-windows-forms-datagridview-control.md)
 - [Windows 窗体 DataGridView 控件中的虚拟模式](virtual-mode-in-the-windows-forms-datagridview-control.md)
 - [演练：在 Windows 窗体 DataGridView 控件中实现虚拟模式](implementing-virtual-mode-wf-datagridview-control.md)
-- [如何：在 Windows 窗体 DataGridView 控件中实现虚拟模式下在实时数据加载](virtual-mode-with-just-in-time-data-loading-in-the-datagrid.md)
+- [如何：在 Windows 窗体 DataGridView 控件中实现实时数据加载的虚拟模式](virtual-mode-with-just-in-time-data-loading-in-the-datagrid.md)

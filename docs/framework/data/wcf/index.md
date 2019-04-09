@@ -2,11 +2,16 @@
 title: WCF 数据服务 4.5
 ms.date: 03/30/2017
 helpviewer_keywords:
-  - Astoria
-  - 'WCF Data Services, getting started'
+- Astoria
+- WCF Data Services, getting started
 ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
+ms.openlocfilehash: 6910bfbc94f69292bb8c2a52bf3ebef8fcfb3a8a
+ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57500234"
 ---
-
 # <a name="wcf-data-services-45"></a>WCF 数据服务 4.5
 
 WCF 数据服务 （以前称为"ADO.NET 数据服务"） 是一个组件，可创建使用服务的.NET framework[!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)]公开和使用的语义通过 Web 或 intranet 使用数据[具象状态传输 (REST)](https://go.microsoft.com/fwlink/?LinkId=113919)。 OData 将数据公开为可通过 URI 进行寻址的资源。 通过使用标准 HTTP 谓词 GET、PUT、POST 和 DELETE 访问和更改数据。 OData 使用的实体关系约定[实体数据模型](../../../../docs/framework/data/adonet/entity-data-model.md)将资源公开为通过关联相关的实体集。

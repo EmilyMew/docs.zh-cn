@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - clients [WCF], architecture
 ms.assetid: f60d9bc5-8ade-4471-8ecf-5a07a936c82d
-ms.openlocfilehash: d67da4cedc4bd9bad468197db4a2ad60d054894a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
+ms.openlocfilehash: 34abe6b07cebc446324785bde1061c7aa2b04e4a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54492593"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115916"
 ---
 # <a name="wcf-client-overview"></a>WCF 客户端概述
 本部分介绍客户端应用程序执行的操作、 如何配置、 创建和使用 Windows Communication Foundation (WCF) 客户端，以及如何保护客户端应用程序。  
@@ -137,7 +137,7 @@ End Interface
 ## <a name="configuring-and-securing-clients"></a>配置和保护客户端  
  若要配置客户端，请首先为客户端或通道对象加载目标终结点信息，通常是从配置文件中加载该信息，但是也可以使用客户端构造函数和属性以编程方式加载。 但是，若要启用特定的客户端行为或实施一些安全方案还需要执行其他配置步骤。  
   
- 例如，服务协定的安全要求已在服务协定接口中声明，并且如果 Svcutil.exe 已创建了一个配置文件，则该文件通常会包含一个能够支持服务安全要求的绑定。 但是在某些情况中，可能需要更多的安全配置，例如配置客户端凭据。 有关 WCF 客户端的安全配置的完整信息，请参阅[保护客户端](../../../docs/framework/wcf/securing-clients.md)。  
+ 例如，服务协定的安全需求已在服务协定接口中声明，并且如果 Svcutil.exe 已创建了一个配置文件，则该文件通常会包含一个能够支持服务安全需求的绑定。 但是在某些情况中，可能需要更多的安全配置，例如配置客户端凭据。 有关 WCF 客户端的安全配置的完整信息，请参阅[保护客户端](../../../docs/framework/wcf/securing-clients.md)。  
   
  此外，在客户端应用程序中还可以启用一些自定义修改，例如自定义运行时行为。 有关如何配置自定义客户端行为的详细信息，请参阅[配置客户端行为](../../../docs/framework/wcf/configuring-client-behaviors.md)。  
   
@@ -172,5 +172,6 @@ End Interface
  WCF 客户端类型扩展<xref:System.ServiceModel.ClientBase%601>，其自身派生<xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType>接口，以公开基础通道系统。 可以同时使用目标服务协定和 <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> 类来调用服务。 有关详细信息，请参阅[WCF 客户端体系结构](../../../docs/framework/wcf/feature-details/client-architecture.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>
 - <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>

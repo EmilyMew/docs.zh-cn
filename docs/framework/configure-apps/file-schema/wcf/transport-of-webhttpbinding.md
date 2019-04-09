@@ -2,12 +2,12 @@
 title: <transport> 的 <webHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: f150fb19-7de1-44af-81f4-86cad881cd05
-ms.openlocfilehash: d2c7ee3512ddeefae6e5551a58b3bab76742ed30
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 8dcd51cd248dbba3ccf60295cb1712167684328e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57363405"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59116277"
 ---
 # <a name="transport-of-webhttpbinding"></a>\<transport> of \<webHttpBinding>
 定义配置为接收 HTTP 请求的服务终结点的传输级安全设置。  
@@ -56,7 +56,7 @@ ms.locfileid: "57363405"
   
 ## <a name="clientcredentialtype-attribute"></a>clientCredentialType 属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`None`|禁用安全性。|  
 |`Basic`|使用基本身份验证。|  
@@ -67,7 +67,7 @@ ms.locfileid: "57363405"
   
 ## <a name="proxycredentialtype-attribute"></a>proxyCredentialType 属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`None`|禁用安全性。|  
 |`Basic`|使用基本身份验证。|  
@@ -82,9 +82,10 @@ ms.locfileid: "57363405"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-webhttpbinding.md)|表示的安全功能[ \<wsHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)元素。|  
+|[\<安全 >](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-webhttpbinding.md)|表示的安全功能[ \<wsHttpBinding >](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)元素。|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.HttpTransportSecurity>
 - <xref:System.ServiceModel.Configuration.WebHttpSecurityElement.Transport%2A>
 - <xref:System.ServiceModel.WebHttpSecurity.Transport%2A>

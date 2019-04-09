@@ -2,12 +2,12 @@
 title: 使用 LINQ to SQL 的典型步骤
 ms.date: 03/30/2017
 ms.assetid: 9a88bd51-bd74-48f7-a9b1-f650e8d55a3e
-ms.openlocfilehash: 32e81d08010f67b8eac19777a40826b18c440f83
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a7c6257bc27728d101d64d07ffedb1e38bc994eb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54548006"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59132842"
 ---
 # <a name="typical-steps-for-using-linq-to-sql"></a>使用 LINQ to SQL 的典型步骤
 若要实现 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 应用程序，请按照本主题后面部分说明的步骤操作。 请注意，很多步骤是可选的。 您可以以对象模型的默认状态使用它，这种可能性很高。  
@@ -20,7 +20,7 @@ ms.locfileid: "54548006"
 ### <a name="1-select-a-tool-to-create-the-model"></a>1.选择用于创建模型的工具。  
  有三种工具可用于创建模型。  
   
--   [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]  
+-   必须向 [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]  
   
      此设计器提供了用于从现有数据库创建对象模型的丰富用户界面。 此工具是 Visual Studio IDE 的一部分，最适合于小型或中型数据库。  
   
@@ -45,12 +45,12 @@ ms.locfileid: "54548006"
     > [!NOTE]
     >  [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)]不支持生成外部映射文件。 您必须使用 SQLMetal 工具来实现此功能。  
   
--   DBML 文件，您可以在生成最终代码文件之前修改此文件。  
+-   DBML 文件，你可以在生成最终代码文件之前修改此文件。  
   
      这是一项高级功能。  
   
-### <a name="3-refine-the-code-file-to-reflect-the-needs-of-your-application"></a>3.改进代码文件以反映您的应用程序的需要。  
- 为此，您可以使用 [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)]或代码编辑器。  
+### <a name="3-refine-the-code-file-to-reflect-the-needs-of-your-application"></a>3.改进代码文件以反映你的应用程序的需要。  
+ 为此，你可以使用 [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)]或代码编辑器。  
   
 ## <a name="using-the-object-model"></a>使用对象模型  
  下图显示了在两层方案中开发人员与数据之间的关系。 有关其他方案，请参阅[N 层和远程应用程序使用 LINQ 到 SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)。  
@@ -82,6 +82,7 @@ ms.locfileid: "54548006"
  有关详细信息，请参阅[调试支持](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [入门](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)
 - [创建对象模型](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
 - [存储过程](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)

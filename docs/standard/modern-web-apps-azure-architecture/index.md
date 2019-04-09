@@ -4,8 +4,13 @@ description: 本指南提供了使用 ASP.NET Core 和 Azure 生成单片式 Web
 author: ardalis
 ms.author: wiwagn
 ms.date: 01/30/2019
+ms.openlocfilehash: 27212045d9870c9f2fc15509d76f3e9b07d8657f
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675830"
 ---
-
 # <a name="architect-modern-web-applications-with-aspnet-core-and-azure"></a>使用 ASP.NET Core 和 Azure 构建新式 Web 应用程序
 
 ![“架构新式 Web 应用程序”指南的封面图像。](./media/index/web-application-guide-cover-image.png)

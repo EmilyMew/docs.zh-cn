@@ -2,12 +2,12 @@
 title: TextMessageEncodingBindingElement
 ms.date: 03/30/2017
 ms.assetid: 885e2d7a-3436-4093-bc5f-0a404c62acdc
-ms.openlocfilehash: 188a766807cd779ac51df390b1332641584dbb06
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 67c1083daa9acfd204d4de50d4e9178b25aafcf0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54662707"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59097481"
 ---
 # <a name="textmessageencodingbindingelement"></a>TextMessageEncodingBindingElement
 TextMessageEncodingBindingElement  
@@ -27,7 +27,7 @@ class TextMessageEncodingBindingElement : MessageEncodingBindingElement
 ## <a name="methods"></a>方法  
  TextMessageEncodingBindingElement 类不定义任何方法。  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>属性  
  TextMessageEncodingBindingElement 类具有下列属性：  
   
 ### <a name="encoding"></a>编码  
@@ -65,4 +65,5 @@ class TextMessageEncodingBindingElement : MessageEncodingBindingElement
 |命名空间|已在 root\ServiceModel 中定义|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>

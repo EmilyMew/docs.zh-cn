@@ -2,12 +2,12 @@
 title: <add> 的 <knownCertificates>
 ms.date: 03/30/2017
 ms.assetid: 128aaabe-3f1a-4c3b-b59f-898d0f02910f
-ms.openlocfilehash: 022030489551bfaf48cffd4ba983bbd3c99abc87
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 3eb5bf74f909e6036154b7f5f7c6181b09fefbff
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55274282"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59077714"
 ---
 # <a name="add-of-knowncertificates"></a>\<add> of \<knownCertificates>
 向已知证书集合添加 X.509 证书。  
@@ -46,25 +46,25 @@ ms.locfileid: "55274282"
   
 ## <a name="findvalue-attribute"></a>findValue 属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |String|值取决于搜索的字段（由 X509FindType 属性指定）。 例如，如果搜索指纹，则此值必须为十六进制数字字符串。|  
   
 ## <a name="x509findtype-attribute"></a>x509FindType 属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |枚举|值包括：FindByThumbprint、 FindBySubjectName、 FindBySubjectDistinguishedName、 FindByIssuerName、 FindByIssuerDistinguishedName、 FindBySerialNumber、 FindByTimeValid、 FindByTimeNotYetValid、 FindBySerialNumber、 FindByTimeExpired、 FindByTemplateNameFindByApplicationPolicy、 FindByCertificatePolicy、 FindByExtension、 FindByKeyUsage、 和 FindBySubjectKeyIdentifier。|  
   
 ## <a name="storelocation-attribute"></a>storeLocation 属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |枚举|CurrentUser 或 LocalMachine。|  
   
 ## <a name="storename-attribute"></a>storeName 属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |枚举|值包括：AddressBook、 AuthRoot、 CertificateAuthority、 Disallowed、 My、 根、 TrustedPeople 和 TrustedPublisher。|  
   
@@ -118,6 +118,7 @@ ms.locfileid: "55274282"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>
@@ -128,5 +129,5 @@ ms.locfileid: "55274282"
 - [\<knownCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowncertificates.md)
 - [使用证书](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
 - [联合令牌与颁发的令牌](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
-- [如何：联合身份验证服务上配置凭据](../../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
+- [如何：在联合身份验证服务上配置凭据](../../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
 - [保护服务和客户端的安全](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

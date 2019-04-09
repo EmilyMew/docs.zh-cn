@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows Forms, data binding
 - Windows Forms, adding change notification for data binding
 ms.assetid: b5b10f90-0585-41d9-a377-409835262a92
-ms.openlocfilehash: cea6cab76a12d6dbfdc741b426b67859e0e5141e
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 559cdee1cce84df1c4b838e249d11ba235a0c636
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57713410"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59097572"
 ---
 # <a name="change-notification-in-windows-forms-data-binding"></a>Windows 窗体数据绑定中的更改通知
 Windows 窗体数据绑定的最重要的概念之一是*更改通知*。 若要确保你的数据源和绑定的控件始终具有最新的数据，必须添加数据绑定的更改通知。 具体而言，你想要确保对其数据源，所做的更改，会通知绑定的控件和控件的绑定属性所做的更改通知数据源。  
@@ -33,6 +33,7 @@ Windows 窗体数据绑定的最重要的概念之一是*更改通知*。 若要
  最后，在控件方面必须公开*PropertyName*旨在绑定到数据的每个属性的 Changed 事件。 对控件属性的更改然后传播到绑定的数据源。 有关详细信息，请参阅[如何：应用 PropertyNameChanged 模式](how-to-apply-the-propertynamechanged-pattern.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.BindingSource>
 - <xref:System.ComponentModel.INotifyPropertyChanged>
 - <xref:System.ComponentModel.BindingList%601>

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ListView controls [WPF], CheckBox controls
 - CheckBox control [WPF], ListView control
 ms.assetid: f6d66c7f-906c-4f65-a55a-0ede9d00e26a
-ms.openlocfilehash: 31a500c3a592ff8d1dd839543171991e908c23c9
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: b09d5ad11b0961febf524cec1e19cb1e59832e44
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57368527"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083097"
 ---
 # <a name="how-to-create-listviewitems-with-a-checkbox"></a>如何：使用 CheckBox 创建 ListViewItem
 此示例演示如何显示的列<xref:System.Windows.Controls.CheckBox>中的控件<xref:System.Windows.Controls.ListView>控件，它使用<xref:System.Windows.Controls.GridView>。  
@@ -29,6 +29,7 @@ ms.locfileid: "57368527"
  [!code-xaml[ListViewChkBox#GridViewColumnCheckBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewChkBox/CS/window1.xaml#gridviewcolumncheckbox)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.Control>
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>

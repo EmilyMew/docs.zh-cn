@@ -2,12 +2,12 @@
 title: ISNULL (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: dc7a0173-3664-4c90-a57b-5cbb0a8ed7ee
-ms.openlocfilehash: 1b728e170968e2fbeb67eef3f8f940c64816ff0d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 894d3ab91623aa4246bf7735fb1b7d04e066825a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54528727"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59072631"
 ---
 # <a name="isnull-entity-sql"></a>ISNULL (Entity SQL)
 确定查询表达式是否为 null。  
@@ -26,7 +26,7 @@ expression IS [ NOT ] NULL
  对 IS NULL 的 EDM.Boolean 结果取反。  
   
 ## <a name="return-value"></a>返回值  
- 如果 `true` 返回 null，则为 `expression`；否则为 `false`。  
+ `true` 如果`expression`返回 null; 否则为`false`。  
   
 ## <a name="remarks"></a>备注  
  使用 `IS NULL` 可确定外部联接的元素是否为 null：  
@@ -66,4 +66,5 @@ select c from LOB.Customer as c where c.DOB is not null
  [!code-csharp[DP EntityServices Concepts 2#ISNULL](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#isnull)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体 SQL 引用](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

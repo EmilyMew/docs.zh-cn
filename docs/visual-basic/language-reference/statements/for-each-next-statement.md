@@ -142,7 +142,7 @@ Next [ element ]
   
  **对集合进行修改。** 返回的枚举器对象<xref:System.Collections.IEnumerable.GetEnumerator%2A>通常不允许您通过添加、 删除、 替换或重新排序的任何元素更改的集合。 如果您已经启动后更改的集合， `For Each`...`Next`循环枚举器对象将变为无效，和下一步尝试访问的元素将导致<xref:System.InvalidOperationException>异常。  
   
- 但是，修改此阻止不取决于 Visual basic，而是由实现<xref:System.Collections.IEnumerable>接口。 可以实现`IEnumerable`允许在迭代期间修改的方式。 如果你正在考虑进行这种动态修改，请确保您了解的特征`IEnumerable`实现上使用的集合。  
+ 但是，修改此阻止不取决于 Visual Basic，而是由实现<xref:System.Collections.IEnumerable>接口。 可以实现`IEnumerable`允许在迭代期间修改的方式。 如果你正在考虑进行这种动态修改，请确保您了解的特征`IEnumerable`实现上使用的集合。  
   
  **修改集合元素。** <xref:System.Collections.IEnumerator.Current%2A>枚举器对象的属性是[ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)，并返回每个集合元素的本地副本。 这意味着您不能修改这些元素本身中`For Each`...`Next`循环。 进行任何修改会影响仅从本地复制`Current`而不反映回基础集合。 但是，如果元素为引用类型，您可以修改它所指向的实例的成员。 下面的示例修改`BackColor`的每个成员`thisControl`元素。 但是，不能修改`thisControl`本身。  
   

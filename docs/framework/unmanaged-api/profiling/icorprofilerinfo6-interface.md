@@ -1,5 +1,5 @@
 ---
-title: ICorProfilerInfo6 Interface
+title: ICorProfilerInfo6 接口
 ms.date: 03/30/2017
 api_name:
 - ICorProfilerInfo6
@@ -10,14 +10,14 @@ api_type:
 ms.assetid: 6f2bb148-1e2b-4e45-a5a5-0ceddc40064b
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 53120508c4810270747f749f1adfbae6ba800404
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: febe130b4d61b6179aeab3bfcd63891c38b13fbe
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54567888"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59128929"
 ---
-# <a name="icorprofilerinfo6-interface"></a>ICorProfilerInfo6 Interface
+# <a name="icorprofilerinfo6-interface"></a>ICorProfilerInfo6 接口
 [.NET Framework 4.6 和更高版本中受支持]  
   
  子类[ICorProfilerInfo5](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-interface.md)为给定的 NGen 模块和内联给定方法中定义的所有方法提供一个枚举器。  
@@ -33,7 +33,8 @@ ms.locfileid: "54567888"
   
  **标头：** CorProf.idl, CorProf.h  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
-- [Profiling 接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+
+- [分析接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - toolbars [Windows Forms], technology summary
 - menus [Windows Forms], technology summary
 ms.assetid: e8d61973-7af9-429f-9df5-05a899c15a7b
-ms.openlocfilehash: c32b14e1394004b68247d4d7bf2d0fcc8870b730
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: b6537faa3be7ee28a934927fc95100a34a64e176
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57703262"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59120948"
 ---
 # <a name="toolstrip-technology-summary"></a>ToolStrip 技术摘要
 本主题概述了 `ToolStrip` 控件及支持其使用的类的相关信息。  
@@ -43,7 +43,7 @@ ms.locfileid: "57703262"
   
 -   使用 `ToolStripPanel` 合并 `ToolStrip` 控件。  
   
- `ToolStrip` 是 `MenuStrip`、`ContextMenuStrip` 和 `StatusStrip` 的可扩展基类。 这些控件是继承常见行为和事件处理的 <xref:System.Windows.Forms.ToolStripItem> 容器，已经过扩展以使每个实现均处理适合的行为。 下表列出了从 <xref:System.Windows.Forms.ToolStripItem> 派生的控件。 基础 `ToolStrip` 类处理这些控件的绘制、用户输入和拖放事件。  
+ `ToolStrip` 是的可扩展基类`MenuStrip`， `ContextMenuStrip`，和`StatusStrip`。 这些控件是继承常见行为和事件处理的 <xref:System.Windows.Forms.ToolStripItem> 容器，已经过扩展以使每个实现均处理适合的行为。 下表列出了从 <xref:System.Windows.Forms.ToolStripItem> 派生的控件。 基础 `ToolStrip` 类处理这些控件的绘制、用户输入和拖放事件。  
   
  `ToolStrip`、`MenuStrip`、`ContextMenuStrip` 和 `StatusStrip` 控件替换以前的工具栏、菜单、快捷菜单和状态栏控件（尽管这些控件将保留用于向后兼容）。  
   
@@ -63,15 +63,15 @@ ms.locfileid: "57703262"
 ### <a name="task-dialog-boxes"></a>任务对话框  
  在 Visual Studio 中，单击设计器中控件上的智能标记会显示任务列表，用于方便访问很多常用命令。  
   
--   [MenuStrip 任务对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233645(v=vs.100))  
+-   [“MenuStrip 任务”对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233645(v=vs.100))  
   
--   [ToolStrip 任务对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233648(v=vs.100))  
+-   [“ToolStrip 任务”对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233648(v=vs.100))  
   
--   [ContextMenuStrip 任务对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233646(v=vs.100))  
+-   [“ContextMenuStrip 任务”对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233646(v=vs.100))  
   
--   [StatusStrip 任务对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233642(v=vs.100))  
+-   [“StatusStrip 任务”对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233642(v=vs.100))  
   
--   [ToolStripContainer 任务对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233647(v=vs.100))  
+-   [“ToolStripContainer 任务”对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233647(v=vs.100))  
   
 ### <a name="items-collection-editors"></a>项集合编辑器  
  在 Visual Studio 中，单击时**编辑项**任务列表中或右键单击该控件，然后选择**编辑项**快捷菜单中显示该控件的集合编辑器。 集合编辑器用于添加、删除和重新排序控件中所包含的项。 还可以查看和更改控件及其内含项的属性。  
@@ -99,10 +99,10 @@ ms.locfileid: "57703262"
  有关呈现示例，请参阅[如何：创建和设置自定义呈现器 ToolStrip 控件在 Windows 窗体](create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)。  
   
 ## <a name="styles-and-themes"></a>样式和主题  
- <xref:System.Windows.Forms.ToolStrip> 和关联的类提供一种了支持视觉样式和自定义外观且无需重写每个项的 <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A> 方法的简单方式。 使用 <xref:System.Windows.Forms.ToolStripItem.DisplayStyle%2A><xref:System.Windows.Forms.ToolStrip.RenderMode%2A> 和 <xref:System.Windows.Forms.ToolStrip.Renderer%2A> 属性。  
+ <xref:System.Windows.Forms.ToolStrip> 和关联的类提供支持视觉样式和自定义外观且无需重写的简单办法<xref:System.Windows.Forms.ToolStripItem.OnPaint%2A>方法为每个项。 使用 <xref:System.Windows.Forms.ToolStripItem.DisplayStyle%2A><xref:System.Windows.Forms.ToolStrip.RenderMode%2A> 和 <xref:System.Windows.Forms.ToolStrip.Renderer%2A> 属性。  
   
 ## <a name="rafting-and-docking"></a>漂浮和停靠  
- 可以飘浮、停靠或绝对定位 <xref:System.Windows.Forms.ToolStrip> 控件。 <xref:System.Windows.Forms.ToolStrip> 项由容器的 <xref:System.Windows.Forms.ToolStrip.LayoutEngine%2A> 进行布局。  
+ 可以飘浮、停靠或绝对定位 <xref:System.Windows.Forms.ToolStrip> 控件。 <xref:System.Windows.Forms.ToolStrip> 项的布局<xref:System.Windows.Forms.ToolStrip.LayoutEngine%2A>的容器。  
   
  *漂浮*是指工具栏共享水平或垂直空间。 Windows 窗体可具有 <xref:System.Windows.Forms.ToolStripContainer>，其中窗体的左侧、右侧、顶部和底部均带有用于定位和漂浮 <xref:System.Windows.Forms.ToolStrip>、<xref:System.Windows.Forms.MenuStrip> 和 <xref:System.Windows.Forms.StatusStrip> 控件的面板。 如果将多个 <xref:System.Windows.Forms.ToolStrip> 控件放置在 <xref:System.Windows.Forms.ToolStripContainer> 左侧或右侧，它们会垂直堆叠。 如果将其放置在 <xref:System.Windows.Forms.ToolStripContainer> 顶部或底部，则水平堆叠。 可使用 <xref:System.Windows.Forms.ToolStripContainer> 的中央 <xref:System.Windows.Forms.ToolStripContentPanel> 将传统控件放置在窗体上。  
   
@@ -119,5 +119,6 @@ ms.locfileid: "57703262"
  <xref:System.Windows.Forms.ToolStrip>、<xref:System.Windows.Forms.MenuStrip> 和 <xref:System.Windows.Forms.StatusStrip> 允许项溢出。 这与这些项在 Microsoft Office 工具栏中的操作方式很类似。  
   
 ## <a name="see-also"></a>请参阅
+
 - [ToolStrip 控件概述](toolstrip-control-overview-windows-forms.md)
 - [ToolStrip 控件体系结构](toolstrip-control-architecture.md)

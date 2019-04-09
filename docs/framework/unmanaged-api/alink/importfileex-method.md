@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 6956fd0bd8217a3b0b44f48cabc80d0c95db8f36
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 3b3cf91ad4e048ddfccb4086f36923f33d754ac0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57494358"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59131035"
 ---
 # <a name="importfileex-method"></a>ImportFileEx 方法
 导入指定的程序集或未绑定的模块。  
@@ -69,6 +69,7 @@ HRESULT ImportFileEx(
  需要 alink.h。  
   
 ## <a name="see-also"></a>请参阅
+
 - [IALink2 接口](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
 - [IALink 接口](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
 - [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

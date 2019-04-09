@@ -9,21 +9,19 @@ helpviewer_keywords:
 - hybrid applications [WPF interoperability]
 - message loops [WPF]
 ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
-ms.openlocfilehash: dbc70f58fddfad6e7e7271802b8b01d2b52ab25a
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 707e77ac69878c1c7fb8e975c1f90ad657228d1a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57370093"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59079665"
 ---
 # <a name="troubleshooting-hybrid-applications"></a>混合应用程序疑难解答
 <a name="introduction"></a>本主题列出了在创作同时使用 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 和 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]技术的混合应用程序时可能发生的一些常见问题。  
-  
 
-  
 <a name="overlapping_controls"></a>   
 ## <a name="overlapping-controls"></a>重叠控件  
- 控件可能不按预期的方式重叠。 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]为每个控件使用单独的 HWND。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 为一个页面上的所有内容使用一个 HWND。 这一实现差异会导致意外的重叠行为。  
+ 控件可能不按预期的方式重叠。 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 为每个控件使用单独的 HWND。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 在页面上的所有内容使用一个 HWND。 这一实现差异会导致意外的重叠行为。  
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 中承载的 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]控件总是出现在 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 内容之上。  
   
@@ -35,7 +33,7 @@ ms.locfileid: "57370093"
   
 <a name="scaling"></a>   
 ## <a name="scaling"></a>缩放  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 和 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]具有不同的缩放模型。 某些 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 缩放变换对于 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]控件是有意义的，但其他变换是无意义的。 例如，将 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]控件缩放到 0 是可行的，但如果尝试将同一控件重新缩放回非零值，该控件的大小仍然为 0。 有关详细信息，请参阅 [WindowsFormsHost 元素的布局注意事项](layout-considerations-for-the-windowsformshost-element.md)。  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 和[!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]具有不同的缩放模型。 某些 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 缩放变换对于 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]控件是有意义的，但其他变换是无意义的。 例如，将 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]控件缩放到 0 是可行的，但如果尝试将同一控件重新缩放回非零值，该控件的大小仍然为 0。 有关详细信息，请参阅 [WindowsFormsHost 元素的布局注意事项](layout-considerations-for-the-windowsformshost-element.md)。  
   
 <a name="adapter"></a>   
 ## <a name="adapter"></a>适配器  
@@ -88,7 +86,7 @@ ms.locfileid: "57370093"
   
 <a name="enabling_visual_styles"></a>   
 ## <a name="enabling-visual-styles"></a>启用视觉样式  
- [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]控件上的 [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] 视觉样式可能未启用。 <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType>方法调用的模板中[!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]应用程序。 尽管默认情况下不会调用此方法，但如果使用 [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] 创建项目，并且 Comctl32.dll 版本 6.0 可用，将会获得控件的 [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] 视觉样式。 必须调用<xref:System.Windows.Forms.Application.EnableVisualStyles%2A>方法之前在线程上创建句柄。 有关详细信息，请参阅[如何：混合应用程序中启用视觉样式](how-to-enable-visual-styles-in-a-hybrid-application.md)。  
+ [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] 视觉样式上[!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]控件可能不会启用。 <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType>方法调用的模板中[!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]应用程序。 尽管默认情况下不会调用此方法，但如果使用 [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] 创建项目，并且 Comctl32.dll 版本 6.0 可用，将会获得控件的 [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] 视觉样式。 必须调用<xref:System.Windows.Forms.Application.EnableVisualStyles%2A>方法之前在线程上创建句柄。 有关详细信息，请参阅[如何：混合应用程序中启用视觉样式](how-to-enable-visual-styles-in-a-hybrid-application.md)。  
   
 <a name="licensed_controls"></a>   
 ## <a name="licensed-controls"></a>授权控件  
@@ -115,11 +113,12 @@ ms.locfileid: "57370093"
  WPF 控件中托管<xref:System.Windows.Forms.Integration.ElementHost>目前不支持<xref:System.Windows.Forms.Control.ImeMode%2A>属性。 将更改为<xref:System.Windows.Forms.Control.ImeMode%2A>所承载的控件将被忽略。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [在 WPF 设计器中的互操作性](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628658(v=vs.100))
 - [Windows 窗体和 WPF 互操作性输入体系结构](windows-forms-and-wpf-interoperability-input-architecture.md)
-- [如何：混合应用程序中启用视觉样式](how-to-enable-visual-styles-in-a-hybrid-application.md)
+- [如何：在混合应用程序中启用视觉对象样式](how-to-enable-visual-styles-in-a-hybrid-application.md)
 - [WindowsFormsHost 元素的布局注意事项](layout-considerations-for-the-windowsformshost-element.md)
 - [Windows 窗体和 WPF 属性映射](windows-forms-and-wpf-property-mapping.md)
 - [Windows 窗体设计器中的设计时错误](../../winforms/controls/design-time-errors-in-the-windows-forms-designer.md)

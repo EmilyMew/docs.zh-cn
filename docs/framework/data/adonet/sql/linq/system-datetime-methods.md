@@ -2,15 +2,15 @@
 title: System.DateTime 方法
 ms.date: 03/30/2017
 ms.assetid: 4f80700c-e83f-4ab6-af0f-1c9a606e1133
-ms.openlocfilehash: edc1631536e1e30a324a0fdf0e7690b13639d7e9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 85af6f252362b811356d68a3ae220df2bb813882
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54712715"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59106322"
 ---
 # <a name="systemdatetime-methods"></a>System.DateTime 方法
-以下受 LINQ to SQL 支持的方法、运算符和属性可以在 LINQ to SQL 查询中使用。 当某个方法、运算符或属性不受支持时，LINQ to SQL 将无法转换成员以在 SQL Server 上执行。 您可以在代码中使用这些成员，但是在将查询转换为 Transact-SQL 之前或在已经从数据库中检索结果之后，必须对这些成员进行计算。  
+以下受 LINQ to SQL 支持的方法、运算符和属性可以在 LINQ to SQL 查询中使用。 当某个方法、运算符或属性不受支持时，LINQ to SQL 将无法转换成员以在 SQL Server 上执行。 你可以在代码中使用这些成员，但是在将查询转换为 Transact-SQL 之前或在已经从数据库中检索结果之后，必须对这些成员进行计算。  
   
 ## <a name="supported-systemdatetime-members"></a>支持的 System.DateTime 成员  
  在对象模型或外部映射文件中进行映射后，LINQ to SQL 允许您在 LINQ to SQL 查询内调用下面的 <xref:System.DateTime?displayProperty=nameWithType> 成员。  
@@ -65,6 +65,7 @@ ms.locfileid: "54712715"
 |<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear%2A>|  
   
 ## <a name="see-also"></a>请参阅
+
 - [查询概念](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
 - [创建对象模型](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
 - [SQL-CLR 类型映射](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)

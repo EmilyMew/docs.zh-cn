@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data binding [WPF], ObservableCollection class
 - notifications [WPF]
 ms.assetid: 6cf7e275-df76-41c6-a611-53b889b8fd5a
-ms.openlocfilehash: 10cea133651739df8bb8e27c58221b34067782f5
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 45f8b097bfdb8d3d7994e53ea05146aa6de0fc21
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57376112"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59188430"
 ---
 # <a name="how-to-create-and-bind-to-an-observablecollection"></a>如何：创建和绑定到 ObservableCollection
 此示例演示如何创建和绑定到一个集合，其中派生<xref:System.Collections.ObjectModel.ObservableCollection%601>类，该类是一个集合类，添加或移除项时提供通知。  
@@ -141,8 +141,9 @@ End Class
  有关详细信息，请参阅[数据绑定概述](data-binding-overview.md)中的“绑定到集合”一节。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在视图中对数据进行排序](how-to-sort-data-in-a-view.md)
-- [在视图中筛选数据](how-to-filter-data-in-a-view.md)
+- [筛选视图中的数据](how-to-filter-data-in-a-view.md)
 - [在 XAML 中使用视图对数据进行排序和分组](how-to-sort-and-group-data-using-a-view-in-xaml.md)
 - [数据绑定概述](data-binding-overview.md)
 - [帮助主题](data-binding-how-to-topics.md)

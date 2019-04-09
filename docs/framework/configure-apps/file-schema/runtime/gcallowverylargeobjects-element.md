@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 6af994284a56c573d70f3688ccec16459b8eed59
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 19103b2ac6e6dbba930050074fcea3cfd5a97661
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55273369"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098011"
 ---
 # <a name="gcallowverylargeobjects-element"></a>\<gcAllowVeryLargeObjects > 元素
 在 64 位平台上，启用总大小大于 2 千兆字节 (GB) 的数组。  
@@ -39,7 +39,7 @@ ms.locfileid: "55273369"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`false`|数组大于 2 GB 的总大小不会启用。 这是默认设置。|  
 |`true`|64 位平台上启用了数组大于 2 GB 的总大小。|  
@@ -78,5 +78,6 @@ ms.locfileid: "55273369"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [运行时设置架构](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [配置文件架构](../../../../../docs/framework/configure-apps/file-schema/index.md)

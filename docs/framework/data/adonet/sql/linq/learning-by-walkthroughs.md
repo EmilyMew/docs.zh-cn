@@ -2,12 +2,12 @@
 title: 通过演练学习
 ms.date: 03/30/2017
 ms.assetid: a8ae2965-6a49-4155-89b0-7fab2c488ab1
-ms.openlocfilehash: 1ddd2b8dacaccc0911a7e5a2bd684bba0fa16012
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fdcc2db1507d8ee2c6d1b07a79c531267fbb5714
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54589870"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59188996"
 ---
 # <a name="learning-by-walkthroughs"></a>通过演练学习
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]文档提供了一些演练。 本主题介绍一些一般性的演练问题（包括疑难解答），并提供指向用于了解 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 的一些入门级演练的链接。  
@@ -88,4 +88,5 @@ ms.locfileid: "54589870"
 3.  右键单击**SQL Server (SQLEXPRESS)**，然后单击**重新启动**。  
   
 ## <a name="see-also"></a>请参阅
+
 - [入门](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

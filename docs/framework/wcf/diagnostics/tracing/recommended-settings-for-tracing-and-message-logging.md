@@ -2,12 +2,12 @@
 title: 跟踪和消息日志记录的推荐设置
 ms.date: 03/30/2017
 ms.assetid: c6aca6e8-704e-4779-a9ef-50c46850249e
-ms.openlocfilehash: dff4b20547cccca628ac76afc890a2817e838907
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fa6dc74a26f6a76591a15c549a892f31a65c521e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54585206"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59132350"
 ---
 # <a name="recommended-settings-for-tracing-and-message-logging"></a>跟踪和消息日志记录的推荐设置
 本主题描述用于不同操作环境的跟踪和消息日志记录的推荐设置。  
@@ -113,4 +113,5 @@ logman stop mytrace -ets
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用 Windows Management Instrumentation 进行诊断](../../../../../docs/framework/wcf/diagnostics/wmi/index.md)

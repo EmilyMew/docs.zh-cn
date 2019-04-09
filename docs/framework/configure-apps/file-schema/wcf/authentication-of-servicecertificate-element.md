@@ -2,12 +2,12 @@
 title: <authentication> <serviceCertificate>元素
 ms.date: 03/30/2017
 ms.assetid: 733b67b4-08a1-4d25-9741-10046f9357ef
-ms.openlocfilehash: 8288e530d0164b41a6cf53cc39385a2d29fdb091
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: b96d53312d672eebd67de82f69cd9a0a2b5bd22e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55255167"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59117749"
 ---
 # <a name="authentication-of-servicecertificate-element"></a>\<身份验证 > 的\<serviceCertificate > 元素
 指定客户端代理用于对使用 SSL/TLS 协商获取的服务证书进行身份验证的设置。  
@@ -43,25 +43,25 @@ endpointBehaviors 部分
   
 ## <a name="customcertificatevalidator-attribute"></a>customCertificateValidator 属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |String|指定类型名称和程序集以及用于查找类型的其他数据。|  
   
 ## <a name="certificatevalidationmode-attribute"></a>certificateValidationMode 属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |枚举|以下值之一：None、 PeerTrust、 ChainTrust、 PeerOrChainTrust、 自定义。<br /><br /> 有关详细信息，请参阅[Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)。|  
   
 ## <a name="revocationmode-attribute"></a>revocationMode 属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |枚举|以下值之一：NoCheck、 Online 和 Offline。<br /><br /> 有关详细信息，请参阅[Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)。|  
   
 ## <a name="trustedstorelocation-attribute"></a>trustedStoreLocation 属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |枚举|以下值之一：LocalMachine 或 CurrentUser。 默认值为 CurrentUser。 如果客户端应用程序在系统帐户下运行，则证书通常位于 LocalMachine 中。 如果客户端应用程序在用户帐户下运行，则证书通常位于 CurrentUser 中。|  
   
@@ -101,6 +101,7 @@ endpointBehaviors 部分
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.Authentication%2A>
@@ -108,6 +109,6 @@ endpointBehaviors 部分
 - [安全行为](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
 - [使用证书](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
 - [如何：创建使用自定义证书验证程序的服务](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
-- [\<authentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md)
-- [保护客户端](../../../../../docs/framework/wcf/securing-clients.md)
+- [\<身份验证 >](../../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md)
+- [保证客户端的安全](../../../../../docs/framework/wcf/securing-clients.md)
 - [保护服务和客户端的安全](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows Communication Foundation, security
 - bindings [WCF]
 ms.assetid: 4de03dd3-968a-4e65-af43-516e903d7f95
-ms.openlocfilehash: 5ec801e1e20fdb495537505a71ddaef6218ad5fb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bdefc543e90db708ae6c8be29b69381d66235154
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54521363"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59122143"
 ---
 # <a name="bindings-and-security"></a>绑定与安全
 系统提供的绑定包括与 Windows Communication Foundation (WCF) 提供程序的 WCF 应用程序的快速方法。 但有一个例外，就是所有绑定都启用了默认的安全方案。 本主题将帮助你根据安全需要来选择正确的绑定。  
@@ -24,7 +24,7 @@ ms.locfileid: "54521363"
  部分安全性功能无法用系统提供的绑定进行编程。 使用自定义绑定的更多控制，请参阅[使用自定义绑定的安全功能](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)。  
   
 ## <a name="security-functions-of-bindings"></a>绑定的安全功能  
- WCF 包含大量的系统提供满足大多数需求的绑定。 如果某个特定绑定不能满足要求，你还可以创建自定义绑定。 有关系统提供的绑定的列表，请参阅[System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)。 有关自定义绑定的详细信息，请参阅[自定义绑定](../../../../docs/framework/wcf/extending/custom-bindings.md)。  
+ WCF 包含大量的系统提供满足大多数需求的绑定。 如果某个特定绑定不能满足要求，您还可以创建自定义绑定。 有关系统提供的绑定的列表，请参阅[System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)。 有关自定义绑定的详细信息，请参阅[自定义绑定](../../../../docs/framework/wcf/extending/custom-bindings.md)。  
   
  WCF 中的每个绑定有两种形式： 为 API 和配置文件中使用的 XML 元素形式。 例如， `WSHttpBinding` (API) 中具有对应[ \<wsHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)。  
   
@@ -194,9 +194,9 @@ ms.locfileid: "54521363"
 |`WSHttpBinding`|是|是|是|  
 |`WSDualHttpBinding`|No|是|No|  
 |`NetTcpBinding`|是|是|是|  
-|`NetNamedPipeBinding`|是|No|否|  
+|`NetNamedPipeBinding`|是|否|否|  
 |`NetMsmqBinding`|是|是|No|  
-|`MsmqIntegrationBinding`|是|No|否|  
+|`MsmqIntegrationBinding`|是|否|否|  
 |`wsFederationHttpBinding`|否|是|是|  
   
 ## <a name="transport-credentials-in-bindings"></a>绑定中的传输凭据  
@@ -204,7 +204,7 @@ ms.locfileid: "54521363"
   
 |类型|描述|  
 |----------|-----------------|  
-|无|指定客户端不需要提供任何凭据。 这相当于匿名客户端。|  
+|None|指定客户端不需要提供任何凭据。 这相当于匿名客户端。|  
 |Basic|基本身份验证 有关详细信息，请参阅 RFC 2617 – HTTP 身份验证：基本和摘要式身份验证，可在[ https://go.microsoft.com/fwlink/?LinkId=84023 ](https://go.microsoft.com/fwlink/?LinkId=84023)。|  
 |摘要|摘要式身份验证。 有关详细信息，请参阅 RFC 2617 – HTTP 身份验证：基本和摘要式身份验证，可在[ https://go.microsoft.com/fwlink/?LinkId=84023 ](https://go.microsoft.com/fwlink/?LinkId=84023)。|  
 |NTLM|NT LAN Manager (NTLM) 身份验证。|  
@@ -217,13 +217,14 @@ ms.locfileid: "54521363"
   
 |类型|描述|  
 |----------|-----------------|  
-|无|允许服务与匿名客户端交互。|  
+|None|允许服务与匿名客户端交互。|  
 |Windows|允许在 Windows 凭据的已通过身份验证的上下文中执行 SOAP 消息交换。|  
 |UserName|允许服务要求使用用户名凭据对客户端进行身份验证。 请注意，当安全模式设置为`TransportWithMessageCredential`，WCF 不支持发送密码摘要，也派生密钥密码并使用此类密钥用于 Message 模式安全。 在这种情况下，WCF 强制执行传输的安全性时使用用户名凭据。|  
 |证书|允许服务要求使用证书对客户端进行身份验证。|  
 |IssuedToken|允许服务使用安全令牌服务来提供自定义令牌。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [安全性概述](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [保护服务和客户端的安全](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
 - [选择凭据类型](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ed0dde302e30ae0cf3c7a8d0985f2314d91cab66
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58760793"
+---
 ### <a name="deflatestream-uses-native-apis-for-decompression"></a>DeflateStream 使用本机 API 进行解压缩
 
 |   |   |

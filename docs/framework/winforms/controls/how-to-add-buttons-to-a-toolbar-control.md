@@ -12,17 +12,16 @@ helpviewer_keywords:
 - examples [Windows Forms], toolbars
 - ToolBar control [Windows Forms], adding drop-down menus
 ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
-ms.openlocfilehash: 347ca067a5ae5544351f29afe3ebcfe11d0b1e0f
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 1a8666124c09d27d9d2ef936d36e7739d473a996
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57713230"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59085982"
 ---
 # <a name="how-to-add-buttons-to-a-toolbar-control"></a>如何：向 ToolBar 控件添加按钮
 > [!NOTE]
->  
-  <xref:System.Windows.Forms.ToolStrip> 控件取代了 <xref:System.Windows.Forms.ToolBar> 控件并添加了功能；但是，可以选择保留 <xref:System.Windows.Forms.ToolBar> 控件以实现向后兼容并供将来使用。  
+>  <xref:System.Windows.Forms.ToolStrip> 控件取代了 <xref:System.Windows.Forms.ToolBar> 控件并添加了功能；但是，可以选择保留 <xref:System.Windows.Forms.ToolBar> 控件以实现向后兼容并供将来使用。  
   
  不可或缺的一部分<xref:System.Windows.Forms.ToolBar>控件是您向其中添加的按钮。 这些可用于提供方便您访问菜单命令或者，或者，您可以将它们放在另一个区域中的应用程序以向你的菜单结构中不可用的用户公开的命令的用户界面。  
   
@@ -150,8 +149,9 @@ ms.locfileid: "57713230"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.ToolBar>
-- [如何：定义的工具栏按钮的图标](how-to-define-an-icon-for-a-toolbar-button.md)
+- [如何：定义工具栏按钮的图标](how-to-define-an-icon-for-a-toolbar-button.md)
 - [如何：触发工具栏按钮的菜单事件](how-to-trigger-menu-events-for-toolbar-buttons.md)
 - [ToolBar 控件概述](toolbar-control-overview-windows-forms.md)
 - [ToolBar 控件](toolbar-control-windows-forms.md)

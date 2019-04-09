@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - COM [WCF], integration overview
 ms.assetid: 02c5697f-6e2e-47d6-b715-f3a28aebfbd5
-ms.openlocfilehash: bd031b0f7464da2f1e251abfa1fe314ee2fa763d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 182e5f41498d8f5e3fcbc4b84aa7e86b67ce3ccc
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54710209"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59087620"
 ---
 # <a name="integrating-with-com-applications-overview"></a>COM 应用程序集成概述
 Windows Communication Foundation (WCF) 提供了托管的代码开发人员，使用用于创建连接的应用程序的丰富环境。 但是，如果有大量投入时基于 COM 的非托管代码中，并且不希望迁移，可以仍将 WCF Web 服务直接到现有代码使用 WCF 服务名字对象。 服务标记可以在众多基于 COM 的开发环境（如 Office VBA、Visual Basic 6.0 或 Visual C++ 6.0）中使用。  
@@ -66,4 +66,5 @@ Windows Communication Foundation (WCF) 提供了托管的代码开发人员，�
 >  `</configuration>`  
   
 ## <a name="see-also"></a>请参阅
-- [如何：注册并配置服务名字对象](../../../../docs/framework/wcf/feature-details/how-to-register-and-configure-a-service-moniker.md)
+
+- [如何：注册和配置服务名字对象](../../../../docs/framework/wcf/feature-details/how-to-register-and-configure-a-service-moniker.md)

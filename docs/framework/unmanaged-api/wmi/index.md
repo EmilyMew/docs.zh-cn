@@ -4,8 +4,13 @@ description: 总结用于 WMI 的 .NET Framework 非托管 API 和性能计数�
 author: rpetrusha
 ms.author: ronpet
 ms.date: 11/06/2017
+ms.openlocfilehash: bbf22496098f848cc7c55652198d792c6f631c15
+ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57377451"
 ---
-
 # <a name="windows-management-instrumentation-wmi-and-performance-counters-unmanaged-api-reference"></a>Windows Management Instrumentation (WMI) 和性能计数器（非托管 API 参考）
 
 .NET Framework WMI 和性能计数器非托管 API 由一组函数组成，这些函数包含对[本机 Windows Management Instrumentation API](/windows/desktop/WmiSdk/com-api-for-wmi) 的调用。 通过它，用户可开发管理和监视远程计算机系统的工具和库。

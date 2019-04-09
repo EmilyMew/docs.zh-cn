@@ -2,6 +2,12 @@
 title: Windows Workflow (WF) 示例文档
 ms.date: 09/24/2018
 ms.assetid: e0aef017-4381-4f2f-a904-6e1ed898687e
+ms.openlocfilehash: 2d36c4d029050fc052f2469134e93125f56da3fa
+ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57719749"
 ---
 # <a name="windows-workflow-wf-samples"></a>Windows 工作流 (WF) 示例
 

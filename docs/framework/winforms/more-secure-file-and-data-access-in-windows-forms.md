@@ -13,12 +13,12 @@ helpviewer_keywords:
 - file access [Windows Forms]
 - security [Windows Forms], data access
 ms.assetid: 3cd3e55b-2f5e-40dd-835d-f50f7ce08967
-ms.openlocfilehash: 60a9ffa8061f5bc576aa919aa742f1c5e6b07124
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 557c3296310a7eb3922a6c18b7b3de19ffac953c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57724539"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115760"
 ---
 # <a name="more-secure-file-and-data-access-in-windows-forms"></a>Windows 窗体中更加安全的文件和数据访问
 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 使用权限帮助保护资源和数据。 你的应用程序可以读取或写入数据的位置取决于授予该应用程序的权限。 在部分信任环境中运行应用程序时，可能不具有对数据的访问权限，或可能必须更改访问数据的方式。  
@@ -133,7 +133,7 @@ private void ButtonOpen_Click(object sender, System.EventArgs e)
 ```  
   
 > [!NOTE]
->  在 Visual C# 中，确保将添加代码以启用事件处理程序。 通过使用上一示例中的代码，以下代码显示了如何启用事件处理程序。`this.ButtonOpen.Click += newSystem.Windows.Forms.EventHandler(this.ButtonOpen_Click);`  
+>  在 Visual C# 中，确保将添加代码以启用事件处理程序。 通过使用来自前面的示例代码，以下代码演示如何启用事件处理程序。`this.ButtonOpen.Click += newSystem.Windows.Forms.EventHandler(this.ButtonOpen_Click);`  
   
 ### <a name="other-files"></a>其他文件  
  有时你将需要读取或写入到用户未指定的文件，例如当你必须保存应用程序设置时。 在本地 Intranet 和 Internet 区域中，你的应用程序将无权在本地文件中存储数据。 但是，它将能够在独立存储中存储数据。 独立存储是一个抽象的数据隔离舱（而非具体的存储位置），它包含一个或多个独立存储文件（称为存储区），这些文件包含存储数据的实际目录位置。 文件访问权限（如 <xref:System.Security.Permissions.FileIOPermission>）不是必须具有的权限；<xref:System.Security.Permissions.IsolatedStoragePermission> 类控制独立存储权限。 默认情况下，在本地 Intranet 和 Internet 区域中运行的应用程序可以使用独立存储来存储数据；但是，磁盘配额等设置可能有所不同。 有关独立存储的详细信息，请参阅[独立存储](../../standard/io/isolated-storage.md)。  
@@ -354,12 +354,13 @@ public void Write()
  如果因为要使应用程序以部分信任权限运行而不能直接访问数据库，作为一种替代方法，可将 Web 服务作为备份方法来访问你的数据。 Web 服务是一种软件，可通过网络以编程方式进行访问。 通过 Web 服务，应用程序可以跨代码组区域共享数据。 默认情况下，本地 Intranet 和 Internet 区域中的应用程序被授予了访问其源站点的权限，使其能够调用同一台服务器上托管的 Web 服务。 有关详细信息请参阅[ASP.NET AJAX 中的 Web 服务](https://docs.microsoft.com/previous-versions/aspnet/bb398785(v=vs.100))或[Windows Communication Foundation](../wcf/index.md)。  
   
 ## <a name="registry-access"></a>注册表访问  
- <xref:System.Security.Permissions.RegistryPermission> 类控制对操作系统注册表的访问。 默认情况下，只有在本地运行的应用程序可以访问注册表。  <xref:System.Security.Permissions.RegistryPermission> 仅授予应用程序尝试进行注册表访问的权限；它不保证访问一定成功，因为操作系统仍对注册表强制安全。  
+ <xref:System.Security.Permissions.RegistryPermission> 类控制对操作系统注册表的访问。 默认情况下，只有在本地运行的应用程序可以访问注册表。  <xref:System.Security.Permissions.RegistryPermission> 仅授予应用程序尝试访问注册表; 的权限它不保证访问一定成功，因为操作系统仍将强制对注册表的安全。  
   
  由于无法在部分信任环境下访问注册表，所以可能需要寻找其他方法来存储你的数据。 存储应用程序设置时，请使用独立存储而非注册表。 独立存储也可用于存储其他特定于应用程序的文件。 由于默认授予了应用程序访问其源站点的权限，因此还可以存储有关服务器或源站点的全局应用程序信息。  
   
 ## <a name="see-also"></a>请参阅
-- [Windows 窗体中更加安全的打印](more-secure-printing-in-windows-forms.md)
+
+- [Windows 窗体中的更加安全的打印](more-secure-printing-in-windows-forms.md)
 - [Windows 窗体中额外的安全注意事项](additional-security-considerations-in-windows-forms.md)
 - [Windows 窗体中的安全性概述](security-in-windows-forms-overview.md)
 - [Windows 窗体安全](windows-forms-security.md)

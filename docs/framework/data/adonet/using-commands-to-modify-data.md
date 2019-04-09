@@ -2,12 +2,12 @@
 title: 使用命令修改数据
 ms.date: 03/30/2017
 ms.assetid: f4160389-b9ff-4b74-b655-437c76dcd586
-ms.openlocfilehash: cec079d16c6dc3d98cee9bf17b4201654e9ba10a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f2e3d162bfbdcb79cfecefa4ddc8e6a0dc46ee3c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54509261"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102448"
 ---
 # <a name="using-commands-to-modify-data"></a>使用命令修改数据
 使用 .NET Framework 数据提供程序，您可以执行存储过程或数据定义语言语句（如 CREATE TABLE 和 ALTER COLUMN）来对数据库或编录执行架构处理。 这些命令不返回行像查询一样，因此**命令**对象提供**ExecuteNonQuery**来处理它们。  
@@ -24,6 +24,7 @@ ms.locfileid: "54509261"
  描述如何执行对数据库架构进行修改的命令。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 ADO.NET 中检索和修改数据](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
 - [命令和参数](../../../../docs/framework/data/adonet/commands-and-parameters.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

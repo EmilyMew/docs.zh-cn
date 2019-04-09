@@ -1,5 +1,5 @@
 ---
-title: 如何：使用 ScrollViewer 创建 Expander
+title: 如何：使用 ScrollViewer 创建扩展器
 ms.date: 03/30/2017
 helpviewer_keywords:
 - controls [WPF], Expander
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - Expander control [WPF], creating
 - controls [WPF], ScrollViewer
 ms.assetid: 2ad124d2-2406-4157-aaf2-64e067298f01
-ms.openlocfilehash: 9e7c023ec371dd6695ffba3368502e5b593c4608
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: ef0bc5d344f7d465de9209708430d3e61d40d4f7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369534"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59114645"
 ---
-# <a name="how-to-create-an-expander-with-a-scrollviewer"></a>如何：使用 ScrollViewer 创建 Expander
+# <a name="how-to-create-an-expander-with-a-scrollviewer"></a>如何：使用 ScrollViewer 创建扩展器
 此示例演示如何创建<xref:System.Windows.Controls.Expander>包含复杂内容，例如图像和文本的控件。 该示例还包含的内容<xref:System.Windows.Controls.Expander>在<xref:System.Windows.Controls.ScrollViewer>控件。  
   
 ## <a name="example"></a>示例  
@@ -27,6 +27,7 @@ ms.locfileid: "57369534"
  [!code-csharp[ExpanderRichContent#CreateExpanderCode](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderRichContent/CSharp/Window1.xaml.cs#createexpandercode)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.Expander>
-- [扩展器概述](expander-overview.md)
+- [Expander 概述](expander-overview.md)
 - [帮助主题](expander-how-to-topics.md)

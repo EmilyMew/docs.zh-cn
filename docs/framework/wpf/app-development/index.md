@@ -2,9 +2,15 @@
 title: 应用程序开发
 ms.date: 01/26/2018
 helpviewer_keywords:
-  - 'WPF [WPF], about application development'
-  - 'application development [WPF], about'
+- WPF [WPF], about application development
+- application development [WPF], about
 ms.assetid: 2996ce5e-81e9-49ae-881b-952db3dd1b7e
+ms.openlocfilehash: 979a5324fe9cb6c3469660e061d5df7f312ef2c4
+ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57365121"
 ---
 # <a name="application-development"></a>应用程序开发
 <a name="introduction"></a> Windows Presentation Foundation (WPF) 是一个演示框架，可用于开发以下类型的应用程序：  

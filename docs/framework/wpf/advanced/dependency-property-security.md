@@ -10,17 +10,16 @@ helpviewer_keywords:
 - dependency properties [WPF], access
 - security [WPF], dependency properties
 ms.assetid: d10150ec-90c5-4571-8d35-84bafa2429a4
-ms.openlocfilehash: d51f8f5fd704b0c95b8e6f841b9b0ff8567899cb
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 85806ee9fb01cd2ca07697230c46a8847fdf8c6a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57364809"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59077467"
 ---
 # <a name="dependency-property-security"></a>依赖项属性的安全性
 依赖属性通常应当被视为公共属性。 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 属性系统在本质上无法对依赖属性值提供安全保证。  
-  
-  
+
 <a name="AccessSecurity"></a>   
 ## <a name="access-and-security-of-wrappers-and-dependency-properties"></a>包装器和依赖属性的访问和安全性  
  通常，依赖属性是随“包装器”[!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] 属性一起实现的，这些包装器属性可以简化从实例获取或设置属性的过程。 但是，包装器实际上只是方便的方法，实现基础<xref:System.Windows.DependencyObject.GetValue%2A>和<xref:System.Windows.DependencyObject.SetValue%2A>与依赖属性交互时使用的静态调用。 从另外一个角度考虑，这些属性作为恰好由依赖属性（而非私有字段）支持的[!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] 属性公开。 应用于包装器的安全机制与属性系统行为以及基础依赖属性的访问并不可比。 包装器设置安全要求将只是防止使用便捷方法，但不是会阻止调用<xref:System.Windows.DependencyObject.GetValue%2A>或<xref:System.Windows.DependencyObject.SetValue%2A>。 同样，为包装器设置受保护或私有访问级别也不会提供任何有效的安全性。  
@@ -40,4 +39,5 @@ ms.locfileid: "57364809"
  应用到一个要求<xref:System.Windows.DependencyProperty.ValidateValueCallback%2A>并且需要验证失败以防止设置属性上不具有足够的安全性机制。 通过强制执行的 set-value 失效<xref:System.Windows.DependencyProperty.ValidateValueCallback%2A>还可能会禁止恶意调用方，如果应用程序域中运行这些调用方。  
   
 ## <a name="see-also"></a>请参阅
-- [自定义依赖属性](custom-dependency-properties.md)
+
+- [自定义依赖项属性](custom-dependency-properties.md)

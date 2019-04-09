@@ -6,12 +6,12 @@ helpviewer_keywords:
 - composite drawings [WPF]
 - graphics [WPF], composite drawings
 ms.assetid: 066eb0ab-5f0e-439d-85c6-dca60af269fc
-ms.openlocfilehash: ec71fb3e2f92444d33e15da38f0c88acc715c46d
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 0af7fbca593627ebe8cd102a02617a27eac50aa5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57374136"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59132465"
 ---
 # <a name="how-to-create-a-composite-drawing"></a>如何：创建复合绘图
 此示例演示如何使用<xref:System.Windows.Media.DrawingGroup>若要通过组合多个创建复杂的图形<xref:System.Windows.Media.Drawing>为单个复合绘图的对象。  
@@ -42,6 +42,7 @@ ms.locfileid: "57374136"
  有关详细信息<xref:System.Windows.Media.Drawing>对象，请参阅[Drawing 对象概述](drawing-objects-overview.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>
 - <xref:System.Windows.Media.DrawingGroup.Transform%2A>
 - <xref:System.Windows.Media.DrawingGroup.OpacityMask%2A>

@@ -1,5 +1,5 @@
 ---
-title: 如何：将文本绘制到控件的背景上
+title: 如何：向控件的背景绘制文本
 ms.date: 03/30/2017
 helpviewer_keywords:
 - controls [WPF], drawing text to backgrounds
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - backgrounds [WPF], drawing text to
 - typography [WPF], drawing text to control backgrounds
 ms.assetid: 686d8fba-f61c-4974-a871-c635d67a7f69
-ms.openlocfilehash: 025b13d83aeb668fa3a9f8af35d7213ae677eefc
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 76449c88f9a720741c8ed61255e04a40e6a8613f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57378738"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59128448"
 ---
-# <a name="how-to-draw-text-to-a-controls-background"></a>如何：将文本绘制到控件的背景上
+# <a name="how-to-draw-text-to-a-controls-background"></a>如何：向控件的背景绘制文本
 可以直接到控件的背景中绘制文本的文本字符串转换为<xref:System.Windows.Media.FormattedText>对象，并在其中绘制到控件的对象<xref:System.Windows.Media.DrawingContext>。 此外可以使用此技术用于绘制到的对象的背景派生自<xref:System.Windows.Controls.Panel>，如<xref:System.Windows.Controls.Canvas>和<xref:System.Windows.Controls.StackPanel>。  
   
  ![文本显示为背景的控件](./media/drawtext2background01.png "DrawText2Background01")  
@@ -29,5 +29,6 @@ ms.locfileid: "57378738"
  [!code-csharp[DrawTextToControlBackground#DrawTextToControlBackground1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawTextToControlBackground/CSHARP/Window1.xaml.cs#drawtexttocontrolbackground1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.FormattedText>
 - [绘制格式化文本](drawing-formatted-text.md)

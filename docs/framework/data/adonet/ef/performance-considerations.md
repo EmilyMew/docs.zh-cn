@@ -2,12 +2,12 @@
 title: 性能注意事项（实体框架）
 ms.date: 03/30/2017
 ms.assetid: 61913f3b-4f42-4d9b-810f-2a13c2388a4a
-ms.openlocfilehash: 4b6d3d4dbf801a7b0cc378482ad4d0d29a915be3
-ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
+ms.openlocfilehash: d0ee92b96a22b0ecb59ee76fb2f2e9d64442ce22
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55904797"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59087945"
 ---
 # <a name="performance-considerations-entity-framework"></a>性能注意事项（实体框架）
 本主题介绍 ADO.NET 实体框架的性能特征，并提供一些注意事项帮助改善实体框架应用程序的性能。  
@@ -147,11 +147,12 @@ ms.locfileid: "55904797"
 ## <a name="performance-data"></a>性能数据  
  实体框架的一些性能数据上发布的下列帖子中[ADO.NET 团队博客](https://go.microsoft.com/fwlink/?LinkId=91905):  
   
--   [探索 ADO.NET 实体框架的第 1 部分的性能](https://go.microsoft.com/fwlink/?LinkId=123907)  
+-   [Exploring the Performance of the ADO.NET Entity Framework - Part 1（探索 ADO.NET 实体框架的性能 - 第 1 部分）](https://go.microsoft.com/fwlink/?LinkId=123907)  
   
--   [探索 ADO.NET 实体框架 – 第 2 部分的性能](https://go.microsoft.com/fwlink/?LinkId=123909)  
+-   [Exploring the Performance of the ADO.NET Entity Framework – Part 2（探索 ADO.NET 实体框架的性能 - 第 2 部分）](https://go.microsoft.com/fwlink/?LinkId=123909)  
   
--   [ADO.NET 实体框架性能比较](https://go.microsoft.com/fwlink/?LinkID=123913)  
+-   [ADO.NET Entity Framework Performance Comparison（ADO.NET 实体框架性能比较）](https://go.microsoft.com/fwlink/?LinkID=123913)  
   
 ## <a name="see-also"></a>请参阅
+
 - [开发和部署注意事项](../../../../../docs/framework/data/adonet/ef/development-and-deployment-considerations.md)

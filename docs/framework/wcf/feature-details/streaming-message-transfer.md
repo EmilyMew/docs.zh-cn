@@ -2,12 +2,12 @@
 title: 流消息传输
 ms.date: 03/30/2017
 ms.assetid: 72a47a51-e5e7-4b76-b24a-299d51e0ae5a
-ms.openlocfilehash: 5a146b9f0bd2eb74b5ef4b5877e6cb925d386abc
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e58b0ce698df310a5e18bcd24201fb2e27a9c1aa
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54643814"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59136872"
 ---
 # <a name="streaming-message-transfer"></a>流消息传输
 Windows Communication Foundation (WCF) 传输来传输消息支持两种模式：  
@@ -16,7 +16,7 @@ Windows Communication Foundation (WCF) 传输来传输消息支持两种模式�
   
 -   流传输以流的形式公开消息。 接收方在消息完整传递之前即可开始处理消息。  
   
--   流传输消除了对大型内存缓冲区的需求，从而提高了服务的可伸缩性。 更改传输模式是否能够提高可伸缩性取决于所传输的消息大小。 消息大小越大，使用流传输越有利。  
+-   流传输消除了对大型内存缓冲区的要求，从而提高了服务的可伸缩性。 更改传输模式是否能够提高可伸缩性取决于所传输的消息大小。 消息大小越大，使用流传输越有利。  
   
  默认情况下，HTTP、TCP/IP 和命名管道传输协议使用缓冲传输。 本文档介绍如何将这些传输协议从缓冲传输模式切换到流传输模式以及这样做的结果。  
   
@@ -47,4 +47,5 @@ Windows Communication Foundation (WCF) 传输来传输消息支持两种模式�
  将传输模式从缓冲模式更改为流模式还会更改 TCP 和命名管道传输协议的本机通道形状。 对于缓冲传输模式，本机通道形状为 <xref:System.ServiceModel.Channels.IDuplexSessionChannel>。 对于流传输模式，本机通道为 <xref:System.ServiceModel.Channels.IRequestChannel> 和 <xref:System.ServiceModel.Channels.IReplyChannel>。 在直接（即，不是通过服务协定）使用这些传输协议的现有应用程序中更改传输模式需要更改通道工厂和侦听器的预期通道形状。  
   
 ## <a name="see-also"></a>请参阅
-- [如何：启用流式传输](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)
+
+- [如何：启用流处理](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - attributes [Windows Forms], application settings
 - wrapper classes [Windows Forms], application settings
 ms.assetid: 53caa66c-a9fb-43a5-953c-ad092590098d
-ms.openlocfilehash: cfbaac8ad9a8576d076ed34059fb62e9e0a91ebc
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: f945d8e6918c271eeb5fdf3cf9c357b1c2bbca66
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57714653"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59079638"
 ---
 # <a name="application-settings-attributes"></a>应用程序设置特性
 应用程序设置体系结构提供可应用到应用程序设置包装类或其各个属性的多个属性。 这些属性将检查在运行时由应用程序设置基础结构通常专门设置提供程序，以便使其正常运行的自定义包装器所述的需求。  
@@ -21,7 +21,7 @@ ms.locfileid: "57714653"
 > [!NOTE]
 >  自定义设置提供程序，派生自<xref:System.Configuration.SettingsProvider>类中，只需识别以下三个属性：**ApplicationScopedSettingAttribute**， **UserScopedSettingAttribute**，和**DefaultSettingValueAttribute**。  
   
-|特性|目标|描述|  
+|特性|Target|描述|  
 |---------------|------------|-----------------|  
 |<xref:System.Configuration.SettingsProviderAttribute>|双向|指定要用于持久性的设置提供程序的短名称。<br /><br /> 如果未提供此属性，默认的提供程序， <xref:System.Configuration.LocalFileSettingsProvider>，假定。|  
 |<xref:System.Configuration.UserScopedSettingAttribute>|双向|将属性定义为用户范围的应用程序设置。|  
@@ -38,6 +38,7 @@ ms.locfileid: "57714653"
  *类*指示特性可以应用到应用程序设置包装器类。 *属性*指示该属性可以应用到仅设置属性。 *同时*指示该特性可以应用到任何一级。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Configuration.ApplicationSettingsBase>
 - <xref:System.Configuration.SettingsProvider>
 - [应用程序设置体系结构](application-settings-architecture.md)

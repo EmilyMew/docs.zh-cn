@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a29f0ca6d235250ac1f41e686178b2d6affcd8a0
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58760985"
+---
 ### <a name="calling-createdefaultauthorizationcontext-with-a-null-argument-has-changed"></a>调用具有 null 自变量的 CreateDefaultAuthorizationContext 的方式已更改
 
 |   |   |

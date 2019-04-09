@@ -2,12 +2,12 @@
 title: System.ServiceModel.Channels.PeerNodeAuthenticationTimeout
 ms.date: 03/30/2017
 ms.assetid: f294ee94-be83-426c-b40d-6e8a4e5e987c
-ms.openlocfilehash: 9ddc51f6bc95f7fb5f80beaf83f10298830afcd8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7c5f859deb2d9156b819f1fb92164a4c05437192
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54491917"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59120583"
 ---
 # <a name="systemservicemodelchannelspeernodeauthenticationtimeout"></a>System.ServiceModel.Channels.PeerNodeAuthenticationTimeout
 在指定的时间限制内，安全握手并未成功。  
@@ -19,6 +19,7 @@ ms.locfileid: "54491917"
  确保所有邻居都具有适合的安全凭据并在 1 分钟之内对所有消息做出响应。  
   
 ## <a name="see-also"></a>请参阅
+
 - [跟踪](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
 - [使用跟踪来排除应用程序故障](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
 - [管理和诊断](../../../../../docs/framework/wcf/diagnostics/index.md)

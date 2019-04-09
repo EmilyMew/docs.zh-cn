@@ -8,12 +8,12 @@ helpviewer_keywords:
 - flicker [Windows Forms], reducing by manually managing graphics
 - graphics [Windows Forms], managing buffered
 ms.assetid: 4c2a90ee-bbbe-4ff6-9170-1b06c195c918
-ms.openlocfilehash: 013118ea15184ee4dfbbcd5dcaff054a2cf6a9ba
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 965e3225f8cf1af6d61b81434089ebacac8ad13a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57702927"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59138666"
 ---
 # <a name="how-to-manually-manage-buffered-graphics"></a>如何：手动管理缓冲的图形
 对于更高级的双缓冲方案，可以使用[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]类以实现您自己的双缓冲逻辑。 负责分配和管理各个图形缓冲的类是<xref:System.Drawing.BufferedGraphicsContext>类。 每个应用程序具有自己的默认<xref:System.Drawing.BufferedGraphicsContext>管理所有默认双缓冲该应用程序。 可以通过调用检索到此实例的引用<xref:System.Drawing.BufferedGraphicsManager.Current%2A>。  
@@ -38,6 +38,7 @@ ms.locfileid: "57702927"
      [!code-vb[System.Windows.Forms.LegacyBufferedGraphics#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/VB/Class1.vb#12)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.BufferedGraphicsContext>
-- [双缓冲的图形](double-buffered-graphics.md)
+- [双缓冲图形](double-buffered-graphics.md)
 - [如何：手动呈现缓冲的图形](how-to-manually-render-buffered-graphics.md)

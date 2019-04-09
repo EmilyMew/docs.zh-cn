@@ -1,15 +1,15 @@
 ---
-title: <MethodInstantiation>元素 (.NET Native)
+title: <MethodInstantiation> 元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: a3355d78-2a88-4109-8521-830d7cae260a
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: ccc8cd22c3175a2b6456f71d9dc773ce85848949
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: ae15e6d61267feb0388170ee27dcd939035329b0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55275049"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59121688"
 ---
 # <a name="methodinstantiation-element-net-native"></a>\<方法实例化 > 元素 (.NET Native)
 将运行时反射策略应用到一个构造泛型方法。  
@@ -39,27 +39,27 @@ ms.locfileid: "55275049"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|method_name|方法名。 该方法的类型是由 [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) 或 [\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) 父元素定义的。|  
+|*方法_名称*|方法名。 该方法的类型是由 [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) 或 [\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) 父元素定义的。|  
   
 ## <a name="signature-attribute"></a>签名特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|method_signature|指定该类型的命名参数。 如果存在多个参数，它们之间用逗号分割。|  
+|*方法_签名*|指定该类型的命名参数。 如果存在多个参数，它们之间用逗号分割。|  
   
-## <a name="arguments-attribute"></a>参数特性  
+## <a name="arguments-attribute"></a>自变量特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|method_arguments|指定泛型类型参数。 如果存在多个参数，它们之间用逗号分割。 每个参数必须包含一个完全限定的类型名称。|  
+|*方法_参数*|指定泛型类型参数。 如果存在多个自变量，它们之间用逗号分割。 每个自变量必须包含一个完全限定的类型名称。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|policy_setting|该设置将应用到这个方法的策略类型。 可能值为 `Auto`、`Excluded`、`Included` 和 `Required`。 有关详细信息，请参阅[运行时指令策略设置](../../../docs/framework/net-native/runtime-directive-policy-settings.md)。|  
+|*策略_设置*|该设置将应用到这个方法的策略类型。 可能值为 `Auto`、`Excluded`、`Included` 和 `Required`。 有关详细信息，请参阅[运行时指令策略设置](../../../docs/framework/net-native/runtime-directive-policy-settings.md)。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -75,7 +75,8 @@ ms.locfileid: "55275049"
  `<MethodInstantiation>` 元素替代其相应的开发泛型方法的运行时反射策略。  
   
 ## <a name="see-also"></a>请参阅
-- [运行时指令 (rd.xml) 配置文件参考](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+
+- [运行时指令 (rd.xml) 配置文件引用](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令元素](../../../docs/framework/net-native/runtime-directive-elements.md)
 - [运行时指令策略设置](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
-- [\<Method> 元素](../../../docs/framework/net-native/method-element-net-native.md)
+- [\<方法 > 元素](../../../docs/framework/net-native/method-element-net-native.md)

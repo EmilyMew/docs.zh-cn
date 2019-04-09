@@ -1,5 +1,5 @@
 ---
-title: 如何：添加和使用设计器在 Windows 窗体 DataGridView 控件中删除列
+title: 如何：使用设计器添加和移除 Windows 窗体 DataGridView 控件中的列
 ms.date: 03/30/2017
 f1_keywords:
 - vs.DataGridViewAddColumnDialog
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - DataGridView control [Windows Forms], adding columns
 - DataGridView control [Windows Forms], removing columns
 ms.assetid: 9e709f35-0a8c-4e7e-b4c4-bacb7a834077
-ms.openlocfilehash: 444faafcdf284d000be5daf8e97081bbfb5bb38a
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 82bab7a42c7a8de131cc53d792cf2d372580af40
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57716382"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59078104"
 ---
-# <a name="how-to-add-and-remove-columns-in-the-windows-forms-datagridview-control-using-the-designer"></a>如何：添加和使用设计器在 Windows 窗体 DataGridView 控件中删除列
+# <a name="how-to-add-and-remove-columns-in-the-windows-forms-datagridview-control-using-the-designer"></a>如何：使用设计器添加和移除 Windows 窗体 DataGridView 控件中的列
 Windows 窗体<xref:System.Windows.Forms.DataGridView>控件必须包含的列才能显示数据。 如果您计划手动填充该控件，您必须自行添加的列。 或者，可以将控件绑定到数据源，生成并自动填充列。 如果数据源包含多于你想要显示的列数，则可以删除不需要的列。  
   
  下面的过程要求**Windows 应用程序**包含一个窗体，其中包含项目<xref:System.Windows.Forms.DataGridView>控件。 有关设置此类项目的信息，请参阅[如何：创建 Windows 窗体应用程序项目](/visualstudio/ide/step-1-create-a-windows-forms-application-project)和[如何：将控件添加到 Windows 窗体](how-to-add-controls-to-windows-forms.md)。  
@@ -42,6 +42,7 @@ Windows 窗体<xref:System.Windows.Forms.DataGridView>控件必须包含的列�
 3.  单击**删除**按钮以删除列，使其从设计器中消失。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.DataGridView>
 - [如何：创建 Windows 窗体应用程序项目](/visualstudio/ide/step-1-create-a-windows-forms-application-project)
 - [如何：向 Windows 窗体添加控件](how-to-add-controls-to-windows-forms.md)

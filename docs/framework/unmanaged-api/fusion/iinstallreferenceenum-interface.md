@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2aed89008dd2fa86b38f243c8e7cca1bdda901e1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 35faeb69e864a428dc40394ad89a7d50b95bbcab
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54497769"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59103319"
 ---
 # <a name="iinstallreferenceenum-interface"></a>IInstallReferenceEnum 接口
 表示引用的程序集安装到全局程序集缓存中的枚举器。  
@@ -49,8 +49,9 @@ interface IInstallReferenceEnum : IUnknown {
   
  **标头：** Fusion.h  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [合成接口](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
 - [IInstallReferenceItem 接口](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)

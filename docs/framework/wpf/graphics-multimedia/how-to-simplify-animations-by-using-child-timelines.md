@@ -6,12 +6,12 @@ helpviewer_keywords:
 - animation [WPF], simplifying by child timelines
 - child timelines [WPF]
 ms.assetid: 8335d770-d13d-42bd-8dfa-63f92c0327e2
-ms.openlocfilehash: 933ba2dff86b99bddd8d8f75bafcd94833b2e066
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 21a297208be045eea79d6f5ca6c8eac016d26345
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57370353"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096389"
 ---
 # <a name="how-to-simplify-animations-by-using-child-timelines"></a>如何：使用子时间线简化动画
 此示例演示如何使用子简化动画<xref:System.Windows.Media.Animation.ParallelTimeline>对象。 一个<xref:System.Windows.Media.Animation.Storyboard>是一种<xref:System.Windows.Media.Animation.Timeline>提供它所包含的时间线目标信息。 使用<xref:System.Windows.Media.Animation.Storyboard>提供时间线目标信息，包括对象和属性信息。  
@@ -26,5 +26,6 @@ ms.locfileid: "57370353"
  [!code-xaml[Timelines_snip#ParallelTimelineWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Timelines_snip/CS/ParallelTimelineExample.xaml#paralleltimelinewholepage)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [动画概述](animation-overview.md)
-- [指定演示图板动画之间的 HandoffBehavior](how-to-specify-handoffbehavior-between-storyboard-animations.md)
+- [指定情节提要动画之间的 HandoffBehavior](how-to-specify-handoffbehavior-between-storyboard-animations.md)

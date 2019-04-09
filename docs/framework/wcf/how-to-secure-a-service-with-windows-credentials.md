@@ -1,5 +1,5 @@
 ---
-title: 如何：使用 Windows 凭据保护服务
+title: 如何：使用 Windows 凭据保护服务的安全
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,14 +7,14 @@ dev_langs:
 helpviewer_keywords:
 - WCF, security
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
-ms.openlocfilehash: b5fece86dca524cb3f94f64dcb98361a93bf84a3
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: 70b8e2f28559d5fc54736db1319d2309aa5b86a7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58410922"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59111327"
 ---
-# <a name="how-to-secure-a-service-with-windows-credentials"></a>如何：使用 Windows 凭据保护服务
+# <a name="how-to-secure-a-service-with-windows-credentials"></a>如何：使用 Windows 凭据保护服务的安全
 本主题演示如何启用驻留在 Windows 域，并且由同一个域中的客户端调用的 Windows Communication Foundation (WCF) 服务上的传输安全。 有关此方案的详细信息，请参阅[使用 Windows 身份验证的传输安全性](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md)。 示例应用程序，请参阅[WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md)示例。  
   
  本主题假定您已定义一个现有的协定接口和实现及其加载项。 您还可以修改一个现有的服务和客户端。  
@@ -148,8 +148,9 @@ ms.locfileid: "58410922"
  [!code-vb[c_SecureWindowsClient#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsclient/vb/secureclient.vb#0)]      
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.WSHttpBinding>
 - [ServiceModel 元数据实用工具 (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
 - [如何：创建客户端](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
-- [保护服务](../../../docs/framework/wcf/securing-services.md)
+- [保证服务的安全](../../../docs/framework/wcf/securing-services.md)
 - [安全性概述](../../../docs/framework/wcf/feature-details/security-overview.md)

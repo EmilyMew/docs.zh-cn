@@ -12,12 +12,12 @@ helpviewer_keywords:
 - x:Null markup extension [XAML Services]
 - XAML [XAML Services], x:Null markup extension
 ms.assetid: 2e3ccc21-4996-481d-91b5-3910d8b3bfa3
-ms.openlocfilehash: 34a2de71bec9b0929070aa908741de38b5904643
-ms.sourcegitcommit: 5c1abeec15fbddcc7dbaa729fabc1f1f29f12045
+ms.openlocfilehash: e46d8561b62d9137d4fed4df447338a97fc0577b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58029373"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59100803"
 ---
 # <a name="xnull-markup-extension"></a>x:Null 标记扩展
 指定`null`作为 XAML 成员的值。  
@@ -45,6 +45,7 @@ ms.locfileid: "58029373"
  请注意，`null`不一定是引用类型依赖属性的初始取消设置的值。 初始默认值为每个依赖属性而异，并可以基于特定于属性的元数据。 许多依赖项属性不接受`null`值，不管是通过标记或代码由于它们的验证回调实现。 有关依赖项属性的详细信息，请参阅[依赖属性概述](../wpf/advanced/dependency-properties-overview.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.DependencyProperty.UnsetValue>
 - [XAML 概述 (WPF)](../wpf/advanced/xaml-overview-wpf.md)
 - [标记扩展和 WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)

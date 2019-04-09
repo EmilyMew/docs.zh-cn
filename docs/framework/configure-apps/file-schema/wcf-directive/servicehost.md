@@ -2,15 +2,15 @@
 title: '@ServiceHost'
 ms.date: 03/30/2017
 ms.assetid: 96ba6967-00f2-422f-9aa7-15de4d33ebf3
-ms.openlocfilehash: 3d59fac08ee59ab5ede943de5109805ff1633d48
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3102ae8d8c28be43883eeaff6c4f829b355384a7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54623932"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59111392"
 ---
 # <a name="servicehost"></a>\@ServiceHost
-将用于生成服务主机的工厂与要承载的服务以及访问或编译 .svc 文件中提供的主机代码所需的其他编程方面相关联。  
+将用于生成服务主机的工厂与要承载的服务以及访问或编译 .svc 文件中提供的宿主代码所需的其他编程方面相关联。  
   
 ## <a name="syntax"></a>语法  
   
@@ -67,4 +67,5 @@ Factory="WebScriptServiceHostFactory"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [自定义服务主机](../../../../../docs/framework/wcf/samples/custom-service-host.md)

@@ -2,12 +2,12 @@
 title: 实体框架术语
 ms.date: 03/30/2017
 ms.assetid: fa2a1bd1-6118-487b-8673-eebc66b92945
-ms.openlocfilehash: 644c1f19c0dc87ea7a9ab5fabbbd85b63ad1d1b8
-ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
+ms.openlocfilehash: a4befe4c45f11a59982edc9f976258f795a18cde
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55904134"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59104164"
 ---
 # <a name="entity-framework-terminology"></a>实体框架术语
 本主题定义中经常引用的术语[!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]文档。 如果有其他可用信息，则会提供指向相关主题的链接。  
@@ -76,6 +76,7 @@ ms.locfileid: "55904134"
 |每个类型一个表|在数据库中对类型层次结构建模的方法，此方法使用具有一对一关系的多个表来对各种类型建模。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [ADO.NET 实体框架](../../../../../docs/framework/data/adonet/ef/index.md)
 - [实体框架概述](../../../../../docs/framework/data/adonet/ef/overview.md)
 - [入门](../../../../../docs/framework/data/adonet/ef/getting-started.md)

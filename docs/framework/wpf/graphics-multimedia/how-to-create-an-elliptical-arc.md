@@ -6,12 +6,12 @@ helpviewer_keywords:
 - elliptical arcs [WPF], creating
 - arcs [WPF], elliptical
 ms.assetid: 3dcfe502-3485-45de-99fb-d53a1367c484
-ms.openlocfilehash: bb4b4d99aab9daef70f446af176bb462b0661d54
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: aae304b9963f3a8e5833b4d8ba0a54777a750225
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57354344"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59183646"
 ---
 # <a name="how-to-create-an-elliptical-arc"></a>如何：创建椭圆弧
 此示例显示了如何绘制椭圆弧。若要创建椭圆弧，使用<xref:System.Windows.Media.PathGeometry>， <xref:System.Windows.Media.PathFigure>，和<xref:System.Windows.Media.ArcSegment>类。  
@@ -36,5 +36,6 @@ ms.locfileid: "57354344"
  此示例摘自一个更大的示例。 有关完整示例，请参阅[几何图形示例](https://go.microsoft.com/fwlink/?LinkID=159989)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [创建二次贝塞尔曲线](how-to-create-a-quadratic-bezier-curve.md)
 - [创建三次方贝塞尔曲线](how-to-create-a-cubic-bezier-curve.md)

@@ -25,7 +25,7 @@ Visual Basic 提供了一些`Join`和`Group Join`查询子句以使您能够合�
   
 #### <a name="to-create-a-project-that-contains-sample-data-and-types"></a>若要创建包含示例数据和类型的项目  
   
-1.  若要运行本主题中的示例，请打开 Visual Studio，并添加新的 Visual Basic 控制台应用程序项目。 双击创建 Visual basic 的 Module1.vb 文件。  
+1.  若要运行本主题中的示例，请打开 Visual Studio，并添加新的 Visual Basic 控制台应用程序项目。 双击创建 Visual Basic 的 Module1.vb 文件。  
   
 2.  在本主题使用示例`Person`和`Pet`类型和数据从下面的代码示例。 将此代码复制到默认`Module1`创建 Visual Basic 模块。  
   

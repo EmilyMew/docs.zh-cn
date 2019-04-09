@@ -10,12 +10,12 @@ helpviewer_keywords:
 - streaming data provider [WCF Data Services]
 - WCF Data Services, streams
 ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
-ms.openlocfilehash: 1107fe12f5efa2b812f723568f5cb4fea1eddc8a
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: afe33835c8d29c4fe0e16ab4c7e00808336d0752
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56093835"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59087893"
 ---
 # <a name="streaming-provider-wcf-data-services"></a>流提供程序（WCF 数据服务）
 数据服务可公开二进制大型对象数据。 此二进制数据可以表示视频和音频流、图像、文档文件或其他类型的二进制媒体。 当数据模型中的某个实体包括一个或多个二进制属性时，数据服务会在响应源的入口内以 base-64 编码形式返回此二进制数据。 加载和序列化大型二进制数据，以这种方式会影响性能，因为[!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)]定义用于检索独立于其所属的实体的二进制数据的机制。 这一点是通过将实体和二进制数据分隔到一个或多个数据流来实现的。  
@@ -81,18 +81,14 @@ ms.locfileid: "56093835"
   
 ## <a name="enabling-large-binary-streams-in-the-hosting-environment"></a>在宿主环境中启用大型二进制数据流  
  当在 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web 应用程序中创建数据服务时，使用 Windows Communication Foundation (WCF) 可提供 HTTP 协议实现。 默认情况下，WCF 将 HTTP 消息的大小限制为仅 65K 字节。 为了使大型二进制数据能够流入或流出数据服务，还必须将 Web 应用程序配置为启用大型二进制文件并使用流进行转换。 为此，请将以下内容添加到应用程序的 Web.config 文件的 `<configuration />` 元素中：  
-  
-  
-  
+
 > [!NOTE]
 >  必须使用<xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType>传输模式，以确保请求和响应消息中的二进制数据进行流式处理且不缓冲的 WCF。  
   
  有关详细信息，请参阅[Streaming Message Transfer](../../../../docs/framework/wcf/feature-details/streaming-message-transfer.md)并[传输配额](../../../../docs/framework/wcf/feature-details/transport-quotas.md)。  
   
  默认情况下，Internet 信息服务 (IIS) 还将请求的大小限制为 4MB。 若要启用您的数据服务接收超过 4MB 的流，IIS 上运行时，还必须设置`maxRequestLength`的属性[httpRuntime 元素 （ASP.NET 设置架构）](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100))中`<system.web />`配置部分中，为以下示例中所示：  
-  
-  
-  
+
 ## <a name="using-data-streams-in-a-client-application"></a>在客户端应用程序中使用数据流  
  通过 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 客户端库，您可以在客户端上以二进制数据流的形式检索和更新这些公开的资源。 有关详细信息，请参阅[处理二进制数据](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)。  
   
@@ -130,6 +126,7 @@ ms.locfileid: "56093835"
  有关详细信息，请参阅[数据服务版本控制](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [数据服务提供程序](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
 - [自定义数据服务提供程序](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)
 - [处理二进制数据](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)

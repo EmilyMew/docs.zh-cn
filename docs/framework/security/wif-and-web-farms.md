@@ -3,12 +3,12 @@ title: WIF 和 Web 场
 ms.date: 03/30/2017
 ms.assetid: fc3cd7fa-2b45-4614-a44f-8fa9b9d15284
 author: BrucePerlerMS
-ms.openlocfilehash: 85fbebcd210e7df17212d39b8e3aca9bf76bfb67
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2f95213390187648c9f58b9b2bf2d5e3f49fb860
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54543050"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59135351"
 ---
 # <a name="wif-and-web-farms"></a>WIF 和 Web 场
 使用 Windows Identity Foundation (WIF) 保护 Web 场中部署的信赖方 (RP) 应用程序的资源时，必须采取特定的步骤确保 WIF 能处理场中不同计算机上运行的信赖方应用程序实例的令牌。 处理过程包括验证会话令牌签名、加密和解密会话令牌、缓存会话令牌以及检测重播的安全令牌。  
@@ -88,7 +88,7 @@ public interface ISessionSecurityTokenCacheService
 }  
 ```  
   
- 下面的代码演示 WCF 缓存服务的实现。 此示例中使用由 WIF 实现的默认的内存中会话令牌缓存。 此外，可以实现数据库提供支持的持久缓存。 `ISessionSecurityTokenCacheService` 定义上述接口。 此示例中，为简洁起见，未演示实现接口所需的所有方法。  
+ 下面的代码演示 WCF 缓存服务的实现。 此示例中使用由 WIF 实现的默认的内存中会话令牌缓存。 此外，可以实现数据库提供支持的持久缓存。 `ISessionSecurityTokenCacheService` 定义如上所示的接口。 此示例中，为简洁起见，未演示实现接口所需的所有方法。  
   
 ```  
 using System;  
@@ -251,6 +251,7 @@ namespace CacheLibrary
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>
 - <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>
 - <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler>

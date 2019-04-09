@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - animation [WPF]
 ms.assetid: b89a82be-b03d-481e-a8d3-cc513d09ca00
-ms.openlocfilehash: f27a214d4fa6fd33d993e7ae458ebb736b60bed7
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 945675d03a280e2394fdb0eab27c0978dc7cc320
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57351952"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102604"
 ---
 # <a name="how-to-add-an-animation-output-value-to-an-animation-starting-value"></a>如何：向动画起始值添加动画输出值
 此示例演示如何向动画起始值添加动画输出值。  
@@ -22,7 +22,8 @@ ms.locfileid: "57351952"
  [!code-xaml[timingbehaviors_snip#IsAdditiveWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/IsAdditiveExample.xaml#isadditivewholepage)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [在重复循环过程中累积动画值](how-to-accumulate-animation-values-during-repeat-cycles.md)
 - [动画概述](animation-overview.md)
 - [关键帧动画概述](key-frame-animations-overview.md)
-- [动画和计时操作指南主题](animation-and-timing-how-to-topics.md)
+- [动画和计时帮助主题](animation-and-timing-how-to-topics.md)

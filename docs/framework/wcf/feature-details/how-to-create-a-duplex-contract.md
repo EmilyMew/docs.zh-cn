@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - duplex contracts [WCF]
 ms.assetid: 500a75b6-998a-47d5-8e3b-24e3aba2a434
-ms.openlocfilehash: 8cc53f6842d55892ae178e22e2835555a132778b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 002c94f2cb69e330e8d2796a9f93d977b10f53f9
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54693631"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59078162"
 ---
 # <a name="how-to-create-a-duplex-contract"></a>如何：创建双工协定
 本主题演示了创建使用双工（双向）协定的方法所需的基本步骤。 双工协定使得客户端和服务器可以独立地相互通信，这样双方都可以启动对另一方的呼叫。 双工协定是可用于 Windows Communication Foundation (WCF) 服务的三种消息模式之一。 另外两种消息模式是单向模式和请求-答复模式。 双工协定由客户端和服务器之间的两个单向协定组成，并且不需要方法调用是相关的。 当服务必须向客户端查询更多信息或在客户端上显式引发事件时，使用这种协定。 有关创建用于双工协定的客户端应用程序的详细信息，请参阅[如何：使用双工协定访问服务](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)。 有关工作示例，请参阅[双工](../../../../docs/framework/wcf/samples/duplex.md)示例。  
@@ -68,6 +68,7 @@ ms.locfileid: "54693631"
 -   公开双工服务的终结点必须是安全的。 当服务接收双工消息时，它会查看传入消息中的 ReplyTo，以确定要发送答复的位置。 如果通道不安全，则不受信任的客户端可能使用目标计算机的 ReplyTo 发送恶意消息，从而导致目标计算机发生拒绝服务。 对于常规的规则请求-答复消息，这不是问题，因为将会忽略 ReplyTo 并在传入原始消息的通道上发送响应。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>
 - [如何：使用双工协定访问服务](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)

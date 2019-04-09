@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1f776f20f163df91d65509e5dbab31fe9c29a965
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: f8952b34781045089945e7e72e179e88300b5fdd
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57492096"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59103342"
 ---
 # <a name="icordebugmanagedcallback2exception-method"></a>ICorDebugManagedCallback2::Exception 方法
 通知调试器的异常处理程序的搜索已启动。  
@@ -66,7 +66,7 @@ HRESULT Exception (
   
  特定帧和偏移量由`dwEventType`参数，如下所示：  
   
-|`dwEventType` 的值|`pFrame` 的值|`nOffset` 的值|  
+|值 `dwEventType`|值 `pFrame`|值 `nOffset`|  
 |----------------------------|-----------------------|------------------------|  
 |DEBUG_EXCEPTION_FIRST_CHANCE|引发了异常帧。|在帧中的指令指针。|  
 |DEBUG_EXCEPTION_USER_FIRST_CHANCE|引发的异常点最接近的用户代码帧。|在帧中的指令指针。|  
@@ -80,8 +80,9 @@ HRESULT Exception (
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICorDebugManagedCallback2 接口](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
 - [ICorDebugManagedCallback 接口](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

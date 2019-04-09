@@ -15,15 +15,15 @@ helpviewer_keywords:
 - styles [WPF], triggers
 - styles [WPF], event triggers
 ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
-ms.openlocfilehash: 580eb2c7efd00382f7fff24984f0ce6f6d8fa027
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 3fae4993a13b02ad998668f644a80ba7c07196fa
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57370717"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59132285"
 ---
 # <a name="styling-and-templating"></a>样式设置和模板化
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 样式设置和模板化是指一套功能（样式、模板、触发器和情节提要），可使开发者和设计者创建极具视觉表现力的效果，并为其产品创建一致的外观。 尽管开发者和/或设计者可以逐个应用程序地广泛自定义外观，但为了实现应用程序内部和之间的外观维护和共享，需要一个强大的样式设置和模板化模型。 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 提供该模型。  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 样式和模板化是指一套功能 （样式、 模板、 触发器和情节提要），以允许开发人员和设计人员可以创建极具视觉表现力的效果，以创建一致的外观对其产品。 尽管开发者和/或设计者可以逐个应用程序地广泛自定义外观，但为了实现应用程序内部和之间的外观维护和共享，需要一个强大的样式设置和模板化模型。 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 提供了该模型。  
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 样式设置模型的另一项功能是将演示与逻辑分离。 这意味着，设计者可以仅使用 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 处理应用程序外观，与此同时开发者使用 C# 或 Visual Basic 处理编程逻辑。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "57370717"
   
  现在<xref:System.Windows.Controls.TextBlock>元素出现，如下所示：  
   
- ![Styling sample screen shot](./media/stylingintro-textblocksbasestyle.PNG "StylingIntro_TextBlocksBaseStyle")  
+ ![样式设置示例屏幕截图](./media/stylingintro-textblocksbasestyle.PNG "StylingIntro_TextBlocksBaseStyle")  
   
 ### <a name="extending-styles"></a>扩展样式  
  您可能需要两个<xref:System.Windows.Controls.TextBlock>元素共享某些属性值，如<xref:System.Windows.Controls.Control.FontFamily%2A>和居中<xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>，但也希望文本"My Pictures"具有某些其他属性。 可以通过创建基于第一个样式的新样式来实现该目标，如下所示：  
@@ -197,6 +197,7 @@ ms.locfileid: "57370717"
  如果要为自定义控件创建主题，请参阅[控件创作概述](control-authoring-overview.md)的外部控件库部分。  
   
 ## <a name="see-also"></a>请参阅
+
 - [WPF 中的 Pack URI](../app-development/pack-uris-in-wpf.md)
 - [如何：查找由 ControlTemplate 生成的元素](how-to-find-controltemplate-generated-elements.md)
 - [查找由 DataTemplate 生成的元素](../data/how-to-find-datatemplate-generated-elements.md)

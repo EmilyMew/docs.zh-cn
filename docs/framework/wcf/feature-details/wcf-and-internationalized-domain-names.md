@@ -2,18 +2,18 @@
 title: WCF 和国际化域名
 ms.date: 03/30/2017
 ms.assetid: c8a3e10a-8bc2-4a78-8d86-a562ba6e65fa
-ms.openlocfilehash: 83c6f3c2afec0f2b6b8fccca4bd8252e9ab35400
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c166f497117314dd8cea3b04b9b1072203374c52
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54571582"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59112601"
 ---
 # <a name="wcf-and-internationalized-domain-names"></a>WCF 和国际化域名
 添加了允许使用带有国际化域名 (IDN) 的 WCF 服务的支持。 国际化域名称是包含非 ASCII 字符的域名。 这种支持包括能够承载具有 IDN 名称的 WCF 服务以及 WCF 客户端，以便与具有 IDN 名称的 Web 服务进行对话。  
   
 ## <a name="systemuri-and-idn"></a>System.Uri 和 IDN  
- <xref:System.Uri> 具有两个属性：<xref:System.Uri.Host%2A> 和 <xref:System.Uri.DnsSafeHost%2A>。 根据 IDN 配置设置，这些属性包含 Unicode 或 Punycode 值。  
+ <xref:System.Uri> 有两个属性<xref:System.Uri.Host%2A>和<xref:System.Uri.DnsSafeHost%2A>。 根据 IDN 配置设置，这些属性包含 Unicode 或 Punycode 值。  
   
  使用下面的 XML 在应用程序的配置文件中启用 IDN  
   
@@ -42,4 +42,5 @@ ms.locfileid: "54571582"
 >  将 Unicode 字符添加到 applicationHost.exe.config 时，使用 UTF-8 编码保存文件。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Uri?displayProperty=nameWithType>

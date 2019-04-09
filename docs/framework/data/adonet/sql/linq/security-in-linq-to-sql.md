@@ -2,12 +2,12 @@
 title: LINQ to SQL 中的安全性
 ms.date: 03/30/2017
 ms.assetid: d49787f7-414e-4c71-aa33-80a5895536b1
-ms.openlocfilehash: 7730419509cd0c3530813734a98f777ddf9d9f04
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6af073a86b0feaba2fdcd9facd9474bb334096e7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54625674"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59078139"
 ---
 # <a name="security-in-linq-to-sql"></a>LINQ to SQL 中的安全性
 连接到数据库时始终都存在安全风险。 尽管 LINQ to SQL 可能包括一些使用 SQL Server 中的数据的新方法，但它并没有提供任何附加安全机制。  
@@ -34,5 +34,6 @@ ms.locfileid: "54625674"
 -   最大程度地减少所有连接字符串的生存期和接触点。  
   
 ## <a name="see-also"></a>请参阅
+
 - [背景信息](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
 - [常见问题](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)

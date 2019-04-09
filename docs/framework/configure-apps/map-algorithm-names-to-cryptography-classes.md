@@ -7,12 +7,12 @@ helpviewer_keywords:
 - cryptographic algorithms
 - names [.NET Framework], algorithm mapping
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
-ms.openlocfilehash: 6bf6e79923f0b3119c516ed97e0e86971368a34c
-ms.sourcegitcommit: b351b0781a035616c90c68ccae6dd60aae66a953
+ms.openlocfilehash: 6ec98aabd92a7a0fed11482bdf6e5e8ddc045a7e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55083648"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098736"
 ---
 # <a name="mapping-algorithm-names-to-cryptography-classes"></a>将算法名称映射到加密类
 有四种方法，开发人员可以创建加密对象使用[!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]:  
@@ -68,5 +68,6 @@ ms.locfileid: "55083648"
  默认名称和它们映射到的类的列表，请参阅<xref:System.Security.Cryptography.CryptoConfig>。  
   
 ## <a name="see-also"></a>请参阅
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+
+- [加密服务](../../../docs/standard/security/cryptographic-services.md)
 - [配置加密类](../../../docs/framework/configure-apps/configure-cryptography-classes.md)

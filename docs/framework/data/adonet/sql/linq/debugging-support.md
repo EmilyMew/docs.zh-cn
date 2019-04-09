@@ -2,17 +2,17 @@
 title: 调试支持
 ms.date: 03/30/2017
 ms.assetid: 262d8e60-8e71-42d7-8340-1b5276a0ad35
-ms.openlocfilehash: e19acb4a3a5cdff29e5eee81e422be1209cf91ab
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: eab6370614bab12955c18523c8accca4089a6bc5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54554864"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59126823"
 ---
 # <a name="debugging-support"></a>调试支持
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 提供了有关常规调试支持[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]项目。  另请参阅[调试 LINQ](/visualstudio/debugger/debugging-linq)或[调试 LINQ](/visualstudio/debugger/debugging-linq)。  
   
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 还提供了用于查看 SQL 代码的特殊工具。 有关更多信息，请参见本节中的各主题。  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 此外提供了用于查看 SQL 代码的特殊工具。 有关更多信息，请参见本节中的各主题。  
   
 ## <a name="in-this-section"></a>本节内容  
  [如何：显示生成的 SQL](../../../../../../docs/framework/data/adonet/sql/linq/how-to-display-generated-sql.md)  
@@ -28,4 +28,5 @@ ms.locfileid: "54554864"
  提供可能难以确定其出现原因的一些常见情况。  
   
 ## <a name="see-also"></a>请参阅
+
 - [编程指南](../../../../../../docs/framework/data/adonet/sql/linq/programming-guide.md)

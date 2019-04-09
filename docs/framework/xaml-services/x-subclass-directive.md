@@ -10,12 +10,12 @@ helpviewer_keywords:
 - XAML [XAML Services], x:Subclass attribute
 - Subclass attribute in XAML [XAML Services]
 ms.assetid: 99f66072-8107-4362-ab99-8171dc83b469
-ms.openlocfilehash: c348d8fa2bd66a9abbb64c9363bb4dae0933ba34
-ms.sourcegitcommit: 5c1abeec15fbddcc7dbaa729fabc1f1f29f12045
+ms.openlocfilehash: 850fe8acf9e47149bd385e78b30e04ba77d7a8b2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58047996"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59140785"
 ---
 # <a name="xsubclass-directive"></a>x:Subclass 指令
 修改 XAML 标记编译行为时`x:Class`还提供了。 而不是创建的分部类的基于`x:Class`，提供`x:Class`中间类，作为创建，然后在提供的派生的类需基于`x:Class`。  
@@ -57,5 +57,6 @@ ms.locfileid: "58047996"
  同时定义何时`x:Class`并`x:Subclass`，不需要提供的类的引用的任何实现`x:Class`。 只需为其提供通过名称`x:Class`属性，以便编译器具有中间文件 （编译器不会选择一个默认名称在这种情况下） 中创建的类的一些指导。 可让`x:Class`类实现; 但是，这不是同时使用这二者的典型情景`x:Class`和`x:Subclass`。  
   
 ## <a name="see-also"></a>请参阅
+
 - [x:Class 指令](x-class-directive.md)
 - [XAML 及 WPF 的自定义类](../wpf/advanced/xaml-and-custom-classes-for-wpf.md)

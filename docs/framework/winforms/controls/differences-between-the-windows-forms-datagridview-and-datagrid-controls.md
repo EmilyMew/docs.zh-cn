@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DataGrid control [Windows Forms], DataGridView control compared
 - DataGridView control [Windows Forms], DataGrid control compared
 ms.assetid: d412c786-140e-4210-8a56-a68467530a55
-ms.openlocfilehash: b7d97431bfdbdafd5e87bfbfb9c5badd9ba273ea
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 6802ef375d8d15826725e68f5065317192523178
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57720483"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59095667"
 ---
 # <a name="differences-between-the-windows-forms-datagridview-and-datagrid-controls"></a>Windows 窗体 DataGridView 控件和 DataGrid 控件之间的区别
 <xref:System.Windows.Forms.DataGridView>控件是新控件，用于替换<xref:System.Windows.Forms.DataGrid>控件。 <xref:System.Windows.Forms.DataGridView>控件提供了许多的基本和高级功能，中缺少<xref:System.Windows.Forms.DataGrid>控件。 此外的体系结构<xref:System.Windows.Forms.DataGridView>控件，可以更轻松地扩展和自定义比<xref:System.Windows.Forms.DataGrid>控件。  
@@ -33,6 +33,7 @@ ms.locfileid: "57720483"
  因为<xref:System.Windows.Forms.DataGridView>控件具有一个全新体系结构，没有简单的转换路径，您可以使用<xref:System.Windows.Forms.DataGrid>自定义项与<xref:System.Windows.Forms.DataGridView>控件。 许多<xref:System.Windows.Forms.DataGrid>自定义项都是使用不必要<xref:System.Windows.Forms.DataGridView>控制，但是，由于新控件中提供的内置功能。 如果已创建的自定义列类型<xref:System.Windows.Forms.DataGrid>你想要用于控件<xref:System.Windows.Forms.DataGridView>控件，将具有用于实现它们再次使用新的体系结构。 有关详细信息，请参阅[自定义 Windows 窗体 DataGridView 控件](customizing-the-windows-forms-datagridview-control.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGrid>
 - <xref:System.Windows.Forms.BindingSource>
@@ -43,7 +44,7 @@ ms.locfileid: "57720483"
 - [Windows 窗体 DataGridView 控件中的单元格样式](cell-styles-in-the-windows-forms-datagridview-control.md)
 - [Windows 窗体 DataGridView 控件中的数据显示模式](data-display-modes-in-the-windows-forms-datagridview-control.md)
 - [Windows 窗体 DataGridView 控件中的数据格式设置](data-formatting-in-the-windows-forms-datagridview-control.md)
-- [Windows 窗体 DataGridView 控件中的重设大小选项](sizing-options-in-the-windows-forms-datagridview-control.md)
+- [Windows 窗体 DataGridView 控件中的大小调整选项](sizing-options-in-the-windows-forms-datagridview-control.md)
 - [Windows 窗体 DataGridView 控件中的列排序模式](column-sort-modes-in-the-windows-forms-datagridview-control.md)
 - [Windows 窗体 DataGridView 控件中的选择模式](selection-modes-in-the-windows-forms-datagridview-control.md)
 - [自定义 Windows 窗体 DataGridView 控件](customizing-the-windows-forms-datagridview-control.md)

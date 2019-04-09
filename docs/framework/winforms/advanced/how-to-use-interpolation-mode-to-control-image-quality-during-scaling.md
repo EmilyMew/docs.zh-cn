@@ -1,5 +1,5 @@
 ---
-title: 如何：在缩放过程时使用插值模式控制图像质量
+title: 如何：在缩放期间使用内插模式控制图像质量
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - images [Windows Forms], scaling
 - images [Windows Forms], controlling quality
 ms.assetid: fde9bccf-8aa5-4b0d-ba4b-788740627b02
-ms.openlocfilehash: 93430f521904d9d38ba98f4055480583fd650114
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: 75f5077c2d969f026a28834144c219f289843dd6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58410363"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59080977"
 ---
-# <a name="how-to-use-interpolation-mode-to-control-image-quality-during-scaling"></a>如何：在缩放过程时使用插值模式控制图像质量
+# <a name="how-to-use-interpolation-mode-to-control-image-quality-during-scaling"></a>如何：在缩放期间使用内插模式控制图像质量
 内插模式<xref:System.Drawing.Graphics>对象的影响方式[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]缩放 （拉伸和收缩） 映像。 <xref:System.Drawing.Drawing2D.InterpolationMode>枚举定义多个内插模式，其中一些以下列表所示：  
   
 -   <xref:System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor>  
@@ -47,5 +47,6 @@ ms.locfileid: "58410363"
  前面的示例专用于 Windows 窗体，并且它需要<xref:System.Windows.Forms.PaintEventArgs> `e`，这是一个参数的<xref:System.Windows.Forms.Control.Paint>事件处理程序。  
   
 ## <a name="see-also"></a>请参阅
+
 - [图像、位图和图元文件](images-bitmaps-and-metafiles.md)
 - [使用图像、位图、图标和图元文件](working-with-images-bitmaps-icons-and-metafiles.md)

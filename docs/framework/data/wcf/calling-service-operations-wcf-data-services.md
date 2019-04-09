@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1767f3a7-29d2-4834-a763-7d169693fa8b
-ms.openlocfilehash: c11fe4176ee770e39abcab612e26e496aa2a1457
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5ef00861624531e68ad5b8a3b080810040ae3ff6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54543508"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59109468"
 ---
 # <a name="calling-service-operations-wcf-data-services"></a>调用服务操作（WCF 数据服务）
-[!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 定义数据服务的服务操作。 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]允许您将这类操作定义为数据服务的方法。 与其他数据服务资源一样，这些服务操作也通过 URI 进行寻址。 服务操作可以返回实体类型的集合、单个实体类型实例的集合和基元类型（如整数和字符串）的集合。 服务操作还可以返回 `null`（在 Visual Basic 中为 `Nothing`）。 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]客户端库可以用于访问支持 HTTP GET 请求的服务操作。 这些种类的服务操作定义为应用了 <xref:System.ServiceModel.Web.WebGetAttribute> 的方法。 有关详细信息，请参阅[服务操作](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)。  
+[!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] 定义数据服务的服务操作。 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 可以为数据服务的方法定义此类操作。 与其他数据服务资源一样，这些服务操作也通过 URI 进行寻址。 服务操作可以返回实体类型的集合、单个实体类型实例的集合和基元类型（如整数和字符串）的集合。 服务操作还可以返回 `null`（在 Visual Basic 中为 `Nothing`）。 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]客户端库可以用于访问支持 HTTP GET 请求的服务操作。 这些种类的服务操作定义为应用了 <xref:System.ServiceModel.Web.WebGetAttribute> 的方法。 有关详细信息，请参阅[服务操作](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)。  
   
  服务操作在实现 [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] 的数据服务所返回的元数据中公开。 在元数据中，服务操作表示为 `FunctionImport` 元素。 在生成强类型 <xref:System.Data.Services.Client.DataServiceContext> 时，“添加服务引用”和 DataSvcUtil.exe 工具将忽略此元素。 因此，无法在上下文中找到一种方法用来直接调用服务操作。 不过，您仍可使用 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 客户端并通过以下两种方式之一来调用服务操作：  
   
@@ -34,7 +34,7 @@ ms.locfileid: "54543508"
   
 -   请考虑对强类型 <xref:System.Data.Services.Client.DataServiceContext> 分部类创建扩展方法，该分部类通过工具生成，使用 <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> 或 <xref:System.Data.Services.Client.DataServiceContext.Execute%2A> 方法来调用服务操作。 这样您就可以直接从上下文调用服务操作。 有关详细信息，请参阅博客文章[服务操作和 WCF 数据服务客户端](https://go.microsoft.com/fwlink/?LinkId=215668)。  
   
--   使用 <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> 调用服务操作时，客户端库会自动对提供给 <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> 的字符进行转义，方法是执行保留字符百分比编码（如“and”符 (&)），并转义字符串中的单引号。 但是，当您调用之一*Execute*方法来调用服务操作时，您必须记得对执行的任何用户提供的字符串值的这种转义。 URI 中的单引号转义为单引号对。  
+-   当你使用<xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A>来调用服务操作时，客户端库会自动转义字符提供给<xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A>通过执行百分号编码保留字符，如 and 符 (&)、 和的中的单引号转义字符串。 但是，当您调用之一*Execute*方法来调用服务操作时，您必须记得对执行的任何用户提供的字符串值的这种转义。 URI 中的单引号转义为单引号对。  
   
 ## <a name="examples-of-calling-service-operations"></a>调用服务操作示例  
  本节通过以下示例演示如何使用 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 客户端库来调用服务操作：  
@@ -49,9 +49,9 @@ ms.locfileid: "54543508"
   
 -   [调用 Execute&lt;T&gt;以返回单个基元值](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecutePrimitiveValue)  
   
--   [调用服务操作不返回任何数据](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecuteVoid)  
+-   [调用不返回数据的服务操作](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecuteVoid)  
   
--   [以异步方式调用服务操作](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecuteAsync)  
+-   [异步调用服务操作](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecuteAsync)  
   
 <a name="ExecuteIQueryable"></a>   
 ### <a name="calling-executet-to-return-a-collection-of-entities"></a>调用 Execute\<T > 返回的实体集合  
@@ -125,4 +125,5 @@ ms.locfileid: "54543508"
  [!code-vb[Astoria Northwind Client#OnAsyncQueryExecutionComplete](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#onasyncqueryexecutioncomplete)]  
   
 ## <a name="see-also"></a>请参阅
-- [WCF Data Services 客户端库](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+
+- [WCF 数据服务客户端库](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

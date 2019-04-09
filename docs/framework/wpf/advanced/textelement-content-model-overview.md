@@ -9,17 +9,16 @@ helpviewer_keywords:
 - TextElement content model [WPF]
 - flow content elements [WPF], TextElement content model
 ms.assetid: d0a7791c-b090-438c-812f-b9d009d83ee9
-ms.openlocfilehash: 935d86195acaca94b0115a8cdcf7289c23613f7f
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
-ms.translationtype: MT
+ms.openlocfilehash: ecb9441bc63eae41cfbbadf3bf81b0e5392bd0cb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369755"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59125115"
 ---
 # <a name="textelement-content-model-overview"></a>TextElement 内容模型概述
 此内容模型概述介绍了支持的内容<xref:System.Windows.Documents.TextElement>。 <xref:System.Windows.Documents.Paragraph>类是一种<xref:System.Windows.Documents.TextElement>。 内容模型描述哪些对象/元素可包含在其他对象/元素中。 本概述概括了用于从派生的对象的内容模型<xref:System.Windows.Documents.TextElement>。 有关详细信息，请参阅[流文档概述](flow-document-overview.md)。  
-  
-  
+
 <a name="text_element_classes"></a>   
 ## <a name="content-model-diagram"></a>内容模型图  
  下图概括了内容模型，用于类派生自<xref:System.Windows.Documents.TextElement>以及其他非`TextElement`适应此模型的类。  
@@ -58,11 +57,11 @@ ms.locfileid: "57369755"
 ## <a name="working-with-textelement-content-programmatically"></a>以编程方式处理 TextElement 内容  
  内容<xref:System.Windows.Documents.TextElement>组成的集合，因此以编程方式操作的内容<xref:System.Windows.Documents.TextElement>对象通过使用这些集合。 有三个不同的集合使用<xref:System.Windows.Documents.TextElement>-派生的类：  
   
--   <xref:System.Windows.Documents.InlineCollection>：表示 <xref:System.Windows.Documents.Inline> 元素的集合。 <xref:System.Windows.Documents.InlineCollection> 定义 <xref:System.Windows.Documents.Paragraph>、<xref:System.Windows.Documents.Span> 和 <xref:System.Windows.Controls.TextBlock> 元素允许的子内容。  
+-   <xref:System.Windows.Documents.InlineCollection>:表示 <xref:System.Windows.Documents.Inline> 元素的集合。 <xref:System.Windows.Documents.InlineCollection> 定义允许的子内容的<xref:System.Windows.Documents.Paragraph>， <xref:System.Windows.Documents.Span>，和<xref:System.Windows.Controls.TextBlock>元素。  
   
--   <xref:System.Windows.Documents.BlockCollection>：表示 <xref:System.Windows.Documents.Block> 元素的集合。 <xref:System.Windows.Documents.BlockCollection> 定义 <xref:System.Windows.Documents.FlowDocument>、<xref:System.Windows.Documents.Section>、<xref:System.Windows.Documents.ListItem>、<xref:System.Windows.Documents.TableCell>、<xref:System.Windows.Documents.Floater> 和 <xref:System.Windows.Documents.Figure> 元素允许的子内容。  
+-   <xref:System.Windows.Documents.BlockCollection>:表示 <xref:System.Windows.Documents.Block> 元素的集合。 <xref:System.Windows.Documents.BlockCollection> 定义允许的子内容的<xref:System.Windows.Documents.FlowDocument>， <xref:System.Windows.Documents.Section>， <xref:System.Windows.Documents.ListItem>， <xref:System.Windows.Documents.TableCell>， <xref:System.Windows.Documents.Floater>，并<xref:System.Windows.Documents.Figure>元素。  
   
--   <xref:System.Windows.Documents.ListItemCollection>：流内容元素，表示特定内容项中有序或无序<xref:System.Windows.Documents.List>。  
+-   <xref:System.Windows.Documents.ListItemCollection>:流内容元素，表示特定内容项中有序或无序<xref:System.Windows.Documents.List>。  
   
  您可以操作 （添加或删除项目） 从这些集合使用的相应属性**Inlines**，**块**，和**ListItems**。 以下示例演示如何操作 s p a n 使用的内容**Inlines**属性。  
   
@@ -102,8 +101,9 @@ ms.locfileid: "57369755"
  请参阅[WPF 内容模型](../controls/wpf-content-model.md)。  
   
 ## <a name="see-also"></a>请参阅
-- [通过 Blocks 属性控制 FlowDocument](how-to-manipulate-a-flowdocument-through-the-blocks-property.md)
-- [通过 Blocks 属性控制流内容元素](how-to-manipulate-flow-content-elements-through-the-blocks-property.md)
-- [通过 Blocks 属性控制 FlowDocument](how-to-manipulate-a-flowdocument-through-the-blocks-property.md)
-- [通过 Columns 属性控制表列](how-to-manipulate-table-columns-through-the-columns-property.md)
+
+- [通过 Blocks 属性操作 FlowDocument](how-to-manipulate-a-flowdocument-through-the-blocks-property.md)
+- [通过 Blocks 属性操作流内容元素](how-to-manipulate-flow-content-elements-through-the-blocks-property.md)
+- [通过 Blocks 属性操作 FlowDocument](how-to-manipulate-a-flowdocument-through-the-blocks-property.md)
+- [通过 Columns 属性操作表的列](how-to-manipulate-table-columns-through-the-columns-property.md)
 - [通过 RowGroups 属性操作表的行组](how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)

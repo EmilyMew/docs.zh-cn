@@ -8,12 +8,12 @@ helpviewer_keywords:
 - width properties [WPF]
 - Panel control [WPF], width properties of elements
 ms.assetid: 6ee04a9d-63f0-4f5b-a406-0a8cd4c35729
-ms.openlocfilehash: a8fdc7c6659eb33f948741145c0b2e100bb133e4
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: a5ed67ba20176398a863a1e9826b1eab71b182f2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57376840"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096870"
 ---
 # <a name="how-to-set-the-width-properties-of-an-element"></a>如何：设置元素的宽度属性
 ## <a name="example"></a>示例  
@@ -34,6 +34,7 @@ ms.locfileid: "57376840"
  有关完整示例，请参阅[宽度属性比较示例](https://go.microsoft.com/fwlink/?LinkID=160050)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.ListBox>
 - <xref:System.Windows.FrameworkElement>
 - <xref:System.Windows.FrameworkElement.ActualWidth%2A>

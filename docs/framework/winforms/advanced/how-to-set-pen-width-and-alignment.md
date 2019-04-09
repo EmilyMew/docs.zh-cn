@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pens [Windows Forms], setting width
 - pens [Windows Forms], setting alignment
 ms.assetid: a202af36-4d31-4401-a126-b232f51db581
-ms.openlocfilehash: b01482c059906d76ad9e506b593d580431f0ec09
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.openlocfilehash: bc2ac2587554215ef3b2c2580413fbbb894aa687
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58828194"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59074971"
 ---
 # <a name="how-to-set-pen-width-and-alignment"></a>如何：设置钢笔的宽度和对齐方式
 当你创建<xref:System.Drawing.Pen>，可以作为构造函数的参数之一提供钢笔的宽度。 你可以使用笔的宽度<xref:System.Drawing.Pen.Width%2A>属性的<xref:System.Drawing.Pen>类。  
@@ -58,5 +58,6 @@ ms.locfileid: "58828194"
      ![使用黑色线条与宽绿线内绘制的矩形。](./media/how-to-set-pen-width-and-alignment/green-pixels-inside-rectangle.gif)  
   
 ## <a name="see-also"></a>请参阅
-- [使用笔绘制直线和形状](using-a-pen-to-draw-lines-and-shapes.md)
+
+- [使用钢笔绘制线条和形状](using-a-pen-to-draw-lines-and-shapes.md)
 - [Windows 窗体中的图形和绘制](graphics-and-drawing-in-windows-forms.md)

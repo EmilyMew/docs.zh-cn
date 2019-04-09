@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1f9bcd9b-8f8f-47fa-8f1e-0d47236eb800
-ms.openlocfilehash: d9824d4fdb7ffe78da8a8abaf3bac53d5c2e7ec2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
+ms.openlocfilehash: 1b8b344c713fdd27c67cf98c51c8c69198fd508f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54580132"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59127450"
 ---
 # <a name="how-to-access-a-wse-30-service-with-a-wcf-client"></a>如何：访问 WSE 3.0 服务与 WCF 客户端
 WCF 客户端配置为使用 2004 年 8 月版的 Ws-addressing 规范时，Windows Communication Foundation (WCF) 客户端是 Microsoft.NET 服务的网络级别兼容性与 Web Services Enhancements (WSE) 3.0。 但是，WSE 3.0 服务不支持元数据交换 (MEX) 协议，因此当你使用[ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)若要创建 WCF 客户端类，安全设置不会应用到生成WCF 客户端。 因此，必须指定安全设置 WSE 3.0 服务，需要生成 WCF 客户端之后。  
@@ -59,9 +59,8 @@ WCF 客户端配置为使用 2004 年 8 月版的 Ws-addressing 规范时，Wind
   
 ## <a name="example"></a>示例  
  下面的代码示例定义了一个自定义绑定，该绑定公开对应于 WSE 3.0 完整安全断言的各个属性的属性。 该自定义绑定，名为`WseHttpBinding`，然后用于指定与 WSSecurityAnonymous WSE 3.0 快速入门示例通信的 WCF 客户端的绑定属性。  
-  
-  
-  
+
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Channels.Binding>
 - [与 WSE 互操作](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)

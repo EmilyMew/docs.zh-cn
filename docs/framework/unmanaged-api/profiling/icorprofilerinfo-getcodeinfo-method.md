@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 2e96a84f9dc96b2eb508034d5277902ff3f328c1
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 1d069446ecb0b630870f0d2c9c4bdc23232c40c6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57490081"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59120687"
 ---
 # <a name="icorprofilerinfogetcodeinfo-method"></a>ICorProfilerInfo::GetCodeInfo 方法
 获取与指定函数 ID 关联的本机代码的范围。  
@@ -63,6 +63,7 @@ HRESULT GetCodeInfo(
  **.NET framework 版本：** 1.0  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICorProfilerInfo 接口](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
-- [Profiling 接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [分析接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
 - [分析](../../../../docs/framework/unmanaged-api/profiling/index.md)

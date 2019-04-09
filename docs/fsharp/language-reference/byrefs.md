@@ -2,12 +2,12 @@
 title: Byref
 description: 了解有关 byref 和类似 byref 类型在F#，用于低级编程。
 ms.date: 09/02/2018
-ms.openlocfilehash: d8d8b2f0c9965a06e823e9be4e8d1b34201cc471
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: c0bad26672fbb9eb315eee1c3e275183ddeb9297
+ms.sourcegitcommit: 68eb5c4928e2b082f178a42c16f73fedf52c2ab8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56976546"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59055360"
 ---
 # <a name="byrefs"></a>Byref
 
@@ -56,9 +56,10 @@ open System
 
 let f (dt: inref<DateTime>) =
     printfn "Now: %s" (dt.ToString())
-
-let dt = DateTime.Now
-f &dt // Pass a pointer to 'dt'
+    
+let usage =
+    let dt = DateTime.Now
+    f &dt // Pass a pointer to 'dt'
 ```
 
 若要使用写入指针`outref<'T>`或`byref<'T>`，你还必须对获取指向指针的值`mutable`。
@@ -84,7 +85,7 @@ f &dt
 考虑下列代码：
 
 ```fsharp
-let f (x: inref<SomeStruct>) = s.SomeField
+let f (x: inref<SomeStruct>) = x.SomeField
 ```
 
 在语义上，这意味着以下内容：
@@ -120,10 +121,10 @@ C# 支持`in ref`并`out ref`关键字，除了`ref`返回。 下表显示了如
 
 |F#构造|发出的构造|
 |------------|-----------------|
-|`inref<'T>` 自变量|`[In]` 在参数上的属性|
-|`inref<'T>` 返回|`modreq` 属性值|
+|`inref<'T>` argument（参数）|`[In]` 在参数上的属性|
+|`inref<'T>` return|`modreq` 属性值|
 |`inref<'T>` 在抽象槽或实现|`modreq` 在自变量或返回|
-|`outref<'T>` 自变量|`[Out]` 在参数上的属性|
+|`outref<'T>` argument（参数）|`[Out]` 在参数上的属性|
 
 ### <a name="type-inference-and-overloading-rules"></a>类型推理和重载规则
 

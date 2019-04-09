@@ -9,18 +9,16 @@ helpviewer_keywords:
 - ', '
 - flow documents [WPF]
 ms.assetid: ef236a50-d44f-43c8-ba7c-82b0c733c0b7
-ms.openlocfilehash: 9f61de9bf528690e6057ec445ea7f1b77b3be0b9
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.openlocfilehash: 14402bde39ec90d8ef17ed5ee07f9eefb8151939
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58828467"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59139602"
 ---
 # <a name="flow-document-overview"></a>流文档概述
 流文档旨在优化查看和可读性。 流文档根据运行时变量（例如，窗口大小、设备分辨率和可选的用户首选项）来动态调整和重新排列内容，而不是设置为一个预定义的布局。 此外，流文档还提供一些高级文档功能，例如分页和分栏。 本主题概述了流文档及其创建方式。  
-  
 
-  
 <a name="what_is_a_flow_document"></a>   
 ## <a name="what-is-a-flow-document"></a>什么是流文档？  
  流文档旨在根据窗口大小、设备分辨率和其他环境变量来“重排内容”。 此外，流文档还具有很多内置功能，包括搜索、能够优化可读性的查看模式以及更改字体大小和外观的功能。 当易读性是文档的主要使用要求时，最适合使用流文档。 相反，固定文档旨在提供静态表示形式。 当源内容的保真度至关重要时，就适合使用固定文档。 请参阅[WPF 中的文档](documents-in-wpf.md)为不同类型的文档的详细信息。  
@@ -98,7 +96,7 @@ ms.locfileid: "58828467"
  下面简要介绍了这两个类别中的每个类。  
   
 ### <a name="block-derived-classes"></a>Block 派生类  
- **Paragraph**  
+ **段落**  
   
  <xref:System.Windows.Documents.Paragraph> 常用于将内容分组到一个段落。 Paragraph 的最简单且最常见的用途是创建文本段落。  
   
@@ -132,7 +130,7 @@ ms.locfileid: "58828467"
   
  ![在流内容中嵌入显示 UIElement 的屏幕截图。](./media/flow-document-overview/embedded-blockuicontainer.png)  
   
- **List**  
+ **列表**  
   
  <xref:System.Windows.Documents.List> 用于创建项目符号列表或数值列表。 设置<xref:System.Windows.Documents.List.MarkerStyle%2A>属性设置为<xref:System.Windows.TextMarkerStyle>枚举值，以确定列表的样式。 下例演示了如何创建简单列表。  
   
@@ -143,7 +141,7 @@ ms.locfileid: "58828467"
   
  **注意：** <xref:System.Windows.Documents.List>是使用的唯一流元素<xref:System.Windows.Documents.ListItemCollection>来管理子元素。  
   
- **Table**  
+ **表**  
   
  <xref:System.Windows.Documents.Table> 用于创建表。 <xref:System.Windows.Documents.Table> 类似于<xref:System.Windows.Controls.Grid>元素，但它会提供更多功能，因此，需要更大的资源开销。 因为<xref:System.Windows.Controls.Grid>是<xref:System.Windows.UIElement>，除非它包含在不能在流内容中使用它<xref:System.Windows.Documents.BlockUIContainer>或<xref:System.Windows.Documents.InlineUIContainer>。 有关详细信息<xref:System.Windows.Documents.Table>，请参阅[表概述](table-overview.md)。  
   
@@ -156,7 +154,7 @@ ms.locfileid: "58828467"
   
  **注意：** 在中启动[!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)]，则<xref:System.Windows.Documents.Run.Text%2A>属性的<xref:System.Windows.Documents.Run>对象是依赖项属性。 可以将绑定<xref:System.Windows.Documents.Run.Text%2A>属性设置为数据源，如<xref:System.Windows.Controls.TextBlock>。 <xref:System.Windows.Documents.Run.Text%2A>属性完全支持单向绑定。 <xref:System.Windows.Documents.Run.Text%2A>属性还支持双向绑定，除<xref:System.Windows.Controls.RichTextBox>。 有关示例，请参见 <xref:System.Windows.Documents.Run.Text%2A?displayProperty=nameWithType>。  
   
- **Span**  
+ **s p a n**  
   
  <xref:System.Windows.Documents.Span> 其他内联内容元素组合在一起。 中的内容应用任何继承呈现<xref:System.Windows.Documents.Span>元素。 但是，元素的继承自<xref:System.Windows.Documents.Span>包括<xref:System.Windows.Documents.Hyperlink>， <xref:System.Windows.Documents.Bold>，<xref:System.Windows.Documents.Italic>和<xref:System.Windows.Documents.Underline>是否将格式应用于文本。  
   
@@ -196,7 +194,7 @@ ms.locfileid: "58828467"
   
  <xref:System.Windows.Documents.Figure> 和<xref:System.Windows.Documents.Floater>在几个方面存在差异，并可用于不同的方案。  
   
- **Figure：**  
+ **图：**  
   
 -   可定位：您可以设置其水平和垂直定位点，以停放它相对于页面、 内容、 列或段落。 此外可以使用其<xref:System.Windows.Documents.Figure.HorizontalOffset%2A>和<xref:System.Windows.Documents.Figure.VerticalOffset%2A>属性以指定任意偏移量。  
   
@@ -204,7 +202,7 @@ ms.locfileid: "58828467"
   
 -   不分页：如果中的内容<xref:System.Windows.Documents.Figure>不适合在<xref:System.Windows.Documents.Figure>，它会呈现能够容纳的内容和其余内容将丢失  
   
- **Floater：**  
+ **浮标：**  
   
 -   无法定位，可在能够为其提供空间的任何位置呈现。 不能设置偏移量或定位点<xref:System.Windows.Documents.Floater>。  
   
@@ -349,7 +347,8 @@ ms.locfileid: "58828467"
  请参阅[WPF 中的版式](typography-in-wpf.md)有关版式的详细信息。  
   
 ## <a name="see-also"></a>请参阅
-- [文本](optimizing-performance-text.md)
+
+- [Text](optimizing-performance-text.md)
 - [WPF 中的版式](typography-in-wpf.md)
 - [帮助主题](flow-content-elements-how-to-topics.md)
 - [TextElement 内容模型概述](textelement-content-model-overview.md)

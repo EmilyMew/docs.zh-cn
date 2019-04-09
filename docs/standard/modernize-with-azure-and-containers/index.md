@@ -4,6 +4,12 @@ description: 了解如何迁移并更新现有应用程序对 Azure 云以及与
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 04/28/2018
+ms.openlocfilehash: 68d5ce7ad71fae5ed3e1460c56581dd69c3925f3
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675921"
 ---
 # <a name="modernize-existing-net-applications-with-azure-cloud-and-windows-containers-2nd-edition"></a>更新现有.NET 应用程序使用 Azure 云和 Windows 容器 （第二版）
 

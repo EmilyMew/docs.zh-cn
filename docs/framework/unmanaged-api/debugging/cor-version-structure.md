@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e07487f536454d9d2dcfff15eb871124112d250e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 00e58d83c19c3cb6a2e1eb38942500d7f5dc5cf9
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54634938"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59118919"
 ---
 # <a name="corversion-structure"></a>COR_VERSION 结构
 存储由四个部分组成的公共语言运行时标准版本号。  
@@ -56,8 +56,9 @@ typedef struct _COR_VERSION {
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [调试结构](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [调试](../../../../docs/framework/unmanaged-api/debugging/index.md)

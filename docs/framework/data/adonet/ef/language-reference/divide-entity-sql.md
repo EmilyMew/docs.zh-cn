@@ -2,12 +2,12 @@
 title: '- （除）(Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: ef48c368-f3ed-4275-8ada-4e9649781262
-ms.openlocfilehash: 42fc5e2a9f9f159a8a60973dbed6540b3188fba6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ca63835a3be23137a1a40d6d6597083ae2128ac7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54745228"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59094887"
 ---
 # <a name="-divide-entity-sql"></a>/（除）(Entity SQL)
 一个数字除另一个数字。  
@@ -38,4 +38,5 @@ dividend / divisor
  [!code-csharp[DP EntityServices Concepts 2#DIVIDE](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#divide)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体 SQL 引用](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

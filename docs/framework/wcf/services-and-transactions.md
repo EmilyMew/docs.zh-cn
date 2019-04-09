@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - service contracts [WCF], designing services and transactions
 ms.assetid: 864813ff-2709-4376-912d-f5c8d318c460
-ms.openlocfilehash: 5078e12ed5c68556a1d1d04d01c90440b57c1407
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9dfe34406bfda2c16bd2f0cd53796b2fcef07b57
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54736398"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59138328"
 ---
 # <a name="services-and-transactions"></a>服务和事务
 Windows Communication Foundation (WCF) 应用程序可以启动从事务中客户端和服务操作中协调该事务。 客户端可以启动事务和调用多个服务操作，并可确保服务操作作为一个单元提交或回滚。  
@@ -89,6 +89,7 @@ using (TransactionScope ts = new TransactionScope(TransactionScopeOption.Require
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [System.ServiceModel 中的事务性支持](../../../docs/framework/wcf/feature-details/transactional-support-in-system-servicemodel.md)
 - [事务模型](../../../docs/framework/wcf/feature-details/transaction-models.md)
 - [WS 事务流](../../../docs/framework/wcf/samples/ws-transaction-flow.md)

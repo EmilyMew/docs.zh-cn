@@ -3,12 +3,12 @@ title: <state> 的 <states>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: ab483c7f-a091-4933-ba6b-708d96846d38
-ms.openlocfilehash: 657814eb120878cdc71cd7603d0499ff65ca50e8
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: ff75895949c50cd369e4297ea77dc21106994067
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57367084"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073931"
 ---
 # <a name="state-of-states"></a>\<状态 > 的\<状态 >
 一个配置元素，该元素包含应为其发出跟踪记录的已订阅活动的状态。  
@@ -77,6 +77,7 @@ ms.locfileid: "57367084"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=nameWithType>
 - [工作流跟踪](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

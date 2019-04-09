@@ -10,12 +10,12 @@ helpviewer_keywords:
 - custom controls [Windows Forms], exposing properties
 - constituent controls
 ms.assetid: 5c1ec98b-aa48-4823-986e-4712551cfdf1
-ms.openlocfilehash: 75ee93b7a601b4fc1480dca708d78740664c9a85
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 750caa1f45f870e63a5b7ccbe0c309e6fb0b3178
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57704511"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59106348"
 ---
 # <a name="how-to-expose-properties-of-constituent-controls"></a>如何：公开构成控件的属性
 构成复合控件的控件称为*构成控件*。 这些控件通常被声明为私有的并因此不能由开发人员访问。 如果你想要使这些控件的属性可供将来的用户，必须向用户公开它们。 通过在用户控件中，创建属性并使用公开构成控件的属性`get`和`set`该属性的访问器以构成控件的私有属性更改生效。  
@@ -58,6 +58,7 @@ public Color ButtonColor
 3.  在`set`一部分的属性，编写代码，将属性的值传递给构成控件的公开的属性。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.UserControl>
 - [Windows 窗体控件中的属性](properties-in-windows-forms-controls.md)
 - [各种自定义控件](varieties-of-custom-controls.md)

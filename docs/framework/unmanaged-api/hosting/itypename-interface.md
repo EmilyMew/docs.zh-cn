@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c428143fa11f15a974d5b4e86327230cf78e3e6f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 113bf001fb714a01880fafe470e331eeefbc5071
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54495359"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59109676"
 ---
 # <a name="itypename-interface"></a>ITypeName 接口
 提供用于获取类型名称信息的方法。  
@@ -35,7 +35,8 @@ ms.locfileid: "54495359"
   
  **库：** 包含为 MSCorEE.dll 中的资源  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [承载接口](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

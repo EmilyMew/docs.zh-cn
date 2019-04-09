@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: fce89a1c30525ef190cf7c24bcd54d3daa466df0
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 804c8c9434983b12b0647395c49197bf5026239b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54712491"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59180981"
 ---
 # <a name="imetadatavalidate-interface"></a>IMetaDataValidate 接口
 提供验证元数据签名的方法。  
@@ -40,7 +40,8 @@ ms.locfileid: "54712491"
   
  **库：** 用作 MsCorEE.dll 中的资源  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [元数据接口](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)

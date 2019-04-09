@@ -1,24 +1,24 @@
 ---
-title: 如何：指定针对并发冲突对哪些成员进行测试
+title: 如何：指定要对哪些成员进行并发冲突测试
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d2cda293-1e2f-4878-af0e-5aaf0d092120
-ms.openlocfilehash: 1007cbc0961d01574fd60ec50eb63406ec7adef9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a690e95cadad4ed089fe1bb3ba6fea541a57411f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54724575"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59076297"
 ---
-# <a name="how-to-specify-which-members-are-tested-for-concurrency-conflicts"></a>如何：指定针对并发冲突对哪些成员进行测试
+# <a name="how-to-specify-which-members-are-tested-for-concurrency-conflicts"></a>如何：指定要对哪些成员进行并发冲突测试
 应用到三个枚举之一[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]<xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A>属性上的<xref:System.Data.Linq.Mapping.ColumnAttribute>属性来指定哪些成员是否将要包括在更新检查的开放式并发冲突的检测。  
   
  <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> 属性（在设计时映射）与 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 中的运行时并发功能一起使用。 有关详细信息，请参阅[开放式并发：概述](../../../../../../docs/framework/data/adonet/sql/linq/optimistic-concurrency-overview.md)。  
   
 > [!NOTE]
->  只要未将任何成员指定为 `IsVersion=true`，就会将原始成员值与当前数据库状态进行比较。 有关详细信息，请参阅<xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A>。  
+>  只要未将任何成员指定为 `IsVersion=true`，就会将原始成员值与当前数据库状态进行比较。 有关详细信息，请参阅 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A>。  
   
  有关代码示例，请参见<xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A>。  
   
@@ -47,5 +47,6 @@ ms.locfileid: "54724575"
  [!code-vb[System.Data.Linq.Mapping.UpdateCheck#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.mapping.updatecheck/vb/northwind.vb#1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：管理更改冲突](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)
 - [进行和提交数据更改](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)

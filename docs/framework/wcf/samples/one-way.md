@@ -2,12 +2,12 @@
 title: 单向
 ms.date: 03/30/2017
 ms.assetid: 74e3e03d-cd15-4191-a6a5-1efa2dcb9e73
-ms.openlocfilehash: e4b8a805fdbe4f330496233d5234abc0169b8c6e
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
-ms.translationtype: MT
+ms.openlocfilehash: 53718b6523bb76e30233540323d5f4f87d466fed
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58826686"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59131321"
 ---
 # <a name="one-way"></a>单向
 此示例演示具有单向服务操作的服务协定。 客户端不会像在双向服务操作中那样等待服务操作完成。 此示例基于[Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) ，并使用`wsHttpBinding`绑定。 此示例中的服务是自承载控制台应用程序，通过它可以观察接收和处理请求的服务。 客户端也是一个控制台应用程序。  
@@ -84,7 +84,7 @@ Processing Divide(22,7) - result: 3.14285714285714
 ```  
   
 > [!NOTE]
->  HTTP 从定义上讲是一个请求/响应协议；当发出请求时，即返回响应。 即使对于通过 HTTP 公开的单向服务操作，也是如此。 当调用操作时，服务在执行服务操作之前返回 HTTP 状态码 202。 此状态码表示请求已被接受进行处理，但处理尚未完成。 调用操作的客户端在从服务收到 202 响应之前处于阻止状态。 当使用绑定（配置为使用会话）发送多个单向消息时，这可能会产生某些意外行为。 此示例中使用的 `wsHttpBinding` 绑定配置为默认使用会话来建立安全上下文。 默认情况下，会话中的消息一定会按照它们的发送顺序到达。 因此，当发送会话中的第二个消息时，在处理完第一个消息之前不会处理第二个消息。 这样的结果是，在处理完上一个消息之前，客户端不会收到消息的 202 响应。 因此，客户端似乎是阻止了每个后续的操作调用。 为了避免此行为，此示例对运行库进行了配置，以便将消息并发调度给不同的实例进行处理。 本示例将 <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> 设置为 `PerCall`，以使每条消息可以由不同的实例来处理。 <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> 设置为 `Multiple`，以允许多个线程同时调度消息。  
+>  HTTP 从定义上讲是一个请求/响应协议；当发出请求时，即返回响应。 即使对于通过 HTTP 公开的单向服务操作，也是如此。 当调用操作时，服务在执行服务操作之前返回 HTTP 状态码 202。 此状态码表示请求已被接受进行处理，但处理尚未完成。 调用操作的客户端在从服务收到 202 响应之前处于阻止状态。 当使用绑定（配置为使用会话）发送多个单向消息时，这可能会产生某些意外行为。 此示例中使用的 `wsHttpBinding` 绑定配置为默认使用会话来建立安全上下文。 默认情况下，会话中的消息一定会按照它们的发送顺序到达。 因此，当发送会话中的第二个消息时，在处理完第一个消息之前不会处理第二个消息。 这样的结果是，在处理完上一个消息之前，客户端不会收到消息的 202 响应。 因此，客户端似乎是阻止了每个后续的操作调用。 为了避免此行为，此示例对运行库进行了配置，以便将消息并发调度给不同的实例进行处理。 本示例将 <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> 设置为 `PerCall`，以使每条消息可以由不同的实例来处理。 <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> 设置为`Multiple`以允许多个线程同时调度消息。  
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>设置、生成和运行示例  
   
@@ -105,4 +105,3 @@ Processing Divide(22,7) - result: 3.14285714285714
 >  如果此目录不存在，请转到[Windows Communication Foundation (WCF) 和.NET Framework 4 的 Windows Workflow Foundation (WF) 示例](https://go.microsoft.com/fwlink/?LinkId=150780)若要下载所有 Windows Communication Foundation (WCF) 和[!INCLUDE[wf1](../../../../includes/wf1-md.md)]示例。 此示例位于以下目录：  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Service\Oneway`  
-  

@@ -12,12 +12,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 45278b116ce1ea1a910d806df408c8692338d9a9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: add1458bb3a50a5e5433e8cc7baaf47d750c927d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54634371"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083668"
 ---
 # <a name="cordebugrecordformat-enumeration"></a>“Cor调试记录格式”枚举
 描述包含本机异常调试事件相关信息的字节数组的数据格式。  
@@ -51,7 +51,8 @@ typedef enum CorDebugRecordFormat {
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [调试枚举](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

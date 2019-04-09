@@ -1,19 +1,19 @@
 ---
-title: 如何：在 PathGeometry 内部创建多个子路径
+title: 如何：在 PathGeometry 内创建多个子路径
 ms.date: 03/30/2017
 helpviewer_keywords:
 - multiple subpaths [WPF]
 - graphics [WPF], subpaths
 - subpaths [WPF]
 ms.assetid: 104a862c-dde2-4e62-ac87-80660dd1681c
-ms.openlocfilehash: 0b57d0441c1aa9d5972af1f1c6b989aacba7f87f
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 286075448cd6a343f8a7b15b2b5005f840f68e1d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57353358"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59111743"
 ---
-# <a name="how-to-create-multiple-subpaths-within-a-pathgeometry"></a>如何：在 PathGeometry 内部创建多个子路径
+# <a name="how-to-create-multiple-subpaths-within-a-pathgeometry"></a>如何：在 PathGeometry 内创建多个子路径
 此示例演示如何创建在多个子路径<xref:System.Windows.Media.PathGeometry>。 若要创建多个子路径，您创建<xref:System.Windows.Media.PathFigure>每一子路径。  
   
 ## <a name="example"></a>示例  
@@ -28,4 +28,5 @@ ms.locfileid: "57353358"
  (请注意，此属性语法实际上创建了<xref:System.Windows.Media.StreamGeometry>的轻量版本<xref:System.Windows.Media.PathGeometry>。 有关详细信息，请参阅[路径标记语法](path-markup-syntax.md)页。）  
   
 ## <a name="see-also"></a>请参阅
+
 - [Geometry 概述](geometry-overview.md)

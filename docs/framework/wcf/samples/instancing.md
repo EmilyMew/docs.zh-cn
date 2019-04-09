@@ -5,12 +5,12 @@ helpviewer_keywords:
 - service behaviors, instancing sample
 - Instancing Sample [Windows Communication Foundation]
 ms.assetid: c290fa54-f6ae-45a1-9186-d9504ebc6ee6
-ms.openlocfilehash: 25c29afce4890dcb9cc5f9000ec3d46a91d3e846
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
-ms.translationtype: MT
+ms.openlocfilehash: 046bb61b50540b2c58bd8ed9971620662f308823
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58836189"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59133583"
 ---
 # <a name="instancing"></a>实例化
 “实例化”示例演示实例化行为设置，此设置控制如何响应客户端请求来创建服务类的实例。 该示例基于[Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)，它可以实现`ICalculator`服务协定。 本示例定义从 `ICalculatorInstance` 继承的新协定 `ICalculator`。 用 `ICalculatorInstance` 指定的协定提供了三个附加操作，用于检查服务实例的状态。 通过更改实例化设置，运行客户端时可以观察到行为中的更改。  
@@ -22,11 +22,11 @@ ms.locfileid: "58836189"
   
  可以使用下列实例化模式：  
   
--   <xref:System.ServiceModel.InstanceContextMode.PerCall>：为每个客户端请求创建新的服务实例。  
+-   <xref:System.ServiceModel.InstanceContextMode.PerCall>:为每个客户端请求创建新的服务实例。  
   
--   <xref:System.ServiceModel.InstanceContextMode.PerSession>：为每个新的客户端会话创建和维护 （需要支持会话的绑定） 该会话的生存期内的新实例。  
+-   <xref:System.ServiceModel.InstanceContextMode.PerSession>:为每个新的客户端会话创建和维护 （需要支持会话的绑定） 该会话的生存期内的新实例。  
   
--   <xref:System.ServiceModel.InstanceContextMode.Single>：服务类的单个实例处理的应用程序的生存期的所有客户端请求。  
+-   <xref:System.ServiceModel.InstanceContextMode.Single>:服务类的单个实例处理的应用程序的生存期的所有客户端请求。  
   
  服务类使用以下代码示例中显示的 `[ServiceBehavior(InstanceContextMode=<setting>)]` 属性来指定实例化行为。 通过更改注释掉的行，可以观察每个实例模式的行为。 更改实例化模式之后要记着重新生成服务。 没有要在客户端上指定的实例化相关设置。  
   
@@ -138,4 +138,3 @@ static void Main()
 >  如果此目录不存在，请转到[Windows Communication Foundation (WCF) 和.NET Framework 4 的 Windows Workflow Foundation (WF) 示例](https://go.microsoft.com/fwlink/?LinkId=150780)若要下载所有 Windows Communication Foundation (WCF) 和[!INCLUDE[wf1](../../../../includes/wf1-md.md)]示例。 此示例位于以下目录：  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\Instancing`  
-  

@@ -5,22 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d613a22b-07d7-41a4-bada-1adc653b9b5d
-ms.openlocfilehash: 8c0807a7b811cf2cb3a13576018373d135e3e5cd
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a5a32220ad1f638bf2e93051e9b436d8270aec2f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54554460"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59082186"
 ---
 # <a name="overriding-the-identity-of-a-service-for-authentication"></a>重写服务标识以便进行身份验证
 通常情况下不需要设置服务上的标识，因为客户端凭据类型的选择即规定了服务元数据中公开的标识的类型。 例如，下面的配置代码使用[ \<wsHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)元素并设置`clientCredentialType`属性到 Windows。  
-  
-  
-  
+
  下面的 Web 服务描述语言 (WSDL) 片断演示前面定义的终结点的标识。 在此示例中，在服务作为自承载服务的特定用户帐户下运行 (username@contoso.com)，因此用户主体名称 (UPN) 标识包含帐户名称。 在 Windows 域中，UPN 也称为用户登录名。  
-  
-  
-  
+
  有关演示标识设置的示例应用程序，请参阅[服务标识示例](../../../../docs/framework/wcf/samples/service-identity-sample.md)。 有关服务标识的详细信息，请参阅[服务标识和身份验证](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)。  
   
 ## <a name="kerberos-authentication-and-identity"></a>Kerberos 身份验证和标识  
@@ -52,13 +48,9 @@ ms.locfileid: "54554460"
   
 ### <a name="using-the-identity-element-in-configuration"></a>使用\<标识 > 配置中的元素  
  如果将前面演示的绑定中的客户端凭据类型更改为证书`,`，则生成的 WSDL 将包含一个 Base64 序列化 X.509 证书作为标识值，如下面的代码所示。 这是除 Windows 之外的所有客户端凭据类型的默认值。  
-  
-  
-  
- 通过在配置中使用 <`identity`> 元素或在代码中设置标识，可以更改默认服务标识值或更改该标识的类型。 下面的配置代码使用值 `contoso.com` 设置域名系统 (DNS) 标识。  
-  
-  
-  
+
+ 可以更改默认服务标识的值，也可以使用更改的标识的类型 <`identity`> 元素中配置或代码中设置标识。 下面的配置代码使用值 `contoso.com` 设置域名系统 (DNS) 标识。  
+
 ### <a name="setting-identity-programmatically"></a>以编程方式设置标识  
  你的服务无需显式指定标识，因为 WCF 会自动确定。 但是，WCF 允许您终结点上指定标识必要。 下面的代码使用特定的 DNS 标识添加了一个新的服务终结点。  
   
@@ -66,5 +58,6 @@ ms.locfileid: "54554460"
  [!code-vb[C_Identity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_identity/vb/source.vb#5)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：创建自定义客户端标识验证工具](../../../../docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md)
 - [服务标识和身份验证](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)

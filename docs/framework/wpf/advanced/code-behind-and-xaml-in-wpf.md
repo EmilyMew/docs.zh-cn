@@ -5,12 +5,12 @@ helpviewer_keywords:
 - XAML [WPF], code-behind
 - code-behind files [WPF], XAML
 ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
-ms.openlocfilehash: 6980e6cf90b584e96255293affc019ebca9ad561
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 4a77060661cb0d71b0209cbcdeba23ffc2c6e5c7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369313"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59088555"
 ---
 # <a name="code-behind-and-xaml-in-wpf"></a>WPF 中的代码隐藏和 XAML
 <a name="introduction"></a> 代码隐藏是一个术语，用于描述标记定义的对象，与联接的代码时[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]页进行标记编译。 本主题介绍了代码隐藏的要求以及代码中的可选内联代码机制[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]。  
@@ -59,6 +59,7 @@ ms.locfileid: "57369313"
  应考虑避免或限制的内联代码使用。 根据体系结构和编码基本原理，维护分离标记和代码隐藏保留设计器和开发人员角色得更为明显。 在更多技术级别中，为内联代码编写的代码可能难以编写，因为始终写入[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]生成的分部类，并且只能使用默认 XML 命名空间映射。 因为不能添加`using`语句，您必须完全限定的许多[!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)]所做的调用。 默认值[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]映射包括最而不是全部[!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)]命名空间中存在的[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]程序集; 必须完全限定的类型和成员中的其他 CLR 命名空间包含对的调用。 您还不能定义分部类以外的项目中的内联代码，并且您引用的所有用户代码实体必须都存在作为成员或生成的分部类中的变量。 其他语言特定编程功能，例如宏或`#ifdef`对全局变量或生成变量，也不是可用。 有关详细信息，请参阅[X:code 内部 XAML 类型](../../xaml-services/x-code-intrinsic-xaml-type.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [XAML 概述 (WPF)](xaml-overview-wpf.md)
 - [x:Code 内部 XAML 类型](../../xaml-services/x-code-intrinsic-xaml-type.md)
 - [生成 WPF 应用程序](../app-development/building-a-wpf-application-wpf.md)

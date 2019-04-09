@@ -9,12 +9,12 @@ helpviewer_keywords:
 - file name extension icons [Windows Forms], displaying in a ListView
 - extracting icons associated with a file type [Windows Forms]
 ms.assetid: 88e2ad8b-c34f-415a-84f2-dad756b5c928
-ms.openlocfilehash: 5cbce48643d21418d580a6db44f86b00cf50fb9d
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: d754dc5e8a57b3c4e2e5439bb2524a22d44813c6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57714185"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59112549"
 ---
 # <a name="how-to-extract-the-icon-associated-with-a-file-in-windows-forms"></a>如何：提取与 Windows 窗体中的文件关联的图标
 多个文件有嵌入提供关联的文件类型的可视表示形式的图标。 例如，Microsoft Word 文档包含标识为 Word 文档的图标。 当列表控件或表控件中显示文件，可能想要显示的图标表示每个文件名旁边的文件类型。 您可以轻松执行此操作通过使用<xref:System.Drawing.Icon.ExtractAssociatedIcon%2A>方法。  
@@ -33,5 +33,6 @@ ms.locfileid: "57714185"
      将需要确保你的窗体将导入<xref:System.IO>命名空间。  
   
 ## <a name="see-also"></a>请参阅
+
 - [图像、位图和图元文件](images-bitmaps-and-metafiles.md)
 - [ListView 控件](../controls/listview-control-windows-forms.md)

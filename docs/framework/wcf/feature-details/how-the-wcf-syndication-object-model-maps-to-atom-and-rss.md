@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 0365eb37-98cc-4b13-80fb-f1e78847a748
-ms.openlocfilehash: 7619dbfcdb0a3a219c9245d30518ffec8b586360
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b5a7f68edc49a02bb99ca05765d4582b798e72ef
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54671416"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59127382"
 ---
 # <a name="how-the-wcf-syndication-object-model-maps-to-atom-and-rss"></a>WCF 联合对象模型如何映射到 Atom 和 RSS
 开发 Windows Communication Foundation (WCF) 联合服务时，您创建源和项使用以下类：  
@@ -398,8 +398,9 @@ ms.locfileid: "54671416"
  `</content>`  
   
 ## <a name="see-also"></a>请参阅
+
 - [WCF 联合概述](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)
 - [联合体系结构](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)
 - [如何：创建基本 RSS 源](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-rss-feed.md)
 - [如何：创建基本 Atom 源](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-atom-feed.md)
-- [如何：公开源作为 Atom 和 RSS](../../../../docs/framework/wcf/feature-details/how-to-expose-a-feed-as-both-atom-and-rss.md)
+- [如何：作为 Atom 和 RSS 公开源](../../../../docs/framework/wcf/feature-details/how-to-expose-a-feed-as-both-atom-and-rss.md)

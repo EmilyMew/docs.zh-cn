@@ -12,12 +12,12 @@ helpviewer_keywords:
 - check boxes [Windows Forms], using to set options
 - CheckBox control [Windows Forms], using to set options
 ms.assetid: 2ac70498-7e3e-4e07-8901-ccabaeb5fd3e
-ms.openlocfilehash: 3eb68d76d936f13e78d13629455c6ac7fb537b40
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 926e89272e9ebedb0668b26b96b1614e85e637ea
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57714783"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59095912"
 ---
 # <a name="how-to-set-options-with-windows-forms-checkbox-controls"></a>如何：使用 Windows 窗体 CheckBox 控件设置选项
 Windows 窗体<xref:System.Windows.Forms.CheckBox>控制用于授予用户 True/False 或 Yes/No 选项。 选择此项时，该控件将显示一个复选标记。  
@@ -66,7 +66,8 @@ Windows 窗体<xref:System.Windows.Forms.CheckBox>控制用于授予用户 True/
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.CheckBox>
 - [CheckBox 控件概述](checkbox-control-overview-windows-forms.md)
-- [如何：响应 Windows 窗体 CheckBox 控件单击](how-to-respond-to-windows-forms-checkbox-clicks.md)
+- [如何：响应 Windows 窗体 CheckBox 的单击](how-to-respond-to-windows-forms-checkbox-clicks.md)
 - [CheckBox 控件](checkbox-control-windows-forms.md)

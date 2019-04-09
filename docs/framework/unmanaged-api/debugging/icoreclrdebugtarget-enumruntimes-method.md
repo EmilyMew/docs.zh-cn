@@ -19,12 +19,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b9b434edc10a7c11d738bd3fc10402ef3f83d9dc
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: afb31646d21ec7e15f79601f5fe83ea6ce44fa90
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57468261"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59134668"
 ---
 # <a name="icoreclrdebugtargetenumruntimes-method"></a>ICoreClrDebugTarget::EnumRuntimes 方法
 枚举在远程计算机上运行的指定进程中的公共语言运行时 (CLR)。  
@@ -54,7 +54,7 @@ HRESULT EnumRuntimes (
  成功。  
   
  S_FALSE  
- `dwInternalProcessID` 不匹配计算机上运行的任何进程，可能因为进程已终止。 `pcRuntimes` 和 `ppRuntimes` 将为 null。  
+ `dwInternalProcessID` 不匹配任何进程运行的计算机上，可能因为进程已终止。 `pcRuntimes` 和`ppRuntimes`将为 null。  
   
  E_OUTOFMEMORY  
  无法为 `ppRuntimes` 分配足够的内存。  
@@ -75,4 +75,5 @@ HRESULT EnumRuntimes (
  **.NET framework 版本：** 3.5 SP1  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICoreClrDebugTarget 接口](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)

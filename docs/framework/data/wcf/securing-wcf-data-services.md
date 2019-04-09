@@ -8,12 +8,12 @@ helpviewer_keywords:
 - securing application [WCF Data Services]
 - WCF Data Services, security
 ms.assetid: 99fc2baa-a040-4549-bc4d-f683d60298af
-ms.openlocfilehash: 6efcb6947917ba3d16f562d24e8deefbe1d6e955
-ms.sourcegitcommit: 16aefeb2d265e69c0d80967580365fabf0c5d39a
+ms.openlocfilehash: 1e134d877c45af00e2a2fb7e7ef0882ffd7ddc48
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58125962"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59119114"
 ---
 # <a name="securing-wcf-data-services"></a>WCF 数据服务的安全
 本主题介绍特定于开发、 部署和运行 WCF 数据服务和应用程序支持开放数据协议 (OData) 服务的访问权限的安全注意事项。 此外应遵循有关创建安全的.NET Framework 应用程序的建议。  
@@ -29,13 +29,10 @@ WCF 数据服务不实现任何类型的其自己的身份验证，但是而是�
 |身份验证选项|描述|  
 |----------------------------|-----------------|  
 |匿名身份验证|启用 HTTP 匿名身份验证时，任何主体都能连接到数据服务。 匿名访问无需凭据。 仅当希望允许任何人访问数据服务时，才使用此选项。|  
-|基本和摘要式身份验证|需要由用户名和密码组成的凭据以进行身份验证。 支持非 Windows 客户端的身份验证。 **安全说明：** 基本身份验证凭据（用户名和密码）以明文形式发送，会被截取。 摘要式身份验证基于所提供的凭据发送一个哈希值，因而比基本身份验证更安全。 这两者都容易受到中间人攻击。 使用这些身份验证方法时，应考虑使用安全套接字层 (SSL) 加密客户端与数据服务之间的通信。 <br /><br /> Microsoft Internet 信息服务 (IIS) 提供了这两种基本的实现，并用于 HTTP 摘要式身份验证请求中的 ASP.NET 应用程序。 该 Windows 身份验证提供程序实现允许 .NET Framework 客户端应用程序在发给数据服务的请求的 HTTP 标头中提供凭据，以无缝协商 Windows 用户的身份验证。 有关详细信息，请参阅[摘要式身份验证技术参考](https://go.microsoft.com/fwlink/?LinkId=200408)。<br /><br /> 当你想要具有你的数据服务使用基本身份验证基于某些自定义身份验证服务而不是 Windows 凭据时，则必须实现自定义 ADP.NET HTTP 模块进行身份验证。<br /><br /> 有关如何使用 WCF 数据服务使用自定义基本身份验证方案的示例，请参阅博客文章 [
-OData 和身份验证 – 第 6 – 自定义基本身份验证部分] (https://devblogs.microsoft.com/odata/odata-and-authentication-part-6-custom-basic-authentication/)]。|  
+|基本和摘要式身份验证|需要由用户名和密码组成的凭据以进行身份验证。 支持非 Windows 客户端的身份验证。 **安全说明：** 基本身份验证凭据（用户名和密码）以明文形式发送，会被截取。 摘要式身份验证基于所提供的凭据发送一个哈希值，因而比基本身份验证更安全。 这两者都容易受到中间人攻击。 使用这些身份验证方法时，应考虑使用安全套接字层 (SSL) 加密客户端与数据服务之间的通信。 <br /><br /> Microsoft Internet 信息服务 (IIS) 提供了这两种基本的实现，并用于 HTTP 摘要式身份验证请求中的 ASP.NET 应用程序。 该 Windows 身份验证提供程序实现允许 .NET Framework 客户端应用程序在发给数据服务的请求的 HTTP 标头中提供凭据，以无缝协商 Windows 用户的身份验证。 有关详细信息，请参阅[摘要式身份验证技术参考](https://go.microsoft.com/fwlink/?LinkId=200408)。<br /><br /> 当你想要具有你的数据服务使用基本身份验证基于某些自定义身份验证服务而不是 Windows 凭据时，则必须实现自定义 ADP.NET HTTP 模块进行身份验证。<br /><br /> 有关如何使用 WCF 数据服务使用自定义基本身份验证方案的示例，请参阅博客文章[OData 和身份验证 – 第 6 部分-自定义基本身份验证](https://devblogs.microsoft.com/odata/odata-and-authentication-part-6-custom-basic-authentication/)。|  
 |Windows 身份验证|基于 Windows 的凭据使用 NTLM 或 Kerberos 进行交换。 该机制比基本或摘要式身份验证更安全，但它要求客户端是基于 Windows 的应用程序。 IIS 还提供对 ASP.NET 应用程序中的 HTTP 请求的 Windows 身份验证的实现。 有关详细信息，请参阅[ASP.NET 窗体身份验证概述](https://docs.microsoft.com/previous-versions/aspnet/7t6b43z4(v=vs.100))。<br /><br /> 有关如何使用 Windows 身份验证和 WCF 数据服务的示例，请参阅博客文章[OData 和身份验证 – 第 2 部分-Windows 身份验证](https://devblogs.microsoft.com/odata/odata-and-authentication-part-2-windows-authentication/)。|  
-|ASP.NET 窗体身份验证|Forms 身份验证使你可以使用自己的代码对用户进行身份验证，然后将身份验证标记保留在 Cookie 或页的 URL 中。 您使用自己创建的登录窗体对用户的用户名和密码进行验证。 未经过身份验证的请求被重定向到登录页，用户在该页上提供凭据和提交窗体。 如果应用程序对请求进行了验证，系统会颁发一个票证，该票证包含用于重建后续请求的标识的密钥。 有关详细信息，请参阅[窗体身份验证提供程序](https://docs.microsoft.com/previous-versions/aspnet/9wff0kyh(v=vs.100))。 **安全说明：** 默认情况下，包含窗体身份验证票证的 cookie 不安全的 ASP.NET Web 应用程序中使用窗体身份验证时。 应考虑要求使用 SSL 以保护身份验证票证和初始登录凭据。 <br /><br /> 有关如何使用 WCF 数据服务使用窗体身份验证的示例，请参阅博客文章 [
-OData 和身份验证 – 第 7 – 窗体身份验证部分] (https://devblogs.microsoft.com/odata/odata-and-authentication-part-7-forms-authentication/)。|  
-|基于声明的身份验证|在基于声明的身份验证，数据服务依赖于用户进行身份验证的受信任的"第三方"标识提供程序服务。 该标识提供程序对请求访问数据服务资源的用户进行肯定的身份验证并发出一个标记，授予对所请求资源的访问权限。 该标记随后提供给数据服务，后者基于与发出访问权限标记的标识服务的信任关系授予用户访问权限。<br /><br /> 使用基于声明的身份验证提供程序的优点是它们可用于跨越信任域对各种类型的客户端进行身份验证。 通过采用这样一种第三方提供程序，数据服务可以不必维护用户并对其进行身份验证，从而减轻了负担。 OAuth 2.0 是一个基于声明的身份验证协议，作为一项服务受到 Microsoft Azure AppFabric Access Control 的支持以进行联盟授权。 此协议支持基于 REST 的服务。 有关如何使用 WCF 数据服务使用 OAuth 2.0 的示例，请参阅博客文章 [
-OData 和身份验证 – 第 8 – OAuth WRAP 部分] (https://devblogs.microsoft.com/odata/odata-and-authentication-part-8-oauth-wrap/)。|  
+|ASP.NET 窗体身份验证|Forms 身份验证使你可以使用自己的代码对用户进行身份验证，然后将身份验证标记保留在 Cookie 或页的 URL 中。 您使用自己创建的登录窗体对用户的用户名和密码进行验证。 未经过身份验证的请求被重定向到登录页，用户在该页上提供凭据和提交窗体。 如果应用程序对请求进行了验证，系统会颁发一个票证，该票证包含用于重建后续请求的标识的密钥。 有关详细信息，请参阅[窗体身份验证提供程序](https://docs.microsoft.com/previous-versions/aspnet/9wff0kyh(v=vs.100))。 **安全说明：** 默认情况下，包含窗体身份验证票证的 cookie 不安全的 ASP.NET Web 应用程序中使用窗体身份验证时。 应考虑要求使用 SSL 以保护身份验证票证和初始登录凭据。 <br /><br /> 为举例说明如何使用窗体使用 WCF 数据服务进行身份验证，请参阅博客文章[OData 和身份验证 – 一部分 7 – 窗体身份验证](https://devblogs.microsoft.com/odata/odata-and-authentication-part-7-forms-authentication/)。|  
+|基于声明的身份验证|在基于声明的身份验证，数据服务依赖于用户进行身份验证的受信任的"第三方"标识提供程序服务。 该标识提供程序对请求访问数据服务资源的用户进行肯定的身份验证并发出一个标记，授予对所请求资源的访问权限。 该标记随后提供给数据服务，后者基于与发出访问权限标记的标识服务的信任关系授予用户访问权限。<br /><br /> 使用基于声明的身份验证提供程序的优点是它们可用于跨越信任域对各种类型的客户端进行身份验证。 通过采用这样一种第三方提供程序，数据服务可以不必维护用户并对其进行身份验证，从而减轻了负担。 OAuth 2.0 是一个基于声明的身份验证协议，作为一项服务受到 Microsoft Azure AppFabric Access Control 的支持以进行联盟授权。 此协议支持基于 REST 的服务。 有关如何使用 WCF 数据服务使用 OAuth 2.0 的示例，请参阅博客文章[OData 和身份验证 – 第 8 部分-OAuth WRAP](https://devblogs.microsoft.com/odata/odata-and-authentication-part-8-oauth-wrap/)。|  
   
 <a name="clientAuthentication"></a>   
 ### <a name="authentication-in-the-client-library"></a>客户端库中的身份验证  
@@ -114,5 +111,6 @@ OData 基于 HTTP 协议。 在 HTTP 消息中，标头可能包含重要的用�
 -   我们建议客户端应用程序始终对用户输入以及接受自非信任服务的数据进行验证。  
   
 ## <a name="see-also"></a>请参阅
-- [定义 WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
-- [WCF Data Services 客户端库](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+
+- [定义 WCF 数据服务](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [WCF 数据服务客户端库](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

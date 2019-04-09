@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: bc3f9e8c581bc95bea8cfeb549177966eae22a43
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: db933716cc0602ecda5da8a72726408ae4910179
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54584488"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59129800"
 ---
 # <a name="iapartmentcallback-interface"></a>IApartmentCallback 接口
 提供用于在单元内使回调方法。 *单元*是个对象共享相同的线程访问要求进程内的逻辑容器。  
@@ -39,7 +39,8 @@ ms.locfileid: "54584488"
   
  **库：** 包含为 MSCorEE.dll 中的资源  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [承载接口](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

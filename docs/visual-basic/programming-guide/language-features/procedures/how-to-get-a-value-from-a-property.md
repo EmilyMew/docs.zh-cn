@@ -28,7 +28,7 @@ ms.locfileid: "58842910"
   
      使用属性名称之后等号 (`=`) 在赋值语句登录。  
   
-     下面的示例读取的值的 Visual basic`Now`属性外，隐式调用其`Get`过程。  
+     下面的示例读取的值的 Visual Basic`Now`属性外，隐式调用其`Get`过程。  
   
      [!code-vb[VbVbalrDateProperties#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDateProperties/VB/Module1.vb#4)]  
   

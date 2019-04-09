@@ -1,5 +1,5 @@
 ---
-title: 演练：在设计时分配在 Windows 窗体上的 WPF 内容
+title: 演练：在设计时在 Windows 窗体上分配 WPF 内容
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WPF content [Windows Forms], assigning at design time
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - Windows Forms, content assignments
 - WPF user control [Windows Forms], hosting in Windows Forms
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
-ms.openlocfilehash: 364cfe521a1e141bdfcfb3cfc47170714d010a87
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 781eaaabb7306018366450c013c227fe5a1fef78
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57707919"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59108675"
 ---
-# <a name="walkthrough-assigning-wpf-content-on-windows-forms-at-design-time"></a>演练：在设计时分配在 Windows 窗体上的 WPF 内容
+# <a name="walkthrough-assigning-wpf-content-on-windows-forms-at-design-time"></a>演练：在设计时在 Windows 窗体上分配 WPF 内容
 本演练展示了如何选择要在窗体上显示的 Windows Presentation Foundation (WPF) 控件类型。 可选择项目中包含的任何 WPF 控件类型。
 
  在本演练中，你将要执行以下任务：
@@ -76,15 +76,13 @@ ms.locfileid: "57707919"
   
 2.  在中**工具箱**，双击`UserControl1`若要创建的实例`UserControl1`窗体上。  
   
-     
-  `UserControl1` 的实例托管在名为 `elementHost1` 的新 <xref:System.Windows.Forms.Integration.ElementHost> 控件中。  
+     `UserControl1` 的实例托管在名为 `elementHost1` 的新 <xref:System.Windows.Forms.Integration.ElementHost> 控件中。  
   
 3.  中的智能标记面板`elementHost1`，打开**选择承载的内容**下拉列表。  
   
 4.  选择**UserControl2**从下拉列表框。  
   
-     
-  `elementHost1` 控件现承载 `UserControl2` 类型的实例。  
+     `elementHost1` 控件现承载 `UserControl2` 类型的实例。  
   
 5.  在中**属性**窗口中，确认<xref:System.Windows.Forms.Integration.ElementHost.Child%2A>属性设置为**UserControl2**。  
   
@@ -96,10 +94,10 @@ ms.locfileid: "57707919"
   
 8.  选择**UserControl1**从下拉列表。  
   
-9. 
-  `elementHost2` 控件现承载 `UserControl1` 类型的实例。  
+9. `elementHost2` 控件现承载 `UserControl1` 类型的实例。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [迁移和互操作性](../../wpf/advanced/migration-and-interoperability.md)

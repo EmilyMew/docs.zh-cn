@@ -18,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: 1e40f4d3-fb7d-4f19-b334-b6076d469ea9
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5799ab8e827305fca565064a0ae7290c6c19eb01
-ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.openlocfilehash: 08b46d96f9fb950602766639559a375a25747010
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58463002"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073723"
 ---
 # <a name="using-the-assert-method"></a>使用 Assert 方法
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
- <xref:System.Security.CodeAccessPermission.Assert%2A> 是一种可在代码访问权限类和 <xref:System.Security.PermissionSet> 类上调用的方法。 可以使用**Assert**以使你的代码 （和下游调用方） 可以执行你的代码有权执行的操作，但其调用方可能没有执行操作的权限。 安全断言会更改在安全检查期间运行时所执行的正常过程。 断言权限时，它会通知安全系统不检查断言权限的代码的调用方。  
+ <xref:System.Security.CodeAccessPermission.Assert%2A> 是一种方法，可以在代码访问权限类上调用和在<xref:System.Security.PermissionSet>类。 可以使用**Assert**以使你的代码 （和下游调用方） 可以执行你的代码有权执行的操作，但其调用方可能没有执行操作的权限。 安全断言会更改在安全检查期间运行时所执行的正常过程。 断言权限时，它会通知安全系统不检查断言权限的代码的调用方。  
   
 > [!CAUTION]
 >  请谨慎使用断言，因为它们会打开安全漏洞并破坏运行时强制执行安全限制的机制。  
@@ -168,9 +168,10 @@ namespace LogUtil
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Security.PermissionSet>
 - <xref:System.Security.Permissions.SecurityPermission>
 - <xref:System.Security.Permissions.FileIOPermission>
 - <xref:System.Security.Permissions.SecurityAction>
-- [属性](../../../docs/standard/attributes/index.md)
+- [特性](../../../docs/standard/attributes/index.md)
 - [代码访问安全性](../../../docs/framework/misc/code-access-security.md)

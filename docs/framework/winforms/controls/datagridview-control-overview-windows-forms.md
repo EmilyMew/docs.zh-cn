@@ -19,17 +19,16 @@ helpviewer_keywords:
 - data sources [Windows Forms], binding to DataGridView control
 - DataGridView control [Windows Forms], data binding
 ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
-ms.openlocfilehash: d7ff88f877f73382f69874c58392c3374a83c019
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 095c89fd305b1eeb73e2919760abe48e848c6aa0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57705995"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59112874"
 ---
 # <a name="datagridview-control-overview-windows-forms"></a>DataGridView 控件概述（Windows 窗体）
 > [!NOTE]
->  
-  <xref:System.Windows.Forms.DataGridView> 控件取代了 <xref:System.Windows.Forms.DataGrid> 控件并添加了功能；但是，可以选择保留 <xref:System.Windows.Forms.DataGrid> 控件以实现向后兼容并供将来使用。 有关详细信息，请参阅 [Windows 窗体 DataGridView 控件与 DataGrid 控件之间的区别](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)。  
+>  <xref:System.Windows.Forms.DataGridView> 控件取代了 <xref:System.Windows.Forms.DataGrid> 控件并添加了功能；但是，可以选择保留 <xref:System.Windows.Forms.DataGrid> 控件以实现向后兼容并供将来使用。 有关详细信息，请参阅 [Windows 窗体 DataGridView 控件与 DataGrid 控件之间的区别](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)。  
   
  使用<xref:System.Windows.Forms.DataGridView>控件，可以显示和编辑来自许多不同类型的数据源的表格格式数据。  
   
@@ -60,7 +59,7 @@ ms.locfileid: "57705995"
  [DataGridView 控件体系结构](datagridview-control-architecture-windows-forms.md)  
  介绍的体系结构<xref:System.Windows.Forms.DataGridView>控件，解释了其类型层次结构和继承结构。  
   
- [DataGridView 控件应用场景](datagridview-control-scenarios-windows-forms.md)  
+ [DataGridView 控件方案](datagridview-control-scenarios-windows-forms.md)  
  介绍在其中的最常见方案<xref:System.Windows.Forms.DataGridView>使用控件。  
   
  [DataGridView 控件代码目录](datagridview-control-code-directory-windows-forms.md)  
@@ -76,10 +75,11 @@ ms.locfileid: "57705995"
  [自定义 Windows 窗体 DataGridView 控件](customizing-the-windows-forms-datagridview-control.md)  
  提供一些主题，介绍自定义绘制 <xref:System.Windows.Forms.DataGridView> 单元格和行，以及创建派生的单元、列和行类型。  
   
- [Windows 窗体 DataGridView 控件中的性能调整](performance-tuning-in-the-windows-forms-datagridview-control.md)  
+ [Windows 窗体 DataGridView 控件中的性能优化](performance-tuning-in-the-windows-forms-datagridview-control.md)  
  提供一些主题，介绍如何在使用大量数据时，有效地使用控件以避免性能问题。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.BindingSource>
 - [DataGridView 控件](datagridview-control-windows-forms.md)

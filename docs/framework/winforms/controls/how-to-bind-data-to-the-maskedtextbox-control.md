@@ -10,12 +10,12 @@ helpviewer_keywords:
 - data binding [Windows Forms], MaskedTextBox control [Windows Forms]
 - MaskedTextBox control [Windows Forms], binding data
 ms.assetid: 34b29f07-e8df-48d4-b08b-53fcca524708
-ms.openlocfilehash: b03eff45b8494253918ae4462c29f50568c81569
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 0350d6e690d54d6176ede3b858f75829326b7556
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57717461"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59090597"
 ---
 # <a name="how-to-bind-data-to-the-maskedtextbox-control"></a>如何：将数据绑定到 MaskedTextBox 控件
 您可以将数据绑定到<xref:System.Windows.Forms.MaskedTextBox>控制就像可以连接到任何其他 Windows 窗体控件。 但是，如果在数据库中数据的格式与掩码定义所需的格式不匹配，您将需要重新设置数据格式。 下面的过程演示如何执行此操作使用<xref:System.Windows.Forms.Binding.Format>并<xref:System.Windows.Forms.Binding.Parse>的事件<xref:System.Windows.Forms.Binding>类来显示单独的电话号码和电话扩展数据库字段为单一的可编辑字段。  
@@ -250,4 +250,5 @@ ms.locfileid: "57717461"
 -   编译该应用程序。  
   
 ## <a name="see-also"></a>请参阅
+
 - [演练：使用 MaskedTextBox 控件](walkthrough-working-with-the-maskedtextbox-control.md)

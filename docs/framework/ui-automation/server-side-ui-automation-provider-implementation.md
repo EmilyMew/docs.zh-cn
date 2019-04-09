@@ -6,12 +6,12 @@ helpviewer_keywords:
 - UI Automation, server-side provider implementation
 - provider implementation, UI Automation
 ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
-ms.openlocfilehash: df2c1fcd6c84b7670c53a8f06f97c2ea46b8b33d
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.openlocfilehash: ca8471f6a25c9ef5295af0edaabcefe58114aac6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57679406"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59077285"
 ---
 # <a name="server-side-ui-automation-provider-implementation"></a>服务器端 UI 自动化提供程序的实现
 > [!NOTE]
@@ -19,7 +19,7 @@ ms.locfileid: "57679406"
   
  本部分将介绍如何实现自定义控件的服务器端 UI 自动化提供程序。  
   
- 实现 Windows Presentation Foundation (WPF) 元素和非-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]元素 (如那些用于[!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)]) 完全不同。 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 元素通过从 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 派生的类提供对 <xref:System.Windows.Automation.Peers.AutomationPeer>的支持。 非[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 元素通过提供程序接口的实现提供支持。  
+ 实现 Windows Presentation Foundation (WPF) 元素和非-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]元素 (如那些用于[!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)]) 完全不同。 [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 元素提供支持[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]派生自的类通过<xref:System.Windows.Automation.Peers.AutomationPeer>。 非[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] 元素通过提供程序接口的实现提供支持。  
   
 <a name="Security_Considerations"></a>   
 ## <a name="security-considerations"></a>安全注意事项  
@@ -42,8 +42,7 @@ ms.locfileid: "57679406"
 -   UIAutomationTypes.dll  
   
 -   WindowsBase.dll  
-  
-  
+
 <a name="Provider_Interfaces"></a>   
 ### <a name="provider-interfaces"></a>提供程序接口  
  每个 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 提供程序必须实现以下的一个接口。  
@@ -69,7 +68,7 @@ ms.locfileid: "57679406"
   
 |功能|实现|  
 |-------------------|--------------------|  
-|向 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]公开提供程序|为响应发送到控制窗口的 WM_GETOBJECT 消息，返回实现 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> （或派生接口）的对象。 对于片段，这必须是片段根的提供程序。|  
+|公开的提供程序 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|为响应发送到控制窗口的 WM_GETOBJECT 消息，返回实现 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> （或派生接口）的对象。 对于片段，这必须是片段根的提供程序。|  
 |提供属性值|实现 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A> 以提供或重写值。|  
 |启用客户端从而与控件交互|实现支持控件模式的接口，如 <xref:System.Windows.Automation.Provider.IInvokeProvider>。 在你的 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPatternProvider%2A>实现中返回这些模式提供程序。|  
 |引发事件|调用 <xref:System.Windows.Automation.Provider.AutomationInteropProvider> 的静态方法之一，以引发客户端可以侦听的一个事件。|  
@@ -78,7 +77,7 @@ ms.locfileid: "57679406"
   
 <a name="Property_Values_in_Non_WPF_Providers"></a>   
 ### <a name="property-values-in-non-wpf-providers"></a>非 WPF 提供程序中的属性值  
- 自定义控件的[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 提供程序必须支持特定属性，这些属性可由自动化系统以及客户端应用程序使用。 对于窗口 (HWND) 中承载的元素， [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 可以从默认窗口提供程序检索某些属性，但必须从自定义提供程序获取其他属性。  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 自定义控件的提供程序必须支持由自动化系统以及客户端应用程序可以使用某些属性。 对于窗口 (HWND) 中承载的元素， [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 可以从默认窗口提供程序检索某些属性，但必须从自定义提供程序获取其他属性。  
   
  基于 HWND 控件的提供程序通常不需要提供以下属性（由字段值标识）：  
   
@@ -113,7 +112,7 @@ ms.locfileid: "57679406"
   
 <a name="Events_in_Non_WPF_Providers"></a>   
 ### <a name="events-in-non-wpf-providers"></a>非 WPF 提供程序中的事件  
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 提供程序应引发事件以通知客户端应用程序有关 UI 状态的变化。 以下方法用于引发事件。  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 提供程序应引发事件以通知客户端应用程序 UI 的状态变化。 以下方法用于引发事件。  
   
 |方法|描述|  
 |------------|-----------------|  
@@ -145,7 +144,7 @@ ms.locfileid: "57679406"
   
 <a name="Non_WPF_Provider_Reparenting"></a>   
 ### <a name="non-wpf-provider-reparenting"></a>非 WPF 提供程序重新设置父级  
- 弹出窗口实际是顶级窗口，所以默认情况下会作为桌面的子级显示在 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 树中。 但是，在许多情况下，弹出式窗口在逻辑上是一些其他控件的子级。 例如，组合框的下拉列表在逻辑上是组合框的子级。 同样，菜单弹出窗口在逻辑上是菜单的子级。 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 支持重新设置弹出窗口的父级，以便它们显示为关联控件的子级。  
+ 弹出窗口实际是顶级窗口，所以默认情况下会作为桌面的子级显示在 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 树中。 但是，在许多情况下，弹出式窗口在逻辑上是一些其他控件的子级。 例如，组合框的下拉列表在逻辑上是组合框的子级。 同样，菜单弹出窗口在逻辑上是菜单的子级。 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 提供支持，以便它们显示为关联控件的子级重新设置弹出窗口的父级。  
   
  若要重新设置弹出窗口的父级：  
   
@@ -163,16 +162,17 @@ ms.locfileid: "57679406"
   
 <a name="Non_WPF_Provider_Repositioning"></a>   
 ### <a name="non-wpf-provider-repositioning"></a>非 WPF 提供程序重定位  
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 片段可能包含两个或多个元素，其中每个元素都包含在一个窗口 (HWND) 中。 因为每个 HWND 都有自己的默认提供程序，该提供程序将 HWND 视为作为容器的 HWND 的子级，默认情况下， [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 树将在片段中将 HWND 显示为父窗口的子级。 在大多数情况下，这是所需的行为，但有时这可能会导致混淆，因为它不匹配 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]的逻辑结构。  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 片段可能包含两个或多个元素的每个包含在一个窗口 (HWND)。 因为每个 HWND 都有自己的默认提供程序，该提供程序将 HWND 视为作为容器的 HWND 的子级，默认情况下， [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 树将在片段中将 HWND 显示为父窗口的子级。 在大多数情况下，这是所需的行为，但有时这可能会导致混淆，因为它不匹配 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]的逻辑结构。  
   
  一个很好的示例则是 rebar 控件。 Rebar 控件包含带区，其中每个带区又可以包含如工具栏、编辑框或组合框等基于 HWND 的控件。 Rebar HWND 的默认窗口提供程序将带区控件 HWND 视为子级，而 rebar 提供程序将带区视为子级。 因为 HWND 提供程序和 rebar 提供程序是协同工作，并且合并其子级，所以带区和基于 HWND 的控件都将显示为 rebar 的子级。 但是，在逻辑上，只有带区应显示为 rebar 的子级，并且每个带区提供程序应与它所包含控件的默认 HWND 提供程序结合使用。  
   
  为此，rebar 的片段根提供程序公开表示带区的子级集。 每个带区包含可能会公开属性和模式的单个提供程序。 在其实现 <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.HostRawElementProvider%2A>的过程中，带区提供程序将返回控件 HWND的默认窗口提供程序，它通过调用 <xref:System.Windows.Automation.Provider.AutomationInteropProvider.HostProviderFromHandle%2A>获取此提供程序，并传入控件的窗口句柄。 最后，rebar 的片段根提供程序将实现 <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride> 接口，并在其实现 <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride.GetOverrideProviderForHwnd%2A> 的过程中返回包含在指定 HWND 中的控件的相应带区提供程序。  
   
 ## <a name="see-also"></a>请参阅
+
 - [UI 自动化提供程序概述](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
 - [公开服务器端 UI 自动化提供程序](../../../docs/framework/ui-automation/expose-a-server-side-ui-automation-provider.md)
 - [从 UI 自动化提供程序返回属性](../../../docs/framework/ui-automation/return-properties-from-a-ui-automation-provider.md)
-- [从 UI 自动化提供程序引发事件](../../../docs/framework/ui-automation/raise-events-from-a-ui-automation-provider.md)
+- [从 UI 自动化提供程序中引发事件](../../../docs/framework/ui-automation/raise-events-from-a-ui-automation-provider.md)
 - [在 UI 自动化片段提供程序中启用导航](../../../docs/framework/ui-automation/enable-navigation-in-a-ui-automation-fragment-provider.md)
 - [在 UI 自动化提供程序中支持控件模式](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)

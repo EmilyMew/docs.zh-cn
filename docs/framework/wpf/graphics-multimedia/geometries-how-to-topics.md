@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - geometry classes [WPF]
 ms.assetid: 83873331-b013-472e-8197-8ba993dd242f
-ms.openlocfilehash: f2a45cf48c1d0cc097cea956d22fed2079e657a8
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 3afee770e36b7daea754775f64dd7f1030659267
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57361637"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096231"
 ---
 # <a name="geometries-how-to-topics"></a>几何图形帮助主题
 在本部分中的主题演示如何使用<xref:System.Windows.Media.Geometry>您的应用程序中的对象。  
   
 ## <a name="in-this-section"></a>本节内容  
- [为 EllipseGeometry 设置动画效果](how-to-animate-an-ellipsegeometry.md)  
- [为 ArcSegment 的大小设置动画效果](how-to-animate-the-size-of-an-arcsegment.md)  
+ [对 EllipseGeometry 进行动画处理](how-to-animate-an-ellipsegeometry.md)  
+ [对 ArcSegment 的大小进行动画处理](how-to-animate-the-size-of-an-arcsegment.md)  
  [控制复合形状的填充](how-to-control-the-fill-of-a-composite-shape.md)  
  [创建组合的几何图形](how-to-create-a-combined-geometry.md)  
  [创建复合形状](how-to-create-a-composite-shape.md)  
@@ -31,10 +31,11 @@ ms.locfileid: "57361637"
  [创建椭圆弧](how-to-create-an-elliptical-arc.md)  
  [在 PathGeometry 内创建多个子路径](how-to-create-multiple-subpaths-within-a-pathgeometry.md)  
  [使用 RectangleGeometry 定义矩形](how-to-define-a-rectangle-using-a-rectanglegeometry.md)  
- [让 RectangleGeometry 采用圆角](how-to-round-the-corners-of-a-rectanglegeometry.md)  
+ [圆化 RectangleGeometry 的角](how-to-round-the-corners-of-a-rectanglegeometry.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.Brushes>
 - <xref:System.Windows.Shapes.Shape>
-- [WPF 中的形状和基本绘图概述](shapes-and-basic-drawing-in-wpf-overview.md)
+- [WPF 中的形状和基本图形概述](shapes-and-basic-drawing-in-wpf-overview.md)
 - [图形和多媒体](index.md)

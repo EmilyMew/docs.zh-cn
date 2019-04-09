@@ -8,17 +8,16 @@ helpviewer_keywords:
 - TileBrush [WPF]
 - brushes [WPF], TileBrush
 ms.assetid: aa4a7b7e-d09d-44c2-8d61-310c50e08d68
-ms.openlocfilehash: 8013bacf6c4d33ce89fc287e625ce8c8fb6c3ef0
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: a610acfef416a978ab8ecd9a561a135ecf3611cc
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369937"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59125290"
 ---
 # <a name="tilebrush-overview"></a>TileBrush 概述
 <xref:System.Windows.Media.TileBrush> 对象提供对如何使用图像、 绘制区域的控制自如地<xref:System.Windows.Media.Drawing>，或<xref:System.Windows.Media.Visual>。 本主题介绍如何使用<xref:System.Windows.Media.TileBrush>功能来获得更好地控制如何<xref:System.Windows.Media.ImageBrush>， <xref:System.Windows.Media.DrawingBrush>，或<xref:System.Windows.Media.VisualBrush>绘制区域。  
-  
-  
+
 <a name="prerequisite"></a>   
 ## <a name="prerequisites"></a>系统必备  
  要了解本主题，很有帮助，了解如何使用的基本功能<xref:System.Windows.Media.ImageBrush>， <xref:System.Windows.Media.DrawingBrush>，或<xref:System.Windows.Media.VisualBrush>类。 有关这些类型的简介，请参阅[使用图像、 绘图和视觉对象进行绘制](painting-with-images-drawings-and-visuals.md)。  
@@ -53,13 +52,13 @@ ms.locfileid: "57369937"
 ## <a name="the-base-tile"></a>基本图块  
  一个<xref:System.Windows.Media.TileBrush>其内容投射到基本图块。 <xref:System.Windows.Media.TileBrush.Stretch%2A>属性控制如何<xref:System.Windows.Media.TileBrush>拉伸内容以填充基本图块。 <xref:System.Windows.Media.TileBrush.Stretch%2A>属性接受以下值，通过定义<xref:System.Windows.Media.Stretch>枚举：  
   
--   <xref:System.Windows.Media.Stretch.None>：画笔的内容未拉伸以填充磁贴。  
+-   <xref:System.Windows.Media.Stretch.None>:画笔的内容未拉伸以填充磁贴。  
   
--   <xref:System.Windows.Media.Stretch.Fill>：画笔的内容进行缩放以适合图块。 由于内容的高度和宽度独立进行缩放，因此内容的原始纵横比可能不会保留。 也就是说，为了完全填充输出图块，画笔的内容可能会弯曲。  
+-   <xref:System.Windows.Media.Stretch.Fill>:画笔的内容进行缩放以适合图块。 由于内容的高度和宽度独立进行缩放，因此内容的原始纵横比可能不会保留。 也就是说，为了完全填充输出图块，画笔的内容可能会弯曲。  
   
--   <xref:System.Windows.Media.Stretch.Uniform>：缩放画笔的内容，使其完全符合该磁贴。 内容的纵横比会保留。  
+-   <xref:System.Windows.Media.Stretch.Uniform>:缩放画笔的内容，使其完全符合该磁贴。 内容的纵横比会保留。  
   
--   <xref:System.Windows.Media.Stretch.UniformToFill>：缩放画笔的内容，使其在保留内容的原始纵横比的同时完全填充输出区域。  
+-   <xref:System.Windows.Media.Stretch.UniformToFill>:缩放画笔的内容，使其在保留内容的原始纵横比的同时完全填充输出区域。  
   
  下图阐释了不同<xref:System.Windows.Media.TileBrush.Stretch%2A>设置。  
   
@@ -100,15 +99,15 @@ ms.locfileid: "57369937"
 ### <a name="tiling-behavior"></a>平铺行为  
  一个<xref:System.Windows.Media.TileBrush>其基本图块未完全填充输出区域和其他然后平铺模式时生成的平铺的模式<xref:System.Windows.Media.TileMode.None>指定。 当平铺画笔的图块未完全填充输出区域，其<xref:System.Windows.Media.TileBrush.TileMode%2A>属性指定是否应复制基本图块，以填充输出区域，指定如果是这样，都应复制基本图块的方式。 <xref:System.Windows.Media.TileBrush.TileMode%2A>属性接受以下值，通过定义<xref:System.Windows.Media.TileMode>枚举：  
   
--   <xref:System.Windows.Media.TileMode.None>：仅在基本图块绘制。  
+-   <xref:System.Windows.Media.TileMode.None>:仅在基本图块绘制。  
   
--   <xref:System.Windows.Media.TileMode.Tile>：绘制基本图块，并通过重复基本磁贴，这样，一个磁贴的右边缘旁边的左边缘的下一步，并同样边缘和上填充剩余的区域。  
+-   <xref:System.Windows.Media.TileMode.Tile>:绘制基本图块，并通过重复基本磁贴，这样，一个磁贴的右边缘旁边的左边缘的下一步，并同样边缘和上填充剩余的区域。  
   
--   <xref:System.Windows.Media.TileMode.FlipX>：与相同<xref:System.Windows.Media.TileMode.Tile>，只不过磁贴的交替列水平翻转。  
+-   <xref:System.Windows.Media.TileMode.FlipX>:与相同<xref:System.Windows.Media.TileMode.Tile>，只不过磁贴的交替列水平翻转。  
   
--   <xref:System.Windows.Media.TileMode.FlipY>：与相同<xref:System.Windows.Media.TileMode.Tile>，只不过磁贴的交替行垂直翻转。  
+-   <xref:System.Windows.Media.TileMode.FlipY>:与相同<xref:System.Windows.Media.TileMode.Tile>，只不过磁贴的交替行垂直翻转。  
   
--   <xref:System.Windows.Media.TileMode.FlipXY>：<xref:System.Windows.Media.TileMode.FlipX> 和 <xref:System.Windows.Media.TileMode.FlipY> 的组合。  
+-   <xref:System.Windows.Media.TileMode.FlipXY>:<xref:System.Windows.Media.TileMode.FlipX> 和 <xref:System.Windows.Media.TileMode.FlipY> 的组合。  
   
  下图阐释了不同的平铺模式。  
   
@@ -122,11 +121,12 @@ ms.locfileid: "57369937"
  [!code-vb[BrushOverviewExamples_procedural_snip#GraphicsMMFlipXYExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushOverviewExamples_procedural_snip/visualbasic/tilingexample.vb#graphicsmmflipxyexample)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.ImageBrush>
 - <xref:System.Windows.Media.DrawingBrush>
 - <xref:System.Windows.Media.VisualBrush>
 - <xref:System.Windows.Media.TileBrush>
-- [使用图像、绘图和视觉对象进行绘制](painting-with-images-drawings-and-visuals.md)
+- [使用图像、图形和视觉对象进行绘制](painting-with-images-drawings-and-visuals.md)
 - [帮助主题](brushes-how-to-topics.md)
 - [Freezable 对象概述](../advanced/freezable-objects-overview.md)
 - [ImageBrush 示例](https://go.microsoft.com/fwlink/?LinkID=160005)

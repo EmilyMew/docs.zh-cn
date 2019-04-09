@@ -2,12 +2,12 @@
 title: WS-AtomicTransaction 配置 MMC 管理单元
 ms.date: 03/30/2017
 ms.assetid: 23592973-1d51-44cc-b887-bf8b0d801e9e
-ms.openlocfilehash: 8dfb9c9a9f6a007e65dbf819d347f335a93d1749
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b1d86fa57b31d1f9be12f76c28f9d042e7e28e24
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54573067"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59138199"
 ---
 # <a name="ws-atomictransaction-configuration-mmc-snap-in"></a>WS-AtomicTransaction 配置 MMC 管理单元
 WS-AtomicTransaction 配置 MMC 管理单元用于在本地计算机和远程计算机上配置一部分 WS-AtomicTransaction 设置。  
@@ -21,7 +21,7 @@ WS-AtomicTransaction 配置 MMC 管理单元用于在本地计算机和远程计
   
  若要使用工具提供的用户界面，您必须注册 WsatUI.dll 文件，该文件位于以下路径中：  
   
- **%PROGRAMFILES%\Microsoft SDKs\Windows\v6.0\Bin\WsatUI.dll**  
+ **“%PROGRAMFILES%\Microsoft SDKs\Windows\v6.0\Bin\WsatUI.dll”**  
   
  可通过以下命令完成注册。  
   
@@ -87,6 +87,7 @@ regasm.exe /codebase WsatUI.dll
  有关跟踪和日志记录的详细信息，请参阅[管理和诊断](../../../docs/framework/wcf/diagnostics/index.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [配置 WS-Atomic 事务支持](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)
 - [WS-AtomicTransaction 配置实用工具 (wsatConfig.exe)](../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
 - [管理和诊断](../../../docs/framework/wcf/diagnostics/index.md)

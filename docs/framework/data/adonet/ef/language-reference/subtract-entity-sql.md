@@ -2,12 +2,12 @@
 title: '- （减）(Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: bc4327f9-09c0-438f-a008-927c5c478040
-ms.openlocfilehash: aa179f65dbbf1f411fd137a759bb37efbdd1fb48
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
+ms.openlocfilehash: d7eee2fdb8e61711b453f4f444cc8dc8d5a43558
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54494062"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59128825"
 ---
 # <a name="--subtract-entity-sql"></a>-（减）(Entity SQL)
 两个数字相减。  
@@ -35,4 +35,5 @@ expression - expression
  [!code-csharp[DP EntityServices Concepts 2#SUBTRACT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#subtract)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体 SQL 引用](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

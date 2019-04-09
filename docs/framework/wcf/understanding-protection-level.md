@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF, security
 - ProtectionLevel property
 ms.assetid: 0c034608-a1ac-4007-8287-b1382eaa8bf2
-ms.openlocfilehash: 8ca003257f9e16075262a715aec4941d9aa4073b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 90fb844931c3af54367d0e7c14a766636cdcc71a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54564625"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096044"
 ---
 # <a name="understanding-protection-level"></a>了解保护级别
 在许多不同的类中可以找到 `ProtectionLevel` 属性，例如 <xref:System.ServiceModel.ServiceContractAttribute> 和 <xref:System.ServiceModel.OperationContractAttribute> 类。 此属性控制部分（或整个）消息的保护方式。 本主题介绍 Windows Communication Foundation (WCF) 功能以及其工作原理。  
@@ -28,11 +28,11 @@ ms.locfileid: "54564625"
   
 -   消息的任何部分都存在三种基本保护级别。 属性（无论它出现在哪里）设置为 <xref:System.Net.Security.ProtectionLevel> 枚举值之一。 按升序的保护顺序，它们包括：  
   
-    -   `None`。  
+    -   `None`.  
   
-    -   `Sign`。 受保护的部分进行数字签名。 这样做可以保证检测到对受保护的消息部分进行的任何篡改。  
+    -   `Sign`. 受保护的部分进行数字签名。 这样做可以保证检测到对受保护的消息部分进行的任何篡改。  
   
-    -   `EncryptAndSign`。 签名前会对消息部分进行加密，以确保其保密性。  
+    -   `EncryptAndSign`. 签名前会对消息部分进行加密，以确保其保密性。  
   
 -   您可以设置仅对保护要求*应用程序数据*借助此功能。 例如，WS-Addressing 标头是基础结构数据，因此不受 `ProtectionLevel` 影响。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "54564625"
   
 -   如果将 `ProtectionLevel` 显式设置为 `Sign` 或 `EncryptAndSign`，则你必须使用启用安全的绑定，否则将会引发异常。  
   
--   如果您选择启用安全的绑定，并且未在协定的任何位置设置 `ProtectionLevel` 属性，则将对所有的应用程序数据进行加密或签名。  
+-   如果你选择启用安全的绑定，并且未在协定的任何位置设置 `ProtectionLevel` 属性，则将对所有的应用程序数据进行加密或签名。  
   
 -   如果您选择未启用安全的绑定（例如，`BasicHttpBinding` 类在默认情况下禁用安全），并且没有显式设置 `ProtectionLevel`，那么所有应用程序数据都不会受到保护。  
   
@@ -76,7 +76,7 @@ ms.locfileid: "54564625"
 >  要设置错误和消息协定的属性，需要了解这些功能的工作原理。 有关详细信息，请参阅[如何：设置 ProtectionLevel 属性](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)并[使用消息协定](../../../docs/framework/wcf/feature-details/using-message-contracts.md)。  
   
 ## <a name="ws-addressing-dependency"></a>WS-Addressing 依赖性  
- 在大多数情况下，使用[ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)为生成客户端将确保客户端和服务协定是完全相同。 但是，看起来相同的协定却可能导致客户端引发异常。 只要绑定不支持 WS-Addressing 规范并且在协定上指定了多个保护级别，就会发生这种情况。 例如，<xref:System.ServiceModel.BasicHttpBinding> 类不支持此规范，或者你创建一个不支持 WS-Addressing 的自定义绑定。 `ProtectionLevel` 功能依靠 WS-Addressing 规范在单个协定上启用不同的保护级别。 如果绑定不支持 WS-Addressing 规范，所有级别都将设置为同一保护级别。 协定上所有范围的有效保护级别将设置为在协定上使用的最高保护级别。  
+ 在大多数情况下，使用[ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)为生成客户端将确保客户端和服务协定是完全相同。 但是，看起来相同的协定却可能导致客户端引发异常。 只要绑定不支持 WS-Addressing 规范并且在协定上指定了多个保护级别，就会发生这种情况。 例如，<xref:System.ServiceModel.BasicHttpBinding> 类不支持此规范，或者您创建一个不支持 WS-Addressing 的自定义绑定。 `ProtectionLevel` 功能依靠 WS-Addressing 规范在单个协定上启用不同的保护级别。 如果绑定不支持 WS-Addressing 规范，所有级别都将设置为同一保护级别。 协定上所有范围的有效保护级别将设置为在协定上使用的最高保护级别。  
   
  这可能会引起初看上去难以调试的问题。 可以创建一个包括多个服务的方法的客户端协定（一个接口）。 也就是说，使用同一接口创建一个与许多服务通信的客户端，而该单个接口包含针对所有服务的方法。 在这种罕见的情况下，开发人员必须注意仅调用那些适用于每个特定服务的方法。 如果绑定是 <xref:System.ServiceModel.BasicHttpBinding> 类，则不支持多个保护级别。 但是，对客户端进行答复的服务可能会对保护级别比要求的为低的客户端进行响应。 在这种情况下，客户端将会引发异常，因为它需要更高的保护级别。  
   
@@ -95,6 +95,7 @@ ms.locfileid: "54564625"
  当客户端调用 `Price` 方法时，它在接收到服务的答复时引发异常。 发生这种情况是因为客户端未指定 `ProtectionLevel` 的 `ServiceContractAttribute`，所以客户端为所有方法使用默认值 (<xref:System.Net.Security.ProtectionLevel.EncryptAndSign>)，包括 `Price` 方法。 但是，服务返回该值时使用 <xref:System.Net.Security.ProtectionLevel.Sign> 级别，因为服务协定定义了一个单一的方法，此方法将其保护级别设置为 <xref:System.Net.Security.ProtectionLevel.Sign>。 在这种情况下，客户端在验证服务的响应时将引发错误。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>
 - <xref:System.ServiceModel.FaultContractAttribute>
@@ -102,7 +103,7 @@ ms.locfileid: "54564625"
 - <xref:System.ServiceModel.MessageHeaderAttribute>
 - <xref:System.ServiceModel.MessageBodyMemberAttribute>
 - <xref:System.Net.Security.ProtectionLevel>
-- [保护服务](../../../docs/framework/wcf/securing-services.md)
+- [保证服务的安全](../../../docs/framework/wcf/securing-services.md)
 - [如何：设置 ProtectionLevel 属性](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)
-- [在协定和服务中指定并处理错误](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
-- [使用消息协定](../../../docs/framework/wcf/feature-details/using-message-contracts.md)
+- [在协定和服务中指定和处理错误](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [使用消息约定](../../../docs/framework/wcf/feature-details/using-message-contracts.md)

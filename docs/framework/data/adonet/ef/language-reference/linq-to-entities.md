@@ -2,12 +2,12 @@
 title: LINQ to Entities
 ms.date: 03/30/2017
 ms.assetid: 641f9b68-9046-47a1-abb0-1c8eaeda0e2d
-ms.openlocfilehash: 19849f318d07a11fe0d894f7f0a68cd37f1ee249
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
-ms.translationtype: MT
+ms.openlocfilehash: 29980450bd75c6ba0992ad7fd3165f6f2d5f32bc
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55825779"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59129683"
 ---
 # <a name="linq-to-entities"></a>LINQ to Entities
 LINQ to Entities 提供语言集成查询 (LINQ) 支持，它允许开发人员使用 Visual Basic 或 Visual C# 根据实体框架概念模型编写查询。 针对实体框架的查询由针对对象上下文执行的命令目录树查询表示。 LINQ to Entities 将语言集成查询 (LINQ) 查询转换为命令目录树查询，针对实体框架执行这些查询，并返回可同时由实体框架和 LINQ 使用的对象。 以下是创建和执行 LINQ to Entities 查询的过程：  
@@ -35,7 +35,7 @@ LINQ to Entities 提供语言集成查询 (LINQ) 支持，它允许开发人员�
 ## <a name="query-conversion"></a>查询转换  
  若要针对实体框架执行 LINQ to Entities 查询，必须将 LINQ 查询转换为可针对实体框架执行的命令目录树表示形式。  
   
- LINQ to Entities 查询由 LINQ 标准查询运算符（如 <xref:System.Linq.Queryable.Select%2A>、<xref:System.Linq.Queryable.Where%2A> 和 <xref:System.Linq.Queryable.GroupBy%2A>）和表达式（x > 10、Contact.LastName 等等）组成。 LINQ 运算符并非由类定义，而是由类中的方法定义。 在 LINQ 中，表达式可包含 <xref:System.Linq.Expressions> 命名空间内的类型所允许的任何内容，并且，通过扩展，可包含可在 lambda 函数中表示的任何内容。 这是实体框架允许的表达式的超集，这些表达式在定义上限于数据库所允许的操作，并且受到 <xref:System.Data.Objects.ObjectQuery%601> 支持。  
+ LINQ to Entities 查询组成 LINQ 标准查询运算符 (如<xref:System.Linq.Queryable.Select%2A>， <xref:System.Linq.Queryable.Where%2A>，和<xref:System.Linq.Queryable.GroupBy%2A>) 和 (x > 10、 10、contact.lastname 等等） 的表达式。 LINQ 运算符并非由类定义，而是由类中的方法定义。 在 LINQ 中，表达式可包含 <xref:System.Linq.Expressions> 命名空间内的类型所允许的任何内容，并且，通过扩展，可包含可在 lambda 函数中表示的任何内容。 这是实体框架允许的表达式的超集，这些表达式在定义上限于数据库所允许的操作，并且受到 <xref:System.Data.Objects.ObjectQuery%601> 支持。  
   
  在实体框架中，运算符和表达式同时由单一类型层次结构表示，这些运算符和表达式随后会放入命令目录树中。 实体框架使用命令目录树来执行此查询。 如果 LINQ 查询无法表示为命令目录树，则当转换查询时，将引发异常。 LINQ to Entities 查询的转换涉及两个子转换：标准查询运算符的转换和表达式转换。  
   
@@ -50,7 +50,7 @@ LINQ to Entities 提供语言集成查询 (LINQ) 支持，它允许开发人员�
  有关如何调用规范、 数据库和自定义函数中的信息[!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)]查询，请参阅[LINQ to Entities 查询中调用函数](../../../../../../docs/framework/data/adonet/ef/language-reference/calling-functions-in-linq-to-entities-queries.md)。  
   
 ## <a name="query-execution"></a>查询执行  
- 在用户创建 LINQ 查询之后，该查询将转换为与实体框架兼容的表示形式（采用命令目录树形式），然后针对数据源执行此查询。 在查询执行时间，将在客户端或服务器上计算所有查询表达式（或查询的组成部分）的值。 这包括在结果具体化或实体投影中使用的表达式。 有关详细信息，请参阅[查询执行](../../../../../../docs/framework/data/adonet/ef/language-reference/query-execution.md)。 有关如何通过一次编译查询，然后执行它若干次使用不同的参数来提高性能的信息，请参阅[编译的查询 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/compiled-queries-linq-to-entities.md)。  
+ 在用户创建 LINQ 查询之后，该查询将转换为与实体框架兼容的表示形式（采用命令树形式），然后针对数据源执行此查询。 在查询执行时间，将在客户端或服务器上计算所有查询表达式（或查询的组成部分）的值。 这包括在结果具体化或实体投影中使用的表达式。 有关详细信息，请参阅[查询执行](../../../../../../docs/framework/data/adonet/ef/language-reference/query-execution.md)。 有关如何通过一次编译查询，然后执行它若干次使用不同的参数来提高性能的信息，请参阅[编译的查询 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/compiled-queries-linq-to-entities.md)。  
   
 ## <a name="materialization"></a>具体化  
  具体化是将查询结果作为 CLR 类型返回到客户端的过程。 在 LINQ to Entities 中，从不返回查询结果数据记录；始终存在一个后备 CLR 类型，该类型由用户或实体框架定义，或者由编译器生成（匿名类型）。 所有对象具体化均由实体框架执行。 由于无法在实体框架与 CLR 之间进行映射而导致的任何错误都将导致在对象具体化过程中引发异常。  
@@ -82,13 +82,14 @@ LINQ to Entities 提供语言集成查询 (LINQ) 支持，它允许开发人员�
   
  [LINQ to Entities 查询中的标准查询运算符](../../../../../../docs/framework/data/adonet/ef/language-reference/standard-query-operators-in-linq-to-entities-queries.md)  
   
- [CLR 方法至 Canonical 函数映射](../../../../../../docs/framework/data/adonet/ef/language-reference/clr-method-to-canonical-function-mapping.md)  
+ [CLR 方法至规范函数映射](../../../../../../docs/framework/data/adonet/ef/language-reference/clr-method-to-canonical-function-mapping.md)  
   
  [支持和不支持的 LINQ 方法 (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)  
   
  [LINQ to Entities 中的已知问题和注意事项](../../../../../../docs/framework/data/adonet/ef/language-reference/known-issues-and-considerations-in-linq-to-entities.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [LINQ to Entities 中的已知问题和注意事项](../../../../../../docs/framework/data/adonet/ef/language-reference/known-issues-and-considerations-in-linq-to-entities.md)
 - [语言集成查询 (LINQ)-C#](../../../../../csharp/programming-guide/concepts/linq/index.md)
 - [语言集成查询 (LINQ) 的 Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/index.md)

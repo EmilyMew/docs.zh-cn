@@ -2,23 +2,23 @@
 title: 用于实体框架的 SqlClient
 ms.date: 03/30/2017
 ms.assetid: 9a5d6d39-d955-43a5-a5c2-931c239398f1
-ms.openlocfilehash: 5b47b035932062b859d470716903e826b2bb6f3d
-ms.sourcegitcommit: c6f69b0cf149f6b54483a6d5c2ece222913f43ce
+ms.openlocfilehash: d81499961e7e47bba3b2594ddddd192c87a4a936
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55903846"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59195457"
 ---
 # <a name="sqlclient-for-the-entity-framework"></a>用于实体框架的 SqlClient
 本节介绍用于 SQL Server (SqlClient) 的 .NET Framework 数据提供程序，该提供程序使实体框架能够在 Microsoft SQL Server 上工作。  
   
 ## <a name="provider-schema-attribute"></a>Provider 架构属性  
- `Provider` 是以存储架构定义语言 (SSDL) 表示的 `Schema` 元素的一个特性。  
+ `Provider` 是的一个属性`Schema`存储架构定义语言 (SSDL) 中的元素。  
   
  若要使用 SqlClient，请将字符串“System.Data.SqlClient”分配给 `Provider` 元素的 `Schema` 属性。  
   
 ## <a name="providermanifesttoken-schema-attribute"></a>ProviderManifestToken 架构属性  
- `ProviderManifestToken` 是以 SSDL 表示的 `Schema` 元素的一个必需特性。 此标记用于为脱机方案加载提供程序清单。 有关详细信息`ProviderManifestToken`属性，请参阅[架构元素 (SSDL)](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#schema-element-ssdl)。  
+ `ProviderManifestToken` 是所需的属性`Schema`SSDL 中的元素。 此标记用于为脱机方案加载提供程序清单。 有关详细信息`ProviderManifestToken`属性，请参阅[架构元素 (SSDL)](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#schema-element-ssdl)。  
   
  SqlClient 可以用作不同版本的 SQL Server 数据访问接口。 这些版本具有不同的功能。 例如，[!INCLUDE[ssVersion2000](../../../../../includes/ssversion2000-md.md)] 不支持在 `varchar(max)` 中引入的 `nvarchar(max)` 和 [!INCLUDE[ssVersion2005](../../../../../includes/ssversion2005-md.md)] 类型。  
   
@@ -48,6 +48,7 @@ ms.locfileid: "55903846"
  [SqlClient 中的已知问题（实体框架）](../../../../../docs/framework/data/adonet/ef/known-issues-in-sqlclient-for-entity-framework.md)  
   
 ## <a name="see-also"></a>请参阅
-- [实体 SQL 语言](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+
+- [Entity SQL 语言](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
 - [语言参考](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)
 - [用于实体框架的 SqlClient 提供程序中的已知问题](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)

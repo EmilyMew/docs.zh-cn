@@ -13,12 +13,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c5025f4bb6433d193ecf7dec1d8375104147e9e6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8fda98c20b42355b9f52595929bbf5b980b5b857
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54562565"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59077233"
 ---
 # <a name="icorprofilercallback6-interface"></a>ICorProfilerCallback6 接口
 [仅在 .NET Framework 4.5.2 及更高版本中受支持]  
@@ -38,7 +38,8 @@ ms.locfileid: "54562565"
   
  **标头：** CorProf.idl, CorProf.h  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
-- [Profiling 接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+
+- [分析接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

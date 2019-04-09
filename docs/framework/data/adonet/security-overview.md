@@ -2,12 +2,12 @@
 title: 安全 Overview2
 ms.date: 03/30/2017
 ms.assetid: 33e09965-61d5-48cc-9e8c-3b047cc4f194
-ms.openlocfilehash: 0b5b86aad2365c76351ff748228826ba703223dc
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: b93b78a5fabbcf60eefb386144ec90e877cfed0e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56091794"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089856"
 ---
 # <a name="security-overview"></a>安全性概述
 保护应用程序的安全是一个持续的过程。 因为不可能预知将来会出现哪种新的攻击技术，所以开发人员永远都不能保证某一应用程序可以免受所有的攻击。 仅因为还没有人发现（或发布）系统中的安全性缺陷，也不意味着不存在或可能不存在安全性缺陷。 在项目的设计阶段，您需要对安全性进行规划，并规划如何在应用程序生存期内维护其安全。  
@@ -41,7 +41,7 @@ ms.locfileid: "56091794"
   
 |资源|描述|  
 |--------------|-----------------|  
-|[保护应用程序](/visualstudio/ide/securing-applications)|包含一般安全性主题的链接， 还包含保护分布式应用程序、Web 应用程序、移动应用程序和桌面应用程序的主题的链接。|  
+|[保证应用程序的安全](/visualstudio/ide/securing-applications)|包含一般安全性主题的链接， 还包含保护分布式应用程序、Web 应用程序、移动应用程序和桌面应用程序的主题的链接。|  
   
 ## <a name="code-access-security-cas"></a>代码访问安全性 (CAS)  
  代码访问安全性 (CAS) 是帮助限制代码对受保护资源和操作的访问权限的一种机制。 在 .NET Framework 中，CAS 执行下列功能：  
@@ -60,7 +60,7 @@ ms.locfileid: "56091794"
   
 -   通过将调用堆栈上为每个调用方授予的权限与调用方必须拥有的权限相比较，加强在运行时对代码的限制。  
   
- 若要将因攻击成功而导致的损害降到最低，请为您的代码选择安全上下文，以便只向资源授予其完成工作所必需的访问权限。  
+ 若要将因攻击成功而导致的损害降到最低，请为你的代码选择安全上下文，以便只向资源授予其完成工作所必需的访问权限。  
   
  有关更多信息，请参见以下资源。  
   
@@ -102,7 +102,8 @@ ms.locfileid: "56091794"
 |[安全策略最佳实践](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sa4se9bc(v=vs.100))|提供描述如何管理安全策略的链接。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [保证 ADO.NET 应用程序的安全](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [.NET 中的安全性](../../../standard/security/index.md)
 - [SQL Server 安全性](../../../../docs/framework/data/adonet/sql/sql-server-security.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

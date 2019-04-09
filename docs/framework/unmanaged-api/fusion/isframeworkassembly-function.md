@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: d0fb4c98ff2c8b071f05b42aefed61485001e97f
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: a6c715183d3ae04130b729a9680335d65959836a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57480320"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59104060"
 ---
 # <a name="isframeworkassembly-function"></a>IsFrameworkAssembly 函数
 获取一个值，该值指示指定的程序集是否已托管。  
@@ -61,4 +61,5 @@ HRESULT IsFrameworkAssembly (
  **平台：** 请参阅[系统需求](../../../../docs/framework/get-started/system-requirements.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [合成全局静态函数](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

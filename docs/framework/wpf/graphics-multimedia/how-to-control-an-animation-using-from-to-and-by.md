@@ -7,12 +7,12 @@ helpviewer_keywords:
 - animation [WPF], basic animation
 - From/to/by animation
 ms.assetid: 59afba57-6fc1-44c8-987e-8a5f4142adad
-ms.openlocfilehash: 35973a2a3dea233468f91c6bd24851be088b84e0
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 56522ee5bd4391e43c261558b2fa622234c9ea3b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57373837"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073267"
 ---
 # <a name="how-to-control-an-animation-using-from-to-and-by"></a>如何：使用 From、To 和 By 控制动画
 "From/To/By"或"基本动画创建两个目标值之间的转换 (请参阅[动画概述](animation-overview.md)有关不同类型的动画的简介)。 若要设置基本动画的目标值，使用其<xref:System.Windows.Media.Animation.DoubleAnimation.From%2A>， <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A>，和<xref:System.Windows.Media.Animation.DoubleAnimation.By%2A>属性。  下表总结了如何<xref:System.Windows.Media.Animation.DoubleAnimation.From%2A>， <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A>，和<xref:System.Windows.Media.Animation.DoubleAnimation.By%2A>属性可能会一起使用或单独来确定动画的目标值。  
@@ -38,6 +38,7 @@ ms.locfileid: "57373837"
  [!code-xaml[BasicAnimations_snippet#AnimationTargetValuesWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snippet/CS/AnimationTargetValuesExample.xaml#animationtargetvalueswholepage)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [动画概述](animation-overview.md)
 - [关键帧动画概述](key-frame-animations-overview.md)
-- [From、To 和 By 动画目标值示例](https://go.microsoft.com/fwlink/?LinkID=159988)
+- [从、 To 和 By 动画目标值示例](https://go.microsoft.com/fwlink/?LinkID=159988)

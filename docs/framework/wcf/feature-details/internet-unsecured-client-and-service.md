@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
-ms.openlocfilehash: 480242d519fee6ddabac3b39ff21f8e1b76827f0
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: ca6b028ef20095d6faeb125151772eedf1500fa0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58410662"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59133752"
 ---
 # <a name="internet-unsecured-client-and-service"></a>不安全的 Internet 客户端和服务
 下图显示了 public、 不安全的 Windows Communication Foundation (WCF) 客户端和服务的示例：  
@@ -110,6 +110,7 @@ ms.locfileid: "58410662"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [常用安全方案](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)
 - [安全性概述](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Windows Server App Fabric 的安全模型](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - CLR attributes for custom types [XAML Services]
 ms.assetid: 5dfb299a-b6e2-41b8-8694-e6ac987547f1
-ms.openlocfilehash: 80127bae06a90dccd204b0f2a4baef10732ade76
-ms.sourcegitcommit: 5c1abeec15fbddcc7dbaa729fabc1f1f29f12045
+ms.openlocfilehash: ace1b40b25bd12ff7092459e468a90f382434bf4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58039467"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59086203"
 ---
 # <a name="xaml-related-clr-attributes-for-custom-types-and-libraries"></a>自定义类型和库的 XAML 相关 CLR 特性
 本主题介绍由.NET Framework XAML 服务定义的公共语言运行时 (CLR) 属性。 它还介绍了在.NET Framework 中定义具有对程序集或类型的应用程序的 XAML 相关方案的其他 CLR 属性。 使用这些 CLR 特性属性的程序集、 类型或成员提供了与您的类型相关的 XAML 类型系统信息。 到直接处理 XAML 节点流或专用的 XAML 读取器和 XAML 编写器通过使用.NET Framework XAML 服务的任何 XAML 使用者提供信息。  
@@ -24,7 +24,7 @@ ms.locfileid: "58039467"
   
  **适用于：** 类、 属性或`get`支持可附加属性的访问器成员。  
   
- **参数：** 无  
+ **参数：** None  
   
  <xref:System.Windows.Markup.AmbientAttribute> 指示该属性或采用特性化的类型的所有属性应解释 XAML 中的环境属性概念。 环境概念涉及 XAML 处理器如何确定成员的类型所有者。 环境属性是属性的值应为分析器上下文中可用时创建对象图，但其典型类型成员查找挂起直接 XAML 节点集创建的。  
   
@@ -269,5 +269,6 @@ ms.locfileid: "58039467"
 >  .NET framework XAML 服务还可定义与 XAML 相关的属性<xref:System.Windows.Markup.RootNamespaceAttribute>。 此属性是项目系统支持的程序集级别属性并不是适用于 XAML 的自定义类型。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Attribute>
 - [定义与 .NET Framework XAML 服务一起使用的自定义类型](defining-custom-types-for-use-with-net-framework-xaml-services.md)

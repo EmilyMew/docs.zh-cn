@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 579f925498f6ded83c5e90137d04020e610599b3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a50f8b13979426b8ea04f1952216afe5de337386
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54716708"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59111665"
 ---
 # <a name="imaptoken-interface"></a>IMapToken 接口
 提供程序集之间的映射功能。  
@@ -42,7 +42,8 @@ ms.locfileid: "54716708"
   
  **库：** 用作 MsCorEE.dll 中的资源  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [元数据接口](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)

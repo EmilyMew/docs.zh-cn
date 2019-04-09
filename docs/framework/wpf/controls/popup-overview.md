@@ -5,18 +5,16 @@ helpviewer_keywords:
 - controls [WPF], Popup
 - Popup control [WPF], about Popup control
 ms.assetid: 774f53ca-bff8-470e-9ce9-3928b4cf3d4c
-ms.openlocfilehash: 4d480adbbd35084b30e2ca1c74d7392814b87783
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 370970c80221e371db5a97303ef2650d14300b14
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57358465"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102773"
 ---
 # <a name="popup-overview"></a>Popup 概述
 <xref:System.Windows.Controls.Primitives.Popup>控件提供了一种方法来相对于指定元素或屏幕坐标在当前应用程序窗口上浮动的单独窗口中显示内容。 本主题介绍<xref:System.Windows.Controls.Primitives.Popup>控件并提供有关其用法的信息。  
-  
- 
-  
+
 <a name="What_Is_a_Popup_"></a>   
 ## <a name="what-is-a-popup"></a>什么是 Popup？  
  一个<xref:System.Windows.Controls.Primitives.Popup>控件相对于元素或屏幕上的点的单独窗口中显示内容。 当<xref:System.Windows.Controls.Primitives.Popup>可见，请<xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A>属性设置为`true`。  
@@ -36,13 +34,13 @@ ms.locfileid: "57358465"
 ## <a name="controls-that-implement-a-popup"></a>实现 Popup 的控件  
  您可以构建<xref:System.Windows.Controls.Primitives.Popup>控件添加到其他控件。 以下控件实现<xref:System.Windows.Controls.Primitives.Popup>特定用途的控件：  
   
--   <xref:System.Windows.Controls.ToolTip>。 如果你想要创建一个元素的工具提示，使用<xref:System.Windows.Controls.ToolTip>和<xref:System.Windows.Controls.ToolTipService>类。 有关详细信息，请参阅 [ToolTip 概述](tooltip-overview.md)。  
+-   <xref:System.Windows.Controls.ToolTip>. 如果你想要创建一个元素的工具提示，使用<xref:System.Windows.Controls.ToolTip>和<xref:System.Windows.Controls.ToolTipService>类。 有关详细信息，请参阅 [ToolTip 概述](tooltip-overview.md)。  
   
--   <xref:System.Windows.Controls.ContextMenu>。 如果你想要创建的元素的上下文菜单，使用<xref:System.Windows.Controls.ContextMenu>控件。 有关详细信息，请参阅 [ContextMenu 概述](contextmenu-overview.md)。  
+-   <xref:System.Windows.Controls.ContextMenu>. 如果你想要创建的元素的上下文菜单，使用<xref:System.Windows.Controls.ContextMenu>控件。 有关详细信息，请参阅 [ContextMenu 概述](contextmenu-overview.md)。  
   
--   <xref:System.Windows.Controls.ComboBox>。 如果你想要创建具有可显示或隐藏，使用下拉列表框的选择控件<xref:System.Windows.Controls.ComboBox>控件。  
+-   <xref:System.Windows.Controls.ComboBox>. 如果你想要创建具有可显示或隐藏，使用下拉列表框的选择控件<xref:System.Windows.Controls.ComboBox>控件。  
   
--   <xref:System.Windows.Controls.Expander>。 如果你想要创建用于显示具有可折叠区域的标头控件的显示内容，请使用<xref:System.Windows.Controls.Expander>控件。 有关详细信息，请参阅 [Expander 概述](expander-overview.md)。  
+-   <xref:System.Windows.Controls.Expander>. 如果你想要创建用于显示具有可折叠区域的标头控件的显示内容，请使用<xref:System.Windows.Controls.Expander>控件。 有关详细信息，请参阅 [Expander 概述](expander-overview.md)。  
   
 <a name="PopupBehaviorandAppearance"></a>   
 ## <a name="popup-behavior-and-appearance"></a>Popup 行为和外观  
@@ -89,6 +87,7 @@ ms.locfileid: "57358465"
  <xref:System.Windows.Controls.Primitives.Popup>控件将保留对引用其<xref:System.Windows.Controls.Primitives.Popup.Child%2A>内容作为一个逻辑子级。 创建新窗口后的内容<xref:System.Windows.Controls.Primitives.Popup>会变成窗口中的一个可视化子级并保留的逻辑子级<xref:System.Windows.Controls.Primitives.Popup>。 也可反过来<xref:System.Windows.Controls.Primitives.Popup>保持的逻辑父级及其<xref:System.Windows.Controls.Primitives.Popup.Child%2A>内容。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.Primitives.Popup>
 - <xref:System.Windows.Controls.Primitives.PopupPrimaryAxis>
 - <xref:System.Windows.Controls.Primitives.PlacementMode>

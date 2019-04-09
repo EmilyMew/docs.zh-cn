@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: cb52b1ef-47fd-4609-b69d-0586c818ac9e
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: fc5eddbf21e6e530279e2c85420e539e5d51a7f9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9015ec35c2a3d13b986eb9524e4f2984d909eb21
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54642563"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098229"
 ---
 # <a name="runtime-directive-policy-settings"></a>运行时指令策略设置
 > [!NOTE]
@@ -24,89 +24,89 @@ ms.locfileid: "54642563"
   
 -   反射策略类型确定哪些元数据需要在运行时间可以用于反射：  
   
-    -   `Activate` 控制运行时对构造函数的访问，以启用实例激活。  
+    -   `Activate` 控制运行时访问构造函数，以启用实例激活。  
   
-    -   `Browse` 控制对有关程序元素的信息的查询。  
+    -   `Browse` 信息的查询的控件的程序元素。  
   
-    -   `Dynamic` 控制运行时对所有类型和成员的访问，以启用动态编程。  
+    -   `Dynamic` 控制运行时访问所有类型和成员，以启用动态编程。  
   
      以下表格中列出了这些反射策略类型和可以同它们一起使用的程序元素。  
   
     |元素|激活|浏览|动态|  
     |-------------|--------------|------------|-------------|  
     |[\<Application>](../../../docs/framework/net-native/application-element-net-native.md)|✓|✓|✓|  
-    |[\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md)|✓|✓|✓|  
+    |[\<程序集 >](../../../docs/framework/net-native/assembly-element-net-native.md)|✓|✓|✓|  
     |[\<AttributeImplies>](../../../docs/framework/net-native/attributeimplies-element-net-native.md)|✓|✓|✓|  
-    |[\<Event>](../../../docs/framework/net-native/event-element-net-native.md)||✓|✓|  
-    |[\<Field>](../../../docs/framework/net-native/field-element-net-native.md)||✓|✓|  
+    |[\<事件 >](../../../docs/framework/net-native/event-element-net-native.md)||✓|✓|  
+    |[\<字段 >](../../../docs/framework/net-native/field-element-net-native.md)||✓|✓|  
     |[\<GenericParameter>](../../../docs/framework/net-native/genericparameter-element-net-native.md)|✓|✓|✓|  
     |[\<ImpliesType>](../../../docs/framework/net-native/impliestype-element-net-native.md)|✓|✓|✓|  
-    |[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)||✓|✓|  
-    |[\<MethodInstantiation>](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)||✓|✓|  
-    |[\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md)|✓|✓|✓|  
+    |[\<方法 >](../../../docs/framework/net-native/method-element-net-native.md)||✓|✓|  
+    |[\<方法实例化 >](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)||✓|✓|  
+    |[\<Namespace >](../../../docs/framework/net-native/namespace-element-net-native.md)|✓|✓|✓|  
     |[\<Parameter>](../../../docs/framework/net-native/parameter-element-net-native.md)|✓|✓|✓|  
-    |[\<Property>](../../../docs/framework/net-native/property-element-net-native.md)||✓|✓|  
-    |[\<Subtypes>](../../../docs/framework/net-native/subtypes-element-net-native.md)|✓|✓|✓|  
+    |[\<属性 >](../../../docs/framework/net-native/property-element-net-native.md)||✓|✓|  
+    |[\<子类型 >](../../../docs/framework/net-native/subtypes-element-net-native.md)|✓|✓|✓|  
     |[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|✓|✓|✓|  
     |[\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)|✓|✓|✓|  
     |[\<TypeParameter>](../../../docs/framework/net-native/typeparameter-element-net-native.md)|✓|✓|✓|  
   
 -   序列化策略类型确定哪些元数据需要在运行时间可以用于序列化和反序列化：  
   
-    -   `Serialize` 控制运行时对构造函数、字段和属性的访问，使类型实例得到序列化和反序列化处理，这是通过第三方库进行的，例如 Newtonsoft JSON 序列化程序。  
+    -   `Serialize` 控制运行时对构造函数、 字段和属性，以使类型实例由第三方库，例如 Newtonsoft JSON 序列化程序序列化访问。  
   
-    -   `DataContractSerializer` 控制运行时对构造函数、字段和属性的访问，使类型实例得到 <xref:System.Runtime.Serialization.DataContractSerializer> 类的序列化。  
+    -   `DataContractSerializer` 控制运行时对构造函数、 字段和属性，以使类型实例序列化访问<xref:System.Runtime.Serialization.DataContractSerializer>类。  
   
-    -   `DataContractJsonSerializer` 控制运行时对构造函数、字段和属性的访问，使类型实例得到 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 类的序列化。  
+    -   `DataContractJsonSerializer` 控制运行时对构造函数、 字段和属性，以使类型实例序列化访问<xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>类。  
   
-    -   `XmlSerializer` 控制运行时对构造函数、字段和属性的访问，使类型实例得到 <xref:System.Xml.Serialization.XmlSerializer> 类的序列化。  
+    -   `XmlSerializer` 控制运行时对构造函数、 字段和属性，以使类型实例序列化访问<xref:System.Xml.Serialization.XmlSerializer>类。  
   
      以下表格中列出了这些序列化策略类型和可以同它们一起使用的程序元素。  
   
     |元素|序列化|DataContractSerializer|DataContractJsonSerializer|XmlSerializer|  
     |-------------|---------------|----------------------------|--------------------------------|-------------------|  
     |[\<Application>](../../../docs/framework/net-native/application-element-net-native.md)|✓|✓|✓|✓|  
-    |[\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md)|✓|✓|✓|✓|  
+    |[\<程序集 >](../../../docs/framework/net-native/assembly-element-net-native.md)|✓|✓|✓|✓|  
     |[\<AttributeImplies>](../../../docs/framework/net-native/attributeimplies-element-net-native.md)|✓|✓|✓|✓|  
-    |[\<Event>](../../../docs/framework/net-native/event-element-net-native.md)|||||  
-    |[\<Field>](../../../docs/framework/net-native/field-element-net-native.md)|✓||||  
+    |[\<事件 >](../../../docs/framework/net-native/event-element-net-native.md)|||||  
+    |[\<字段 >](../../../docs/framework/net-native/field-element-net-native.md)|✓||||  
     |[\<GenericParameter>](../../../docs/framework/net-native/genericparameter-element-net-native.md)|✓|✓|✓|✓|  
     |[\<ImpliesType>](../../../docs/framework/net-native/impliestype-element-net-native.md)|✓|✓|✓|✓|  
-    |[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)|||||  
-    |[\<MethodInstantiation>](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)|||||  
-    |[\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md)|✓|✓|✓|✓|  
+    |[\<方法 >](../../../docs/framework/net-native/method-element-net-native.md)|||||  
+    |[\<方法实例化 >](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)|||||  
+    |[\<Namespace >](../../../docs/framework/net-native/namespace-element-net-native.md)|✓|✓|✓|✓|  
     |[\<Parameter>](../../../docs/framework/net-native/parameter-element-net-native.md)|✓|✓|✓|✓|  
-    |[\<Property>](../../../docs/framework/net-native/property-element-net-native.md)|✓||||  
-    |[\<Subtypes>](../../../docs/framework/net-native/subtypes-element-net-native.md)|✓|✓|✓|✓|  
+    |[\<属性 >](../../../docs/framework/net-native/property-element-net-native.md)|✓||||  
+    |[\<子类型 >](../../../docs/framework/net-native/subtypes-element-net-native.md)|✓|✓|✓|✓|  
     |[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|✓|✓|✓|✓|  
     |[\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)|✓|✓|✓|✓|  
     |[\<TypeParameter>](../../../docs/framework/net-native/typeparameter-element-net-native.md)|✓|✓|✓|✓|  
   
 -   互操作策略类型确定哪些元数据在运行时间通过了连接到 COM 和 Windows 运行时的引用类型、值类型和函数指针。  
   
-    -   `MarshalObject` 控制到引用类型的 COM 和 Windows 运行时的本机封送处理。  
+    -   `MarshalObject` 本机封送到 COM 和 Windows 运行时引用类型的控件。  
   
-    -   `MarshalDelegate` 控制作为函数指针的委托类型的本机封送处理。  
+    -   `MarshalDelegate` 控制本机封送处理的委托类型与函数指针。  
   
-    -   `MarshalStructure` 控制到值类型的 COM 和 Windows 运行时的本机封送处理。  
+    -   `MarshalStructure` 本机封送到 COM 和 Windows 运行时的值类型的控件。  
   
      以下表格中列出了这些互操作策略类型和可以同它们一起使用的程序元素。  
   
     |元素|封送对象|封送委托|封送结构|  
     |-------------|-------------------|---------------------|----------------------|  
     |[\<Application>](../../../docs/framework/net-native/application-element-net-native.md)|✓|✓|✓|  
-    |[\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md)|✓|✓|✓|  
+    |[\<程序集 >](../../../docs/framework/net-native/assembly-element-net-native.md)|✓|✓|✓|  
     |[\<AttributeImplies>](../../../docs/framework/net-native/attributeimplies-element-net-native.md)|✓|✓|✓|  
-    |[\<Event>](../../../docs/framework/net-native/event-element-net-native.md)||||  
-    |[\<Field>](../../../docs/framework/net-native/field-element-net-native.md)||||  
+    |[\<事件 >](../../../docs/framework/net-native/event-element-net-native.md)||||  
+    |[\<字段 >](../../../docs/framework/net-native/field-element-net-native.md)||||  
     |[\<GenericParameter>](../../../docs/framework/net-native/genericparameter-element-net-native.md)|✓|✓|✓|  
     |[\<ImpliesType>](../../../docs/framework/net-native/impliestype-element-net-native.md)|✓|✓|✓|  
-    |[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)||||  
-    |[\<MethodInstantiation>](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)||||  
-    |[\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md)|✓|✓|✓|  
+    |[\<方法 >](../../../docs/framework/net-native/method-element-net-native.md)||||  
+    |[\<方法实例化 >](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)||||  
+    |[\<Namespace >](../../../docs/framework/net-native/namespace-element-net-native.md)|✓|✓|✓|  
     |[\<Parameter>](../../../docs/framework/net-native/parameter-element-net-native.md)|✓|✓|✓|  
-    |[\<Property>](../../../docs/framework/net-native/property-element-net-native.md)||||  
-    |[\<Subtypes>](../../../docs/framework/net-native/subtypes-element-net-native.md)|✓|✓|✓|  
+    |[\<属性 >](../../../docs/framework/net-native/property-element-net-native.md)||||  
+    |[\<子类型 >](../../../docs/framework/net-native/subtypes-element-net-native.md)|✓|✓|✓|  
     |[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|✓|✓|✓|  
     |[\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)|✓|✓|✓|  
     |[\<TypeParameter>](../../../docs/framework/net-native/typeparameter-element-net-native.md)|✓|✓|✓|  
@@ -114,10 +114,10 @@ ms.locfileid: "54642563"
 ## <a name="policy-settings"></a>策略设置  
  每个策略类型都可设置为以下表格中列出的一个值。 注意，代表类型成员的元素支持一组不同的策略设置，而不支持其他元素。  
   
-|策略设置|描述|`Assembly`、`Namespace`、`Type` 和 `TypeInstantiation` 元素|`Event`、`Field`、`Method`、`MethodInstantiation` 和 `Property` 元素|  
+|策略设置|描述|`Assembly``Namespace`， `Type`，和`TypeInstantiation`元素|`Event``Field`， `Method`， `MethodInstantiation`，和`Property`元素|  
 |--------------------|-----------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------------|  
 |`All`|为 .NET Native 工具链未删除的所有类型和成员启用策略。|✓||  
-|`Auto`|指定将默认策略用于该程序元素的策略类型。 这同省略该策略类型的策略是相同的。 `Auto` 通常用于显示策略是从一个父元素继承的。|✓|✓|  
+|`Auto`|指定将默认策略用于该程序元素的策略类型。 这同省略该策略类型的策略是相同的。 `Auto` 通常用于指示策略从父元素继承。|✓|✓|  
 |`Excluded`|指定了该策略禁止一个特定的程序元素使用。 例如，运行时指令：<br /><br /> `<Type Name="BusinessClasses.Person" Browse="Excluded" Dynamic="Excluded" />`<br /><br /> 指定了 `BusinessClasses.Person` 类的元数据既不能用来浏览，也不能用来动态实例化或修改 `Person` 对象。|✓|✓|  
 |`Included`|在父类型的元数据可用时启用一个策略。||✓|  
 |`Public`|启用针对公共类型或成员的策略，除非工具链确定该类型或成员无必要存在并已将其删除。 该设置不同于 `Required Public`，后者确保公共类型和成员的元数据始终可用，即使是在工具链确定这一步骤无必要时仍是如此。|✓||  
@@ -128,5 +128,6 @@ ms.locfileid: "54642563"
 |`Required All`|要求工具链在不管所有类型是否受到占用情况下都保留它们，并为它们启用策略。|✓||  
   
 ## <a name="see-also"></a>请参阅
-- [运行时指令 (rd.xml) 配置文件参考](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+
+- [运行时指令 (rd.xml) 配置文件引用](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令元素](../../../docs/framework/net-native/runtime-directive-elements.md)

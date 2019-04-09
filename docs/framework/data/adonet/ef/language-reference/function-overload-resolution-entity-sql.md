@@ -2,12 +2,12 @@
 title: 函数重载解析 (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 9c648054-3808-4a69-9d3e-98e6a4f9c5ca
-ms.openlocfilehash: 9b8e2a4f26c0101141292b768ee5870db78c90b3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e7e80704da9657dccfbfea548df074a95327cdc1
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54625167"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59082030"
 ---
 # <a name="function-overload-resolution-entity-sql"></a>函数重载解析 (Entity SQL)
 本主题描述如何解析 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 函数。  
@@ -22,7 +22,7 @@ ms.locfileid: "54625167"
   
 3.  **子类型匹配**。 函数的每个自变量类型都严格匹配参数类型或为参数类型的子类型，或为 null 字面值。 如果多个函数的唯一区别是所需的子类型转换的个数，则子类型转换个数最小的函数就是所解析的函数。  
   
-4.  **匹配子类型或类型提升**。 函数的每个自变量类型都严格匹配参数类型，或为参数类型的子类型，或可以提升到参数类型，或为 null 字面值。 同样，如果多个函数的唯一区别是子类型转换和提升的个数，则子类型转换和提升个数最小的函数就是所解析的函数。  
+4.  **匹配子类型或类型提升**。 函数的每个实参类型都严格匹配形参类型，或为形参类型的子类型，或可以提升到形参类型，或为 null 字面值。 同样，如果多个函数的唯一区别是子类型转换和提升的个数，则子类型转换和提升个数最小的函数就是所解析的函数。  
   
  如果上述任何条件都无法导致选择单个函数，则函数调用表达式具有多义性。  
   
@@ -31,6 +31,7 @@ ms.locfileid: "54625167"
  对于用户定义的函数，内联查询函数的定义将优先，即使当模型定义的函数存在且具有一个更适合用户定义函数的签名也不例外。  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体 SQL 引用](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [实体 SQL 概述](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL 概述](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
 - [函数](../../../../../../docs/framework/data/adonet/ef/language-reference/functions-entity-sql.md)

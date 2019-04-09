@@ -2,12 +2,12 @@
 title: 实体数据模型：命名空间
 ms.date: 03/30/2017
 ms.assetid: 98ab4226-bb9f-44e7-af46-61a9b1a4e47c
-ms.openlocfilehash: aa11902ece5197905c20e7e572562643c57f51c1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7772172512d35b9ce9cf07a992c1c5f0ecd8c55b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54590102"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59180555"
 ---
 # <a name="entity-data-model-namespaces"></a>实体数据模型：命名空间
 命名空间中实体数据模型 (EDM) 是一个抽象容器[实体类型](../../../../docs/framework/data/adonet/entity-type.md)，[复杂类型](../../../../docs/framework/data/adonet/complex-type.md)，并[关联](../../../../docs/framework/data/adonet/association-type.md)。 EDM 中的命名空间类似于编程语言中的命名空间：它们为自己所包含的对象提供了上下文，并为消除具有相同名称（但包含在不同的命名空间中）的对象的歧义提供了一种方式。  
@@ -18,5 +18,6 @@ ms.locfileid: "54590102"
  [!code-xml[EDM_Example_Model#ImportedNamespace](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books6.edmx#importednamespace)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体数据模型关键概念](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
 - [实体数据模型](../../../../docs/framework/data/adonet/entity-data-model.md)

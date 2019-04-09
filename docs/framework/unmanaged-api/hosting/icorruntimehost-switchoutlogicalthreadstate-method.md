@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 671ba0a5450918b8e0bee63d1a13b3188ef2ce0f
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 1291d4e69843db7bd90af07291da415220d98807
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57501647"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59131347"
 ---
 # <a name="icorruntimehostswitchoutlogicalthreadstate-method"></a>ICorRuntimeHost::SwitchOutLogicalThreadState 方法
 此方法支持 .NET Framework 基础结构，但不适合直接在代码中使用。  
@@ -49,4 +49,5 @@ HRESULT SwitchOutLogicalThreadState(
  **.NET framework 版本：** 1.0, 1.1  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICorRuntimeHost 接口](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

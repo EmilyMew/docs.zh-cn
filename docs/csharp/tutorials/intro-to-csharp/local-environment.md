@@ -2,12 +2,12 @@
 title: C# 简介 - 熟悉开发工具
 description: 本文介绍用于在计算机上开发 C# 和 .NET 应用程序的工具的基本知识。
 ms.date: 10/23/2018
-ms.openlocfilehash: cf5bf68c1497bf62826656aa9cd2bd981128d3a2
-ms.sourcegitcommit: ccd8c36b0d74d99291d41aceb14cf98d74dc9d2b
+ms.openlocfilehash: db0b3228272a17feaa11ec754fa0aa4952a0d1ee
+ms.sourcegitcommit: a3db1a9eafca89f95ccf361bc1833b47fbb2bb30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53129982"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58920657"
 ---
 # <a name="become-familiar-with-the-net-development-tools"></a>熟悉 .NET 开发工具
 
@@ -26,31 +26,25 @@ ms.locfileid: "53129982"
 
 可以从下列任一教程入手：
 
-## <a name="numbers-in-cnumbers-in-csharp-localmd"></a>[C# 中的数字](numbers-in-csharp-local.md)
+## [<a name="numbers-in-c"></a>C# 中的数字](numbers-in-csharp-local.md)
 
 在 [C# 中的数字](numbers-in-csharp-local.md)教程中，将了解计算机如何存储数字，以及如何对不同类型的数字执行计算。 读者将学习四舍五入的基础知识，以及如何使用 C# 执行数学运算。
 
 若要更好地学习本教程，需要已完成 [Hello world](hello-world.yml) 课程。
 
-## <a name="branches-and-loopsbranches-and-loops-localmd"></a>[分支和循环](branches-and-loops-local.md)
+## [<a name="branches-and-loops"></a>分支和循环](branches-and-loops-local.md)
 
 在[分支和循环](branches-and-loops-local.md)教程中，将了解根据变量中存储的值选择不同代码执行路径的基础知识。 读者将学习控制流的基础知识，这是程序决定选择不同操作的基本依据。
 
 若要更好地学习本教程，需要先完成 [Hello World](hello-world.yml) 和 [C# 中的数字](numbers-in-csharp-local.md)课程。
 
-## <a name="string-interpolationinterpolated-strings-localmd"></a>[字符串内插](interpolated-strings-local.md)
-
-[字符串内插](interpolated-strings-local.md)教程将介绍如何将值插入到字符串中。 你将学习如何创建带有嵌入式 C# 表达式的内插字符串，以及如何控制结果字符串的格式设置。
-
-若要更好地学习本教程，需要先完成 [Hello World](hello-world.yml)、[C# 中的数字](numbers-in-csharp-local.md)以及[分支和循环](branches-and-loops-local.md)课程。
-
-## <a name="list-collectionarrays-and-collectionsmd"></a>[列表集合](arrays-and-collections.md)
+## [<a name="list-collection"></a>列表集合](arrays-and-collections.md)
 
 [列表集合](arrays-and-collections.md)课程将介绍存储一系列数据的列表集合类型。 读者将学习如何添加和删除项、如何搜索项，以及如何对列表进行排序。 读者将探索各种列表。 
 
 若要更好地学习本教程，需要已完成上面列出的课程。
 
-## <a name="introduction-to-classesintroduction-to-classesmd"></a>[类简介](introduction-to-classes.md)
+## [<a name="introduction-to-classes"></a>类简介](introduction-to-classes.md)
 
 只能在计算机上使用自己的本地开发环境和 .NET Core 演练最后一个 C# 简介教程。
 读者将生成控制台应用程序，并了解 C# 语言中面向对象的基本功能的工作原理。

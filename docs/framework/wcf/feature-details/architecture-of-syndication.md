@@ -2,12 +2,12 @@
 title: 联合体系结构
 ms.date: 03/30/2017
 ms.assetid: ed4ca86e-e3d8-4acb-87aa-1921fbc353be
-ms.openlocfilehash: b07fc03fd11c794d804b6bcd1813010965365e43
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4083f7f7ef3fc986e9a7c430b8ed8cfe451c9d86
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54623438"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59075907"
 ---
 # <a name="architecture-of-syndication"></a>联合体系结构
 联合 API 是专为提供不限制格式编程模型而设计的，该编程模型允许将各种格式的联合内容写入网络中。 抽象数据模型由以下类组成：  
@@ -78,6 +78,7 @@ ms.locfileid: "54623438"
 -   联合协议的一个主要功能是扩展性。 Atom 1.0 和 RSS 2.0 都允许您向联合源中添加规范中没有定义的属性和元素。 WCF 联合编程模型提供使用自定义属性和扩展的两种方法： 派生新类和松散类型访问。 有关详细信息，请参阅[联合扩展性](../../../../docs/framework/wcf/feature-details/syndication-extensibility.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [WCF 联合概述](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)
 - [WCF 联合对象模型如何映射到 Atom 和 RSS](../../../../docs/framework/wcf/feature-details/how-the-wcf-syndication-object-model-maps-to-atom-and-rss.md)
 - [WCF Web HTTP 编程模型](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

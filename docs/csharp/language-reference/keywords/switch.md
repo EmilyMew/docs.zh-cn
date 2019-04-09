@@ -12,12 +12,12 @@ helpviewer_keywords:
 - case statement [C#]
 - default keyword [C#]
 ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
-ms.openlocfilehash: 371b6e232e9d97df3ce34d69bcb10155c1242e1e
-ms.sourcegitcommit: d09c77414e9e4fc72c79b04deee7a756a120674e
+ms.openlocfilehash: 73524fd54aeffc86fe0c451ec4418308da764682
+ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54084714"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58463249"
 ---
 # <a name="switch-c-reference"></a>switch（C# 参考）
 
@@ -59,7 +59,7 @@ ms.locfileid: "54084714"
 
 [!code-csharp[switch#2](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch2.cs#1)]
 
-switch 语句执行中只有一个开关部分。 C# 不允许从一个开关部分继续执行到下一个开关部分。 因此，下面的代码生成编译器错误 CS0163：“控件不能从一个 case 标签 (<case label>) 贯穿到另一个 case 标签。”
+switch 语句执行中只有一个开关部分。 C# 不允许从一个开关部分继续执行到下一个开关部分。 因此，下面的代码生成编译器错误 CS0163：“控制不能从一个 case 标签（\<case 标签 >）贯穿到另一个 case 标签。”
 
 ```csharp
 switch (caseSwitch)

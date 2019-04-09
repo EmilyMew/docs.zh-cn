@@ -5,31 +5,29 @@ helpviewer_keywords:
 - Span elements [WPF]
 - bidirectional features [WPF]
 ms.assetid: fd850e25-7dba-408c-b521-8873e51dc968
-ms.openlocfilehash: 12ca85132ca063471092078c6f54e23a57f574ae
-ms.sourcegitcommit: 69bf8b719d4c289eec7b45336d0b933dd7927841
+ms.openlocfilehash: 575598f48b3cfdf636be78a9de6e0c9a7fd9c208
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57846436"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59079820"
 ---
 # <a name="bidirectional-features-in-wpf-overview"></a>WPF 中的双向功能概述
 与其他任何开发平台不同[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]具有支持的双向内容快速开发的许多功能，例如，混合从左到右和从右到左同一文档中的数据。 同时，在[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]创建需要双向功能，如阿拉伯语和希伯来语用户的用户的卓越的体验。  
   
  以下各节结合一些示例阐释了如何获得双向内容的最佳显示效果，并对许多双向功能进行了说明。 大多数示例使用[!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)]，但可以轻松地将应用到的概念C#或 Microsoft Visual Basic 代码。  
-  
 
-  
 <a name="FlowDirection"></a>   
 ## <a name="flowdirection"></a>FlowDirection  
  基本属性，用于定义中的内容流动方向[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]应用程序是<xref:System.Windows.FrameworkElement.FlowDirection%2A>。 此属性可以设置为两个枚举值之一<xref:System.Windows.FlowDirection.LeftToRight>或<xref:System.Windows.FlowDirection.RightToLeft>。 该属性可供所有[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]继承元素<xref:System.Windows.FrameworkElement>。  
   
  下面的示例设置的流方向<xref:System.Windows.Controls.TextBox>元素。  
   
- **从左向右的流方向**  
+ **从左到右流方向**  
   
  [!code-xaml[LTRRTL#LTR](~/samples/snippets/csharp/VS_Snippets_Wpf/LTRRTL/CS/Pane1.xaml#ltr)]  
   
- **从右向左的流方向**  
+ **从右到左的流方向**  
   
  [!code-xaml[LTRRTL#RTL](~/samples/snippets/csharp/VS_Snippets_Wpf/LTRRTL/CS/Pane1.xaml#rtl)]  
   
@@ -43,7 +41,7 @@ ms.locfileid: "57846436"
   
  [!code-xaml[FlowDirection#FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDirection/CS/Window1.xaml#flowdirection)]  
   
- 最高级别<xref:System.Windows.Window>已<xref:System.Windows.FlowDirection.RightToLeft> <xref:System.Windows.FlowDirection>，因此它所包含的所有元素也都继承同一<xref:System.Windows.FrameworkElement.FlowDirection%2A>。 若要重写指定的元素<xref:System.Windows.FrameworkElement.FlowDirection%2A>，必须添加显式方向更改的第二个<xref:System.Windows.Controls.TextBlock>在前面的示例，这会更改为<xref:System.Windows.FlowDirection.LeftToRight>。 如果未<xref:System.Windows.FrameworkElement.FlowDirection%2A>定义，则默认值<xref:System.Windows.FlowDirection.LeftToRight>适用。  
+ 最高级别<xref:System.Windows.Window>已<xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.FlowDirection>，因此它所包含的所有元素也都继承同一<xref:System.Windows.FrameworkElement.FlowDirection%2A>。 若要重写指定的元素<xref:System.Windows.FrameworkElement.FlowDirection%2A>，必须添加显式方向更改的第二个<xref:System.Windows.Controls.TextBlock>在前面的示例，这会更改为<xref:System.Windows.FlowDirection.LeftToRight>。 如果未<xref:System.Windows.FrameworkElement.FlowDirection%2A>定义，则默认值<xref:System.Windows.FlowDirection.LeftToRight>适用。  
   
  下图显示了上一示例的输出：
 
@@ -116,7 +114,7 @@ ms.locfileid: "57846436"
     
  ![图形显示从右到左渐变的工具栏。](./media/bidirectional-features-in-wpf-overview/toolbar-right-left-gradient.png)  
   
- 下面的示例绘制<xref:System.Windows.FlowDirection.RightToLeft> <xref:System.Windows.Controls.ToolBar>。 (若要绘制它从左到右，删除<xref:System.Windows.FlowDirection>特性，可以在<xref:System.Windows.Controls.ToolBar>。  
+ 下面的示例绘制<xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.Controls.ToolBar>。 (若要绘制它从左到右，删除<xref:System.Windows.FlowDirection>特性，可以在<xref:System.Windows.Controls.ToolBar>。  
   
  [!code-xaml[Gradient#Gradient](~/samples/snippets/csharp/VS_Snippets_Wpf/Gradient/CS/Window1.xaml#gradient)]  
   
@@ -124,7 +122,7 @@ ms.locfileid: "57846436"
 ### <a name="flowdirection-exceptions"></a>FlowDirection 异常  
  有少数情况下，<xref:System.Windows.FlowDirection>与预期不符。 本部分介绍其中两种异常。  
   
- **Image**  
+ **图像**  
   
  <xref:System.Windows.Controls.Image>表示显示图像的控件。 在中[!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)]可与<xref:System.Windows.Controls.Image.Source%2A>属性，用于定义[!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)]的<xref:System.Windows.Controls.Image>显示。  
   
@@ -140,7 +138,7 @@ ms.locfileid: "57846436"
   
  **请注意**包含在下载文件中的是**ms_logo.jpg**文件。 该代码假定 .jpg 文件不在项目中，而是位于 C:\ 驱动器中的某个位置。 必须将 .jpg 从项目文件复制到 C:\ 驱动器或更改代码才能在项目内查找该文件。 若要执行此更改`Source="file://c:/ms_logo.jpg"`到`Source="ms_logo.jpg"`。  
   
- **Path**  
+ **路径**  
   
  除了<xref:System.Windows.Controls.Image>，另一个值得关注的元素<xref:System.Windows.Shapes.Path>。 Path 是可用于绘制一系列连接的直线和曲线的对象。 它的行为方式类似于<xref:System.Windows.Controls.Image>有关其<xref:System.Windows.FlowDirection>，例如其<xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.FlowDirection>是的水平镜像其<xref:System.Windows.FlowDirection.LeftToRight>之一。 但是，与不同<xref:System.Windows.Controls.Image>，<xref:System.Windows.Shapes.Path>继承其<xref:System.Windows.FlowDirection>从该容器，一个不需要显式指定。  
   
@@ -160,11 +158,11 @@ ms.locfileid: "57846436"
   
  这样，应用程序来处理而无需将它们从一种语言转换为另一个数值，例如，用户可以打开[!INCLUDE[TLA#tla_xl](../../../../includes/tlasharptla-xl-md.md)]电子表格在本地化的阿拉伯语[!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]，看到阿拉伯文形状在阿拉伯语中的数字，但中将其打开欧洲版本[!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]看到相同数字的欧洲表示形式。 这对其他符号（如逗号分隔符和百分比符号）来说也是必需的，因为在同一文档中它们通常随数字一起出现。  
   
- [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 沿承了这一传统，并为此功能提供了进一步支持，以允许更多的用户对使用替换的时间和方式进行控制。 虽然此功能适用于任何语言，但它对双向内容尤其有用；由于应用程序可能会在各种区域性下运行，因此针对特定语言来设置数字形状通常是应用程序开发人员所面临的难题。  
+ [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 承了，并添加了更多支持允许更多的用户控制何时以及如何使用替换此功能。 虽然此功能适用于任何语言，但它对双向内容尤其有用；由于应用程序可能会在各种区域性下运行，因此针对特定语言来设置数字形状通常是应用程序开发人员所面临的难题。  
   
  在中工作的核心属性控制如何执行数字替换[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]是<xref:System.Windows.Media.NumberSubstitution.Substitution%2A>依赖项属性。 <xref:System.Windows.Media.NumberSubstitution>类指定文本中的数字的显示方式。 它有三个定义其行为的公共属性。 下面概括了其中的每个属性。  
   
- **CultureSource：**  
+ **CultureSource:**  
   
  此属性指定如何确定数字的区域性。 它采用三个之一<xref:System.Windows.Media.NumberCultureSource>枚举值。  
   
@@ -182,15 +180,15 @@ ms.locfileid: "57846436"
   
  此属性指定要执行的数字替换类型。 它采用以下之一<xref:System.Windows.Media.NumberSubstitutionMethod>枚举值。  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod.AsCulture>：替换方法根据数字区域性确定<xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A?displayProperty=nameWithType>属性。 这是默认设置。  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.AsCulture>:替换方法根据数字区域性确定<xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A?displayProperty=nameWithType>属性。 这是默认设置。  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod.Context>：如果数字区域性为阿拉伯语或波斯语区域性，它指定数字取决于上下文。  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.Context>:如果数字区域性为阿拉伯语或波斯语区域性，它指定数字取决于上下文。  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod.European>：数字始终呈现为欧洲数字。  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.European>:数字始终呈现为欧洲数字。  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational>：使用指定的区域性的数字区域性民族数字呈现数字<xref:System.Globalization.CultureInfo.NumberFormat%2A>。  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational>:使用指定的区域性的数字区域性民族数字呈现数字<xref:System.Globalization.CultureInfo.NumberFormat%2A>。  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod.Traditional>：使用数字区域性的传统数字呈现数字。 对于大多数区域性，这是与相同<xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational>。 但是，<xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational>而此值产生阿拉伯数字让所有阿拉伯语区域性产生拉丁数字让某些阿拉伯语区域性。  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.Traditional>:使用数字区域性的传统数字呈现数字。 对于大多数区域性，这是与相同<xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational>。 但是，<xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational>而此值产生阿拉伯数字让所有阿拉伯语区域性产生拉丁数字让某些阿拉伯语区域性。  
   
  这些值对双向内容开发人员意味着什么？ 在大多数情况下，可能需要开发人员只需定义<xref:System.Windows.FlowDirection>以及每个文本的语言[!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]元素，例如`Language="ar-SA"`并且<xref:System.Windows.Media.NumberSubstitution>逻辑负责根据正确的数字显示[!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]。 下面的示例演示了如何使用中的阿拉伯数字和英文数字[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]应用程序运行在阿拉伯语版的[!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]。  
   

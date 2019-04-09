@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 428c68b6-a7b4-44be-b280-75905f46612c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 230a5e3e3231ad6675d214d370f74eb37405c89c
-ms.sourcegitcommit: bef803e2025642df39f2f1e046767d89031e0304
+ms.openlocfilehash: 32e74a76b6b1bedee4efc5715d0710c8efce2455
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56305628"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59120752"
 ---
 # <a name="strong-naming-unmanaged-api-reference"></a>强命名（非托管 API 参考）
 强命名 API 允许客户端管理程序集的强名称签名。  
@@ -103,9 +103,10 @@ ms.locfileid: "56305628"
  [StrongNameTokenFromPublicKey 函数](../../../../docs/framework/unmanaged-api/strong-naming/strongnametokenfrompublickey-function.md)  
  获取表示公钥的令牌。 从 [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] 开始，该函数已弃用。  
   
- [PublicKeyBlob Strong Naming](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)  
+ [PublicKeyBlob 结构](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)  
  表示二进制格式的公钥/私钥对中的公钥。  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICLRStrongName 接口](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
 - [非托管 API 参考](../../../../docs/framework/unmanaged-api/index.md)

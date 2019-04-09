@@ -8,18 +8,16 @@ helpviewer_keywords:
 - hit testing functionality [WPF]
 - visual layer [WPF], hit testing functionality
 ms.assetid: b1a64b61-14be-4d75-b89a-5c67bebb2c7b
-ms.openlocfilehash: c8846c673e36fe64dd13c7acb600b93dedac5f3e
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 0cb8d0656765e5bc2c2a54ef5f282a67d8579f20
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57355072"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59082173"
 ---
 # <a name="hit-testing-in-the-visual-layer"></a>可视化层中的命中测试
 本主题概述可视化层提供的命中测试功能。 命中测试支持，您可以确定几何或点值是否落在所呈现内容的<xref:System.Windows.Media.Visual>，从而可以实现用户界面行为，例如选择矩形来选择多个对象。  
-  
- 
-  
+
 <a name="hit_testing_scenarios"></a>   
 ## <a name="hit-testing-scenarios"></a>命中测试方案  
  <xref:System.Windows.UIElement>类提供了<xref:System.Windows.UIElement.InputHitTest%2A>方法，它允许你针对使用给定的坐标值对元素进行命中测试。 在许多情况下，<xref:System.Windows.UIElement.InputHitTest%2A>方法提供实现命中测试的元素的所需的功能。 但是，有多种方案可能需要在可视化层上实现命中测试。  
@@ -139,6 +137,7 @@ ms.locfileid: "57355072"
  [!code-vb[HitTestingOverview#108](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#108)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>
 - <xref:System.Windows.Media.HitTestResult>
 - <xref:System.Windows.Media.HitTestResultCallback>

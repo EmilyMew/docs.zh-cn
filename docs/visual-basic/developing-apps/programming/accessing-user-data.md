@@ -11,12 +11,12 @@ helpviewer_keywords:
 - login names [Visual Basic]
 - examples [Visual Basic], accessing user data
 ms.assetid: 32492a15-ee59-4a63-a1f1-9b24cc13140a
-ms.openlocfilehash: 5ff071aadb189cec839b9cb41d510764a9187363
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e5d18adcb331162a72da0adb4018d1d59ecc072e
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54605484"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58825284"
 ---
 # <a name="accessing-user-data-visual-basic"></a>访问用户数据 (Visual Basic)
 本部分包含有关处理 `My.User` 对象的主题以及可通过该操作完成的任务。  
@@ -25,11 +25,12 @@ ms.locfileid: "54605484"
   
 ## <a name="tasks"></a>任务  
   
-|到|查看|  
+|功能|查看|  
 |--------|---------|  
 |获取用户的登录名|<xref:Microsoft.VisualBasic.ApplicationServices.User.Name%2A>|  
 |如果应用程序使用 Windows 身份验证，则获取用户的域名|<xref:Microsoft.VisualBasic.ApplicationServices.User.CurrentPrincipal>|  
 |确定用户的角色|<xref:Microsoft.VisualBasic.ApplicationServices.User.IsInRole%2A>|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>

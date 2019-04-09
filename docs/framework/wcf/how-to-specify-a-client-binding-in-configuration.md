@@ -2,12 +2,12 @@
 title: 如何：在配置中指定客户端绑定
 ms.date: 03/30/2017
 ms.assetid: 4a7c79aa-50ee-4991-891e-adc0599323a7
-ms.openlocfilehash: 2441b307961079c28e114b4fed69c252ff42e0d4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 81e9b4b5949d3a89749911a30ad199c4f0da300f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54606382"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59091559"
 ---
 # <a name="how-to-specify-a-client-binding-in-configuration"></a>如何：在配置中指定客户端绑定
 在此示例中，创建了一个使用计算器服务的客户端控制台应用程序，并在配置中以声明方式为该客户端指定了绑定。 该客户端访问实现了 `CalculatorService` 接口的 `ICalculator`，并且服务和客户端都使用 <xref:System.ServiceModel.BasicHttpBinding> 类。  
@@ -51,4 +51,5 @@ ms.locfileid: "54606382"
 6.  编译并运行客户端。  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用绑定配置服务和客户端](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

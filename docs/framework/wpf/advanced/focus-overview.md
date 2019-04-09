@@ -8,12 +8,12 @@ helpviewer_keywords:
 - applications [WPF], focus
 - focus in applications [WPF]
 ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4
-ms.openlocfilehash: 5853c48ad77131d33cd0ab767c4a58ba56aaa39f
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 72b866d714e6a77020bdb74843c3aaa0ba0c3278
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369911"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073879"
 ---
 # <a name="focus-overview"></a>焦点概述
 在 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 中，有两个与焦点有关的主要概念：键盘焦点和逻辑焦点。  键盘焦点指接收键盘输入的元素，而逻辑焦点指焦点范围中具有焦点的元素。  本概述详细介绍了这些概念。  对于创建具有多个可获取焦点的区域的复杂应用程序来说，理解这些概念之间的区别非常重要。  
@@ -21,9 +21,7 @@ ms.locfileid: "57369911"
  参与焦点管理的主要类是<xref:System.Windows.Input.Keyboard>类，<xref:System.Windows.Input.FocusManager>类和基元素类，如<xref:System.Windows.UIElement>和<xref:System.Windows.ContentElement>。  有关基元素的详细信息，请参阅[基元素概述](base-elements-overview.md)。  
   
  <xref:System.Windows.Input.Keyboard>类而言主要与键盘焦点和<xref:System.Windows.Input.FocusManager>是主要关注逻辑焦点，但这不是一个绝对区别。  具有键盘焦点的元素也具有逻辑焦点，但具有逻辑焦点的元素不一定具有键盘焦点。  当你使用时，这是明显<xref:System.Windows.Input.Keyboard>类来设置为其具有键盘焦点的元素还在元素上设置逻辑焦点。  
-  
 
-  
 <a name="Keyboard_Focus"></a>   
 ## <a name="keyboard-focus"></a>键盘焦点  
  键盘焦点指当前正在接收键盘输入的元素。  在整个桌面上，只能有一个具有键盘焦点的元素。  在中[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]，具有键盘焦点的元素将具有<xref:System.Windows.IInputElement.IsKeyboardFocused%2A>设置为`true`。  静态属性<xref:System.Windows.Input.Keyboard.FocusedElement%2A>上<xref:System.Windows.Input.Keyboard>类获取当前具有键盘焦点的元素。  
@@ -118,6 +116,7 @@ ms.locfileid: "57369911"
  与逻辑焦点相关的事件都<xref:System.Windows.UIElement.GotFocus>和<xref:System.Windows.UIElement.LostFocus>。  这些事件定义上<xref:System.Windows.Input.FocusManager>为附加事件，但<xref:System.Windows.Input.FocusManager>不公开 CLR 事件包装器。  <xref:System.Windows.UIElement> 和<xref:System.Windows.ContentElement>更方便地公开这些事件。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Input.FocusManager>
 - <xref:System.Windows.UIElement>
 - <xref:System.Windows.ContentElement>

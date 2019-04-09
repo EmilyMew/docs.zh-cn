@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: ef2b31c3-7426-43e7-9924-92339b96556d
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 9d64ee6942d9397ceb45b812ef3c26179fac9b2b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cb7520518497b244be8be3751ca8a3063a02717a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54540294"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59135858"
 ---
 # <a name="clr-etw-events"></a>CLR ETW 事件
 本部分的主题介绍 Windows (ETW) 事件的事件跟踪。 每个事件都有关联的关键字和级别，详见 [CLR ETW 关键字和级别](../../../docs/framework/performance/clr-etw-keywords-and-levels.md)主题。 CLR 有两个事件提供程序：  
@@ -62,6 +62,7 @@ ms.locfileid: "54540294"
  捕获可用于其他事件以在引发事件后生成堆栈跟踪的信息。  
   
 ## <a name="see-also"></a>请参阅
+
 - [改善调试和性能优化使用 ETW](https://go.microsoft.com/fwlink/?LinkId=179696)
 - [Windows 性能博客](https://go.microsoft.com/fwlink/?LinkId=179509)
 - [控制 .NET Framework 日志记录](../../../docs/framework/performance/controlling-logging.md)

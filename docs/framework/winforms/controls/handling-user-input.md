@@ -9,12 +9,12 @@ helpviewer_keywords:
 - custom controls [Windows Forms], keyboard events using code
 - custom controls [Windows Forms], mouse events using code
 ms.assetid: d9b12787-86f6-4022-8e0f-e12d312c4af2
-ms.openlocfilehash: a1129e3778763a4e2cd06759c5a5ad7656244934
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 3ebe82fc18deba52fafe76da7ff85fb247446e46
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57720965"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59074945"
 ---
 # <a name="handling-user-input"></a>处理用户输入
 本主题介绍了提供的主键盘和鼠标事件<xref:System.Windows.Forms.Control?displayProperty=nameWithType>。 处理事件时，控件作者应重写受保护的 `On`*EventName* 方法，而不是向事件附加委托。 若要查看事件，请参阅[从组件引发事件](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/sh2e3k5z(v=vs.120))。  
@@ -64,6 +64,7 @@ ms.locfileid: "57720965"
  有关完整的源代码`FlashTrackBar`示例，请参阅[如何：创建显示进度的 Windows 窗体控件](how-to-create-a-windows-forms-control-that-shows-progress.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Windows 窗体控件中的事件](events-in-windows-forms-controls.md)
 - [定义事件](defining-an-event-in-windows-forms-controls.md)
 - [事件](../../../standard/events/index.md)

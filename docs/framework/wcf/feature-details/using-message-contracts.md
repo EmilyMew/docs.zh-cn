@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - message contracts [WCF]
 ms.assetid: 1e19c64a-ae84-4c2f-9155-91c54a77c249
-ms.openlocfilehash: 34f1c761a127fe00612259a79dae47d1c9d5512f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4c5f1ab0b6fa56e4836a950ca3f2bbad19cfbff2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54534415"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59121974"
 ---
 # <a name="using-message-contracts"></a>使用消息约定
 通常在生成 Windows Communication Foundation (WCF) 应用程序时，开发人员密切关注数据结构和序列化问题而无需自己考虑在其中执行数据的消息的结构。 对于这些应用程序，为参数或返回值创建数据协定的过程很简单。 (有关详细信息，请参阅[Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)。)  
@@ -105,7 +105,7 @@ public class BankingTransaction
  <xref:System.ServiceModel.MessageContractAttribute> 允许您指定 WrapperName 和 WrapperNamespace 特性，这些特性控制 SOAP 消息的正文中包装元素的名称。 默认情况下，消息协定类型的名称用于包装，而在其中定义消息协定的命名空间 `http://tempuri.org/` 用作默认的命名空间。  
   
 > [!NOTE]
->  消息协定中会忽略 <xref:System.Runtime.Serialization.KnownTypeAttribute> 属性。 如果需要 <xref:System.Runtime.Serialization.KnownTypeAttribute>，可以将其放在使用所述消息协定的操作上。  
+>  <xref:System.Runtime.Serialization.KnownTypeAttribute> 消息协定中忽略了属性。 如果需要 <xref:System.Runtime.Serialization.KnownTypeAttribute>，可以将其放在使用所述消息协定的操作上。  
   
 ## <a name="controlling-header-and-body-part-names-and-namespaces"></a>控制标头和正文部分的名称和命名空间  
  在消息协定的 SOAP 表示形式中，每个标头和正文部分都映射为一个具有名称和命名空间的 XML 元素。  
@@ -244,7 +244,7 @@ public class PatientRecord
 ## <a name="soap-header-attributes"></a>SOAP 标头属性  
  SOAP 标准定义了下列可存在于标头上的属性：  
   
--   `Actor/Role`（在 SOAP 1.1 中为 `Actor`，在 SOAP 1.2 中为 `Role`）  
+-   `Actor/Role` (`Actor`在 SOAP 1.1， `Role` SOAP 1.2 中)  
   
 -   `MustUnderstand`  
   
@@ -448,5 +448,6 @@ public class OperationDetails
  如果要将消息对象作为 `Result` 属性来接收并要使返回的值作为该对象上的属性，请使用 `/messageContract` 命令选项。 这会生成一个签名，该签名会将响应消息作为 `Result` 对象上的 <xref:System.EventArgs> 属性返回。 然后，所有内部返回值就都是响应消息对象的属性了。  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用数据协定](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
 - [设计和实现服务](../../../../docs/framework/wcf/designing-and-implementing-services.md)

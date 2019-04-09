@@ -3,12 +3,12 @@ title: <roleClaimType>
 ms.date: 03/30/2017
 ms.assetid: 69a49deb-6369-41ba-806b-ae8d21fac64b
 author: BrucePerlerMS
-ms.openlocfilehash: 812d44ef947d27b0f73d9dc2172494e89ee56d72
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 8c7b7c9b42ac72b878aed4e12298dc3655f1e707
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55270861"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115591"
 ---
 # <a name="roleclaimtype"></a>\<roleClaimType>
 指定的集合中定义的角色类型声明的声明类型<xref:System.Security.Claims.ClaimsIdentity>返回的对象<xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A>令牌处理程序的方法。  
@@ -47,7 +47,7 @@ ms.locfileid: "55270861"
 |值|一个字符串，指定表示要用于角色声明类型的声明的声明类型的 URI。|  
   
 ### <a name="child-elements"></a>子元素  
- 无  
+ None  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -69,4 +69,5 @@ ms.locfileid: "55270861"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.RoleClaimType%2A>

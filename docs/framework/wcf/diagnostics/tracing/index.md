@@ -2,6 +2,12 @@
 title: 跟踪
 ms.date: 03/30/2017
 ms.assetid: 2649eae2-dbf8-421c-9cfb-cfa9e01de87f
+ms.openlocfilehash: 2379b290494e72b65db5ddc6a7bc5df376d4373f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59093392"
 ---
 # <a name="tracing"></a>跟踪
 Windows Communication Foundation (WCF) 提供有关错误监视和分析应用程序检测和诊断数据。 您可以使用跟踪代替调试器来了解应用程序的运行行为，或者为什么出错。 您还可以在组件之间关联错误和处理，以提供端对端体验。  
@@ -34,4 +40,5 @@ Windows Communication Foundation (WCF) 提供有关错误监视和分析应用�
  本主题列出了由 WCF 生成的所有跟踪。  
   
 ## <a name="see-also"></a>请参阅
+
 - [服务跟踪查看器工具 (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)

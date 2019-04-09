@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - DataGridView control [Windows Forms], virtual mode
 ms.assetid: feae5d43-2848-4b1a-8ea7-77085dc415b5
-ms.openlocfilehash: 92b45f026470f312fe788ed30e4ff8d172735a98
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: f284835578221ad1fe859f260e37bb829cd64b2d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57709479"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59124717"
 ---
 # <a name="virtual-mode-in-the-windows-forms-datagridview-control"></a>Windows 窗体 DataGridView 控件中的虚拟模式
 虚拟模式下，你可以管理之间的交互<xref:System.Windows.Forms.DataGridView>控件和自定义数据缓存。 若要实现虚拟模式下，设置<xref:System.Windows.Forms.DataGridView.VirtualMode%2A>属性设置为`true`并处理一个或多个本主题中所述的事件。 通常会处理至少`CellValueNeeded`事件，它使数据缓存中的值查找的控件。  
@@ -40,7 +40,7 @@ ms.locfileid: "57709479"
   
  仅将发生以下事件时<xref:System.Windows.Forms.DataGridView.VirtualMode%2A>属性设置为`true`。  
   
-|事件|描述|  
+|Event|描述|  
 |-----------|-----------------|  
 |<xref:System.Windows.Forms.DataGridView.CellValueNeeded>|该控件用于从显示的数据缓存中检索的单元值。 仅对未绑定的列中的单元格时发生此事件。|  
 |<xref:System.Windows.Forms.DataGridView.CellValuePushed>|该控件用于将用户输入的单元格提交到数据缓存。 仅对未绑定的列中的单元格时发生此事件。<br /><br /> 调用<xref:System.Windows.Forms.DataGridView.UpdateCellValue%2A>方法时更改缓存的值之外的<xref:System.Windows.Forms.DataGridView.CellValuePushed>事件处理程序以确保在控件中显示的当前值并应用当前有效的任何自动调整大小模式。|  
@@ -63,9 +63,10 @@ ms.locfileid: "57709479"
  为了有效地使用大量的数据，要实现虚拟模式下，如果您还需要确保与你也会有效地工作<xref:System.Windows.Forms.DataGridView>控件本身。 有关有效地使用的单元格样式、 自动调整大小、 选择以及行共享的详细信息，请参阅[缩放 Windows 窗体 DataGridView 控件的最佳做法](best-practices-for-scaling-the-windows-forms-datagridview-control.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.VirtualMode%2A>
-- [Windows 窗体 DataGridView 控件中的性能调整](performance-tuning-in-the-windows-forms-datagridview-control.md)
-- [有关缩放 Windows 窗体 DataGridView 控件的最佳做法](best-practices-for-scaling-the-windows-forms-datagridview-control.md)
+- [Windows 窗体 DataGridView 控件中的性能优化](performance-tuning-in-the-windows-forms-datagridview-control.md)
+- [缩放 Windows 窗体 DataGridView 控件的最佳做法](best-practices-for-scaling-the-windows-forms-datagridview-control.md)
 - [演练：在 Windows 窗体 DataGridView 控件中实现虚拟模式](implementing-virtual-mode-wf-datagridview-control.md)
 - [在 Windows 窗体 DataGridView 控件中实现实时数据加载的虚拟模式](implementing-virtual-mode-jit-data-loading-in-the-datagrid.md)

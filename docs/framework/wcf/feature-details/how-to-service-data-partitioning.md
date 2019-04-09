@@ -2,12 +2,12 @@
 title: 如何：服务数据分区
 ms.date: 03/30/2017
 ms.assetid: 1ccff72e-d76b-4e36-93a2-e51f7b32dc83
-ms.openlocfilehash: 3755a9ecb61148bcc426e9d510dc2eab1c34eeb4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c5cfd56943c97b70ef12276f1bae47fa870366a8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54590625"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59150093"
 ---
 # <a name="how-to-service-data-partitioning"></a>如何：服务数据分区
 本主题概述了在同一目标服务的多个实例之间划分消息时所需采取的基本步骤。 如果需要缩放服务以提供更好的服务质量，或者需要以特定方式处理来自不同客户的请求，此时通常采用服务数据划分。 例如，来自高值或"黄金"客户的消息可能需要在更高的优先级比来自普通客户的消息处理。  
@@ -174,4 +174,5 @@ ms.locfileid: "54590625"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [路由服务](../../../../docs/framework/wcf/samples/routing-services.md)

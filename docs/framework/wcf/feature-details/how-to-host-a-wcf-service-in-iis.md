@@ -1,18 +1,18 @@
 ---
-title: 如何：承载在 IIS 中的 WCF 服务
+title: 如何：在 IIS 中承载 WCF 服务
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b044b1c9-c1e5-4c9f-84d8-0f02f4537f8b
-ms.openlocfilehash: 44c1b489897a25d293644c5a3ef7d446dd8d4a3b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
+ms.openlocfilehash: 8b2ebc108bf3eef60e8877e617acec782da38fa4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54651118"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59124548"
 ---
-# <a name="how-to-host-a-wcf-service-in-iis"></a>如何：承载在 IIS 中的 WCF 服务
+# <a name="how-to-host-a-wcf-service-in-iis"></a>如何：在 IIS 中承载 WCF 服务
 本主题概述了创建 Internet 信息服务 (IIS) 中的托管的 Windows Communication Foundation (WCF) 服务所需的基本步骤。 本主题假设您熟悉 IIS 且了解如何使用 IIS 管理工具创建和管理 IIS 应用程序。 有关 IIS 的详细信息请参阅[Internet Information Services](https://go.microsoft.com/fwlink/?LinkId=132449)。 WCF 服务，运行在 IIS 环境中的充分利用 IIS 功能，如进程回收、 空闲关闭、 进程运行状况监视和基于消息的激活。 此宿主选项要求正确配置 IIS，但不需要编写任何承载代码作为应用程序的一部分。 只可以将 IIS 宿主与 HTTP 传输协议一起使用。  
   
  详细了解如何为 WCF 和[!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]进行交互，请参阅[WCF 服务和 ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)。 有关配置安全性的详细信息，请参阅[安全](../../../../docs/framework/wcf/feature-details/security.md)。  
@@ -66,7 +66,7 @@ ms.locfileid: "54651118"
   
      此示例显式指定配置文件中的终结点。 如果您不希望向服务添加任何终结点，则运行时为您添加默认终结点。 有关默认终结点、 绑定和行为，请参阅详细信息[Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)并[WCF 服务的简化配置](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)。  
   
-11. 为了确保正确承载该服务，请打开 Internet Explorer 的实例，导航到该服务的 URL：`http://localhost/IISHostedCalc/Service.svc`  
+11. 若要确保正确承载该服务，请打开 Internet Explorer 并浏览到服务的 URL 的实例： `http://localhost/IISHostedCalc/Service.svc`  
   
 ## <a name="example"></a>示例  
  下面是 IIS 承载的计算器服务的代码的完整列表。  
@@ -76,8 +76,9 @@ ms.locfileid: "54651118"
  [!code-xml[c_HowTo_HostInIIS#100](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/common/web.config#100)]  
   
 ## <a name="see-also"></a>请参阅
-- [在 Internet Information Services 中承载](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)
-- [托管服务](../../../../docs/framework/wcf/hosting-services.md)
+
+- [在 Internet 信息服务中承载](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)
+- [承载服务](../../../../docs/framework/wcf/hosting-services.md)
 - [WCF 服务和 ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)
 - [安全性](../../../../docs/framework/wcf/feature-details/security.md)
 - [Windows Server App Fabric 承载功能](https://go.microsoft.com/fwlink/?LinkId=201276)

@@ -1,19 +1,19 @@
 ---
-title: 如何：使用相对值指定变换原点
+title: 如何：使用相对值指定转换原点
 ms.date: 03/30/2017
 helpviewer_keywords:
 - origins of Transforms [WPF]
 - Transforms [WPF], origins of
 - graphics [WPF], origins of Transforms
 ms.assetid: f4dbc29d-93c7-41cd-96d8-5cfd8624b470
-ms.openlocfilehash: bdcc17e2d9bf68170c10dd8e35670f3e072a527c
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 48b3b0df8dab8516873495a996074eae57ffe00f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57352563"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59082953"
 ---
-# <a name="how-to-specify-the-origin-of-a-transform-by-using-relative-values"></a>如何：使用相对值指定变换原点
+# <a name="how-to-specify-the-origin-of-a-transform-by-using-relative-values"></a>如何：使用相对值指定转换原点
 此示例演示如何使用相对值来指定原点<xref:System.Windows.UIElement.RenderTransform%2A>应用于<xref:System.Windows.FrameworkElement>。  
   
  当旋转、 缩放或扭曲<xref:System.Windows.FrameworkElement>通过使用<xref:System.Windows.UIElement.RenderTransform%2A>属性，默认设置适用于元素的左上角的转换。 如果要从元素中心进行旋转、缩放或扭曲，则可以通过将转换中心设置为元素中心来进行补偿。 但是，该解决方案要求你知道元素的大小。 将转换应用于元素的中心的更简单的方法是设置其<xref:System.Windows.UIElement.RenderTransformOrigin%2A>属性设置为 （0.5，0.5），而不是对转换本身设置中心值。  
@@ -40,6 +40,7 @@ ms.locfileid: "57352563"
  有关转换的详细信息<xref:System.Windows.FrameworkElement>对象，请参阅[转换概述](transforms-overview.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.Transform>
-- [转换概述](transforms-overview.md)
+- [变换概述](transforms-overview.md)
 - [帮助主题](transformations-how-to-topics.md)

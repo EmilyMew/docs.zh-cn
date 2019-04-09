@@ -5,12 +5,12 @@ helpviewer_keywords:
 - elevation of privilege [WCF]
 - security [WCF], elevation of privilege
 ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
-ms.openlocfilehash: cf67f3c68acc4cd8838be56d7c814f9e287ce62c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: fd5829d2dbb1853bf65f1f6e402b918137bd59e3
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54658036"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59099984"
 ---
 # <a name="elevation-of-privilege"></a>特权提升
 *特权提升*得出让攻击者授权权限超出最初授予的权限。 例如，具有“只读”权限特权集的攻击者以某种方式将该特权集升级为包括“读取和写入”。  
@@ -83,9 +83,10 @@ ms.locfileid: "54658036"
  若要缓解此问题，请以其他方式引用 X.509 证书，如使用 <xref:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.IssuerSerial>。  
   
 ## <a name="see-also"></a>请参阅
+
 - [安全注意事项](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
-- [信息泄漏](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
+- [信息泄露](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
 - [拒绝服务](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
-- [重放攻击](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
+- [重播攻击](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
 - [篡改](../../../../docs/framework/wcf/feature-details/tampering.md)
 - [不支持的方案](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)

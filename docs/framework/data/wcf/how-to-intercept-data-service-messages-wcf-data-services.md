@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF Data Services, customizing
 - query interceptors [WCF Data Services]
 ms.assetid: 24b9df1b-b54b-4795-a033-edf333675de6
-ms.openlocfilehash: b5fdbaa25f55caf3de2f0591b7258d4a7dcb1b7e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 56e4a3f95c7449ae5693172728c9d777113679bf
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54586392"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59101286"
 ---
 # <a name="how-to-intercept-data-service-messages-wcf-data-services"></a>如何：截获数据服务消息 （WCF 数据服务）
 使用 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] 可以截获请求消息，以便可以向操作添加自定义逻辑。 若要截获消息，请在数据服务中使用专门特性化的方法。 有关详细信息，请参阅[侦听器](../../../../docs/framework/data/wcf/interceptors-wcf-data-services.md)。  
@@ -56,5 +56,6 @@ ms.locfileid: "54586392"
  [!code-vb[Astoria Northwind Service#ChangeInterceptor](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind2.svc.vb#changeinterceptor)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：定义服务操作](../../../../docs/framework/data/wcf/how-to-define-a-service-operation-wcf-data-services.md)
-- [定义 WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [定义 WCF 数据服务](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)

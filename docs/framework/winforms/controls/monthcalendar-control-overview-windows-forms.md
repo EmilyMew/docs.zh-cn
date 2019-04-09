@@ -8,12 +8,12 @@ helpviewer_keywords:
 - calendar controls [Windows Forms], Windows Forms
 - MonthCalendar control [Windows Forms], setting the first day of the week
 ms.assetid: 788c5325-b721-44ec-95bf-9b680ba0f6a2
-ms.openlocfilehash: a081c4e6d8210a6bb65fa14b31d12d4295931d53
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 8928a78735392920d893661c70554bd35eba2886
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57718878"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59106231"
 ---
 # <a name="monthcalendar-control-overview-windows-forms"></a>MonthCalendar 控件概述（Windows 窗体）
 Windows 窗体<xref:System.Windows.Forms.MonthCalendar>控件提供了直观的图形界面的用户可以查看和设置日期信息。 该控件显示一个日历： 包含数月，排列在列下方星期几，与所选的突出显示的日期范围内的网格。 可以通过单击箭头按钮在月标题的任何一侧选择不同的月份。 与类似<xref:System.Windows.Forms.DateTimePicker>控件，您可以选择与此控件的多个日期。 有关详细信息<xref:System.Windows.Forms.DateTimePicker>控件，请参阅[DateTimePicker 控件](datetimepicker-control-windows-forms.md)。  
@@ -26,5 +26,6 @@ Windows 窗体<xref:System.Windows.Forms.MonthCalendar>控件提供了直观的�
  键属性<xref:System.Windows.Forms.MonthCalendar>控件是<xref:System.Windows.Forms.MonthCalendar.SelectionRange%2A>，日期控件中选定的范围。 <xref:System.Windows.Forms.MonthCalendar.SelectionRange%2A>值不能超过可选择，在中设置最大天数<xref:System.Windows.Forms.MonthCalendar.MaxSelectionCount%2A>属性。 用户可以选择的最早和最新日期由<xref:System.Windows.Forms.MonthCalendar.MaxDate%2A>和<xref:System.Windows.Forms.MonthCalendar.MinDate%2A>属性。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.MonthCalendar>
 - [MonthCalendar 控件](monthcalendar-control-windows-forms.md)

@@ -2,12 +2,12 @@
 title: 疑难解答
 ms.date: 03/30/2017
 ms.assetid: 8cd4401c-b12c-4116-a421-f3dcffa65670
-ms.openlocfilehash: 62cc7a0567b9eb82c24c329a7ae8fb3e52f0f0c8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 27b7eef345dd8ec6c4f5e319818b6b002717f049
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54586405"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59105477"
 ---
 # <a name="troubleshooting"></a>疑难解答
 下面的信息揭示您在 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 应用程序中可能遇到的一些问题，并提供建议以避免这些问题或减少这些问题的影响。  
@@ -15,10 +15,10 @@ ms.locfileid: "54586405"
  在解决其他问题[Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)。  
   
 ## <a name="unsupported-standard-query-operators"></a>不支持的标准查询运算符  
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 不支持某些标准查询运算符方法（例如，<xref:System.Linq.Enumerable.ElementAt%2A>）。 因此，编译后的项目仍然可能产生运行时错误。 有关详细信息，请参阅[标准查询运算符转换](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)。  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 不支持所有标准查询运算符方法 (例如， <xref:System.Linq.Enumerable.ElementAt%2A>)。 因此，编译后的项目仍然可能产生运行时错误。 有关详细信息，请参阅[标准查询运算符转换](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)。  
   
 ## <a name="memory-issues"></a>内存问题  
- 如果查询涉及到内存中的集合以及 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Table%601>，则该查询可能在内存中执行，具体取决于指定这两个集合的顺序。 如果该查询必须在内存中执行，则需要检索数据库表中的数据。  
+ 如果查询涉及到内存中集合和[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Table%601>，该查询可能在内存中，具体取决于指定这两个集合的顺序执行。 如果该查询必须在内存中执行，则需要检索数据库表中的数据。  
   
  此方法的效率十分低下，并可能占用大量内存和处理器时间。 请尽量避免这种多域查询。  
   
@@ -29,11 +29,11 @@ ms.locfileid: "54586405"
  [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]会在项目的 `app.config` 文件中创建一个连接字符串。 在类库项目中，不使用 `app.config` 文件。 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 使用在设计时文件中提供的连接字符串。 更改 `app.config` 中的值不会更改应用程序连接到的数据库。  
   
 ## <a name="cascade-delete"></a>级联删除  
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 不支持且无法识别级联删除操作。 如果要在表中删除一个具有约束的行，必须执行以下操作之一：  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 不支持或无法识别级联删除操作。 如果要在表中删除一个具有约束的行，必须执行以下操作之一：  
   
 -   在数据库的外键约束中设置 `ON DELETE CASCADE` 规则。  
   
--   使用您自己的代码先删除阻止删除父对象的子对象。  
+-   使用你自己的代码先删除阻止删除父对象的子对象。  
   
  否则，将引发 <xref:System.Data.SqlClient.SqlException> 异常。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "54586405"
  此需求不适用于 [!INCLUDE[sqprsqlong](../../../../../../includes/sqprsqlong-md.md)]。  
   
 ## <a name="groupby-invalidoperationexception"></a>GroupBy InvalidOperationException  
- 如果在按 <xref:System.Linq.Enumerable.GroupBy%2A> 表达式进行分组的 `boolean` 查询（如 `group x by (Phone==@phone)`）中有一个列值为 null，则会引发此异常。 因为表达式的类型为 `boolean`，所以会将键的类型推理为 `boolean` 而不是 `nullable` `boolean`。 在转换后的比较生成 null 值时，系统会试图将一个 `nullable` `boolean` 值赋给一个 `boolean`，从而引发该异常。  
+ 如果在按 <xref:System.Linq.Enumerable.GroupBy%2A> 表达式进行分组的 `boolean` 查询（如 `group x by (Phone==@phone)`）中有一个列值为 null，则会引发此异常。 因为表达式`boolean`，该密钥将被推断`boolean`，而非`nullable` `boolean`。 当转换后的比较生成 null 值时，尝试进行分配`nullable``boolean`到`boolean`，且会引发异常。  
   
  若要避免发生这种情况（假定您希望将 null 视为 false），请使用如下方式：  
   
@@ -70,5 +70,6 @@ ms.locfileid: "54586405"
  每次调用对象构造函数时都会调用生成的方法 `OnCreated()`，这包括以下这种情况，即 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 调用构造函数以生成原始值的副本。 如果您在自己的分部类中实现 `OnCreated()` 方法，请考虑此行为。  
   
 ## <a name="see-also"></a>请参阅
+
 - [调试支持](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)
 - [常见问题](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)

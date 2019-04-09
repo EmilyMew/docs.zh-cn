@@ -2,12 +2,12 @@
 title: ServiceAuthorizationBehavior
 ms.date: 03/30/2017
 ms.assetid: 77dad8e8-fea4-4d1c-b366-2f01a2a87f78
-ms.openlocfilehash: 58eb2a9fd9017aaf9966644180936f5871e086d1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 51555e3357b8c33a53261c4894d97798b0a05656
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54613891"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102929"
 ---
 # <a name="serviceauthorizationbehavior"></a>ServiceAuthorizationBehavior
 ServiceAuthorizationBehavior  
@@ -27,7 +27,7 @@ class ServiceAuthorizationBehavior : Behavior
 ## <a name="methods"></a>方法  
  ServiceAuthorizationBehavior 类未定义任何方法。  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>属性  
  ServiceAuthorizationBehavior 类具有下列属性：  
   
 ### <a name="impersonatecallerforalloperations"></a>ImpersonateCallerForAllOperations  
@@ -65,4 +65,5 @@ class ServiceAuthorizationBehavior : Behavior
 |命名空间|已在 root\ServiceModel 中定义|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>

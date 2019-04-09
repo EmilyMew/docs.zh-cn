@@ -7,12 +7,12 @@ helpviewer_keywords:
 - keyboard behavior [WPF], DataGrid
 - mouse behavior [WPF], DataGrid
 ms.assetid: 563b8854-ca39-4d97-8235-17eaa0f93c8d
-ms.openlocfilehash: f122eb97719182b4cad5fb0e757cd3647e575094
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 6be464ce85bd3ba91dd6e6cc810ec7d04edc0c3d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54741608"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083317"
 ---
 # <a name="default-keyboard-and-mouse-behavior-in-the-datagrid-control"></a>DataGrid 控件中的默认键盘和鼠标行为
 本主题介绍用户如何与交互<xref:System.Windows.Controls.DataGrid>控件中的使用键盘和鼠标。  
@@ -30,8 +30,8 @@ ms.locfileid: "54741608"
 |向右键|将焦点移到下一个单元格的行中。 如果焦点位于行中的最后一个单元中，按向右箭头没有任何影响。|  
 |Home|将焦点移到当前行中的第一个单元。|  
 |End|将焦点移到当前行中的最后一个单元。|  
-|PAGE DOWN|如果未分组的行，将控件向下滚动完全显示的行数。 将焦点移动到完全显示的最后一行，而无需更改的列。<br /><br /> 如果行分组，将焦点移到中的最后一行<xref:System.Windows.Controls.DataGrid>而无需更改的列。|  
-|PAGE UP|如果未分组的行，该控件向上滚动完全显示的行数。 将焦点移到而无需更改列显示的第一行。<br /><br /> 如果行分组，将焦点移到中的第一行<xref:System.Windows.Controls.DataGrid>而无需更改的列。|  
+|Page Down|如果未分组的行，将控件向下滚动完全显示的行数。 将焦点移动到完全显示的最后一行，而无需更改的列。<br /><br /> 如果行分组，将焦点移到中的最后一行<xref:System.Windows.Controls.DataGrid>而无需更改的列。|  
+|Page Up|如果未分组的行，该控件向上滚动完全显示的行数。 将焦点移到而无需更改列显示的第一行。<br /><br /> 如果行分组，将焦点移到中的第一行<xref:System.Windows.Controls.DataGrid>而无需更改的列。|  
 |Tab|将焦点移到下一个单元格的当前行。 如果焦点位于行的最后一个单元格，则将焦点移到下一行中的第一个单元。 如果焦点在控件中的最后一个单元中，将焦点移到下一个控件的父容器的 tab 键顺序。<br /><br /> 如果当前单元格处于编辑模式并按 tab 键引起焦点将从当前行移开，对行所做的任何更改会提交更改焦点之前。|  
 |Shift+Tab|将焦点移到上一个单元格的当前行中。 如果焦点已在行的第一个单元中，将焦点移到上一行中的最后一个单元。 如果焦点在控件中的第一个单元中，将焦点移到上一个控件的父容器的 tab 键顺序。<br /><br /> 如果当前单元格处于编辑模式并按 tab 键引起焦点将从当前行移开，对行所做的任何更改会提交更改焦点之前。|  
 |Ctrl+向下键|将焦点移到当前列中的最后一个单元格。|  
@@ -44,7 +44,7 @@ ms.locfileid: "54741608"
 |Ctrl+Page Up|向上翻页相同。|  
 |F2|如果<xref:System.Windows.Controls.DataGrid.IsReadOnly%2A?displayProperty=nameWithType>属性是`false`并<xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A?displayProperty=nameWithType>属性是`false`当前列中，将当前单元格放入单元格编辑模式。|  
 |Enter|提交到当前单元格和行的任何更改并将焦点移到当前单元格的正下方的单元格。 如果焦点位于最后一行中，而无需移动焦点提交任何更改。|  
-|Esc|如果控件处于编辑模式下，取消编辑，恢复在控件中所做的任何更改。 如果基础数据源实现<xref:System.ComponentModel.IEditableObject>，第二次按 esc 键取消整个行的编辑模式。|  
+|ESC|如果控件处于编辑模式下，取消编辑，恢复在控件中所做的任何更改。 如果基础数据源实现<xref:System.ComponentModel.IEditableObject>，第二次按 esc 键取消整个行的编辑模式。|  
 |退格符|编辑单元格时，请删除光标位置前的字符。|  
 |DELETE|编辑单元格时，光标位置后删除的字符。|  
 |Ctrl+Enter|而无需将焦点移动到当前单元格提交任何更改。|  
@@ -97,5 +97,6 @@ ms.locfileid: "54741608"
  CTRL + SHIFT 可以组合以选择相邻的行的非相邻的范围。 若要执行此操作，选择第一个范围，通过使用 SHIFT + 单击前面所述。 选择的行的第一个范围后，使用 CTRL + 单击可在下一步的范围内，选择第一行，然后按 CTRL + SHIFT 的同时单击下一个范围中的最后一行。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.DataGrid>
 - <xref:System.Windows.Controls.DataGrid.SelectionMode%2A>

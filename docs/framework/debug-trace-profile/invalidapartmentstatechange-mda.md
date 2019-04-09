@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: e56fb9df-5286-4be7-b313-540c4d876cd7
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f0540b10f2480c173dde1f72759e7f30a65bc382
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c201ab51c1af8a86fc1c2c4f80738007152b3bd9
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54626571"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59122845"
 ---
 # <a name="invalidapartmentstatechange-mda"></a>invalidApartmentStateChange MDA
 `invalidApartmentStateChange` 托管调试助手 (MDS) 通过以下两种问题中的任何一种激活：  
@@ -47,7 +47,7 @@ ms.locfileid: "54626571"
 ## <a name="effect-on-the-runtime"></a>对运行时的影响  
  此 MDA 对 CLR 无任何影响。  
   
-## <a name="output"></a>输出  
+## <a name="output"></a>Output  
  当前线程的 COM 单元状态和试图应用的代码状态。  
   
 ## <a name="configuration"></a>配置  
@@ -78,6 +78,7 @@ namespace ApartmentStateMDA
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [使用托管调试助手诊断错误](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [互操作封送处理](../../../docs/framework/interop/interop-marshaling.md)

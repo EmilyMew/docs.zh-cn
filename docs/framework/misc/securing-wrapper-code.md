@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 1df6c516-5bba-48bd-b450-1070e04b7389
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c74a130c078077d9f692fbf6107e9d5aefc16b9a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e4d8497d17e1a82791f4dd6ca8f91c9a012db167
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54505934"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59132777"
 ---
 # <a name="securing-wrapper-code"></a>保护包装代码
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -71,7 +71,7 @@ ms.locfileid: "54505934"
   
  声明性安全提供了下列安全检查：  
   
--   <xref:System.Security.Permissions.SecurityAction.Demand> 指示代码访问安全堆栈审核。 堆栈上的所有调用方必须具有特定权限或标识才能通过。 **需**出现在每次调用，因为堆栈可能包含不同的调用方。 如果重复调用一种方法，则每次都会执行安全检查。 **需**是很好地防范引诱攻击; 将检测到未经授权的代码尝试通过它获取。  
+-   <xref:System.Security.Permissions.SecurityAction.Demand> 指定代码访问安全堆栈审核。 堆栈上的所有调用方必须具有特定权限或标识才能通过。 **需**出现在每次调用，因为堆栈可能包含不同的调用方。 如果重复调用一种方法，则每次都会执行安全检查。 **需**是很好地防范引诱攻击; 将检测到未经授权的代码尝试通过它获取。  
   
 -   [LinkDemand](../../../docs/framework/misc/link-demands.md)发生在实时 (JIT) 编译时和检查仅直接调用方。 这种安全检查不会检查调用方的调用方。 一旦此项检查成功，无论调用方调用的次数为多少，都无需任何其他安全性开销。 但是，这种方法没有对引诱攻击提供保护。 与**LinkDemand**，任何通过的测试，并且可以引用您的代码的代码可以通过允许恶意代码利用已授权的代码进行调用可能会破坏安全性。 因此，不使用**LinkDemand**除非可以彻底避免所有可能的漏洞。  
   
@@ -102,4 +102,5 @@ ms.locfileid: "54505934"
 -   它们实现的类型和接口。 这些应使用相一致的链接需求。  
   
 ## <a name="see-also"></a>请参阅
-- [安全编码准则](../../../docs/standard/security/secure-coding-guidelines.md)
+
+- [代码安全维护指南](../../../docs/standard/security/secure-coding-guidelines.md)

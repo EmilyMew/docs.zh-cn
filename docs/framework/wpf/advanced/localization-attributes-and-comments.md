@@ -5,18 +5,16 @@ helpviewer_keywords:
 - localization [WPF], attributes
 - localization [WPF], comments
 ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
-ms.openlocfilehash: 214d2cf369a62f5565ef4b89fd658f6bec4b2fdc
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 4e4c4891a905a5e4458ad5fc21a512c1dfe6f74e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57377095"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59092911"
 ---
 # <a name="localization-attributes-and-comments"></a>本地化特性和注释
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 本地化注释是由开发人员提供的 [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] 源代码中的属性，用于提供本地化规则和提示。 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 本地化注释包含两组信息：可本地化特性和任意形式的本地化注释。 可本地化特性由 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 本地化 API 用于指示哪些资源要进行本地化。 任意形式的注释是应用程序作者希望包含的任何信息。  
-  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 本地化注释内部是属性，[!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)]源代码，提供的开发人员能够提供本地化规则和提示。 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 本地化注释包含两个集的信息： 可本地化性特性和任意形式的本地化注释。 可本地化特性由 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 本地化 API 用于指示哪些资源要进行本地化。 任意形式的注释是应用程序作者希望包含的任何信息。  
 
-  
 <a name="Localizer_Comments_"></a>   
 ## <a name="localization-comments"></a>本地化注释  
  如果标记应用程序作者对 [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] 中的特定元素具有一定的要求（如对文本长度、字体系列或字号进行约束），则他们可以借助于 [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] 代码中的注释将此信息传达给本地化人员。 下面是用来向源代码中添加注释的过程：  
@@ -25,7 +23,7 @@ ms.locfileid: "57377095"
   
 2.  在生成过程中，可以在 .proj 文件中指定是将任意形式的本地化注释留在程序集内、去掉部分注释还是去掉所有注释。 去掉的注释放在一个单独的文件中。 可以使用 `LocalizationDirectivesToLocFile` 标记指定你的选项，例如：  
   
-     `<LocalizationDirectivesToLocFile>` 值 `</LocalizationDirectivesToLocFile>`  
+     `<LocalizationDirectivesToLocFile>` *值* `</LocalizationDirectivesToLocFile>`  
   
 3.  可以分配的值包括：  
   
@@ -90,7 +88,7 @@ ms.locfileid: "57377095"
   
 |类别|含义|  
 |--------------|-------------|  
-|无|没有为目标值定义类别。|  
+|None|没有为目标值定义类别。|  
 |继承|目标值从其父级继承其类别。|  
 |忽略|在本地化过程中将忽略目标值。 Ignore 仅影响当前值。 它不会影响子节点。|  
 |NeverLocalize|无法对当前值进行本地化。 此类别由元素的子级继承。|  
@@ -100,7 +98,8 @@ ms.locfileid: "57377095"
  Localization.Comments 包含与目标值有关的任意形式的字符串。 应用程序开发人员可以添加一些信息，以便为本地化人员提供有关如何翻译应用程序文本的提示。 注释格式可以是由“()”括起来的任何字符串。 可以使用“\\”对字符进行转义。  
   
 ## <a name="see-also"></a>请参阅
-- [WPF 全球化](globalization-for-wpf.md)
+
+- [WPF 的全球化](globalization-for-wpf.md)
 - [使用自动布局创建按钮](how-to-use-automatic-layout-to-create-a-button.md)
 - [使用网格进行自动布局](how-to-use-a-grid-for-automatic-layout.md)
 - [对应用程序进行本地化](how-to-localize-an-application.md)

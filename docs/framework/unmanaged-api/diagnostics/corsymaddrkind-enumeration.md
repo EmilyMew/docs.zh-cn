@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 389cf2e77728002ce1078f63df3d741d1847c105
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: adef1010d08561c0a0fe38480fe0d2f519a80b49
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54744968"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59133518"
 ---
 # <a name="corsymaddrkind-enumeration"></a>CorSymAddrKind 枚举
 指示内存地址的类型。  
@@ -63,4 +63,5 @@ typedef enum CorSymAddrKind
  **标头：** CorSym.idl CorSym.h  
   
 ## <a name="see-also"></a>请参阅
+
 - [诊断符号存储区枚举](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)

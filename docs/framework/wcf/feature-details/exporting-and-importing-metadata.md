@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - metadata [WCF], exporting and importing
 ms.assetid: 614a75bb-e0b0-4c95-b6d8-02cb5e5ddb38
-ms.openlocfilehash: f99b8626ca4a89bf94e44652e8277f8b2c147fe3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 39b964584cde42e6569da35f8653042f6d7432cb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54706373"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59091936"
 ---
 # <a name="exporting-and-importing-metadata"></a>导出和导入元数据
 在 Windows Communication Foundation (WCF) 中，导出元数据是描述服务终结点并将它们投影到客户端可用来了解如何使用服务的并行的标准化表示形式的过程。 导入服务元数据是一个从服务元数据生成 <xref:System.ServiceModel.Description.ServiceEndpoint> 实例或部分的过程。  
@@ -48,7 +48,7 @@ ms.locfileid: "54706373"
  <xref:System.ServiceModel.Description.WsdlExporter> 类型会再次引发在导出过程中捕获的所有异常。 这些异常不会作为 `Errors` 属性中的错误而捕获。 一旦 <xref:System.ServiceModel.Description.WsdlExporter> 引发异常，则会进入错误状态，并且无法重用。 当某个操作因使用了通配符操作而无法导出时以及在遇到重复的绑定名称时，<xref:System.ServiceModel.Description.WsdlExporter> 确实会将警告添加到其 `Errors` 属性中。  
   
 ## <a name="in-this-section"></a>本节内容  
- [如何：元数据导入服务终结点](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md)  
+ [如何：将元数据导入服务终结点](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md)  
  描述如何将下载的元数据导入到说明对象中。  
   
  [如何：从服务终结点导出元数据](../../../../docs/framework/wcf/feature-details/how-to-export-metadata-from-service-endpoints.md)  
@@ -57,10 +57,10 @@ ms.locfileid: "54706373"
  [ServiceDescription 和 WSDL 引用](../../../../docs/framework/wcf/feature-details/servicedescription-and-wsdl-reference.md)  
  描述说明对象和 WSDL 之间的映射。  
   
- [如何：使用 Svcutil.exe 从已编译的服务代码中导出元数据](../../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md)  
+ [如何：使用 Svcutil.exe 将元数据从已编译的服务代码中导出](../../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md)  
  描述如何使用 Svcutil.exe 导出已编译程序集中的服务、协定和数据类型的元数据。  
   
- [数据协定架构引用](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)  
+ [数据协定架构参考](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)  
  描述 <xref:System.Runtime.Serialization.DataContractSerializer> 用来说明 XML 序列化的公共语言运行库 (CLR) 类型的 XML 架构 (XSD) 的子集。  
   
 ## <a name="reference"></a>参考  
@@ -69,5 +69,6 @@ ms.locfileid: "54706373"
  <xref:System.ServiceModel.Description.WsdlImporter>  
   
 ## <a name="see-also"></a>请参阅
+
 - [导出 WCF 扩展的自定义元数据](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md)
 - [导入 WCF 扩展的自定义元数据](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md)

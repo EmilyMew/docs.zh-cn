@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5a9bef248d00cb62de7c93ba837ebc9f135490cc
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 4a95008d98436161ac919ef307273bc797519f15
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57479904"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59080613"
 ---
 # <a name="efngetmanagedobjectname-function"></a>_EFN_GetManagedObjectName 函数
 获取使用提供的托管的对象指针的类型的名称。  
@@ -58,7 +58,8 @@ HRESULT _EFN_GetManagedObjectName(
   
  **标头：** SOS_Stacktrace.h  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [调试全局静态函数](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

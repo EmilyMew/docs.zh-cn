@@ -15,12 +15,12 @@ helpviewer_keywords:
 - DataSet class [Windows Forms], binding and Windows Forms
 - data [Windows Forms], data providers
 ms.assetid: 3d2c43f6-462b-4d35-9c86-13e9afe012e1
-ms.openlocfilehash: 145e14f4a6e11209e46e8761f8a0551c1400a605
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: b648d62c9128f0864d60ace1ca56700f594b78c5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57711295"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59124613"
 ---
 # <a name="data-sources-supported-by-windows-forms"></a>Windows 窗体支持的数据源
 传统上，数据绑定已用于应用程序中充分利用数据库中存储数据。 使用 Windows 窗体数据绑定，您可以从数据库以及其他结构，如数组和集合中的数据访问数据，只要满足某些最低要求。  
@@ -47,17 +47,18 @@ ms.locfileid: "57711295"
  [!INCLUDE[vstecado](../../../includes/vstecado-md.md)] 数据对象  
  [!INCLUDE[vstecado](../../../includes/vstecado-md.md)] 提供了许多适合绑定到数据结构。 每个在复杂程度和复杂性而异。  
   
--   <xref:System.Data.DataColumn>。 一个<xref:System.Data.DataColumn>是基本构建基块<xref:System.Data.DataTable>中的列数构成一个表。 每个<xref:System.Data.DataColumn>具有<xref:System.Data.DataColumn.DataType%2A>属性，用于确定类型的数据列保存 （例如，描述汽车的表中的汽车的品牌）。 您可以简单绑定控件 (如<xref:System.Windows.Forms.TextBox>控件的<xref:System.Windows.Forms.Control.Text%2A>属性) 到数据表中的列。  
+-   <xref:System.Data.DataColumn>. 一个<xref:System.Data.DataColumn>是基本构建基块<xref:System.Data.DataTable>中的列数构成一个表。 每个<xref:System.Data.DataColumn>具有<xref:System.Data.DataColumn.DataType%2A>属性，用于确定类型的数据列保存 （例如，描述汽车的表中的汽车的品牌）。 您可以简单绑定控件 (如<xref:System.Windows.Forms.TextBox>控件的<xref:System.Windows.Forms.Control.Text%2A>属性) 到数据表中的列。  
   
--   <xref:System.Data.DataTable>。 一个<xref:System.Data.DataTable>是具有行和列的表的表示形式中[!INCLUDE[vstecado](../../../includes/vstecado-md.md)]。 数据表包含两个集合： <xref:System.Data.DataColumn>，表示给定表 （它最终确定的可以输入到该表的数据类型） 中的数据的列和<xref:System.Data.DataRow>，表示给定表中的数据行。 您可以将复杂绑定控件到数据表中包含的信息 (如绑定<xref:System.Windows.Forms.DataGridView>到数据表控件)。 但是，当绑定到<xref:System.Data.DataTable>，是实际上绑定到表的默认视图。  
+-   <xref:System.Data.DataTable>. 一个<xref:System.Data.DataTable>是具有行和列的表的表示形式中[!INCLUDE[vstecado](../../../includes/vstecado-md.md)]。 数据表包含两个集合： <xref:System.Data.DataColumn>，表示给定表 （它最终确定的可以输入到该表的数据类型） 中的数据的列和<xref:System.Data.DataRow>，表示给定表中的数据行。 您可以将复杂绑定控件到数据表中包含的信息 (如绑定<xref:System.Windows.Forms.DataGridView>到数据表控件)。 但是，当绑定到<xref:System.Data.DataTable>，是实际上绑定到表的默认视图。  
   
--   <xref:System.Data.DataView>。 一个<xref:System.Data.DataView>的单个数据表可能会筛选或排序的自定义视图。 数据视图是"快照"复杂绑定控件使用的数据。 您可以简单绑定或复杂绑定到数据视图中的数据，但注意要绑定到的固定"图片"的数据而不是干净的、 不断更新数据源。  
+-   <xref:System.Data.DataView>. 一个<xref:System.Data.DataView>的单个数据表可能会筛选或排序的自定义视图。 数据视图是"快照"复杂绑定控件使用的数据。 您可以简单绑定或复杂绑定到数据视图中的数据，但注意要绑定到的固定"图片"的数据而不是干净的、 不断更新数据源。  
   
--   <xref:System.Data.DataSet>。 一个<xref:System.Data.DataSet>是表、 关系和约束的数据库中的数据的集合。 您可以简单绑定或复杂绑定到数据集内的数据，但注意要绑定到默认<xref:System.Data.DataViewManager>为<xref:System.Data.DataSet>（请参阅下一步一注意点）。  
+-   <xref:System.Data.DataSet>. 一个<xref:System.Data.DataSet>是表、 关系和约束的数据库中的数据的集合。 您可以简单绑定或复杂绑定到数据集内的数据，但注意要绑定到默认<xref:System.Data.DataViewManager>为<xref:System.Data.DataSet>（请参阅下一步一注意点）。  
   
--   <xref:System.Data.DataViewManager>。 一个<xref:System.Data.DataViewManager>是自定义的视图的整个<xref:System.Data.DataSet>，类似于<xref:System.Data.DataView>，但其中包括各种关系。 与<xref:System.Data.DataViewManager.DataViewSettings%2A>集合，您可以设置默认筛选器和排序选项的任何视图的<xref:System.Data.DataViewManager>具有给定的表。  
+-   <xref:System.Data.DataViewManager>. 一个<xref:System.Data.DataViewManager>是自定义的视图的整个<xref:System.Data.DataSet>，类似于<xref:System.Data.DataView>，但其中包括各种关系。 与<xref:System.Data.DataViewManager.DataViewSettings%2A>集合，您可以设置默认筛选器和排序选项的任何视图的<xref:System.Data.DataViewManager>具有给定的表。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Windows 窗体数据绑定中的更改通知](change-notification-in-windows-forms-data-binding.md)
 - [数据绑定和 Windows 窗体](data-binding-and-windows-forms.md)
 - [Windows 窗体数据绑定](windows-forms-data-binding.md)

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ae110d915241fe85453667e895ab54288302c20d
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58760790"
+---
 ### <a name="keyboard-focus-now-moves-correctly-across-multiple-layers-of-winformswpf-hosting"></a>现在，键盘焦点可在 WinForms/WPF 承载的多个层之间正确移动
 
 |   |   |

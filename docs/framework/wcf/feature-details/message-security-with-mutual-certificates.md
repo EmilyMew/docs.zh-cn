@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 99d7a528-7ae4-4d39-a0f9-3066ea237de0
-ms.openlocfilehash: 51795007b906a6eb71e5e03b4afef2fc83328b28
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8fc8d6d4a63b7a752fb8c26991d904761fdcebdd
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54593337"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59076012"
 ---
 # <a name="message-security-with-mutual-certificates"></a>使用相互证书的消息安全
 以下方案显示了 Windows Communication Foundation (WCF) 服务和使用消息安全模式保护的客户端。 使用证书对客户端和服务进行身份验证。  
@@ -95,7 +95,7 @@ ms.locfileid: "54593337"
   
 -   使用代码（和客户端代码）创建独立客户端。  
   
--   创建不定义任何终结点地址的客户端。 而使用将配置名称作为参数的客户端构造函数。 例如：  
+-   创建不定义任何终结点地址的客户端。 而使用将配置名称作为自变量的客户端构造函数。 例如：  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -159,6 +159,7 @@ ms.locfileid: "54593337"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [安全性概述](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Windows Server App Fabric 的安全模型](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
 - [如何：创建和安装临时证书在 WCF 中的传输安全模式在开发过程](https://go.microsoft.com/fwlink/?LinkId=244264)

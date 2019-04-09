@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows Forms, ClickOnce deployment
 - walkthroughs [Windows Forms], ClickOnce deployment
 ms.assetid: 1451fce9-1965-4a03-b4d3-831b5fe4ad66
-ms.openlocfilehash: 9e3e05a1327f2f1d5f4c064a7982b2d6e38940d9
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 1212096422f5bb10c7b781228dc54c8790ac97ce
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57702563"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59072839"
 ---
 # <a name="clickonce-deployment-for-windows-forms"></a>Windows 窗体的 ClickOnce 部署
 下面的主题描述了 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]，这是一种用于将 Windows 窗体应用程序轻松部署到客户端计算机的技术。  
@@ -41,13 +41,13 @@ ms.locfileid: "57702563"
  [演练：手动部署 ClickOnce 应用程序](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)  
  演示如何使用命令行和 SDK 工具（而不使用 Visual Studio）来部署 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 应用程序。  
   
- [如何：为 ClickOnce 应用程序向客户端计算机添加受信任的发布者](/visualstudio/deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications)  
+ [如何：为 ClickOnce 应用程序添加到客户端计算机的受信任的发行者](/visualstudio/deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications)  
  演示如何一次性配置受信任的应用程序部署所需要的客户端计算机。  
   
- [如何：指定部署更新的替换位置](/visualstudio/deployment/how-to-specify-an-alternate-location-for-deployment-updates)  
+ [如何：指定部署更新的其他位置](/visualstudio/deployment/how-to-specify-an-alternate-location-for-deployment-updates)  
  演示如何使用 SDK 工具来配置 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 应用程序，以检查另一个用于新版本应用程序的位置。  
   
- [演练：使用 ClickOnce 部署 API 按需下载程序集](/visualstudio/deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api)  
+ [演练：下载使用 ClickOnce 部署 API 按需程序集](/visualstudio/deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api)  
  演示如何在应用程序第一次尝试加载程序集时使用 API 调用来检索程序集。  
   
  [如何：在联机 ClickOnce 应用程序中检索查询字符串信息](/visualstudio/deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application)  
@@ -59,10 +59,11 @@ ms.locfileid: "57702563"
  [在 ClickOnce 应用程序中访问本地数据和远程数据](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)  
  介绍如何从 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 应用程序访问本地数据文件和远程数据源。  
   
- [如何：将数据文件添加到 ClickOnce 应用程序中](/visualstudio/deployment/how-to-include-a-data-file-in-a-clickonce-application)  
+ [如何：将数据文件包括到 ClickOnce 应用程序中](/visualstudio/deployment/how-to-include-a-data-file-in-a-clickonce-application)  
  演示如何标记文件以使它在 [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] 数据目录中可用。  
   
 ## <a name="see-also"></a>请参阅
+
 - [应用程序设置概述](./advanced/application-settings-overview.md)
 - [发布 ClickOnce 应用程序](/visualstudio/deployment/publishing-clickonce-applications)
 - [从命令行生成 ClickOnce 应用程序](/visualstudio/deployment/building-clickonce-applications-from-the-command-line)

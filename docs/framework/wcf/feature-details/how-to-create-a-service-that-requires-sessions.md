@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 8a7613ef-0df9-47c3-b8dc-47f42cb1fd8b
-ms.openlocfilehash: fa151d472dbd27a62f91cd3a43339c66787dc456
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c104798fa3ef0e8b9dc43ad9cc68599b71de4011
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54615437"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59140486"
 ---
 # <a name="how-to-create-a-service-that-requires-sessions"></a>如何：创建要求会话的服务
 会话在两个或更多终结点之间创建一个共享状态，从而启用一些有用的功能，例如回调、多跳安全性以及客户端和服务实例之间的关联。 有关在 Windows Communication Foundation (WCF) 应用程序中的会话的详细信息，请参阅[使用会话的](../../../../docs/framework/wcf/using-sessions.md)。  
@@ -21,11 +21,11 @@ ms.locfileid: "54615437"
   
 2.  修改声明协定的 <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType>，将 <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> 属性设置为：  
   
-    -   <xref:System.ServiceModel.SessionMode.Required?displayProperty=nameWithType>（如果必须在会话中运行此协定）。  
+    -   <xref:System.ServiceModel.SessionMode.Required?displayProperty=nameWithType> 如果必须在会话中运行此协定。  
   
-    -   <xref:System.ServiceModel.SessionMode.Allowed?displayProperty=nameWithType>（如果可以在会话中运行此协定）。  
+    -   <xref:System.ServiceModel.SessionMode.Allowed?displayProperty=nameWithType> 如果可以在会话中运行此协定。  
   
-    -   <xref:System.ServiceModel.SessionMode.NotAllowed?displayProperty=nameWithType>（如果不得在会话中运行此协定）。  
+    -   <xref:System.ServiceModel.SessionMode.NotAllowed?displayProperty=nameWithType> 如果不在会话中运行此协定。  
   
 3.  配置服务终结点以使用支持会话的绑定。 下面的配置示例演示了支持 WS<xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType>ReliableMessaging 会话的 `-` 的用法。  
   
@@ -39,6 +39,7 @@ ms.locfileid: "54615437"
  [!code-xml[SCA.Session#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/sca.session/cs/hostapplication.exe.config#2)]     
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType>
 - <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType>
 - <xref:System.ServiceModel.SessionMode?displayProperty=nameWithType>

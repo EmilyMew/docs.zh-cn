@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - service creation [WCF]
 ms.assetid: 7cf21bfe-23bd-46aa-8033-609f851dbf76
-ms.openlocfilehash: d5322dfca1aa006ba2fc85b5dedebd09941f9c0e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
+ms.openlocfilehash: 32586ad3ec62630e6abafd33b385788c20155b28
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54499218"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59178485"
 ---
 # <a name="basic-programming-lifecycle"></a>基本编程生命周期
 Windows Communication Foundation (WCF) 使应用程序通报它们是在同一计算机上，在 Internet 上或在不同的应用程序平台上。 本主题概述了生成 WCF 应用程序所需的任务。 有关工作示例应用程序，请参阅[入门教程](../../../docs/framework/wcf/getting-started-tutorial.md)。  
@@ -32,4 +32,5 @@ Windows Communication Foundation (WCF) 使应用程序通报它们是在同一�
  熟悉开发服务协定后，您还可以阅读[扩展性介绍](../../../docs/framework/wcf/introduction-to-extensibility.md)。 如果您创建服务出现问题，请[WCF 疑难解答快速入门](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md)若要查看其他人是否有相同或类似问题。  
   
 ## <a name="see-also"></a>请参阅
+
 - [实现服务协定](../../../docs/framework/wcf/implementing-service-contracts.md)

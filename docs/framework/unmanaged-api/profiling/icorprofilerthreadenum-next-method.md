@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 8a014a4e06464f461af25103037b349b2f18a2a5
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 44595229eaefa0d8fc8ca7bf15a88d0fbf1ee0d7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57488703"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59104307"
 ---
 # <a name="icorprofilerthreadenumnext-method"></a>ICorProfilerThreadEnum::Next 方法
 从线程的序列集合获取指定的连续线程数，从序列中枚举器的当前位置开始。  
@@ -52,7 +52,7 @@ HRESULT Next (    [in]  ULONG      celt,
   
 |HRESULT|描述|  
 |-------------|-----------------|  
-|S_OK|已返回 `celt` 元素。|  
+|S_OK|`celt` 返回的元素。|  
 |S_FALSE|返回的元素少于 `celt` 个，表示枚举已完成。|  
   
 ## <a name="requirements"></a>要求  
@@ -62,8 +62,9 @@ HRESULT Next (    [in]  ULONG      celt,
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICorProfilerThreadEnum 接口](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md)
-- [Profiling 接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [分析接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - colors [Windows Forms], creating linear gradients
 - gradients
 ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
-ms.openlocfilehash: e47707d040cd7bf67008fab33ac482706963ce39
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 540b6d422be5d5c0898f019592a755258145d14d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57725241"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59125016"
 ---
 # <a name="how-to-create-a-linear-gradient"></a>如何：创建线性渐变
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 提供了水平、 垂直，和对角线线性渐变。 默认情况下，线性渐变中的颜色均匀地变化。 以便以非均匀方式将颜色更改，但是，可以自定义线性渐变。  
@@ -78,5 +78,6 @@ ms.locfileid: "57725241"
      [!code-vb[System.Drawing.UsingaGradientBrush#23](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#23)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用渐变画笔填充形状](using-a-gradient-brush-to-fill-shapes.md)
 - [Windows 窗体中的图形和绘制](graphics-and-drawing-in-windows-forms.md)

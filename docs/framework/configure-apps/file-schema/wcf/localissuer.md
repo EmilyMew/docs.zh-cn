@@ -2,12 +2,12 @@
 title: <localIssuer>
 ms.date: 03/30/2017
 ms.assetid: 26bdd0df-0e7d-4b9e-bbeb-f28c53769385
-ms.openlocfilehash: 2ab90ec8982580a0a1efe1ed042ae7deff53819a
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 9a51387cd75d57a6828ecde1dcd788b056f7e27a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55256506"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59122871"
 ---
 # <a name="localissuer"></a>\<localIssuer>
 指定要用于颁发安全令牌的本地颁发者的地址和绑定。  
@@ -35,7 +35,7 @@ endpointBehaviors 部分
   
 |特性|描述|  
 |---------------|-----------------|  
-|address|必选字符串。 指定本地颁发者的 URI。|  
+|地址|必选字符串。 指定本地颁发者的 URI。|  
 |绑定|可选的字符串。 系统提供的一个绑定。 有关列表，请参阅[System-Provided Bindings](../../../../../docs/framework/wcf/system-provided-bindings.md)。|  
 |bindingConfiguration|可选的字符串。 指定在配置文件中找到的绑定配置。|  
   
@@ -78,6 +78,7 @@ endpointBehaviors 部分
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer%2A>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement>
 - <xref:System.ServiceModel.Security.IssuedTokenClientCredential>
@@ -87,6 +88,6 @@ endpointBehaviors 部分
 - [安全行为](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
 - [联合令牌与颁发的令牌](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
 - [保护服务和客户端的安全](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [保护客户端](../../../../../docs/framework/wcf/securing-clients.md)
+- [保证客户端的安全](../../../../../docs/framework/wcf/securing-clients.md)
 - [如何：创建联合客户端](../../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
 - [联合令牌与颁发的令牌](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)

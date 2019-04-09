@@ -9,12 +9,12 @@ helpviewer_keywords:
 - antialiasing [Windows Forms], smoothing modes
 - GDI+, antialiasing
 ms.assetid: 810da1a4-c136-4abf-88df-68e49efdd8d4
-ms.openlocfilehash: 6ea49c591b43d3f70bfd39058fd5ee256c537ec2
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: cbc9033f18f1ab255862c8f8e2891aa9b68cf8d6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57725007"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59078493"
 ---
 # <a name="antialiasing-with-lines-and-curves"></a>用直线和曲线抗锯齿
 当你使用[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]若要绘制一条线，提供的起始点和终点的行，但不是需要在行中提供有关单个像素的任何信息。 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 显示驱动程序软件，以确定哪些像素将打开特定显示设备上显示行结合工作。  
@@ -45,6 +45,7 @@ ms.locfileid: "57725007"
  [!code-vb[LinesCurvesAndShapes#81](~/samples/snippets/visualbasic/VS_Snippets_Winforms/LinesCurvesAndShapes/VB/Class1.vb#81)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Drawing2D.SmoothingMode?displayProperty=nameWithType>
-- [直线、曲线和形状](lines-curves-and-shapes.md)
+- [直线、曲线和图形](lines-curves-and-shapes.md)
 - [如何：对文本使用抗锯齿效果](how-to-use-antialiasing-with-text.md)

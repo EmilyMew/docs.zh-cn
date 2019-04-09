@@ -2,12 +2,12 @@
 title: 异步操作
 ms.date: 03/30/2017
 ms.assetid: e7d32c3c-bf78-4bfc-a357-c9e82e4a4b3c
-ms.openlocfilehash: b1c6646f666ca1d931ab8caa8cd0a2e0c6a6722f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 72c2cc33185cb7fba5b8c8ce8d3805a6bb76f8d7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54538656"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59116033"
 ---
 # <a name="asynchronous-operations"></a>异步操作
 某些数据库操作（例如命令执行）可能要花费很长时间才能完成。 在此类情况下，单线程应用程序必须阻塞其他操作，并且等待该命令完成，然后才可以继续执行它们自己的操作。 比较而言，如果能够将长时间运行的操作分配给某个后台线程，就可以允许前台线程在整个操作期间保持活动状态。 例如，在 Windows 应用程序中，通过将长时间运行的操作委托给后台线程，可允许用户界面线程在操作执行时保持响应状态。  
@@ -30,6 +30,7 @@ ms.locfileid: "54538656"
  提供一个示例，演示如何在控制台应用程序中使用轮询来等待异步命令执行的完成。 在类库或没有用户界面的其他应用程序中此技术同样有效。  
   
 ## <a name="see-also"></a>请参阅
+
 - [SQL Server 和 ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
 - [使用异步方式调用同步方法](../../../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

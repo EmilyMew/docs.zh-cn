@@ -2,12 +2,12 @@
 title: UriTemplate 和 UriTemplateTable
 ms.date: 03/30/2017
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
-ms.openlocfilehash: 3fd60325d2264a2ddeaabef7b0998844ca8c8cd6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b0dc3b2b747bc08da239490db7db3ba77d1e7ed8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54722603"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59130242"
 ---
 # <a name="uritemplate-and-uritemplatetable"></a>UriTemplate 和 UriTemplateTable
 Web 开发人员需要能够描述其服务所响应的 URI 的形状和布局。 Windows Communication Foundation (WCF) 添加两个新类，以帮助开发人员控制其 Uri。 <xref:System.UriTemplate> 和<xref:System.UriTemplateTable>构成 WCF 中基于 URI 的调度引擎的基础。 这些类还可以在其自身，从而允许开发人员充分利用模板和 URI 映射机制而无需实现 WCF 服务使用。  
@@ -27,18 +27,18 @@ Web 开发人员需要能够描述其服务所响应的 URI 的形状和布局�
 ## <a name="uritemplate"></a>UriTemplate  
  <xref:System.UriTemplate> 是包装 URI 模板的类。 其构造函数接受一个定义模板的字符串参数。 此字符串包含具有下节所述格式的模板。 <xref:System.UriTemplate> 类提供一些方法，用于将传入的 URI 与模板进行匹配，根据模板生成 URI，检索在模板中使用的变量名集合，确定两个模板是否等效，返回模板的字符串。  
   
- <xref:System.UriTemplate.Match%28System.Uri%2CSystem.Uri%29> 接受一个基址和一个候选 URI，并尝试将该 URI 与模板进行匹配。 如果匹配成功，则返回一个 <xref:System.UriTemplateMatch> 实例。 <xref:System.UriTemplateMatch> 对象包含一个基准 URI、候选 URI、查询参数的名称/值集合、相对路径段数组、匹配变量的名称/值集合、用于执行匹配操作的 <xref:System.UriTemplate> 实例、包含候选 URI 中任意不匹配部分的字符串（在模板有通配符时使用），以及一个与模板关联的对象。  
+ <xref:System.UriTemplate.Match%28System.Uri%2CSystem.Uri%29> 使用基址和一个候选 URI 和 URI 与模板匹配的尝试。 如果匹配成功，则返回一个 <xref:System.UriTemplateMatch> 实例。 <xref:System.UriTemplateMatch> 对象包含一个基准 URI、候选 URI、查询参数的名称/值集合、相对路径段数组、匹配变量的名称/值集合、用于执行匹配操作的 <xref:System.UriTemplate> 实例、包含候选 URI 中任意不匹配部分的字符串（在模板有通配符时使用），以及一个与模板关联的对象。  
   
 > [!NOTE]
 >  将候选 URI 与模板进行匹配时，<xref:System.UriTemplate> 类将忽略方案和端口号。  
   
- 从模板生成 URI 的方法有两个，即 <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29> 和 <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29>。 <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29> 接受一个基址和一个参数的名称/值集合。 模板绑定后，这些参数将替换变量。 <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29> 接受名称/值对，并从左向右替换他们。  
+ 从模板生成 URI 的方法有两个，即 <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29> 和 <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29>。 <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29> 接受一个基址和参数的名称/值集合。 模板绑定后，这些参数将替换变量。 <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29> 接受名称/值对，并从左向右替换它们。  
   
  <xref:System.UriTemplate.ToString> 返回模板字符串。  
   
  <xref:System.UriTemplate.PathSegmentVariableNames%2A> 属性包含变量名称的集合，这些变量就是模板字符串的路径段中所使用的变量。  
   
- <xref:System.UriTemplate.IsEquivalentTo%28System.UriTemplate%29> 接受一个 <xref:System.UriTemplate> 作为参数，并返回一个布尔值，该值指定两个模板是否等效。 有关详细信息，请参阅本主题后面的模板等效性部分。  
+ <xref:System.UriTemplate.IsEquivalentTo%28System.UriTemplate%29> 采用<xref:System.UriTemplate>作为参数并返回一个布尔值，指定两个模板是否等效。 有关详细信息，请参阅本主题后面的模板等效性部分。  
   
  <xref:System.UriTemplate> 旨在处理符合 HTTP URI 语法的任意 URI 方案。 下面这些示例都是支持的 URI 方案。  
   
@@ -65,7 +65,7 @@ Web 开发人员需要能够描述其服务所响应的 URI 的形状和布局�
   
  在路径表达式中，首尾斜杠是可选的。 查询表达式和片段表达式可完全省略。 路径由一系列由分隔的段组成 '/'，每个段可包含文本值、 变量名 （写在 {大括号} 中） 或通配符 (编写为\*)。 在上一模板中，“\weather\”段为文本值，而“{state}”和“{city}”为变量。 变量采用其大括号中的内容及其名称和更高版本可以使用来创建一个具体值替换它们*封闭的 URI*。 通配符是可选的但只能出现在 URI，它以逻辑方式匹配的其余部分路径"的末尾。  
   
- 查询表达式（如果有）指定一系列用“&”分隔的无序名称/值对。 查询表达式的元素可以是文本对 (x=2) 或变量对 (x={var})。 只有查询的右侧可以有变量表达式。 不允许 {someName} = {someValue}。 不允许使用不成对的值 (?x)。 没有任何空的查询表达式和包含只包含一个查询表达式之间的区别？（两者都表示"任何查询"）。  
+ 查询表达式中，如果存在，则指定一系列由分隔的无序的名称/值对 &。 查询表达式的元素可以是文本对 (x=2) 或变量对 (x={var})。 只有查询的右侧可以有变量表达式。 不允许 {someName} = {someValue}。 不允许使用不成对的值 (?x)。 没有任何空的查询表达式和包含只包含一个查询表达式之间的区别？（两者都表示"任何查询"）。  
   
  片段表达式可以由文本值构成，不允许使用任何变量。  
   
@@ -313,22 +313,23 @@ Console.WriteLine("Bound URI: {0}", boundUri);
   
 - ?y=2  
   
- “x=1&y=2”- 与这两个模板都匹配。 这是因为查询字符串包含的查询字符串变量可能比与之匹配的模板多。  
+ "x = 1 (& y) = 2"与这两个模板都匹配。 这是因为查询字符串包含的查询字符串变量可能比与之匹配的模板多。  
   
 - ?x=1  
   
 - ?x=1&y={var}  
   
- “x=1&y=3”- 与这两个模板都匹配。  
+ "x = 1 (& y) = 3"与这两个模板都匹配。  
   
-- ?x=3&y=4  
+- ？ x = 3 (& y) = 4  
   
 - ?x=3&z=5  
   
 > [!NOTE]
-> 作为 URI 路径或 <xref:System.UriTemplate> 路径段文本的组成部分时，字符 á 和 Á 视为不同的字符（但字符 a 和 A 视为相同的字符）。 作为 <xref:System.UriTemplate> {variableName} 或查询字符串的组成部分时，字符 á 和 Á 被视为相同的字符（字符 a 和 A 也视为相同的字符）。  
+> 作为 URI 路径或 <xref:System.UriTemplate> 路径段文本的组成部分时，字符 á 和 Á 视为不同的字符（但字符 a 和 A 视为相同的字符）。 字符 á 和 Á 被视为是相同的字符，它们显示为 a 的一部分时<xref:System.UriTemplate>{variableName} 或一个查询字符串 （和 a 和 A 也被视为是相同的字符）。  
   
 ## <a name="see-also"></a>请参阅
+
 - [WCF Web HTTP 编程模型概述](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)
 - [WCF Web HTTP 编程对象模型](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)
 - [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)

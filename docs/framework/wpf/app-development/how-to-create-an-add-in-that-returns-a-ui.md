@@ -9,12 +9,12 @@ helpviewer_keywords:
 - implementing add-in pipeline segments [WPF]
 - add-in [WPF], returns a UI
 ms.assetid: 57f274b7-4c66-4b72-92eb-81939a393776
-ms.openlocfilehash: bf69a22f60724513122b5f17c5dd55bffc1fe561
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: faed11bb02037ea42b31402d431e1bcdd8b70339
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57364874"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115741"
 ---
 # <a name="how-to-create-an-add-in-that-returns-a-ui"></a>如何：创建返回 UI 的外接程序
 此示例演示如何创建 Windows Presentation Foundation (WPF) 返回到主机 WPF 独立应用程序的外接程序。  
@@ -31,8 +31,7 @@ ms.locfileid: "57364874"
   
 ## <a name="example"></a>示例  
  若要返回 WPF UI 的外接程序创建的每个管道段、 外接程序和主机应用程序需要特定代码。  
-    
-  
+
 <a name="Contract"></a>   
 ## <a name="implementing-the-contract-pipeline-segment"></a>实现协定管道段  
  必须通过返回 UI 的协定定义的方法和它的返回值的类型必须是<xref:System.AddIn.Contract.INativeHandleContract>。 这可通过演示`GetAddInUI`方法的`IWPFAddInContract`协定在下面的代码。  
@@ -90,5 +89,6 @@ ms.locfileid: "57364874"
  [!code-vb[SimpleAddInReturnsAUISample#GetUICode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleAddInReturnsAUISample/VisualBasic/Host/MainWindow.xaml.vb#getuicode)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [外接程序和扩展性](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
 - [WPF 外接程序概述](wpf-add-ins-overview.md)

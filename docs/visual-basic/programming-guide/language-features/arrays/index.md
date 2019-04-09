@@ -2,13 +2,18 @@
 title: Visual Basic 中的数组
 ms.date: 12/06/2017
 f1_keywords:
-  - vb.Array
+- vb.Array
 helpviewer_keywords:
-  - 'arrays [Visual Basic]'
-  - 'Visual Basic, arrays'
+- arrays [Visual Basic]
+- Visual Basic, arrays
 ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
+ms.openlocfilehash: 6b131d073e10f99feaf770fe5fd3c393551fa5a3
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675960"
 ---
-
 # <a name="arrays-in-visual-basic"></a>Visual Basic 中的数组
 
 数组是一组值，术语上称之为*元素*，逻辑上彼此相关的。 例如，数组可能包含的语法学校; 中的每个年级的学生数量数组的每个元素是单个年级的学生数量。 同样，数组可能包含的一个类; 的学生的成绩数组的每个元素是一个单一的等级。

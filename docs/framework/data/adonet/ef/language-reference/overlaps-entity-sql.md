@@ -2,12 +2,12 @@
 title: OVERLAPS (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 41743e89-79cb-4d7b-8a27-355b45024b61
-ms.openlocfilehash: 8ab2b00767aed19cff5448d811d7cdcd1871d9a7
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 74399c4c5701fcf039666ef3de19de2cf9a6b50e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54679326"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59104195"
 ---
 # <a name="overlaps-entity-sql"></a>OVERLAPS (Entity SQL)
 确定两个集合是否具有公共元素。  
@@ -23,7 +23,7 @@ expression OVERLAPS expression
  返回一个集合以与从其他查询表达式返回的集合进行比较的任何有效查询表达式。 所有表达式都必须与 `expression`一样属于同一类型或属于公共基类型或派生类型。  
   
 ## <a name="return-value"></a>返回值  
- 如果两个集合具有公共元素，则为`true` ；否则为 `false`。  
+ `true` 如果两个集合具有公共元素;否则为`false`。  
   
 ## <a name="remarks"></a>备注  
  OVERLAPS 提供的功能等效于以下：  
@@ -42,4 +42,5 @@ expression OVERLAPS expression
  [!code-csharp[DP EntityServices Concepts 2#OVERLAPS](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#overlaps)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体 SQL 引用](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

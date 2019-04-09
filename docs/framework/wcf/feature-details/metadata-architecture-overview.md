@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - metadata [WCF], overview
 ms.assetid: 1d37645e-086d-4d68-a358-f3c5b6e8205e
-ms.openlocfilehash: 38a0eec31c4a0910048a0ed674e997d685747862
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f9c903dd520f1aa85fc0577264288ecbc8c62a7f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54664195"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59111470"
 ---
 # <a name="metadata-architecture-overview"></a>元数据体系结构概述
 Windows Communication Foundation (WCF) 提供了用于导出、 发布、 检索和导入服务元数据的丰富基础结构。 WCF 服务使用元数据来描述如何与服务的终结点交互，以便诸如 Svcutil.exe 之类的工具，可以自动生成用于访问服务的客户端代码。  
@@ -31,7 +31,7 @@ Windows Communication Foundation (WCF) 提供了用于导出、 发布、 检索
 ## <a name="exporting-service-metadata"></a>导出服务元数据  
  在 WCF 中，*元数据导出*是描述服务终结点并将它们投影到客户端可用来了解如何使用服务的并行的标准化表示形式的过程。 若要从 <xref:System.ServiceModel.Description.ServiceEndpoint> 实例导出元数据，请使用 <xref:System.ServiceModel.Description.MetadataExporter> 抽象类的实现。 <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType> 实现生成包装在 <xref:System.ServiceModel.Description.MetadataSet> 实例中的元数据。  
   
- <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType> 类提供了一个框架，用于生成描述终结点绑定的功能和要求及其关联操作、消息和错误的策略表达式。 在 <xref:System.ServiceModel.Description.PolicyConversionContext> 实例中可捕获这些策略表达式。 然后 <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType> 实现可以将这些策略表达式附加到它生成的元数据。  
+ <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType> 类提供了一个框架，用于生成描述终结点绑定的功能和需求及其关联操作、消息和错误的策略表达式。 在 <xref:System.ServiceModel.Description.PolicyConversionContext> 实例中可捕获这些策略表达式。 然后 <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType> 实现可以将这些策略表达式附加到它生成的元数据。  
   
  当生成供 <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType> 实现使用的 <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType> 对象时，<xref:System.ServiceModel.Description.IPolicyExportExtension> 调入在 <xref:System.ServiceModel.Description.ServiceEndpoint> 的绑定中实现 <xref:System.ServiceModel.Description.PolicyConversionContext> 接口的每个 <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType>。 通过在 <xref:System.ServiceModel.Description.IPolicyExportExtension> 类型的自定义实现上实现 <xref:System.ServiceModel.Channels.BindingElement> 接口，可以导出新策略断言。  
   
@@ -88,11 +88,12 @@ Windows Communication Foundation (WCF) 提供了用于导出、 发布、 检索
  如果终结点的绑定更改，或者希望为使用相同协定但具有不同绑定的终结点创建一个通道，则可以动态更新用来为服务终结点创建通道的绑定。 可以使用 <xref:System.ServiceModel.Description.MetadataResolver> 静态类在运行时为实现特定协定的服务终结点检索和导入元数据。 然后可以使用导入的 <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> 对象为所需终结点创建客户端或通道工厂。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Description>
 - [元数据格式](../../../../docs/framework/wcf/feature-details/metadata-formats.md)
 - [导出和导入元数据](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)
 - [发布元数据](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)
 - [检索元数据](../../../../docs/framework/wcf/feature-details/retrieving-metadata.md)
 - [使用元数据](../../../../docs/framework/wcf/feature-details/using-metadata.md)
-- [元数据的安全性注意事项](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)
+- [元数据的安全注意事项](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)
 - [扩展元数据系统](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)

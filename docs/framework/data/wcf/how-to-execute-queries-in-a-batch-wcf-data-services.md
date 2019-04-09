@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - WCF Data Services, batch requests
 ms.assetid: 3b4db7df-bd33-43a1-8ea4-63a18e131f97
-ms.openlocfilehash: 3a11a96c197cd6905d8e80fac5c869a9c5c374e3
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a917659092890c95dfd65ede358d9c4b5a0e62cb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54611899"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59117905"
 ---
 # <a name="how-to-execute-queries-in-a-batch-wcf-data-services"></a>如何：在批处理 （WCF 数据服务） 中执行查询
 通过使用[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]客户端库，可以在单个批处理中执行多个查询针对数据服务。 有关详细信息，请参阅[批处理操作](../../../../docs/framework/data/wcf/batching-operations-wcf-data-services.md)。  
@@ -26,4 +26,5 @@ ms.locfileid: "54611899"
  [!code-vb[Astoria Northwind Client#BatchQuery](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#batchquery)]  
   
 ## <a name="see-also"></a>请参阅
-- [WCF Data Services 客户端库](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+
+- [WCF 数据服务客户端库](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

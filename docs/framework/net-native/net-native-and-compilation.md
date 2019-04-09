@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 ms.assetid: e38ae4f3-3e3d-42c3-a4b8-db1aa9d84f85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 023759ea3d1401dbc166873d14d2c51502a1a96c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dd02320f9b899f339efa149838547fd05d1b4079
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54744136"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59139173"
 ---
 # <a name="net-native-and-compilation"></a>.NET Native 和编译
-面向 .Net Framework 的 Windows 8.1 应用程序和 Windows 桌面应用程序由特定的编程语言进行编写并编译为中间语言 (IL)。 在运行时，实时 (JIT) 编译器负责恰好在首次执行方法前为本地计算机将 IL 编译到本机代码中。 与此相反，.NET 本机工具链在编译时将源代码转换为本机代码。 本主题将 .NET Native 与其他可用于 .NET Framework 应用程序的编译技术进行比较，还提供了 .NET Native 如何生成本机代码的实用概述，可帮助用户了解使用 .NET Native 编译的代码中发生的异常为什么不会出现在 JIT 编译的代码中。  
+面向 .Net Framework 的 Windows 8.1 应用程序和 Windows 桌面应用程序由特定的编程语言进行编写并编译为中间语言 (IL)。 在运行时，实时 (JIT) 编译器负责恰好在首次执行方法前为本地计算机将 IL 编译到本机代码中。 与此相反，.NET 本机工具链在编译时将源代码转换为本机代码。 本主题将 .NET 本机与其他可用于 .NET Framework 应用程序的编译技术进行比较，还提供了 .NET 本机如何生成本机代码的实用概述，可帮助用户了解使用 .NET 本机编译的代码中发生的异常为什么不会出现在 JIT 编译的代码中。  
   
 ## <a name="net-native-generating-native-binaries"></a>.NET 本机：生成本机二进制文件  
  面向 .NET Framework 且未使用 .NET 本机工具链编译的应用程序包含应用程序的程序集，其中包括以下内容：  
@@ -35,13 +35,13 @@ ms.locfileid: "54744136"
  .NET 本机工具链的输入是指 C# 或 Visual Basic 编译器生成的 Windows 应用商店应用。 换言之，.NET 本机工具链在语言编译器完成 Windows 应用商店应用的编译时开始执行。  
   
 > [!TIP]
->  由于 .NET 本机的输入是写入托管程序集的 IL 和元数据，因此仍然可以通过使用预生成（或后期生成）的事件或通过修改 MSBuild 项目文件执行自定义代码生成或其他自定义操作。  
+>  由于 .NET Native 的输入是写入托管程序集的 IL 和元数据，因此仍然可以通过使用预生成（或后期生成）的事件或通过修改 MSBuild 项目文件执行自定义代码生成或其他自定义操作。  
 >   
 >  然而，不支持修改 IL 进而阻止 .NET 工具链分析应用 IL 的工具的类别。 模糊处理程序是此类型中最值得注意的工具。  
   
- 在将应用程序从 IL 转换为本机代码的过程中，.NET 本机工具链执行如下所示的操作：  
+ 在将应用程序从 IL 转换为本机代码的过程中，.NET Native 工具链执行如下所示的操作：  
   
--   对于某些代码路径，它将依靠反射和元数据的代码替换为静态本机代码。 例如，如果值类型未重写 <xref:System.ValueType.Equals%2A?displayProperty=nameWithType> 方法，默认的相等性测试将使用反射来检索表示值类型字段的 <xref:System.Reflection.FieldInfo> 对象，然后将两个实例的字段值进行比较。 编译为本机代码时，.NET 本机工具链将反射代码和元数据替换为字段值的静态比较。  
+-   对于某些代码路径，它将依靠反射和元数据的代码替换为静态本机代码。 例如，如果值类型未重写 <xref:System.ValueType.Equals%2A?displayProperty=nameWithType> 方法，默认的相等性测试将使用反射来检索表示值类型字段的 <xref:System.Reflection.FieldInfo> 对象，然后将两个实例的字段值进行比较。 编译为本机代码时，.NET Native 工具链将反射代码和元数据替换为字段值的静态比较。  
   
 -   如果可能，它会尝试消除所有元数据。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "54744136"
 -   它将完整的 CLR 替换为主要包含垃圾回收器的重构运行时。 重构运行时位于应用程序中名为 mrt100_app.dll 本地库，且其大小仅为几百千字节。 这可能是因为静态链接不再需要公共语言运行时执行多个服务。  
   
     > [!NOTE]
-    >  .NET 本机使用的垃圾回收器与标准公共语言运行时使用的相同。 在 .NET Native 垃圾回收器中，默认启用后台垃圾回收。 有关垃圾回收的详细信息，请参阅[垃圾回收的基础知识](../../../docs/standard/garbage-collection/fundamentals.md)。  
+    >  .NET 本机使用的垃圾回收器与标准公共语言运行时使用的相同。 在 .NET 本机垃圾回收器中，默认启用后台垃圾回收。 有关垃圾回收的详细信息，请参阅[垃圾回收的基础知识](../../../docs/standard/garbage-collection/fundamentals.md)。  
   
 > [!IMPORTANT]
 >  .NET 本机将整个应用程序编译到本机应用程序。 它不允许将包含类库的单个程序集编译为本机代码，所以可独立于托管代码进行调用。  
@@ -69,7 +69,7 @@ ms.locfileid: "54744136"
   
 -   mrt100.dll。 此库包含可提高 mrt100_app.dll 性能的函数，但没有此库，mrt100_app.dll 也可正常运行。 如果此库存在，可从本地计算机上的 system32 目录加载它。  
   
- 因为 .NET 本机工具链只在获知应用程序实际调用了实现代码时才会将它链接到应用程序中，所以应用程序中可能不包含以下方案中所需的元数据或实现代码：  
+ 因为 .NET Native 工具链只在获知应用程序实际调用了实现代码时才会将它链接到应用程序中，所以应用程序中可能不包含以下方案中所需的元数据或实现代码：  
   
 -   反射。  
   
@@ -92,7 +92,7 @@ ms.locfileid: "54744136"
  通过它，应用程序包中所有程序集的所有类型和所有成员都可执行反射和动态调用。 然而，.NET Framework 类库程序集中的类型无法借此执行反射或动态激活。 在很多情况下，这已足够。  
   
 ## <a name="net-native-and-ngen"></a>.NET 本机和 NGEN  
- [本机映像生成器](../../../docs/framework/tools/ngen-exe-native-image-generator.md) (NGEN) 将程序集编译为本机代码，并将其安装在本地计算机的本机映像缓存中。 然而，尽管 NGEN 与 .NET Native 一样都生成本机代码，但在一些重要方面它又与 .NET Native 不同：  
+ [本机映像生成器](../../../docs/framework/tools/ngen-exe-native-image-generator.md) (NGEN) 将程序集编译为本机代码，并将其安装在本地计算机的本机映像缓存中。 然而，尽管 NGEN 与 .NET Native 一样都生成本机代码，但在一些重要方面它又与 .NET 本机不同：  
   
 -   如果特定方法中没有可用的本机映像，NGEN 将转而使用 JITing 代码。 这意味着本机映像必须继续在 NGEN 需要回退到 JIT 编译的事件中包括元数据和 IL。 与此相反，.NET 本机仅生成本机映像并且不会回退到 JIT 编译。 因此，仅必须保留某些反射、序列化和互操作方案所需的元数据。  
   
@@ -101,6 +101,7 @@ ms.locfileid: "54744136"
 -   NGEN 映像往往非常脆弱。 例如，如果修补或更改了依赖项，通常需要使用它的程序集也重新执行 NGEN 操作。 对于 .NET Framework 类库中的系统程序集尤其如此。 相反，.NET 本机允许独立提供应用程序。  
   
 ## <a name="see-also"></a>请参阅
+
 - [元数据和自描述组件](../../../docs/standard/metadata-and-self-describing-components.md)
 - [内部.NET Native （第 9 频道视频）](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)
 - [反射和 .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)

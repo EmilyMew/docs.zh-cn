@@ -1,5 +1,5 @@
 ---
-title: 优化性能：布局和设计
+title: 优化性能：布局和示例
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - design considerations [WPF]
 - layout pass [WPF]
 ms.assetid: 005f4cda-a849-448b-916b-38d14d9a96fe
-ms.openlocfilehash: e62b439926465aa1a61abd39c7c942acf26732c4
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 8a76dd5de9f374d77345eeab3d259624546fed7c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57367931"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59107063"
 ---
-# <a name="optimizing-performance-layout-and-design"></a>优化性能：布局和设计
+# <a name="optimizing-performance-layout-and-design"></a>优化性能：布局和示例
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 应用程序的设计在计算布局和验证对象引用时会产生不必要的开销，从而影响性能。 对象的构造会影响应用程序的性能特征，在运行时更是如此。  
   
  本主题提供这些方面的性能改进建议。  
@@ -57,7 +57,7 @@ ms.locfileid: "57367931"
 ### <a name="build-your-tree-top-down"></a>从上到下生成树  
  在逻辑树中添加或删除节点时，会在该节点的父级及其所有子级上引起属性失效。 因此，应始终遵循从上到下的构造模式，以避免由于在经过验证的节点中出现不必要的失效而付出代价。 下表显示了执行速度之间构建树自上而下与自下而上，其中树有 150 级深与单个差异<xref:System.Windows.Controls.TextBlock>和<xref:System.Windows.Controls.DockPanel>每个级别。  
   
-|**操作**|**构建树（以毫秒为单位）**|**呈现 - 包括生成树（以毫秒为单位）**|  
+|**操作**|**构建树 （以毫秒为单位）**|**呈现-包括生成树 （以毫秒为单位）**|  
 |----------------|---------------------------------|-------------------------------------------------|  
 |从下到上|366|454|  
 |从上到下|11|96|  
@@ -70,13 +70,14 @@ ms.locfileid: "57367931"
  有关逻辑树的详细信息，请参阅 [WPF 中的树](trees-in-wpf.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [优化 WPF 应用程序性能](optimizing-wpf-application-performance.md)
 - [规划应用程序性能](planning-for-application-performance.md)
 - [利用硬件](optimizing-performance-taking-advantage-of-hardware.md)
-- [2D 图形和图像处理](optimizing-performance-2d-graphics-and-imaging.md)
+- [二维图形和图像处理](optimizing-performance-2d-graphics-and-imaging.md)
 - [对象行为](optimizing-performance-object-behavior.md)
 - [应用程序资源](optimizing-performance-application-resources.md)
-- [文本](optimizing-performance-text.md)
+- [Text](optimizing-performance-text.md)
 - [数据绑定](optimizing-performance-data-binding.md)
 - [其他性能建议](optimizing-performance-other-recommendations.md)
 - [布局](layout.md)

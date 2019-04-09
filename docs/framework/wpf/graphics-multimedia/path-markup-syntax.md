@@ -7,12 +7,12 @@ helpviewer_keywords:
 - graphics [WPF], PathGeometry class
 - XAML [WPF], object element usage
 ms.assetid: b8586241-a02d-486e-9223-e1e98e047f41
-ms.openlocfilehash: 65a86b82af9269d1af7198b8106ad478e88f3691
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 32eefba26b5e04370599e4c97767b6662cfd1c13
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57379154"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59082485"
 ---
 # <a name="path-markup-syntax"></a>路径标记语法
 路径中讨论[形状和基本绘图中 WPF 概述](shapes-and-basic-drawing-in-wpf-overview.md)和[几何概述](geometry-overview.md)，但是，本主题详细介绍了功能强大且复杂的微型语言，可用于指定路径使用更简洁的几何图形[!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]。  
@@ -57,7 +57,7 @@ ms.locfileid: "57379154"
   
 |术语|描述|  
 |----------|-----------------|  
-|*fillRule*|<xref:System.Windows.Media.FillRule?displayProperty=nameWithType><br /><br /> 指定是否<xref:System.Windows.Media.StreamGeometry>使用<xref:System.Windows.Media.FillRule.EvenOdd>或<xref:System.Windows.Media.FillRule.Nonzero> <xref:System.Windows.Media.PathGeometry.FillRule%2A>。<br /><br /> -   `F0` 指定<xref:System.Windows.Media.FillRule.EvenOdd>填充规则。<br />-   `F1` 指定<xref:System.Windows.Media.FillRule.Nonzero>填充规则。<br /><br /> 如果省略此命令时，子路径将使用默认行为，即<xref:System.Windows.Media.FillRule.EvenOdd>。 如果指定该命令，须先设置命令。|  
+|*fillRule*|<xref:System.Windows.Media.FillRule?displayProperty=nameWithType><br /><br /> 指定是否<xref:System.Windows.Media.StreamGeometry>使用<xref:System.Windows.Media.FillRule.EvenOdd>或<xref:System.Windows.Media.FillRule.Nonzero><xref:System.Windows.Media.PathGeometry.FillRule%2A>。<br /><br /> -   `F0` 指定<xref:System.Windows.Media.FillRule.EvenOdd>填充规则。<br />-   `F1` 指定<xref:System.Windows.Media.FillRule.Nonzero>填充规则。<br /><br /> 如果省略此命令时，子路径将使用默认行为，即<xref:System.Windows.Media.FillRule.EvenOdd>。 如果指定该命令，须先设置命令。|  
 |*figureDescription*|图形由一个移动命令，绘制命令和一个可选的关闭命令组成。<br /><br /> `moveCommand` `drawCommands`  `[` `closeCommand` `]`|  
 |*moveCommand*|用于指定图形起点的移动命令。 请参阅[移动命令](#themovecommand)部分。|  
 |*drawCommands*|用于描述图形内容的一个或多个绘图命令。 请参阅[绘制命令](#drawcommands)部分。|  
@@ -99,7 +99,6 @@ ms.locfileid: "57379154"
 ### <a name="horizontal-line-command"></a>水平线命令  
  在当前点和指定的 x 坐标之间创建一条水平线。 `H 90` 是有效水平线命令的示例。
 
-  
 |语法|  
 |------------|  
 |`H`  *x*<br /><br /> - 或 -<br /><br /> `h`  *x*|  
@@ -113,7 +112,6 @@ ms.locfileid: "57379154"
 ### <a name="vertical-line-command"></a>竖线命令  
  在当前点和指定的 y 坐标之间创建一条竖线。 `v 90` 是有效竖线命令的示例。
 
-  
 |语法|  
 |------------|  
 |`V`  *y*<br /><br /> - 或 -<br /><br /> `v`  *y*|  
@@ -138,7 +136,7 @@ ms.locfileid: "57379154"
 |`endPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> 绘制曲线将通过的点。|  
   
 ### <a name="quadratic-bezier-curve-command"></a>二次贝塞尔曲线命令  
- 创建二次贝塞尔曲线的当前点和指定的终结点之间使用指定的控制点 (`controlPoint`)。 `q 100,200 300,200` 为有效二次贝塞尔曲线命令的示例。  
+ 创建二次贝塞尔曲线的当前点和指定的终结点之间使用指定的控制点 (`controlPoint`)。 `q 100,200 300,200` 是有效的二次贝塞尔曲线命令的示例。  
   
 |语法|  
 |------------|  
@@ -225,10 +223,11 @@ ms.locfileid: "57379154"
  也可使用科学计数法。 例如，`+1.e17`是有效的值。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Shapes.Path>
 - <xref:System.Windows.Media.StreamGeometry>
 - <xref:System.Windows.Media.PathGeometry>
 - <xref:System.Windows.Media.PathFigureCollection>
-- [WPF 中的形状和基本绘图概述](shapes-and-basic-drawing-in-wpf-overview.md)
+- [WPF 中的形状和基本图形概述](shapes-and-basic-drawing-in-wpf-overview.md)
 - [Geometry 概述](geometry-overview.md)
 - [帮助主题](geometries-how-to-topics.md)

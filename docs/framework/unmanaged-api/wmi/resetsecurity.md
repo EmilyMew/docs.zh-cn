@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2f117b9807d57847d53cf00fbb4983e187798f09
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e937690c184d810549e8ab11ef1fc2273a45c5f5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54730849"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115123"
 ---
 # <a name="resetsecurity-function"></a>ResetSecurity 函数
 将提供的模拟令牌分配给当前线程。   
@@ -52,7 +52,8 @@ HRESULT ResetSecurity (
   
  **标头：** WMINet_Utils.idl  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>请参阅
-- [WMI 和性能计数器 （非托管 API 参考）](index.md)
+
+- [WMI 和性能计数器（非托管 API 参考）](index.md)

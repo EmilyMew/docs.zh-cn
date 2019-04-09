@@ -2,12 +2,12 @@
 title: 如何：验证 DBML 和外部映射文件
 ms.date: 03/30/2017
 ms.assetid: d9ea37f5-0a9e-4401-8fc3-1e6fd44c49f9
-ms.openlocfilehash: 42cba5b9b686f5f94d4ebf8f889461e1bab009b5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b01bcf98bba185b7a4b1802f470a585371980177
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54692725"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59078728"
 ---
 # <a name="how-to-validate-dbml-and-external-mapping-files"></a>如何：验证 DBML 和外部映射文件
 您修改的外部映射文件和 .dbml 文件必须通过其各自架构定义的验证。 本主题提供了 Visual Studio 用户的步骤来实现验证过程。  
@@ -71,4 +71,5 @@ ms.locfileid: "54692725"
 7.  在中**文件名**框中，创建具有.xsd 扩展名的文件名。  
   
 ## <a name="see-also"></a>请参阅
-- [引用](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+
+- [参考](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)

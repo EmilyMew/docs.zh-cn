@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 1411207c6374456cd9a5c70ad922622f141fd58d
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 62e70a2fe421651aac9a4921ca885c53c864c4f7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57492538"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59101798"
 ---
 # <a name="icorprofilerfunctionenumnext-method"></a>ICorProfilerFunctionEnum::Next 方法
 从一个函数的顺序集合中获取指定数量的连续函数（从枚举器在序列中的当前位置开始）。  
@@ -51,7 +51,7 @@ HRESULT Next([in]  ULONG      celt,
   
 |HRESULT|描述|  
 |-------------|-----------------|  
-|S_OK|已返回 `celt` 元素。|  
+|S_OK|`celt` 返回的元素。|  
 |S_FALSE|返回的元素少于 `celt` 个，表示枚举已完成。|  
   
 ## <a name="requirements"></a>要求  
@@ -61,8 +61,9 @@ HRESULT Next([in]  ULONG      celt,
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICorProfilerFunctionEnum 接口](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md)
-- [Profiling 接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [分析接口](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

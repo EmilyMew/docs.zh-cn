@@ -8,12 +8,12 @@ helpviewer_keywords:
 - XAML [WPF], StaticResource markup extension
 - StaticResource markup extensions [WPF]
 ms.assetid: 97af044c-71f1-4617-9a94-9064b68185d2
-ms.openlocfilehash: f3fb2559510d85f6e55a4784f2b528f16737a2ab
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 8319e451268152e95326c02027157db72df631b8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57371107"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59125141"
 ---
 # <a name="staticresource-markup-extension"></a>StaticResource 标记扩展
 提供值的任何[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]通过查找对已定义资源的引用的属性特性。 对该资源的查找行为是类似于加载时查找，将在当前的标记从先前加载的资源查找[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]以及其他应用程序源页上，将生成与该资源值在运行时对象的属性值。  
@@ -55,7 +55,7 @@ ms.locfileid: "57371107"
   
  `StaticResource` 可以在对象元素语法中使用。 在这种情况下，指定的值<xref:System.Windows.StaticResourceExtension.ResourceKey%2A>属性是必需的。  
   
- `StaticResource` 还可以在详细特性用法中使用，以便将 <xref:System.Windows.StaticResourceExtension.ResourceKey%2A> 属性指定为一个 property=value 对：  
+ `StaticResource` 此外可以在详细特性用法中，指定使用<xref:System.Windows.StaticResourceExtension.ResourceKey%2A>属性作为属性 = 值对：  
   
 ```xml  
 <object property="{StaticResource ResourceKey=key}" .../>  
@@ -68,6 +68,7 @@ ms.locfileid: "57371107"
  `StaticResource` 是标记扩展。 当要求转义特性值应为非文本值或非处理程序名称时，通常会实现标记扩展，相对于只在某些类型或属性上放置类型转换器而言，此需求更具有全局性。 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 中的所有标记扩展在其特性语法中都使用 { 和 } 字符，[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 处理器通过这一约定确认标记扩展必须处理该特性。 有关详细信息，请参阅[标记扩展和 WPF XAML](markup-extensions-and-wpf-xaml.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [样式设置和模板化](../controls/styling-and-templating.md)
 - [XAML 概述 (WPF)](xaml-overview-wpf.md)
 - [标记扩展和 WPF XAML](markup-extensions-and-wpf-xaml.md)

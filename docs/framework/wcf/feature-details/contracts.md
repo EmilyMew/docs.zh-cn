@@ -6,12 +6,12 @@ helpviewer_keywords:
 - contracts [WCF]
 - Windows Communication Foundation [WCF], contracts
 ms.assetid: c8364183-4ac1-480b-804a-c5e6c59a5d7d
-ms.openlocfilehash: ce9b03b1eae2a88a9e09449719b3a8e522409418
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0443e5b37e637351d6491c37ec443c93636460a3
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54499296"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59134883"
 ---
 # <a name="contracts"></a>协定
 本部分演示如何定义和实现 Windows Communication Foundation (WCF) 协定。 服务协定指定终结点与外界通信的内容。 更具体地说，它是有关一组特定消息的声明，这些消息被组织成基本消息交换模式 (MEP)，如请求/答复、单向和双工。 如果说服务协定是一组在逻辑上相关的消息交换，那么服务操作就是单个消息交换。 例如，`Hello` 操作显然必须接受一条消息（以便调用方能够发出问候），并可能返回也可能不返回一条消息（具体取决于操作的礼节性）。  
@@ -59,13 +59,14 @@ ms.locfileid: "54499296"
  此外，WCF 还提供了开发完全在消息级别的服务协定的功能。 有关开发在消息级别的服务协定的详细信息，请参阅[Using Message Contracts](../../../../docs/framework/wcf/feature-details/using-message-contracts.md)。 有关开发服务以非 SOAP xml 格式的详细信息，请参阅[POX 应用程序与互操作性](../../../../docs/framework/wcf/feature-details/interoperability-with-pox-applications.md)。  
   
 ### <a name="understanding-the-hierarchy-of-requirements"></a>了解需求的层次结构  
- 服务协定对操作进行分组；指定消息交换模式 (MEP)、消息类型和这些消息携带的数据类型；并指示某个实现为了支持协定而必须具有的运行时行为的类别（例如，它可能要求对消息进行加密和签名）。 但是，服务协定本身并未明确指定如何满足这些要求，而只是指定这些要求必须得到满足。 加密的类型或消息的签名方式取决于满足这些要求的服务的实现和配置。  
+ 服务协定对操作进行分组；指定消息交换模式 (MEP)、消息类型和这些消息携带的数据类型；并指示某个实现为了支持协定而必须具有的运行时行为的类别（例如，它可能要求对消息进行加密和签名）。 但是，服务协定本身并未明确指定如何满足这些需求，而只是指定这些需求必须得到满足。 加密的类型或消息的签名方式取决于满足这些要求的服务的实现和配置。  
   
  请注意协定为添加行为而对服务协定实现和运行时配置提出特定要求的方式。 为了公开某一服务以供使用而必须满足的这组要求建立于前一组要求之上。 如果协定对实现提出要求，那么实现可能会对配置和绑定提出更多的要求，以便使服务能够运行。 最后，主机应用程序还必须支持服务配置和绑定所添加的任何需求。  
   
- 此累积性需求过程是重要设计、 实现、 配置和承载 Windows Communication Foundation (WCF) 服务应用程序时应牢记。 例如，协定可能会指定需要支持某一会话。 如果是这样，您必须配置绑定以支持该协定性要求，否则服务实现将无法正常工作。 或者，如果你的服务要求集成 Windows 身份验证并在 Internet Information Services (IIS) 中承载，则服务所在的 Web 应用程序必须启用集成 Windows 身份验证并禁用匿名支持。 有关功能和影响的不同服务主机应用程序类型的详细信息，请参阅[Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)。  
+ 此累积性需求过程是重要设计、 实现、 配置和承载 Windows Communication Foundation (WCF) 服务应用程序时应牢记。 例如，协定可能会指定需要支持某一会话。 如果是这样，您必须配置绑定以支持该协定性需求，否则服务实现将无法正常工作。 或者，如果您的服务要求集成 Windows 身份验证并在 Internet Information Services (IIS) 中承载，则服务所在的 Web 应用程序必须启用集成 Windows 身份验证并禁用匿名支持。 有关功能和影响的不同服务主机应用程序类型的详细信息，请参阅[Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)。  
   
 ## <a name="see-also"></a>请参阅
-- [终结点：地址、 绑定和协定](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+
+- [终结点：地址、绑定和协定](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
 - [设计服务协定](../../../../docs/framework/wcf/designing-service-contracts.md)
 - [实现服务协定](../../../../docs/framework/wcf/implementing-service-contracts.md)

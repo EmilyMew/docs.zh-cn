@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: b969f43e48d7292f695e2355dea0eaa36fd0b73a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7a551d3cc6ab3dd3887f232018f8201de4036d1b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54593389"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096831"
 ---
 # <a name="idebuggerthreadcontrol-interface"></a>IDebuggerThreadControl 接口
 提供用于通知主机有关阻止和取消阻止的线程的调试服务的方法。  
@@ -41,7 +41,8 @@ ms.locfileid: "54593389"
   
  **库：** 包含为 MSCorEE.dll 中的资源  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [承载接口](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

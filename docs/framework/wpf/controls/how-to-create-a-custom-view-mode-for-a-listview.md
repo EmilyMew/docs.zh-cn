@@ -1,5 +1,5 @@
 ---
-title: 如何：为 ListView 创建自定义视图模式
+title: 如何：创建 ListView 的自定义视图模式
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,14 +7,14 @@ dev_langs:
 helpviewer_keywords:
 - ListView controls [WPF], creating custom View mode
 ms.assetid: 71077349-eeb9-4344-ab29-b5df96df3314
-ms.openlocfilehash: 609781e9ac2db9c9beef049886617e541199e5dd
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: de11250a2e7529fba3b262e42b6714262738fa90
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57374760"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59092885"
 ---
-# <a name="how-to-create-a-custom-view-mode-for-a-listview"></a>如何：为 ListView 创建自定义视图模式
+# <a name="how-to-create-a-custom-view-mode-for-a-listview"></a>如何：创建 ListView 的自定义视图模式
 此示例演示如何创建自定义<xref:System.Windows.Controls.ListView.View%2A>模式<xref:System.Windows.Controls.ListView>控件。  
   
 ## <a name="example"></a>示例  
@@ -43,6 +43,7 @@ ms.locfileid: "57374760"
  有关完整示例，请参阅[具有多个视图的 ListView (C#)](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp)或[ListView 与多个 Views(Visual Basic)](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/ListViewCustomView/visualbasic)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
 - [帮助主题](listview-how-to-topics.md)

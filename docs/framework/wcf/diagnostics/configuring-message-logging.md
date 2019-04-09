@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - message logging [WCF]
 ms.assetid: 0ff4c857-8f09-4b85-9dc0-89084706e4c9
-ms.openlocfilehash: f57385b930ce533de3ff12b0dbd363690f04082d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e1d4c91ee282233e862ae14bf8d650ab2a754462
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54636009"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59112081"
 ---
 # <a name="configuring-message-logging"></a>配置消息日志记录
 本主题描述如何针对不同的方案配置消息日志记录。  
@@ -78,7 +78,7 @@ ms.locfileid: "54636009"
  在这个层上记录的消息已准备好进行编码以便在网络上传输，或已准备好在经过网络传输后进行解码。 如果已定义筛选器，则仅记录与筛选器相匹配的消息。 否则将记录传输层上的所有消息。 所有基础结构消息都在此层上记录，包括可靠传递消息。 对于经过流处理的消息，则只记录标头。 此外，安全消息在此级别上按加密记录，但使用诸如 HTTPS 的安全传输时除外。  
   
 ### <a name="malformed-level"></a>“格式不正确”级别  
- 格式不正确的消息是在任何阶段处理拒绝的 WCF 堆栈的消息。 格式错误的消息将被如实记录：已加密（如果是加密的）、带有不适当的 XML 等。 `maxSizeOfMessageToLog` 定义了记录为 CDATA 的消息大小。 默认情况下，`maxSizeOfMessageToLog` 等于 256K。 有关此属性的详细信息，请参阅其他选项部分。  
+ 格式不正确的消息是在任何阶段处理拒绝的 WCF 堆栈的消息。 格式错误的消息将被如实记录：已加密（如果是加密的）、带有不适当的 XML 等。 `maxSizeOfMessageToLog` 定义将要作为 CDATA 记录的消息的大小。 默认情况下，`maxSizeOfMessageToLog` 等于 256K。 有关此属性的详细信息，请参阅其他选项部分。  
   
 ### <a name="other-options"></a>其他选项  
  除了日志记录的级别外，用户可以指定以下选项：  
@@ -164,6 +164,7 @@ ms.locfileid: "54636009"
  请您注意，`type` 属性应该设置为该类型的限定程序集名称。  
   
 ## <a name="see-also"></a>请参阅
+
 - [\<messageLogging>](../../../../docs/framework/configure-apps/file-schema/wcf/messagelogging.md)
 - [消息日志记录](../../../../docs/framework/wcf/diagnostics/message-logging.md)
 - [跟踪和消息日志记录的推荐设置](../../../../docs/framework/wcf/diagnostics/tracing/recommended-settings-for-tracing-and-message-logging.md)

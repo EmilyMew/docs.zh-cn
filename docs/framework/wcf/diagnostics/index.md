@@ -2,13 +2,19 @@
 title: 管理和诊断
 ms.date: 03/30/2017
 helpviewer_keywords:
-  - 'Windows Communication Foundation, diagnostics'
-  - 'Windows Communication Foundation, administration'
-  - 'diagnostics [WCF]'
-  - 'WCF, diagnostics'
-  - 'administration [WCF]'
-  - 'WCF, administration'
+- Windows Communication Foundation, diagnostics
+- Windows Communication Foundation, administration
+- diagnostics [WCF]
+- WCF, diagnostics
+- administration [WCF]
+- WCF, administration
 ms.assetid: 34c81c08-0e0f-4fbc-9ae8-91948640ee43
+ms.openlocfilehash: 351d133215343e07e849ad1045eba601dd8cce56
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59092275"
 ---
 # <a name="administration-and-diagnostics"></a>管理和诊断
 Windows Communication Foundation (WCF) 提供了一套丰富的功能，可帮助你监视应用程序生存期的不同阶段。 例如，您可以在部署时使用配置来设置服务和客户端。 WCF 包含大量的性能计数器，可帮助您衡量应用程序的性能。 WCF 还公开在通过 WCF Windows Management Instrumentation (WMI) 提供程序的运行时服务的检测数据。 当应用程序出现错误或者开始错误操作时，可使用事件日志来了解是否有重大事件发生。 此外，还可以使用消息日志记录和跟踪来从头至尾查看应用程序中发生了哪些事件。 这些功能有助于开发人员和 IT 专业人员不正常时，WCF 应用程序进行故障排除。  
@@ -34,6 +40,7 @@ Windows Communication Foundation (WCF) 提供了一套丰富的功能，可帮�
  WCF 还提供了许多 GUI 和命令行工具来使你更轻松地创建、 部署和管理 WCF 应用程序。 有关详细信息，请参阅[Windows Communication Foundation 工具](../../../../docs/framework/wcf/tools.md)。 例如，可以使用[配置编辑器工具 (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)来创建和编辑 WCF 配置设置使用向导，而不直接编辑 XML。 此外可以使用[Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)若要查看、 分组和筛选跟踪消息，以便可以诊断、 修复和验证 WCF 服务的问题。  
   
 ## <a name="see-also"></a>请参阅
+
 - [配置应用程序](../../../../docs/framework/wcf/diagnostics/configuring-your-application.md)
 - [部署服务](../../../../docs/framework/wcf/diagnostics/deploying-services.md)
 - [关于异常的参考信息](../../../../docs/framework/wcf/diagnostics/exceptions-reference/index.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - distributed application security [WCF]
 - security [WCF], transfer
 ms.assetid: 53928a10-e474-46d0-ab90-5f98f8d7b668
-ms.openlocfilehash: 15663b4acc78f89a40fbbc364debfc6de45d8e6c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: e447cd5ccf84e49ff384bd3591884404736d04f8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54709424"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59132050"
 ---
 # <a name="distributed-application-security"></a>分布式应用程序安全
 Windows Communication Foundation (WCF) 安全分为三个主要功能区域： 传输安全、 访问控制和审核。 传输安全提供完整性、保密性和身份验证。 传输安全由传送安全、消息安全或 `TransportWithMessageCredential` 实现。  
@@ -40,11 +40,11 @@ Windows Communication Foundation (WCF) 安全分为三个主要功能区域： �
   
 |模式|描述|  
 |----------|-----------------|  
-|无|传输层和消息层都不提供安全措施。 预定义绑定都不使用此模式默认情况下除外[ \<basicHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)元素或使用代码时，<xref:System.ServiceModel.BasicHttpBinding>类。|  
+|None|传输层和消息层都不提供安全措施。 预定义绑定都不使用此模式默认情况下除外[ \<basicHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)元素或使用代码时，<xref:System.ServiceModel.BasicHttpBinding>类。|  
 |传输|使用安全传送（如 HTTPS）实现完整性、保密性和相互身份验证。|  
 |消息|使用 SOAP 消息安全实现完整性、保密性和相互身份验证。 SOAP 消息是按照 WS-Security 标准获得保护的。|  
 |混合模式|使用传送安全实现完整性、保密性和服务器身份验证。 使用消息安全（WS-Security 和其他标准）实现客户端身份验证。<br /><br /> （此模式的枚举值是 `TransportWithMessageCredential`。）|  
-|消息和传送|在传送级别和消息级别都执行保护和身份验证。 此模式是仅适用于[ \<netMsmqBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md)元素。|  
+|双向|在传送级别和消息级别都执行保护和身份验证。 此模式是仅适用于[ \<netMsmqBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md)元素。|  
   
 ## <a name="credentials-and-transfer-security"></a>凭据和传输安全  
  一个*凭据*是用于证实已声明的标识或功能的数据。 提交凭据涉及出示数据以及数据的所有权证明。 WCF 支持多种传输和消息安全级别的凭据类型。 可以指定凭据的 WCF 绑定的类型。  
@@ -64,7 +64,7 @@ Windows Communication Foundation (WCF) 安全分为三个主要功能区域： �
   
 |设置|描述|  
 |-------------|-----------------|  
-|无|指定客户端不需要提供任何凭据。 这相当于匿名客户端。|  
+|None|指定客户端不需要提供任何凭据。 这相当于匿名客户端。|  
 |Basic|指定基本身份验证。  有关其他信息，请参见 RFC2617，"[HTTP 身份验证：基本和摘要式身份验证](https://go.microsoft.com/fwlink/?LinkId=88313)。"|  
 |摘要|指定摘要式身份验证。  有关其他信息，请参见 RFC2617，"[HTTP 身份验证：基本和摘要式身份验证](https://go.microsoft.com/fwlink/?LinkId=88313)。"|  
 |Ntlm|指定在 Windows 域中使用 SSPI 协商进行 Windows 身份验证。<br /><br /> 要使用 SSPI 协商，就需要使用 Kerberos 协议或 NT LanMan (NTLM)。|  
@@ -76,7 +76,7 @@ Windows Communication Foundation (WCF) 安全分为三个主要功能区域： �
   
 |设置|描述|  
 |-------------|-----------------|  
-|无|允许服务与匿名客户端交互。|  
+|None|允许服务与匿名客户端交互。|  
 |Windows|允许在 Windows 凭据的已通过身份验证的上下文中执行 SOAP 消息交换。 使用 SSPI 协商机制选择 Kerberos 协议或 NTLM 作为身份验证服务。|  
 |用户名|允许服务可以要求使用用户名凭据对客户端进行身份验证。 请注意，WCF 不允许使用的用户名，例如生成签名或加密数据的任何加密操作。 在这种情况下，WCF 强制执行传输的安全性时使用用户名凭据。|  
 |证书|允许服务要求使用证书对客户端进行身份验证。|  
@@ -95,6 +95,7 @@ Windows Communication Foundation (WCF) 安全分为三个主要功能区域： �
  在消息安全模式中，通过执行传输安全，还可以与客户端交换服务凭据，作为初始协商的一部分。 若要启用协商，请将 <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> 属性设置为 `true`。  
   
 ## <a name="see-also"></a>请参阅
+
 - [终结点创建概述](../../../../docs/framework/wcf/endpoint-creation-overview.md)
 - [系统提供的绑定](../../../../docs/framework/wcf/system-provided-bindings.md)
 - [安全性概述](../../../../docs/framework/wcf/feature-details/security-overview.md)

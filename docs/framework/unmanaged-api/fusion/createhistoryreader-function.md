@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5e9c9866ee5ee3076d144dc732286ee008cd78c4
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: e438006d6424866514e73119c05e8fd69d7ba62e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57487236"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59132257"
 ---
 # <a name="createhistoryreader-function"></a>CreateHistoryReader 函数
 创建指定的文件的历史记录读取。  
@@ -55,7 +55,8 @@ HRESULT CreateHistoryReader (
   
  **库：** Fusion.dll  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [合成全局静态函数](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

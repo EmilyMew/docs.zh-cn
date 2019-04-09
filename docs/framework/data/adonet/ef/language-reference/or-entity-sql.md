@@ -2,12 +2,12 @@
 title: '|| (OR) (Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: 8e649648-eb9a-4380-9d74-36e62260628c
-ms.openlocfilehash: 4d0bed2fb000e96e9fd0ceac6ea90e19b8fa7514
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
+ms.openlocfilehash: 3ceaf33d8baba9776008cddcbe2e2d70f13fe089
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54554850"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59141279"
 ---
 # <a name="-or-entity-sql"></a>|| (OR) (Entity SQL)
 组合两个 `Boolean` 表达式。  
@@ -25,7 +25,7 @@ boolean_expression || boolean_expression
  返回 `Boolean`的任何有效表达式。  
   
 ## <a name="return-value"></a>返回值  
- 当任何一个条件为`true` 时，为 `true`；否则为 `false`。  
+ `true` 当条件之一时`true`; 否则为`false`。  
   
 ## <a name="remarks"></a>备注  
  OR 是 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 逻辑运算符。 它用于组合两个条件。 在一个语句中使用多个逻辑运算符时，首先计算 AND 运算符，然后计算 OR 运算符。 不过，使用括号可以更改求值的顺序。  
@@ -36,9 +36,9 @@ boolean_expression || boolean_expression
   
 ||`TRUE`|`FALSE`|`NULL`|  
 |-|------------|-------------|------------|  
-|`TRUE`|true|TRUE|TRUE|  
-|`FALSE`|TRUE|FALSE|NULL|  
-|`NULL`|TRUE|NULL|NULL|  
+|`TRUE`|true|true|true|  
+|`FALSE`|true|false|NULL|  
+|`NULL`|true|NULL|NULL|  
   
 ## <a name="example"></a>示例  
  以下 Entity SQL 查询使用 OR 运算符以组合两个 `Boolean` 表达式。 此查询基于 AdventureWorks 销售模型。 若要编译并运行此查询，请执行下列步骤：  
@@ -50,4 +50,5 @@ boolean_expression || boolean_expression
  [!code-csharp[DP EntityServices Concepts 2#OR](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#or)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体 SQL 引用](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

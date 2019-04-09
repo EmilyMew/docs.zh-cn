@@ -1,18 +1,18 @@
 ---
-title: 如何：注册并配置服务名字对象
+title: 如何：注册和配置服务名字对象
 ms.date: 03/30/2017
 helpviewer_keywords:
 - COM [WCF], configure service monikers
 - COM [WCF], register service monikers
 ms.assetid: e5e16c80-8a8e-4eef-af53-564933b651ef
-ms.openlocfilehash: 2f8f19e70b3345b61f1f5caba2fc6f764b58cc9b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
+ms.openlocfilehash: 364329954591199c4b0d3123c662c4e124c242fc
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54593792"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59141916"
 ---
-# <a name="how-to-register-and-configure-a-service-moniker"></a>如何：注册并配置服务名字对象
+# <a name="how-to-register-and-configure-a-service-moniker"></a>如何：注册和配置服务名字对象
 必须在使用之前在 COM 应用程序中的 Windows Communication Foundation (WCF) 服务名字对象具有类型化协定中, 所需的特性化的类型向 COM 注册，并使用所需的绑定配置的 COM 应用程序和标记配置。  
   
 ### <a name="to-register-the-required-attributed-types-with-com"></a>向 COM 注册所需的属性化类型  
@@ -67,7 +67,7 @@ ms.locfileid: "54593792"
     service4:address=http://localhost/MathService, binding=wsHttpBinding, bindingConfiguration=Binding1, contract={36ADAD5A-A944-4d5c-9B7C-967E4F00A090}  
     ```  
   
-     在将引用添加到包含 `IMathService` 类型的程序集后，您可以使用 Visual Basic 6.0 应用程序中的这些标记字符串中的任何一个，如下面的示例代码中所示。  
+     在将引用添加到包含 `IMathService` 类型的程序集后，你可以使用 Visual Basic 6.0 应用程序中的这些标记字符串中的任何一个，如下面的示例代码中所示。  
   
     ```  
     Dim MathProxy As IMathService  
@@ -89,7 +89,7 @@ ms.locfileid: "54593792"
     > [!NOTE]
     >  :如果标记格式不正确或者服务不可用，在调用`GetObject`返回的"语法无效"错误。 如果您收到此错误，请确保所使用的标记正确无误且服务可用。  
   
-     尽管此主题重点介绍通过 VB 6.0 代码使用服务标记，您还是可以通过其他语言使用服务标记。 当通过 C++ 代码使用标记时，应使用“no_namespace named_guids raw_interfaces_only”导入 Svcutil.exe 生成的程序集，如下面的代码中所示。  
+     尽管此主题重点介绍通过 VB 6.0 代码使用服务标记，你还是可以通过其他语言使用服务标记。 当通过 C++ 代码使用标记时，应使用“no_namespace named_guids raw_interfaces_only”导入 Svcutil.exe 生成的程序集，如下面的代码中所示。  
   
     ```  
     #import "ComTestProxy.tlb" no_namespace named_guids  
@@ -98,4 +98,5 @@ ms.locfileid: "54593792"
      这会修改导入的接口定义，以便所有方法均会返回一个 `HResult`。 其他任何返回值都将转换为 out 参数。 方法的总体执行情况保持不变。 这将允许您确定在代理上调用方法时出现异常的原因。 仅可通过 C++ 代码来使用此功能。  
   
 ## <a name="see-also"></a>请参阅
+
 - [ServiceModel 元数据实用工具 (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

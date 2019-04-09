@@ -2,12 +2,12 @@
 title: Entity Type — 实体类型
 ms.date: 03/30/2017
 ms.assetid: a6dee9ab-9e4a-48f2-a169-3f79cc15821c
-ms.openlocfilehash: cb542a1750a6b45dd2fca4d32501719470d9a78a
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: 026b0aef7cf2de8fe222721191afa459859701ee
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58410883"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59108259"
 ---
 # <a name="entity-type"></a>Entity Type — 实体类型
 *实体类型*是用于描述实体数据模型 (EDM) 使用的数据结构的基本构建块。 在概念模型中，实体类型表示顶级概念（例如客户或订单）的结构。 实体类型是实体类型实例的模板。 每个模板都包含以下信息：  
@@ -36,6 +36,7 @@ ms.locfileid: "58410883"
  [!code-xml[EDM_Example_Model#EntityExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体数据模型关键概念](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
 - [实体数据模型](../../../../docs/framework/data/adonet/entity-data-model.md)
 - [facet](../../../../docs/framework/data/adonet/facet.md)

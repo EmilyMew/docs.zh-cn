@@ -2,12 +2,12 @@
 title: 部分信任功能兼容性
 ms.date: 03/30/2017
 ms.assetid: a36a540b-1606-4e63-88e0-b7c59e0e6ab7
-ms.openlocfilehash: 5a09d4d1ce9f9ec328c74e7f2714f1c3f702670a
-ms.sourcegitcommit: 0069cb3de8eed4e92b2195d29e5769a76111acdd
+ms.openlocfilehash: b0d9b7bd8bd5f33ca344ea5674d08507ced209f5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56333494"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59124561"
 ---
 # <a name="partial-trust-feature-compatibility"></a>部分信任功能兼容性
 在部分受信任的环境中运行时，Windows Communication Foundation (WCF) 支持有限的功能子集。 部分信任中支持的功能围绕 [Supported Deployment Scenarios](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md) 主题中所述的一组特定的方案而设计。  
@@ -28,7 +28,7 @@ ms.locfileid: "56333494"
   
 -   在使用 `[ServiceKnownType]` 属性时，指定的方法必须为 `public`方法。  
   
--   `[MessageContract]` 类及其成员可以为 `public`。 如果 `[MessageContract]` 类是在应用程序程序集中定义的，则该类可以为 `internal` 类并拥有 `internal` 成员。  
+-   `[MessageContract]` 类和其成员可以是`public`。 如果 `[MessageContract]` 类是在应用程序程序集中定义的，则该类可以为 `internal` 类并拥有 `internal` 成员。  
   
 ## <a name="system-provided-bindings"></a>系统提供的绑定  
  在部分信任环境中完全支持 <xref:System.ServiceModel.BasicHttpBinding> 和 <xref:System.ServiceModel.WebHttpBinding> 。 仅对传输安全模式支持 <xref:System.ServiceModel.WSHttpBinding> 。  
@@ -119,7 +119,7 @@ ms.locfileid: "56333494"
   
 -   <xref:System.Runtime.Serialization>  
   
--   <xref:System.IdentityModel.Claims>、 <xref:System.IdentityModel.Policy>、 <xref:System.IdentityModel.Selectors>和 <xref:System.IdentityModel.Tokens>。  
+-   <xref:System.IdentityModel.Claims><xref:System.IdentityModel.Policy>， <xref:System.IdentityModel.Selectors>，和<xref:System.IdentityModel.Tokens>。  
   
  不支持下面的跟踪源：  
   
@@ -160,9 +160,10 @@ ms.locfileid: "56333494"
  若要在部分信任环境中运行时发现不可用的信息或操作，最好的方法是尝试在 `try` 块的内部访问资源或执行操作，然后 `catch` 失败。 若要避免填满出现重复的错误的跟踪文件，WCF 会禁用资源或后第一次安全失败操作的跟踪。 对于在第一次尝试访问资源或执行操作时出现的每个失败的资源访问，将会有一个异常跟踪。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
 - <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>
 - <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement>
 - [支持的部署方案](../../../../docs/framework/wcf/feature-details/supported-deployment-scenarios.md)
-- [部分信任最佳做法](../../../../docs/framework/wcf/feature-details/partial-trust-best-practices.md)
+- [部分信任最佳实践](../../../../docs/framework/wcf/feature-details/partial-trust-best-practices.md)

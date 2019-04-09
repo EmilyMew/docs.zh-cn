@@ -1,5 +1,5 @@
 ---
-title: 如何：使用应用程序范围的资源字典
+title: 如何：使用应用程序范围资源字典
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - resource dictionaries [WPF], application-scope
 - application-scope resource dictionaries
 ms.assetid: 53857682-bd2c-4f2c-8f25-1307d0b451a2
-ms.openlocfilehash: a2453ae7fad56205ae06835d8710ca126bba17c7
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 589e28b3c05496e3fc17055b98240e389faed068
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369729"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59125369"
 ---
-# <a name="how-to-use-an-application-scope-resource-dictionary"></a>如何：使用应用程序范围的资源字典
+# <a name="how-to-use-an-application-scope-resource-dictionary"></a>如何：使用应用程序范围资源字典
 本示例显示如何定义和使用应用程序范围的自定义资源字典。  
   
 ## <a name="example"></a>示例  
@@ -42,6 +42,7 @@ ms.locfileid: "57369729"
  有两个注意事项，以便使用<xref:System.Windows.Application.Resources%2A>。 首先，字典*密钥*是一个对象，因此必须使用完全相同的对象实例时设置和获取属性值。 （请注意，使用字符串时键区分大小写。）其次，字典*值*是一个对象，因此必须将值转换为所需的类型，获取属性值时。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.ResourceDictionary>
 - <xref:System.Windows.Application.Resources%2A>
 - [XAML 资源](../advanced/xaml-resources.md)

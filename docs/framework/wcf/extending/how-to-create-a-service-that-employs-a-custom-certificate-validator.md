@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - WCF, authentication
 ms.assetid: bb0190ff-0738-4e54-8d22-c97d343708bf
-ms.openlocfilehash: c4e9be8cb24745cd9651d4ee649a9a37520aa58d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
+ms.openlocfilehash: 7c2eb820a7e087d99ebd2c463db6e10595f7c1da
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54569318"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59119621"
 ---
 # <a name="how-to-create-a-service-that-employs-a-custom-certificate-validator"></a>如何：创建使用自定义证书验证程序的服务
 本主题介绍如何实现自定义证书验证程序，以及如何配置客户端或服务凭据以使用自定义证书验证程序替换默认证书验证逻辑。  
@@ -25,7 +25,7 @@ ms.locfileid: "54569318"
   
 1.  定义一个从 <xref:System.IdentityModel.Selectors.X509CertificateValidator> 派生的新类。  
   
-2.  实现抽象 <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> 方法。 将必须验证的证书作为参数传递给该方法。 如果根据验证逻辑，传递的证书无效，则此方法引发 <xref:System.IdentityModel.Tokens.SecurityTokenValidationException>。 如果证书有效，则此方法返回到调用方。  
+2.  实现抽象 <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> 方法。 将必须验证的证书作为自变量传递给该方法。 如果根据验证逻辑，传递的证书无效，则此方法引发 <xref:System.IdentityModel.Tokens.SecurityTokenValidationException>。 如果证书有效，则此方法返回到调用方。  
   
     > [!NOTE]
     >  若要将身份验证错误返回到客户端，应在 <xref:System.ServiceModel.FaultException> 方法中引发 <xref:System.IdentityModel.Selectors.UserNamePasswordValidator.Validate%2A>。  
@@ -130,4 +130,5 @@ ms.locfileid: "54569318"
  [!code-vb[c_CustomCertificateValidator#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customcertificatevalidator/vb/source.vb#3)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.IdentityModel.Selectors.X509CertificateValidator>

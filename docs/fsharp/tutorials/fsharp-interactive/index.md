@@ -1,7 +1,13 @@
 ---
-title: 'F# Interactive (fsi.exe) 参考'
-description: '了解如何F#Interactive (fsi.exe) 用于运行F#代码以交互方式在控制台上或执行F#脚本。'
+title: F# Interactive (fsi.exe) 参考
+description: 了解如何F#Interactive (fsi.exe) 用于运行F#代码以交互方式在控制台上或执行F#脚本。
 ms.date: 05/16/2016
+ms.openlocfilehash: dde65a4fa4bd41895716344fc67823366c73c5d4
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56979874"
 ---
 # <a name="interactive-programming-with-f"></a>使用 F 进行交互式编程\#
 

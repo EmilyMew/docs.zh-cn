@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 70055c4b-1173-47a3-be80-b5bce6f59e9a
-ms.openlocfilehash: 13d1a76779877bc2ab6d1cbd9c892bf14781e788
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f4db3325081a820a37a8791849d2ad9697d15151
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54705937"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59118100"
 ---
 # <a name="custom-composite-designers---workflow-items-presenter"></a>自定义复合设计器 — 工作流项演示器
 <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=nameWithType> 是 WF 设计器编程模型中的一个重要类型，可用于编辑包含元素的集合。 此示例演示如何生成一个呈现此类可编辑集合的活动设计器。
@@ -32,15 +32,15 @@ ms.locfileid: "54705937"
 ## <a name="sample-highlights"></a>示例重点
  此示例的代码演示了以下内容：
 
--   构建的设计器所针对的活动：`Parallel`
+-   活动设计器旨在为试验：  `Parallel`
 
 -   使用 <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=nameWithType> 创建自定义活动设计器。 需要指出的一些事项：
 
-    -   请注意，应使用 WPF 数据绑定来绑定到 `ModelItem.Branches`。 `ModelItem` 是 `WorkflowElementDesigner` 的属性，它引用设计器所用于的基础对象，在此例中为 `Parallel`。
+    -   请注意，应使用 WPF 数据绑定来绑定到 `ModelItem.Branches`。 `ModelItem` 该属性位于`WorkflowElementDesigner`，是指基础对象在使用设计器，在这种情况下，我们`Parallel`。
 
     -   <xref:System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplate?displayProperty=nameWithType> 可用于在集合中的各个项之间显示一个可视对象。
 
-    -   <xref:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel?displayProperty=nameWithType> 是一个模板，可用于确定集合中的项的布局。 在此例中，使用水平堆叠面板。
+    -   <xref:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel?displayProperty=nameWithType> 是可用于确定集合中项的布局的模板。 在此例中，使用水平堆叠面板。
 
  下面的示例代码演示了此过程。
 
@@ -158,5 +158,6 @@ End Sub
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemsPresenter`  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Activities.Presentation.WorkflowItemsPresenter>
 - [使用工作流设计器开发应用程序](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

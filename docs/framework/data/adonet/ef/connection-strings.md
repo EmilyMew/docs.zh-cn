@@ -13,8 +13,7 @@ ms.locfileid: "57365030"
 
 连接字符串包含作为参数从数据提供程序传递到数据源的初始化信息。 其语法取决于数据提供程序，并且会在试图打开连接的过程中对连接字符串进行分析。 实体框架使用的连接字符串包含用于连接到支持实体框架的基础 ADO.NET 数据提供程序的信息。 它们还包含有关所需的模型和映射文件的信息。
 
-在访问模型，映射元数据以及连接到数据源时，EntityClient 提供程序将使用该连接字符串。 连接字符串可通过 <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> 的 <xref:System.Data.EntityClient.EntityConnection> 属性访问或设置。 
-  <xref:System.Data.EntityClient.EntityConnectionStringBuilder> 类可用于以编程方式构造或访问连接字符串中的参数。 有关详细信息，请参阅[如何：生成 EntityConnection 连接字符串](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)。
+在访问模型，映射元数据以及连接到数据源时，EntityClient 提供程序将使用该连接字符串。 连接字符串可通过 <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> 的 <xref:System.Data.EntityClient.EntityConnection> 属性访问或设置。 <xref:System.Data.EntityClient.EntityConnectionStringBuilder> 类可用于以编程方式构造或访问连接字符串中的参数。 有关详细信息，请参阅[如何：生成 EntityConnection 连接字符串](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)。
 
 [Entity Data Model 工具](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))生成应用程序的配置文件中存储的连接字符串。 在创建对象查询时，<xref:System.Data.Objects.ObjectContext> 将自动检索此连接信息。 可通过 <xref:System.Data.EntityClient.EntityConnection> 属性访问 <xref:System.Data.Objects.ObjectContext> 实例所使用的 <xref:System.Data.Objects.ObjectContext.Connection%2A>。 有关详细信息，请参阅[管理连接和事务](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))。
 
@@ -95,13 +94,11 @@ Metadata=.\
 
 ## <a name="support-for-the-124datadirectory124-substitution-string-and-the-web-application-root-operator-"></a>支持&#124;DataDirectory&#124;替代字符串和 Web 应用程序根目录运算符 （~）
 
-`DataDirectory` 和 ~ 运算符中使用<xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>作为的一部分`Metadata`和`Provider Connection String`关键字。 
-  <xref:System.Data.EntityClient.EntityConnection> 将 `DataDirectory` 和 ~ 运算符分别转发给 <xref:System.Data.Metadata.Edm.MetadataWorkspace> 和存储提供程序。
+`DataDirectory` 和 ~ 运算符中使用<xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>作为的一部分`Metadata`和`Provider Connection String`关键字。 <xref:System.Data.EntityClient.EntityConnection> 将 `DataDirectory` 和 ~ 运算符分别转发给 <xref:System.Data.Metadata.Edm.MetadataWorkspace> 和存储提供程序。
 
 |术语|描述|
 |----------|-----------------|
-|`&#124;DataDirectory&#124;`|解析为映射和元数据文件的相对路径。 这是通过 `AppDomain.SetData("DataDirectory", objValue)` 方法设置的值。 `DataDirectory`替代字符串必须由竖线字符括起来并不能有任何空白区域，其名称与竖线字符之间。 
-  `DataDirectory` 名称不区分大小写。<br /><br /> 如果名为 DataDirectory 的物理目录必须作为元数据路径列表的成员传递，添加一个或两个方面的名称的空白区域。 例如：`Metadata="DataDirectory1 &#124; DataDirectory &#124; DataDirectory2"`。 ASP.NET 应用程序解析&#124;DataDirectory&#124;到"\<应用程序根目录 > / app_data"文件夹。|
+|`&#124;DataDirectory&#124;`|解析为映射和元数据文件的相对路径。 这是通过 `AppDomain.SetData("DataDirectory", objValue)` 方法设置的值。 `DataDirectory`替代字符串必须由竖线字符括起来并不能有任何空白区域，其名称与竖线字符之间。 `DataDirectory` 名称不区分大小写。<br /><br /> 如果名为 DataDirectory 的物理目录必须作为元数据路径列表的成员传递，添加一个或两个方面的名称的空白区域。 例如：`Metadata="DataDirectory1 &#124; DataDirectory &#124; DataDirectory2"`。 ASP.NET 应用程序解析&#124;DataDirectory&#124;到"\<应用程序根目录 > / app_data"文件夹。|
 |~|解析为 Web 应用程序根目录。 位于开头的 ~ 字符总是被解释为 Web 应用程序根目录运算符 (~)，不过它也可以表示有效的本地子目录。 若要引用这样的本地子目录，用户应显示传递 `./~`。|
 
 `DataDirectory` 和 ~ 运算符仅应指定在路径的开头，放在任何其他位置将得不到解析。 实体框架将尝试解析 `~/data`，但会将 `/data/~` 视为物理路径。

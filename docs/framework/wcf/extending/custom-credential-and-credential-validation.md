@@ -8,12 +8,12 @@ helpviewer_keywords:
 - credential validation [WCF]
 - credentials [WCF], validation
 ms.assetid: da831bec-e281-4d44-b343-437b5eef688e
-ms.openlocfilehash: 731131d4bc967aa3ae95eca1f9e9cbb2770f8f7c
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3b1ff700010f471a4d9be117f363083b6cbed493
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54746565"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59210628"
 ---
 # <a name="custom-credential-and-credential-validation"></a>自定义凭据和凭据验证
 安全性在 Windows Communication Foundation (WCF) 基于服务和客户端之间的凭据交换。 大多数安全方案均可使用常见的凭据类型来实现，如 Windows (Kerberos)、用户名和密码以及证书。 而本节中的主题针对需要使用新类型的凭据的情况说明如何处理和验证这些新类型。  
@@ -56,4 +56,5 @@ ms.locfileid: "54746565"
  [授权](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [安全性](../../../../docs/framework/wcf/feature-details/security.md)

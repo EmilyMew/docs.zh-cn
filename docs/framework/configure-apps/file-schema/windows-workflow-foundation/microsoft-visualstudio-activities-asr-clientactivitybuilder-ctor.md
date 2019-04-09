@@ -9,12 +9,12 @@ api_location:
 api_type:
 - Assembly
 ms.assetid: 6b44b13c-7a23-4df2-8f9f-45e2b1430002
-ms.openlocfilehash: b44b20a83068278fb35345220f45051a7c4177f2
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 0ce9be30182f9181bcb6449529d9b9796aadbc2b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57498700"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59133531"
 ---
 # <a name="microsoftvisualstudioactivitiesasrclientactivitybuilderctor"></a>Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor
 创建的实例[Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md)类。  
@@ -41,4 +41,5 @@ public ClientActivityBuilder(OperationDescription operationDescription, string c
  指定操作的服务命名空间。 此参数的值不能是**null**或为空。 如果不满足这些条件，则使用此类的构造函数和其他方法的运行时结果未被定义。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md)

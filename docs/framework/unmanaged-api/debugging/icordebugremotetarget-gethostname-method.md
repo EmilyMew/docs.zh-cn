@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 2861a2f0aec66832c618dda7d50dd543920102f4
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 0ca7aee79b5b8c3d58b4beb8f1ff886a7d55afab
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57468597"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59127577"
 ---
 # <a name="icordebugremotetargetgethostname-method"></a>ICorDebugRemoteTarget::GetHostName 方法
 返回远程调试目标计算机的完全限定域名或 IPv4 地址。 此时不支持 IPV6。  
@@ -67,5 +67,6 @@ HRESULT GetHostName (
  **.NET framework 版本：** 3.5 SP1  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICorDebugRemoteTarget 接口](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
 - [ICorDebug 接口](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

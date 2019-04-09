@@ -6,12 +6,12 @@ helpviewer_keywords:
 - WCF [WCF], architecture
 - architecture [WCF]
 ms.assetid: a3bcb0a1-56ea-4ba6-9736-d260d90dade5
-ms.openlocfilehash: f152ac48c2897259d07222fafd33d17d5287a870
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b0e4f9af0ff84a8d560b332d227b1ba9ae18bd4b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54745373"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59099698"
 ---
 # <a name="windows-communication-foundation-architecture"></a>Windows Communication Foundation 体系结构
 下图演示了 Windows Communication Foundation (WCF) 体系结构的主要层。  
@@ -46,5 +46,6 @@ ms.locfileid: "54745373"
  服务还可以是*托管*，或在由外部的代理，如 IIS 或 Windows 激活服务 (WAS) 管理的可执行文件中运行。 是，WCF 应用程序能够运行的计算机上部署时自动激活。 还可通过可执行文件（.exe 文件）的形式来手动运行服务。 服务也可作为 Windows 服务自动运行。 COM + 组件还可作为 WCF 服务承载。  
   
 ## <a name="see-also"></a>请参阅
+
 - [什么是 Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)
 - [Windows Communication Foundation 基础概念](../../../docs/framework/wcf/fundamental-concepts.md)

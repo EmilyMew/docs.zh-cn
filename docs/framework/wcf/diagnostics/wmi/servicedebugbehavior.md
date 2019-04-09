@@ -2,12 +2,12 @@
 title: ServiceDebugBehavior
 ms.date: 03/30/2017
 ms.assetid: a5ec9061-1e95-43fb-b0d9-dbd0a7bc3c44
-ms.openlocfilehash: d6f0e4741aa10bff450a29cfd7a9e63e226c6495
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2e38eb2c2d42ffc5436562b254a42215ccabbab2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54498877"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59090909"
 ---
 # <a name="servicedebugbehavior"></a>ServiceDebugBehavior
 ServiceDebugBehavior  
@@ -28,7 +28,7 @@ class ServiceDebugBehavior : Behavior
 ## <a name="methods"></a>方法  
  ServiceDebugBehavior 类未定义任何方法。  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>属性  
  ServiceDebugBehavior 类具有以下属性：  
   
 ### <a name="httphelppageenabled"></a>HttpHelpPageEnabled  
@@ -73,4 +73,5 @@ class ServiceDebugBehavior : Behavior
 |命名空间|已在 root\ServiceModel 中定义|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Description.ServiceDebugBehavior>

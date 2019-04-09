@@ -9,12 +9,12 @@ helpviewer_keywords:
 - WCF, security mode
 - WCF, security
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
-ms.openlocfilehash: 3aa32e54643ffb8e2e4e40f730ab3f5c084b8cd9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 533c329bed7b1cb9b07805032c839d3f5ff10634
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54521708"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59139810"
 ---
 # <a name="how-to-configure-a-port-with-an-ssl-certificate"></a>如何：使用 SSL 证书配置端口
 创建使用自承载的 Windows Communication Foundation (WCF) 服务时<xref:System.ServiceModel.WSHttpBinding>类，使用传输安全，还必须使用 X.509 证书配置端口。 如果不是在创建自承载服务，可以在 Internet 信息服务 (IIS) 上承载服务。 有关详细信息，请参阅[HTTP 传输安全性](../../../../docs/framework/wcf/feature-details/http-transport-security.md)。  
@@ -105,7 +105,7 @@ ms.locfileid: "54521708"
   
 ### <a name="to-delete-an-ssl-certificate-from-a-port-number"></a>删除端口号的 SSL 证书  
   
-1.  使用 HttpCfg.exe 或 Netsh.exe 工具查看计算机上的端口和所有绑定的指纹。 若要将信息输出到磁盘，请使用重定向字符“>”，如下面的示例所示。  
+1.  使用 HttpCfg.exe 或 Netsh.exe 工具查看计算机上的端口和所有绑定的指纹。 若要打印到磁盘的信息，请使用重定向字符">"，如以下示例所示。  
   
     ```  
     httpcfg query ssl>myMachinePorts.txt  
@@ -130,4 +130,5 @@ ms.locfileid: "54521708"
  [!code-vb[c_WsHttpService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wshttpservice/vb/source.vb#3)]  
   
 ## <a name="see-also"></a>请参阅
-- [HTTP 传输安全性](../../../../docs/framework/wcf/feature-details/http-transport-security.md)
+
+- [HTTP 传输安全](../../../../docs/framework/wcf/feature-details/http-transport-security.md)

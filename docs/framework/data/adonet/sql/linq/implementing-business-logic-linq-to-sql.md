@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c4577590-7b12-42e1-84a6-95aa2562727e
-ms.openlocfilehash: 9ea8960b74cd44734eb68a07c6959727bf1ac797
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: 3dcc6f763acfff076bb03076a17e3a8f8916267c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56093965"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59097247"
 ---
 # <a name="implementing-business-logic-linq-to-sql"></a>实现业务逻辑 (LINQ to SQL)
 本主题中的术语“业务逻辑”指的是在对数据库数据进行插入、更新或删除操作之前，应用于数据的任何自定义规则或验证测试。 业务逻辑有时也称为“业务规则”或“域逻辑”。 在 n 层应用程序中，业务逻辑通常设计为逻辑层，因此可以独立于表示层或数据访问层进行修改。 在对数据库数据进行任何更新、插入或删除操作前后，数据访问层可以调用业务逻辑。  
@@ -22,7 +22,7 @@ ms.locfileid: "56093965"
   
  定义实体和 <xref:System.Data.Linq.DataContext> 的分部类包含分部方法。 这些是扩展性点，可以在进行任何更新、插入或删除前后用于对实体或实体属性应用业务逻辑。 分部方法可以视为编译时事件。 代码生成器定义方法签名，并在 get 和 set 属性访问器、`DataContext` 构造函数中调用这些方法，有些情况下还在调用 <xref:System.Data.Linq.DataContext.SubmitChanges%2A> 时在后台调用方法。 但是，如果未实现特殊的分部方法，那么在编译时将移除对该分部方法的所有引用和定义。  
   
- 在您在单独的代码文件中编写的实现定义中，可以执行所需的任何自定义逻辑。 可以将分部类本身用作域层，也可以从分部方法的实现定义，将分部类调入单独对象或多个对象。 无论采用何种方式，业务逻辑都将与数据访问代码和表示层代码完全分开。  
+ 在你在单独的代码文件中编写的实现定义中，可以执行所需的任何自定义逻辑。 可以将分部类本身用作域层，也可以从分部方法的实现定义，将分部类调入单独对象或多个对象。 无论采用何种方式，业务逻辑都将与数据访问代码和表示层代码完全分开。  
   
 ## <a name="a-closer-look-at-the-extensibility-points"></a>详细了解扩展性点  
  下面的示例显示了一部分生成的代码[!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]有关`DataContext`类具有两个表：`Customers`和`Orders`。 注意为该类的每个表都定义了插入、更新和删除方法。  
@@ -71,8 +71,7 @@ public partial class MyNorthWindDataContext : System.Data.Linq.DataContext
   
  如果在分部类中实现插入、更新和删除方法，[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 运行时将在调用 <xref:System.Data.Linq.DataContext.SubmitChanges%2A> 时调用这些方法，而不是自己的默认方法。 这使您能够重写创建/读取/更新/删除操作的默认行为。 有关详细信息，请参见[演练：自定义插入、 更新和删除实体类的行为](/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)。  
   
- 
-  `OnCreated` 方法在类构造函数中调用。  
+ `OnCreated` 方法在类构造函数中调用。  
   
 ```vb  
 Public Sub New(ByVal connection As String)  
@@ -182,10 +181,11 @@ partial class Customer
   
  [演练：自定义实体类的插入、更新和删除行为](/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)  
   
- [演练：向实体类添加验证](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb629301(v=vs.120))  
+ [演练：向实体类中添加验证](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb629301(v=vs.120))  
   
 ## <a name="see-also"></a>请参阅
+
 - [分部类和方法](../../../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)
 - [分部方法](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md)
-- [Visual Studio 中的 LINQ to SQL 工具](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)
+- [LINQ to SQL 工具在 Visual Studio 中](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)
 - [SqlMetal.exe（代码生成工具）](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)

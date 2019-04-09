@@ -1,15 +1,15 @@
 ---
-title: <Parameter>元素 (.NET Native)
+title: <Parameter> 元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 22aaa1f3-596f-4733-93db-f4bcabcb5240
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c18919a6c48c251138a3d5e88079d3383979ef1a
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 2d2dbff544f991712ad26f2cb12d638801b5a3fb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55266398"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59137873"
 ---
 # <a name="parameter-element-net-native"></a>\<参数 > 元素 (.NET Native)
 将反射策略应用到传递到方法的自变量类型。  
@@ -51,15 +51,15 @@ ms.locfileid: "55266398"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|parameter_name|策略应用到的方法参数的名称。 例如，对于方法签名 `String.CompareTo(Object value)`，`Name` 特性的值为“值”。|  
+|*parameter_name*|策略应用到的方法参数的名称。 例如，对于方法签名 `String.CompareTo(Object value)`，`Name` 特性的值为“值”。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|policy_setting|该设置将应用到这种策略类型。 可能值为 `All`、`Public`、`PublicAndInternal`、`Required Public`、`Required PublicAndInternal` 以及 `Required All`。 有关详细信息，请参阅[运行时指令策略设置](../../../docs/framework/net-native/runtime-directive-policy-settings.md)。|  
+|*策略_设置*|该设置将应用到这种策略类型。 可能值为 `All`、`Public`、`PublicAndInternal`、`Required Public`、`Required PublicAndInternal` 以及 `Required All`。 有关详细信息，请参阅[运行时指令策略设置](../../../docs/framework/net-native/runtime-directive-policy-settings.md)。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -68,13 +68,14 @@ ms.locfileid: "55266398"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)|将运行时反射策略应用到一个构造函数或方法。|  
+|[\<方法 >](../../../docs/framework/net-native/method-element-net-native.md)|将运行时反射策略应用到一个构造函数或方法。|  
   
 ## <a name="remarks"></a>备注  
  `<Parameter>` 元素是 [\<Method>](../../../docs/framework/net-native/method-element-net-native.md) 元素的子元素，用于将策略应用于特定方法参数。 特定的方法参数由名称而不是由类型指定。 表示策略类型，比如 `Activate` 或 `Dynamic`，的至少一个特性必须存在。  
   
 ## <a name="see-also"></a>请参阅
-- [\<Method> 元素](../../../docs/framework/net-native/method-element-net-native.md)
-- [运行时指令 (rd.xml) 配置文件参考](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+
+- [\<方法 > 元素](../../../docs/framework/net-native/method-element-net-native.md)
+- [运行时指令 (rd.xml) 配置文件引用](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令策略设置](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
 - [运行时指令元素](../../../docs/framework/net-native/runtime-directive-elements.md)

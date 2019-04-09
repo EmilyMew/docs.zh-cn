@@ -2,12 +2,12 @@
 title: <discoveryClientSettings>
 ms.date: 03/30/2017
 ms.assetid: 02e1b823-a8bb-4074-90d5-8599f71e8f9d
-ms.openlocfilehash: 5b60c7281b92a487ba3ee275f7405cb82bd6cd87
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 0b014a9d797ded61949a374486824ee3ebc34661
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57354994"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59136248"
 ---
 # <a name="discoveryclientsettings"></a>\<discoveryClientSettings>
 包含应用程序以客户端形式参与服务发现过程所需的设置。  
@@ -64,5 +64,6 @@ ms.locfileid: "57354994"
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|定义一个标准终结点，应用程序通过利用该终结点包含的信息，能够充当可在运行时动态查找终结点地址的客户端程序。|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>
 - <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement>

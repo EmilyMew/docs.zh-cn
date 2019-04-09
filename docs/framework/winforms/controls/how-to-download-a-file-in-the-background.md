@@ -1,5 +1,5 @@
 ---
-title: 如何：下载在后台中的文件
+title: 如何：在后台下载文件
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - threading [Windows Forms], background operations
 - background operations
 ms.assetid: 9b7bc5ae-051c-4904-9720-18f6667388bd
-ms.openlocfilehash: 57a904c5d54b0c3f68efaf017a3405786600ace7
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: af5a607b4800635d096e83b55a5bd5a912c8538d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57715810"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59128773"
 ---
-# <a name="how-to-download-a-file-in-the-background"></a>如何：下载在后台中的文件
+# <a name="how-to-download-a-file-in-the-background"></a>如何：在后台下载文件
 下载文件是一项常见任务，在单独线程上运行这个可能很耗时的操作通常很有用。 使用 <xref:System.ComponentModel.BackgroundWorker> 组件来完成此任务，几乎不使用任何代码。  
   
 ## <a name="example"></a>示例  
@@ -66,6 +66,7 @@ ms.locfileid: "57715810"
  始终先检查 <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> 事件处理程序中的 <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=nameWithType> 属性，然后再尝试访问 <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=nameWithType> 属性或可能受 <xref:System.ComponentModel.BackgroundWorker.DoWork> 事件处理程序影响的任何其他对象。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ComponentModel.BackgroundWorker>
 - [如何：在后台运行操作](how-to-run-an-operation-in-the-background.md)
 - [如何：实现使用后台操作的窗体](how-to-implement-a-form-that-uses-a-background-operation.md)

@@ -1,5 +1,5 @@
 ---
-title: <clear> 的 <listeners> 的 <trace> 元素
+title: <clear> 元素<listeners>为 <trace>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/clear
@@ -7,12 +7,12 @@ helpviewer_keywords:
 - clear element for <listeners> for <trace>
 - <clear> element for <listeners> for <trace>
 ms.assetid: b44732a8-271f-4a06-ba9e-fe3298d6f192
-ms.openlocfilehash: b199f24a2c1e1c8154c0ec22bef6367e5ba0ec26
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 97b18f9d6baa618b0f535955b232e2119c758b11
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55262596"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59124886"
 ---
 # <a name="clear-element-for-listeners-for-trace"></a>\<清除 > 元素\<侦听器 > 为\<跟踪 >
 清除跟踪的 `Listeners` 集合。  
@@ -78,6 +78,7 @@ ms.locfileid: "55262596"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Diagnostics.Trace.Listeners%2A>
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.Debug>

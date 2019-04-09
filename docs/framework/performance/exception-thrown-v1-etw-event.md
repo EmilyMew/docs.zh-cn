@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 0d3da389-6b7b-40f6-a877-fac546d6019c
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 07932a12916138dd7cbee2576e4fc747898b8063
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dd322d25d91bb277a4c817594c968c28a6d61d68
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54610830"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59136131"
 ---
 # <a name="exception-thrownv1-etw-event"></a>异常 Thrown_V1 ETW 事件
 该事件捕获有关引发的异常的信息。  
@@ -25,7 +25,7 @@ ms.locfileid: "54610830"
   
  下表显示了事件信息。  
   
-|事件|事件 ID|在发生以下情况时引发|  
+|Event|事件 ID|在发生以下情况时引发|  
 |-----------|--------------|-----------------|  
 |`ExceptionThrown_V1`|80|引发托管异常。|  
   
@@ -41,4 +41,5 @@ ms.locfileid: "54610830"
 |ClrInstanceID|win:UInt16|CLR 或 CoreCLR 的实例的唯一 ID。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [CLR ETW 事件](../../../docs/framework/performance/clr-etw-events.md)

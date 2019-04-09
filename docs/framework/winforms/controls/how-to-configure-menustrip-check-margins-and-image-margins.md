@@ -9,12 +9,12 @@ helpviewer_keywords:
 - menus [Windows Forms], setting margins
 - MenuStrip control [Windows Forms], configuring check and image margins
 ms.assetid: 45a9075d-4bea-4ce2-9b2c-7619aa39f8ce
-ms.openlocfilehash: f75cce1a9c155174178a55213d6a21ad5ba99772
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 09de1a9ca4be1c4ebfb0e13e800c09753bd04f11
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57707841"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59134987"
 ---
 # <a name="how-to-configure-menustrip-check-margins-and-image-margins"></a>如何：配置 MenuStrip 选中边距和图像边距
 可以通过设置各种组合中的 <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> 和 <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A> 属性来自定义 <xref:System.Windows.Forms.MenuStrip>。  
@@ -33,8 +33,9 @@ ms.locfileid: "57707841"
  Visual Basic 或 Visual C# 生成命令行中的此示例的信息，请参阅[从命令行生成](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)或[命令行上使用 csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)。 也可以通过将代码粘贴到新的项目中生成此示例在 Visual Studio 中。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ContextMenuStrip>
 - <xref:System.Windows.Forms.ToolStripDropDown>
 - [ToolStrip 控件](toolstrip-control-windows-forms.md)
-- [如何：启用选中边距和 ContextMenuStrip 控件中的图像边距](how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md)
+- [如何：启用 ContextMenuStrip 控件中的选中边距和图像边距](how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md)

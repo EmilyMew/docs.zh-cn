@@ -17,15 +17,16 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3a898b20a92ea3256635a64332e4f86dcd92dd69
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3691d8015f514cc20e63ad62f45e7317f56f72fb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54524073"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59182086"
 ---
 # <a name="icordebugeditandcontinuesnapshotsetpesymbolbytes-method"></a>ICorDebugEditAndContinueSnapshot::SetPESymbolBytes 方法
 `SetPESymbolBytes` 已过时。 请勿调用此方法。  
   
 ## <a name="see-also"></a>请参阅
+
 - [调试接口](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -2,12 +2,12 @@
 title: 导入 WCF 扩展的自定义元数据
 ms.date: 03/30/2017
 ms.assetid: 78beb28f-408a-4c75-9c3c-caefe9595b1a
-ms.openlocfilehash: b99d7fbab08c5edabe3a08baf89dd267c3f9fa25
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 021790a256448d9c81e7a53a2845edf839ff3534
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54562097"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59090064"
 ---
 # <a name="importing-custom-metadata-for-a-wcf-extension"></a>导入 WCF 扩展的自定义元数据
 在 Windows Communication Foundation (WCF) 的元数据导入是从其元数据生成的服务或其各个组成部分的抽象表示形式的过程。 例如，可以导入 WCF<xref:System.ServiceModel.Description.ServiceEndpoint>情况下，<xref:System.ServiceModel.Channels.Binding>实例或<xref:System.ServiceModel.Description.ContractDescription>实例从 WSDL 文档的服务。 若要导入 WCF 服务元数据，请使用的实现<xref:System.ServiceModel.Description.MetadataImporter?displayProperty=nameWithType>抽象类。 派生的类型<xref:System.ServiceModel.Description.MetadataImporter>类实现的支持，为利用 WS 策略的导入元数据格式导入 WCF 中的逻辑。  
@@ -49,6 +49,7 @@ ms.locfileid: "54562097"
 >  可能将无效或不正确的元数据传递给导入程序。 请确保自定义导入程序对所有形式的 XML 都能保持可靠性。  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：导入自定义 WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)
-- [如何：导入自定义策略断言](../../../../docs/framework/wcf/extending/how-to-import-custom-policy-assertions.md)
-- [如何：编写 servicecontractgenerator 的扩展](../../../../docs/framework/wcf/extending/how-to-write-an-extension-for-the-servicecontractgenerator.md)
+- [如何：导人自定义策略断言](../../../../docs/framework/wcf/extending/how-to-import-custom-policy-assertions.md)
+- [如何：编写 ServiceContractGenerator 的扩展](../../../../docs/framework/wcf/extending/how-to-write-an-extension-for-the-servicecontractgenerator.md)

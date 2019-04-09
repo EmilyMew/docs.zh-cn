@@ -1,5 +1,5 @@
 ---
-title: 如何：确定网页是否托管浏览器
+title: 如何：确定是否是浏览器托管页面
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - hosted pages in browser [WPF]
 - pages [WPF], hosted in browser
 ms.assetid: 737e0f26-8371-49b4-9579-70879e51e1aa
-ms.openlocfilehash: ebc5612f059a6cf26f2568bbc08e705b4b3014c1
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: d154de2f885101d1bd0c4613dfb1604be8acbe6a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57359986"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59107141"
 ---
-# <a name="how-to-determine-if-a-page-is-browser-hosted"></a>如何：确定网页是否托管浏览器
+# <a name="how-to-determine-if-a-page-is-browser-hosted"></a>如何：确定是否是浏览器托管页面
 此示例演示如何确定如果<xref:System.Windows.Controls.Page>托管浏览器中。  
   
 ## <a name="example"></a>示例  
@@ -27,5 +27,6 @@ ms.locfileid: "57359986"
  [!code-vb[HOWTOBrowserInteropHelperSnippets#IsBrowserHostedCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOBrowserInteropHelperSnippets/visualbasic/page1.xaml.vb#isbrowserhostedcode)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.Frame>
 - <xref:System.Windows.Controls.Page>

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - MenuStrip control [Windows Forms], removing
 - MDI [Windows Forms], merging menu items
 ms.assetid: bdafe60d-82ee-45bc-97fe-eeefca6e54c1
-ms.openlocfilehash: fe18b83456c4d02c31581caee30c65d0835eecc1
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
-ms.translationtype: MT
+ms.openlocfilehash: 6e0d453903b817e9acd743e835f4d466e3565271
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57703269"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59132829"
 ---
 # <a name="how-to-remove-a-toolstripmenuitem-from-an-mdi-drop-down-menu-windows-forms"></a>如何：从 MDI 下拉菜单 （Windows 窗体） 中删除 ToolStripMenuItem
 在某些应用程序中，多文档界面 (MDI) 子窗口的类型可以不同于 MDI 父窗口。 例如，MDI 父窗口可能为电子表格，而 MDI 子窗口可能为图表。 在这种情况下，由于激活了不同类型的 MDI 子窗口，你想用 MDI 子菜单上的内容更新 MDI 父菜单的内容。  
@@ -28,15 +28,15 @@ ms.locfileid: "57703269"
   
 2.  将 <xref:System.Windows.Forms.MenuStrip> 添加到 `Form1` 并将 <xref:System.Windows.Forms.MenuStrip> 的 <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A> 属性设置为 `true`。  
   
-3.  将顶级菜单项添加到 `Form1`<xref:System.Windows.Forms.MenuStrip> 并将其 <xref:System.Windows.Forms.Control.Text%2A> 属性设置为 `&File`。  
+3.  添加到顶级菜单项`Form1`<xref:System.Windows.Forms.MenuStrip>并设置其<xref:System.Windows.Forms.Control.Text%2A>属性设置为`&File`。  
   
 4.  添加到的三个子菜单项`&File`菜单项并设置其<xref:System.Windows.Forms.ToolStripItem.Text%2A>属性设置为`&Open`， `&Import from`，和`E&xit`。  
   
 5.  添加到的两个子菜单项`&Import from`子菜单项并设置其<xref:System.Windows.Forms.ToolStripItem.Text%2A>属性设置为`&Word`和`&Excel`。  
   
-6.  将窗体添加到项目，将 <xref:System.Windows.Forms.MenuStrip> 添加该窗体，并将 `Form2`<xref:System.Windows.Forms.MenuStrip> 的 <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A> 属性设置为 `true`。  
+6.  向项目添加窗体中，添加<xref:System.Windows.Forms.MenuStrip>到的窗体，并设置<xref:System.Windows.Forms.ToolStrip.AllowMerge%2A>的属性`Form2`<xref:System.Windows.Forms.MenuStrip>到`true`。  
   
-7.  将顶级菜单项添加到 `Form2`<xref:System.Windows.Forms.MenuStrip> 并将其 <xref:System.Windows.Forms.ToolStripItem.Text%2A> 属性设置为 `&File`。  
+7.  添加到顶级菜单项`Form2`<xref:System.Windows.Forms.MenuStrip>并设置其<xref:System.Windows.Forms.ToolStripItem.Text%2A>属性设置为`&File`。  
   
 8.  添加`&Import from`子菜单项`&File`菜单`Form2`，并添加`&Word`子菜单项到`&File`菜单。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "57703269"
     |从导入|MatchOnly|-1|  
     |字|删除|-1|  
   
-10. 在中`Form1`，创建的事件处理程序<xref:System.Windows.Forms.Control.Click>的事件`&Open` <xref:System.Windows.Forms.ToolStripMenuItem>。  
+10. 在中`Form1`，创建的事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`&Open`<xref:System.Windows.Forms.ToolStripMenuItem>。  
   
 11. 事件处理程序中插入类似于下面的代码示例，若要创建和显示的新实例的代码`Form2`作为的 MDI 子级`Form1`:  
   
@@ -73,7 +73,7 @@ ms.locfileid: "57703269"
     }  
     ```  
   
-12. 将类似于以下示例代码的代码放在 `&Open`<xref:System.Windows.Forms.ToolStripMenuItem> 中以注册事件处理程序。  
+12. 将代码置于类似于下面的代码示例中`&Open`<xref:System.Windows.Forms.ToolStripMenuItem>注册事件处理程序。  
   
     ```vb  
     Private Sub openToolStripMenuItem_Click(sender As Object, e As _  
@@ -95,6 +95,7 @@ ms.locfileid: "57703269"
 -   对 <xref:System?displayProperty=nameWithType> 和 <xref:System.Windows.Forms?displayProperty=nameWithType> 程序集的引用。  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：创建 MDI 父窗体](../advanced/how-to-create-mdi-parent-forms.md)
 - [如何：创建 MDI 子窗体](../advanced/how-to-create-mdi-child-forms.md)
 - [MenuStrip 控件概述](menustrip-control-overview-windows-forms.md)

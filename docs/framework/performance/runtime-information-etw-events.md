@@ -7,19 +7,19 @@ helpviewer_keywords:
 ms.assetid: 68b4edbc-7f3b-45f6-ab75-4fd066d6af9a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: cb213ef4a335cf6784c2889cd9cf0214a1411da2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: af27ddaa69d34976929f40055bc2cc668f877e87
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54735709"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59117399"
 ---
 # <a name="runtime-information-etw-events"></a>运行时信息 ETW 事件
 这些 ETW 事件记录有关运行时的信息，包括 SKU、版本号、激活运行时的方式、启动运行时所使用的命令行参数、GUID（如果适用）以及其他相关信息。 如果多个运行时在一个进程内执行，这些事件 (ClrInstanceID) 提供的信息可帮助消除不同运行时的歧义。  
   
  下表显示了两个运行时信息事件。 这两个事件可在任意关键字或掩码下引发。 （有关详细信息，请参阅 [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md)。）  
   
-|事件|事件 ID|提供程序|描述|  
+|Event|事件 ID|提供程序|描述|  
 |-----------|--------------|--------------|-----------------|  
 |`RuntimeInformationEvent`|187|CLRRuntime|加载运行时时引发。|  
 |`RuntimeInformationDCStart`|187|CLRRundown|枚举加载的运行时。|  
@@ -45,4 +45,5 @@ ms.locfileid: "54735709"
 |RuntimeDLLPath|win:UnicodeString|已加载到进程的 CLR.dll 文件的路径。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [CLR ETW 事件](../../../docs/framework/performance/clr-etw-events.md)

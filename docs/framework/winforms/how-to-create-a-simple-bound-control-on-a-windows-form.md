@@ -1,18 +1,18 @@
 ---
-title: 如何：创建 Windows 窗体上的简单绑定控件
+title: 如何：在 Windows 窗体上创建简单绑定控件
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data binding [Windows Forms], simple data binding
 - Windows Forms controls, data binding
 ms.assetid: 3bcaded8-0f1a-4cc0-8830-f59be253bf4e
-ms.openlocfilehash: f481b85c07a107b10d88d47c4873b555191bac7f
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 85b19c43441650789eed6b92a771d2f2433c6a10
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57708335"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59094058"
 ---
-# <a name="how-to-create-a-simple-bound-control-on-a-windows-form"></a>如何：创建 Windows 窗体上的简单绑定控件
+# <a name="how-to-create-a-simple-bound-control-on-a-windows-form"></a>如何：在 Windows 窗体上创建简单绑定控件
 与*简单绑定*，可以在控件中显示单个数据元素，如从数据集表中列的值。 可以将控件属性简单绑定到数据值。  
   
 > [!NOTE]
@@ -46,6 +46,7 @@ ms.locfileid: "57708335"
     >  由于简单绑定控件显示单个数据元素，它是非常典型，若要在具有简单绑定控件的 Windows 窗体中包含导航逻辑。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.Binding>
 - [Windows 窗体数据绑定](windows-forms-data-binding.md)
 - [数据绑定和 Windows 窗体](data-binding-and-windows-forms.md)

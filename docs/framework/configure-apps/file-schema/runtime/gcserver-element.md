@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 8d25b80e-2581-4803-bd87-a59528e3cb03
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 9125ee35b081a1723f379bd3fbdec808d085c675
-ms.sourcegitcommit: b8ace47d839f943f785b89e2fff8092b0bf8f565
+ms.openlocfilehash: fd91cf0179ef9731c456b41fdc865e3eacdb33eb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "55674446"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59132803"
 ---
 # <a name="gcserver-element"></a>\<gcServer > 元素
 指定公共语言运行时是否运行服务器垃圾回收。  
@@ -42,7 +42,7 @@ ms.locfileid: "55674446"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`false`|请勿运行服务器垃圾回收。 这是默认设置。|  
 |`true`|运行服务器垃圾回收。|  
@@ -79,6 +79,7 @@ ms.locfileid: "55674446"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [运行时设置架构](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [配置文件架构](../../../../../docs/framework/configure-apps/file-schema/index.md)

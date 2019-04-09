@@ -1,5 +1,5 @@
 ---
-title: 如何：添加和删除菜单项使用 Windows 窗体 ContextMenu 组件
+title: 如何：使用 Windows 窗体 ContextMenu 组件添加和移除菜单项
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -16,14 +16,14 @@ helpviewer_keywords:
 - context menus [Windows Forms], examples
 - examples [Windows Forms], context menus
 ms.assetid: 426d1eaf-7fb8-4b0b-8a33-5e8721786ea4
-ms.openlocfilehash: 8b63182bdb37e47a71bee2d22500263cd4889ac9
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: e02a187edc1392f15fe98354bb2e5c43843e430c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57725059"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59094458"
 ---
-# <a name="how-to-add-and-remove-menu-items-with-the-windows-forms-contextmenu-component"></a>如何：添加和删除菜单项使用 Windows 窗体 ContextMenu 组件
+# <a name="how-to-add-and-remove-menu-items-with-the-windows-forms-contextmenu-component"></a>如何：使用 Windows 窗体 ContextMenu 组件添加和移除菜单项
 介绍如何添加和删除 Windows 窗体中的快捷菜单项。  
   
  Windows 窗体<xref:System.Windows.Forms.ContextMenu>组件提供了与所选对象相关的常用命令的菜单。 您可以通过添加到快捷菜单添加项<xref:System.Windows.Forms.MenuItem>对象添加到<xref:System.Windows.Forms.Menu.MenuItems%2A>集合。  
@@ -75,6 +75,7 @@ ms.locfileid: "57725059"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.ContextMenu>
 - [ContextMenu 组件](contextmenu-component-windows-forms.md)
 - [ContextMenu 组件概述](contextmenu-component-overview-windows-forms.md)

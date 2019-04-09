@@ -1,11 +1,17 @@
 ---
-title: '字符串 - C# 编程指南'
+title: 字符串 - C# 编程指南
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
-  - 'C# language, strings'
-  - 'strings [C#]'
+- C# language, strings
+- strings [C#]
 ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
+ms.openlocfilehash: 57781dd5a988435778587636cc458256b966446c
+ms.sourcegitcommit: a3db1a9eafca89f95ccf361bc1833b47fbb2bb30
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58920683"
 ---
 # <a name="strings-c-programming-guide"></a>字符串（C# 编程指南）
 字符串是值为文本的 <xref:System.String> 类型对象。 文本在内部存储为 <xref:System.Char> 对象的依序只读集合。 在 C# 字符串末尾没有 null 终止字符；因此，一个 C# 字符串可以包含任何数量的嵌入的 null 字符 ('\0')。 字符串的 <xref:System.String.Length%2A> 属性表示其包含的 `Char` 对象数量，而非 Unicode 字符数。 若要访问字符串中的各个 Unicode 码位，请使用 <xref:System.Globalization.StringInfo> 对象。  
@@ -68,7 +74,7 @@ ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
  格式字符串是在运行时以动态方式确定其内容的字符串。 格式字符串是通过将内插表达式或占位符嵌入字符串大括号内创建的。 大括号 (`{...}`) 中的所有内容都将解析为一个值，并在运行时以格式化字符串的形式输出。 有两种方法创建格式字符串：字符串内插和复合格式。
 
 ### <a name="string-interpolation"></a>字符串内插
-在 C# 6.0 及更高版本中提供，[内插字符串](../../language-reference/tokens/interpolated.md)由 `$` 特殊字符标识，并在大括号中包含内插表达式。 如果不熟悉字符串内插，请参阅[字符串内插 - C# 交互式教程](../../tutorials/intro-to-csharp/interpolated-strings.yml)快速概览。
+在 C# 6.0 及更高版本中提供，[内插字符串](../../language-reference/tokens/interpolated.md)由 `$` 特殊字符标识，并在大括号中包含内插表达式。 如果不熟悉字符串内插，请参阅[字符串内插 - C# 交互式教程](../../tutorials/exploration/interpolated-strings.yml)快速概览。
 
 使用字符串内插来改善代码的可读性和可维护性。 字符串内插可实现与 `String.Format` 方法相同的结果，但提高了易用性和内联清晰度。
 

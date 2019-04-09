@@ -8,12 +8,12 @@ helpviewer_keywords:
 - changing selections in a text box [WPF]
 - changing selections in a RichTextBox [WPF]
 ms.assetid: f1213205-1ad7-4cd2-b115-460173cc5aa3
-ms.openlocfilehash: a85dc4baa8a59d25f577996c541a422bbe2af24e
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: b8acfe7cde1fe5dae96cd6324f75c5b146be9ec9
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57367071"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096220"
 ---
 # <a name="change-selection-in-a-richtextbox-programmatically"></a>以编程方式更改 RichTextBox 中的选定内容
 此示例演示如何以编程方式更改中的当前选定<xref:System.Windows.Controls.RichTextBox>。 选择此选项是相同的像用户通过使用用户界面选择的内容。  
@@ -30,5 +30,6 @@ ms.locfileid: "57367071"
  [!code-vb[RichTextBoxMiscSnippets_snip#ChangeSelectionProgrammaticalyCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/VisualBasic/ChangeSelectionProgrammaticaly.xaml.vb#changeselectionprogrammaticalycodeexamplewholepage)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [RichTextBox 概述](richtextbox-overview.md)
 - [TextBox 概述](textbox-overview.md)

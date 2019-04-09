@@ -1,16 +1,16 @@
 ---
-title: 开放式并发：概述
+title: 乐观并发：概述
 ms.date: 03/30/2017
 ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
-ms.openlocfilehash: 5395134a536969788252524ccd7c2936d3d9e2d1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8f3bd35cc1391339d99d5aa0a4021e29fa81756c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54517449"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59106543"
 ---
-# <a name="optimistic-concurrency-overview"></a>开放式并发：概述
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 支持开放式并发控制。 下表描述了条款适用于中涉及开放式并发[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]文档：  
+# <a name="optimistic-concurrency-overview"></a>乐观并发：概述
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 支持乐观并发控制。 下表描述了条款适用于中涉及开放式并发[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]文档：  
   
 |术语|描述|  
 |-----------|-----------------|  
@@ -18,7 +18,7 @@ ms.locfileid: "54517449"
 |并发冲突|两个或更多用户同时尝试向一行的一列或多列提交冲突值的情形。|  
 |并发控制|用于解决并发冲突的技术。|  
 |开放式并发控制|先调查其他事务是否已更改了行中的值，再允许提交更改的技术。<br /><br /> 与之相反*悲观并发控制*，这将锁定要避免发生并发冲突的记录。<br /><br /> *乐观*控件之所以称作，因为它考虑到一个事务干扰另一个不太可能发生的可能性。|  
-|冲突解决|通过重新查询数据库刷新出现冲突的项，然后协调差异的过程。<br /><br /> 刷新对象时，[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 更改跟踪器会保留以下数据：<br /><br /> -值最初从数据库获取并用于更新检查。<br />的后续查询中新数据库值。<br /><br /> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 随后会确定相应对象是否发生冲突（即它的一个或多个成员值是否已发生更改）。 如果此对象发生冲突，[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 下一步会确定它的哪些成员发生冲突。<br /><br /> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 发现的任何成员冲突都会添加到冲突列表中。|  
+|冲突解决|通过重新查询数据库刷新出现冲突的项，然后协调差异的过程。<br /><br /> 刷新对象时，[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 更改跟踪器会保留以下数据：<br /><br /> -值最初从数据库获取并用于更新检查。<br />的后续查询中新数据库值。<br /><br /> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 然后确定对象是否发生冲突 （即，是否一个或多个其成员值已更改）。 如果此对象发生冲突，[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 下一步会确定它的哪些成员发生冲突。<br /><br /> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 发现的任何成员冲突都会添加到冲突列表中。|  
   
  在中[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]对象模型*开放式并发冲突*两个以下条件成立时发生：  
   
@@ -29,7 +29,7 @@ ms.locfileid: "54517449"
  此冲突的解决过程包括查明对象的哪些成员发生冲突，然后决定您希望如何进行处理。  
   
 > [!NOTE]
->  只有映射为 <xref:System.Data.Linq.Mapping.UpdateCheck.Always> 或 <xref:System.Data.Linq.Mapping.UpdateCheck.WhenChanged> 的成员才会参与开放式并发检查。 对于标记为 <xref:System.Data.Linq.Mapping.UpdateCheck.Never> 的成员，不执行检查。 有关详细信息，请参阅<xref:System.Data.Linq.Mapping.UpdateCheck>。  
+>  只有映射为 <xref:System.Data.Linq.Mapping.UpdateCheck.Always> 或 <xref:System.Data.Linq.Mapping.UpdateCheck.WhenChanged> 的成员才会参与开放式并发检查。 对于标记为 <xref:System.Data.Linq.Mapping.UpdateCheck.Never> 的成员，不执行检查。 有关详细信息，请参阅 <xref:System.Data.Linq.Mapping.UpdateCheck>。  
   
 ## <a name="example"></a>示例  
  例如，在下面的情况中，User1 通过查询数据库中的某一行开始准备更新。 User1 收到包含 Alfreds、Maria 和 Sales 值的一行。  
@@ -38,10 +38,10 @@ ms.locfileid: "54517449"
   
  当 User1 现在尝试提交更改时，提交失败并且引发 <xref:System.Data.Linq.ChangeConflictException> 异常。 出现这种结果是因为 Assistant 列和 Department 列的数据库值并不是他们所预期的那些值。 表示 Assistant 和 Department 列的成员发生了冲突。 下表对这种情形作了总结。  
   
-||Manager|Assistant|Department|  
+||经理|Assistant|Department|  
 |------|-------------|---------------|----------------|  
 |原始状态|Alfreds|Maria|销售额|  
-|User1|Alfred||Marketing|  
+|User1|Alfred||“营销”|  
 |User2||Mary|服务|  
   
  您可以用多种不同的方式来解决此类冲突。 有关详细信息，请参阅[如何：管理更改冲突](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)。  
@@ -89,4 +89,5 @@ ms.locfileid: "54517449"
 -   <xref:System.Data.Linq.RefreshMode?displayProperty=nameWithType>  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：管理更改冲突](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)

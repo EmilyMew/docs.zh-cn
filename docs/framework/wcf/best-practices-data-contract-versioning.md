@@ -7,12 +7,12 @@ helpviewer_keywords:
 - best practices [WCF], data contract versioning
 - Windows Communication Foundation, data contracts
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
-ms.openlocfilehash: 544ecc3827a698f92ec29855f1e000fce1907386
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: 9f92e731132eb564b893e3d34ccd322fbcd66ea7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58409466"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59118997"
 ---
 # <a name="best-practices-data-contract-versioning"></a>最佳做法：数据协定版本管理
 本主题列出了创建容易随时间而改变的数据协定的最佳做法。 有关数据协定的详细信息，请参阅中的主题[Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)。  
@@ -66,8 +66,7 @@ ms.locfileid: "58409466"
   
 8.  在以后的版本中，可以添加新的数据成员。 它们应始终遵循以下规则：  
   
-    1.  
-  <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> 属性应始终保留其默认值 `false`。  
+    1.  <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> 属性应始终保留其默认值 `false`。  
   
     2.  如果对于成员，默认值为 `null` 或零是不可接受的，则应使用 <xref:System.Runtime.Serialization.OnDeserializingAttribute> 提供一个回调方法，以便在传入流中不存在该成员时提供一个合理的默认值。 回调的详细信息，请参阅[版本容错序列化回调](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)。  
   
@@ -92,6 +91,7 @@ ms.locfileid: "58409466"
  在某些特殊的情况中，可以安全地忽略此处列出的某些准则。 确保在背离这些准则之前，已充分理解所涉及的序列化、反序列化和架构机制。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>
@@ -102,7 +102,7 @@ ms.locfileid: "58409466"
 - <xref:System.Runtime.Serialization.ExtensionDataObject>
 - <xref:System.Runtime.Serialization.OnDeserializingAttribute>
 - [使用数据协定](../../../docs/framework/wcf/feature-details/using-data-contracts.md)
-- [数据协定版本控制](../../../docs/framework/wcf/feature-details/data-contract-versioning.md)
+- [数据协定版本管理](../../../docs/framework/wcf/feature-details/data-contract-versioning.md)
 - [数据协定名称](../../../docs/framework/wcf/feature-details/data-contract-names.md)
 - [向前兼容的数据协定](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)
 - [版本容错序列化回调](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)

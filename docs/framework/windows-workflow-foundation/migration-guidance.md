@@ -2,15 +2,15 @@
 title: 迁移指南
 ms.date: 03/30/2017
 ms.assetid: cb65c132-58c9-4028-b3d4-1efc71d5e60e
-ms.openlocfilehash: 405ed0dcbd730f08b84ad0b40008c4d77b02e26f
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: a36108e8c711b9e5d5253b19a9122373fc513855
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57719671"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083161"
 ---
 # <a name="migration-guidance"></a>迁移指南
-在[!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)]，Microsoft 正在发布的第二个主要版本的 Windows Workflow Foundation (WF)。 [!INCLUDE[wf1](../../../includes/wf1-md.md)] 发布在 [!INCLUDE[vstecwinfx](../../../includes/vstecwinfx-md.md)] 中（包含 System.Workflow.* 命名空间中的类型；目前称之为 WF3）并在 [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] 中得到增强。 WF3 也是属于[!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)]，但伴随新工作流技术 (System.Activities。 中的类型\*命名空间，则称为 WF4)。 考虑何时采用 WF4 时，重要的是首先要认识到您来控制时间安排。  
+在[!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)]，Microsoft 正在发布的第二个主要版本的 Windows Workflow Foundation (WF)。 [!INCLUDE[wf1](../../../includes/wf1-md.md)] 在发布[!INCLUDE[vstecwinfx](../../../includes/vstecwinfx-md.md)]（这包含 system.workflow.* 命名空间中的类型; 目前称之为 WF3） 并在[!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]。 WF3 也是属于[!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)]，但伴随新工作流技术 (System.Activities。 中的类型\*命名空间，则称为 WF4)。 考虑何时采用 WF4 时，重要的是首先要认识到您来控制时间安排。  
   
 -   WF3 是 [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] 完全支持的部分。  
   
@@ -23,7 +23,7 @@ ms.locfileid: "57719671"
 ## <a name="wf-migration-whitepapers-and-cookbooks"></a>WF 迁移白皮书和实用手册  
  [WF 迁移概述](https://go.microsoft.com/fwlink/?LinkId=153873)主题提供了 WF3 与 WF4 和迁移策略之间的关系的广泛概述。 关联的主题深入探讨特定主题。  
   
- [WF 迁移概述](https://go.microsoft.com/fwlink/?LinkId=153873)  
+ [WF Migration Overview（WF 迁移概述）](https://go.microsoft.com/fwlink/?LinkId=153873)  
  描述 WF3 与 WF4 之间的关系，以及作为 .NET 4 中工作流技术的用户或潜在用户所拥有的选择。  
   
  [WF 迁移：WF3 开发的最佳做法](https://go.microsoft.com/fwlink/?LinkId=153852)  
@@ -56,4 +56,5 @@ ms.locfileid: "57719671"
  提供面向示例的分步说明，针对现成活动的一般方案，将在 WF3 中创建、实现 Windows Communication Foundation (WCF) Web 服务（通常称为工作流服务）的工作流重新设计为使用 WF4。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Activities.Statements.Interop>

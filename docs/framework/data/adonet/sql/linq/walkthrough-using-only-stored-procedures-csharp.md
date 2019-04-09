@@ -2,12 +2,12 @@
 title: 演练：仅使用存储过程 (C#)
 ms.date: 03/30/2017
 ms.assetid: ecde4bf2-fa4d-4252-b5e4-96a46b9e097d
-ms.openlocfilehash: 5234b4a2743effa4282fb8c211c42511c6432dfa
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 8f3bc061f626f6c29ca62131fc1cb0fc2dea9249
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54650822"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098164"
 ---
 # <a name="walkthrough-using-only-stored-procedures-c"></a>演练：仅使用存储过程 (C#)
 本演练提供了通过仅执行存储过程来访问数据的 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 基本端对端方案。 数据库管理员经常使用此方法来限制数据存储的访问方式。  
@@ -86,7 +86,7 @@ ms.locfileid: "54650822"
      此程序集即被添加到项目中。  
   
 ## <a name="adding-the-northwind-code-file-to-the-project"></a>将 Northwind 代码文件添加到项目  
- 此步骤假定您已使用 SqlMetal 工具从 Northwind 示例数据库生成代码文件。 有关更多信息，请参见本演练前面部分的“先决条件”一节。  
+ 此步骤假定你已使用 SqlMetal 工具从 Northwind 示例数据库生成代码文件。 有关更多信息，请参见本演练前面部分的“先决条件”一节。  
   
 #### <a name="to-add-the-northwind-code-file-to-the-project"></a>将 northwind 代码文件添加到项目  
   
@@ -108,7 +108,7 @@ ms.locfileid: "54650822"
      [!code-csharp[DLinqWalk4CS#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk4CS/cs/Form1.cs#1)]  
   
 ## <a name="setting-up-the-user-interface"></a>设置用户界面  
- 在此任务中，您要设置一个界面，供用户执行存储过程以访问数据库中的数据之用。 在您按照本演练开发的应用程序中，用户只能使用应用程序中嵌入的存储过程来访问数据库中的数据。  
+ 在此任务中，你要设置一个界面，供用户执行存储过程以访问数据库中的数据之用。 在您按照本演练开发的应用程序中，用户只能使用应用程序中嵌入的存储过程来访问数据库中的数据。  
   
 #### <a name="to-set-up-the-user-interface"></a>设置用户界面  
   
@@ -188,5 +188,6 @@ ms.locfileid: "54650822"
  您可以通过做一些更改来增强此项目的功能。 例如，您可以在列表框中列出可用的存储过程，供用户选择要执行哪些过程。 您还可以将报告的输出以流的方式传输到文本文件。  
   
 ## <a name="see-also"></a>请参阅
+
 - [通过演练学习](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
 - [存储过程](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)

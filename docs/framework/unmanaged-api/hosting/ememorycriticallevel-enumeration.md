@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: def1c04064cc9fc98c108dcdad5c017c0c8e465b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 4ee8705d00e1f63f69863d0bf8e7d0d9d62807e6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54655525"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59122286"
 ---
 # <a name="ememorycriticallevel-enumeration"></a>EMemoryCriticalLevel 枚举
 包含指示失败的影响，何时已请求特定的内存分配但是却无法满足的值。  
@@ -54,8 +54,9 @@ typedef enum {
   
  **库：** MSCorEE.dll  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICLRMemoryNotificationCallback 接口](../../../../docs/framework/unmanaged-api/hosting/iclrmemorynotificationcallback-interface.md)
 - [承载枚举](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

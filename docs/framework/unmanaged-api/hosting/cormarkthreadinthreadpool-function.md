@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5f7141115ff0aa7431f49281bde01b38c5af4260
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: a39b0f2546d84cf24a58d5367c87d0a862aead93
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57481971"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59085072"
 ---
 # <a name="cormarkthreadinthreadpool-function"></a>CorMarkThreadInThreadPool 函数
 将标记为托管代码的执行当前正在执行的线程池线程。 从.NET Framework 2.0 版开始，此函数没有任何影响。 它不是必需的并可以从你的代码。 此函数已弃用在[!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]。  
@@ -39,7 +39,8 @@ void CorMarkThreadInThreadPool ();
   
  **库：** MSCorEE.dll  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [弃用的 CLR 承载函数](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

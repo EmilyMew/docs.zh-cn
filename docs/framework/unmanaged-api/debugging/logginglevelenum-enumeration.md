@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: e72654dc62020e05f18c4d7d4d528617a0cd0c9f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2fe8e1355382273a681e927897f4a8ff5814b8de
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54675177"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59086502"
 ---
 # <a name="logginglevelenum-enumeration"></a>LoggingLevelEnum 枚举
 指示在托管线程记录事件时写入事件日志的描述性消息的严重级别。  
@@ -74,8 +74,9 @@ typedef enum LoggingLevelEnum {
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Diagnostics.EventLog>
 - [调试枚举](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

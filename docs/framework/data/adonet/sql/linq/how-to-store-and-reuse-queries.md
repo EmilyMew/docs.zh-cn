@@ -1,18 +1,18 @@
 ---
-title: 如何：存储和重用查询
+title: 如何：存储和重复使用查询
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a012bd79-1809-45e3-adea-0229532396cc
-ms.openlocfilehash: a913839ab8e6048b18270061a75ca632e2797fb8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1aac20c3f9c421d353938a83b9e321d35abd244e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54630760"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59084188"
 ---
-# <a name="how-to-store-and-reuse-queries"></a>如何：存储和重用查询
+# <a name="how-to-store-and-reuse-queries"></a>如何：存储和重复使用查询
 当您的应用程序多次执行结构上相似的查询时，您通常可以通过如下方法提高性能：编译此查询一次，然后用不同的参数执行它若干次。 例如，应用程序可能需要检索位于特定城市的所有客户，其中此城市是在运行时由用户在窗体中指定的。 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 支持使用*编译的查询*实现此目的。  
   
 > [!NOTE]
@@ -34,6 +34,7 @@ ms.locfileid: "54630760"
  [!code-vb[DLinqQuerying#8](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQuerying/vb/Module1.vb#8)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Data.Linq.CompiledQuery>
 - [查询概念](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
 - [查询数据库](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)

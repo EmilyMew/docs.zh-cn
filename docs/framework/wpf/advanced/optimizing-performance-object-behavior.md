@@ -11,23 +11,21 @@ helpviewer_keywords:
 - object performance considerations [WPF]
 - Freezable objects [WPF], performance
 ms.assetid: 73aa2f47-1d73-439a-be1f-78dc4ba2b5bd
-ms.openlocfilehash: 5548292480f07fa192985800931f9d0262f2b791
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 49318059435c5f5669510f7cf3fb7c93a4bc05e1
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57352680"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59137431"
 ---
 # <a name="optimizing-performance-object-behavior"></a>优化性能：对象行为
 了解 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 对象的内部行为，有助于在功能和性能之间做出适当的取舍。  
-  
 
-  
 <a name="Not_Removing_Event_Handlers"></a>   
 ## <a name="not-removing-event-handlers-on-objects-may-keep-objects-alive"></a>不删除对象的事件处理程序可能会使对象保持活动状态  
  对象传递给其事件的委托是对该对象的有效引用。 因此，事件处理程序可以使对象保持活动状态的时间超过预期时间。 当对已注册为侦听对象事件的对象执行清理时，在释放对象前删除委托是非常必要的。 将不需要的对象保持为活动状态会增加应用程序的内存使用量。 在对象为逻辑树或可视化树的根时更是如此。  
   
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 为事件引入了弱事件侦听器模式，在很难跟踪源和侦听器之间的对象生存期关系时，这种模式特别有用。 某些现有 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 事件使用此模式。 如果要实现具有自定义事件的对象，此模式可能会有用。 有关详细信息，请参阅[弱事件模式](weak-event-patterns.md)。  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 引入了在对象生存期关系源和侦听器之间的难以跟踪的情况下可能非常有用的事件的弱事件侦听器模式。 某些现有 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 事件使用此模式。 如果要实现具有自定义事件的对象，此模式可能会有用。 有关详细信息，请参阅[弱事件模式](weak-event-patterns.md)。  
   
  有若干工具（如 CLR 探查器和工作集查看器）可以提供有关指定进程的内存使用量的信息。 CLR 探查器包括分配配置文件的许多非常有用的视图，其中包括已分配类型的直方图、分配和调用关系图、显示各代垃圾回收及上述回收之后托管堆的生成状态的时间线，以及显示每个方法分配和程序集加载的调用树。 有关详细信息，请参阅 [.NET Framework 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=117435)。  
   
@@ -67,7 +65,7 @@ ms.locfileid: "57352680"
   
  冻结<xref:System.Windows.Freezable>可以提高其性能，因为它不再需要付出因维护更改通知的资源。 下表显示了一个简单的大小<xref:System.Windows.Media.SolidColorBrush>时其<xref:System.Windows.Freezable.IsFrozen%2A>属性设置为`true`、 相对于它不是。 这将假定应用一个画笔应用于<xref:System.Windows.Shapes.Shape.Fill%2A>10 个属性<xref:System.Windows.Shapes.Rectangle>对象。  
   
-|**状态**|**Size**|  
+|**状态**|**大小**|  
 |---------------|--------------|  
 |冻结 <xref:System.Windows.Media.SolidColorBrush>|212 字节|  
 |非冻结 <xref:System.Windows.Media.SolidColorBrush>|972 字节|  
@@ -105,18 +103,19 @@ ms.locfileid: "57352680"
   
  下表显示了经过的时间中添加和呈现 5000<xref:System.Windows.Controls.TextBlock>元素与<xref:System.Windows.Controls.StackPanel>和一个<xref:System.Windows.Controls.VirtualizingStackPanel>。 在此方案中，度量值表示附加到一个文本字符串之间的时间<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>属性的<xref:System.Windows.Controls.ItemsControl>panel 元素时显示的文本字符串的时间的对象。  
   
-|**主机面板**|**呈现时间 (ms)**|  
+|**主机面板**|**呈现时间 （毫秒）**|  
 |--------------------|----------------------------|  
 |<xref:System.Windows.Controls.StackPanel>|3210|  
 |<xref:System.Windows.Controls.VirtualizingStackPanel>|46|  
   
 ## <a name="see-also"></a>请参阅
+
 - [优化 WPF 应用程序性能](optimizing-wpf-application-performance.md)
 - [规划应用程序性能](planning-for-application-performance.md)
 - [利用硬件](optimizing-performance-taking-advantage-of-hardware.md)
 - [布局和示例](optimizing-performance-layout-and-design.md)
-- [2D 图形和图像处理](optimizing-performance-2d-graphics-and-imaging.md)
+- [二维图形和图像处理](optimizing-performance-2d-graphics-and-imaging.md)
 - [应用程序资源](optimizing-performance-application-resources.md)
-- [文本](optimizing-performance-text.md)
+- [Text](optimizing-performance-text.md)
 - [数据绑定](optimizing-performance-data-binding.md)
 - [其他性能建议](optimizing-performance-other-recommendations.md)

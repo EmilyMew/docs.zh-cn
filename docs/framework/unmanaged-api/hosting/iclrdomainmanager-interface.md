@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: f08b2390-d872-4521-a815-e9c237c4c45d
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 797b6031449672e8b610b2a53e77497e5835ea6a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ce53149b92ca40ad50ecbefaf4701940e8567ae5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54657423"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59103917"
 ---
 # <a name="iclrdomainmanager-interface"></a>ICLRDomainManager 接口
 使宿主能够指定将用于初始化默认应用程序域，并指定初始化属性的应用程序域管理器。  
@@ -41,8 +41,9 @@ ms.locfileid: "54657423"
   
  **库：** 包含为 MSCorEE.dll 中的资源  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [承载接口](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [承载](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [宿主](../../../../docs/framework/unmanaged-api/hosting/index.md)

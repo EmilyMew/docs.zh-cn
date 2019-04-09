@@ -6,12 +6,12 @@ helpviewer_keywords:
 - security [WCF]
 - Windows Communication Foundation, security
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
-ms.openlocfilehash: 9827d14a1e64b6111c6c3c9cf53a49170f1a9077
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 58bec40f197dd1f2b104607a65c3ad456b95f69d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54592817"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59118191"
 ---
 # <a name="windows-communication-foundation-security"></a>Windows Communication Foundation 安全性
 在本部分中的主题介绍 Windows Communication Foundation (WCF) 安全功能以及如何使用它们来保护消息。  
@@ -67,7 +67,8 @@ ms.locfileid: "54592817"
   
  [入门教程](../../../../docs/framework/wcf/getting-started-tutorial.md)  
   
- [概念性概述](../../../../docs/framework/wcf/conceptual-overview.md)  
+ [概念概述](../../../../docs/framework/wcf/conceptual-overview.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [配置应用程序](../../../../docs/framework/wcf/diagnostics/configuring-your-application.md)

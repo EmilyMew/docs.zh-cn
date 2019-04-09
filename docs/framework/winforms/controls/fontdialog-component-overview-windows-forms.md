@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Font dialog box
 - FontDialog component [Windows Forms], about FontDialog component
 ms.assetid: daf46e57-1b4b-4b7a-bad0-b50ca7ba75dc
-ms.openlocfilehash: 26bfb561c1050438b78c4ae0a3e6e8da32458cdd
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 7f140807bf4b42e530302190042e729c59248e7f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57725033"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098554"
 ---
 # <a name="fontdialog-component-overview-windows-forms"></a>FontDialog 组件概述（Windows 窗体）
 Windows 窗体<xref:System.Windows.Forms.FontDialog>组件是一个预配置的对话框，这是标准的 Windows**字体**用于公开当前系统安装的字体的对话框。 将其作为一个简单的解决方案在基于 Windows 的应用程序中的字体选择而不用配置你自己的对话框。  
@@ -24,5 +24,6 @@ Windows 窗体<xref:System.Windows.Forms.FontDialog>组件是一个预配置的�
  该组件具有多个配置其外观的属性。 将对话框中选择设置的属性是<xref:System.Windows.Forms.FontDialog.Font%2A>和<xref:System.Windows.Forms.FontDialog.Color%2A>。 <xref:System.Windows.Forms.FontDialog.Font%2A>属性设置字体、 样式、 大小、 脚本和效果; 例如， `Arial, 10pt, style=Italic, Strikeout`。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.FontDialog>
 - [FontDialog 组件](fontdialog-component-windows-forms.md)

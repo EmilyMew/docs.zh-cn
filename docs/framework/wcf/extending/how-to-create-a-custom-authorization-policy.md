@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 05b0549b-882d-4660-b6f0-5678543e5475
-ms.openlocfilehash: ba5d8d02d0c8d5993e1b072298aadcaa5fe0fe35
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
+ms.openlocfilehash: 78cc77a5491e50d718a53efff1c6f99acf23cf27
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54705899"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115383"
 ---
 # <a name="how-to-create-a-custom-authorization-policy"></a>如何：创建自定义授权策略
 标识模型基础结构在 Windows Communication Foundation (WCF) 支持基于声明的授权模型。 声明从令牌中提取，并可以选择由自定义授权策略进行处理，然后放入 <xref:System.IdentityModel.Policy.AuthorizationContext> 中，之后进行检查以做出授权决定。 可以使用自定义策略将声明从传入令牌转换成应用程序需要的声明。 这样一来，应用程序层可以从由 WCF 支持的不同令牌类型的不同声明的详细信息隔离出来。 本主题演示如何实现自定义授权策略和如何将该策略添加到服务所使用的策略集中。  
@@ -76,7 +76,8 @@ ms.locfileid: "54705899"
  [!code-vb[c_CustomAuthPol#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthpol/vb/source.vb#5)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.ServiceAuthorizationManager>
 - [如何：比较声明](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)
-- [如何：创建自定义授权管理器服务](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
+- [如何：为服务创建自定义授权管理器](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
 - [授权策略](../../../../docs/framework/wcf/samples/authorization-policy.md)

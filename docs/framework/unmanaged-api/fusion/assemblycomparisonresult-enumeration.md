@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 1b844a660da6a1e8d96ed7f5833435b413219e29
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 03b8ecc996e14263510e2d0a658cec020696c263
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54645621"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59141695"
 ---
 # <a name="assemblycomparisonresult-enumeration"></a>AssemblyComparisonResult 枚举
 指示两个程序集标识的等效性，由[CompareAssemblyIdentity](../../../../docs/framework/unmanaged-api/fusion/compareassemblyidentity-function.md)函数。  
@@ -69,8 +69,9 @@ typedef enum _tagAssemblyComparisonResult {
   
  **库：** 包含为 MsCorEE.dll 中的资源  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [CompareAssemblyIdentity 函数](../../../../docs/framework/unmanaged-api/fusion/compareassemblyidentity-function.md)
 - [合成枚举](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)

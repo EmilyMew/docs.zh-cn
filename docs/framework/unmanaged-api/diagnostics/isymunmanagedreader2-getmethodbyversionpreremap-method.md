@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 5ff8e2767f8bba618539ecd12c5034ae67d24d0a
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: bcd200b7fa431f193dd202c3c2a690aa22ec8e32
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57466716"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59135166"
 ---
 # <a name="isymunmanagedreader2getmethodbyversionpreremap-method"></a>ISymUnmanagedReader2::GetMethodByVersionPreRemap 方法
 获取符号读取器方法，给定一个方法标记和编辑并继续的版本号。 版本号从 1 开始，并会在每的次递增的方法更改因执行编辑并继续操作。  
@@ -53,4 +53,5 @@ HRESULT GetMethodByVersionPreRemap(
  **标头：** CorSym.idl. CorSym.h  
   
 ## <a name="see-also"></a>请参阅
+
 - [ISymUnmanagedReader2 接口](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)

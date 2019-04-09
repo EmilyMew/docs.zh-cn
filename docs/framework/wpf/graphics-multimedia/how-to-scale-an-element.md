@@ -5,12 +5,12 @@ helpviewer_keywords:
 - scaling [WPF], elements
 - graphics [WPF], scaling elements
 ms.assetid: 18158d94-bbe7-4f6a-814e-84d27fa748bf
-ms.openlocfilehash: 6decc10c954b51d64c6045c01f1264df35429862
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 607b3a11085f746503c1b82552f1740b49d9ef5d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57358608"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59131698"
 ---
 # <a name="how-to-scale-an-element"></a>如何：缩放元素
 此示例演示如何使用<xref:System.Windows.Media.ScaleTransform>缩放元素。  
@@ -38,7 +38,8 @@ ms.locfileid: "57358608"
  有关完整示例，请参阅 [2D 转换示例](https://go.microsoft.com/fwlink/?LinkID=158252)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.ScaleTransform>
-- [转换概述](transforms-overview.md)
+- [变换概述](transforms-overview.md)
 - [帮助主题](transformations-how-to-topics.md)

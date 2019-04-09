@@ -1,18 +1,18 @@
 ---
-title: 如何：对控件应用 FocusVisualStyle
+title: 如何：向控件应用 FocusVisualStyle
 ms.date: 03/30/2017
 helpviewer_keywords:
 - properties [WPF], FocusVisualStyle
 - FocusVisualStyle property [WPF]
 ms.assetid: 363de99e-8ecc-438c-ac4a-f9147432ebd6
-ms.openlocfilehash: c4b379d3c57b6d0ae29952c23a35d7cc2cdf7f96
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 53d4984946143c15c4a2b71095529fb5ee7de4b1
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57366590"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59133544"
 ---
-# <a name="how-to-apply-a-focusvisualstyle-to-a-control"></a>如何：对控件应用 FocusVisualStyle
+# <a name="how-to-apply-a-focusvisualstyle-to-a-control"></a>如何：向控件应用 FocusVisualStyle
 此示例演示如何在资源中创建焦点视觉样式并将样式应用到控件时，使用<xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>属性。  
   
 ## <a name="example"></a>示例  
@@ -27,6 +27,7 @@ ms.locfileid: "57366590"
  焦点视觉样式应始终在主题或 UI，而不是使用另一个用于每个可获得焦点的元素。 有关详细信息，请参阅[的控件和 FocusVisualStyle 焦点设置样式](styling-for-focus-in-controls-and-focusvisualstyle.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>
 - [样式设置和模板化](../controls/styling-and-templating.md)
 - [为控件中的焦点设置样式以及 FocusVisualStyle](styling-for-focus-in-controls-and-focusvisualstyle.md)

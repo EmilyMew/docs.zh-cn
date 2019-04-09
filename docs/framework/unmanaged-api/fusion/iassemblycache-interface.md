@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 157cc9f5f520f376c0c055ab49b116bc7961f421
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 9fc5f3a3d5bc5699a596bcc648a7153190c130f0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54641065"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59075623"
 ---
 # <a name="iassemblycache-interface"></a>IAssemblyCache 接口
 合成技术表示全局程序集缓存中的供使用。  
@@ -41,8 +41,9 @@ ms.locfileid: "54641065"
   
  **标头：** Fusion.h  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [合成接口](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
 - [全局程序集缓存](../../../../docs/framework/app-domains/gac.md)

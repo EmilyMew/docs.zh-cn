@@ -8,12 +8,12 @@ helpviewer_keywords:
 - UIElements [WPF], binding adorners to
 - adorners [WPF], binding to specified UIElements
 ms.assetid: b2101611-a0ee-4137-bdb8-9b3673d2e6b9
-ms.openlocfilehash: 4943121aaf8ee6524be3fc9004eafee4fa92e527
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 54c9e6dfff2bbf7bfabde523b5d6ae5a623fe733
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57353915"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59194716"
 ---
 # <a name="how-to-bind-an-adorner-to-an-element"></a>如何：将装饰器绑定到元素
 此示例演示如何以编程方式将装饰器绑定到指定<xref:System.Windows.UIElement>。  
@@ -34,4 +34,5 @@ ms.locfileid: "57353915"
 >  目前不支持使用 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 将装饰器绑定到另一个元素。  
   
 ## <a name="see-also"></a>请参阅
+
 - [装饰器概述](adorners-overview.md)

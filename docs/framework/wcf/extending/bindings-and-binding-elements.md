@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - binding elements [WCF]
 ms.assetid: 765ff77b-7682-4ea3-90eb-e4d751e37379
-ms.openlocfilehash: ca013c939e3db2136ffa1504ae0eedd7b870d773
-ms.sourcegitcommit: 296183dbe35077b5c5e5e74d5fbe7f399bc507ee
+ms.openlocfilehash: 33ebb07e350dbbbdd324b442f52dfb6287322bd8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "50982823"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073840"
 ---
 # <a name="bindings-and-binding-elements"></a>绑定和绑定元素
 绑定是特殊的配置元素，名为的集合*绑定元素*、 其计算由服务运行时每当客户端或服务终结点构造。 绑定内绑定元素的类型和顺序确定了终结点的通道堆栈中协议和传输通道的选择和堆叠顺序。  
@@ -21,15 +21,14 @@ ms.locfileid: "50982823"
 ## <a name="extending-bindings-and-binding-elements"></a>扩展绑定和绑定元素  
  Windows Communication Foundation (WCF) 包含系统提供的绑定，涵盖范围广泛的方案。 (有关详细信息，请参阅[System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)。)可能有时间，但是，当您需要创建和使用不包含在 WCF 中的绑定时。 下面的方案需要创建新绑定。  
   
--   若要使用新的绑定元素（例如，新的传输协议、编码或协议绑定元素），你必须创建一个包含该绑定元素的新绑定。 例如，如果你为 UDP 传输协议添加了一个自定义 `UdpTransportBindingElement`，则需要创建一个新绑定来利用它。 有关执行此行为使用信息<xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType>类型，请参阅[自定义绑定](../../../../docs/framework/wcf/extending/custom-bindings.md)。  
+-   若要使用新的绑定元素（例如，新的传输协议、编码或协议绑定元素），您必须创建一个包含该绑定元素的新绑定。 例如，如果你为 UDP 传输协议添加了一个自定义 `UdpTransportBindingElement`，则需要创建一个新绑定来利用它。 有关执行此行为使用信息<xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType>类型，请参阅[自定义绑定](../../../../docs/framework/wcf/extending/custom-bindings.md)。  
   
--   以系统提供的绑定没有在公共属性上公开的方式配置现有绑定元素。 例如，必须创建一个新绑定以更改签名和加密操作的执行顺序。 有关执行此行为的信息，请参阅[如何： 自定义系统提供绑定](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md)。  
+-   以系统提供的绑定没有在公共属性上公开的方式配置现有绑定元素。 例如，必须创建一个新绑定以更改签名和加密操作的执行顺序。 有关执行此行为的信息，请参阅[如何：自定义系统提供的绑定](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md)。  
   
 -   建立仅公开特定配置选项的公司标准绑定。 例如，若要为你的公司创建不能禁用安全的 <xref:System.ServiceModel.WSHttpBinding> 变体，可以创建一个行为方式类似于 <xref:System.ServiceModel.WSHttpBinding> 但总是启用安全的新绑定。 有关详细信息，请参阅[创建用户定义绑定](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md)。  
   
 -   若要执行某种元数据自定义，通常可以配置或使用某个自定义绑定元素，但并非必须这样做。 有关向绑定和绑定元素提供元数据支持相关的详细信息，请参阅[配置和元数据支持](../../../../docs/framework/wcf/extending/configuration-and-metadata-support.md)。  
-  
-  
+
 ## <a name="channels-bindings-and-binding-elements"></a>通道、绑定和绑定元素  
  绑定和绑定元素是应用程序编程模型（包括属性和行为）与通道模型（包括工厂和侦听器、消息编码器以及传输协议和协议实现）之间的联系。 通常，实现绑定元素和绑定的目的是使通道能够被应用程序层使用。  
   
@@ -39,6 +38,6 @@ ms.locfileid: "50982823"
   
  传输通道和协议通道的主要要求是它们需要实现必需的通道接口。 若要创建有效的通道层，它们必须具有关联的工厂和侦听器，等等。 若要使用的 WCF 需要有关联的绑定元素中的通道实现派生自<xref:System.ServiceModel.Channels.BindingElement>每个通道和应派生自包括到配置文件的相关的绑定扩展元素<xref:System.ServiceModel.Configuration.BindingElementExtensionElement>.  
   
- 如前所述，可以将消息编码器、协议和传输通道实现的绑定元素堆叠起来，以形成一个通道堆栈，而用来将它们组织成一个有序集的机制就是绑定。 绑定和绑定元素将应用程序编程模型与通道模型联系起来。 你可以在代码中直接使用自己的通道实现，但是除非将编码器、传输和协议实现为绑定元素，否则无法在服务层编程模型中使用它们。  
+ 如前所述，可以将消息编码器、协议和传输通道实现的绑定元素堆叠起来，以形成一个通道堆栈，而用来将它们组织成一个有序集的机制就是绑定。 绑定和绑定元素将应用程序编程模型与通道模型联系起来。 您可以在代码中直接使用自己的通道实现，但是除非将编码器、传输和协议实现为绑定元素，否则无法在服务层编程模型中使用它们。  
   
  有关开发通道及其绑定元素的详细信息，请参阅[扩展通道层](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md)。

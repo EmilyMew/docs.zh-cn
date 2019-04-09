@@ -4,6 +4,12 @@ ms.date: 03/30/2017
 ms.assetid: 7e8cc303-6e77-4116-aa8b-7ea297a3a467
 author: rpetrusha
 ms.author: ronpet
+ms.openlocfilehash: 408219307015d5c39cb581b3884ed9810f4c0566
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59216339"
 ---
 # <a name="authenticode-unmanaged-api-reference"></a>Authenticode（非托管 API 参考）
 支持验证码 XrML 许可证创建和验证模块。  
@@ -37,4 +43,5 @@ ms.author: ronpet
  定义验证码时间戳签署人的信息。  
   
 ## <a name="see-also"></a>请参阅
+
 - [非托管 API 参考](../../../../docs/framework/unmanaged-api/index.md)

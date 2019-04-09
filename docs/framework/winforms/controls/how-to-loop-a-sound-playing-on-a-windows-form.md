@@ -1,5 +1,5 @@
 ---
-title: 如何：循环上的 Windows 窗体播放声音
+title: 如何：在 Windows 窗体上循环播放声音
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - sounds [Windows Forms], looping
 - playing sounds [Windows Forms], looping
 ms.assetid: ea95dd46-10a3-46c0-8263-4b205f00df7f
-ms.openlocfilehash: 43fcc472960cc3f2432d3872160d9ace4c617836
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: a74acbbbcb5646a35de54a6000a0feae30f145a5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57719268"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59188508"
 ---
-# <a name="how-to-loop-a-sound-playing-on-a-windows-form"></a>如何：循环上的 Windows 窗体播放声音
+# <a name="how-to-loop-a-sound-playing-on-a-windows-form"></a>如何：在 Windows 窗体上循环播放声音
 以下代码示例重复播放声音。 当 `stopPlayingButton_Click` 事件处理程序中的代码运行时，当前播放的所有声音都将停止。 如果未播放任何声音，则无任何操作。  
   
 ## <a name="example"></a>示例  
@@ -54,6 +54,7 @@ ms.locfileid: "57719268"
  不要根据文件的名称来判断文件的内容。 例如，文件 Form1.vb 可能不是 Visual Basic 源文件。 在应用程序中使用输入的数据之前，需验证所有的输入内容。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Media.SoundPlayer.PlayLooping%2A>
 - [如何：从 Windows 窗体播放声音](how-to-play-a-sound-from-a-windows-form.md)
 - [SoundPlayer 类概述](soundplayer-class-overview.md)

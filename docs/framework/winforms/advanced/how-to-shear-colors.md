@@ -8,12 +8,12 @@ helpviewer_keywords:
 - colors [Windows Forms], transforming with color matrices
 - colors [Windows Forms], shearing
 ms.assetid: 0a424171-5b8b-45c4-afef-e9720a6c3e22
-ms.openlocfilehash: bb5f9043ea5bdd25e984d73d3640c80f599714e6
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.openlocfilehash: bf645cf88c4905cd5cf47c2a6c7af088fa428c8a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58826387"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59076235"
 ---
 # <a name="how-to-shear-colors"></a>如何：切变颜色
 修剪每增加或减少到另一个颜色组件比例颜色组件。 例如，考虑红色组件加一半的蓝色组件值的转换。 在这种转换 （0.2，0.5，1） 的颜色将变为 （0.7，0.5，1）。 新的红色分量为 0.2 + (1/2)(1) = 0.7。  
@@ -38,9 +38,10 @@ ms.locfileid: "58826387"
  [!code-vb[System.Drawing.Misc3#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#9)]  
   
 ## <a name="compiling-the-code"></a>编译代码  
- 前面的示例专用于 Windows 窗体，它需要 <xref:System.Windows.Forms.PaintEventArgs>`e`，后者是 <xref:System.Windows.Forms.Control.Paint> 事件处理程序的参数。 替换为`ColorBars.bmp`用的映像名称和路径在您的系统上有效。  
+ 前面的示例专用于 Windows 窗体，并且它需要<xref:System.Windows.Forms.PaintEventArgs>`e`，这是一个参数的<xref:System.Windows.Forms.Control.Paint>事件处理程序。 替换为`ColorBars.bmp`用的映像名称和路径在您的系统上有效。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Imaging.ColorMatrix>
 - <xref:System.Drawing.Imaging.ImageAttributes>
 - [Windows 窗体中的图形和绘制](graphics-and-drawing-in-windows-forms.md)

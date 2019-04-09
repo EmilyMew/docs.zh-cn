@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - Data Contract
 ms.assetid: b124e9e0-cb73-4ae0-b9c3-e6cdf5eced98
-ms.openlocfilehash: ca9d93dc6bfe9c6f01130b00d0a6ad07efcc7bd8
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.openlocfilehash: f6b3f7a3097d6b82e428f373963f713a8ffa4a68
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58829338"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59074425"
 ---
 # <a name="basic-data-contract"></a>基本数据协定
 本示例演示如何实现数据协定。 数据协定允许您在服务中传入和传出结构化数据。 此示例基于[Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)但使用复数代替基本数字类型。  
@@ -146,4 +146,3 @@ Press <ENTER> to terminate client.
 >  如果此目录不存在，请转到[Windows Communication Foundation (WCF) 和.NET Framework 4 的 Windows Workflow Foundation (WF) 示例](https://go.microsoft.com/fwlink/?LinkId=150780)若要下载所有 Windows Communication Foundation (WCF) 和[!INCLUDE[wf1](../../../../includes/wf1-md.md)]示例。 此示例位于以下目录：  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\Basic`  
-  

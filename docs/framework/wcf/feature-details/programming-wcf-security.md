@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - message security [WCF], programming overview
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10
-ms.openlocfilehash: 2b49031b0001ddba01a888806206360c1cbdbacb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 41157d12f1133878e133895ed0f803bc7018af51
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54699462"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59087802"
 ---
 # <a name="programming-wcf-security"></a>WCF 安全编程
 本主题介绍用于创建安全的 Windows Communication Foundation (WCF) 应用程序的基本编程任务。 本主题介绍身份验证、 保密性和完整性，统称为*传输安全*。 本主题不讨论授权 （资源或服务的访问控制）;有关授权的信息，请参阅[授权](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)。  
@@ -25,7 +25,7 @@ ms.locfileid: "54699462"
 ## <a name="setting-the-security-mode"></a>设置安全模式  
  下面解释了使用 WCF 中的安全模式进行编程的常规步骤：  
   
-1.  选择一个适合于应用程序需求的预定义绑定。 有关绑定选择的列表，请参阅[System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)。 默认情况下，几乎每个绑定都启用了安全。 是一个例外<xref:System.ServiceModel.BasicHttpBinding>类 (使用配置中， [ \<basicHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md))。  
+1.  选择一个适合于应用程序要求的预定义绑定。 有关绑定选择的列表，请参阅[System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)。 默认情况下，几乎每个绑定都启用了安全。 是一个例外<xref:System.ServiceModel.BasicHttpBinding>类 (使用配置中， [ \<basicHttpBinding >](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md))。  
   
      所选的绑定确定了传输协议。 例如，<xref:System.ServiceModel.WSHttpBinding> 使用 HTTP 传输协议；而 <xref:System.ServiceModel.NetTcpBinding> 使用 TCP 传输协议。  
   
@@ -102,5 +102,6 @@ ms.locfileid: "54699462"
  [!code-vb[c_TcpClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_tcpclient/vb/source.vb#1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [基本 WCF 编程](../../../../docs/framework/wcf/basic-wcf-programming.md)
 - [常用安全方案](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)

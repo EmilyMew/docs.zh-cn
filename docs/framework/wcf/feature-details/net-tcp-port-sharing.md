@@ -5,12 +5,12 @@ helpviewer_keywords:
 - port activation [WCF]
 - port sharing [WCF]
 ms.assetid: f13692ee-a179-4439-ae72-50db9534eded
-ms.openlocfilehash: e191dc62368fc9c16bd58efd30dd1a3769d2bb88
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b04266b15f786e3a5a93ac1e9fff1754c397ccd4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54540307"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073684"
 ---
 # <a name="nettcp-port-sharing"></a>Net.TCP 端口共享
 Windows Communication Foundation (WCF) 提供高性能通信的新的基于 TCP 的网络协议 (net.tcp://)。 WCF 还引入了新的系统组件使得 net.tcp 端口可以在多个用户进程之间共享 Net.TCP 端口共享服务。  
@@ -49,7 +49,8 @@ Windows Communication Foundation (WCF) 提供高性能通信的新的基于 TCP 
  虽然 Net.TCP Port Sharing Service 在应用程序和网络之间提供了一个处理层，但是仍应对使用端口共享的应用程序进行保护，就好像这些应用程序直接在网络上进行侦听一样。 具体来说，使用端口共享的应用程序应评估运行它们所依据的进程特权。 请考虑使用内置网络服务帐户运行应用程序，该内置服务帐户将以网络通信要求的最小进程特权集运行。  
   
 ## <a name="see-also"></a>请参阅
+
 - [配置 Net.TCP 端口共享服务](../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)
-- [承载](../../../../docs/framework/wcf/feature-details/hosting.md)
+- [宿主](../../../../docs/framework/wcf/feature-details/hosting.md)
 - [如何：配置 WCF 服务以使用端口共享](../../../../docs/framework/wcf/feature-details/how-to-configure-a-wcf-service-to-use-port-sharing.md)
 - [如何：启用 Net.TCP 端口共享服务](../../../../docs/framework/wcf/feature-details/how-to-enable-the-net-tcp-port-sharing-service.md)

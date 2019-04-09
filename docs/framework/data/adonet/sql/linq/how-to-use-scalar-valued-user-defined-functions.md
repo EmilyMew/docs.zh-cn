@@ -1,18 +1,18 @@
 ---
-title: 如何：使用标量值用户定义函数
+title: 如何：使用标量值用户定义的函数
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 714e252f-c053-4bbb-b1f3-924111cd4d97
-ms.openlocfilehash: 33c6ae89184b90ba69cc9c3c01f0b1ec9d7ff1cb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ffb24468c81cb4ec9f41645f8888c2c4ba021609
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54661680"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59127155"
 ---
-# <a name="how-to-use-scalar-valued-user-defined-functions"></a>如何：使用标量值用户定义函数
+# <a name="how-to-use-scalar-valued-user-defined-functions"></a>如何：使用标量值用户定义的函数
 您可以通过使用 <xref:System.Data.Linq.Mapping.FunctionAttribute> 属性将类中定义的客户端方法映射到用户定义的函数。 请注意，方法体会构造一个捕获方法调用意向的表达式，并将该表达式传递给 <xref:System.Data.Linq.DataContext> 进行转换和执行。  
   
 > [!NOTE]
@@ -32,10 +32,11 @@ BEGIN
 END  
 ```  
   
- 你可以为此代码映射一个客户端方法，例如，可以映射下面这个方法：  
+ 您可以为此代码映射一个客户端方法，例如，可以映射下面这个方法：  
   
  [!code-csharp[DLinqUDFS#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqUDFS/cs/northwind-tfunc.cs#3)]
  [!code-vb[DLinqUDFS#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqUDFS/vb/northwind-tfunc.vb#3)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [用户定义的函数](../../../../../../docs/framework/data/adonet/sql/linq/user-defined-functions.md)

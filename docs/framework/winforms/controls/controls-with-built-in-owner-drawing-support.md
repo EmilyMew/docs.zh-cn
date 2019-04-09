@@ -8,12 +8,12 @@ helpviewer_keywords:
 - custom drawing
 - owner drawing
 ms.assetid: 3823d01e-9610-43e6-864d-99f9b7c2b351
-ms.openlocfilehash: 50f180f2f3fe825f617ae441906a7414a6b8bced
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 1807170b2f5df2333ec3b271a11f9b929c1e7993
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57707348"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59087178"
 ---
 # <a name="controls-with-built-in-owner-drawing-support"></a>具有内置所有者描述支持的控件
 Windows 窗体中的所有者描述（也称为自定义绘图）是一种更改特定控件的可视外观的技术。  
@@ -86,7 +86,7 @@ Windows 窗体中的所有者描述（也称为自定义绘图）是一种更改
   
 -   <xref:System.Windows.Forms.ComboBox.DrawItem?displayProperty=nameWithType>  
   
--   [如何：在组合框控件中创建大小可变的文本](how-to-create-variable-sized-text-in-a-combobox-control.md)  
+-   [如何：在 ComboBox 控件中创建大小可变的文本](how-to-create-variable-sized-text-in-a-combobox-control.md)  
   
 ### <a name="menuitem-component"></a>MenuItem 组件  
  <xref:System.Windows.Forms.MenuItem>组件代表中的单个菜单项<xref:System.Windows.Forms.MainMenu>或<xref:System.Windows.Forms.ContextMenu>组件。  
@@ -174,7 +174,7 @@ Windows 窗体中的所有者描述（也称为自定义绘图）是一种更改
   
 -   [如何：自定义 Windows 窗体 DataGridView 控件中单元格的外观](customize-the-appearance-of-cells-in-the-datagrid.md)  
   
--   [如何：自定义 Windows 窗体 DataGridView 控件中的行的外观](customize-the-appearance-of-rows-in-the-datagrid.md)  
+-   [如何：自定义 Windows 窗体 DataGridView 控件中行的外观](customize-the-appearance-of-rows-in-the-datagrid.md)  
   
 ### <a name="toolstrip-control"></a>ToolStrip 控件  
  <xref:System.Windows.Forms.ToolStrip> 和派生的控件使您能够自定义其外观的任何方面。  
@@ -185,9 +185,10 @@ Windows 窗体中的所有者描述（也称为自定义绘图）是一种更改
   
 -   <xref:System.Windows.Forms.ToolStripRenderer>  
   
--   [如何：创建并设置自定义呈现器在 Windows 窗体的 ToolStrip 控件](create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)  
+-   [如何：在 Windows 窗体中为 ToolStrip 控件创建和设置自定义呈现器](create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md)  
   
 -   [如何：自定义绘制 ToolStrip 控件](how-to-custom-draw-a-toolstrip-control.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 Windows 窗体上使用的控件](controls-to-use-on-windows-forms.md)

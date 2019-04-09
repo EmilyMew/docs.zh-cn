@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows Forms, controls by function
 - Windows Forms controls, list of
 ms.assetid: 5e65a6c3-5d6f-480d-beb8-b28f865f07e3
-ms.openlocfilehash: bdfb2d5a3ce45deb471aaa465c35b82e738a128b
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 3a82642c985b7ec1cee885cdda7b054adbe3dfee
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57717916"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115474"
 ---
 # <a name="windows-forms-controls-by-function"></a>根据功能列出的 Windows 窗体控件
 Windows 窗体还提供控件和组件执行的许多功能。 下表列出了 Windows 窗体控件和组件根据常规函数。 此外，多个控件存在的具有相同的功能时，与它所取代的控件中还要注意： 列出推荐的控件。 在随后的一个单独的表中，使用它们的建议替换项列出被取代的控件。  
@@ -23,7 +23,7 @@ Windows 窗体还提供控件和组件执行的许多功能。 下表列出了 W
   
 |函数|控件|描述|  
 |--------------|-------------|-----------------|  
-|数据显示|<xref:System.Windows.Forms.DataGridView> 控件|<xref:System.Windows.Forms.DataGridView>控件提供可自定义的表，用于显示数据。 <xref:System.Windows.Forms.DataGridView>类允许自定义的单元格、 行、 列和边框。 **注意：**<xref:System.Windows.Forms.DataGridView>控件提供了许多的基本和高级功能，中缺少<xref:System.Windows.Forms.DataGrid>控件。 有关详细信息，请参阅[差异 Windows 窗体 DataGridView 控件与之间的 DataGrid 控件](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)|  
+|数据显示|<xref:System.Windows.Forms.DataGridView> 控件|<xref:System.Windows.Forms.DataGridView>控件提供可自定义的表，用于显示数据。 <xref:System.Windows.Forms.DataGridView>类允许自定义的单元格、 行、 列和边框。 **注意：** <xref:System.Windows.Forms.DataGridView>控件提供了许多的基本和高级功能，中缺少<xref:System.Windows.Forms.DataGrid>控件。 有关详细信息，请参阅[差异 Windows 窗体 DataGridView 控件与之间的 DataGrid 控件](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)|  
 |数据绑定和导航|<xref:System.Windows.Forms.BindingSource> 组件|当前项管理、 更改通知和其他服务，从而简化了将控件绑定到数据窗体上。|  
 ||<xref:System.Windows.Forms.BindingNavigator> 控件|提供一个工具栏类型接口用于导航和操作窗体上的数据。|  
 |文本编辑|<xref:System.Windows.Forms.TextBox> 控件|显示在设计时，可以在运行时，由用户编辑或以编程方式更改输入的文本。|  
@@ -56,18 +56,18 @@ Windows 窗体还提供控件和组件执行的许多功能。 下表列出了 W
 ||<xref:System.Windows.Forms.PrintPreviewDialog> 控件|显示一个对话框，显示如何控制<xref:System.Drawing.Printing.PrintDocument>打印时，将显示组件。|  
 ||<xref:System.Windows.Forms.FolderBrowserDialog> 控件|显示一个对话框，允许用户浏览、 创建，并最终选择的文件夹|  
 ||<xref:System.Windows.Forms.SaveFileDialog> 控件|显示一个对话框，允许用户保存文件。|  
-|菜单控件|<xref:System.Windows.Forms.MenuStrip> 控件|创建自定义菜单。 **注意：**<xref:System.Windows.Forms.MenuStrip>旨在替换<xref:System.Windows.Forms.MainMenu>控件。|  
-||<xref:System.Windows.Forms.ContextMenuStrip> 控件|创建自定义上下文菜单。 **注意：**<xref:System.Windows.Forms.ContextMenuStrip>旨在替换<xref:System.Windows.Forms.ContextMenu>控件。|  
+|菜单控件|<xref:System.Windows.Forms.MenuStrip> 控件|创建自定义菜单。 **注意：** <xref:System.Windows.Forms.MenuStrip>旨在替换<xref:System.Windows.Forms.MainMenu>控件。|  
+||<xref:System.Windows.Forms.ContextMenuStrip> 控件|创建自定义上下文菜单。 **注意：** <xref:System.Windows.Forms.ContextMenuStrip>旨在替换<xref:System.Windows.Forms.ContextMenu>控件。|  
 |命令|<xref:System.Windows.Forms.Button> 控件|启动、 停止或中断进程。|  
 ||<xref:System.Windows.Forms.LinkLabel> 控件|为 Web 样式的链接显示文本，并触发事件时在用户单击特殊文本。 该文本通常是指向另一个窗口或网站的链接。|  
 ||<xref:System.Windows.Forms.NotifyIcon> 控件|表示在后台运行的应用程序在任务栏的状态通知区域中显示的图标。|  
-||<xref:System.Windows.Forms.ToolStrip> 控件|创建可包含 Microsoft Windows XP、 Microsoft Office、 Microsoft Internet Explorer 中或自定义外观和感觉，与或而无需主题，和对溢出数据和运行时项重新排序功能的支持的工具栏。 **注意：**<xref:System.Windows.Forms.ToolStrip>控件旨在替换<xref:System.Windows.Forms.ToolBar>控件。|  
+||<xref:System.Windows.Forms.ToolStrip> 控件|创建可包含 Microsoft Windows XP、 Microsoft Office、 Microsoft Internet Explorer 中或自定义外观和感觉，与或而无需主题，和对溢出数据和运行时项重新排序功能的支持的工具栏。 **注意：** <xref:System.Windows.Forms.ToolStrip>控件旨在替换<xref:System.Windows.Forms.ToolBar>控件。|  
 |用户帮助|<xref:System.Windows.Forms.HelpProvider> 组件|为控件提供弹出帮助或联机帮助。|  
 ||<xref:System.Windows.Forms.ToolTip> 组件|提供一个弹出窗口，当用户将指针停留在控件上时显示控件的用途的简要说明。|  
 |将其他控件分组|<xref:System.Windows.Forms.Panel> 控件|一组未标记，可滚动的帧上的控件。|  
 ||<xref:System.Windows.Forms.GroupBox> 控件|组标记，非滚动框架上的控件 （如单选按钮）。|  
 ||<xref:System.Windows.Forms.TabControl> 控件|提供了用于组织和访问选项卡式的页面分组对象有效。|  
-||<xref:System.Windows.Forms.SplitContainer> 控件|提供由可移动条分隔的两个面板。 **注意：**<xref:System.Windows.Forms.SplitContainer>控件旨在替换<xref:System.Windows.Forms.Splitter>控件。|  
+||<xref:System.Windows.Forms.SplitContainer> 控件|提供由可移动条分隔的两个面板。 **注意：** <xref:System.Windows.Forms.SplitContainer>控件旨在替换<xref:System.Windows.Forms.Splitter>控件。|  
 ||<xref:System.Windows.Forms.TableLayoutPanel> 控件|表示一个面板，它可以在一个由行和列组成的网格中对其内容进行动态布局。|  
 ||<xref:System.Windows.Forms.FlowLayoutPanel> 控件|表示以水平或垂直方式动态布置其内容的面板。|  
 |音频|<xref:System.Media.SoundPlayer> 控件|播放声音中.wav 格式的文件。 可以加载或以异步方式播放声音。|  
@@ -85,5 +85,6 @@ Windows 窗体还提供控件和组件执行的许多功能。 下表列出了 W
 |窗体布局|<xref:System.Windows.Forms.Splitter>|<xref:System.Windows.Forms.SplitContainer>|  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 Windows 窗体上使用的控件](controls-to-use-on-windows-forms.md)
 - [使用 .NET Framework 开发自定义 Windows 窗体控件](developing-custom-windows-forms-controls.md)

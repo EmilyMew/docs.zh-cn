@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: a9b14db1-d3a9-4150-a767-dcf3aea0071a
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 43fe2c3bd7d4e1c90fc52997a123d5dbbb297a02
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 01b2cf06a5ab921f5ae89da4856e8164b6f57db5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54591336"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098599"
 ---
 # <a name="loadfromcontext-mda"></a>loadFromContext MDA
 如果程序集加载到 `LoadFrom` 上下文，将激活 `loadFromContext` 托管调试助手 (MDA)。 这种情况可能由于调用 <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> 或其他类似方法而发生。  
@@ -39,7 +39,7 @@ ms.locfileid: "54591336"
 ## <a name="effect-on-the-runtime"></a>对运行时的影响  
  MDA 对 CLR 没有任何影响。 它报告由于加载请求而使用的上下文。  
   
-## <a name="output"></a>输出  
+## <a name="output"></a>Output  
  MDA 报告程序集已加载到 `LoadFrom` 上下文。 它指定程序集的简单名称和路径。 它还建议避免使用 `LoadFrom` 上下文来减轻风险。  
   
 ## <a name="configuration"></a>配置  
@@ -73,4 +73,5 @@ namespace ConsoleApplication1
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用托管调试助手诊断错误](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

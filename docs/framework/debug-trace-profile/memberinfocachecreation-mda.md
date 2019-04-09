@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 5abdad23-1335-4744-8acb-934002c0b6fe
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 028ff1048813ccbc845d5ad3e7f522b492348f87
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 90f59f4d593a8aa077a6710cc0f5c1747ac1a3ad
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54651027"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59103761"
 ---
 # <a name="memberinfocachecreation-mda"></a>memberInfoCacheCreation MDA
 创建 <xref:System.Reflection.MemberInfo> 缓存时，将激活 `memberInfoCacheCreation` 托管调试助手 (MDA)。 这一点强烈表明程序正在使用资源昂贵的反射功能。  
@@ -36,7 +36,7 @@ ms.locfileid: "54651027"
 ## <a name="effect-on-the-runtime"></a>对运行时的影响  
  创建的每个 <xref:System.Reflection.MemberInfo> 缓存都可激活此 MDA。 性能影响可以忽略不计。  
   
-## <a name="output"></a>输出  
+## <a name="output"></a>Output  
  该 MDA 输出一条消息，指示已创建 <xref:System.Reflection.MemberInfo> 缓存。 使用调试程序器获取堆栈跟踪，堆栈跟踪显示程序正在使用反射的位置。  
   
 ## <a name="configuration"></a>配置  
@@ -65,5 +65,6 @@ public class Exe
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Reflection.MemberInfo>
 - [使用托管调试助手诊断错误](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

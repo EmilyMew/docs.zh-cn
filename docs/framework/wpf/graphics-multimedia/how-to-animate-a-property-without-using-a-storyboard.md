@@ -1,5 +1,5 @@
 ---
-title: 如何：在不使用演示图板的情况下对属性进行动画处理
+title: 如何：在不使用情节提要的情况下对属性进行动画处理
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - local animation [WPF]
 - animation [WPF], non-Storyboard (local)
 ms.assetid: d411db70-4df7-487d-82bc-95a7c1b2e7f8
-ms.openlocfilehash: b76afeb0187065ff07c832363d3a52896aa36822
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 93609cdeb4d879cbec0f90096e4fa2c131a2ec5e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57371155"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59091702"
 ---
-# <a name="how-to-animate-a-property-without-using-a-storyboard"></a>如何：在不使用演示图板的情况下对属性进行动画处理
+# <a name="how-to-animate-a-property-without-using-a-storyboard"></a>如何：在不使用情节提要的情况下对属性进行动画处理
 此示例演示一种方法将动画应用于属性，而无需使用<xref:System.Windows.Media.Animation.Storyboard>。  
   
 > [!NOTE]
@@ -37,6 +37,7 @@ ms.locfileid: "57371155"
  若要进行动画处理，而无需使用其他方式<xref:System.Windows.Media.Animation.Storyboard>对象; 有关详细信息，请参阅[属性动画技术概述](property-animation-techniques-overview.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.Animation.AnimationTimeline>
 - <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A>
 - <xref:System.Windows.Media.Animation>

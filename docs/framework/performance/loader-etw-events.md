@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: cb403cc6-56f8-4609-b467-cdfa09f07909
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 3878821840adc272829f57fbac090e958619f3fb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 87ec70b2b27c8886ac9b567498d75f9294437bed
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54578999"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59141526"
 ---
 # <a name="loader-etw-events"></a>加载程序 ETW 事件
 <a name="top"></a> 这些事件将收集与加载和卸载应用程序域、程序集和模块相关的信息。  
@@ -35,7 +35,7 @@ ms.locfileid: "54578999"
 ## <a name="application-domain-events"></a>应用程序域事件  
  下表显示了关键字和级别。  
   
-|引发事件的关键字|事件|级别|  
+|引发事件的关键字|Event|级别|  
 |-----------------------------------|-----------|-----------|  
 |`LoaderKeyword` (0x8)|`AppDomainLoad_V1` 和 `AppDomainUnLoad_V1`|信息性 (4)|  
 |`LoaderRundownKeyword` (0x8) +<br /><br /> `StartRundownKeyword`|`AppDomainDCStart_V1`|信息性 (4)|  
@@ -45,7 +45,7 @@ ms.locfileid: "54578999"
   
 |Event|事件 ID|描述|  
 |-----------|--------------|-----------------|  
-|`AppDomainLoad_V1` （为所有应用程序域记录）|156|每当在进程生存期内创建应用程序域时引发。|  
+|`AppDomainLoad_V1` （所有应用程序域记录）|156|每当在进程生存期内创建应用程序域时引发。|  
 |`AppDomainUnLoad_V1`|157|每当在进程生存期内销毁应用程序域时引发。|  
 |`AppDomainDCStart_V1`|157|在启动断开期间枚举应用程序域。|  
 |`AppDomainDCEnd_V1`|158|在结束断开期间枚举应用程序域。|  
@@ -66,7 +66,7 @@ ms.locfileid: "54578999"
 ## <a name="clr-loader-assembly-events"></a>CLR 加载程序程序集事件  
  下表显示了关键字和级别。  
   
-|引发事件的关键字|事件|级别|  
+|引发事件的关键字|Event|级别|  
 |-----------------------------------|-----------|-----------|  
 |`LoaderKeyword` (0x8)|`AssemblyLoad` 和 `AssemblyUnload`|信息性 (4)|  
 |`LoaderRundownKeyword` (0x8) +<br /><br /> `StartRundownKeyword`|`AssemblyDCStart`|信息性 (4)|  
@@ -98,7 +98,7 @@ ms.locfileid: "54578999"
 ## <a name="module-events"></a>模块事件  
  下表显示了关键字和级别。  
   
-|引发事件的关键字|事件|级别|  
+|引发事件的关键字|Event|级别|  
 |-----------------------------------|-----------|-----------|  
 |`LoaderKeyword` (0x8)|`ModuleLoad_V2` 和 `ModuleUnload_V2`|信息性 (4)|  
 |`LoaderRundownKeyword` (0x8) +<br /><br /> `StartRundownKeyword`|`ModuleDCStart_V2`|信息性 (4)|  
@@ -146,7 +146,7 @@ ms.locfileid: "54578999"
 ## <a name="clr-domain-module-events"></a>CLR 域模块事件  
  下表显示了关键字和级别。  
   
-|引发事件的关键字|事件|级别|  
+|引发事件的关键字|Event|级别|  
 |-----------------------------------|-----------|-----------|  
 |`LoaderKeyword` (0x8)|`DomainModuleLoad_V1`|信息性 (4)|  
 |`LoaderRundownKeyword` (0x8) +<br /><br /> `StartRundownKeyword`|`DomainModuleDCStart_V1`|信息性 (4)|  
@@ -179,7 +179,7 @@ ms.locfileid: "54578999"
 ## <a name="module-range-events"></a>模块范围事件  
  下表显示了关键字和级别。  
   
-|引发事件的关键字|事件|级别|  
+|引发事件的关键字|Event|级别|  
 |-----------------------------------|-----------|-----------|  
 |`PerfTrackKeyWord`)|`ModuleRange`|信息性 (4)|  
 |`PerfTrackKeyWord`|`ModuleRangeDCStart`|信息性 (4)|  
@@ -213,4 +213,5 @@ ms.locfileid: "54578999"
  在任何大于或等于 4 的 ETW 级别下引发模块范围事件，并将其归类为信息性事件。  
   
 ## <a name="see-also"></a>请参阅
+
 - [CLR ETW 事件](../../../docs/framework/performance/clr-etw-events.md)

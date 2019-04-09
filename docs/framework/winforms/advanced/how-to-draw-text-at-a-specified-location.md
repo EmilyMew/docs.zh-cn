@@ -10,12 +10,12 @@ helpviewer_keywords:
 - drawing text [Windows Forms], specified locations [Windows Forms]
 - Windows Forms, drawing text at a specified location
 ms.assetid: 60816423-1c38-465e-980d-2c2b64d74086
-ms.openlocfilehash: 8327043f9afdec7e2d84e564801342d7d7cbef9d
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: 3f54da182e6cc1489eadba6fa1d3cef683c3ba51
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58412235"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59075504"
 ---
 # <a name="how-to-draw-text-at-a-specified-location"></a>如何：在指定位置绘制文本
 在执行自定义绘图时，可以从指定位置开始的一个水平行中绘制文本。 可以通过使用这种方式绘制文本<xref:System.Drawing.Graphics.DrawString%2A>重载的方法<xref:System.Drawing.Graphics>采用类<xref:System.Drawing.Point>或<xref:System.Drawing.PointF>参数。 <xref:System.Drawing.Graphics.DrawString%2A>方法还需要<xref:System.Drawing.Brush>和 <xref:System.Drawing.Font>  
@@ -46,6 +46,7 @@ ms.locfileid: "58412235"
 -   <xref:System.Windows.Forms.PaintEventArgs>  `e`这是一个参数的<xref:System.Windows.Forms.PaintEventHandler>。  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：用 GDI 绘制文本](how-to-draw-text-with-gdi.md)
 - [使用字体和文本](using-fonts-and-text.md)
 - [如何：构造字体系列和字体](how-to-construct-font-families-and-fonts.md)

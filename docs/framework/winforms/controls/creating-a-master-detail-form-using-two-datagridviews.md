@@ -10,14 +10,14 @@ helpviewer_keywords:
 - master-details lists [Windows Forms], displaying on Windows Forms
 - walkthroughs [Windows Forms], DataGridView control
 ms.assetid: c5fa29e8-47f7-4691-829b-0e697a691f36
-ms.openlocfilehash: 80ec480b5d45a338c1f15796ae82015d6da24fc9
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 66807287dcaffae4bd310040312e0f56e8fda5d0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57705527"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59078871"
 ---
-# <a name="walkthrough-creating-a-masterdetail-form-using-two-windows-forms-datagridview-controls"></a>演练：创建母版/详细信息窗体使用两个 Windows 窗体 DataGridView 控件
+# <a name="walkthrough-creating-a-masterdetail-form-using-two-windows-forms-datagridview-controls"></a>演练：使用两个 Windows 窗体 DataGridView 控件创建一个主/详细信息窗体
 使用的最常见方案之一<xref:System.Windows.Forms.DataGridView>控件是*母版/详细信息*窗体，其中显示了两个数据库表之间的父/子关系。 在主表中选择行，则会导致要使用的相应子数据更新的详细信息表。  
   
  实现母版/详细信息窗体是使用之间的交互，可以轻松<xref:System.Windows.Forms.DataGridView>控件和<xref:System.Windows.Forms.BindingSource>组件。 在本演练中，您将生成窗体使用两个<xref:System.Windows.Forms.DataGridView>控件和两个<xref:System.Windows.Forms.BindingSource>组件。 该窗体将显示两个相关的 Northwind SQL Server 示例数据库中的表：`Customers`和`Orders`。 完成后，必须显示在主数据库中的所有客户的窗体<xref:System.Windows.Forms.DataGridView>和详细信息中所选客户的所有订单<xref:System.Windows.Forms.DataGridView>。  
@@ -76,8 +76,9 @@ ms.locfileid: "57705527"
 -   自定义单元格的外观。 有关详细信息，请参阅[如何：自定义 Windows 窗体 DataGridView 控件中单元格的外观](customize-the-appearance-of-cells-in-the-datagrid.md)和[如何：设置 Windows 窗体 DataGridView 控件的默认单元格样式](how-to-set-default-cell-styles-for-the-windows-forms-datagridview-control.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.BindingSource>
 - [在 Windows 窗体 DataGridView 控件中显示数据](displaying-data-in-the-windows-forms-datagridview-control.md)
-- [如何：创建使用两个 Windows 窗体 DataGridView 控件的母版/详细信息窗体](create-a-master-detail-form-using-two-datagridviews.md)
+- [如何：使用两个 Windows 窗体 DataGridView 控件创建一个主/详细信息窗体](create-a-master-detail-form-using-two-datagridviews.md)
 - [保护连接信息](../../data/adonet/protecting-connection-information.md)

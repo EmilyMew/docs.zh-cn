@@ -1,5 +1,5 @@
 ---
-title: 如何：在组合框控件中创建大小可变的文本
+title: 如何：在 ComboBox 控件中创建大小可变的文本
 ms.date: 03/30/2017
 dev_langs:
 - vb
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - ComboBox control [Windows Forms], examples [C#]
 - ComboBox control [Windows Forms], drawing custom text
 ms.assetid: ce39b9ea-e626-49fe-bd5a-f567f6d157df
-ms.openlocfilehash: b55a6b66416aa79427035abdfbc19d1b0e21d94e
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 9155893b3d47707e0e55ee33e30d7998654f9e93
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57707785"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59085605"
 ---
-# <a name="how-to-create-variable-sized-text-in-a-combobox-control"></a>如何：在组合框控件中创建大小可变的文本
+# <a name="how-to-create-variable-sized-text-in-a-combobox-control"></a>如何：在 ComboBox 控件中创建大小可变的文本
 此示例演示自定义绘图中的文本<xref:System.Windows.Forms.ComboBox>控件。 在项符合特定条件时，它是绘制中的较大图标，打开红色。  
   
 ## <a name="example"></a>示例  
@@ -68,6 +68,7 @@ End Sub
 -   对 <xref:System.Windows.Forms?displayProperty=nameWithType> 和 <xref:System.Drawing?displayProperty=nameWithType> 命名空间的引用。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.ComboBox.DrawItem>
 - <xref:System.Windows.Forms.DrawItemEventArgs>
 - <xref:System.Windows.Forms.ComboBox.MeasureItem>

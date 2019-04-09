@@ -13,12 +13,12 @@ helpviewer_keywords:
 - decoding image formats [WPF]
 - TIFF decoding [WPF]
 ms.assetid: 1dfe3209-fc73-40e6-ad1c-71c1c58b3364
-ms.openlocfilehash: e89f39dedcc210aaa6917b4b964d1944673047b5
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 0b2b638d3aa81e48a1378794435d59da1b323aa2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57356671"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59107427"
 ---
 # <a name="how-to-encode-and-decode-a-tiff-image"></a>如何：编码和解码 TIFF 图像
 以下示例演示如何解码和编码[!INCLUDE[TLA#tla_tiff](../../../../includes/tlasharptla-tiff-md.md)]映像使用特定于<xref:System.Windows.Media.Imaging.TiffBitmapDecoder>和<xref:System.Windows.Media.Imaging.TiffBitmapEncoder>对象。  
@@ -38,4 +38,5 @@ ms.locfileid: "57356671"
  [!code-vb[TiffBitmapDecoderEncoder#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/VB/TiffEncoderDecoder.vb#4)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [图像处理概述](imaging-overview.md)

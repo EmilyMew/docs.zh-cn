@@ -2,12 +2,12 @@
 title: <add> 的 <backupList>
 ms.date: 03/30/2017
 ms.assetid: bc5939fc-314a-4ea4-a533-c96958da7173
-ms.openlocfilehash: e61ee275a7e98f13370504f5f15fdbe62a8221bd
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 03bf1bbb8156e4722d987e171d9034747ac6bb61
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55285787"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089531"
 ---
 # <a name="add-of-backuplist"></a>\<添加 > 的\<backupList >
 表示定义备份终结点元素的配置元素。  
@@ -49,7 +49,8 @@ ms.locfileid: "55285787"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|包含你想要使用在的情况下无法访问主终结点的路由服务的终结点的列表。|  
+|[\<路由 >](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|包含你想要使用在的情况下无法访问主终结点的路由服务的终结点的列表。|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Routing.Configuration.BackupEndpointElement?displayProperty=nameWithType>

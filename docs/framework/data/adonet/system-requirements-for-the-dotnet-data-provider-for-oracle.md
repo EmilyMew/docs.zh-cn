@@ -1,15 +1,15 @@
 ---
-title: Oracle 的 .NET Framework 数据提供程序的系统需求
+title: Oracle 的 .NET Framework 数据提供程序的系统要求
 ms.date: 03/30/2017
 ms.assetid: 054f76b9-1737-43f0-8160-84a00a387217
-ms.openlocfilehash: cc3fc61c5adebf67b1203897579b2f959cbc0546
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 61f8509cce248f6cc0a56900227f9758eb27c4e0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54670864"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59111042"
 ---
-# <a name="system-requirements-for-the-net-framework-data-provider-for-oracle"></a>Oracle 的 .NET Framework 数据提供程序的系统需求
+# <a name="system-requirements-for-the-net-framework-data-provider-for-oracle"></a>Oracle 的 .NET Framework 数据提供程序的系统要求
 Oracle .NET Framework 数据提供程序需要 Microsoft 数据访问组件 (MDAC) 2.6 版或更高版本。 建议使用 MDAC 2.8 SP1。  
   
  还必须安装 Oracle 8i Release 3 (8.1.7) 客户端或更高版本。  
@@ -38,5 +38,6 @@ Unicode=True
  出于可用性原因<xref:System.Data.OracleClient.OracleLob>对象继承自.NET Framework Stream 类，并提供**ReadByte**并**WriteByte**方法。 它还实现方法，如**CopyTo**并**擦除**，则该工作上的 Oracle 部分**LOB**对象。 与此相反，Oracle 客户端软件提供的 Api 来使用字符数**LOB**s (**CLOB**并**NCLOB**)。 但是，这些 API 只适用于完整字符。 由于这种差异，Oracle 数据提供程序实现支持**读**并**ReadByte**以便处理 utf-16 数据。 但是，其他方法的**OracleLob**对象只允许完整字符操作。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Oracle 和 ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

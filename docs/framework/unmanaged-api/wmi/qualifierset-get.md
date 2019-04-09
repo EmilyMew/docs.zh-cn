@@ -16,12 +16,12 @@ topic_type:
 - Reference
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 357182d6157b63f1bccf47cb43f0c78dec5875cf
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b0dc76a2732bf9c1e4f3a26fa2d045bfbcd837ec
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54625934"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59181085"
 ---
 # <a name="qualifiersetget-function"></a>QualifierSet_Get 函数
 获取指定的命名限定符。  
@@ -65,7 +65,7 @@ HRESULT QualifierSet_Get (
 
 此函数返回以下值中定义*WbemCli.h*标头文件，也可以在定义它们为常量在代码中：
 
-|返回的常量  |值  |描述  |
+|返回的常量  |“值”  |描述  |
 |---------|---------|---------|
 |`WBEM_E_INVALID_PARAMETER` | 0x80041008 | 参数不是有效的。 |
 |`WBEM_E_NOT_FOUND` | 0x80041002 | 指定的限定符不存在。 |
@@ -80,7 +80,8 @@ HRESULT QualifierSet_Get (
   
  **标头：** WMINet_Utils.idl  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>请参阅
-- [WMI 和性能计数器 （非托管 API 参考）](index.md)
+
+- [WMI 和性能计数器（非托管 API 参考）](index.md)

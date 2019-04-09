@@ -1,19 +1,19 @@
 ---
-title: 演练：WPF 内容的样式
+title: 演练：设置 WPF 内容的样式
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WPF Designer [Windows Forms], styling WPF content
 - interoperability [WDF]
 - styles [Windows Forms], WPF content
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
-ms.openlocfilehash: 6329f25b8ead128c32ae0c7aca1f0bceaac8474c
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 9cf5d1c2e08f18c08273d6c7b34446a3827743b3
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57712391"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59079352"
 ---
-# <a name="walkthrough-styling-wpf-content"></a>演练：WPF 内容的样式
+# <a name="walkthrough-styling-wpf-content"></a>演练：设置 WPF 内容的样式
 本演练显示了如何将样式应用到 Windows 窗体上承载的 Windows Presentation Foundation (WPF) 控件中。
 
  在本演练中，你将要执行以下任务：
@@ -68,12 +68,11 @@ ms.locfileid: "57712391"
   
 2.  在中**工具箱**，双击`UserControl1`若要创建的实例`UserControl1`窗体上。  
   
-     
-  `UserControl1` 的实例托管在名为 `elementHost1` 的新 <xref:System.Windows.Forms.Integration.ElementHost> 控件中。  
+     `UserControl1` 的实例托管在名为 `elementHost1` 的新 <xref:System.Windows.Forms.Integration.ElementHost> 控件中。  
   
 3.  中的智能标记面板`elementHost1`，单击**编辑所承载的内容**从下拉列表。  
   
-     `UserControl1` 将在 [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)] 中打开。  
+     `UserControl1` 在中打开[!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)]。  
   
 4.  在 XAML 视图中，将以下 XAML 插到 `<UserControl>` 开始标记后面。  
   
@@ -151,6 +150,7 @@ ms.locfileid: "57712391"
 5.  单击“确定”和“取消”按钮并查看差异。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [迁移和互操作性](../../wpf/advanced/migration-and-interoperability.md)

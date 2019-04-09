@@ -20,12 +20,12 @@ helpviewer_keywords:
 - bitmaps [Windows Forms], file format
 - Exchangeable Image File
 ms.assetid: 6be085a2-2c13-47c8-b80a-c18b32777d8d
-ms.openlocfilehash: a78c84e82ac8507ad40cf3a9fdb44d58858a38d2
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: f41585ba8816e0b1894a9f01163191848ae391e3
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57713210"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089152"
 ---
 # <a name="types-of-bitmaps"></a>位图类型
 位图的像素为单位的矩形数组中指定的每个像素的颜色的位数组。 专用于单个像素的比特数确定可以分配给该像素的颜色数。 例如，如果每个像素都由 4 位，则给定的像素可以指定 16 种不同颜色之一 (2 ^4 = 16)。 下表显示了几个示例的给定数目的位可以分配给代表的像素的颜色数。  
@@ -86,6 +86,7 @@ ms.locfileid: "57713210"
  TIFF 是一种灵活且可扩展的格式，支持的各种平台和图像处理应用程序。 TIFF 文件可以存储具有任意数目的位 / 像素的图像，可以使用各种压缩算法。 多个映像可以存储在单一、 多页的 TIFF 文件。 与映像 （扫描仪制造商、 主机、 压缩、 方向、 每个像素和等等的示例类型的） 相关的信息可以存储在文件中并使用标签来排列。 根据需要通过审批并添加新标签，可以扩展 TIFF 格式。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Image?displayProperty=nameWithType>
 - <xref:System.Drawing.Bitmap?displayProperty=nameWithType>
 - <xref:System.Drawing.Imaging.PixelFormat?displayProperty=nameWithType>

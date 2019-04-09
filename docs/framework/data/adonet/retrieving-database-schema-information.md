@@ -2,12 +2,12 @@
 title: 检索数据库架构信息
 ms.date: 03/30/2017
 ms.assetid: 79038d52-f122-4fd4-9bfb-aaa22d6a114b
-ms.openlocfilehash: 8a076ca792ee1b4b2194b778c51fefbd0bb19bd5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 885d3c9ad61c9099c960ddb0c0f77fa8a98dbefa
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54494023"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59133700"
 ---
 # <a name="retrieving-database-schema-information"></a>检索数据库架构信息
 从数据库获取架构信息通过架构发现过程来完成。 架构发现，应用程序可以请求托管提供程序查找并返回有关数据库架构的信息也称为*元数据*，给定数据库。 不同的数据库架构元素（例如表、列和存储过程）通过架构集合进行公开。 每个架构集合包含所使用的提供程序特定的各种架构信息。  
@@ -72,5 +72,6 @@ ms.locfileid: "54494023"
  介绍**GetSchemaTable**方法的<xref:System.Data.SqlClient.SqlDataReader>类。  
   
 ## <a name="see-also"></a>请参阅
+
 - [在 ADO.NET 中检索和修改数据](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -1,5 +1,5 @@
 ---
-title: 如何：使用 CompositionTarget 以每帧间隔呈现
+title: 如何：使用 CompositionTarget 按每帧间隔呈现
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - CompositionTarget objects [WPF], rendering per frame
 - rendering per frame using CompositionTarget objects [WPF]
 ms.assetid: 701246cd-66b7-4d69-ada9-17b3b433d95d
-ms.openlocfilehash: 919e39dbe96a1a72ce517d59dcb239636f5aa692
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 00b416d423a4bdc8bab576add2d77fd305ea6e0f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57353200"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089407"
 ---
-# <a name="how-to-render-on-a-per-frame-interval-using-compositiontarget"></a>如何：使用 CompositionTarget 以每帧间隔呈现
+# <a name="how-to-render-on-a-per-frame-interval-using-compositiontarget"></a>如何：使用 CompositionTarget 按每帧间隔呈现
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 动画引擎提供了许多用于创建基于帧的动画的功能。 但是，在某些应用程序方案中，需要基于每个帧以更细的粒度控制呈现。 <xref:System.Windows.Media.CompositionTarget>对象提供了创建基于每帧回调的自定义动画的功能。  
   
  <xref:System.Windows.Media.CompositionTarget> 是一个静态类，表示其绘制你的应用程序的显示图面。 <xref:System.Windows.Media.CompositionTarget.Rendering>绘制应用程序的场景每次都会引发事件。 呈现帧速率是指每秒绘制场景的次数。  
@@ -41,5 +41,6 @@ ms.locfileid: "57353200"
  添加或删除呈现<xref:System.EventHandler>委托引发事件时将会延迟，直至完成事件后激发。 这是如何与一致<xref:System.MulticastDelegate>-基于的事件的处理在公共语言运行时 (CLR)。 另请注意，无法保证按照任何特定顺序来调用呈现事件。 如果有多个<xref:System.EventHandler>委托依赖特定的顺序，则应注册一个<xref:System.Windows.Media.CompositionTarget.Rendering>委托按正确顺序自己的事件和多路复用。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.CompositionTarget>
-- [WPF 图形呈现概述](wpf-graphics-rendering-overview.md)
+- [WPF 图形呈现疑难解答](wpf-graphics-rendering-overview.md)

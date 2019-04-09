@@ -7,17 +7,16 @@ helpviewer_keywords:
 - classes [WPF], owners of dependency properties
 - metadata [WPF], dependency properties
 ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
-ms.openlocfilehash: 22ac109c06659741c673681ad9bfcf3e1dcc5b2e
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
-ms.translationtype: MT
+ms.openlocfilehash: 03ac9c59495d5eb95851df98f85eadc3d1a329ba
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57367930"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59117742"
 ---
 # <a name="dependency-property-value-precedence"></a>依赖项属性值优先级
 <a name="introduction"></a> 本主题说明 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 属性系统的工作机制如何影响依赖属性的值，并介绍应用于属性有效值的属性系统的各方面所依据的优先级。  
-    
-  
+
 <a name="prerequisites"></a>   
 ## <a name="prerequisites"></a>系统必备  
  本主题假定你从 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 类的现有依赖属性的使用者角度了解依赖属性，并且已阅读[依赖属性概述](dependency-properties-overview.md)。 若要采用本主题中的示例，还应当了解[!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 并知道如何编写 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 应用程序。  
@@ -60,7 +59,7 @@ ms.locfileid: "57367930"
   
 8.  **样式资源库。** 从值<xref:System.Windows.Setter>来自页面或应用程序的样式中。  
   
-9. **默认（主题）样式。** 有关何时应用此样式以及主题样式如何与主题样式中的模板相关的详细信息，请参阅本主题后面的[默认（主题）样式](#themestyles)。 在默认样式中，按以下优先级顺序应用：  
+9. **默认 （主题） 样式。** 有关何时应用此样式以及主题样式如何与主题样式中的模板相关的详细信息，请参阅本主题后面的[默认（主题）样式](#themestyles)。 在默认样式中，按以下优先级顺序应用：  
   
     1.  主题样式中的活动触发器。  
   
@@ -68,7 +67,7 @@ ms.locfileid: "57367930"
   
 10. **继承。** 有几个依赖属性从父元素向子元素继承值，因此不需要在应用程序中的每个元素上专门设置这些属性。 有关详细信息，请参阅[属性值继承](property-value-inheritance.md)。  
   
-11. **来自依赖属性元数据的默认值。** 任何给定的依赖属性都可能有一个默认值，它由该特定属性的属性系统注册来确定。 而且，继承依赖属性的派生类可以选择按照类型重写该元数据（包括默认值）。 有关详细信息，请参阅[依赖属性元数据](dependency-property-metadata.md)。 因为继承是在默认值之前检查的，所以对于继承的属性，父元素的默认值优先于子元素。  因此，如果任何地方都没有设置可继承的属性，将使用在根元素或父元素中指定的默认值，而不是子元素的默认值。  
+11. **依赖属性元数据中的默认值。** 任何给定的依赖属性都可能有一个默认值，它由该特定属性的属性系统注册来确定。 而且，继承依赖属性的派生类可以选择按照类型重写该元数据（包括默认值）。 有关详细信息，请参阅[依赖属性元数据](dependency-property-metadata.md)。 因为继承是在默认值之前检查的，所以对于继承的属性，父元素的默认值优先于子元素。  因此，如果任何地方都没有设置可继承的属性，将使用在根元素或父元素中指定的默认值，而不是子元素的默认值。  
   
 <a name="templatedparent"></a>   
 ## <a name="templatedparent"></a>TemplatedParent  
@@ -127,8 +126,9 @@ ms.locfileid: "57367930"
  <xref:System.Windows.DependencyObject.ClearValue%2A>方法提供了一个有利的途径来清除任何本地应用的值从一个元素设置的依赖项属性。 但是，调用<xref:System.Windows.DependencyObject.ClearValue%2A>并不保证数据的默认值为元数据中建立在注册过程，是的新生效值。 值优先级中的所有其他参与者仍然有效。 只有在本地设置的值才会从优先级序列中删除。 例如，如果您调用<xref:System.Windows.DependencyObject.ClearValue%2A>属性也由主题样式中，设置该属性，然后为新值而不是基于元数据的默认应用的主题值上。 如果你想要获取进程外的所有属性值参与者并将值设置为已注册的元数据默认值，则可以获取默认值明确通过查询依赖属性元数据，然后可以本地使用的默认值将通过调用属性设置<xref:System.Windows.DependencyObject.SetValue%2A>。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.DependencyObject>
 - <xref:System.Windows.DependencyProperty>
 - [依赖项属性概述](dependency-properties-overview.md)
-- [自定义依赖属性](custom-dependency-properties.md)
-- [依赖属性回调和验证](dependency-property-callbacks-and-validation.md)
+- [自定义依赖项属性](custom-dependency-properties.md)
+- [依赖项属性回调和验证](dependency-property-callbacks-and-validation.md)

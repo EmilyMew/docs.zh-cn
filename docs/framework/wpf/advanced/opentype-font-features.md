@@ -9,12 +9,12 @@ helpviewer_keywords:
 - typography [WPF], OpenType font technology
 - OpenType font technology [WPF]
 ms.assetid: 4061a9d1-fe8b-4921-9e17-18ec7d2e3ea2
-ms.openlocfilehash: a3bcca1e7d031a9351881a5192370bead18aa7bb
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 86921b610b4b42cfc0393af2966b70870bc650f9
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57467150"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59104476"
 ---
 # <a name="opentype-font-features"></a>OpenType 字体功能
 
@@ -22,7 +22,7 @@ ms.locfileid: "57467150"
   
 <a name="overview"></a>   
 ## <a name="opentype-font-format"></a>OpenType 字体格式  
- [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体格式是 [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] 字体格式的扩展，添加了对 PostScript 字体数据的支持。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体格式由 [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] 和 Adobe Corporation 联合开发。 无论字体包含 [!INCLUDE[TLA2#tla_truetype](../../../../includes/tla2sharptla-truetype-md.md)] 边框还是 CFF (PostScript) 边框，[!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体和支持 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体的操作系统服务都向用户提供一种简单的字体安装和使用方式。  
+ [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体格式是 [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] 字体格式的扩展，添加了对 PostScript 字体数据的支持。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体格式由 [!INCLUDE[TLA#tla_ms](../../../../includes/tlasharptla-ms-md.md)] 和 Adobe Corporation 联合开发。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体和操作系统服务的支持[!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)]字体为用户提供了一个简单的方法来安装和使用字体，无论字体包含[!INCLUDE[TLA2#tla_truetype](../../../../includes/tla2sharptla-truetype-md.md)]边框还是 cff (PostScript)。  
   
  [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体格式解决了开发人员面临的以下挑战：  
   
@@ -42,7 +42,7 @@ ms.locfileid: "57467150"
  有关 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体格式的详细信息，请参阅 [OpenType 规范](https://go.microsoft.com/fwlink/?LinkId=96731)。  
   
 ### <a name="advanced-typographic-extensions"></a>高级版式扩展  
- 高级版式表格（[!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 布局表格）扩展了具有 [!INCLUDE[TLA2#tla_truetype](../../../../includes/tla2sharptla-truetype-md.md)] 或 CFF 边框的字体的功能。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 布局字体包含一些其他信息，可扩展字体功能以支持高质量国际版式。 大多数 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体仅体现全部可用 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 功能的一部分。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体提供以下功能。  
+ 高级版式表格（[!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 布局表格）扩展了具有 [!INCLUDE[TLA2#tla_truetype](../../../../includes/tla2sharptla-truetype-md.md)] 或 CFF 边框的字体的功能。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 布局字体包含其他信息进行扩展以支持高质量国际版式字体的功能。 大多数 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体仅体现全部可用 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 功能的一部分。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体提供以下功能。  
   
 -   字符与字形之间的丰富映射，可支持连字、定位格式、备用项以及其他字体替换功能。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "57467150"
   
 <a name="capitals"></a>   
 ## <a name="capitals"></a>大写字母  
- 大写字母是一组以大写样式字形呈现文本的版式形式。 通常情况下，当以全大写呈现文本时，字母之间的间距可能看起来很小，字母的权重和比例看起来会很大。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 支持多种大写字母的样式格式，包括小体大写字母、小号大写字母、标题和大写字母间距。 通过这些样式格式可控制大写字母的外观。  
+ 大写字母是一组以大写样式字形呈现文本的版式形式。 通常情况下，当以全大写呈现文本时，字母之间的间距可能看起来很小，字母的权重和比例看起来会很大。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 支持多种样式设置格式的大写字母，包括小体大写字母、 小号大写字母、 标题和大写字母间距。 通过这些样式格式可控制大写字母的外观。  
   
  以下文本显示 Pescadero 字体的标准大写字母，其后接样式为“SmallCaps”和“AllSmallCaps”的字母。 本例中，对所有三个单词均使用相同的字体大小。  
   
@@ -161,8 +161,7 @@ ms.locfileid: "57467150"
  花体是使用精美修饰的装饰性字形，通常与书法相关。 以下文本显示 Pescadero 字体的标准和花体字形。  
   
  ![使用 OpenType 标准和花体字形的文本](./media/opentype-font-features/opentype-standard-swash-glyphs.gif "使用 OpenType 标准和花体字形的文本")  
-  
-  
+
  花体通常用作事件公告等简短文章中的修饰元素。 以下文本使用花体强调事件名称的大写字母。  
   
  ![使用 OpenType 连接形式花体的文本](./media/opentype-font-features/opentype-swashes.gif "使用 OpenType 连接形式花体的文本")  
@@ -182,11 +181,10 @@ ms.locfileid: "57467150"
   
 <a name="alternates"></a>   
 ## <a name="alternates"></a>备用项  
- 备用项是可替代标准字形的字形。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体（例如以下示例中使用的 Pericles 字体）可包含用于塑造不同文本外观的备用字形。 以下文本显示 Pericles 字体的标准字形。  
+ 备用项是可替代标准字形的字形。 [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 如下面的示例中使用的 Pericles 字体的字体，可以包含可用于创建不同文本外观的备用字形。 以下文本显示 Pericles 字体的标准字形。  
   
  ![使用 OpenType 标准字形的文本](./media/opentype-font-features/opentype-standard-glyphs.gif "使用 OpenType 标准字形的文本")  
-  
-  
+
  Pericles [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体包含其他字形，可为标准自行集提供样式备用项。 以下文本显示样式备用字形。  
   
  ![使用 OpenType 样式备用字形的文本](./media/opentype-font-features/opentype-stylistic-alternate-glyphs.gif "使用 OpenType 样式备用字形的文本")  
@@ -226,7 +224,7 @@ ms.locfileid: "57467150"
  OpenType 字体支持多种可用于文本中数值的功能。  
   
 ### <a name="fractions"></a>分数  
- [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体支持多种分数样式，包括横式分数和竖式分数。  
+ [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体支持分数，包括横式分数和竖式样式。  
   
  以下文本显示 Palatino Linotype 字体的分数样式。  
   
@@ -250,7 +248,7 @@ ms.locfileid: "57467150"
  [!code-xaml[OpenTypeFontSamples#11](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#11)]  
   
 ### <a name="proportional-and-tabular-figures"></a>比例数字和表格式数字  
- [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体支持比例数字和表格式数字功能，可在使用数字时控制宽度对齐。 比例数字将每个数字视为具有不同的宽度—“1”窄于“5”。 表格式数字被视为宽度相等的数字，因此它们可垂直对齐，从而增强财务类型信息的可读性。  
+ [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体支持比例和表格式数字功能，以使用数字时控制宽度对齐方式。 比例数字将每个数字视为具有不同的宽度—“1”窄于“5”。 表格式数字被视为宽度相等的数字，因此它们可垂直对齐，从而增强财务类型信息的可读性。  
   
  以下文本使用 Miramonte 字体显示第一列中的两个表格式数字。 请注意数字“5”和“1”之间的宽度差异。 第二列显示相同的两个数值，并通过使用表格式数字功能调整其宽度。  
   
@@ -261,7 +259,7 @@ ms.locfileid: "57467150"
  [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet19](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/Window1.xaml#opentypefontsnippet19)]  
   
 ### <a name="slashed-zero"></a>斜线零  
- [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体支持斜线零数字格式来强调字母“O”和数字“0”之间的差异。 斜线零数字通常用于财务和商务信息中的标识符。  
+ [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] 字体支持斜线零数字格式来强调字母"O"与数字"0"之间的区别。 斜线零数字通常用于财务和商务信息中的标识符。  
   
  以下文本显示使用 Miramonte 字体的订单标识符。 第一行使用标准数字。 第二行使用斜线零数字，以便更易于与大写字母“O”进行区分。  
   
@@ -338,6 +336,7 @@ ms.locfileid: "57467150"
 |<xref:System.Windows.Documents.Typography.Variants%2A>|<xref:System.Windows.FontVariants.Inferior> &#124; <xref:System.Windows.FontVariants.Normal> &#124; <xref:System.Windows.FontVariants.Ordinal> &#124; <xref:System.Windows.FontVariants.Ruby> &#124; <xref:System.Windows.FontVariants.Subscript> &#124; <xref:System.Windows.FontVariants.Superscript>|<xref:System.Windows.FontVariants.Normal?displayProperty=nameWithType>|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Documents.Typography>
 - [OpenType 规范](https://go.microsoft.com/fwlink/?LinkId=96731)
 - [WPF 中的版式](typography-in-wpf.md)

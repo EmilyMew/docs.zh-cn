@@ -8,12 +8,12 @@ helpviewer_keywords:
 - directories [Windows Forms], enabling browsing in applications
 - folders [Windows Forms], enabling browsing in applications
 ms.assetid: 796b622c-3ba9-4356-93bb-e217fc52f2c7
-ms.openlocfilehash: d08eb456ea2d2d3b805d3df7e0e79b26ea7d415e
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: aae18167b29c71ad692cc6ba447457cd079374b4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57708244"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59074126"
 ---
 # <a name="folderbrowserdialog-component-overview-windows-forms"></a>FolderBrowserDialog 组件概述（Windows 窗体）
 Windows 窗体<xref:System.Windows.Forms.FolderBrowserDialog>组件是一个模式对话框，用于浏览和选择文件夹。 此外可以在创建新文件夹<xref:System.Windows.Forms.FolderBrowserDialog>组件。  
@@ -26,6 +26,7 @@ Windows 窗体<xref:System.Windows.Forms.FolderBrowserDialog>组件是一个模�
  添加到窗体时<xref:System.Windows.Forms.FolderBrowserDialog>组件在 Windows 窗体设计器底部的任务栏中显示。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.FolderBrowserDialog>
-- [如何：选择使用 Windows 窗体 FolderBrowserDialog 组件的文件夹](how-to-choose-folders-with-the-windows-forms-folderbrowserdialog-component.md)
+- [如何：使用 Windows 窗体 FolderBrowserDialog 组件选择文件夹](how-to-choose-folders-with-the-windows-forms-folderbrowserdialog-component.md)
 - [FolderBrowserDialog 组件](folderbrowserdialog-component-windows-forms.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - image sources [WPF], drawings
 - drawings [WPF], as image sources
 ms.assetid: dcf71c7b-9e86-4b8e-8e39-0d0ce0389ef4
-ms.openlocfilehash: 07659463a3fec9b962f7b4bb255ed065d544d954
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: d4b91a6495e1c54400d5fbfe43b6311d908565a7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57351731"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59097855"
 ---
 # <a name="how-to-use-a-drawing-as-an-image-source"></a>如何：将绘图用作图像源
 此示例演示如何使用<xref:System.Windows.Media.Drawing>作为<xref:System.Windows.Controls.Image.Source%2A>为<xref:System.Windows.Controls.Image>控件。 若要显示<xref:System.Windows.Media.Drawing>与<xref:System.Windows.Controls.Image>控制，请使用<xref:System.Windows.Media.DrawingImage>作为<xref:System.Windows.Controls.Image>控件的<xref:System.Windows.Controls.Image.Source%2A>并设置<xref:System.Windows.Media.DrawingImage>对象的<xref:System.Windows.Media.DrawingImage.Drawing%2A?displayProperty=nameWithType>属性设置为你想要显示的绘图。  
@@ -26,6 +26,7 @@ ms.locfileid: "57351731"
  [!code-xaml[DrawingMiscSnippets_snip#DrawingImageExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/DrawingImageExample.xaml#drawingimageexamplewholepage)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Freezable.Freeze%2A>
 - [使用 ImageDrawing 绘制图像](how-to-draw-an-image-using-imagedrawing.md)
 - [Drawing 对象概述](drawing-objects-overview.md)

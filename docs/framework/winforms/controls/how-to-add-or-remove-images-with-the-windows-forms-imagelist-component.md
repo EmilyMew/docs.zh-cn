@@ -1,5 +1,5 @@
 ---
-title: 如何：添加或删除映像使用 Windows 窗体 ImageList 组件
+title: 如何：使用 Windows 窗体 ImageList 组件添加或移除图像
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - images [Windows Forms], adding to ImageList component
 - images [Windows Forms], displaying with controls
 ms.assetid: c5eacc56-f769-4e2e-bfb7-f756620913db
-ms.openlocfilehash: 81c85186d2f15917a6aa1067814a0119edf3f460
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 286b56cddc18589b936a7f053a12ed44c81a32b6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57705163"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59072969"
 ---
-# <a name="how-to-add-or-remove-images-with-the-windows-forms-imagelist-component"></a>如何：添加或删除映像使用 Windows 窗体 ImageList 组件
+# <a name="how-to-add-or-remove-images-with-the-windows-forms-imagelist-component"></a>如何：使用 Windows 窗体 ImageList 组件添加或移除图像
 Windows 窗体<xref:System.Windows.Forms.ImageList>组件通常用图像填充之前与控件关联。 但是，可以添加和删除与控件关联的图像列表后的图像。  
   
 > [!NOTE]
@@ -142,6 +142,7 @@ imageList1.Images.RemoveByKey("myPhoto");
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [ImageList 组件](imagelist-component-windows-forms.md)
 - [ImageList 组件概述](imagelist-component-overview-windows-forms.md)
 - [图像、位图和图元文件](../advanced/images-bitmaps-and-metafiles.md)

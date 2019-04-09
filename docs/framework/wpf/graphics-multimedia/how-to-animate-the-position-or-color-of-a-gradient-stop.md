@@ -1,5 +1,5 @@
 ---
-title: 如何：对渐变停止点的位置或颜色进行动画处理
+title: 如何：对梯度停止点的位置或颜色进行动画处理
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - animation [WPF], color of GradientStop objects
 - GradientStop objects [WPF], animating position of
 ms.assetid: 6f5b8b47-6c32-4b8e-98ee-fdf6515ec843
-ms.openlocfilehash: 6d8c1bb5cd133b2ee9d50a7e851d2ca3b4fff023
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: eeaea4732855155bf711912644f2f5b3f5a4f8d0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57368881"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59134805"
 ---
-# <a name="how-to-animate-the-position-or-color-of-a-gradient-stop"></a>如何：对渐变停止点的位置或颜色进行动画处理
+# <a name="how-to-animate-the-position-or-color-of-a-gradient-stop"></a>如何：对梯度停止点的位置或颜色进行动画处理
 此示例演示如何进行动画处理<xref:System.Windows.Media.GradientStop.Color%2A>并<xref:System.Windows.Media.GradientStop.Offset%2A>的<xref:System.Windows.Media.GradientStop>对象。  
   
 ## <a name="example"></a>示例  
@@ -40,6 +40,7 @@ ms.locfileid: "57368881"
  有关其他示例，请参阅[画笔示例](https://go.microsoft.com/fwlink/?LinkID=159973)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.GradientStop>
 - [动画概述](animation-overview.md)
 - [演示图板概述](storyboards-overview.md)

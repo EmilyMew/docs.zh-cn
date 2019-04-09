@@ -2,12 +2,12 @@
 title: <httpTransport>
 ms.date: 03/30/2017
 ms.assetid: 8b30c065-b32a-4fa3-8eb4-5537a9c6b897
-ms.openlocfilehash: f529cd5290c74999a010381fadfb94ea9a4d515e
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: 7a06772f078f9187298ad0b4b9c8b0f51c849928
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58408933"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59122728"
 ---
 # <a name="httptransport"></a>\<httpTransport>
 为自定义绑定指定用于传输 SOAP 消息的 HTTP 传输。  
@@ -65,16 +65,16 @@ ms.locfileid: "58408933"
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|定义自定义绑定的所有绑定功能。|  
   
 ## <a name="remarks"></a>备注  
- 
-  `httpTransport` 元素是创建实现 HTTP 传输协议的自定义绑定的起始点。 HTTP 是用于互操作性用途的主要传输。 通过 Windows Communication Foundation (WCF) 以确保与其他非 WCF Web 服务堆栈的互操作性支持此传输。  
+ `httpTransport` 元素是创建实现 HTTP 传输协议的自定义绑定的起始点。 HTTP 是用于互操作性用途的主要传输。 通过 Windows Communication Foundation (WCF) 以确保与其他非 WCF Web 服务堆栈的互操作性支持此传输。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Configuration.HttpTransportElement>
 - <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [传输](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [选择传输](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [选择传输方式](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
 - [绑定](../../../../../docs/framework/wcf/bindings.md)
 - [扩展绑定](../../../../../docs/framework/wcf/extending/extending-bindings.md)
 - [自定义绑定](../../../../../docs/framework/wcf/extending/custom-bindings.md)

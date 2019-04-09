@@ -3,12 +3,12 @@ title: WIF 配置架构约定
 ms.date: 03/30/2017
 ms.assetid: f7864356-f72f-4cae-995c-18e0431f8a58
 author: BrucePerlerMS
-ms.openlocfilehash: acdce1f0ae35713dd4955e1353e0a83000898408
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 39ed32bb7e926f275e996b09e746c879c6d3fe9e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54711390"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59120869"
 ---
 # <a name="wif-configuration-schema-conventions"></a>WIF 配置架构约定
 本主题讨论 Windows Identity Foundation (WIF) 配置主题中使用的约定并描述 [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md) 和 [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) 部分中使用的一些常见功能和属性。  
@@ -45,5 +45,6 @@ ms.locfileid: "54711390"
  自定义类型应从指定类型中派生，同时应提供 `public` 默认（0 参数）构造函数。  
   
 ## <a name="see-also"></a>请参阅
+
 - [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md)
 - [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md)

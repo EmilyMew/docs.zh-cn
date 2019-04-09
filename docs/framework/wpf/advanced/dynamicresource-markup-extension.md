@@ -8,12 +8,12 @@ helpviewer_keywords:
 - XAML [WPF], DynamicResource markup extension
 - DynamicResource markup extensions [WPF]
 ms.assetid: 7324f243-03af-4c2b-b0db-26ac6cdfcbe4
-ms.openlocfilehash: a7b754ce3fb77314539e6391376b188fe9b15859
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: d07816718ebee2507f1888cffb70e6f8037bb996
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369768"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59091403"
 ---
 # <a name="dynamicresource-markup-extension"></a>DynamicResource 标记扩展
 提供值的任何[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]通过推迟将对定义资源的引用值的属性特性。 类似于运行时查找该资源的查找行为。  
@@ -60,7 +60,7 @@ ms.locfileid: "57369768"
   
  `DynamicResource` 可以在对象元素语法中使用。 在这种情况下，指定的值<xref:System.Windows.DynamicResourceExtension.ResourceKey%2A>属性是必需的。  
   
- `DynamicResource` 还可以在详细特性用法中使用，以便将 <xref:System.Windows.DynamicResourceExtension.ResourceKey%2A> 属性指定为一个 property=value 对：  
+ `DynamicResource` 此外可以在详细特性用法中，指定使用<xref:System.Windows.DynamicResourceExtension.ResourceKey%2A>属性作为属性 = 值对：  
   
 ```xml  
 <object property="{DynamicResource ResourceKey=key}" .../>  
@@ -73,6 +73,7 @@ ms.locfileid: "57369768"
  `DynamicResource` 是标记扩展。 当要求转义特性值应为非文本值或非处理程序名称时，通常会实现标记扩展，相对于只在某些类型或属性上放置类型转换器而言，此需求更具有全局性。 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 中的所有标记扩展在其特性语法中都使用 { 和 } 字符，[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 处理器通过这一约定确认标记扩展必须处理该特性。 有关详细信息，请参阅[标记扩展和 WPF XAML](markup-extensions-and-wpf-xaml.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [XAML 资源](xaml-resources.md)
 - [资源和代码](resources-and-code.md)
 - [x:Key 指令](../../xaml-services/x-key-directive.md)

@@ -2,12 +2,12 @@
 title: 实体数据模型：继承
 ms.date: 03/30/2017
 ms.assetid: 42c7ef24-710a-4af9-8493-cd41c399ecb0
-ms.openlocfilehash: bc0467ea1b242c13e00e115f07ccbc5c840df936
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.openlocfilehash: 9f77f2ebb86ea050c124fbd1c6f2b30ed9e75a1c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58837114"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083811"
 ---
 # <a name="entity-data-model-inheritance"></a>实体数据模型：继承
 实体数据模型 (EDM) 支持的继承[实体类型](../../../../docs/framework/data/adonet/entity-type.md)。 EDM 中的继承与面向对象的编程语言中的类的继承类似。 像使用面向对象语言中的类，概念模型中您可以定义一个实体类型 (*派生类型*) 的继承自另一个实体类型 (*基类型*)。 但是，与面向对象的编程中的类，不同的概念模型中的派生的类型始终会继承所有[属性](../../../../docs/framework/data/adonet/property.md)并[导航属性](../../../../docs/framework/data/adonet/navigation-property.md)的基类型。 不能重写派生类型中的继承属性。  
@@ -27,5 +27,6 @@ ms.locfileid: "58837114"
  [!code-xml[EDM_Example_Model#DerivedType](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books5.edmx#derivedtype)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体数据模型关键概念](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
 - [实体数据模型](../../../../docs/framework/data/adonet/entity-data-model.md)

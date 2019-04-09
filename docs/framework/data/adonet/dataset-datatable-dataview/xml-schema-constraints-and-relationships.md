@@ -2,12 +2,12 @@
 title: XML 架构约束和关系
 ms.date: 03/30/2017
 ms.assetid: 165bc2bc-60a1-40e0-9b89-7c68ef979079
-ms.openlocfilehash: aea0efc51adb5a81f479cad41a7fb8d145ceb869
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 990ae2eef8d9fbd28472494c989ae9ecca34251d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54602866"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59119777"
 ---
 # <a name="xml-schema-constraints-and-relationships"></a>XML 架构约束和关系
 在 XML 架构定义语言 (XSD) 架构中，可以指定约束 (唯一的键和 keyref 约束) 和关系 (使用**msdata: relationship**批注)。 本主题说明如何解释在 XML 架构中指定的约束和关系，以生成 <xref:System.Data.DataSet>。  
@@ -187,5 +187,6 @@ OrderDetail(OrderNumber, ItemNumber, Order_Id)
  如果引用嵌套表的 keyref 约束包含**msdata: isnested ="true"** 批注，**数据集**将创建单个嵌套的关系基于 keyref 约束和相关的唯一/键约束。  
   
 ## <a name="see-also"></a>请参阅
+
 - [从 XML 架构派生数据集关系结构 (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/deriving-dataset-relational-structure-from-xml-schema-xsd.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -1,13 +1,13 @@
 ---
-title: <certificateReference> 的 <identity>
+title: <certificateReference> for <identity>
 ms.date: 03/30/2017
 ms.assetid: ac359c65-c22d-42d2-97de-db53b77cebdb
-ms.openlocfilehash: 44bfb2fd77c4f4db6f7fede296b1cdb74e8d5e7c
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 3b7779ac00c2fca6300c12ac18ff2d5f6b868424
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57351939"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59138808"
 ---
 # <a name="certificatereference-for-identity"></a>\<certificateReference > 为\<标识 >
 指定 X.509 证书验证的设置。 连接到此标识的终结点的安全 Windows Communication Foundation (WCF) 客户端验证服务器提供的声明包含用于构造此标识的标识声明。  
@@ -49,6 +49,7 @@ ms.locfileid: "57351939"
 |[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|指定一些设置，与某个终结点交换消息的其他终结点可以使用这些设置对该终结点进行身份验证。|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Configuration.CertificateReferenceElement>
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>

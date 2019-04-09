@@ -8,12 +8,12 @@ helpviewer_keywords:
 - vector graphics
 - typography
 ms.assetid: 068c0ef3-f6ee-4d58-a7b6-eb2531ead408
-ms.openlocfilehash: f7aa4de8a0d646c441d0921fb2561ef5a9480f4e
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: ccbd5e236b47d1d870c9b77cfa2b3880619cf3cd
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57711211"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083590"
 ---
 # <a name="three-categories-of-graphics-services"></a>图形服务的三个类别
 在 Windows 窗体中的图形产品/服务划分为以下三个大类：  
@@ -40,6 +40,7 @@ ms.locfileid: "57711211"
  此外，Windows 窗体提供用于绘制文本的选项[!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)]中的功能及其<xref:System.Windows.Forms.TextRenderer>类。  
   
 ## <a name="see-also"></a>请参阅
+
 - [图形概述](graphics-overview-windows-forms.md)
 - [关于 GDI+ 托管代码](about-gdi-managed-code.md)
 - [使用托管图形类](using-managed-graphics-classes.md)

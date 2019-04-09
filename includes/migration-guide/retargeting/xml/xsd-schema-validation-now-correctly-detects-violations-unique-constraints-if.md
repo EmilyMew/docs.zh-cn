@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: c0a281b05f453b68495e6fa6fca45f3f36a204a3
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "50746164"
+---
 ### <a name="xsd-schema-validation-now-correctly-detects-violations-of-unique-constraints-if-compound-keys-are-used-and-one-key-is-empty"></a>如果使用复合密钥并且一个密钥为空，XSD 架构验证现在可正确检测是否违反唯一约束
 
 |   |   |

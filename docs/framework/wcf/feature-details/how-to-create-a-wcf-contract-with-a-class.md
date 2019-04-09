@@ -5,18 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1ad69393-3915-4e7f-9b91-b6fc59c6f5ba
-ms.openlocfilehash: b32d4feb03daac33af8b7ca3b533a0b7013bb090
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a514134ed0af3b691a2e66720f81594a51747b6f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54658921"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089518"
 ---
 # <a name="how-to-create-a-windows-communication-foundation-contract-with-a-class"></a>如何：使用类创建 Windows Communication Foundation 协定
 创建 Windows Communication Foundation (WCF) 协定的首选的方法是使用接口。 有关详细信息，请参阅[如何：定义服务协定](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)。 本文介绍另一种方式，即创建一个类，然后直接对该类应用 <xref:System.ServiceModel.ServiceContractAttribute> 特性，并对该类中作为协定一部分的每个方法应用 <xref:System.ServiceModel.OperationContractAttribute> 特性。  
   
 > [!WARNING]
->  `[ServiceContract]` 和 `[ServiceContractAttribute]` 的作用一样。 相同的情况也是如此`[OperationContract]`和`[OperationContractAttribute]`。 每种情况下，前者是后者的简写。  
+>  `[ServiceContract]` 和`[ServiceContractAttribute]`执行相同的操作。 相同的情况也是如此`[OperationContract]`和`[OperationContractAttribute]`。 每种情况下，前者是后者的简写。  
   
  有关服务协定的详细信息，请参阅[Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)。  
   
@@ -39,5 +39,6 @@ ms.locfileid: "54658921"
  默认情况下，应用了 <xref:System.ServiceModel.OperationContractAttribute> 类的方法使用请求-答复消息模式。 有关此消息模式的详细信息，请参阅[如何：创建请求-答复协定](../../../../docs/framework/wcf/feature-details/how-to-create-a-request-reply-contract.md)。 您还可以通过设置属性 (Attribute) 的属性 (Property) 来创建和使用其他消息模式。 有关更多示例，请参见[如何：创建单向协定](../../../../docs/framework/wcf/feature-details/how-to-create-a-one-way-contract.md)和[如何：创建双工协定](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>

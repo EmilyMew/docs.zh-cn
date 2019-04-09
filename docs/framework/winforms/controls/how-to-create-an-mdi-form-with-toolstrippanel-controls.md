@@ -1,5 +1,5 @@
 ---
-title: 如何：创建带有 ToolStripPanel 控件的 MDI 窗体
+title: 如何：创建包含 ToolStripPanel 控件的 MDI 窗体
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - ToolStrip control [Windows Forms]
 - MDI forms [Windows Forms], creating
 ms.assetid: d198ef8e-f7c4-4b3f-a7f5-ce858cb90cec
-ms.openlocfilehash: 9b3297acabbb05c25ae195acbb6fb9274ad02651
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 55c2294496800fb8692d3c8215c1c13f7dac9b01
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57725384"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096961"
 ---
-# <a name="how-to-create-an-mdi-form-with-toolstrippanel-controls"></a>如何：创建带有 ToolStripPanel 控件的 MDI 窗体
+# <a name="how-to-create-an-mdi-form-with-toolstrippanel-controls"></a>如何：创建包含 ToolStripPanel 控件的 MDI 窗体
 可以创建四面均框有 <xref:System.Windows.Forms.ToolStrip> 控件的多文档界面 (MDI) 窗体。  
   
 ## <a name="example"></a>示例  
@@ -40,6 +40,7 @@ ms.locfileid: "57725384"
  Visual Basic 或 Visual C# 生成命令行中的此示例的信息，请参阅[从命令行生成](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)或[命令行上使用 csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)。 也可以通过将代码粘贴到新的项目中生成此示例在 Visual Studio 中。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.ToolStripPanel>
 - <xref:System.Windows.Forms.ToolStripPanel.Join%2A>

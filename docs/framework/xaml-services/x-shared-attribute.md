@@ -6,12 +6,12 @@ helpviewer_keywords:
 - x:Shared attribute [XAML Services]
 - Shared attribute in XAML [XAML Services]
 ms.assetid: c8cff434-2785-405f-9f95-16deb34c9e64
-ms.openlocfilehash: 42de341d59e3e70103db765faf3160b5fe3250d3
-ms.sourcegitcommit: 5c1abeec15fbddcc7dbaa729fabc1f1f29f12045
+ms.openlocfilehash: da35f209b632bdf9e4ab2298239a505df69d6048
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58039404"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59125731"
 ---
 # <a name="xshared-attribute"></a>x:Shared 特性
 如果设置为`false`，修改 WPF 资源检索行为，以便特性化的资源的请求创建每个请求而不是共享同一个实例的所有请求的新实例。  
@@ -50,6 +50,7 @@ ms.locfileid: "58039404"
 -   <xref:System.Windows.ResourceDictionary>包含的项不能嵌套在另一个<xref:System.Windows.ResourceDictionary>。 例如，不能使用`x:Shared`中的项<xref:System.Windows.ResourceDictionary>，位于<xref:System.Windows.Style>已<xref:System.Windows.ResourceDictionary>项。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.ResourceDictionary>
 - [XAML 资源](../wpf/advanced/xaml-resources.md)
 - [基元素](../wpf/advanced/base-elements.md)

@@ -2,12 +2,12 @@
 title: WCF Web HTTP 格式设置
 ms.date: 03/30/2017
 ms.assetid: e2414896-5463-41cd-b0a6-026a713eac2c
-ms.openlocfilehash: e3db2be1a4f40bc0ae85c3d42faca20cef5308d4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 37f0506822ca03aed3755ad42f9bf7ecdc962da7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54698734"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59094445"
 ---
 # <a name="wcf-web-http-formatting"></a>WCF Web HTTP 格式设置
 通过 WCF Web HTTP 编程模型，你可以动态确定服务操作返回其响应所采用的最佳格式。 支持使用以下两种方法来确定相应格式：即自动和显式。  
@@ -164,6 +164,7 @@ public class Service : IService
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.UriTemplate>
 - <xref:System.UriTemplateMatch>
 - [WCF Web HTTP 编程模型](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

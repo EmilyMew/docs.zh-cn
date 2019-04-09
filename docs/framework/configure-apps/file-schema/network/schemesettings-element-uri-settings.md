@@ -1,13 +1,13 @@
 ---
-title: <schemeSettings> 元素（Uri 设置）
+title: <schemeSettings> 元素 （Uri 设置）
 ms.date: 03/30/2017
 ms.assetid: 0ae45c6e-8c4c-4c0d-8b9f-a93824648890
-ms.openlocfilehash: 06cb07b1620a603f0c0cf67a9236be143c2ec4a2
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 8dc505d8a9de4e8939372af61b23652551c36530
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55260186"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59094225"
 ---
 # <a name="schemesettings-element-uri-settings"></a>\<schemeSettings > 元素 （Uri 设置）
 指定如何分析特定方案的 <xref:System.Uri>。  
@@ -27,19 +27,19 @@ ms.locfileid: "55260186"
  下列各节描述了特性、子元素和父元素。  
   
 ### <a name="attributes"></a>特性  
- 无  
+ None  
   
 ### <a name="child-elements"></a>子元素  
   
-|**元素**|**说明**|  
+|**元素**|**描述**|  
 |-----------------|---------------------|  
-|[add](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-schemesettings-uri-settings.md)|添加方案设置的方案名称。|  
-|[clear](../../../../../docs/framework/configure-apps/file-schema/network/clear-element-for-schemesettings-uri-settings.md)|清除所有现有方案设置。|  
+|[添加](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-schemesettings-uri-settings.md)|添加方案设置的方案名称。|  
+|[清除](../../../../../docs/framework/configure-apps/file-schema/network/clear-element-for-schemesettings-uri-settings.md)|清除所有现有方案设置。|  
 |[remove](../../../../../docs/framework/configure-apps/file-schema/network/remove-element-for-schemesettings-uri-settings.md)|删除方案名称的方案设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|**元素**|**说明**|  
+|**元素**|**描述**|  
 |-----------------|---------------------|  
 |[uri](../../../../../docs/framework/configure-apps/file-schema/network/uri-element-uri-settings.md)|包含指定.NET Framework 如何处理使用统一资源标识符 (Uri) 表示的 web 地址的设置。|  
   
@@ -84,6 +84,7 @@ ms.locfileid: "55260186"
 |可以为空||  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>

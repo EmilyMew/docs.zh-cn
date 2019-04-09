@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: edd6b3f3960c5ef6d64e55d41bc540b9bdf0bcd5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5e8593adcdd7b74345f848b70a37ba6210871b8a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54566688"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59087698"
 ---
 # <a name="itypenamebuilderaddpointer-method"></a>ITypeNameBuilder::AddPointer 方法
 此方法支持 .NET Framework 基础结构，但不适合直接在代码中使用。  
@@ -40,7 +40,8 @@ HRESULT AddPointer ( );
   
  **库：** 包含为 MSCorEE.dll 中的资源  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [承载接口](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

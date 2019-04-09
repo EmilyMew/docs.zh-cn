@@ -1,5 +1,5 @@
 ---
-title: 如何：使用几何路径来旋转对象（矩阵动画）
+title: 如何：使用几何路径旋转对象（矩阵动画）
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - rotating objects by geometric paths [WPF]
 - matrix animation [WPF]
 ms.assetid: 877dc9aa-6bdc-4beb-8772-3efaec32c0f0
-ms.openlocfilehash: 57402ba24e8dc75f3563e71329b54db9cb96aaab
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 8f1b0ac42ea7509f8bc22b0bd2f50e2f96b5bee5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57369079"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59087880"
 ---
-# <a name="how-to-rotate-an-object-by-using-a-geometric-path-matrix-animation"></a>如何：使用几何路径来旋转对象（矩阵动画）
+# <a name="how-to-rotate-an-object-by-using-a-geometric-path-matrix-animation"></a>如何：使用几何路径旋转对象（矩阵动画）
 此示例演示如何使用<xref:System.Windows.Media.Animation.MatrixAnimationUsingPath>和一个<xref:System.Windows.Media.MatrixTransform>旋转 （转动） 某个对象沿几何路径由定义<xref:System.Windows.Media.PathGeometry>对象。  
   
 ## <a name="example"></a>示例  
@@ -32,6 +32,7 @@ ms.locfileid: "57369079"
  使用前面示例的代码版本<xref:System.Windows.Media.Animation.Storyboard>进行动画处理<xref:System.Windows.Media.EllipseGeometry>，即使只有一个动画已应用。 将一个动画应用到代码中的属性的更简单方法是使用<xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A>方法。 有关示例，请参阅[在不使用情节提要的情况下对属性进行动画处理](how-to-animate-a-property-without-using-a-storyboard.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [动画概述](animation-overview.md)
-- [路径动画操作说明主题](path-animation-how-to-topics.md)
+- [路径动画帮助主题](path-animation-how-to-topics.md)
 - [路径动画示例](https://go.microsoft.com/fwlink/?LinkID=160028)

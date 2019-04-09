@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Windows Forms controls, data binding
 - data-bound controls [Windows Forms], Windows Forms
 ms.assetid: 419aac5e-819b-4aad-88b0-73a2f8c0bd27
-ms.openlocfilehash: 3c96275f3e5db24446b030ec007f23e9035242c8
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 3d420e5cb4d9e7f2ad6f8136b8dd33f5901326d2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57703681"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59095485"
 ---
 # <a name="data-binding-and-windows-forms"></a>数据绑定和 Windows 窗体
 在 Windows 窗体中，你不仅可以绑定到传统的数据源，还可以绑定到几乎任何包含数据的结构。 可以绑定到你在运行时、从文件读取时或从其他控件的值派生时计算的一数组值。  
@@ -48,12 +48,13 @@ ms.locfileid: "57703681"
   
 |方案|描述|  
 |--------------|-----------------|  
-|Reporting|报表为你提供了一种灵活的方式来显示和汇总打印出的文档中的数据。 一种很常见的做法是：创建一个将数据源的选定内容打印到屏幕或打印机的报表。 常见的报表包括列表、发票和摘要。 通常将项格式化成列表的列，在每个列表项下组织子项，但你应选择最适合数据的布局。|  
+|报表|报表为你提供了一种灵活的方式来显示和汇总打印出的文档中的数据。 一种很常见的做法是：创建一个将数据源的选定内容打印到屏幕或打印机的报表。 常见的报表包括列表、发票和摘要。 通常将项格式化成列表的列，在每个列表项下组织子项，但你应选择最适合数据的布局。|  
 |数据输入|输入大量相关数据或提示用户输入信息的常用方法是使用数据输入表单。 用户可以使用文本框、选项按钮、下拉列表和复选框来输入信息或选择选项。 然后提交信息并将其存储在数据库中，数据库结构基于所输入的信息。|  
 |大纲/细节关系|大纲/细节应用程序是查看相关数据的一种格式。 具体来说，有两个彼此间有关系的数据表 — 在经典商业示例中，“顾客”表和“订单”表之间存在联系客户和对应订单的关系。 有关使用两个 Windows 窗体创建大纲/细节应用程序的详细信息<xref:System.Windows.Forms.DataGridView>控件，请参阅[如何：创建使用两个 Windows 窗体 DataGridView 控件的母版/详细信息窗体](./controls/create-a-master-detail-form-using-two-datagridviews.md)|  
 |查找表|另一个常见的数据表示/操作方案是表查找。 通常情况下，作为较大数据显示的一部分，<xref:System.Windows.Forms.ComboBox> 控件用于显示和操作数据。 关键在于 <xref:System.Windows.Forms.ComboBox> 控件中显示的数据与写入数据库中的数据不同。 例如，如果你有一个显示杂货店中的物料的 <xref:System.Windows.Forms.ComboBox> 控件，你可能想要查看产品名称（面包、牛奶、鸡蛋）。 但是，为了便于在数据库中检索信息或使数据库标准化，你可能会将给定订单特定项的信息存储为物料编号（#501、#603 等等）。 因此，你窗体上的 <xref:System.Windows.Forms.ComboBox> 控件中的杂货物料“友好名称”和存在于订单中的物料编号间有着隐式联系。 这就是表查找的实质。 有关详细信息，请参阅[如何：使用 Windows 窗体 BindingSource 组件创建查找表](./controls/how-to-create-a-lookup-table-with-the-windows-forms-bindingsource-component.md)。|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.Binding>
 - [Windows 窗体数据绑定](windows-forms-data-binding.md)
 - [如何：将 Windows 窗体 DataGrid 控件绑定到数据源](./controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)

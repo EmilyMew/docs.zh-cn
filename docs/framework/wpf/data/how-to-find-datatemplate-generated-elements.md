@@ -8,12 +8,12 @@ helpviewer_keywords:
 - finding DataTemplate elements [WPF]
 - DataTemplate [WPF]
 ms.assetid: bfcd564e-5e9e-451e-8641-a9b5c3cfac90
-ms.openlocfilehash: 4317d22a786caa6a191002ff411fe54436f3dbcc
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: de5a4937feabdb4486d9dcf9d5e5bfddd2356690
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57362209"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089166"
 ---
 # <a name="how-to-find-datatemplate-generated-elements"></a>如何：查找由 DataTemplate 生成的元素
 此示例演示如何查找由 <xref:System.Windows.DataTemplate> 生成的元素。  
@@ -38,6 +38,7 @@ ms.locfileid: "57362209"
  [!code-vb[FindGeneratedItems#FVC](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FindGeneratedItems/VisualBasic/Window1.xaml.vb#fvc)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [如何：查找由 ControlTemplate 生成的元素](../controls/how-to-find-controltemplate-generated-elements.md)
 - [数据绑定概述](data-binding-overview.md)
 - [帮助主题](data-binding-how-to-topics.md)

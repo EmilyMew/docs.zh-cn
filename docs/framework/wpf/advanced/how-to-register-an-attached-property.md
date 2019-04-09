@@ -8,12 +8,12 @@ helpviewer_keywords:
 - attached properties [WPF], registering
 - registering attached properties [WPF]
 ms.assetid: eb47bd94-0451-4f8d-8fb6-95f7812ac05b
-ms.openlocfilehash: 3cbbc8a1ea8419df408cda76de3459be9464a100
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 4c678a64b62b8f4db24cf39ffbafac52e56c9982
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57377711"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59137626"
 ---
 # <a name="how-to-register-an-attached-property"></a>如何：注册附加属性
 此示例演示如何注册附加属性和提供公共访问器，以便可以在 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 和代码中使用该属性。 附加属性是由 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 定义的语法概念。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 类型的大多数附加属性还作为依赖属性实现。 可以对任何使用依赖项属性<xref:System.Windows.DependencyObject>类型。  
@@ -27,7 +27,8 @@ ms.locfileid: "57377711"
  [!code-vb[WPFAquariumSln#RegisterAttachedBubbler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerattachedbubbler)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.DependencyProperty>
 - [依赖项属性概述](dependency-properties-overview.md)
-- [自定义依赖属性](custom-dependency-properties.md)
+- [自定义依赖项属性](custom-dependency-properties.md)
 - [帮助主题](properties-how-to-topics.md)

@@ -2,12 +2,12 @@
 title: 错误处理
 ms.date: 03/30/2017
 ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
-ms.openlocfilehash: ddc3921fbb6b453db43ed3939134650395ade670
-ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
+ms.openlocfilehash: da2ae3db0ff0432a49fcbf6de674bfb730be1286
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56261145"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59136430"
 ---
 # <a name="error-handling"></a>错误处理
 ## <a name="error-handling-in-windows-communication-foundation"></a>Windows Communication Foundation 中的错误处理  
@@ -59,7 +59,7 @@ ms.locfileid: "56261145"
  跟踪是可以在其中可能会看到所有异常的仅"全部捕捉"位置。 有关跟踪和日志记录异常的更多信息，请参见“跟踪和日志记录”。  
   
 ### <a name="uri-template-errors-when-using-webgetattribute-and-webinvokeattribute"></a>使用 WebGetAttribute 和 WebInvokeAttribute 时的 URI 模板错误  
- 通过 WebGet 和 WebInvoke 特性，您可以指定将请求地址的组件映射到操作参数的 URI 模板。 例如，URI 模板“weather/{state}/{city}”将请求地址映射到文本标记、名为 state 的参数和名为 city 的参数。 然后，可以将这些参数按名称绑定到该操作的某些形参上。  
+ 通过 WebGet 和 WebInvoke 特性，你可以指定将请求地址的组件映射到操作参数的 URI 模板。 例如，URI 模板“weather/{state}/{city}”将请求地址映射到文本标记、名为 state 的参数和名为 city 的参数。 然后，可以将这些参数按名称绑定到该操作的某些形参上。  
   
  模板参数在 URI 内以字符串的形式出现，而类型化协定的形参可能属于非字符串类型。 因此，需要进行某种转换，才能调用该操作。 一个[转换格式表](wcf-web-http-programming-model-overview.md)可用。  
   
@@ -68,4 +68,5 @@ ms.locfileid: "56261145"
  可通过安装错误处理程序，像许多其他类型的调度失败一样检查类型转换调度失败。 调用 IErrorHandler 扩展点处理服务级别异常。 从中，可以选择要发送回调用方的响应，以及执行任何自定义任务和报告。  
   
 ## <a name="see-also"></a>请参阅
+
 - [基本 WCF 编程](../basic-wcf-programming.md)

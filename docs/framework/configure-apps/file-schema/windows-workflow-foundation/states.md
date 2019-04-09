@@ -3,12 +3,12 @@ title: <states>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: ebea5e7c-ad58-43c5-8f2d-cca25ae1b721
-ms.openlocfilehash: 018ea20342475de40a8392a9272724e37902ecb9
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 30cb2efa4c00c8b292a8ace6a03306d6ac76a7f4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55257715"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073117"
 ---
 # <a name="states"></a>\<states>
 表示创建跟踪记录时已跟踪工作流实例中已订阅状态的集合。  
@@ -72,11 +72,11 @@ ms.locfileid: "55257715"
 |Idle|工作流实例处于空闲状态。|  
 |Persisted|工作流实例已保留。|  
 |Resumed|工作流实例已恢复。|  
-|Started|工作流实例已启动。|  
+|已开始|工作流实例已启动。|  
 |UnhandledException|工作流实例遇到了未经处理的异常。|  
-|Unloaded|工作流实例已卸载。|  
+|已卸载|工作流实例已卸载。|  
 |Canceled|工作流实例已取消。|  
-|挂起|工作流实例处于挂起状态。|  
+|挂起的|工作流实例处于挂起状态。|  
 |Terminated|工作流实例已终止。|  
 |Unsuspended|工作流实例已取消挂起。|  
   
@@ -94,6 +94,7 @@ ms.locfileid: "55257715"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>

@@ -2,12 +2,12 @@
 title: 有关跟踪的安全注意事项和有用提示
 ms.date: 03/30/2017
 ms.assetid: 88bc2880-ecb9-47cd-9816-39016a07076f
-ms.openlocfilehash: 0dadf89ecbd7623735debe37355761aea3d62db4
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 72d35230820e8466cd9c63a76b26c7a23bdfe024
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54580390"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59130789"
 ---
 # <a name="security-concerns-and-useful-tips-for-tracing"></a>有关跟踪的安全注意事项和有用提示
 本主题说明防止敏感信息公开的方法以及使用 WebHost 时的有用提示。  
@@ -91,4 +91,5 @@ ms.locfileid: "54580390"
  另外，对于面向连接的传输，每次连接时会记录一次消息发送方的 IP 地址；对于非面向连接的传输，每发送一条消息会记录一次消息发送方的 IP 地址。 这是在未经发送方同意的情况下进行的。 不过，只有在“信息”或“详细”跟踪级别才会发生此日志记录，这些级别不是生产中的默认或推荐跟踪级别（现场调试时除外）。  
   
 ## <a name="see-also"></a>请参阅
+
 - [跟踪](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)

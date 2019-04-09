@@ -17,12 +17,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 057ee7a323a8a725ebf82ee9dbaea61a43c061ca
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 321298ce942b35d11a861c87cdf6b8714179ea97
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54674604"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59080827"
 ---
 # <a name="icordebugterminate-method"></a>ICorDebug::Terminate 方法
 终止`ICorDebug`对象。  
@@ -46,7 +46,8 @@ HRESULT Terminate ();
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [ICorDebug 接口](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

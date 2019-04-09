@@ -1,11 +1,16 @@
 ---
 title: .NET 示例和教程
-description: '有关可帮助了解 .NET 的 .NET Core、ASP.NET Core 和 C# 语言的示例和教程信息。'
+description: 有关可帮助了解 .NET 的 .NET Core、ASP.NET Core 和 C# 语言的示例和教程信息。
 author: BillWagner
 ms.author: wiwagn
 ms.date: 04/11/2017
+ms.openlocfilehash: 682c60ca4a0e801ec8e138a88124b86b88f39615
+ms.sourcegitcommit: 30e2fe5cc4165aa6dde7218ec80a13def3255e98
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "57558945"
 ---
-
 # <a name="net-samples-and-tutorials"></a>.NET 示例和教程
 
 .NET 文档包含指导用户如何使用 .NET 的一系列示例和教程。 本主题介绍如何查找、查看和下载 .NET Core、ASP.NET Core 和 C# 示例和教程。 可在 [F# 基础站点](https://fsharp.org/learn.html)找到学习 F# 编程语言的资源。 如果想要使用联机代码编辑器来探索 C#，请先查看[此交互式教程](https://www.microsoft.com/net/learn/in-browser-tutorial/1)然后再继续学习 [C# 交互式教程](../csharp/tutorials/intro-to-csharp/index.md)。 有关如何查看和下载示例代码的说明，请参阅[查看和下载示例](#viewing-and-downloading-samples)部分。

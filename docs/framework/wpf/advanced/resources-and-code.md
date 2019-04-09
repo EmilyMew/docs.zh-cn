@@ -11,18 +11,16 @@ helpviewer_keywords:
 - procedural code [WPF], accessing resources from
 - resources [WPF], creating with procedural code
 ms.assetid: c1cfcddb-e39c-41c8-a7f3-60984914dfae
-ms.openlocfilehash: 12f9acccfc23364795cd18ef1da2ced5b442c6f7
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: d36d30dd336bbe50b192b10a6a60d2c7e382adb8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57367970"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59137704"
 ---
 # <a name="resources-and-code"></a>资源和代码
 本概述主要介绍如何使用代码（而非 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 语法）来访问或创建 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 资源。 有关常规资源用法以及 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 语法角度的资源的详细信息，请参阅 [XAML 资源](xaml-resources.md)。  
-  
-  
-  
+
 <a name="accessing"></a>   
 ## <a name="accessing-resources-from-code"></a>从代码访问资源  
  用于识别通过 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 定义的资源的键也用于检索特定资源（如果你在代码中请求此资源）。 从代码检索资源的最简单方法是调用<xref:System.Windows.FrameworkElement.FindResource%2A>或<xref:System.Windows.FrameworkElement.TryFindResource%2A>从应用程序中的框架级对象的方法。 这两个方法之间的行为差异在于当未找到所请求的键时所发生的情况。 <xref:System.Windows.FrameworkElement.FindResource%2A> 引发了异常;<xref:System.Windows.FrameworkElement.TryFindResource%2A>不会引发异常，而是返回`null`。 每个方法都将资源键作为一个输入参数，并返回一个松散类型化对象。 资源键通常是字符串，但有时也用作非字符串；有关详细信息，请参阅[将对象用作键](#objectaskey)部分。 通常应将返回的对象强制转换为请求资源时设置的属性所要求的类型。 代码资源解析的查找逻辑与动态资源引用 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 情况相同。 对资源的搜索从调用元素开始，然后继续搜索逻辑树中的后续父元素。 如果必要，将继续查找应用程序资源、主题以及系统资源。 资源的代码请求将正确地说明资源字典（可能排在从 [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] 加载的资源字典之后）中的运行时更改，也将说明实时系统资源更改。  
@@ -47,5 +45,6 @@ ms.locfileid: "57367970"
  大多数资源用法都会将资源的键设置为字符串。 但是，各个 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 功能都特意不使用字符串类型来指定键，而是将此参数设置为对象。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 样式和主题支持使用按对象对资源进行键控的功能。 主题中成为否则非样式的控件的默认样式的样式来进行键控的<xref:System.Type>它们应当应用于的控件。 按类型进行键控提供了一种可靠的查找机制，该机制作用于每个控件类型的默认实例，即使派生类型不具有默认样式，也可以通过反射检测到类型，并将类型用于设置派生类的样式。 您可以指定<xref:System.Type>密钥对中定义的资源[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]通过使用[X:type 标记扩展](../../xaml-services/x-type-markup-extension.md)。 对于支持 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 功能的其他非字符串键用法，也存在类似扩展，如 [ComponentResourceKey 标记扩展](componentresourcekey-markup-extension.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [XAML 资源](xaml-resources.md)
 - [样式设置和模板化](../controls/styling-and-templating.md)

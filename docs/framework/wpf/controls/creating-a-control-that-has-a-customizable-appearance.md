@@ -13,12 +13,12 @@ helpviewer_keywords:
 - managing control states [WPF], VisualStateManager
 - VisualStateManager [WPF], best practice
 ms.assetid: 9e356d3d-a3d0-4b01-a25f-2d43e4d53fe5
-ms.openlocfilehash: bb82921070cb5040cd279830bafd3d0e718d1374
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
-ms.translationtype: MT
+ms.openlocfilehash: 17b6fd604b5eca54d6323701dafdd38f9f6e7328
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57372698"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59131010"
 ---
 # <a name="creating-a-control-that-has-a-customizable-appearance"></a>创建具有可自定义外观的控件
 <a name="introduction"></a>
@@ -47,7 +47,7 @@ ms.locfileid: "57372698"
   
 -   [提供控件协定](#providing_the_control_contract)  
   
--   [完整示例](#complete_example)  
+-   [完整的示例](#complete_example)  
   
 <a name="prerequisites"></a>   
 ## <a name="prerequisites"></a>系统必备  
@@ -121,7 +121,7 @@ ms.locfileid: "57372698"
 ### <a name="use-the-visualstatemanager-to-manage-states"></a>使用 VisualStateManager 来管理状态  
  <xref:System.Windows.VisualStateManager>跟踪控件状态以及执行状态间转换所需的逻辑。 当您将添加<xref:System.Windows.VisualState>对象添加到<xref:System.Windows.Controls.ControlTemplate>，你将其添加到<xref:System.Windows.VisualStateGroup>并添加<xref:System.Windows.VisualStateGroup>到<xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=nameWithType>附加属性，以便<xref:System.Windows.VisualStateManager>有权访问它们。  
   
- 下面的示例重复前面的示例表明<xref:System.Windows.VisualState>对应于对象`Positive`和`Negative`控件的状态。 <xref:System.Windows.Media.Animation.Storyboard>中`Negative`<xref:System.Windows.VisualState>变为<xref:System.Windows.Controls.TextBlock.Foreground%2A>的<xref:System.Windows.Controls.TextBlock>红色。   当`NumericUpDown`控件处于`Negative`状态，则在情节提要`Negative`状态开始。  然后<xref:System.Windows.Media.Animation.Storyboard>中`Negative`当控件返回到状态停止`Positive`状态。  `Positive` <xref:System.Windows.VisualState>不需要包含<xref:System.Windows.Media.Animation.Storyboard>因为时<xref:System.Windows.Media.Animation.Storyboard>有关`Negative`停止，<xref:System.Windows.Controls.TextBlock.Foreground%2A>返回到其原始的颜色。  
+ 下面的示例重复前面的示例表明<xref:System.Windows.VisualState>对应于对象`Positive`和`Negative`控件的状态。 <xref:System.Windows.Media.Animation.Storyboard>中`Negative`<xref:System.Windows.VisualState>变为<xref:System.Windows.Controls.TextBlock.Foreground%2A>的<xref:System.Windows.Controls.TextBlock>红色。   当`NumericUpDown`控件处于`Negative`状态，则在情节提要`Negative`状态开始。  然后<xref:System.Windows.Media.Animation.Storyboard>中`Negative`当控件返回到状态停止`Positive`状态。  `Positive`<xref:System.Windows.VisualState>不需要包含<xref:System.Windows.Media.Animation.Storyboard>因为时<xref:System.Windows.Media.Animation.Storyboard>有关`Negative`停止，<xref:System.Windows.Controls.TextBlock.Foreground%2A>返回到其原始的颜色。  
   
  [!code-xaml[VSMCustomControl#ValueStates](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#valuestates)]  
   
@@ -156,7 +156,7 @@ ms.locfileid: "57372698"
   
  如果通过将状态名称传递给<xref:System.Windows.VisualStateManager.GoToState%2A>时该控件已处于该状态<xref:System.Windows.VisualStateManager.GoToState%2A>不执行任何操作，因此无需检查的控件的当前状态。  例如，如果`Value`从一个负号更改为另一个负数的情节提要`Negative`不中断状态，用户不会在控件中的发生更改。  
   
- <xref:System.Windows.VisualStateManager>使用<xref:System.Windows.VisualStateGroup>对象，以确定哪种状态时调用退出<xref:System.Windows.VisualStateManager.GoToState%2A>。 控件将始终处于一个状态为每个<xref:System.Windows.VisualStateGroup>中定义其<xref:System.Windows.Controls.ControlTemplate>，才离开前一种状态时将它放入另一种状态从同一个<xref:System.Windows.VisualStateGroup>。 例如，<xref:System.Windows.Controls.ControlTemplate>的`NumericUpDown`控件定义`Positive`和`Negative`<xref:System.Windows.VisualState>中其中一个对象<xref:System.Windows.VisualStateGroup>并`Focused`并`Unfocused`<xref:System.Windows.VisualState>中另一个对象。 (您所见`Focused`并`Unfocused`<xref:System.Windows.VisualState>中定义[完整示例](#complete_example)当控件从本主题中的部分`Positive`状态变为`Negative`状态，反过来也一样，控件将保留在任一`Focused`或`Unfocused`状态。  
+ <xref:System.Windows.VisualStateManager>使用<xref:System.Windows.VisualStateGroup>对象，以确定哪种状态时调用退出<xref:System.Windows.VisualStateManager.GoToState%2A>。 控件将始终处于一个状态为每个<xref:System.Windows.VisualStateGroup>中定义其<xref:System.Windows.Controls.ControlTemplate>，才离开前一种状态时将它放入另一种状态从同一个<xref:System.Windows.VisualStateGroup>。 例如，<xref:System.Windows.Controls.ControlTemplate>的`NumericUpDown`控件定义`Positive`并`Negative`<xref:System.Windows.VisualState>中其中一个对象<xref:System.Windows.VisualStateGroup>并`Focused`和`Unfocused`<xref:System.Windows.VisualState>中另一个对象。 (您所见`Focused`并`Unfocused`<xref:System.Windows.VisualState>中定义[完整示例](#complete_example)当控件从本主题中的部分`Positive`状态变为`Negative`状态，或反之，该控件将保留在要么`Focused`或`Unfocused`状态。  
   
  有以下三个控件的状态可能会更改其中的典型位置：  
   
@@ -238,5 +238,6 @@ ms.locfileid: "57372698"
  [!code-vb[VSMCustomControl#ControlLogic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#controllogic)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [通过创建 ControlTemplate 自定义现有控件的外观](customizing-the-appearance-of-an-existing-control.md)
 - [控件自定义](control-customization.md)

@@ -45,7 +45,7 @@ ms.locfileid: "55674459"
 |---------------|-----------------|
 |`compilerOptions`|可选特性。<br /><br /> 指定用于编译的其他特定于编译器的参数。 值`compilerOptions`属性通常编译器的编译器选项主题中列出。|
 |`extension`|必需的特性。<br /><br /> 提供以分号分隔的语言提供程序的源文件所使用的文件扩展名的列表。 例如，".cs"。|
-|`language`|必需的特性。<br /><br /> 提供语言提供程序支持的语言名称之间用分号分隔的列表。 例如，"c#; cs; csharp"。|
+|`language`|必需的特性。<br /><br /> 提供语言提供程序支持的语言名称之间用分号分隔的列表。 例如，"C#; cs; csharp"。|
 |`type`|必需的特性。<br /><br /> 指定语言提供程序，包括包含的提供程序实现的程序集名称的类型的名称。 类型名称必须满足中定义的要求[指定完全限定的类型名称](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)。|
 |`warningLevel`|可选特性。<br /><br /> 指定的默认编译器警告等级;确定在该语言提供程序将编译警告视为错误的级别。|
 

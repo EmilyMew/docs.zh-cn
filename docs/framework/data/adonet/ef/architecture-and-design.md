@@ -2,12 +2,12 @@
 title: 体系结构和设计
 ms.date: 03/30/2017
 ms.assetid: bd738d39-00e2-4bab-b387-90aac1a014bd
-ms.openlocfilehash: 8b3515fac9ae7f9302ba607fcf842719718f6c55
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 42d06fd04ae0459d23961a48ab5ccc0d55695ceb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54576325"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096132"
 ---
 # <a name="architecture-and-design"></a>体系结构和设计
 中的 SQL 生成模块[示例提供程序](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0)作为表示命令目录树的表达式树的访问者实现。 通过表达式树上的单个传递来执行生成。  
@@ -91,7 +91,7 @@ class TopClause : ISqlFragment {
 }  
 ```  
   
-### <a name="symbols"></a>符号  
+### <a name="symbols"></a>Symbols  
  与符号相关的类和符号表将执行输入别名重命名、联接别名平展和列别名重命名。  
   
  Symbol 类表示范围、嵌套 SELECT 语句或列。 使用符号代替实际别名可在使用符号之后进行重命名，并且符号还带有它表示的项目（如类型）的其他信息。  
@@ -214,13 +214,13 @@ private bool IsParentAJoin{get}
   
  若要解释输入的别名重定向，请参阅中的第一个示例[从命令目录树的最佳实践生成 SQL](../../../../../docs/framework/data/adonet/ef/generating-sql-from-command-trees-best-practices.md)。  在投影中，需要将“a”重定向为“b”。  
   
- 在创建 SqlSelectStatement 对象时，作为节点的输入的范围将置于 SqlSelectStatement 的 From 属性中。 基于输入绑定名称（“b”）创建符号 (<symbol_b>) 以表示该范围，并将“AS”+ <symbol_b> 追加到 From 子句。  另外，还将此符号添加到 FromExtents 属性。  
+ 在创建 SqlSelectStatement 对象时，作为节点的输入的范围将置于 SqlSelectStatement 的 From 属性中。 符号 (< symbol_b >) 创建基于输入的绑定名称 ("b") 以表示该范围并将"AS"+ < symbol_b > 追加到 From 子句。  另外，还将此符号添加到 FromExtents 属性。  
   
- 还将此符号添加到符号表以将输入绑定名链接到此符号（“b”，<symbol_b>）。  
+ 此外将符号添加到符号表以将输入的绑定名链接到它 （"b"，< symbol_b >）。  
   
  如果后续节点重用该 SqlSelectStatement，则它将一个项添加到符号表以将其输入绑定名链接到此符号。 在本示例中，带输入的绑定名"a"的 DbProjectExpression 将重用 SqlSelectStatement 并添加 ("a"、 \< symbol_b >) 的表。  
   
- 当表达式引用正在重用 SqlSelectStatement 的节点的输入绑定名时，使用符号表将该引用解析为正确的重定向符号。 若在访问表示“a”的 DbVariableReferenceExpression 时解析“a.x”中的“a”，则将其解析为符号 <symbol_b>。  
+ 当表达式引用正在重用 SqlSelectStatement 的节点的输入绑定名时，使用符号表将该引用解析为正确的重定向符号。 "A"从"a.x"解决后若在访问 DbVariableReferenceExpression 表示"a"将解析为符号 < symbol_b >。  
   
 ### <a name="join-alias-flattening"></a>联接别名平展  
  联接别名平展是在访问 DbPropertyExpression 时实现的，如标题为 DbPropertyExpression 的一节中所述。  
@@ -346,9 +346,9 @@ ORDER BY sk1, sk2, ...
 ### <a name="dbnewinstanceexpression"></a>DbNewInstanceExpression  
  在用作 DbProjectExpression 的 Projection 属性时，DbNewInstanceExpression 会生成参数的以逗号分隔的列表以表示投影列。  
   
- 若 DbNewInstanceExpression 具有集合返回类型并定义一个作为参数提供的表达式的新集合，则将单独处理以下三种情况：  
+ 若 DbNewInstanceExpression 具有集合返回类型并定义一个作为自变量提供的表达式的新集合，则将单独处理以下三种情况：  
   
--   如果 DbNewInstanceExpression 将 DbElementExpression 用作唯一参数，则将对其进行转换，如下所示：  
+-   如果 DbNewInstanceExpression 将 DbElementExpression 用作唯一自变量，则将对其进行转换，如下所示：  
   
     ```  
     NewInstance(Element(X)) =>  SELECT TOP 1 …FROM X  
@@ -361,7 +361,7 @@ SELECT CAST(NULL AS <primitiveType>) as X
 FROM (SELECT 1) AS Y WHERE 1=0  
 ```  
   
- 否则，DbNewInstanceExpression 会生成参数的 UNION ALL 通道：  
+ 否则，DbNewInstanceExpression 会生成自变量的 UNION ALL 通道：  
   
 ```  
 SELECT <visit-result-arg1> as X  
@@ -412,7 +412,8 @@ IsEmpty(inut) = Not Exists(input)
   
  在将 Symbol 对象写入字符串时会发生列重命名。 第一阶段中的 AddDefaultColumns 已确定是否必须对某个列符号进行重命名。 在第二阶段中，只有进行重命名才能确保生成的名称不会与 AllColumnNames 中使用的任何名称发生冲突。  
   
- 若要同时为范围别名和列生成唯一名称，请使用 <existing_name>_n，其中 n 是尚未使用的最小别名。 所有别名的全局列表加大了对层叠重命名的需要。  
+ 若要生成同时为范围别名和列的唯一名称，请使用 < existing_name > _n，其中 n 是尚未使用的最小别名。 所有别名的全局列表加大了对层叠重命名的需要。  
   
 ## <a name="see-also"></a>请参阅
+
 - [示例提供程序中的 SQL 生成](../../../../../docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md)

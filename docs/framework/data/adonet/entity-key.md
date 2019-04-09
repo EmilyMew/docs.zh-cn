@@ -2,12 +2,12 @@
 title: 实体键
 ms.date: 03/30/2017
 ms.assetid: 0d447a6d-fa7a-4db0-8e7a-fd45e385fca0
-ms.openlocfilehash: 0c3a809884fc7b7c1f188af9881f784527fa87ba
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: 1484a73450d5a435f795f18f122c7fe8494cf197
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58408959"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59140109"
 ---
 # <a name="entity-key"></a>实体键
 *实体键*是[属性](../../../../docs/framework/data/adonet/property.md)或一组的属性[实体类型](../../../../docs/framework/data/adonet/entity-type.md)，用于确定标识。 构成实体键的属性是在设计时选择的。 实体键属性的值必须唯一标识实体类型实例中的[实体集](../../../../docs/framework/data/adonet/entity-set.md)在运行时。 在选择构成实体键的属性时应确保实例在实体集中的唯一性。  
@@ -40,5 +40,6 @@ ms.locfileid: "58408959"
  对实体键使用 `Name` 和 `Address` 是一个合理的选择，因为两个同名作者住址相同的可能性很小。 但是，针对实体键的这种选择并不能绝对确保实体键在实体集中的唯一性。 在这种情况下，建议添加一个可用来唯一标识作者的属性，例如 `AuthorId`。  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体数据模型关键概念](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
 - [实体数据模型](../../../../docs/framework/data/adonet/entity-data-model.md)

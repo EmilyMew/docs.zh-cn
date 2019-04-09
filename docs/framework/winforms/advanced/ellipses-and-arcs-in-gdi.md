@@ -12,12 +12,12 @@ helpviewer_keywords:
 - ellipses
 - drawing [Windows Forms], arcs
 ms.assetid: 34f35133-a835-4ca4-81f6-0dfedee8b683
-ms.openlocfilehash: 9f6969f9ad838ae913f049c4fc65d987e1aff9fa
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 8bbc2eda6450128eac55576259880e83f07099ab
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57718475"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59117451"
 ---
 # <a name="ellipses-and-arcs-in-gdi"></a>GDI+ 中的椭圆和弧线
 您可以轻松地绘制椭圆和弧线使用<xref:System.Drawing.Graphics.DrawEllipse%2A>并<xref:System.Drawing.Graphics.DrawArc%2A>方法的<xref:System.Drawing.Graphics>类。  
@@ -48,9 +48,10 @@ ms.locfileid: "57718475"
  ![椭圆和弧线](./media/aboutgdip02-art06.gif "Aboutgdip02_art06")  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Graphics?displayProperty=nameWithType>
 - <xref:System.Drawing.Pen?displayProperty=nameWithType>
-- [直线、曲线和形状](lines-curves-and-shapes.md)
-- [如何：创建用于绘制图形对象](how-to-create-graphics-objects-for-drawing.md)
+- [直线、曲线和图形](lines-curves-and-shapes.md)
+- [如何：创建用于绘制的 Graphics 对象](how-to-create-graphics-objects-for-drawing.md)
 - [如何：创建钢笔](how-to-create-a-pen.md)
-- [如何：绘制空心的形状](how-to-draw-an-outlined-shape.md)
+- [如何：绘制轮廓形状](how-to-draw-an-outlined-shape.md)

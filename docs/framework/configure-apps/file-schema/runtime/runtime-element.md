@@ -9,12 +9,12 @@ helpviewer_keywords:
 - runtime element
 - container tags, <runtime> element
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
-ms.openlocfilehash: 05a94116d3b3cc662036b2ed15e255d4f8eda2c4
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 3ac5fdeaebfd67d6ad4f68166fda588b9e58ca98
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55285943"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59119517"
 ---
 # <a name="runtime-element"></a>\<运行时 > 元素
 提供公共语言运行时用于配置应用程序的信息。  
@@ -90,5 +90,6 @@ ms.locfileid: "55285943"
  中的元素[\<运行时 >](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)部分由公共语言运行时在应用程序启动时自动读取。 您还可以通过提供到其名称定义一个非默认应用程序域的配置文件<xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=nameWithType>属性; 其设置将应用程序域加载时自动读取。 您应该很少，即使有的话会需要直接读取中的设置[\<运行时 >](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)应用程序的配置文件中的部分。  
   
 ## <a name="see-also"></a>请参阅
+
 - [运行时设置架构](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [配置文件架构](../../../../../docs/framework/configure-apps/file-schema/index.md)

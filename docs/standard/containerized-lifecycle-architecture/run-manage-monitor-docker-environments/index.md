@@ -4,8 +4,13 @@ description: 使用 Microsoft 平台和工具的容器化 Docker 应用程序的
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 02/15/2019
+ms.openlocfilehash: 7c470a2d24b8807bdda10e1816bc5a430a5c63f1
+ms.sourcegitcommit: bd28ff1e312eaba9718c4f7ea272c2d4781a7cac
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56834935"
 ---
-
 # <a name="run-manage-and-monitor-docker-production-environments"></a>运行、管理和监视 Docker 生产环境
 
 设想：企业应用程序需要使用高可用性和高可伸缩性; 才能运行IT 操作需要能够管理和监视环境及应用程序本身。

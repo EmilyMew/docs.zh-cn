@@ -1,5 +1,5 @@
 ---
-title: 如何：设置并返回数字值使用 Windows 窗体 NumericUpDown 控件
+title: 如何：使用 Windows 窗体 NumericUpDown 控件设置和返回数值
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - Windows Forms controls, NumericUpDown
 - NumericUpDown control [Windows Forms], setting and returning values
 ms.assetid: 5bd8f8cd-4c12-49ea-9cc3-2a647d064689
-ms.openlocfilehash: 166b14fca2009d0609fa48a5f07912b33f074071
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
-ms.translationtype: MT
+ms.openlocfilehash: 281fbbd4459230056fcac2e6c684422c91dc0817
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57703196"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59119881"
 ---
-# <a name="how-to-set-and-return-numeric-values-with-the-windows-forms-numericupdown-control"></a>如何：设置并返回数字值使用 Windows 窗体 NumericUpDown 控件
+# <a name="how-to-set-and-return-numeric-values-with-the-windows-forms-numericupdown-control"></a>如何：使用 Windows 窗体 NumericUpDown 控件设置和返回数值
 Windows 窗体的数值<xref:System.Windows.Forms.NumericUpDown>控件由其<xref:System.Windows.Forms.NumericUpDown.Value%2A>属性。 就像使用任何其他属性一样，您可以编写控件的值的条件测试。 一次<xref:System.Windows.Forms.NumericUpDown.Value%2A>属性设置，可以直接通过编写代码来执行操作，来调整它也可以调用<xref:System.Windows.Forms.NumericUpDown.UpButton%2A>和<xref:System.Windows.Forms.NumericUpDown.DownButton%2A>方法。  
   
 ### <a name="to-set-the-numeric-value"></a>若要设置的数字值  
@@ -90,6 +90,7 @@ Windows 窗体的数值<xref:System.Windows.Forms.NumericUpDown>控件由其<xre
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.NumericUpDown>
 - <xref:System.Windows.Forms.NumericUpDown.Value%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.NumericUpDown.Increment%2A?displayProperty=nameWithType>

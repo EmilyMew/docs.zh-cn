@@ -1,5 +1,5 @@
 ---
-title: <add> 的 <listeners> 的 <trace> 元素
+title: <add> 元素<listeners>为 <trace>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/add
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <add> element for <listeners>
 - add element for <listeners>
 ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
-ms.openlocfilehash: 31ab58d6817c6c5064182ab5ef8b9595e92bef7d
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: ba0ffc4f95b9af7fcd319068501ce0bb9714c2ad
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55260641"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089557"
 ---
 # <a name="add-element-for-listeners-for-trace"></a>\<添加 > 元素\<侦听器 > 为\<跟踪 >
 将侦听器添加到**侦听器**集合。  
@@ -39,7 +39,7 @@ ms.locfileid: "55260641"
   
 |特性|描述|  
 |---------------|-----------------|  
-|**type**|必需的特性。<br /><br /> 指定的侦听器的类型。 必须使用满足要求中指定的字符串[指定完全限定的类型名称](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)。|  
+|**类型**|必需的特性。<br /><br /> 指定的侦听器的类型。 必须使用满足要求中指定的字符串[指定完全限定的类型名称](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)。|  
 |**initializeData**|可选特性。<br /><br /> 传递给构造函数为指定类的字符串。|  
 |**name**|可选特性。<br /><br /> 指定侦听器的名称。|  
   
@@ -102,6 +102,7 @@ ms.locfileid: "55260641"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.Debug>
 - <xref:System.Diagnostics.EventLogTraceListener>

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - encoding image formats [WPF]
 - visuals [WPF], encoding to an image file
 ms.assetid: 2036385b-ea47-4d54-8027-5797f52c8149
-ms.openlocfilehash: 2d5da0bde243128bc0d7aa29bf865ca9bfbd1d9a
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 872c19af0cfcf4fc980643c37e9a6028457c03b3
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57355984"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096779"
 ---
 # <a name="how-to-encode-a-visual-to-an-image-file"></a>如何：将 Visual 编码为图像文件
 此示例演示如何进行编码<xref:System.Windows.Media.Visual>为图像文件，并使用对象<xref:System.Windows.Media.Imaging.RenderTargetBitmap>和一个<xref:System.Windows.Media.Imaging.PngBitmapEncoder>。  
@@ -28,6 +28,7 @@ ms.locfileid: "57355984"
  一个<xref:System.Windows.Media.Imaging.PngBitmapEncoder>使用在此示例中，但任何派生<xref:System.Windows.Media.Imaging.BitmapEncoder>对象可能已用来创建图像文件。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.DrawingContext>
 - [图像处理概述](imaging-overview.md)
 - [Drawing 对象概述](drawing-objects-overview.md)

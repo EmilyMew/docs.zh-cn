@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 45ad3f8b-1c26-4c9f-91a9-3bb0759a47a4
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5dc5c3425672dd71359edf61c5f8625d96ad09ce
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 34c1843873e2f6a9a4ad78ed860a0115e0f02e7b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57716941"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102422"
 ---
 # <a name="how-to-create-a-windows-forms-application-from-the-command-line"></a>如何：从命令行创建 Windows 窗体应用程序
 下面的过程介绍从命令行创建和运行 Windows 窗体应用程序所必须完成的基本步骤。 在 Visual Studio 中没有对这些过程的扩展支持。  另请参阅[演练：在 WPF 中承载 Windows 窗体控件](../wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md)。  
@@ -65,7 +65,7 @@ ms.locfileid: "57716941"
   
     -   如果使用的 Visual Basic，请键入： `vbc form1.vb`  
   
-3.  在命令提示符下键入： `Form1.exe`  
+3.  在命令提示符处，键入： `Form1.exe`  
   
 ## <a name="adding-a-control-and-handling-an-event"></a>添加控件并处理事件  
  上一过程中的步骤演示了如何只创建一个可编译和运行的基本 Windows 窗体。 下一个过程中将显示如何创建控件并将其添加到窗体中，以及如何处理控件的事件。 可以向 Windows 窗体添加控件的详细信息，请参阅[Windows 窗体控件](./controls/index.md)。  
@@ -114,6 +114,7 @@ ms.locfileid: "57716941"
 -   若要编译代码，请遵循处理过程中描述如何编译和运行应用程序的说明。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.Form>
 - <xref:System.Windows.Forms.Control>
 - [更改 Windows 窗体外观](changing-the-appearance-of-windows-forms.md)

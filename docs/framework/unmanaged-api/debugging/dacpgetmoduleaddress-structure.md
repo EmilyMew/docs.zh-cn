@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: c0a12ab638adfccfb6406aa495bd3568911ee969
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: cbea6c0562c68ae5d18247dc97bc53eb9dfbfd7e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54619774"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59104099"
 ---
 # <a name="dacpgetmoduleaddress-structure"></a>DacpGetModuleAddress Structure
 
@@ -55,10 +55,11 @@ struct DacpGetModuleAddress
 
 ## <a name="requirements"></a>要求
 **平台：** 请参阅[系统需求](../../../../docs/framework/get-started/system-requirements.md)。  
-**标头：** 无  
-**库：** 无  
-**.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**标头：** None  
+**库：** None  
+**.NET Framework 版本：** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## <a name="see-also"></a>请参阅
+
 - [调试](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [调试结构](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

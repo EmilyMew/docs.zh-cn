@@ -2,12 +2,12 @@
 title: 数据集、数据表和数据视图
 ms.date: 03/30/2017
 ms.assetid: 6d4c4b69-8919-4224-8a65-6cca1c61b48f
-ms.openlocfilehash: 098dc3ec198edc84b67ae3ed9d2610b2386a3205
-ms.sourcegitcommit: 3500c4845f96a91a438a02ef2c6b4eef45a5e2af
+ms.openlocfilehash: 9c57f75dd94f3fbda74c13a5d5773825051fe416
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55825909"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59105724"
 ---
 # <a name="datasets-datatables-and-dataviews"></a>数据集、数据表和数据视图
 ADO.NET <xref:System.Data.DataSet> 是数据的一种内存驻留表示形式，无论它包含的数据来自什么数据源，都会提供一致的关系编程模型。 <xref:System.Data.DataSet> 表示整个数据集，其中包含对数据进行包含、排序和约束的表以及表间的关系。  
@@ -29,10 +29,10 @@ ADO.NET <xref:System.Data.DataSet> 是数据的一种内存驻留表示形式，
  [将数据表添加到数据集中](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/adding-a-datatable-to-a-dataset.md)  
  描述如何创建表和列并将其添加到 <xref:System.Data.DataSet> 中。  
   
- [添加数据关系](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/adding-datarelations.md)  
+ [添加 DataRelation](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/adding-datarelations.md)  
  描述如何创建 <xref:System.Data.DataSet> 中表之间的关系。  
   
- [导航数据关系](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations.md)  
+ [导航 DataRelation](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations.md)  
  描述如何使用 <xref:System.Data.DataSet> 中表之间的关系来返回具有父子关系的子行或父行。  
   
  [合并数据集内容](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/merging-dataset-contents.md)  
@@ -47,19 +47,19 @@ ADO.NET <xref:System.Data.DataSet> 是数据的一种内存驻留表示形式，
  [类型化数据集](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md)  
  描述类型化 <xref:System.Data.DataSet> 的定义并说明如何创建和使用。  
   
- [数据表](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
+ [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
  描述如何创建 <xref:System.Data.DataTable>、定义架构和处理数据。  
   
  [DataTableReader](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatablereaders.md)  
  描述如何创建和使用 <xref:System.Data.DataTableReader>。  
   
- [数据视图](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
+ [DataView](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
  描述如何创建和使用 `DataViews` 以及如何使用 <xref:System.Data.DataView> 事件。  
   
  [在数据集中使用 XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)  
  描述 <xref:System.Data.DataSet> 如何作为数据源与 XML 进行交互（包括以 XML 数据的形式加载和保持 <xref:System.Data.DataSet> 的内容）。  
   
- [通过 XML Web service 使用数据集](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/consuming-a-dataset-from-an-xml-web-service.md)  
+ [通过 XML Web 服务使用数据集](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/consuming-a-dataset-from-an-xml-web-service.md)  
  描述如何创建使用 <xref:System.Data.DataSet> 来传输数据的 XML Web services。  
   
 ## <a name="related-sections"></a>相关章节  
@@ -79,5 +79,6 @@ ADO.NET <xref:System.Data.DataSet> 是数据的一种内存驻留表示形式，
  描述如何使用数据源中的主键信息填充**数据集**。  
   
 ## <a name="see-also"></a>请参阅
+
 - [ADO.NET](../../../../../docs/framework/data/adonet/index.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

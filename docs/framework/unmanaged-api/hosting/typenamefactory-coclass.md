@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: abdfdd4393609bb7821cfc44c0e46574d8724cfb
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a915ed72350f278a5df01191e69c95a4917f1230
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54730052"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59094159"
 ---
 # <a name="typenamefactory-coclass"></a>TypeNameFactory 组件类
 用于管理类型名称的析构函数中提供的接口。  
@@ -47,7 +47,8 @@ coclass TypeNameFactory {
   
  **库：** 包含为 MSCorEE.dll 中的资源  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
-- [承载组件类](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)
+
+- [承载 Coclass](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)

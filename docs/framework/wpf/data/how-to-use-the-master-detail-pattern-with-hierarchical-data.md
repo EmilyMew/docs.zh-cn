@@ -1,18 +1,18 @@
 ---
-title: 如何：对分层数据使用主-从模式
+title: 如何：将主-详细模式与分层数据结合使用
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data binding [WPF], Master-Detail data paradigm
 - Master-Detail data paradigm
 ms.assetid: 11429b9e-058d-4084-bfb6-2cf209c8ddf7
-ms.openlocfilehash: e18bc7d60b47b083a0b102938634473d85b39882
-ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.openlocfilehash: 3a17d6cd5b723dcde4d8dc7059c9f416308f73db
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58463314"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59082654"
 ---
-# <a name="how-to-use-the-master-detail-pattern-with-hierarchical-data"></a>如何：对分层数据使用主-从模式
+# <a name="how-to-use-the-master-detail-pattern-with-hierarchical-data"></a>如何：将主-详细模式与分层数据结合使用
 此示例演示如何实现母版-详细信息方案。  
   
 ## <a name="example"></a>示例  
@@ -34,6 +34,7 @@ ms.locfileid: "58463314"
  使用[!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)]数据时，采用的方法略有不同。 有关示例，请参阅[对分层 XML 数据使用主-从模式](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.HierarchicalDataTemplate>
 - [绑定到集合并根据选择的内容显示信息](how-to-bind-to-a-collection-and-display-information-based-on-selection.md)
 - [数据绑定概述](data-binding-overview.md)

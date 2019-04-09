@@ -2,22 +2,19 @@
 title: 编译器选项
 description: 使用F#编译器命令行选项来控制编译的应用F#应用程序和库。
 ms.date: 12/10/2018
-ms.openlocfilehash: d8e4331bcacd7082d7560ddc6fcadb4ce2b61cf8
-ms.sourcegitcommit: dcc8feeff4718664087747529638ec9b47e65234
+ms.openlocfilehash: fa639fe37ed336ad9f990e01bf2645c5a86498e6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "53614488"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59089752"
 ---
 # <a name="compiler-options"></a>编译器选项
 
 本主题介绍有关编译器命令行选项F#编译器、 fsc.exe。 此外可以通过设置项目属性控制编译环境。
 
-
 ## <a name="compiler-options-listed-alphabetically"></a>按字母顺序列出的编译器选项
 下表显示了按字母顺序列出的编译器选项。 某些F#编译器选项都类似于C#编译器选项。 如果出现这种情况，一个指向C#编译器选项主题提供。
-
-
 
 |编译器选项|描述|
 |---------------|-----------|

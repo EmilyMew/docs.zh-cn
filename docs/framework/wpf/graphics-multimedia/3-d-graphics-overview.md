@@ -8,17 +8,16 @@ helpviewer_keywords:
 - 3-D graphics [WPF]
 - graphics [WPF], 3-D
 ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
-ms.openlocfilehash: 7f9f3d21d14a8eac862186a41bd8771cffb7375c
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 79dc7a3578c395ae8cdf5933e1249441f97071a2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57352862"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59087984"
 ---
 # <a name="3-d-graphics-overview"></a>三维图形概述
-<a name="introduction"></a>通过 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 中的 [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 功能，开发人员可以使用标记和程序代码绘制和转换 3D 图形，并对其进行动画处理。 开发人员可以合并 [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] 和 [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 图形以创建丰富的控件、提供复杂的数据图解，或者增强用户对应用程序界面的体验。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 中的 [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 支持并非旨在提供功能齐全的游戏开发平台。 本主题概述了 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 图形系统中的 [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] 功能。  
- 
-  
+<a name="introduction"></a>通过 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 中的 [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 功能，开发人员可以使用标记和程序代码绘制和转换 3D 图形，并对其进行动画处理。 开发人员可以合并 [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] 和 [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 图形以创建丰富的控件、提供复杂的数据图解，或者增强用户对应用程序界面的体验。 [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 支持在[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]并非旨在提供一个全功能的游戏开发平台。 本主题概述了 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 图形系统中的 [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] 功能。  
+
 <a name="threed_in_2d"></a>   
 ## <a name="3-d-in-a-2-d-container"></a>2D 容器中的 3D  
  [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 图形中的内容[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]封装在一个元素， <xref:System.Windows.Controls.Viewport3D>，该元素可以参与二维元素结构。 该图形系统将<xref:System.Windows.Controls.Viewport3D>等中的许多其他的二维视觉元素作为[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]。 <xref:System.Windows.Controls.Viewport3D> 为窗口函数，视区 — 到三维场景。 更准确地说，它是 [!INCLUDE[TLA2#tla_3d](../../../../includes/tla2sharptla-3d-md.md)] 场景所投影到的图面。  
@@ -112,13 +111,13 @@ ms.locfileid: "57352862"
   
  下面的光派生自的基类<xref:System.Windows.Media.Media3D.Light>:  
   
--   <xref:System.Windows.Media.Media3D.AmbientLight>：提供环境照明照亮所有对象，其位置或方向无关。  
+-   <xref:System.Windows.Media.Media3D.AmbientLight>:提供环境照明照亮所有对象，其位置或方向无关。  
   
--   <xref:System.Windows.Media.Media3D.DirectionalLight>：像远处的光源那样照亮。  具有方向性光源<xref:System.Windows.Media.Media3D.DirectionalLight.Direction%2A>指定为 Vector3D，但是没有指定的位置。  
+-   <xref:System.Windows.Media.Media3D.DirectionalLight>:像远处的光源那样照亮。  具有方向性光源<xref:System.Windows.Media.Media3D.DirectionalLight.Direction%2A>指定为 Vector3D，但是没有指定的位置。  
   
--   <xref:System.Windows.Media.Media3D.PointLight>：像近处的光源那样照亮。 PointLights 具有一个位置并从该位置投射光。 场景中的对象根据对象相对于光源的位置和距离被照亮。 <xref:System.Windows.Media.Media3D.PointLightBase> 公开<xref:System.Windows.Media.Media3D.PointLightBase.Range%2A>属性，用于确定位置距离，超过该模型将不会由光源照亮。 PointLight 还公开了多个衰减属性，这些属性确定光源的亮度如何随距离的增加而减小。 可以为光源的衰减指定恒定、线性或二次内插算法。  
+-   <xref:System.Windows.Media.Media3D.PointLight>:像近处的光源那样照亮。 PointLights 具有一个位置并从该位置投射光。 场景中的对象根据对象相对于光源的位置和距离被照亮。 <xref:System.Windows.Media.Media3D.PointLightBase> 公开<xref:System.Windows.Media.Media3D.PointLightBase.Range%2A>属性，用于确定位置距离，超过该模型将不会由光源照亮。 PointLight 还公开了多个衰减属性，这些属性确定光源的亮度如何随距离的增加而减小。 可以为光源的衰减指定恒定、线性或二次内插算法。  
   
--   <xref:System.Windows.Media.Media3D.SpotLight>：继承自 <xref:System.Windows.Media.Media3D.PointLight>。 Spotlights 的照亮方式与 PointLight 类似，但是它既具有位置又具有方向。 这些项目中设置的锥形区域的 light<xref:System.Windows.Media.Media3D.SpotLight.InnerConeAngle%2A>和<xref:System.Windows.Media.Media3D.SpotLight.OuterConeAngle%2A>以度为单位指定的属性。  
+-   <xref:System.Windows.Media.Media3D.SpotLight>:继承自 <xref:System.Windows.Media.Media3D.PointLight>。 Spotlights 的照亮方式与 PointLight 类似，但是它既具有位置又具有方向。 这些项目中设置的锥形区域的 light<xref:System.Windows.Media.Media3D.SpotLight.InnerConeAngle%2A>和<xref:System.Windows.Media.Media3D.SpotLight.OuterConeAngle%2A>以度为单位指定的属性。  
   
  光源是<xref:System.Windows.Media.Media3D.Model3D>对象，因此可以转换，并对光源属性，包括位置、 颜色、 方向和范围进行动画处理。  
   
@@ -170,12 +169,13 @@ ms.locfileid: "57352862"
  [!code-xaml[hostingwpfusercontrolinwf#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.Viewport3D>
 - <xref:System.Windows.Media.Media3D.PerspectiveCamera>
 - <xref:System.Windows.Media.Media3D.DirectionalLight>
 - <xref:System.Windows.Media.Media3D.Material>
-- [3D 转换概述](3-d-transformations-overview.md)
-- [最大限度地提升 WPF 3D 性能](maximize-wpf-3d-performance.md)
+- [三维变换概述](3-d-transformations-overview.md)
+- [最大程度地提高 WPF 三维性能](maximize-wpf-3d-performance.md)
 - [帮助主题](3-d-graphics-how-to-topics.md)
-- [WPF 中的形状和基本绘图概述](shapes-and-basic-drawing-in-wpf-overview.md)
-- [使用图像、绘图和视觉对象进行绘制](painting-with-images-drawings-and-visuals.md)
+- [WPF 中的形状和基本图形概述](shapes-and-basic-drawing-in-wpf-overview.md)
+- [使用图像、图形和视觉对象进行绘制](painting-with-images-drawings-and-visuals.md)

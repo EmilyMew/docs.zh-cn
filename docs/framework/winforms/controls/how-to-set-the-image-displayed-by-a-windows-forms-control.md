@@ -1,5 +1,5 @@
 ---
-title: 如何：设置所显示的图像的 Windows 窗体控件
+title: 如何：设置 Windows 窗体控件显示的图像
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - images [Windows Forms], Windows Forms controls
 - examples [Windows Forms], controls
 ms.assetid: 9445af8f-4f62-48b0-a3f6-068058964b9f
-ms.openlocfilehash: 93bc7970ce7c287273f8bd7ff50b07c6658e2a08
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 031ddcb3b852e75353fed7420735350e79f23df3
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54644919"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59085085"
 ---
-# <a name="how-to-set-the-image-displayed-by-a-windows-forms-control"></a>如何：设置所显示的图像的 Windows 窗体控件
+# <a name="how-to-set-the-image-displayed-by-a-windows-forms-control"></a>如何：设置 Windows 窗体控件显示的图像
 多个 Windows 窗体控件可以显示图像。 这些映像可以是阐明用途的控件，例如上按钮表示的磁盘图标的图标**保存**命令。 或者，图标可以是为控件提供的外观和行为所需的背景图像。  
   
 ### <a name="to-set-the-image-displayed-by-a-control"></a>若要设置控件所显示的图像  
@@ -57,6 +57,7 @@ ms.locfileid: "54644919"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Image.FromFile%2A>
 - <xref:System.Drawing.Image>
 - <xref:System.Windows.Forms.Control.BackgroundImage%2A>

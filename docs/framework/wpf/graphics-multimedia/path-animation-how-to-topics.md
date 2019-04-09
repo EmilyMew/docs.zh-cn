@@ -7,21 +7,21 @@ helpviewer_keywords:
 - animation [WPF], paths
 - path animations [WPF]
 ms.assetid: e9b71017-bac4-40d7-858b-326939442cb1
-ms.openlocfilehash: 6004dad448b965d51be6543478cbd059fb7f4d87
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 714303569111f30d4cc03ab0ab7cb2acec4276c2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57373473"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59072501"
 ---
 # <a name="path-animation-how-to-topics"></a>路径动画帮助主题
 在本部分中的主题演示如何沿着路径针对对象进行动画处理。  
   
 ## <a name="in-this-section"></a>本节内容  
- [沿着路径针对对象进行动画处理（双重动画）](how-to-animate-an-object-along-a-path-double-animation.md)  
+ [沿着路径针对对象进行动画处理（双精度动画）](how-to-animate-an-object-along-a-path-double-animation.md)  
  [沿着路径针对对象进行动画处理（点动画）](how-to-animate-an-object-along-a-path-point-animation.md)  
  [沿着路径针对对象进行动画处理（矩阵动画）](how-to-animate-an-object-along-a-path-matrix-animation.md)  
- [沿着路径为对象设置动画效果（累积偏移的矩阵动画）](animate-an-object-along-a-path-matrix-animation-with-offset.md)  
+ [沿着路径针对对象进行动画处理（累积偏移量的矩阵动画）](animate-an-object-along-a-path-matrix-animation-with-offset.md)  
  [使用几何路径旋转对象（矩阵动画）](how-to-rotate-an-object-by-using-a-geometric-path-matrix-animation.md)  
  [使用几何路径旋转对象](how-to-rotate-an-object-by-using-a-geometric-path.md)  
   
@@ -31,6 +31,7 @@ ms.locfileid: "57373473"
  <xref:System.Windows.Media.Animation.Storyboard>  
   
 ## <a name="see-also"></a>请参阅
+
 - [图形和多媒体](index.md)
 - [动画概述](animation-overview.md)
 - [关键帧动画概述](key-frame-animations-overview.md)

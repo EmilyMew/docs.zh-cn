@@ -2,12 +2,12 @@
 title: <peerTransport>
 ms.date: 03/30/2017
 ms.assetid: c1a5013a-9dd4-4a27-b114-795b8b323177
-ms.openlocfilehash: 8962a0c018442ed590b62e53ea8323d80e334df7
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 6765259f290047a4199a422b4ad0cced2ffee9ae
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290090"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59179824"
 ---
 # <a name="peertransport"></a>\<peerTransport>
 定义自定义绑定的对等传输。  
@@ -46,7 +46,7 @@ ms.locfileid: "55290090"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-peertransport.md)|定义此传输的安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.PeerSecurityElement>。|  
+|[\<安全 >](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-peertransport.md)|定义此传输的安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.PeerSecurityElement>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -58,12 +58,13 @@ ms.locfileid: "55290090"
  此传输不可用于包含请求/答复操作的协定。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Configuration.PeerTransportElement>
 - <xref:System.ServiceModel.Channels.PeerTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [传输](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [选择传输](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [选择传输方式](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
 - [绑定](../../../../../docs/framework/wcf/bindings.md)
 - [扩展绑定](../../../../../docs/framework/wcf/extending/extending-bindings.md)
 - [自定义绑定](../../../../../docs/framework/wcf/extending/custom-bindings.md)

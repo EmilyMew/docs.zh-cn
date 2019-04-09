@@ -9,12 +9,12 @@ helpviewer_keywords:
 - attributes [Windows Forms], applying
 - Windows Forms controls, applying attributes
 ms.assetid: af0a3f7f-155b-4ba1-83c4-9cf721331a06
-ms.openlocfilehash: fd41999b1cd1cde940d182f3acc505bbb92a3aa4
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: e86277c06e515b28bada3331cf4fd63e536319a4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57718540"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59079586"
 ---
 # <a name="how-to-apply-attributes-in-windows-forms-controls"></a>如何：应用 Windows 窗体控件中的特性
 若要开发的组件和控件的设计环境与正确交互，并在运行时正确执行，需要正确地将特性应用于类和成员。  
@@ -78,6 +78,7 @@ ms.locfileid: "57718540"
 -   承载的窗体`AttributesDemoControl`需要引用`AttributesDemoControl`若要生成的程序集。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.IComparable>
 - <xref:System.Windows.Forms.DataGridView>
 - [使用 .NET Framework 开发自定义 Windows 窗体控件](developing-custom-windows-forms-controls.md)

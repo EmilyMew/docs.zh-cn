@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - drag-and-drop [WPF], how-to topics
 ms.assetid: 559c0804-c62a-4640-b6b9-cbd2aa9fb99c
-ms.openlocfilehash: dd7bccdd28f433893a988f95c5e1d804f6e138de
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 87c1425e6eaf03b900e07cfd9fc489ef01b1607a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57358803"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59100166"
 ---
 # <a name="drag-and-drop-how-to-topics"></a>拖放帮助主题
 下面的示例演示如何完成常见任务使用[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]拖放框架。  
@@ -19,10 +19,11 @@ ms.locfileid: "57358803"
 ## <a name="in-this-section"></a>本节内容  
  [打开放入 RichTextBox 控件的文件](how-to-open-a-file-that-is-dropped-on-a-richtextbox-control.md)  
  [创建数据对象](how-to-create-a-data-object.md)  
- [确定数据对象中是否有数据格式](how-to-determine-if-a-data-format-is-present-in-a-data-object.md)  
+ [确定数据格式是否存在于数据对象中](how-to-determine-if-a-data-format-is-present-in-a-data-object.md)  
  [列出数据对象中的数据格式](how-to-list-the-data-formats-in-a-data-object.md)  
  [以特定数据格式检索数据](how-to-retrieve-data-in-a-particular-data-format.md)  
  [在数据对象中存储多种数据格式](how-to-store-multiple-data-formats-in-a-data-object.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [拖放概述](drag-and-drop-overview.md)

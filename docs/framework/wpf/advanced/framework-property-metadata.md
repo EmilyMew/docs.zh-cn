@@ -5,18 +5,16 @@ helpviewer_keywords:
 - metadata [WPF], framework properties
 - framework property metadata [WPF]
 ms.assetid: 9962f380-b885-4b61-a62e-457397083fea
-ms.openlocfilehash: f313c17a278a7b51379c4da9389c01eedf4a1e62
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: b6bacf6f0c27b123d36f17510d84e5ef5e2cf122
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57379271"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59108701"
 ---
 # <a name="framework-property-metadata"></a>框架属性元数据
 对于 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 体系结构中被视为 WPF 框架级的对象元素的属性，将报告框架属性元数据选项。 通常，WPF 框架级指示要求 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 演示 [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] 和可执行文件处理呈现、数据绑定和属性系统优化等功能。 这些系统对框架属性元数据进行查询，以便为特定的元素属性确定特定于功能的特征。  
-  
- 
-  
+
 <a name="prerequisites"></a>   
 ## <a name="prerequisites"></a>先决条件  
  本主题假定你从 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 类的现有依赖属性的使用者角度了解依赖属性，并且已阅读[依赖属性概述](dependency-properties-overview.md)。 另外，应当已阅读[依赖属性元数据](dependency-property-metadata.md)。  
@@ -29,7 +27,7 @@ ms.locfileid: "57379271"
   
 -   报告影响元素的父元素的布局属性 (<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>， <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>)。 下面是一些示例，默认情况下设置了这些标志<xref:System.Windows.Documents.FixedPage.Left%2A?displayProperty=nameWithType>和<xref:System.Windows.Documents.Paragraph.KeepWithNext%2A?displayProperty=nameWithType>。  
   
--   <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>。 默认情况下，依赖属性不会继承值。 <xref:System.Windows.FrameworkPropertyMetadata.OverridesInheritanceBehavior%2A> 允许继承纳入可视化树中，这是某些控件复合方案所需的路径。  
+-   <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>. 默认情况下，依赖属性不会继承值。 <xref:System.Windows.FrameworkPropertyMetadata.OverridesInheritanceBehavior%2A> 允许继承纳入可视化树中，这是某些控件复合方案所需的路径。  
   
     > [!NOTE]
     >  属性值上下文中的术语“继承”指特定于依赖属性的情况；它意味着由于存在 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 属性系统的 WPF 框架级功能，子元素可以从父元素继承实际的依赖属性值。 它与通过派生类型的托管代码类型和成员继承没有直接关系。 有关详细信息，请参阅[属性值继承](property-value-inheritance.md)。  
@@ -73,7 +71,8 @@ ms.locfileid: "57379271"
  此行为通过<xref:System.Windows.FrameworkPropertyMetadata.Merge%2A>，并可以对派生的元数据类中重写。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.DependencyProperty.GetMetadata%2A>
-- [依赖属性元数据](dependency-property-metadata.md)
+- [依赖项属性元数据](dependency-property-metadata.md)
 - [依赖项属性概述](dependency-properties-overview.md)
-- [自定义依赖属性](custom-dependency-properties.md)
+- [自定义依赖项属性](custom-dependency-properties.md)

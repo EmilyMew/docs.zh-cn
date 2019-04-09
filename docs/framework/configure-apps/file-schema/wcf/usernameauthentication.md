@@ -2,12 +2,12 @@
 title: <userNameAuthentication>
 ms.date: 03/30/2017
 ms.assetid: 24d8b398-770f-418f-ba23-c4325419cfa6
-ms.openlocfilehash: 05aa326c50823810caee5d6552af4d50424251dd
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 5a4cf8d429198b889f2bb362294ba3841c814b26
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55273999"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083135"
 ---
 # <a name="usernameauthentication"></a>\<userNameAuthentication>
 指定基于用户名和密码的服务凭据。  
@@ -61,6 +61,7 @@ ms.locfileid: "55273999"
  如果没有配置服务所用的绑定，以使用 Windows 用户名/密码身份验证，则忽略与登录令牌的缓存相关的设置。 这些设置包括 `cacheLogonTokenLifetime`、`cacheLogonTokens` 和 `maxCacheLogonTokens`。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Configuration.UserNameServiceElement>
 - <xref:System.ServiceModel.Description.ServiceCredentials.UserNameAuthentication%2A>
 - <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential>

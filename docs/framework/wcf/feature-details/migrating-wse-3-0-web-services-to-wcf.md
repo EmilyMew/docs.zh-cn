@@ -2,12 +2,12 @@
 title: 将 WSE 3.0 Web 服务迁移到 WCF
 ms.date: 03/30/2017
 ms.assetid: 7bc5fff7-a2b2-4dbc-86cc-ecf73653dcdc
-ms.openlocfilehash: 30b9d1fa3c8b2123b3a71465f9ccebf722740d0d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a691e8f63e34f60f26d1a96a975dbe062bd59c96
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54668244"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59180604"
 ---
 # <a name="migrating-wse-30-web-services-to-wcf"></a>将 WSE 3.0 Web 服务迁移到 WCF
 WSE 3.0 Web 服务迁移到 Windows Communication Foundation (WCF) 的优点包括改进的性能，支持其他传输、 额外的安全方案和 WS-* 规范。 从 WSE 3.0 迁移到 WCF Web 服务可能会遇到最多 200%到 400%性能改进。 有关 wcf 支持的传输协议的详细信息，请参阅[选择传输](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)。 有关 WCF 支持的方案的列表，请参阅[常用安全方案](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)。 有关 WCF 支持的规范的列表，请参阅[Web 服务协议互操作性指南](../../../../docs/framework/wcf/feature-details/web-services-protocols-interoperability-guide.md)。  
@@ -66,7 +66,7 @@ WSE 3.0 Web 服务迁移到 Windows Communication Foundation (WCF) 的优点包�
  有关在 WCF 中创建自定义绑定的详细信息，请参阅[自定义绑定](../../../../docs/framework/wcf/extending/custom-bindings.md)。  
   
 ### <a name="wse-30-web-services-that-are-secured-using-application-code"></a>使用应用程序代码保护其安全的 WSE 3.0 Web 服务  
- 使用 WSE 3.0 还是使用 WCF，可以应用程序代码而不是在配置中指定的安全要求。 在 WSE 3.0 中，可以通过以下方法完成此工作：创建一个派生自 `Policy` 类的类，然后通过调用 `Add` 方法添加相应的需求。 有关在代码中指定的安全要求的更多详细信息，请参阅[如何：Web 服务安全而无需使用策略文件](https://go.microsoft.com/fwlink/?LinkId=73747)。 在 WCF 中，若要在代码中指定安全要求，创建的实例<xref:System.ServiceModel.Channels.BindingElementCollection>类，并添加的实例<xref:System.ServiceModel.Channels.SecurityBindingElement>到<xref:System.ServiceModel.Channels.BindingElementCollection>。 使用 <xref:System.ServiceModel.Channels.SecurityBindingElement> 类的静态身份验证模式帮助器方法来设置安全断言需求。 有关使用 WCF 在代码中指定安全要求的更多详细信息，请参阅[如何：创建自定义绑定使用 SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)和[如何：为指定的身份验证模式创建 SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)。  
+ 使用 WSE 3.0 还是使用 WCF，可以应用程序代码而不是在配置中指定的安全要求。 在 WSE 3.0 中，可以通过以下方法完成此工作：创建一个派生自 `Policy` 类的类，然后通过调用 `Add` 方法添加相应的要求。 有关在代码中指定的安全要求的更多详细信息，请参阅[如何：Web 服务安全而无需使用策略文件](https://go.microsoft.com/fwlink/?LinkId=73747)。 在 WCF 中，若要在代码中指定安全要求，创建的实例<xref:System.ServiceModel.Channels.BindingElementCollection>类，并添加的实例<xref:System.ServiceModel.Channels.SecurityBindingElement>到<xref:System.ServiceModel.Channels.BindingElementCollection>。 使用 <xref:System.ServiceModel.Channels.SecurityBindingElement> 类的静态身份验证模式帮助器方法来设置安全断言需求。 有关使用 WCF 在代码中指定安全要求的更多详细信息，请参阅[如何：创建自定义绑定使用 SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)和[如何：为指定的身份验证模式创建 SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)。  
   
 ### <a name="wse-30-custom-policy-assertion"></a>WSE 3.0 自定义策略断言  
  在 WSE 3.0 中，有两种类型的自定义策略断言：保护 SOAP 消息安全的策略断言和不保护 SOAP 消息安全的策略断言。 保护 SOAP 消息安全的策略断言派生自 WSE 3.0`SecurityPolicyAssertion`类，并在 WCF 中在概念上的等效是<xref:System.ServiceModel.Channels.SecurityBindingElement>类。  
@@ -123,7 +123,8 @@ WSE 3.0 Web 服务迁移到 Windows Communication Foundation (WCF) 的优点包�
  WCF 中的 WSE 3.0 自定义传输的等效项是通道扩展。 有关创建通道扩展的详细信息，请参阅[扩展通道层](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [基本编程生命周期](../../../../docs/framework/wcf/basic-programming-lifecycle.md)
 - [自定义绑定](../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [如何：创建自定义绑定使用 SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [如何：使用 SecurityBindingElement 创建自定义绑定](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
 - [如何：为指定的身份验证模式创建 SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)

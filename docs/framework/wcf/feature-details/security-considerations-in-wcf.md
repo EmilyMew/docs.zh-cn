@@ -6,18 +6,18 @@ helpviewer_keywords:
 - Windows Communication Foundation, security
 - WCF, security
 ms.assetid: 42055ee0-6d0c-443d-9d89-788dfc345d6d
-ms.openlocfilehash: 6cc19f7719b9cdbcd3852c99f450c1d728dc833b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 16b3afe9540f3e2953311f602408fce5412be2eb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54745953"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59112211"
 ---
 # <a name="security-considerations-in-wcf"></a>WCF 中的安全注意事项
 在本部分中的主题列出了各种与安全相关项设计的 Windows Communication Foundation (WCF) 应用程序时要考虑。  
   
 ## <a name="in-this-section"></a>本节内容  
- [信息泄漏](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
+ [信息泄露](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
  讨论信息可能泄露或受到攻击的各种方式，以及如何缓解这些问题。  
   
  [特权提升](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  
@@ -29,10 +29,10 @@ ms.locfileid: "54745953"
  [篡改](../../../../docs/framework/wcf/feature-details/tampering.md)  
  讨论消息或消息传递的篡改以及如何缓解这种问题。  
   
- [重放攻击](../../../../docs/framework/wcf/feature-details/replay-attacks.md)  
+ [重播攻击](../../../../docs/framework/wcf/feature-details/replay-attacks.md)  
  讨论当攻击者复制通信双方之间的消息流并将该消息流向一方或多方重播时将发生的情况，以及如何缓解这一问题。  
   
- [安全会话的安全性注意事项](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md)  
+ [安全会话的安全注意事项](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md)  
  讨论在实现安全会话时影响安全的下列事项。  
   
  [不支持的方案](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)  
@@ -51,4 +51,5 @@ ms.locfileid: "54745953"
  [安全指导和最佳做法](../../../../docs/framework/wcf/feature-details/security-guidance-and-best-practices.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [安全性](../../../../docs/framework/wcf/feature-details/security.md)

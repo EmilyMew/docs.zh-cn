@@ -1,5 +1,5 @@
 ---
-title: <add> 的 <switches> 元素
+title: <add> 元素 <switches>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/switches/add
@@ -7,12 +7,12 @@ helpviewer_keywords:
 - <add> element for <switches>
 - add element for <switches>
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
-ms.openlocfilehash: 88cd8c9ba7244256ca9ddd3b2957f86d9485933c
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: d7500620aed1165ff365fee8529230ba252dbc4b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55273288"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59120089"
 ---
 # <a name="add-element-for-switches"></a>\<添加 > 元素\<开关 >
 指定对跟踪开关设置的级别。  
@@ -68,6 +68,7 @@ ms.locfileid: "55273288"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Diagnostics.Switch>
 - <xref:System.Diagnostics.TraceSwitch>
 - <xref:System.Diagnostics.BooleanSwitch>

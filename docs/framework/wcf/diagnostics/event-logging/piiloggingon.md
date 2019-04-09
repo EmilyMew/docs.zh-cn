@@ -2,12 +2,12 @@
 title: PiiLoggingOn
 ms.date: 03/30/2017
 ms.assetid: 08940d0f-dc4c-49e0-b6f6-b70856b5060d
-ms.openlocfilehash: f017b44e50f56a3ab6087f49c3f1a10f3dc49818
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 04a1d4fdfdae54c9726c62bd434f00cc115c80ec
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54532235"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59194924"
 ---
 # <a name="piiloggingon"></a>PiiLoggingOn
 ID:107  
@@ -20,5 +20,6 @@ ID:107
  此事件指示 PII 日志记录已打开。 将记录敏感信息。 该事件将列出进程名称和进程 ID。  
   
 ## <a name="see-also"></a>请参阅
+
 - [事件日志记录](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
 - [事件常规参考](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

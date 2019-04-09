@@ -1,15 +1,15 @@
 ---
-title: 如何：将服务标记用于 WSDL 协定
+title: 如何：将服务名字对象用于 WSDL 协定
 ms.date: 03/30/2017
 ms.assetid: a88d9650-bb50-4f48-8c85-12f5ce98a83a
-ms.openlocfilehash: 9e9d4b49904f555d790c4b5fde760c004eb1820a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: b8729055c82e3ce1273e8a0cfae53a1f6d3c14e3
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54726567"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59081659"
 ---
-# <a name="how-to-use-a-service-moniker-with-wsdl-contracts"></a>如何：将服务标记用于 WSDL 协定
+# <a name="how-to-use-a-service-moniker-with-wsdl-contracts"></a>如何：将服务名字对象用于 WSDL 协定
 在某些情况下，您可能希望具有完全自包含的 COM 互操作客户端。 您要调用的服务可能不会公开 MEX 终结点，而 WCF 客户端 DLL 可能不会为 COM 互操作注册。 在这些情况下，您可以创建用于描述该服务的 WSDL 文件，并将该文件传递到 WCF 服务标记中。 本主题描述如何使用 WCF WSDL 标记调用 WCF 入门示例。  
   
 ### <a name="using-the-wsdl-service-moniker"></a>使用 WSDL 服务标记  
@@ -23,9 +23,7 @@ ms.locfileid: "54726567"
      [!code-csharp[S_WSDL_Client#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_wsdl_client/cs/service.cs#0)]  
   
 4.  将绑定命名空间添加到服务 App.config 中：  
-  
-  
-  
+
 5.  为要读取的应用程序创建 WSDL 文件。 因为命名空间添加在步骤 3 和 4 中，可以使用 IE 通过浏览到该服务的完整 WSDL 说明查询`http://localhost/ServiceModelSamples/Service.svc?wsdl`。 然后，将文件从 Internet Explorer 另存为 serviceWSDL.xml。 如果未在步骤 3 和 4 中指定命名空间，则从查询上述 URL 返回的 WSDL 文档将不是完整的 WSDL。 返回的 WSDL 文档将包括导入其他 WSDL 文档的多条导入语句。 您必须完成每条导入语句并生成完整的 WSDL 文档，从而将从服务返回的 WSDL 与导入的 WSDL 合并在一起。  
   
 6.  打开 Visual Basic 6.0 并创建一个新的 Standard .exe 文件。 在窗体中添加一个按钮并双击该按钮，以将以下代码添加到 Click 处理程序中：  
@@ -57,5 +55,6 @@ ms.locfileid: "54726567"
 7.  运行 Visual Basic 应用程序。 将显示一个消息框，其中列出调用 Subtract(145, 76.54) 的结果。  
   
 ## <a name="see-also"></a>请参阅
+
 - [入门](../../../../docs/framework/wcf/samples/getting-started-sample.md)
-- [与 COM 应用程序集成的概述](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)
+- [COM 应用程序集成概述](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)

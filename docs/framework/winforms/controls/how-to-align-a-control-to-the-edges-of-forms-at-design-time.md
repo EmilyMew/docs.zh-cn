@@ -1,18 +1,18 @@
 ---
-title: 如何：将控件与窗体边缘对齐在设计时
+title: 如何：在设计时将控件与窗体边缘对齐
 ms.date: 03/30/2017
 helpviewer_keywords:
 - custom controls [Windows Forms], docking using designer
 - Dock property [Windows Forms], aligning controls (using designer)
 ms.assetid: 51f08998-5e3b-4330-be58-a4edd0eb60f4
-ms.openlocfilehash: b81cb839664499d69710d81b7b0c8a479966d569
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 8f74a6b56e99e016bfb27bbe1b271f6c71af8f87
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57724942"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59140889"
 ---
-# <a name="how-to-align-a-control-to-the-edges-of-forms-at-design-time"></a>如何：将控件与窗体边缘对齐在设计时
+# <a name="how-to-align-a-control-to-the-edges-of-forms-at-design-time"></a>如何：在设计时将控件与窗体边缘对齐
 可以使控件与窗体的边缘对齐通过设置<xref:System.Windows.Forms.Control.Dock%2A>。 此属性指定控件在窗体中的驻留位置。 可以将 <xref:System.Windows.Forms.Control.Dock%2A> 属性设置为下列值：  
   
 |设置|控件上的效果|  
@@ -42,13 +42,14 @@ ms.locfileid: "57724942"
 4.  您的控件现在将停靠的设置指定的方式。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.Control.Dock%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.Anchor%2A?displayProperty=nameWithType>
-- [如何：将控件与窗体边缘对齐](how-to-align-a-control-to-the-edges-of-forms.md)
-- [演练：使用对齐线的 Windows 窗体上排列控件](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
-- [如何：在 Windows 窗体上定位控件](how-to-anchor-controls-on-windows-forms.md)
-- [如何：锚定和停靠在 TableLayoutPanel 控件中的子控件](how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)
-- [如何：锚定和停靠子控件在 FlowLayoutPanel 控件中](how-to-anchor-and-dock-child-controls-in-a-flowlayoutpanel-control.md)
-- [演练：使用 TableLayoutPanel 的 Windows 窗体上排列控件](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
-- [演练：使用 FlowLayoutPanel 的 Windows 窗体上排列控件](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
+- [如何：使控件与窗体边缘对齐](how-to-align-a-control-to-the-edges-of-forms.md)
+- [演练：使用对齐线在 Windows 窗体上排列控件](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
+- [如何：在 Windows 窗体上锚定控件](how-to-anchor-controls-on-windows-forms.md)
+- [如何：在 TableLayoutPanel 控件中锚定和停靠子控件](how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)
+- [如何：在 FlowLayoutPanel 控件中锚定和停靠子控件](how-to-anchor-and-dock-child-controls-in-a-flowlayoutpanel-control.md)
+- [演练：使用 TableLayoutPanel 在 Windows 窗体上排列控件](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
+- [演练：使用 FlowLayoutPanel 在 Windows 窗体上排列控件](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
 - [设计时开发 Windows 窗体控件](developing-windows-forms-controls-at-design-time.md)

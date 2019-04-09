@@ -11,25 +11,23 @@ helpviewer_keywords:
 - arbitrary content classes [WPF], content model
 - ContentControl class [WPF], displaying content
 ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
-ms.openlocfilehash: 6cbb13fdcba2cf014c4c31a5dc5b21fe2721b214
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.openlocfilehash: 4f866e0366a7781c287b3ebae7b668c2b296a5cc
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58816910"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59134584"
 ---
 # <a name="wpf-content-model"></a>WPF 内容模型
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 是一个演示平台，提供了许多控件和类似控件的类型，主要用于显示不同类型的内容。 若要确定所要使用的控件或要从其派生的控件，应该了解特定控件可以最佳效果显示的对象类型。  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 是一个演示平台，提供了其主要用途是内容的显示不同类型很多控件和类似控件的类型。 若要确定所要使用的控件或要从其派生的控件，应该了解特定控件可以最佳效果显示的对象类型。  
   
  本主题概述了适用于 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 控件和类似控件的类型的内容模型。 内容模型描述可在控件中使用的内容。 本主题还列出了每个内容模型的内容属性。 内容属性是一种用于存储对象内容的属性。  
-  
- 
-  
+
 <a name="classes_that_contain_arbitrary_content"></a>   
 ## <a name="classes-that-contain-arbitrary-content"></a>包含任意内容的类  
  某些控件可以包含的任何类型，如字符串、 对象<xref:System.DateTime>对象，或<xref:System.Windows.UIElement>，它是其他项的容器。 例如，<xref:System.Windows.Controls.Button>可以包含图像和一些文本，或<xref:System.Windows.Controls.CheckBox>可以包含的值<xref:System.DateTime.Now%2A?displayProperty=nameWithType>。  
   
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 有四个可包含任意内容的类。 下表列出了继承的类<xref:System.Windows.Controls.Control>。  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 具有四个类可以包含任意内容。 下表列出了继承的类<xref:System.Windows.Controls.Control>。  
   
 |包含任意内容的类|内容|  
 |-------------------------------------------|-------------|  
@@ -217,7 +215,7 @@ ms.locfileid: "58816910"
   
 <a name="classes_that_provides_visual_feedback_about_a_uielement"></a>   
 ## <a name="classes-that-provide-visual-feedback-about-a-uielement"></a>提供 UIElement 相关视觉反馈的类  
- <xref:System.Windows.Documents.Adorner>类向用户提供可视化提示。 例如，使用<xref:System.Windows.Documents.Adorner>向元素添加功能句柄或提供有关控件的状态信息。 <xref:System.Windows.Documents.Adorner>类提供一个框架，以便您可以创建自己的装饰器。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 不会提供任何实现的装饰器。 有关详细信息，请参阅[装饰器概述](adorners-overview.md)。  
+ <xref:System.Windows.Documents.Adorner>类向用户提供可视化提示。 例如，使用<xref:System.Windows.Documents.Adorner>向元素添加功能句柄或提供有关控件的状态信息。 <xref:System.Windows.Documents.Adorner>类提供一个框架，以便您可以创建自己的装饰器。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 不提供任何实现的装饰器。 有关详细信息，请参阅[装饰器概述](adorners-overview.md)。  
   
 <a name="classes_that_enable_users_to_enter_text"></a>   
 ## <a name="classes-that-enable-users-to-enter-text"></a>可让用户输入文本的类  
@@ -250,4 +248,5 @@ ms.locfileid: "58816910"
  <xref:System.Windows.Documents.TextElement> 和及其相关的类可用于设置文本的格式。 <xref:System.Windows.Documents.TextElement> 对象包含和中的文本格式<xref:System.Windows.Controls.TextBlock>和<xref:System.Windows.Documents.FlowDocument>对象。 两种主要类型的<xref:System.Windows.Documents.TextElement>对象是<xref:System.Windows.Documents.Block>元素和<xref:System.Windows.Documents.Inline>元素。 一个<xref:System.Windows.Documents.Block>元素表示的文本，例如段落或列表的块。 <xref:System.Windows.Documents.Inline>元素表示块中的文本的一部分。 许多<xref:System.Windows.Documents.Inline>类指定应用于中文本的格式。 每个<xref:System.Windows.Documents.TextElement>具有其自己的内容模型。 有关详细信息，请参阅 [TextElement 内容模型概述](../advanced/textelement-content-model-overview.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [高级](../advanced/index.md)

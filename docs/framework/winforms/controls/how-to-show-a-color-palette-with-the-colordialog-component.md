@@ -1,5 +1,5 @@
 ---
-title: 如何：显示调色板使用 ColorDialog 组件
+title: 如何：使用 ColorDialog 组件显示调色板
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - color palettes [Windows Forms], showing in ColorDialog component
 - colors [Windows Forms], showing palettes
 ms.assetid: ee050f61-dbc8-4436-ba22-51360981ab48
-ms.openlocfilehash: 35f6f81c2b13234b23b3b2295e45caf5f16abd9e
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: fcaf5da9958cf66fb63bd753dc94cba9c10f62f6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57708322"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096031"
 ---
-# <a name="how-to-show-a-color-palette-with-the-colordialog-component"></a>如何：显示调色板使用 ColorDialog 组件
+# <a name="how-to-show-a-color-palette-with-the-colordialog-component"></a>如何：使用 ColorDialog 组件显示调色板
 [ColorDialog](colordialog-component-windows-forms.md)组件显示调色板的颜色，并返回包含用户选定的颜色的属性。  
   
 ### <a name="to-choose-a-color-using-the-colordialog-component"></a>若要使用 ColorDialog 组件选择颜色  
@@ -77,5 +77,6 @@ ms.locfileid: "57708322"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.ColorDialog>
 - [ColorDialog 组件](colordialog-component-windows-forms.md)

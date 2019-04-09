@@ -6,12 +6,12 @@ helpviewer_keywords:
 - control patterns, Invoke
 - Invoke control pattern
 ms.assetid: e5b1e239-49f8-468e-bfec-1fba02ec9ac4
-ms.openlocfilehash: 55e75e5835aa60a51b9186f31913347ad04dccdd
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.openlocfilehash: 5c9d94aca6b9b53c505fa7419406a0d2fc4a0ae7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57674947"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59134779"
 ---
 # <a name="implementing-the-ui-automation-invoke-control-pattern"></a>实现 UI 自动化 Invoke 控件模式
 > [!NOTE]
@@ -29,7 +29,7 @@ ms.locfileid: "57674947"
   
 -   通常通过单击或双击或按 ENTER、预定义的键盘快捷键或某种备用的击键组合来调用控件。  
   
--   在已被激活的控件上引发<xref:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent> （作为对执行关联操作的控件的响应）。 如果可能，应在控件完成操作后引发事件且在不阻止的情况下返回事件。 在以下情况中，应在服务 Invoke 请求之前引发调用的事件：  
+-   <xref:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent> 是 （作为对控件执行其关联的操作的响应） 已激活的控件上引发。 如果可能，应在控件完成操作后引发事件且在不阻止的情况下返回事件。 在以下情况中，应在服务 Invoke 请求之前引发调用的事件：  
   
     -   不可能等至操作完成，或这一做法不实际。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "57674947"
   
 -   元素被调用时将立即从 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 树中消失。 从由事件回调提供的元素请求信息可能失败。 建议的解决方法是预取缓存的信息。  
   
--   控件可实现多个控件模式。 例如， [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] 工具栏上的“填充颜色”控件同时实现 <xref:System.Windows.Automation.InvokePattern> 和 <xref:System.Windows.Automation.ExpandCollapsePattern> 控件模式。 <xref:System.Windows.Automation.ExpandCollapsePattern> 公开菜单，而 <xref:System.Windows.Automation.InvokePattern> 用所选颜色填充活动选择项。  
+-   控件可实现多个控件模式。 例如， [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] 工具栏上的“填充颜色”控件同时实现 <xref:System.Windows.Automation.InvokePattern> 和 <xref:System.Windows.Automation.ExpandCollapsePattern> 控件模式。 <xref:System.Windows.Automation.ExpandCollapsePattern> 公开菜单和<xref:System.Windows.Automation.InvokePattern>填充活动选择区域与所选颜色。  
   
 <a name="Required_Members_for_the_IValueProvider_Interface"></a>   
 ## <a name="required-members-for-iinvokeprovider"></a>IInvokeProvider 必需的成员  
@@ -56,7 +56,7 @@ ms.locfileid: "57674947"
   
 |必需的成员|成员类型|说明|  
 |----------------------|-----------------|-----------|  
-|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A>|方法|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A> 是一个异步调用且必须立即返回而不阻塞。<br /><br /> 此行为对于被调用时直接或间接启动模式对话框的控件而言尤其重要。 引发该事件的任何 UI 自动化客户端将保持被阻止的状态，直到模式对话框关闭为止。|  
+|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A>|方法|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A> 是一个异步调用且必须立即返回而不会阻塞。<br /><br /> 此行为对于被调用时直接或间接启动模式对话框的控件而言尤其重要。 引发该事件的任何 UI 自动化客户端将保持被阻止的状态，直到模式对话框关闭为止。|  
   
 <a name="Exceptions"></a>   
 ## <a name="exceptions"></a>Exceptions  
@@ -67,6 +67,7 @@ ms.locfileid: "57674947"
 |<xref:System.Windows.Automation.ElementNotEnabledException>|如果未启用该控件。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [UI 自动化控件模式概述](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [在 UI 自动化提供程序中支持控件模式](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [客户端的 UI 自动化控件模式](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

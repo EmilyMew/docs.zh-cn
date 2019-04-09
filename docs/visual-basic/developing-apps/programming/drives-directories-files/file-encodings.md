@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Unicode, file encoding
 - file encoding
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57
-ms.openlocfilehash: f7ccd47b8778aa3a374ee102b39038e8df475e9b
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c22e8046a8b88890f25bc6b671825eb6d68ec6b8
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54731915"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58813998"
 ---
 # <a name="file-encodings-visual-basic"></a>文件编码 (Visual Basic)
 文件编码也称为字符编码，用于指定在处理文本时如何表示字符。 虽然 Unicode 是最常用的编码，但根据编码能否处理某种语言字符，另一种编码可能更优。  
@@ -36,5 +36,6 @@ ms.locfileid: "54731915"
 |<xref:System.Text.UTF8Encoding>|表示 Unicode 字符的 UTF-8 编码。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [从文件读取](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
 - [写入文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

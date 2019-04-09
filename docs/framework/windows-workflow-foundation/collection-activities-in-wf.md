@@ -2,15 +2,15 @@
 title: WF 中的集合活动
 ms.date: 03/30/2017
 ms.assetid: 2680c3e2-9902-4968-b98d-cab776103dbe
-ms.openlocfilehash: 6ce7dd348a19608d35bf448bda2e1380e5af1130
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 6e4b9ce6f967ba9405f55dbf5fd4708d3319b458
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57705242"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59133773"
 ---
 # <a name="collection-activities-in-wf"></a>WF 中的集合活动
-集合活动用于使用工作流中的集合对象。 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]包含多个系统提供的活动，用于在集合中添加和移除项、测试集合中是否存在某个项以及清除集合。 `ExistsInCollection` 并`RemoveFromCollection`具有<xref:System.Activities.OutArgument%601>类型的<xref:System.Boolean>，它指示结果。  
+集合活动用于使用工作流中的集合对象。 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] 包含系统提供的活动，用于添加和从集合中删除项、 测试集合中的项存在以及清除集合。 `ExistsInCollection` 并`RemoveFromCollection`具有<xref:System.Activities.OutArgument%601>类型的<xref:System.Boolean>，它指示结果。  
   
 > [!IMPORTANT]
 >  如果在设置基础集合对象之前执行集合活动，则会引发 <xref:System.InvalidOperationException>，并且活动将发生错误。  
@@ -225,7 +225,7 @@ Activity wf = new Sequence
 </Sequence>  
 ```  
   
- 还可以使用 <xref:Microsoft.CSharp.Activities.CSharpValue%601>（而不是 <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>）创建上面的代码示例。  
+ 此外可以使用创建上面的代码示例<xref:Microsoft.CSharp.Activities.CSharpValue%601>而不是 <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>  
   
 ```csharp
 Variable<ICollection<string>> fruitList = new Variable<ICollection<string>>  
@@ -426,4 +426,5 @@ Activity wf = new Sequence
 ```  
   
 ## <a name="see-also"></a>请参阅
-- [使用强制性代码创建工作流、活动和表达式](authoring-workflows-activities-and-expressions-using-imperative-code.md)
+
+- [使用命令性代码创作工作流、活动和表达式](authoring-workflows-activities-and-expressions-using-imperative-code.md)

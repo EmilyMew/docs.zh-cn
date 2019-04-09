@@ -1,7 +1,13 @@
 ---
-title: '编程概念 (C#)'
+title: 编程概念 (C#)
 ms.date: 07/20/2015
 ms.assetid: 3227afd5-4794-484b-b83b-0f1f94a0476b
+ms.openlocfilehash: bfe4046d6d54693867ebe5d8529a4744b9e69c3b
+ms.sourcegitcommit: 8f95d3a37e591963ebbb9af6e90686fd5f3b8707
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56748240"
 ---
 # <a name="programming-concepts-c"></a>编程概念 (C#)
 此部分介绍了 C# 语言中的编程概念。  

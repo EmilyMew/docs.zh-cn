@@ -1,19 +1,19 @@
 ---
-title: 演练：自动填充工具箱与自定义组件
+title: 演练：使用自定义组件自动填充工具箱
 ms.date: 03/30/2017
 helpviewer_keywords:
 - IToolboxService interface
 - Toolbox [Windows Forms], populating
 - custom components [Windows Forms], adding to Toolbox
 ms.assetid: 2fa1e3e8-6b9f-42b2-97c0-2be57444dba4
-ms.openlocfilehash: 8ddb248d2e011714ddc7fb68474f0e92e9ad8b5e
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
-ms.translationtype: MT
+ms.openlocfilehash: a1d138bcdc2c4637cd6aa035360ff258d3fe7100
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57723967"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59178784"
 ---
-# <a name="walkthrough-automatically-populating-the-toolbox-with-custom-components"></a>演练：自动填充工具箱与自定义组件
+# <a name="walkthrough-automatically-populating-the-toolbox-with-custom-components"></a>演练：使用自定义组件自动填充工具箱
 如果由当前打开的解决方案中的项目定义您的组件，它们将自动显示在**工具箱**，由你需执行任何操作。 可以手动填充**工具箱**与使用自定义组件[选择工具箱项对话框 (Visual Studio)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dyca0t6t(v=vs.100))，但**工具箱**考虑在解决方案中的项的生成包含所有以下特征的输出结果：  
   
 -   实现<xref:System.ComponentModel.IComponent>;  
@@ -94,7 +94,8 @@ ms.locfileid: "57723967"
  本演练演示**工具箱**会考虑项目的组件，但**工具箱**同时也会考虑的控件。 通过添加和删除控件项目从解决方案来测试您自己的自定义控件。  
   
 ## <a name="see-also"></a>请参阅
-- [通常，Windows 窗体设计器选项对话框](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100))
+
+- [“选项”对话框 ->“Windows 窗体设计器”->“常规”](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100))
 - [如何：操作工具箱选项卡](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/66kwe227(v=vs.100))
-- [“选择工具箱项”对话框 (Visual Studio)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dyca0t6t(v=vs.100))
-- [将控件置于 Windows 窗体上](putting-controls-on-windows-forms.md)
+- [选择工具箱项对话框 (Visual Studio)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dyca0t6t(v=vs.100))
+- [将控件放在 Windows 窗体上](putting-controls-on-windows-forms.md)

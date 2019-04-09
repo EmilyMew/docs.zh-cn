@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 15c357533c9f25a2f29da9a9b5cab185712f02f6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1bf7424c8aa2ae816340f6fa641e5c79a56ae0dc
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54634917"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58834122"
 ---
 # <a name="standard-timespan-format-strings"></a>标准 TimeSpan 格式字符串
 <a name="Top"></a> 标准 <xref:System.TimeSpan> 格式字符串使用一个格式说明符，定义格式设置操作生成的 <xref:System.TimeSpan> 值的文本表示形式。 任何包含一个以上字符（包括空格）的格式字符串都被解释为自定义 <xref:System.TimeSpan> 格式字符串。 有关详细信息，请参阅[自定义 TimeSpan 格式字符串](../../../docs/standard/base-types/custom-timespan-format-strings.md)。  
@@ -43,9 +43,9 @@ ms.locfileid: "54634917"
   
 |格式说明符|name|说明|示例|  
 |----------------------|----------|-----------------|--------------|  
-|“c”|常量（固定）格式|此说明符不区分区域性。 它的形式是 `[-][d’.’]hh’:’mm’:’ss[‘.’fffffff]`。<br /><br /> （“t”格式与“T”格式字符串产生的结果相同。）<br /><br /> 更多信息：[常量（“c”）格式说明符](#Constant)。|`TimeSpan.Zero` -> 00:00:00<br /><br /> `New TimeSpan(0, 0, 30, 0)` -> 00:30:00<br /><br /> `New TimeSpan(3, 17, 25, 30, 500)` -> 3.17:25:30.5000000|  
-|“g”|常规短格式|该说明符仅输出需要的内容。 它区分区域性并采用 `[-][d’:’]h’:’mm’:’ss[.FFFFFFF]` 形式。<br /><br /> 更多信息：[常规短（“g”）格式说明符](#GeneralShort)。|`New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50.5 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50,5 (fr-FR)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50.599 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50,599 (fr-FR)|  
-|“G”|常规长格式|此说明符始终输出天数和七个小数位。 它区分区域性并采用 `[-]d’:’hh’:’mm’:’ss.fffffff` 形式。<br /><br /> 更多信息：[常规长（“G”）格式说明符](#GeneralLong)。|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
+|“c”|常量（固定）格式|此说明符不区分区域性。 它的形式是 `[-][d'.']hh':'mm':'ss['.'fffffff]`。<br /><br /> （“t”格式与“T”格式字符串产生的结果相同。）<br /><br /> 更多信息：[常量（“c”）格式说明符](#Constant)。|`TimeSpan.Zero` -> 00:00:00<br /><br /> `New TimeSpan(0, 0, 30, 0)` -> 00:30:00<br /><br /> `New TimeSpan(3, 17, 25, 30, 500)` -> 3.17:25:30.5000000|  
+|“g”|常规短格式|该说明符仅输出需要的内容。 它区分区域性并采用 `[-][d':']h':'mm':'ss[.FFFFFFF]` 形式。<br /><br /> 更多信息：[常规短（“g”）格式说明符](#GeneralShort)。|`New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50.5 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50,5 (fr-FR)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50.599 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50,599 (fr-FR)|  
+|“G”|常规长格式|此说明符始终输出天数和七个小数位。 它区分区域性并采用 `[-]d':'hh':'mm':'ss.fffffff` 形式。<br /><br /> 更多信息：[常规长（“G”）格式说明符](#GeneralLong)。|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
   
 <a name="Constant"></a>   
 ## <a name="the-constant-c-format-specifier"></a>常量（“c”）格式说明符。  

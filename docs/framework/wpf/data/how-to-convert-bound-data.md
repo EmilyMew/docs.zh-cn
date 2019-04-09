@@ -1,5 +1,5 @@
 ---
-title: 如何：转换绑定的数据
+title: 如何：转换已绑定的数据
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - data binding [WPF], converting bound data
 - binding data [WPF], converting bound data
 ms.assetid: b00aaa19-c6df-4c3b-a9fd-88a0b488df2b
-ms.openlocfilehash: c98f8e4e5c837e6fbbe836a9eb2f228d2d689542
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 40699bec1c6cd775f7f8495b7a49eda15fb2ed83
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57352291"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59093795"
 ---
-# <a name="how-to-convert-bound-data"></a>如何：转换绑定的数据
+# <a name="how-to-convert-bound-data"></a>如何：转换已绑定的数据
 此示例演示如何将应用到绑定中使用的数据转换。  
   
  若要在绑定期间转换数据，必须创建一个类以实现 <xref:System.Windows.Data.IValueConverter> 接口，其中包括 <xref:System.Windows.Data.IValueConverter.Convert%2A> 和 <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> 方法。  
@@ -38,6 +38,7 @@ ms.locfileid: "57352291"
  上面的示例引用的样式资源在一个未在此主题中列出的资源部分中定义。  
   
 ## <a name="see-also"></a>请参阅
+
 - [实现绑定验证](how-to-implement-binding-validation.md)
 - [数据绑定概述](data-binding-overview.md)
 - [帮助主题](data-binding-how-to-topics.md)

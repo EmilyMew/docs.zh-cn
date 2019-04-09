@@ -1,19 +1,19 @@
 ---
-title: 如何：使用 Windows 窗体 GroupBox 控件组控件
+title: 如何：使用 Windows 窗体 GroupBox 控件对控件分组
 ms.date: 03/30/2017
 helpviewer_keywords:
 - controls [Windows Forms], grouping
 - GroupBox control [Windows Forms], grouping controls
 - Windows Forms controls, grouping
 ms.assetid: 0bda316d-bd2a-43aa-ac73-342453303169
-ms.openlocfilehash: 14c832251a76eaff21611c88179c4d2ffa7ab738
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 706655c8cb2c2548b393b6ad731c13e47fd9381a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57708532"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59179618"
 ---
-# <a name="how-to-group-controls-with-the-windows-forms-groupbox-control"></a>如何：使用 Windows 窗体 GroupBox 控件组控件
+# <a name="how-to-group-controls-with-the-windows-forms-groupbox-control"></a>如何：使用 Windows 窗体 GroupBox 控件对控件分组
 Windows 窗体<xref:System.Windows.Forms.GroupBox>控件用于分组其他控件。 有三个原因与组控件：  
   
 -   若要创建用于清除用户界面相关的窗体元素的直观分组。  
@@ -33,5 +33,6 @@ Windows 窗体<xref:System.Windows.Forms.GroupBox>控件用于分组其他控件
 3.  设置<xref:System.Windows.Forms.GroupBox.Text%2A>分组框为适当标题的属性。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.GroupBox>
 - [GroupBox 控件](groupbox-control-windows-forms.md)

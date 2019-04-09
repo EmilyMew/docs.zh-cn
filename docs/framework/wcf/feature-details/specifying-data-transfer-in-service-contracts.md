@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - service contracts [WCF], data transfer
 ms.assetid: 7c5a26c8-89c9-4bcb-a4bc-7131e6d01f0c
-ms.openlocfilehash: a9066054c82fdb2e25dace0b7611df4cbbf4ec93
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
-ms.translationtype: MT
+ms.openlocfilehash: a3ac0f321a20624deea1fe382d04a8d4e1b6c510
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54617260"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59135195"
 ---
 # <a name="specifying-data-transfer-in-service-contracts"></a>在服务协定中指定数据传输
 Windows Communication Foundation (WCF) 将视为消息传送基础结构。 服务操作可以接收消息、处理消息以及发送消息。 消息是使用操作协定描述的。 例如，请考虑以下协定。  
@@ -432,7 +432,7 @@ End Class
 ## <a name="specifying-the-use-and-style"></a>指定用法和样式  
  在使用 Web Services 描述语言 (WSDL) 描述服务时，两种常用的样式是文档和远程过程调用 (RPC)。 在文档样式中，使用架构来描述整个消息正文，并且 WSDL 通过引用该架构内的元素来描述各种消息正文部分。 在 RPC 样式中，WSDL 引用每个消息部分的架构类型而不是元素来描述消息正文部分。 在某些情况下，您必须手动选择其中的一种样式。 若要执行此操作，可以应用 <xref:System.ServiceModel.DataContractFormatAttribute> 属性并设置 `Style` 属性 (Property)（使用 <xref:System.Runtime.Serialization.DataContractSerializer> 时），或者设置 `Style` 属性 (Attribute) 上的 <xref:System.ServiceModel.XmlSerializerFormatAttribute>（使用 <xref:System.Xml.Serialization.XmlSerializer> 时）。  
   
- 此外，<xref:System.Xml.Serialization.XmlSerializer> 还支持两种形式的序列化 XML：`Literal` 和 `Encoded`。 `Literal` 是最广为接受的格式，也是 <xref:System.Runtime.Serialization.DataContractSerializer> 唯一支持的格式。 `Encoded` 是 SOAP 规范第 5 节中描述的旧格式，建议不要用于新服务。 若要切换到 `Encoded` 模式，请将 `Use` 属性 (Attribute) 上的 <xref:System.ServiceModel.XmlSerializerFormatAttribute> 属性 (Property) 设置为 `Encoded`。  
+ 此外，<xref:System.Xml.Serialization.XmlSerializer> 还支持两种形式的序列化 XML：`Literal` 和 `Encoded`。 `Literal` 是最广为接受的形式，并且是唯一的形式<xref:System.Runtime.Serialization.DataContractSerializer>支持。 `Encoded` 是 SOAP 规范第 5 节中描述的旧形式，建议不要用于新服务。 若要切换到 `Encoded` 模式，请将 `Use` 属性 (Attribute) 上的 <xref:System.ServiceModel.XmlSerializerFormatAttribute> 属性 (Property) 设置为 `Encoded`。  
   
  在大多数情况下，不应更改 `Style` 和 `Use` 属性的默认设置。  
   
@@ -575,6 +575,7 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
  有关高级序列化概念的详细信息，请参阅[序列化和反序列化](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [使用 XmlSerializer 类](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md)
-- [如何：启用流式传输](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)
+- [如何：启用流处理](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)
 - [如何：创建类或结构的基本数据协定](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-data-contract-for-a-class-or-structure.md)

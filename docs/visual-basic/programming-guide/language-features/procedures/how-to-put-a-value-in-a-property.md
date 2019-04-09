@@ -24,7 +24,7 @@ ms.locfileid: "58824297"
   
 1.  在赋值语句左侧使用属性名称。  
   
-     下面的示例设置的值的 Visual basic`TimeOfDay`属性设置为中午，隐式调用其`Set`过程。  
+     下面的示例设置的值的 Visual Basic`TimeOfDay`属性设置为中午，隐式调用其`Set`过程。  
   
      [!code-vb[VbVbcnProcedures#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#11)]  
   

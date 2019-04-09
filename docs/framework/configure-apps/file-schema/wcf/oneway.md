@@ -2,12 +2,12 @@
 title: <oneWay>
 ms.date: 03/30/2017
 ms.assetid: 00e67e0e-77c0-4695-9138-c0997b0e5f3c
-ms.openlocfilehash: 35631cc4b120169e0cadb80c6beba26ab9eafd7a
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: bfda2b9d7b3aa5219a3e4c344347d3b10419a7bd
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55283265"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102409"
 ---
 # <a name="oneway"></a>\<oneWay>
 对自定义绑定启用数据包路由并使用单向方法。  
@@ -54,6 +54,7 @@ ms.locfileid: "55283265"
  若要启用数据包路由，必须使用此元素提供的单向转换层。 用户可以创建一个自定义绑定，将此绑定置于具有会话功能或请求/答复传输的上层，使之可进行数据包路由。 如果希望以更自然的方式公开单向方法，则此元素也十分有用。 在这一层上可应用更多的转换，如复合双工和可靠消息。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Channels.OneWayBindingElement>
 - <xref:System.ServiceModel.Configuration.OneWayElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

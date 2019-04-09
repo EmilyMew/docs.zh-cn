@@ -94,7 +94,7 @@ Svcutil.exe 可以依据元数据文档为服务协定、客户端和数据类�
 |/excludeType:\<type>|指定要从引用的协定类型中排除的完全限定或程序集限定类型名称。<br /><br /> 从单独的 DLL 中将此开关与 `/r` 一起使用时，将引用 XSD 类的全名。<br /><br /> 缩写形式：`/et`|
 |/importXmlTypes|配置数据协定序列化程序，以便将非数据协定类型作为 IXmlSerializable 类型导入。|
 |/internal|生成标记为内部的类。 默认设置：只生成公共类。<br /><br /> 缩写形式：`/i`|
-|/language:\<语言 >|指定要用于代码生成的编程语言。 应提供在 Machine.config 文件中，注册的语言名称或继承的类的完全限定的名称<xref:System.CodeDom.Compiler.CodeDomProvider>。<br /><br /> 值：c#、cs、csharp、vb、visualbasic、c++、cpp<br /><br /> 默认设置：csharp<br /><br /> 缩写形式：`/l`|
+|/language:\<语言 >|指定要用于代码生成的编程语言。 应提供在 Machine.config 文件中，注册的语言名称或继承的类的完全限定的名称<xref:System.CodeDom.Compiler.CodeDomProvider>。<br /><br /> 值：C#、cs、csharp、vb、visualbasic、c++、cpp<br /><br /> 默认设置：csharp<br /><br /> 缩写形式：`/l`|
 |/mergeConfig|将生成的配置合并到现有文件中，而不是覆盖现有文件。|
 |/messageContract|生成消息协定类型。<br /><br /> 缩写形式：`/mc`|
 |/namespace:\<string,string>|指定从 WSDL 或 XML 架构 targetNamespace 到 CLR 命名空间的映射。 使用\*用于 targetNamespace 映射所有 Targetnamespace，而不显式映射到该 CLR 命名空间。<br /><br /> 为了确保消息协定名称与操作名称不冲突，您应使用 `::` 限定类型引用，或确保名称是唯一的。<br /><br /> 默认：数据协定的派生架构文档的目标命名空间中。 默认命名空间用于所有其他生成的类型。<br /><br /> 缩写形式：`/n` **注意：** 在生成时要使用与 XmlSerializer 类型，支持单个命名空间映射。 所有生成的类型可以是默认命名空间或指定的命名空间中 *。|

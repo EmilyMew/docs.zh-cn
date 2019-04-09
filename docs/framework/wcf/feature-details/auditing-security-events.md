@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - auditing security events [WCF]
 ms.assetid: 5633f61c-a3c9-40dd-8070-1c373b66a716
-ms.openlocfilehash: a2349fa82b790182fa5d160bd29091c7524e2cea
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 7d19c32994fdfc5587c06b979886f20ab2a04508
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54622593"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59101285"
 ---
 # <a name="auditing-security-events"></a>审核安全事件
 创建使用 Windows Communication Foundation (WCF) 的应用程序可以利用审核功能记录安全事件 （成功、 失败，或两者）。 这些事件被写入 Windows 系统事件日志，并且可以使用事件查看器进行检查。  
@@ -32,7 +32,7 @@ ms.locfileid: "54622593"
   
  写入 Security 日志要求具有 `SeAuditPrivilege`。 默认情况下，只有“本地系统”和“网络服务”帐户具有此特权。 管理 Security 日志功能 `read` 和 `delete` 要求具有 `SeSecurityPrivilege`。 默认情况下，只有管理员具有此特权。  
   
- 与此相反，经过身份验证的用户可以读取和写入应用程序日志。 默认情况下，[!INCLUDE[wxp](../../../../includes/wxp-md.md)] 将审核事件写入到应用程序日志。 该日志还包含对所有通过身份验证的用户可见的个人信息。  
+ 与此相反，经过身份验证的用户可以读取和写入应用程序日志。 [!INCLUDE[wxp](../../../../includes/wxp-md.md)] 默认情况下，审核写入到应用程序日志的事件。 该日志还包含对所有通过身份验证的用户可见的个人信息。  
   
 ## <a name="suppressing-audit-failures"></a>禁止显示审核失败  
  审核过程中的另一个选择为是否禁止显示任何审核失败。 默认情况下，审核失败不会影响应用程序。 但是，如若需要，可将此选项设置为 `false`，这将导致引发异常。  
@@ -99,6 +99,7 @@ ms.locfileid: "54622593"
 |默认用户体验|所有通过身份验证的用户都可以写入 Application 日志，因此对于应用程序进程，不需要执行其他权限步骤。|应用程序进程（上下文）必须具有 `SeAuditPrivilege`。|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
 - <xref:System.ServiceModel.AuditLogLocation>
 - [安全性概述](../../../../docs/framework/wcf/feature-details/security-overview.md)

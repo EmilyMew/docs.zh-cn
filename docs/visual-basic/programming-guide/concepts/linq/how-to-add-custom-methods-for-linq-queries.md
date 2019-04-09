@@ -2,12 +2,12 @@
 title: 如何：为 LINQ 查询 (Visual Basic 中) 添加自定义方法
 ms.date: 07/20/2015
 ms.assetid: 099b2e2a-83cd-45c6-aa4d-01b398b5faaf
-ms.openlocfilehash: a58ced83a01e41be707f2483cabe9c8e867e2c1a
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.openlocfilehash: f61db6c17fa3ead1e9dbc47c172a2cef91c042eb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58829169"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59123300"
 ---
 # <a name="how-to-add-custom-methods-for-linq-queries-visual-basic"></a>如何：为 LINQ 查询 (Visual Basic 中) 添加自定义方法
 可通过向 <xref:System.Collections.Generic.IEnumerable%601> 接口添加扩展方法扩展可用于 LINQ 查询的方法集。 例如，除了标准平均值或最大值运算，还可以创建自定义聚合方法，从一系列值计算单个值。 此外可以创建一个方法，用作一个值序列的自定义筛选器或用于对其进行特定数据转换，并返回新的序列。 <xref:System.Linq.Enumerable.Distinct%2A>、<xref:System.Linq.Enumerable.Skip%2A> 和 <xref:System.Linq.Enumerable.Reverse%2A> 就是此类方法的示例。  
@@ -68,7 +68,6 @@ Console.WriteLine("Double: Median = " & query1)
 '  
 ' Double: Median = 4.85  
 ```  
-  
 
 ### <a name="overloading-an-aggregate-method-to-accept-various-types"></a>重载聚合方法以接受各种类型  
  可以重载聚合方法，以便其接受各种类型的序列。 标准做法是为每种类型都创建一个重载。 另一种方法是创建一个采用泛型类型的重载，并使用委托将其转换为特定类型。 还可以将两种方法结合。  
@@ -108,8 +107,7 @@ Console.WriteLine("Integer: Median = " & query2)
 ' Double: Median = 4.85  
 ' Integer: Median = 3  
 ```  
-  
- 
+
 #### <a name="to-create-a-generic-overload"></a>创建一般重载  
  还可以创建接受泛型对象序列的重载。 此重载采用委托作为参数，并使用该参数将泛型类型的对象序列转换为特定类型。  
   

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Freezable elements [WPF]
 - PresentationOptions prefix [WPF]
 ms.assetid: 391032dd-2fba-4804-bb8a-3b071797a9f4
-ms.openlocfilehash: 3ff4a3221392d6b247d0a486e4e1f0406f539362
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: e60c4a505db42936f188354f52edd7832fb9632b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57378855"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59074652"
 ---
 # <a name="presentationoptionsfreeze-attribute"></a>PresentationOptions:Freeze 特性
 集<xref:System.Windows.Freezable.IsFrozen%2A>状态变为`true`上包含<xref:System.Windows.Freezable>元素。 默认行为<xref:System.Windows.Freezable>而无需`PresentationOptions:Freeze`指定的属性是<xref:System.Windows.Freezable.IsFrozen%2A>是`false`加载时间和依赖于一般<xref:System.Windows.Freezable>在运行时的行为。  
@@ -42,6 +42,7 @@ ms.locfileid: "57378855"
  任何值`Freeze`特性，除`true`（不区分大小写） 生成的负载时错误。 (指定`Freeze`属性作为`false`不是错误，但这已经是默认值，因此将设置为`false`不执行任何操作)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Freezable>
 - [Freezable 对象概述](freezable-objects-overview.md)
 - [mc:Ignorable 特性](mc-ignorable-attribute.md)

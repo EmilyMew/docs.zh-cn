@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Windows Forms controls, adding to form
 - controls [Windows Forms], adding
 ms.assetid: 2af86001-9d62-4154-87fb-66db2c3cd9fd
-ms.openlocfilehash: 31820775d4f7fb981599e806aa5e27655039e6ac
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 72b5931a79284a93a4e0fdf3cb2cc3b03157f5f7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57720769"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59106478"
 ---
 # <a name="how-to-add-controls-to-windows-forms"></a>如何：向 Windows 窗体添加控件
 大多数窗体旨在通过将控件添加到窗体的面，用于定义用户界面 (UI) 中。 一个*控制*是用于显示信息或接受用户输入的窗体上的组件。 有关控件的详细信息，请参阅[Windows 窗体控件](index.md)。  
@@ -90,8 +90,9 @@ ms.locfileid: "57720769"
     >  可能会通过引用恶意公开您的本地计算机通过网络安全风险`UserControl`。 这只能在恶意的用户创建一个具有破坏性的自定义控件，跟您错误地将其添加到你的项目的情况下一个问题。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Windows 窗体控件](index.md)
-- [在 Windows 窗体上排列控件](arranging-controls-on-windows-forms.md)
-- [如何：调整 Windows 窗体上的控件的大小](how-to-resize-controls-on-windows-forms.md)
-- [如何：设置显示的文本的 Windows 窗体控件](how-to-set-the-text-displayed-by-a-windows-forms-control.md)
+- [排列 Windows 窗体上的控件](arranging-controls-on-windows-forms.md)
+- [如何：调整 Windows 窗体上控件的大小](how-to-resize-controls-on-windows-forms.md)
+- [如何：设置 Windows 窗体控件显示的文本](how-to-set-the-text-displayed-by-a-windows-forms-control.md)
 - [在 Windows 窗体上使用的控件](controls-to-use-on-windows-forms.md)

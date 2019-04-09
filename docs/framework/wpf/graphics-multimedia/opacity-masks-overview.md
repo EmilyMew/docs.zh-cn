@@ -6,12 +6,12 @@ helpviewer_keywords:
 - masks [WPF], opacity
 - opacity [WPF], masks
 ms.assetid: 22367fab-5f59-4583-abfd-db2bf86eaef7
-ms.openlocfilehash: 7b6afebbf6ac2dda0f8eb9932630da9a273f972e
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 84525e58487ce9b0bc26f77ff8dbced734bc90a9
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57376801"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59080080"
 ---
 # <a name="opacity-masks-overview"></a>不透明蒙板概述
 不透明蒙板能够使部分元素或视觉对象透明或部分透明。 若要创建不透明蒙板，则应用<xref:System.Windows.Media.Brush>到<xref:System.Windows.UIElement.OpacityMask%2A>元素的属性或<xref:System.Windows.Media.Visual>。  画笔映射到元素或视觉对象，并且画笔的每个像素的不透明度值用于确定生成的元素或视觉对象的每个相应像素的不透明度。  
@@ -43,14 +43,14 @@ ms.locfileid: "57376801"
      ![具有 LinearGradientBrush 不透明蒙版的对象](./media/wcpsdk-graphicsmm-brushes-lineagradientopacitymasksingle.jpg "wcpsdk_graphicsmm_brushes_lineagradientopacitymasksingle")  
 LinearGradientBrush 不透明蒙板示例  
   
--   <xref:System.Windows.Media.ImageBrush>：用于创建纹理和软或撕裂边缘效果。  
+-   <xref:System.Windows.Media.ImageBrush>:用于创建纹理和软或撕裂边缘效果。  
   
      下图显示了<xref:System.Windows.Media.ImageBrush>用作不透明蒙板。  
   
      ![具有 ImageBrush 不透明蒙版的对象](./media/wcpsdk-graphicsmm-brushes-imageasopacitymasksingle.jpg "wcpsdk_graphicsmm_brushes_imageasopacitymasksingle")  
 LinearGradientBrush 不透明蒙板示例  
   
--   <xref:System.Windows.Media.DrawingBrush>：用于从形状、 图像和渐变的模式创建复杂的不透明蒙板。  
+-   <xref:System.Windows.Media.DrawingBrush>:用于从形状、 图像和渐变的模式创建复杂的不透明蒙板。  
   
      下图显示了<xref:System.Windows.Media.DrawingBrush>用作不透明蒙板。  
   
@@ -73,7 +73,7 @@ DrawingBrush 不透明蒙板示例
   
 <a name="argbsyntax"></a>   
 ### <a name="specifying-color-opacity-in-xaml"></a>在“XAML”中指定颜色不透明度  
- 在 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 中，使用 [!INCLUDE[TLA2#tla_argb](../../../../includes/tla2sharptla-argb-md.md)] 十六进制表示法指定个别颜色的不透明度。 [!INCLUDE[TLA2#tla_argb](../../../../includes/tla2sharptla-argb-md.md)] 十六进制表示法使用下面语法：  
+ 在 [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] 中，使用 [!INCLUDE[TLA2#tla_argb](../../../../includes/tla2sharptla-argb-md.md)] 十六进制表示法指定个别颜色的不透明度。 [!INCLUDE[TLA2#tla_argb](../../../../includes/tla2sharptla-argb-md.md)] 十六进制表示法使用以下语法：  
   
  `#` **aa** *rrggbb*  
   
@@ -116,5 +116,6 @@ DrawingBrush 不透明蒙板示例
  [!code-xaml[OpacityMasksSnippet#TiledDrawingasOpacityMask](~/samples/snippets/csharp/VS_Snippets_Wpf/OpacityMasksSnippet/CS/DrawingBrushExample.xaml#tileddrawingasopacitymask)]  
   
 ## <a name="see-also"></a>请参阅
-- [使用图像、绘图和视觉对象进行绘制](painting-with-images-drawings-and-visuals.md)
+
+- [使用图像、图形和视觉对象进行绘制](painting-with-images-drawings-and-visuals.md)
 - [使用纯色和渐变进行绘制概述](painting-with-solid-colors-and-gradients-overview.md)

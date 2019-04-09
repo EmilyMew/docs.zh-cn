@@ -6,33 +6,33 @@ helpviewer_keywords:
 - user interface, see UI
 - accessibility, UI automation
 ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
-ms.openlocfilehash: 32f1940db7e2e77b2d878a71c9e1aa4e394b349f
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.openlocfilehash: 06cbc82f3636c4063b445a0ccbe871e0be1dd847
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57677196"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59134655"
 ---
 # <a name="ui-automation-overview"></a>UI 自动化概述
 > [!NOTE]
 >  本文档适用于想要使用 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 命名空间中定义的托管 <xref:System.Windows.Automation> 类的 .NET Framework 开发人员。 有关最新信息[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]，请参阅[Windows 自动化 API:UI 自动化](https://go.microsoft.com/fwlink/?LinkID=156746)。  
   
- [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 是 [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)]的全新辅助功能框架，在所有支持 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]的操作系统上可用。  
+ [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] 是用于新的辅助功能框架[!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)]，可在所有支持的操作系统上[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]。  
   
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 提供对桌面上大多数 [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] 元素的编程访问，使辅助技术产品（如屏幕阅读器）能够使用标准输入以外的其他方式向最终用户提供有关 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 的信息并操纵 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 。 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 也使自动化的测试脚本能够与 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]进行交互。  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 以编程方式访问大多数[!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]元素在桌面上，从而支持辅助技术产品，比如屏幕读取器提供了一些信息[!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]向最终用户以及处理[!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]而不借助标准输入。 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 此外允许自动的测试脚本，以便与[!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]。  
   
 > [!NOTE]
->  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 不会启用由不同用户通过“Run as”  命令启动的进程之间的通信。  
+>  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 不会启用由不同用户通过启动的进程之间的通信**以运行**命令。  
   
  UI 自动化客户端应用程序可在保证其将在多个框架上运行的情况下进行编写。 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 核心掩盖位于 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]各组成部分之下的框架中的任何差异。 例如在 `Content` 视图中， [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] 按钮的 `Caption` 属性、 [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] 按钮的 `ALT` 属性、HTML 图像的 <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name%2A>属性全部映射到单个属性， [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 。  
   
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 在 [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)]、 [!INCLUDE[TLA#tla_winxp](../../../includes/tlasharptla-winxp-md.md)]和 [!INCLUDE[TLA2#tla_winnetsvrfam](../../../includes/tla2sharptla-winnetsvrfam-md.md)]中提供完整功能。  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 提供了完整的功能[!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)]， [!INCLUDE[TLA#tla_winxp](../../../includes/tlasharptla-winxp-md.md)]，和[!INCLUDE[TLA2#tla_winnetsvrfam](../../../includes/tla2sharptla-winnetsvrfam-md.md)]。  
   
  UI 自动化提供程序通过内置的桥接服务提供了一些对 [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)] 客户端应用程序的支持。  
   
 <a name="Providers_and_Clients"></a>   
 ## <a name="providers-and-clients"></a>提供程序和客户端  
- 如下表所示，[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 具有四个主要组件。  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 有四个主要组件下, 表中所示。  
   
 |组件|描述|  
 |---------------|-----------------|  
@@ -50,7 +50,7 @@ ms.locfileid: "57677196"
 |[托管代码的 UI 自动化客户端](../../../docs/framework/ui-automation/ui-automation-clients-for-managed-code.md)|可帮助你使用客户端 API 的概述和帮助主题。|客户端应用程序开发人员。|  
 |[UI 自动化控件模式](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)|有关提供程序应如何实现控件模式以及哪些功能可供客户端使用的信息。|全部。|  
 |[UI 自动化文本模式](../../../docs/framework/ui-automation/ui-automation-text-pattern.md)|有关提供程序应如何实现 Text 控件模式以及哪些功能可供客户端使用的信息。|全部。|  
-|[UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)|有关不同控件类型支持的属性和控件模式的信息。|全部。|  
+|[UI 自动化控件类型](../../../docs/framework/ui-automation/ui-automation-control-types.md)|有关不同控件类型支持的属性和控件模式的信息。|全部。|  
   
  下表列出 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 命名空间、包含这些命名空间的 DLL 以及使用它们的受众。  
   
@@ -63,18 +63,19 @@ ms.locfileid: "57677196"
   
 <a name="UI_Automation_Model"></a>   
 ## <a name="ui-automation-model"></a>UI 自动化模型  
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 将 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 的每个部分向客户端应用程序公开为 <xref:System.Windows.Automation.AutomationElement>。 元素包含在树状结构，而桌面作为根元素。 客户端可将树的原始视图筛选为控件视图或内容视图。 应用程序还可以创建自定义视图。  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 公开的每份[!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]客户端应用程序作为<xref:System.Windows.Automation.AutomationElement>。 元素包含在树状结构，而桌面作为根元素。 客户端可将树的原始视图筛选为控件视图或内容视图。 应用程序还可以创建自定义视图。  
   
- <xref:System.Windows.Automation.AutomationElement> 对象公开它们所代表的 [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] 元素的公共属性。 这些属性之一则是控件类型，它将其基本外观和功能定义为单个可识别的实体：如按钮或复选框。  
+ <xref:System.Windows.Automation.AutomationElement> 对象公开的公共属性[!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]它们所表示的元素。 这些属性之一则是控件类型，它将其基本外观和功能定义为单个可识别的实体：如按钮或复选框。  
   
  此外，元素公开向其控件类型提供特定属性的控件模式。 控件模式还公开方法，使客户端获取有关该元素的详细信息，并提供输入。  
   
 > [!NOTE]
 >  控件类型和控件模式之间并无一一对应关系。 一个控件模式可被多个控件类型支持，且一个控件可支持多个控件模式，两者均公开其行为的不同方面。 例如，组合框中至少具有两个控件模式：一个表示可展开和折叠的功能，另一个代表选择机制。 有关详细信息，请参阅 [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)。  
   
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 同样通过事件向客户端应用程序提供信息。 与 [!INCLUDE[TLA2#tla_winevents](../../../includes/tla2sharptla-winevents-md.md)]不同， [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 事件不基于广播的机制。 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 客户端注册特定的事件通知且可以请求将特定 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 属性和控件模式信息传递给其事件处理程序。 此外， [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 事件包含对引发它的元素的引用。 提供程序可以通过有选择地引发事件来提高性能，具体取决于任一客户端是否正在进行侦听。  
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 此外提供了如何通过事件的客户端应用程序的信息。 与 [!INCLUDE[TLA2#tla_winevents](../../../includes/tla2sharptla-winevents-md.md)]不同， [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 事件不基于广播的机制。 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 客户端注册特定的事件通知，并可以请求将特定[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]属性和控件模式信息传递给其事件处理程序。 此外， [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 事件包含对引发它的元素的引用。 提供程序可以通过有选择地引发事件来提高性能，具体取决于任一客户端是否正在进行侦听。  
   
 ## <a name="see-also"></a>请参阅
+
 - [UI 自动化树概述](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
 - [UI 自动化控件模式概述](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [UI 自动化属性概述](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)

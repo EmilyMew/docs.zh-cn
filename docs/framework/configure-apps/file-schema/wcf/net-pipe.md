@@ -2,12 +2,12 @@
 title: <net.pipe>
 ms.date: 03/30/2017
 ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
-ms.openlocfilehash: 90d081c1287362669286aaa1185ed3b0bbe09b07
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: 885cfad7be42f7c48b4c061f3293d667eb5d4ad8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58412105"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59103386"
 ---
 # <a name="netpipe"></a>\<net.pipe>
 指定命名管道激活服务的配置设置，命名管道激活服务将管理命名管道连接的生存期，并处理通过命名管道到达的激活请求。  
@@ -52,8 +52,7 @@ ms.locfileid: "58412105"
 |---------------|-----------------|  
 |`maxPendingAccepts`|一个整数，指定共享服务侦听终结点上的最大未完成并发接受线程数。 默认值为 2。|  
 |`maxPendingConnections`|一个整数，指定可等待调度的最大连接数。 默认值为 100。|  
-|`receiveTimeout`|
-  <xref:System.TimeSpan>，它将为读取组帧数据并执行来自基础连接的连接调度指定超时值。 默认值为“00:00:10”|  
+|`receiveTimeout`|<xref:System.TimeSpan>，它将为读取组帧数据并执行来自基础连接的连接调度指定超时值。 默认值为“00:00:10”|  
   
 ### <a name="child-elements"></a>子元素  
   
@@ -68,4 +67,5 @@ ms.locfileid: "58412105"
 |[\<system.serviceModel.activation>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel-activation.md)|包含侦听器进程 SMSvcHost.exe 的配置设置。|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Activation.Configuration.NetPipeSection>

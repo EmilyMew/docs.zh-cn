@@ -2,11 +2,16 @@
 title: 委托 (Visual Basic)
 ms.date: 07/20/2015
 helpviewer_keywords:
-  - 'delegates [Visual Basic]'
-  - 'Visual Basic code, delegates'
+- delegates [Visual Basic]
+- Visual Basic code, delegates
 ms.assetid: 410b60dc-5e60-4ec0-bfae-426755a2ee28
+ms.openlocfilehash: b3f333f1714a66a8ff462000385af92cf343a19e
+ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57674024"
 ---
-
 # <a name="delegates-visual-basic"></a>委托 (Visual Basic)
 
 委托是引用方法的对象。 有时亦称为*类型安全函数指针*，因为它们与其他编程语言中使用的函数指针类似。 但与函数指针不同 Visual Basic 委托是基于类的引用类型<xref:System.Delegate?displayProperty=nameWithType>。 委托既可以引用共享方法（无需特定类实例即可调用的方法），也可以引用实例方法。

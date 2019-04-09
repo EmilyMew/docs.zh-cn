@@ -2,12 +2,12 @@
 title: 示例提供程序中的 SQL 生成
 ms.date: 03/30/2017
 ms.assetid: e70f553d-4622-4627-928e-1aa2ee605d8e
-ms.openlocfilehash: b2397570bb5f312aa6a3955a76234bde508fcc6a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 88223930b65ccec9d030104c62d8b4b2e77ddbe2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54505494"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59079407"
 ---
 # <a name="sql-generation-in-the-sample-provider"></a>示例提供程序中的 SQL 生成
 [实体框架示例提供程序](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0)演示了 ADO.NET 数据提供程序支持的新组件[!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]。  它使用 SQL Server 2005 数据库，并实现为 System.Data.SqlClient ADO.NET 2.0 数据提供程序的一个包装。  
@@ -22,4 +22,5 @@ ms.locfileid: "54505494"
  [演练：SQL 生成](../../../../../docs/framework/data/adonet/ef/walkthrough-sql-generation.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - [SQL 生成](../../../../../docs/framework/data/adonet/ef/sql-generation.md)

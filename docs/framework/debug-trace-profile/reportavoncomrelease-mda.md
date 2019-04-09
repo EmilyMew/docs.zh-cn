@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: a2b86b63-08b2-4943-b344-3c2cf46ccd31
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: c70c70f251fca9312019d4c63304e8354bf87fd1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f0ecb05dba70dc9c8aba7f04928fd0ab49c900c8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54729153"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59125575"
 ---
 # <a name="reportavoncomrelease-mda"></a>reportAvOnComRelease MDA
 在执行 COM 互操作并将原始 COM 调用与 `reportAvOnComRelease` 或 <xref:System.Runtime.InteropServices.Marshal.Release%2A> 方法一起使用时，如果由于用户引用计数错误引发了异常，则将激活 <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> 托管调试助手 (MDA)。  
@@ -35,7 +35,7 @@ ms.locfileid: "54729153"
 ## <a name="effect-on-the-runtime"></a>对运行时的影响  
  两种模式皆可用。 如果 `allowAv` 特性为 `true`，则助手会阻止运行时丢弃访问冲突。 如果 `allowAv` 为 `false`（这是默认设置），则运行时会丢弃访问冲突，但会向用户报告一条警告消息，指出引发了一个异常并丢弃了该异常。  
   
-## <a name="output"></a>输出  
+## <a name="output"></a>Output  
  如果可能，输出会 包括 COM 接口指针的原始 vtable。 否则，会显示一条信息性消息。  
   
 ## <a name="configuration"></a>配置  
@@ -49,6 +49,7 @@ ms.locfileid: "54729153"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [使用托管调试助手诊断错误](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [互操作封送处理](../../../docs/framework/interop/interop-marshaling.md)

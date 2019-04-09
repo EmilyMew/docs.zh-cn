@@ -1,5 +1,5 @@
 ---
-title: 如何：响应 Windows 窗体按钮单击
+title: 如何：响应 Windows 窗体按钮的单击
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -15,14 +15,14 @@ helpviewer_keywords:
 - examples [Windows Forms], controls
 - Click event [Windows Forms], responding to
 ms.assetid: 7a4951bd-369c-4662-b246-28ad83eda484
-ms.openlocfilehash: e6e6d041422a79171ec4b6159f0789b8aa6a50d5
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: a10eaa3ea62df9301a53f5609b503bfabcb50a46
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57724981"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59110066"
 ---
-# <a name="how-to-respond-to-windows-forms-button-clicks"></a>如何：响应 Windows 窗体按钮单击
+# <a name="how-to-respond-to-windows-forms-button-clicks"></a>如何：响应 Windows 窗体按钮的单击
 Windows 窗体的最基本用法<xref:System.Windows.Forms.Button>控件将在单击按钮时运行某些代码。  
   
  单击<xref:System.Windows.Forms.Button>控件还会生成大量的其他事件，如<xref:System.Windows.Forms.Control.MouseEnter>， <xref:System.Windows.Forms.Control.MouseDown>，和<xref:System.Windows.Forms.Control.MouseUp>事件。 如果你想要附加这些相关事件的事件处理程序，请确保它们的操作不会冲突。 例如，如果单击该按钮将清除用户已在文本框中键入的信息，将鼠标指针暂停到按钮上方时就不应显示工具提示信息的已不存在。  
@@ -56,6 +56,7 @@ Windows 窗体的最基本用法<xref:System.Windows.Forms.Button>控件将在�
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [Button 控件概述](button-control-overview-windows-forms.md)
-- [如何选择 Windows 窗体 Button 控件](ways-to-select-a-windows-forms-button-control.md)
+- [选择 Windows 窗体 Button 控件的方法](ways-to-select-a-windows-forms-button-control.md)
 - [Button 控件](button-control-windows-forms.md)

@@ -2,12 +2,12 @@
 title: Binding2
 ms.date: 03/30/2017
 ms.assetid: 09511c6c-5749-4bb0-874e-0f0be36bfe04
-ms.openlocfilehash: aaf0dd9d6918f2c248942cee3773eee8332adda9
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: a040cc6e12833d2c737eb14c591300e5873ddce7
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54552835"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59106510"
 ---
 # <a name="binding"></a>绑定
 wmi Binding  
@@ -31,7 +31,7 @@ class Binding
 ## <a name="methods"></a>方法  
  Binding 类未定义任何方法。  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>属性  
  Binding 类具有以下属性。  
   
 ### <a name="bindingelements"></a>BindingElements  
@@ -48,7 +48,7 @@ class Binding
   
  为完成关闭操作提供的时间间隔。  
   
-### <a name="name"></a>name  
+### <a name="name"></a>名称  
  数据类型：String  
   
  访问类型：只读  
@@ -97,4 +97,5 @@ class Binding
 |命名空间|已在 root\ServiceModel 中定义|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Channels.Binding>

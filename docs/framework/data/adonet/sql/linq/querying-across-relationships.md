@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 297878d0-685b-4c01-b2e0-9d731b7322bc
-ms.openlocfilehash: 783ecb35408f63c7f3e7299e503c3f0fda3f36ba
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2e1cf9efcf47fc70421c64541aead5fb36d8c9d1
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54666431"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083141"
 ---
 # <a name="querying-across-relationships"></a>跨关系查询
 您的类定义中对其他对象或其他对象的集合的直接引用相当于数据库中的外键关系。 您可以通过使用点表示法在查询时利用这些关系来访问关系属性以及从一个对象定位到另一个对象。 这些访问操作会转换成用等效的 SQL 表示的更为复杂的联接或关联子查询。  
@@ -53,4 +53,5 @@ WHERE  (t0.City = @p0)
  [!code-vb[DLinqQueryConcepts#6](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#6)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [查询概念](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

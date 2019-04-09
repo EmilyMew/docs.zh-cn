@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 61f82a34c287c62e1180c9c6bbe090914763afa3
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 6e851c1bd56c0e9ece02fb06c0dcd9975a5b02ff
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57479079"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59079430"
 ---
 # <a name="linkresource-method"></a>LinkResource 方法
 在资源中的链接。  
@@ -61,6 +61,7 @@ HRESULT LinkResource(
  需要 alink.h。  
   
 ## <a name="see-also"></a>请参阅
+
 - [IALink 接口](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
 - [IALink2 接口](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
 - [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

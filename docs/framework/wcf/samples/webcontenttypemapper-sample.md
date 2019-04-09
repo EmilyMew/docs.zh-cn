@@ -2,12 +2,12 @@
 title: WebContentTypeMapper 示例
 ms.date: 03/30/2017
 ms.assetid: a4fe59e7-44d8-43c6-a1f8-40c45223adca
-ms.openlocfilehash: f9da688d1ba77d5e9c3e7106138fd36c96d4fc81
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
-ms.translationtype: MT
+ms.openlocfilehash: 7858b07c3da8684326b931b54f825c87a6e35717
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58840206"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59131503"
 ---
 # <a name="webcontenttypemapper-sample"></a>WebContentTypeMapper 示例
 此示例演示如何将新内容类型映射到 Windows Communication Foundation (WCF) 消息正文格式。  
@@ -68,4 +68,3 @@ public class JsonContentTypeMapper : WebContentTypeMapper
 >  如果此目录不存在，请转到[Windows Communication Foundation (WCF) 和.NET Framework 4 的 Windows Workflow Foundation (WF) 示例](https://go.microsoft.com/fwlink/?LinkId=150780)若要下载所有 Windows Communication Foundation (WCF) 和[!INCLUDE[wf1](../../../../includes/wf1-md.md)]示例。 此示例位于以下目录：  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Ajax\WebContentTypeMapper`  
-  

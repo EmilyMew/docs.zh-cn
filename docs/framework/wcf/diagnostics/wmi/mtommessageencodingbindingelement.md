@@ -2,12 +2,12 @@
 title: MtomMessageEncodingBindingElement
 ms.date: 03/30/2017
 ms.assetid: 4a9c6c3d-e561-4b2d-a693-7e84bdd3534a
-ms.openlocfilehash: ad4f2cc3b03111854d10d6a1c1128f090a629a07
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: aed65311d2b36a5dc764511de04e34c4bfb69d7b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54490968"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59140473"
 ---
 # <a name="mtommessageencodingbindingelement"></a>MtomMessageEncodingBindingElement
 MtomMessageEncodingBindingElement  
@@ -27,7 +27,7 @@ class MtomMessageEncodingBindingElement : MessageEncodingBindingElement
 ## <a name="methods"></a>方法  
  MtomMessageEncodingBindingElement 类不定义任何方法。  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>属性  
  MtomMessageEncodingBindingElement 类具有以下属性：  
   
 ### <a name="encoding"></a>编码  
@@ -65,4 +65,5 @@ class MtomMessageEncodingBindingElement : MessageEncodingBindingElement
 |命名空间|已在 root\ServiceModel 中定义|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>

@@ -4,8 +4,13 @@ description: 本文介绍了 .NET Core SDK 和运行时的版本控制方式（�
 author: bleroy
 ms.date: 07/26/2018
 ms.custom: seodec18
+ms.openlocfilehash: e060eac3a63ff869a2fe51fae0166b75329fcb49
+ms.sourcegitcommit: a3db1a9eafca89f95ccf361bc1833b47fbb2bb30
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58921281"
 ---
-
 # <a name="overview-of-how-net-core-is-versioned"></a>.NET Core 的版本控制方式概述
 
 .NET Core 是指 .NET Core 运行时和 .NET Core SDK，它包含开发应用程序所需的工具。 .NET Core SDK 可与任何以前版本的 .NET Core 运行时一起使用。 本文介绍运行时和 SDK 版本策略。 有关 .NET Standard 版本号的说明，请参阅介绍 [.NET Standar](../../standard/net-standard.md#net-implementation-support) 的文章。
@@ -48,21 +53,21 @@ MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 
 ### <a name="understand-runtime-version-number-changes"></a>了解运行时版本号更改
 
-`MAJOR` 在下列情况时递增：
+`MAJOR` 在出现以下情况时递增：
 
 * 产品或新产品方向发生重大更改。
 * 发生了中断性变更。 接受中断性变更存在较大障碍。
 * 旧版本不再受支持。
 * 采用了现有依赖项的较新 `MAJOR` 版本。
 
-`MINOR` 在下列情况时递增：
+`MINOR` 在出现以下情况时递增：
 
 * 添加了公共 API 外围应用。
 * 添加了新行为。
 * 采用了现有依赖项的较新 `MINOR` 版本。
 * 引入了新依赖项。
 
-`PATCH` 在下列情况时递增：
+`PATCH` 在出现以下情况时递增：
 
 * 进行了 Bug 修复。
 * 添加了对较新平台的支持。
@@ -105,4 +110,4 @@ MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 - [.NET Core 分发打包](../build/distribution-packaging.md)
 - [.NET Core 支持生命周期简报](https://www.microsoft.com/net/core/support)
 - [.NET Core 2 和版本绑定](https://github.com/dotnet/designs/issues/3)
-- [.NET Core 的 Docker 映像](https://hub.docker.com/r/microsoft/dotnet/)
+- [.NET Core 的 Docker 映像](https://hub.docker.com/_/microsoft-dotnet-core/)

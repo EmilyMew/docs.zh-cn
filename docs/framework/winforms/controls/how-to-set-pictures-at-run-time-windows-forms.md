@@ -13,12 +13,12 @@ helpviewer_keywords:
 - images [Windows Forms], adding with PictureBox control [Windows Forms]
 - PictureBox control [Windows Forms], adding pictures
 ms.assetid: 18ca41d0-68a5-4660-985e-a6c1fbc01d76
-ms.openlocfilehash: 5afb4fe3ebef705cd0671312aacb6f9ad8219621
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 8ed3ba9050a9117a53b5f4f1cccd26381f55ab32
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57711210"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073593"
 ---
 # <a name="how-to-set-pictures-at-run-time-windows-forms"></a>如何：在运行时 （Windows 窗体） 设置图片
 你可以以编程方式设置 Windows 窗体显示的图像<xref:System.Windows.Forms.PictureBox>控件。  
@@ -98,9 +98,10 @@ ms.locfileid: "57711210"
      即使图形已加载到控件在设计时，此代码将清除该映像。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.PictureBox>
 - <xref:System.Drawing.Image.FromFile%2A?displayProperty=nameWithType>
 - [PictureBox 控件概述](picturebox-control-overview-windows-forms.md)
 - [如何：使用设计器加载图片](how-to-load-a-picture-using-the-designer-windows-forms.md)
-- [如何：在运行时修改的大小或位置的图片](how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)
+- [如何：在运行时修改图片的大小或位置](how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)
 - [PictureBox 控件](picturebox-control-windows-forms.md)

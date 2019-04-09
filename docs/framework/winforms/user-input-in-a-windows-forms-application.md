@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Forms, user input
 ms.assetid: 9d61fa96-70f7-4754-885a-49a4a6316bdb
-ms.openlocfilehash: 351c1e42bb775331cbe0e2005b6bea284716de75
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 0eb39f0ecd8fcd12918b38bd77fed2ff32cac1d8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57711923"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59124145"
 ---
 # <a name="user-input-in-a-windows-forms-application"></a>Windows 窗体应用程序中的用户输入
 在 Windows 窗体中用户输入发送到 Windows 消息的窗体中的应用程序。 一系列可重写方法处理这些消息在应用程序窗体，并控制级别。 这些方法接收鼠标和键盘消息，它们会引发可进行处理以获取信息鼠标或键盘输入的事件。 在许多情况下，Windows 窗体应用程序将能够处理所有用户输入，只需通过处理这些事件。 在其他情况下，应用程序可能需要重写用于处理消息，以便收到通过应用程序、 窗体或控件之前截获特定消息的方法之一。  
@@ -31,6 +31,7 @@ ms.locfileid: "57711923"
  由一组额外的特定于这些类型的消息的可重写方法还处理键盘和鼠标消息。 有关详细信息，请参阅[键盘输入工作原理](how-keyboard-input-works.md)并[鼠标输入工作原理在 Windows 窗体中](how-mouse-input-works-in-windows-forms.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Windows 窗体中的用户输入](user-input-in-windows-forms.md)
 - [Windows 窗体应用程序中的键盘输入](keyboard-input-in-a-windows-forms-application.md)
 - [Windows 窗体应用程序中的鼠标输入](mouse-input-in-a-windows-forms-application.md)

@@ -2,12 +2,12 @@
 title: 类型定义 (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 306b204a-ade5-47ef-95b5-c785d2da4a7e
-ms.openlocfilehash: 7ac27c3dd43cb83272bff991dbd713e8269ccbb5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2e068db0ce202c26cad36c8ed7adf0acdfb8e363
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54743525"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096018"
 ---
 # <a name="type-definitions-entity-sql"></a>类型定义 (Entity SQL)
 类型定义用在 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 内联函数的声明语句中。  
@@ -25,17 +25,17 @@ ms.locfileid: "54743525"
   
 -   关键字 ROW 后跟放在括号中的属性定义列表（例如，“Row(x AdventureWorks.Order)”）。 属性定义具有格式，如"`identifier type_definition`， `identifier type_definition`，..."。  
   
--   关键字 REF 后跟放在括号中的标识符类型（例如，“Ref(AdventureWorks.Order)”）。 REF 类型定义运算符要求将实体类型作为参数。 您不能指定基元类型作为参数。  
+-   关键字 REF 后跟放在括号中的标识符类型（例如，“Ref(AdventureWorks.Order)”）。 REF 类型定义运算符要求将实体类型作为自变量。 您不能指定基元类型作为参数。  
   
  还可以嵌套类型定义（例如，“Collection(Row(x Ref(AdventureWorks.Order)))”）。  
   
  类型定义选项为：  
   
--   `IdentifierName supported_type` 或  
+-   `IdentifierName supported_type`或  
   
--   `IdentifierName` COLLECTION(`type_definition`) 或  
+-   `IdentifierName` 集合 (`type_definition`)，或  
   
--   `IdentifierName` ROW(`property_definition`) 或  
+-   `IdentifierName` 行 (`property_definition`)，或  
   
 -   `IdentifierName` REF(`supported_entity_type`)  
   
@@ -87,5 +87,6 @@ select Ref(x) from AdventureWorksEntities.SalesOrderHeaders as x
 ```  
   
 ## <a name="see-also"></a>请参阅
-- [实体 SQL 概述](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+
+- [Entity SQL 概述](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
 - [实体 SQL 引用](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

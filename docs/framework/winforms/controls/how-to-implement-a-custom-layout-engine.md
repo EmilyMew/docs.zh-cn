@@ -11,12 +11,12 @@ helpviewer_keywords:
 - layout engines [Windows Forms], implementing
 - FlowLayoutPanel control [Windows Forms], layout engine
 ms.assetid: f91aa91c-29f4-4089-95ca-5d48b774b00e
-ms.openlocfilehash: 2b5bdab243039014b42d2f57f4037833f2137d67
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 8e5043e2b42b1e7449c6dab51691b6d57e28cd53
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57702628"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083369"
 ---
 # <a name="how-to-implement-a-custom-layout-engine"></a>如何：实现自定义布局引擎
 下面的代码示例演示如何创建可执行简单的流布局的自定义布局引擎。 它实现了一个名为面板控件`DemoFlowPanel`，值将覆盖<xref:System.Windows.Forms.Control.LayoutEngine%2A>属性提供的一个实例`DemoFlowLayout`类。  
@@ -27,5 +27,6 @@ ms.locfileid: "57702628"
  [!code-vb[System.Windows.Forms.Layout.LayoutEngine#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Layout.LayoutEngine/VB/DemoFlowLayout.vb#1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.Layout.LayoutEngine>
 - <xref:System.Windows.Forms.Control.LayoutEngine%2A?displayProperty=nameWithType>

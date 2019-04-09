@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d1d7247f-a3b7-460b-b342-5c1a2365aa1a
-ms.openlocfilehash: c78f608225d64a428b768fbc8d03f71a393d980d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: ae20dbe557c3cf56a273556c24578056843e9af6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54516962"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096987"
 ---
 # <a name="deferred-versus-immediate-loading"></a>推迟加载与即时加载
 查询某对象时，实际上您只检索请求的对象。 *相关*不会自动获取对象在同一时间。 (有关详细信息，请参阅[跨关系查询](../../../../../../docs/framework/data/adonet/sql/linq/querying-across-relationships.md)。)您无法看到相关对象尚未加载这一事实，原因是尝试访问它们时将产生检索它们的请求。  
@@ -34,4 +34,5 @@ ms.locfileid: "54516962"
 -   <xref:System.Data.Linq.DataLoadOptions.AssociateWith%2A> 方法，用于筛选为特定关系检索到的对象。  
   
 ## <a name="see-also"></a>请参阅
+
 - [查询概念](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

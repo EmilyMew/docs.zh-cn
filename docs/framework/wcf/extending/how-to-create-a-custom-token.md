@@ -10,12 +10,12 @@ helpviewer_keywords:
 - WSSecurityTokenSerializer class
 - SecurityToken class
 ms.assetid: 6d892973-1558-4115-a9e1-696777776125
-ms.openlocfilehash: 3367a75fc0532e3eaa312400221c662bb35146bf
-ms.sourcegitcommit: af0a22a4eb11bbcd33baec49150d551955b50a16
+ms.openlocfilehash: 4f2f2d3a1d4263dfc068193f832369b0d82e69fc
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56261162"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59095654"
 ---
 # <a name="how-to-create-a-custom-token"></a>如何：创建自定义令牌
 本主题介绍如何使用 <xref:System.IdentityModel.Tokens.SecurityToken> 类创建自定义安全令牌，以及如何将其与自定义安全令牌提供程序和身份验证器进行集成。 有关完整的代码示例请参阅[自定义令牌](../../../../docs/framework/wcf/samples/custom-token.md)示例。  
@@ -71,8 +71,7 @@ ms.locfileid: "56261162"
   
 5.  实现 <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientWindowsIdentity%2A> 只读属性。 如果该类表示的安全令牌类型可以映射到 Windows 帐户，则该属性返回 `true`。 这种情况下，身份验证结果由一个 <xref:System.Security.Principal.WindowsIdentity> 类实例表示。 在本示例中，令牌无法映射到 Windows 帐户。  
   
-6.  实现 <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CreateKeyIdentifierClause%28System.IdentityModel.Tokens.SecurityToken%2CSystem.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle%29> 方法。 需要对此安全令牌参数类所表示的安全令牌实例的引用时，将由 WCF 安全框架调用此方法。 实际安全令牌实例和 <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle>（指定所请求的引用类型）都作为自变量传递到此方法。 在本示例中，信用卡安全令牌仅支持内部引用。 
-  <xref:System.IdentityModel.Tokens.SecurityToken> 类具有创建内部引用的功能，因此，该实现不需要附加代码。  
+6.  实现 <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CreateKeyIdentifierClause%28System.IdentityModel.Tokens.SecurityToken%2CSystem.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle%29> 方法。 需要对此安全令牌参数类所表示的安全令牌实例的引用时，将由 WCF 安全框架调用此方法。 实际安全令牌实例和 <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle>（指定所请求的引用类型）都作为自变量传递到此方法。 在本示例中，信用卡安全令牌仅支持内部引用。 <xref:System.IdentityModel.Tokens.SecurityToken> 类具有创建内部引用的功能，因此，该实现不需要附加代码。  
   
 7.  实现 <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InitializeSecurityTokenRequirement%28System.IdentityModel.Selectors.SecurityTokenRequirement%29> 方法。 WCF 将安全令牌参数类实例转换成的实例调用此方法<xref:System.IdentityModel.Selectors.SecurityTokenRequirement>类。 安全令牌提供程序使用转换结果来创建相应的安全令牌实例。  
   
@@ -150,6 +149,7 @@ ms.locfileid: "56261162"
  本主题显示实现和使用自定义令牌所需的各种不同的代码块。 若要查看如何的完整示例代码的所有这些片段组合在一起，请参阅[自定义令牌](../../../../docs/framework/wcf/samples/custom-token.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.IdentityModel.Tokens.SecurityToken>
 - <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters>
 - <xref:System.ServiceModel.Security.WSSecurityTokenSerializer>

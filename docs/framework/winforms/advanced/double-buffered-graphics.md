@@ -7,12 +7,12 @@ helpviewer_keywords:
 - flicker [Windows Forms], reducing with double buffering
 - examples [Windows Forms], double-buffered graphics
 ms.assetid: 4f6fef99-0972-436e-9d73-0167e4033f71
-ms.openlocfilehash: 71463d7db6ae18a3dd21d6a467f3963d836fc086
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 20ec03e6b84110f7ea00c134dc18b23f233c5f58
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57707698"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59103436"
 ---
 # <a name="double-buffered-graphics"></a>双缓冲图形
 对图形进行编程时出现闪烁是一个常见问题。 需要多个复杂画图操作的图形操作可导致呈现的图像出现闪烁或具有不可接受的外观。 为解决这些问题，.NET Framework 提供了双缓冲功能。  
@@ -33,10 +33,11 @@ ms.locfileid: "57707698"
  有关使用的详细信息<xref:System.Drawing.BufferedGraphics>类，请参阅[手动呈现缓冲图形](how-to-manually-render-buffered-graphics.md)。 有关呈现图形的详细信息，请参阅 [Windows 窗体中的图形和绘制](graphics-and-drawing-in-windows-forms.md)  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.BufferedGraphics>
 - <xref:System.Drawing.BufferedGraphicsContext>
 - <xref:System.Drawing.BufferedGraphicsManager>
 - [如何：手动呈现缓冲的图形](how-to-manually-render-buffered-graphics.md)
-- [如何：减少对窗体和控件使用双缓冲图形闪烁](how-to-reduce-graphics-flicker-with-double-buffering-for-forms-and-controls.md)
+- [如何：通过对窗体和控件使用双缓冲来减少图形闪烁](how-to-reduce-graphics-flicker-with-double-buffering-for-forms-and-controls.md)
 - [如何：手动管理缓冲的图形](how-to-manually-manage-buffered-graphics.md)
 - [Windows 窗体中的图形和绘制](graphics-and-drawing-in-windows-forms.md)

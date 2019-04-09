@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ref return values [Visual Basic]
 - ref returns [Visual Basic]
 ms.assetid: 5ef0cc69-eb3a-4a67-92a2-78585f223cb5
-ms.openlocfilehash: f3543d93bb2d313aa000cdee38bc713a9bb02b1d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: d0600f7d9030324160343e800c37e0f5e68bff61
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54634397"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59133973"
 ---
 # <a name="support-for-reference-return-values-visual-basic"></a>支持引用返回值 (Visual Basic)
 
@@ -49,5 +49,3 @@ Visual Basic 不允许您对具有引用作者方法返回的值，但它的确�
 
 - [按值和按引用传递自变量](passing-arguments-by-value-and-by-reference.md)
 - [Visual Basic 中的过程](index.md)
-
-

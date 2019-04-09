@@ -15,12 +15,12 @@ helpviewer_keywords:
 - XPSDrv-based printers
 - GDI print path [WPF]
 ms.assetid: 0de8ac41-9aa6-413d-a121-7aa6f41539b1
-ms.openlocfilehash: c009d86deada690f673736e0e35eb710e25f7781
-ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
+ms.openlocfilehash: 2aeafa7065b587497fb6f3b23605c21dca291cd1
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58654375"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59075855"
 ---
 # <a name="printing-overview"></a>打印概述
 使用 Microsoft.NET Framework 中，使用 Windows Presentation Foundation (WPF) 应用程序开发人员拥有丰富的打印和打印系统管理新[!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)]。 在 [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] 中，还为创建 [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] 应用程序的开发人员和使用非托管代码的开发人员提供了这些打印系统增强功能中的某些功能。 此新功能的核心是新的 [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] 文件格式和 [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] 打印路径。  
@@ -29,7 +29,7 @@ ms.locfileid: "58654375"
   
 <a name="introduction_to_XPS"></a>   
 ## <a name="about-xps"></a>关于 XPS  
- [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 是电子文档格式（即后台打印文件格式），并且采用的是页面描述语言。 此格式是开放文档格式，它使用 [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)]、[!INCLUDE[TLA#tla_opc](../../../../includes/tlasharptla-opc-md.md)] 及其他行业标准来创建跨平台的文档。 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 简化了创建、共享、打印、查看和存档数字文档的流程。 有关其他信息[!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)]，请参阅[XPS 文档](/windows/desktop/printdocs/documents)。  
+ [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 是一种电子文档格式、 后台打印文件格式和页面描述语言。 此格式是开放文档格式，它使用 [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)]、[!INCLUDE[TLA#tla_opc](../../../../includes/tlasharptla-opc-md.md)] 及其他行业标准来创建跨平台的文档。 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 简化了的过程按其数字文档进行创建、 共享、 打印、 查看和存档。 有关其他信息[!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)]，请参阅[XPS 文档](/windows/desktop/printdocs/documents)。  
   
  [以编程方式打印 XPS 文件](how-to-programmatically-print-xps-files.md)中演示了使用 [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 打印基于 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 的内容的几种方法。 在查看本主题中的内容时，参考这些示例会很有帮助。 (非托管的代码开发人员应参阅文档[MXDC_ESCAPE 函数](/windows/desktop/printdocs/mxdc-escape)。 Windows 窗体开发人员必须使用[!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)]中<xref:System.Drawing.Printing>命名空间不支持完整[!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]打印路径，但支持 GDI 到 XPS 的混合打印路径。 请参阅下面的**打印路径体系结构**。）  
   
@@ -53,7 +53,7 @@ ms.locfileid: "58654375"
   
  对于基本打印方案，提供了简单直观的 [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)]只需单一入口点即可进入用户界面、完成配置和作业提交。 对于高级方案，为 [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] 自定义（或根本没有 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]）、同步或异步打印以及批量打印功能添加了附加支持。 这两个选项在完全或部分信任模式下都提供打印支持。  
   
- [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 的设计充分考虑了扩展性。 使用扩展性框架，可以将特性和功能以模块化方式添加到 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 中。 扩展性功能包括：  
+ [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 设计充分考虑了扩展性。 使用扩展性框架，可以将特性和功能以模块化方式添加到 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 中。 扩展性功能包括：  
   
 -   打印架构。 公共架构将定期进行更新，并可以实现设备功能的迅速扩展。 （请参阅下面的 **PrintTicket 和 PrintCapabilities**。）  
   
@@ -69,7 +69,7 @@ ms.locfileid: "58654375"
  ![屏幕截图显示了 XPS 打印系统。](./media/printing-overview/xml-paper-specification-print-system.png)  
   
 ### <a name="basic-xps-printing"></a>基本 XPS 打印  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 定义基本和高级 [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)]。 对于不需要各种打印自定义或对 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 完整功能集的访问权限的应用程序，可以提供基本打印支持。 基本打印支持通过一个打印对话框控件公开，该控件要求最低的配置，并采用熟悉的 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]。 可以通过此简化的打印模型来使用众多 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 功能。  
+ [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] 定义基本和高级[!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)]。 对于不需要各种打印自定义或对 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 完整功能集的访问权限的应用程序，可以提供基本打印支持。 基本打印支持通过一个打印对话框控件公开，该控件要求最低的配置，并采用熟悉的 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]。 可以通过此简化的打印模型来使用众多 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 功能。  
   
 #### <a name="printdialog"></a>PrintDialog  
  <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> 控件为 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]、配置和 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 作业提交提供单一入口点。 若要了解如何实例化和使用该控件，请参阅[调用打印对话框](how-to-invoke-a-print-dialog.md)。  
@@ -116,7 +116,7 @@ ms.locfileid: "58654375"
 ## <a name="xpsdrv-driver-model"></a>XPSDrv 驱动程序模型  
  在打印到支持 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 的打印机或驱动程序时，[!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 打印路径将 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 用作本机打印后台处理格式，从而提高打印后台处理程序的效率。 简化后的后台打印处理消除了在后台打印文档之前生成中间后台打印文件（如 [!INCLUDE[TLA2#tla_emf](../../../../includes/tla2sharptla-emf-md.md)] 数据文件）的必要。 通过减小后台打印文件的大小，[!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 打印路径可以减少网络流量并提高打印性能。  
   
- [!INCLUDE[TLA2#tla_emf](../../../../includes/tla2sharptla-emf-md.md)] 是一种封闭格式，它将应用程序输出表示为对呈现服务的 [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] 进行的一系列调用。 与 [!INCLUDE[TLA2#tla_emf](../../../../includes/tla2sharptla-emf-md.md)] 不同的是，[!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 后台打印格式呈现实际的文档，而无需在输出到基于 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 的打印机驱动程序 (XPSDrv) 时进行进一步的转译。 这些驱动程序可以用这种格式直接对数据进行操作。 此功能消除了在使用 [!INCLUDE[TLA2#tla_emf](../../../../includes/tla2sharptla-emf-md.md)] 文件和基于 [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] 的打印驱动程序时所需的数据和颜色空间转换。  
+ [!INCLUDE[TLA2#tla_emf](../../../../includes/tla2sharptla-emf-md.md)] 是一种封闭的格式，它表示一系列调用到应用程序输出[!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)]呈现服务。 与 [!INCLUDE[TLA2#tla_emf](../../../../includes/tla2sharptla-emf-md.md)] 不同的是，[!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 后台打印格式呈现实际的文档，而无需在输出到基于 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 的打印机驱动程序 (XPSDrv) 时进行进一步的转译。 这些驱动程序可以用这种格式直接对数据进行操作。 此功能消除了在使用 [!INCLUDE[TLA2#tla_emf](../../../../includes/tla2sharptla-emf-md.md)] 文件和基于 [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] 的打印驱动程序时所需的数据和颜色空间转换。  
   
  当使用面向 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 打印机驱动程序 (XPSDrv) 的[!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 文档时，与其 [!INCLUDE[TLA2#tla_emf](../../../../includes/tla2sharptla-emf-md.md)] 等效项相比，后台打印文件的大小通常更小；不过，也存在例外情况：  
   
@@ -135,6 +135,7 @@ ms.locfileid: "58654375"
 -   **ZIP 压缩**。 所有 [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] 文档均使用 ZIP 压缩。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.PrintDialog>
 - <xref:System.Windows.Xps.XpsDocumentWriter>
 - <xref:System.Windows.Xps.Packaging.XpsDocument>

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - drawing [Windows Forms], regions
 - regions
 ms.assetid: 52184f9b-16dd-4bbd-85be-029112644ceb
-ms.openlocfilehash: 31c0e4b1509c478786d075b127f0b181d5cdd1c6
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 33d4f4ecca7b9d777fa4eab5b6d031de10f03ccc
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57724968"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59076016"
 ---
 # <a name="regions-in-gdi"></a>GDI+ 中的区域
 区域是输出设备的显示区域的一部分。 区域可以是简单 （一个矩形） 或复杂 （多边形和闭合的曲线的组合）。 下图显示了两个区域： 一个从一个矩形、 构造和路径中的其他构造。  
@@ -40,6 +40,7 @@ ms.locfileid: "57724968"
  [!code-vb[LinesCurvesAndShapes#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/LinesCurvesAndShapes/VB/Class1.vb#61)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Region?displayProperty=nameWithType>
-- [直线、曲线和形状](lines-curves-and-shapes.md)
+- [直线、曲线和图形](lines-curves-and-shapes.md)
 - [使用区域](using-regions.md)

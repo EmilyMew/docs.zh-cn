@@ -2,12 +2,12 @@
 title: 构造类型 (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
-ms.openlocfilehash: 917c59a6602ce0313b91ba78fd59d11596f86e9f
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 53aa7fcc82a476c8b8bd87b059e08bee6741c0d9
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54718580"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073775"
 ---
 # <a name="constructing-types-entity-sql"></a>构造类型 (Entity SQL)
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 提供了三种构造函数： 行构造函数、 命名的类型构造函数和集合构造函数。  
@@ -41,7 +41,7 @@ ms.locfileid: "54718580"
  有关详细信息，请参阅[多重集](../../../../../../docs/framework/data/adonet/ef/language-reference/multiset-entity-sql.md)。  
   
 ## <a name="named-type-constructors-namedtype-initializers"></a>命名类型构造函数（NamedType 初始值设定项）  
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 允许类型构造函数（初始值设定项）创建命名复杂类型和命名实体类型的实例。 例如，下面的表达式创建 `Person` 类型的实例。  
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 允许类型构造函数 （初始值设定项） 来创建命名复杂类型的实例和实体类型。 例如，下面的表达式创建 `Person` 类型的实例。  
   
  `Person("abc", 12)`  
   
@@ -59,11 +59,12 @@ ms.locfileid: "54718580"
   
  下面的示例演示如何将复杂类型的属性初始化为 null。 `MyModel.ZipCode(‘98118’, null)`  
   
- 假定该构造函数的自变量的顺序与该类型的属性的声明顺序相同。  
+ 假定该构造函数的参数的顺序与该类型的属性的声明顺序相同。  
   
  有关详细信息，请参阅[命名类型构造函数](../../../../../../docs/framework/data/adonet/ef/language-reference/named-type-constructor-entity-sql.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [实体 SQL 引用](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [实体 SQL 概述](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL 概述](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
 - [类型系统](../../../../../../docs/framework/data/adonet/ef/language-reference/type-system-entity-sql.md)

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: c8a6870a9d34889dd8f5305035744bfc63be6af6
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58760715"
+---
 ### <a name="support-special-relative-uri-notation-when-unicode-is-present"></a>存在 Unicode 时支持特殊的相对 URI 表示法
 
 |   |   |

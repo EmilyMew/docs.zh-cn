@@ -1,15 +1,15 @@
 ---
-title: 如何：编写 servicecontractgenerator 的扩展
+title: 如何：编写 ServiceContractGenerator 的扩展
 ms.date: 03/30/2017
 ms.assetid: 876ca823-bd16-4bdf-9e0f-02092df90e51
-ms.openlocfilehash: cd0566f358b313ea96f1c9b2d5fd7fc447f4d2ef
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 104f65f76429701dbf02c1c7a5d737e50b080394
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54629692"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59111587"
 ---
-# <a name="how-to-write-an-extension-for-the-servicecontractgenerator"></a>如何：编写 servicecontractgenerator 的扩展
+# <a name="how-to-write-an-extension-for-the-servicecontractgenerator"></a>如何：编写 ServiceContractGenerator 的扩展
 本主题描述如何编写 <xref:System.ServiceModel.Description.ServiceContractGenerator> 的扩展。 这可以通过对操作行为实现 <xref:System.ServiceModel.Description.IOperationContractGenerationExtension> 接口或者对协定行为实现 <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> 接口来完成。 本主题演示如何对协定行为实现 <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> 接口。  
   
  <xref:System.ServiceModel.Description.ServiceContractGenerator> 从 <xref:System.ServiceModel.Description.ServiceEndpoint>、<xref:System.ServiceModel.Description.ContractDescription> 和 <xref:System.ServiceModel.Channels.Binding> 实例生成服务协定、客户端类型和客户端配置。 通常，需要先从服务元数据导入 <xref:System.ServiceModel.Description.ServiceEndpoint>、<xref:System.ServiceModel.Description.ContractDescription> 和 <xref:System.ServiceModel.Channels.Binding> 实例，然后使用这些实例生成调用服务的代码。 在本示例中，<xref:System.ServiceModel.Description.IWsdlImportExtension> 实现用于处理 WSDL 批注，然后将代码生成扩展添加到导入的协定中，以生成对已生成代码的注释。  
@@ -96,8 +96,9 @@ ms.locfileid: "54629692"
        throw new Exception("There were errors during code compilation.");  
     ```  
   
-7.  会为实现 <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> 的给定协定上的每个协定行为自动调用 <xref:System.ServiceModel.Description.IServiceContractGenerationExtension>。 然后，此方法可以修改传入的 <xref:System.ServiceModel.Description.ServiceContractGenerationContext>。 在此示例中，添加了注释。  
+7.  <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> 为实现的给定协定上每个协定行为自动调用<xref:System.ServiceModel.Description.IServiceContractGenerationExtension>。 然后，此方法可以修改传入的 <xref:System.ServiceModel.Description.ServiceContractGenerationContext>。 在此示例中，添加了注释。  
   
 ## <a name="see-also"></a>请参阅
+
 - [元数据](../../../../docs/framework/wcf/feature-details/metadata.md)
 - [如何：导入自定义 WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)

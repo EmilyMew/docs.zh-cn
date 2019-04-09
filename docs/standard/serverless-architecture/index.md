@@ -1,11 +1,16 @@
 ---
 title: 无服务器应用：体系结构、模式和 Azure 实现
-description: '无服务器体系结构指南。 了解何时、为何以及如何为企业应用程序实现无服务器体系结构（相对于基础结构即服务 [IaaS] 或平台即服务 [PaaS]）。'
+description: 无服务器体系结构指南。 了解何时、为何以及如何为企业应用程序实现无服务器体系结构（相对于基础结构即服务 [IaaS] 或平台即服务 [PaaS]）。
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 6/26/2018
+ms.openlocfilehash: a44af1fc76b54ec9be0d8e3b3ba2e54f3e3b220b
+ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653933"
 ---
-
 # <a name="serverless-apps-architecture-patterns-and-azure-implementation"></a>无服务器应用：体系结构、模式和 Azure 实现
 
 ![显示无服务器应用电子书封面的屏幕截图。](./media/index/serverless-apps-cover.jpg)

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 97afc121-fb8b-465b-bab3-6d844420badb
-ms.openlocfilehash: ff1869ab17761645321d803f0f7db4bb39c992bc
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: 8063f239123ec1a2f2650adf9d76f7ceaaa50673
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56093276"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59128673"
 ---
 # <a name="retrieve-data-using-a-datareader"></a>使用 DataReader 检索数据
 若要检索的数据使用**DataReader**，创建的实例**命令**对象，并创建**DataReader**通过调用**Command.ExecuteReader**从数据源中检索行。 **DataReader**提供未缓冲的数据流使过程逻辑可以有效地按顺序处理数据源的结果的数据。 **DataReader**时要检索的数据量大，因为这些数据不在内存中缓存是一个不错的选择。
@@ -258,7 +258,8 @@ adapter.Fill(ds);
 >  若要避免**OverflowException**，我们建议你还处理任何从 Oracle NUMBER 类型转换为有效的.NET Framework 类型存储中的值之前<xref:System.Data.DataRow>。 可以使用<xref:System.Data.Common.DataAdapter.FillError>事件来确定是否**OverflowException**已发生。 有关详细信息<xref:System.Data.Common.DataAdapter.FillError>事件，请参阅[处理 DataAdapter 事件](../../../../docs/framework/data/adonet/handling-dataadapter-events.md)。  
   
 ## <a name="see-also"></a>请参阅
-- [DataAdapters 和 DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
+
+- [DataAdapter 和 DataReader](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
 - [命令和参数](../../../../docs/framework/data/adonet/commands-and-parameters.md)
 - [检索数据库架构信息](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

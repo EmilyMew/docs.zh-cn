@@ -2,12 +2,12 @@
 title: 承载排队应用程序的 Web
 ms.date: 03/30/2017
 ms.assetid: c7a539fa-e442-4c08-a7f1-17b7f5a03e88
-ms.openlocfilehash: 957a97c263f44302b66b6fb57b8330f63a178fa1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c44a6b5059f5294646d95b4281dcf7845b369929
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54700203"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59126017"
 ---
 # <a name="web-hosting-a-queued-application"></a>承载排队应用程序的 Web
 Windows 进程激活服务 (WAS) 管理激活和包含该主机 Windows Communication Foundation (WCF) 服务的应用程序的工作进程的生存期。 WAS 进程模型通过移除对 HTTP 的依赖性使 HTTP 服务器的 [!INCLUDE[iis601](../../../../includes/iis601-md.md)] 进程模型通用化。 这使 WCF 服务能够使用 HTTP 和非 HTTP 协议，如 net.msmq 和 msmq.formatname，在宿主环境支持基于消息的激活并提供承载大量给定计算机上的应用程序的能力。  
@@ -42,5 +42,6 @@ Windows 进程激活服务 (WAS) 管理激活和包含该主机 Windows Communic
  不能基于系统队列（如系统级死信队列）或子队列（如病毒子队列）中的消息激活 WAS 承载的应用程序。 这是此版本产品的一个限制。  
   
 ## <a name="see-also"></a>请参阅
-- [有害消息处理](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)
+
+- [病毒消息处理](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)
 - [服务终结点和队列寻址](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md)

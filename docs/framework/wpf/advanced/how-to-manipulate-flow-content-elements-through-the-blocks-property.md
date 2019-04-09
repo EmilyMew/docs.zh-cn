@@ -10,12 +10,12 @@ helpviewer_keywords:
 - properties [WPF], Blocks [WPF], manipulating flow content elements
 - Blocks property [WPF], manipulating flow content elements
 ms.assetid: aeda4ece-b979-4818-a093-ef938e908751
-ms.openlocfilehash: a988f47b6b147b0db285af1928a4260c5deba542
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: e0e1e1333a54946f3bdf474e353de0301eb42447
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57365849"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59150132"
 ---
 # <a name="how-to-manipulate-flow-content-elements-through-the-blocks-property"></a>如何：通过 Blocks 属性操作流内容元素
 这些示例演示一些较常见的操作可通过流内容元素上执行**块**属性。 此属性用于添加和删除项从<xref:System.Windows.Documents.BlockCollection>。 流内容元素，该功能**块**属性包括：  
@@ -63,10 +63,11 @@ ms.locfileid: "57365849"
  [!code-vb[FlowDocumentSnippets#_SectionBlocksClear](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentSnippets/visualbasic/window1.xaml.vb#_sectionblocksclear)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Documents.BlockCollection>
 - <xref:System.Windows.Documents.InlineCollection>
 - <xref:System.Windows.Documents.ListItemCollection>
 - [流文档概述](flow-document-overview.md)
 - [通过 RowGroups 属性操作表的行组](how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)
-- [通过 Columns 属性控制表列](how-to-manipulate-table-columns-through-the-columns-property.md)
+- [通过 Columns 属性操作表的列](how-to-manipulate-table-columns-through-the-columns-property.md)
 - [通过 RowGroups 属性操作表的行组](how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)

@@ -2,12 +2,12 @@
 title: <localServiceSettings> 元素
 ms.date: 03/30/2017
 ms.assetid: 0658549c-3f65-46dd-8c5c-9895441ed734
-ms.openlocfilehash: 7d0b96badd1ee0abd3b1765dc777bdb73918a1fa
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: e987d14edde3af6aca2ceb392976abe3b6460c9c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55288829"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102630"
 ---
 # <a name="localservicesettings-element"></a>\<localServiceSettings > 元素
 指定此绑定的本地服务安全设置。  
@@ -68,7 +68,7 @@ ms.locfileid: "55288829"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md)|指定自定义绑定的安全选项。|  
+|[\<安全 >](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md)|指定自定义绑定的安全选项。|  
 |[\<secureConversationBootstrap>](../../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md)|指定用于启动安全对话服务的默认值。|  
   
 ## <a name="remarks"></a>备注  
@@ -76,17 +76,18 @@ ms.locfileid: "55288829"
   
  `localServiceSecuritySettings` 元素的下列属性有助于缓解拒绝服务 (DOS) 安全攻击：  
   
--   `maxCachedCookies`：控制在执行 SPNEGO 或 SSL 协商之后服务器所缓存的有时限的 SecurityContextToken 的最大数目。  
+-   `maxCachedCookies`： 控制执行 SPNEGO 或 SSL 协商之后服务器所缓存的有时限的 Securitycontexttoken 的最大数目。  
   
--   `issuedCookieLifetime`：控制在进行 SPNEGO 或 SSL 协商之后服务器所发布的 SecurityContextToken 的生命周期。 服务器在此段时间之内缓存 SecurityContextToken。  
+-   `issuedCookieLifetime`： 控制由 SPNEGO 或 SSL 协商之后服务器颁发的 Securitycontexttoken 的生存期。 服务器在此段时间之内缓存 SecurityContextToken。  
   
--   `maxPendingSessions`：控制在服务器上建立但尚未针为其处理任何应用程序消息的安全对话的最大数目。 此配额可防止客户端在服务上建立安全对话而导致服务维护每个客户端的状态，但是从不使用这些状态。  
+-   `maxPendingSessions`： 控制在服务器上，但为其处理任何应用程序消息建立的安全对话的最大数目。 此配额可防止客户端在服务上建立安全对话而导致服务维护每个客户端的状态，但是从不使用这些状态。  
   
--   `inactivityTimeout`：控制服务使安全对话保持活动状态（但不接收服务上的应用程序消息）的最长时间。 此配额可防止客户端在服务上建立安全对话而导致服务维护每个客户端的状态，但是从不使用这些状态。  
+-   `inactivityTimeout`： 控制的最长时间，该服务使安全对话保持活动状态不接收对其应用程序消息。 此配额可防止客户端在服务上建立安全对话而导致服务维护每个客户端的状态，但是从不使用这些状态。  
   
  请注意，在安全对话会话中，绑定上的 `inactivityTimeout` 和 `receiveTimeout` 属性将影响会话超时。 两个属性中时间较短者将确定何时发生超时。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement>
 - <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalServiceSettings%2A>
 - <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings%2A>
@@ -96,5 +97,5 @@ ms.locfileid: "55288829"
 - [扩展绑定](../../../../../docs/framework/wcf/extending/extending-bindings.md)
 - [自定义绑定](../../../../../docs/framework/wcf/extending/custom-bindings.md)
 - [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
-- [如何：创建自定义绑定使用 SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [如何：使用 SecurityBindingElement 创建自定义绑定](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
 - [自定义绑定安全性](../../../../../docs/framework/wcf/samples/custom-binding-security.md)

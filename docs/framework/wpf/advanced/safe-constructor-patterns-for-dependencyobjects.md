@@ -6,18 +6,16 @@ helpviewer_keywords:
 - dependency objects [WPF], constructor patterns
 - FXCop tool [WPF]
 ms.assetid: f704b81c-449a-47a4-ace1-9332e3cc6d60
-ms.openlocfilehash: d963d9c8b7ddfba0c24fcb10ddf9cc45a2f4d0c5
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: ba8b0a48b2b75a9191553392d5ec0a1f66575807
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57363977"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59086723"
 ---
 # <a name="safe-constructor-patterns-for-dependencyobjects"></a>DependencyObject 的安全构造函数模式
 通常，类构造函数不应调用诸如虚拟方法或委托等回叫，其原因是构造函数可作为派生类的构造函数的基本初始化进行调用。 输入该虚拟的操作可能会在任何给定对象的不完全初始化状态下进行。 但是，属性系统本身在内部调用并公开回叫，作为依赖属性系统的一部分。 与设置具有依赖项属性值一样简单操作<xref:System.Windows.DependencyObject.SetValue%2A>调用可能包括回叫某个位置在决定中。 因此，在构造函数体内设置依赖属性值时应保持谨慎（将类型用作基类可能会导致问题）。 没有特定的模式，用于实现<xref:System.Windows.DependencyObject>构造函数可避免对依赖属性状态和内在回叫的特定问题此处进行了说明。  
-  
- 
-  
+
 <a name="Property_System_Virtual_Methods"></a>   
 ## <a name="property-system-virtual-methods"></a>属性系统虚拟方法  
  在的计算结果的过程可能会调用以下虚拟方法或回叫<xref:System.Windows.DependencyObject.SetValue%2A>调用，用于设置依赖项属性值： <xref:System.Windows.ValidateValueCallback>， <xref:System.Windows.PropertyChangedCallback>， <xref:System.Windows.CoerceValueCallback>， <xref:System.Windows.DependencyObject.OnPropertyChanged%2A>。 这些虚拟方法或回叫中的每一个在扩展 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 属性系统和依赖属性的多样性方面都具有特定的用途。 有关如何使用这些虚拟方法对属性值确定进行自定义的详细信息，请参阅[依赖属性回调和验证](dependency-property-callbacks-and-validation.md)。  
@@ -115,6 +113,7 @@ public MyClass : SomeBaseClass {
  如果您在设置一个属性，没有为属性设置方便起见，包装，并且设置的值，这些模式同样适用<xref:System.Windows.DependencyObject.SetValue%2A>。 对调用<xref:System.Windows.DependencyObject.SetValue%2A>通过构造函数参数阶段还应调用类的默认构造函数进行初始化。  
   
 ## <a name="see-also"></a>请参阅
-- [自定义依赖属性](custom-dependency-properties.md)
+
+- [自定义依赖项属性](custom-dependency-properties.md)
 - [依赖项属性概述](dependency-properties-overview.md)
-- [依赖属性的安全性](dependency-property-security.md)
+- [依赖项属性的安全性](dependency-property-security.md)

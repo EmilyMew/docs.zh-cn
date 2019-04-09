@@ -1,5 +1,5 @@
 ---
-title: 如何：在事件发生时向元素应用变换
+title: 如何：在事件发生时向元素应用转换
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - properties [WPF], RenderTransform
 - LayoutTransform property [WPF]
 ms.assetid: 71e4327e-ca57-444c-a3cf-09fb381491a0
-ms.openlocfilehash: c14f746846943d3fa5150fbee405a62249dee9c1
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 973b9267eaef5d55176633ee80a1dc7f8b043909
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57357921"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59126433"
 ---
-# <a name="how-to-apply-a-transform-to-an-element-when-an-event-occurs"></a>如何：在事件发生时向元素应用变换
+# <a name="how-to-apply-a-transform-to-an-element-when-an-event-occurs"></a>如何：在事件发生时向元素应用转换
 此示例演示如何将应用<xref:System.Windows.Media.ScaleTransform>事件的发生时间。 此处说明的概念与用于应用其他类型的转换的概念相同。 有关可用类型的转换的详细信息，请参阅<xref:System.Windows.Media.Transform>类或[转换概述](transforms-overview.md)。  
   
  可以通过以下两种方式之一向元素应用转换：  
@@ -36,8 +36,9 @@ ms.locfileid: "57357921"
  [!code-vb[ButtonTransform#1cb](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ButtonTransform/VisualBasic/ButtonTransformExample.xaml.vb#1cb)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.ScaleTransform>
-- [转换概述](transforms-overview.md)
+- [变换概述](transforms-overview.md)
 - [帮助主题](transformations-how-to-topics.md)
 - [路由事件概述](../advanced/routed-events-overview.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - WebBrowser control [Windows Forms], about
 - Web pages [Windows Forms], displaying in applications
 ms.assetid: 6e3e1cc2-9c48-4136-9659-e99e4e60b7e9
-ms.openlocfilehash: cc998fd88f3487aa20f6cef73aacb6c07f92c7ad
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: c75d0b348a2f3dd678f2bfb235bce2e4e227c4b6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57710090"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59109430"
 ---
 # <a name="webbrowser-control-overview"></a>WebBrowser 控件概述
 <xref:System.Windows.Forms.WebBrowser>控件提供 WebBrowser ActiveX 控件托管的包装。 托管的包装，可以在 Windows 窗体客户端应用程序中显示网页。 可以使用<xref:System.Windows.Forms.WebBrowser>控件重复中你的应用程序或你的 Internet Explorer Web 浏览功能可以禁用默认 Internet 资源管理器功能并将该控件用作简单的 HTML 文档查看器。 此外可以使用该控件将基于 DHTML 的用户界面元素添加到你的窗体并隐藏这一事实中托管的<xref:System.Windows.Forms.WebBrowser>控件。 此方法可以无缝组合在单个应用程序中的 Windows 窗体控件的 Web 控件。  
@@ -24,16 +24,16 @@ ms.locfileid: "57710090"
   
  `Document`属性，您还可以调用在网页脚本在客户端应用程序代码中的代码中实现的方法。 若要从脚本代码访问客户端应用程序代码中，设置`ObjectForScripting`属性。 作为脚本代码时可以访问你指定的对象`window.external`对象。  
   
-|name|描述|  
+|名称|描述|  
 |----------|-----------------|  
 |<xref:System.Windows.Forms.WebBrowser.Document%2A> 属性|获取一个对象，提供对当前网页的 HTML 文档对象模型 (DOM) 的托管的访问。|  
-|<xref:System.Windows.Forms.WebBrowser.DocumentCompleted> 事件|Web 页面完成加载时发生。|  
+|<xref:System.Windows.Forms.WebBrowser.DocumentCompleted> Event — 事件|Web 页面完成加载时发生。|  
 |<xref:System.Windows.Forms.WebBrowser.DocumentText%2A> 属性|获取或设置当前网页的内容的 HTML。|  
 |<xref:System.Windows.Forms.WebBrowser.DocumentTitle%2A> 属性|获取当前网页的标题。|  
 |<xref:System.Windows.Forms.WebBrowser.GoBack%2A> 方法|导航到历史记录中的上一页。|  
 |<xref:System.Windows.Forms.WebBrowser.GoForward%2A> 方法|导航到历史记录中的下一页。|  
 |<xref:System.Windows.Forms.WebBrowser.Navigate%2A> 方法|导航到指定的 URL。|  
-|<xref:System.Windows.Forms.WebBrowser.Navigating> 事件|导航开始时，启用要取消的操作之前发生。|  
+|<xref:System.Windows.Forms.WebBrowser.Navigating> Event — 事件|导航开始时，启用要取消的操作之前发生。|  
 |<xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> 属性|获取或设置脚本代码的网页可以使用与你的应用程序进行通信的对象。|  
 |<xref:System.Windows.Forms.WebBrowser.Print%2A> 方法|打印当前网页。|  
 |<xref:System.Windows.Forms.WebBrowser.Refresh%2A> 方法|重新加载当前网页。|  
@@ -41,6 +41,7 @@ ms.locfileid: "57710090"
 |<xref:System.Windows.Forms.WebBrowser.Url%2A> 属性|获取或设置当前网页的 URL。 设置此属性导航到新 URL 的控件。|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.WebBrowser>
 - <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs>
 - <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventHandler>
@@ -52,9 +53,9 @@ ms.locfileid: "57710090"
 - <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs>
 - <xref:System.Windows.Forms.WebBrowserReadyState>
 - <xref:System.Windows.Forms.WebBrowserRefreshOption>
-- [如何：导航到使用 WebBrowser 控件的 URL](how-to-navigate-to-a-url-with-the-webbrowser-control.md)
+- [如何：使用 WebBrowser 控件导航到 URL](how-to-navigate-to-a-url-with-the-webbrowser-control.md)
 - [如何：使用 WebBrowser 控件打印](how-to-print-with-a-webbrowser-control.md)
-- [如何：将 Web 浏览器功能添加到 Windows 窗体应用程序](how-to-add-web-browser-capabilities-to-a-windows-forms-application.md)
+- [如何：向 Windows 窗体应用程序添加 Web 浏览器功能](how-to-add-web-browser-capabilities-to-a-windows-forms-application.md)
 - [如何：在 Windows 窗体应用程序中创建 HTML 文档查看器](how-to-create-an-html-document-viewer-in-a-windows-forms-application.md)
-- [如何：DHTML 代码和客户端应用程序代码之间实现双向通信](implement-two-way-com-between-dhtml-and-client.md)
+- [如何：在 DHTML 代码和客户端应用程序代码之间实现双向通信](implement-two-way-com-between-dhtml-and-client.md)
 - [WebBrowser 安全](webbrowser-security.md)

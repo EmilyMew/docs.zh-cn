@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4e8bb31967a6ad515761e6cd03657f2c834debe5
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5bd705ef549de3a8018efe731ef8735ef7b6b915
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54545551"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083174"
 ---
 # <a name="idefinitionappid-interface"></a>IDefinitionAppId 接口
 表示在当前范围内定义的应用程序的代码的唯一标识符。  
@@ -42,7 +42,8 @@ ms.locfileid: "54545551"
   
  **标头：** Isolation.h  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [合成接口](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)

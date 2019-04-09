@@ -2,12 +2,12 @@
 title: 操作格式化程序和操作选择器
 ms.date: 03/30/2017
 ms.assetid: 1c27e9fe-11f8-4377-8140-828207b98a0e
-ms.openlocfilehash: b4cc135983a741f4ae024a2917871f344e8a111c
-ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
+ms.openlocfilehash: 3843feacca0da6118ecc9d0f54a2cb088865caaa
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58836228"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59100400"
 ---
 # <a name="operation-formatter-and-operation-selector"></a>操作格式化程序和操作选择器
 此示例演示如何使用 Windows Communication Foundation (WCF) 扩展性点以允许消息数据中格式不同于 WCF 的需要。 默认情况下，WCF 格式化程序要求下包含方法参数`soap:body`元素。 但是，此示例演示如何实现一个自定义操作格式化程序，用于分析 HTTP GET 查询字符串中的参数数据并使用该数据调用方法。  
@@ -16,11 +16,11 @@ ms.locfileid: "58836228"
   
  为此，此示例提供了以下功能：  
   
--   `QueryStringFormatter`，它分别为客户端和服务器实现 <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> 和 <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter>，并处理查询字符串中的数据。  
+-   `QueryStringFormatter`它实现<xref:System.ServiceModel.Dispatcher.IClientMessageFormatter>和<xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter>在客户端和服务器，分别，并处理查询字符串中的数据。  
   
--   `UriOperationSelector`，它在服务器上实现 <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector>，以便基于 GET 请求中的操作名称执行操作调度。  
+-   `UriOperationSelector`它可以实现<xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector>执行操作调度基于 GET 请求中的操作名称在服务器上。  
   
--   `EnableHttpGetRequestsBehavior` 终结点行为（和对应的配置），它向运行库中添加必要的操作选择器。  
+-   `EnableHttpGetRequestsBehavior` 终结点行为 （和相应的配置），从而将必需的操作选择器添加到运行时。  
   
 -   演示如何在运行库中插入新的操作格式化程序。  
   
@@ -38,7 +38,7 @@ ms.locfileid: "58836228"
   
 -   此示例使用 <xref:System.ComponentModel.TypeConverter> 类将请求消息中的参数数据转换为字符串，并将字符串转换为参数数据。 如果 <xref:System.ComponentModel.TypeConverter> 对某个特定的类型不可用，示例格式化程序将引发异常。  
   
--   在客户端上的 `IClientMessageFormatter.SerializeRequest` 方法中，格式化程序创建具有相应“收件人”地址的 URI，并将操作名称作为后缀附加在后面。 此名称用于调度给服务器上的相应操作。 然后它采用参数对象数组，并使用 <xref:System.ComponentModel.TypeConverter> 类转换的参数名称和值将参数数据序列化为 URI 查询字符串。 接着，<xref:System.ServiceModel.Channels.MessageHeaders.To%2A> 和 <xref:System.ServiceModel.Channels.MessageProperties.Via%2A> 属性设置为该 URI。 通过 <xref:System.ServiceModel.Channels.MessageProperties> 属性访问 <xref:System.ServiceModel.Channels.Message.Properties%2A>。  
+-   在客户端上的 `IClientMessageFormatter.SerializeRequest` 方法中，格式化程序创建具有相应“收件人”地址的 URI，并将操作名称作为后缀附加在后面。 此名称用于调度给服务器上的相应操作。 然后它采用参数对象数组，并使用 <xref:System.ComponentModel.TypeConverter> 类转换的参数名称和值将参数数据序列化为 URI 查询字符串。 接着，<xref:System.ServiceModel.Channels.MessageHeaders.To%2A> 和 <xref:System.ServiceModel.Channels.MessageProperties.Via%2A> 属性设置为该 URI。 <xref:System.ServiceModel.Channels.MessageProperties> 通过访问<xref:System.ServiceModel.Channels.Message.Properties%2A>属性。  
   
 -   在服务器上的 `IDispatchMessageFormatter.DeserializeRequest` 方法中，格式化程序在传入请求消息属性中检索 `Via` URI。 它将 URI 查询字符串中的名称-值对分析为参数名称和值，并使用参数名称和值填充传递给该方法的参数数组。 请注意，因为操作调度已经发生，所以此方法中忽略了操作名称后缀。  
   
@@ -177,4 +177,3 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
 2.  若要生成解决方案，请按照中的说明[生成 Windows Communication Foundation 示例](../../../../docs/framework/wcf/samples/building-the-samples.md)。  
   
 3.  若要在单或跨计算机配置中运行示例，请按照中的说明[运行 Windows Communication Foundation 示例](../../../../docs/framework/wcf/samples/running-the-samples.md)。  
-  

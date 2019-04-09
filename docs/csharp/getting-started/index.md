@@ -1,12 +1,18 @@
 ---
-title: '入门 - C# 指南'
-description: '查看简短教程，快速了解介绍性 C# 概念并编写 .NET Core 应用程序。'
+title: 入门 - C# 指南
+description: 查看简短教程，快速了解介绍性 C# 概念并编写 .NET Core 应用程序。
 helpviewer_keywords:
-  - 'Visual C#, getting started'
-  - 'getting started, Visual C#'
+- Visual C#, getting started
+- getting started, Visual C#
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/23/2017
+ms.openlocfilehash: 9894d96c74741477b871d6073d78ea95413b8299
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675661"
 ---
 # <a name="get-started-with-c"></a>C\# 入门
 

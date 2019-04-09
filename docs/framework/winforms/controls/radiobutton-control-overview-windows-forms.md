@@ -9,12 +9,12 @@ helpviewer_keywords:
 - radio buttons [Windows Forms], determining state
 - radio buttons [Windows Forms], about radio buttons
 ms.assetid: cd11f0c2-d098-4022-adf9-1455bc166a13
-ms.openlocfilehash: cc511a79cf70bb8df8980c8703b1ad49d15516aa
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 1210658226d9bcacbf4904fdc90a9908c34f5b73
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57704513"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59129111"
 ---
 # <a name="radiobutton-control-overview-windows-forms"></a>RadioButton 控件概述（Windows 窗体）
 Windows 窗体<xref:System.Windows.Forms.RadioButton>控件向用户显示的一组两个或多个互斥选项。 尽管单选按钮和复选框似乎作用类似，但还有一项重大差异： 如果用户选择的单选按钮，不能同时选中同一个组中的其他单选按钮。 与此相反，可以选择任意数量的复选框。 定义单选按钮组将告诉用户:"这是一组选项，您可以从中选择一个且只有一个。"  
@@ -25,11 +25,12 @@ Windows 窗体<xref:System.Windows.Forms.RadioButton>控件向用户显示的一
  <xref:System.Windows.Forms.RadioButton>控件可以显示类似于命令按钮，似乎已按下，如果选择，如果<xref:System.Windows.Forms.RadioButton.Appearance%2A>属性设置为<xref:System.Windows.Forms.Appearance.Button>。 单选按钮还可以显示使用图像<xref:System.Windows.Forms.ButtonBase.Image%2A>和<xref:System.Windows.Forms.ButtonBase.ImageList%2A>属性。 有关详细信息，请参阅[如何：设置所显示的图像的 Windows 窗体控件](how-to-set-the-image-displayed-by-a-windows-forms-control.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.RadioButton>
 - [Panel 控件概述](panel-control-overview-windows-forms.md)
 - [GroupBox 控件概述](groupbox-control-overview-windows-forms.md)
 - [CheckBox 控件概述](checkbox-control-overview-windows-forms.md)
-- [如何：为 Windows 窗体控件创建访问密钥](how-to-create-access-keys-for-windows-forms-controls.md)
-- [如何：设置显示的文本的 Windows 窗体控件](how-to-set-the-text-displayed-by-a-windows-forms-control.md)
-- [如何：函数为一组 Windows 窗体 RadioButton 控件](how-to-group-windows-forms-radiobutton-controls-to-function-as-a-set.md)
+- [如何：创建 Windows 窗体控件的访问键](how-to-create-access-keys-for-windows-forms-controls.md)
+- [如何：设置 Windows 窗体控件显示的文本](how-to-set-the-text-displayed-by-a-windows-forms-control.md)
+- [如何：按功能分组 Windows 窗体 RadioButton 控件](how-to-group-windows-forms-radiobutton-controls-to-function-as-a-set.md)
 - [RadioButton 控件](radiobutton-control-windows-forms.md)

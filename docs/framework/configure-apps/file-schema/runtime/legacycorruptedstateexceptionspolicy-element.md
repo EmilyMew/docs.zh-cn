@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: e0a55ddc-bfa8-4f3e-ac14-d1fc3330e4bb
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 5a787315ff8b016beff8fb8457619a462e5f3180
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 777d496614435106b84b47b9aa3d35d964bc3e07
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55264618"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115097"
 ---
 # <a name="legacycorruptedstateexceptionspolicy-element"></a>\<legacyCorruptedStateExceptionsPolicy > 元素
 指定公共语言运行时是否允许托管的代码捕获访问冲突和其他损坏的状态异常。  
@@ -38,7 +38,7 @@ ms.locfileid: "55264618"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`false`|应用程序将不会捕获损坏状态异常失败，例如，访问冲突。 这是默认设置。|  
 |`true`|应用程序将捕获损坏状态异常失败，例如，访问冲突。|  
@@ -78,6 +78,7 @@ ms.locfileid: "55264618"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>
 - [运行时设置架构](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [配置文件架构](../../../../../docs/framework/configure-apps/file-schema/index.md)

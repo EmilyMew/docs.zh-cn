@@ -1,5 +1,5 @@
 ---
-title: 如何：特定以粗体的显示日期与 Windows 窗体 MonthCalendar 控件
+title: 如何：使用 Windows 窗体 MonthCalendar 控件以粗体显示特定日期
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - GetDayBold event
 - MonthCalendar control [Windows Forms], dates displayed in bold
 ms.assetid: 8b20db5b-8118-4825-90e8-2c45c186ac7d
-ms.openlocfilehash: c27037a166d147df51731c5d59fd42f73294c7ad
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: cf3ec21aa0272f60599f5659d78214120bcfcaf8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57718969"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59073690"
 ---
-# <a name="how-to-display-specific-days-in-bold-with-the-windows-forms-monthcalendar-control"></a>如何：特定以粗体的显示日期与 Windows 窗体 MonthCalendar 控件
+# <a name="how-to-display-specific-days-in-bold-with-the-windows-forms-monthcalendar-control"></a>如何：使用 Windows 窗体 MonthCalendar 控件以粗体显示特定日期
 Windows 窗体<xref:System.Windows.Forms.MonthCalendar>控件可以显示天以粗体类型为单数形式的日期或重复的基础上。 您可能会这样做可以为特殊日期，例如节假日和周末突出。  
   
  三个属性控制此功能。 <xref:System.Windows.Forms.MonthCalendar.BoldedDates%2A>属性包含一个日期。 <xref:System.Windows.Forms.MonthCalendar.AnnuallyBoldedDates%2A>属性包含显示为粗体每年的日期。 <xref:System.Windows.Forms.MonthCalendar.MonthlyBoldedDates%2A>属性包含以粗体显示每个月的日期。 每个属性包含的数组<xref:System.DateTime>对象。 若要添加或删除其中一个列表中的日期，必须添加或删除<xref:System.DateTime>对象。  
@@ -128,6 +128,7 @@ Windows 窗体<xref:System.Windows.Forms.MonthCalendar>控件可以显示天以�
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [MonthCalendar 控件](monthcalendar-control-windows-forms.md)
 - [如何：在 Windows 窗体 MonthCalendar 控件中选择日期范围](how-to-select-a-range-of-dates-in-the-windows-forms-monthcalendar-control.md)
 - [如何：更改 Windows 窗体 MonthCalendar 控件的外观](how-to-change-monthcalendar-control-appearance.md)

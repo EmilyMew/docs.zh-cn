@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4c9fde24a4c3260cf5b9e265dfd03080c5cd1d04
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58760798"
+---
 ### <a name="stack-traces-obtained-when-using-portable-pdbs-now-include-source-file-and-line-information-if-requested"></a>使用便携式 PDB 时获取的堆栈跟踪现在包括源文件和行信息（如果请求）
 
 |   |   |

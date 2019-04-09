@@ -2,12 +2,12 @@
 title: SQL Server CLR 集成简介
 ms.date: 03/30/2017
 ms.assetid: 551d2290-ed80-49be-b377-44b32444da1c
-ms.openlocfilehash: dcfc43a68fb8bcacd4a14d6b94a932d656635d55
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: 2f65e8690aa52f0442b4bee3b98bb1ea86e064a5
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56092574"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59110698"
 ---
 # <a name="introduction-to-sql-server-clr-integration"></a>SQL Server CLR 集成简介
 公共语言运行库 (CLR) 是 Microsoft .NET Framework 的核心，为所有 .NET Framework 代码提供执行环境。 在 CLR 中运行的代码称为托管代码。 CLR 提供执行程序所需的各种函数和服务，包括实时 (JIT) 编译、分配和管理内存、强制类型安全性、异常处理、线程管理和安全性。  
@@ -20,7 +20,7 @@ ms.locfileid: "56092574"
   
  **SQL Server 联机丛书**  
   
--   [公共语言运行时 (CLR) 集成概述](https://go.microsoft.com/fwlink/?LinkId=115242)  
+-   [Common Language Runtime (CLR) Integration Overview（公共语言运行时 (CLR) 集成概述）](https://go.microsoft.com/fwlink/?LinkId=115242)  
   
 ## <a name="enabling-clr-integration"></a>启用 CLR 集成  
  默认情况下，Microsoft SQL Server 中禁用公共语言运行库 (CLR) 集成功能，必须启用才能使用通过 CLR 集成实现的对象。 要使用 Transact-SQL 启用 CLR 集成，请使用如下所示的 `clr enabled` 存储过程的 `sp_configure` 选项：  
@@ -45,7 +45,7 @@ GO
   
  **SQL Server 联机丛书**  
   
-1.  [部署 CLR 数据库对象](https://go.microsoft.com/fwlink/?LinkId=115232)  
+1.  [Deploying CLR Database Objects（部署 CLR 数据库对象）](https://go.microsoft.com/fwlink/?LinkId=115232)  
   
 ## <a name="clr-integration-security"></a>CLR 集成安全性  
  Microsoft SQL Server 与 Microsoft .NET Framework 公共语言运行库 (CLR) 相集成，这种安全模型可管理和保护 SQL Server 中运行的不同类型 CLR 和非 CLR 对象之间的访问。 这些对象可以通过 Transact-SQL 语句或服务器中运行的其他 CLR 对象进行调用。  
@@ -63,8 +63,9 @@ GO
   
  **SQL Server 联机丛书**  
   
--   [调试 CLR 数据库对象](https://go.microsoft.com/fwlink/?LinkId=115236)  
+-   [Debugging CLR Database Objects（调试 CLR 数据库对象）](https://go.microsoft.com/fwlink/?LinkId=115236)  
   
 ## <a name="see-also"></a>请参阅
+
 - [代码访问安全性和 ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - implementing validation logic on custom objects [WPF]
 - custom objects [WPF], implementing validation logic on
 ms.assetid: 751fda9b-44f9-4d63-b4f2-1df07ac41e0f
-ms.openlocfilehash: e183d286e4b9cd037c352126203b1ecdcca89ebb
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 8520504757e9e9ec9557b84ca2608b4cb99daf62
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57365355"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59085917"
 ---
 # <a name="how-to-implement-validation-logic-on-custom-objects"></a>如何：在自定义对象上实现验证逻辑
 此示例演示如何自定义对象上实现验证逻辑，然后绑定到它。  
@@ -33,6 +33,7 @@ ms.locfileid: "57365355"
  或者，也可以将 <xref:System.Windows.Data.Binding.ValidatesOnDataErrors%2A> 属性设置为`true`，而不是使用 <xref:System.Windows.Controls.DataErrorValidationRule>。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.ExceptionValidationRule>
 - [实现绑定验证](how-to-implement-binding-validation.md)
 - [帮助主题](data-binding-how-to-topics.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - TypeArguments attribute in XAML [XAML Services]
 - XAML [XAML Services], x:TypeArguments attribute
 ms.assetid: 86561058-d393-4a44-b5c3-993a4513ea74
-ms.openlocfilehash: 0d3edf6c7a16fc206832d8d6deff9d4ac2f69ba3
-ms.sourcegitcommit: 5c1abeec15fbddcc7dbaa729fabc1f1f29f12045
+ms.openlocfilehash: 1d1b10b4da1263843bdce5447f0716569c7700e3
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58043272"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59085800"
 ---
 # <a name="xtypearguments-directive"></a>x:TypeArguments 指令
 约束类型参数传递给泛型类型的构造函数的泛型。  
@@ -82,6 +82,7 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  在 WPF 中并面向[!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]，可以使用 XAML 2009 功能一起使用`x:TypeArguments`但只针对松散 XAML (未标记编译的 XAML)。 WPF 的已编译标记的 XAML 以及 XAML 的 BAML 形式当前不支持 XAML 2009 关键字和功能。 如果需要为标记编译 XAML，您必须在"XAML 2006 和 WPF 泛型 XAML 用法"部分中所述的限制下进行操作。  
   
 ## <a name="see-also"></a>请参阅
+
 - [x:Class 指令](x-class-directive.md)
 - [x:Type 标记扩展](x-type-markup-extension.md)
 - [常见 XAML 语言基元的内置类型](built-in-types-for-common-xaml-language-primitives.md)

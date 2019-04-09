@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: d329b811e0c1377cb2d7555b3e7e30b52071eca8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: bfa11083fad7a3ccc6a208f5f0e4b68e9e1bc18c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54682023"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098177"
 ---
 # <a name="setting-up-a-profiling-environment"></a>设置分析环境
 > [!NOTE]
@@ -96,4 +96,5 @@ pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)
  此技术也会导致对每个 CLR 进程进行分析。 探查器应将逻辑添加到其[icorprofilercallback:: Initialize](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-initialize-method.md)回调以检测当前进程是否感兴趣。 如果不相关，探查器可使回调失败而不执行初始化。  
   
 ## <a name="see-also"></a>请参阅
+
 - [分析概述](../../../../docs/framework/unmanaged-api/profiling/profiling-overview.md)

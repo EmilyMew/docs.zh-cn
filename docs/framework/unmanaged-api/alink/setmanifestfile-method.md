@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: f22927b388a62ee6025c987bb107b2dfd51da0e3
-ms.sourcegitcommit: 5137208fa414d9ca3c58cdfd2155ac81bc89e917
+ms.openlocfilehash: 8307960166cfc668a577431d688c439f0f794be2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57488989"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59072423"
 ---
 # <a name="setmanifestfile-method"></a>SetManifestFile 方法
 可以指定或重置链接器在创建程序集时使用的清单文件。  
@@ -49,6 +49,7 @@ HRESULT SetManifestFile(
  需要 aLink.h  
   
 ## <a name="see-also"></a>请参阅
+
 - [IALink3 接口](../../../../docs/framework/unmanaged-api/alink/ialink3-interface.md)
 - [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
 - [IALink 接口](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何：访问特定于 Windows 中的项窗体 ComboBox、 ListBox 或 CheckedListBox 控件
+title: 如何：在 Windows 窗体 ComboBox 控件、ListBox 控件或 CheckedListBox 控件中访问特定项
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - combo boxes [Windows Forms], accessing items
 - CheckedListBox control [Windows Forms], accessing items
 ms.assetid: 1216742f-bcf9-4ff8-8a62-d7c9053c2b96
-ms.openlocfilehash: 33dcefa39cd6a8c981d03ce5fb63fc8135613640
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 3d61a9b38f809d16e95b485893acaadcf04d826f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57714016"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59077207"
 ---
-# <a name="how-to-access-specific-items-in-a-windows-forms-combobox-listbox-or-checkedlistbox-control"></a>如何：访问特定于 Windows 中的项窗体 ComboBox、 ListBox 或 CheckedListBox 控件
+# <a name="how-to-access-specific-items-in-a-windows-forms-combobox-listbox-or-checkedlistbox-control"></a>如何：在 Windows 窗体 ComboBox 控件、ListBox 控件或 CheckedListBox 控件中访问特定项
 访问 Windows 窗体组合框、 列表框中或选中的列表框中的特定项是不可或缺的任务。 这样，您可以以编程方式确定在列表中，任何给定位置处的内容。  
   
 ### <a name="to-access-a-specific-item"></a>若要访问特定项  
@@ -52,6 +52,7 @@ ms.locfileid: "57714016"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.ComboBox>
 - <xref:System.Windows.Forms.ListBox>
 - <xref:System.Windows.Forms.CheckedListBox>

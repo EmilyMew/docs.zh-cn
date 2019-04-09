@@ -4,17 +4,16 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - base elements [WPF]
 ms.assetid: 2c997092-72c6-4767-bc84-74267f4eee72
-ms.openlocfilehash: a7ed16690172f2720424807325150ea3db5d5caa
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 0cd69a4d2d6087c1ebf93bb5931511f32a4c9c5f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57372823"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59110053"
 ---
 # <a name="base-elements-overview"></a>基元素概述
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 中较高比重的类都派生自四类，它们通常在 [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)] 文档中称为基元素。 这些类是<xref:System.Windows.UIElement>， <xref:System.Windows.FrameworkElement>， <xref:System.Windows.ContentElement>，和<xref:System.Windows.FrameworkContentElement>。 <xref:System.Windows.DependencyObject>类也相关，因为它是这两者的一个公共基类<xref:System.Windows.UIElement>和 <xref:System.Windows.ContentElement>  
- 
-  
+
 <a name="base_apis"></a>   
 ## <a name="base-element-apis-in-wpf-classes"></a>WPF 类中的基元素 API  
  这两<xref:System.Windows.UIElement>并<xref:System.Windows.ContentElement>派生自<xref:System.Windows.DependencyObject>，通过某种程度上不同的途径。 如何处理此级别拆分<xref:System.Windows.UIElement>或<xref:System.Windows.ContentElement>中的用户界面和什么作用其处理的应用程序中使用。 <xref:System.Windows.UIElement> 还有<xref:System.Windows.Media.Visual>在其类层次结构，它是一个类公开低级别图形支持基础[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]。 <xref:System.Windows.Media.Visual> 通过定义独立矩形屏幕区域提供呈现框架。 在实践中，<xref:System.Windows.UIElement>是将支持较大的对象模型的元素为目标来呈现和分成若干个区域，可以描述为矩形屏幕区域和内容模型是有意更加开放，以允许不同的布局元素的组合。 <xref:System.Windows.ContentElement> 不是派生自<xref:System.Windows.Media.Visual>; 其模型是<xref:System.Windows.ContentElement>将由其他用途，如读取器或查看器，然后解释元素，并生成完整<xref:System.Windows.Media.Visual>为[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]来使用。 某些<xref:System.Windows.UIElement>类旨在成为内容宿主： 它们提供了一个或多个承载和呈现<xref:System.Windows.ContentElement>类 (<xref:System.Windows.Controls.DocumentViewer>举例说明这样的类)。 <xref:System.Windows.ContentElement> 用于内承载带有某种程度上较小的对象模型的元素的基类和文档内容的或更多地址的文本的信息，如<xref:System.Windows.UIElement>。  
@@ -98,6 +97,7 @@ ms.locfileid: "57372823"
  <xref:System.Windows.Controls.Control> 是所需的基类的类型的对象，该控件或组件，具体取决于该技术称为对象。 一般情况下，[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 控件类可直接表示 UI 控件或积极参与控件组合。 主要功能的<xref:System.Windows.Controls.Control>启用是控制模板化。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.Control>
 - [依赖项属性概述](dependency-properties-overview.md)
 - [控件创作概述](../controls/control-authoring-overview.md)

@@ -3,6 +3,12 @@ title: 从 project.json 迁移 .NET Core
 description: 了解如何使用 project.json 迁移较旧的 .NET Core 项目
 ms.date: 07/19/2017
 ms.custom: seodec18
+ms.openlocfilehash: f48728e647b57a8c5796bdc2119f72b58a49d80f
+ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57675909"
 ---
 # <a name="migrating-net-core-projects-from-projectjson"></a>从 project.json 迁移 .NET Core 项目
 

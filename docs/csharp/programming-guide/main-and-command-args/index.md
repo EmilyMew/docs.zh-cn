@@ -1,18 +1,24 @@
 ---
-title: 'Main() 和命令行参数 - C# 编程指南'
+title: Main() 和命令行参数 - C# 编程指南
 ms.custom: seodec18
 ms.date: 08/02/2017
 f1_keywords:
-  - CS5001
-  - main_CSharpKeyword
-  - Main
+- CS5001
+- main_CSharpKeyword
+- Main
 helpviewer_keywords:
-  - 'Main method [C#]'
-  - 'C# language, command-line arguments'
-  - 'arguments [C#], command-line'
-  - 'command line [C#], arguments'
-  - 'command-line arguments [C#], Main method'
+- Main method [C#]
+- C# language, command-line arguments
+- arguments [C#], command-line
+- command line [C#], arguments
+- command-line arguments [C#], Main method
 ms.assetid: 73a17231-cf96-44ea-aa8a-54807c6fb1f4
+ms.openlocfilehash: f1cbbc6081c0e2f3e29d49f413e00c7346ea7e60
+ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56968993"
 ---
 # <a name="main-and-command-line-arguments-c-programming-guide"></a>Main() 和命令行参数（C# 编程指南）
 

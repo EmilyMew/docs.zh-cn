@@ -2,12 +2,12 @@
 title: 不支持的方案
 ms.date: 03/30/2017
 ms.assetid: 72027d0f-146d-40c5-9d72-e94392c8bb40
-ms.openlocfilehash: 381175a95b696145df8a1e19b9a40f2e697eef1e
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 12012f3e0c0c3b0d10c5faebfb2de881f5de3917
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54631253"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59178771"
 ---
 # <a name="unsupported-scenarios"></a>不支持的方案
 由于各种原因，Windows Communication Foundation (WCF) 不支持某些特定安全方案。 例如， [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition 没有实现 SSPI 或 Kerberos 身份验证协议，并因此 WCF 不支持该平台上运行使用 Windows 身份验证的服务。 运行 Windows XP Home Edition 下的 WCF 时，支持其他身份验证机制，例如用户名/密码和 HTTP/HTTPS 集成身份验证。  
@@ -30,10 +30,10 @@ ms.locfileid: "54631253"
   
  基于状态的 SCT 只能使用自定义绑定来创建。 有关详细信息，请参阅[如何：创建安全上下文令牌的安全会话](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md)。)在代码中，可通过创建安全绑定元素（<xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> 或 <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>）启用令牌，方法是：使用 <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement%28System.Boolean%29?displayProperty=nameWithType> 或 <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%28System.ServiceModel.Channels.SecurityBindingElement%2CSystem.Boolean%29?displayProperty=nameWithType> 方法，并且将 `requireCancellation` 参数设置为 `false`。 该参数引用 SCT 的缓存。 若将该值设置为 `false`，则启用基于状态的 SCT 功能。  
   
- 或者，可以在配置中通过以下方法启用令牌：创建一个 <`customBinding`>，然后添加一个 <`security`> 元素，并将 `authenticationMode` 属性设置为 SecureConversation，同时将 `requireSecurityContextCancellation` 属性设置为 `true`。  
+ 或者，在配置中，以下方法启用令牌通过创建 <`customBinding`>，然后添加 <`security`> 元素，并将`authenticationMode`SecureConversation 属性和`requireSecurityContextCancellation`归于`true`。  
   
 > [!NOTE]
->  上述需求是特定的。 例如，<xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> 创建一个产生 Windows 标识的绑定元素，但并不建立一个 SCT。 因此，在 `Required` 上，可以将其与 [!INCLUDE[wxp](../../../../includes/wxp-md.md)] 选项一起使用。  
+>  上述要求是特定的。 例如，<xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> 创建一个产生 Windows 标识的绑定元素，但并不建立一个 SCT。 因此，在 `Required` 上，可以将其与 [!INCLUDE[wxp](../../../../includes/wxp-md.md)] 选项一起使用。  
   
 ### <a name="possible-aspnet-conflict"></a>可能发生 ASP.NET 冲突  
  WCF 和[!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]都可能启用或禁用模拟。 当[!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]托管 WCF 应用程序，WCF 之间可能存在冲突和[!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]配置设置。 当发生冲突时，WCF 设置优先，除非<xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A>属性设置为<xref:System.ServiceModel.ImpersonationOption.NotAllowed>，在这种情况下[!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]模拟设置优先。  
@@ -75,7 +75,7 @@ ms.locfileid: "54631253"
 ## <a name="message-security-fails-if-using-aspnet-impersonation-and-aspnet-compatibility-is-required"></a>如果要求使用 ASP.NET 模拟和 ASP.NET 兼容性，消息安全将失败  
  WCF 不支持以下设置组合，因为它们可能会阻止客户端身份验证的发生：  
   
--   启用了 [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 模拟。 这是在 Web.config 文件中通过将 <`identity`> 元素的 `impersonate` 属性设置为 `true` 实现的。  
+-   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 启用模拟。 这通过 Web.config 文件中设置`impersonate`属性的 <`identity`> 元素`true`。  
   
 -   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 通过设置启用兼容性模式`aspNetCompatibilityEnabled`的属性[ \<serviceHostingEnvironment >](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)到`true`。  
   
@@ -109,9 +109,10 @@ ms.locfileid: "54631253"
  解决方法是，导入完毕后直接在客户端上修改绑定。  
   
 ## <a name="see-also"></a>请参阅
+
 - [安全注意事项](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
-- [信息泄漏](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
+- [信息泄露](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
 - [特权提升](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)
 - [拒绝服务](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
 - [篡改](../../../../docs/framework/wcf/feature-details/tampering.md)
-- [重放攻击](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
+- [重播攻击](../../../../docs/framework/wcf/feature-details/replay-attacks.md)

@@ -9,7 +9,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/16/2019
 ms.locfileid: "58125572"
 ---
-# <a name="tour-of-f"></a>F 教程\#
+# <a name="tour-of-f"></a>F# 概览
 
 了解 F# 语言的最好方式就是阅读和编写 F# 代码。 本文将介绍 F# 语言的一些关键特性，并提供一些可以在计算机上执行的代码片段。 若要了解如何设置开发环境，请查看[入门](tutorials/getting-started/index.md)。
 

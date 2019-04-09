@@ -1,5 +1,5 @@
 ---
-title: 如何：Windows 窗体使用 ToolStripControlHost 包装控件
+title: 如何：使用 ToolStripControlHost 包装 Windows 窗体控件
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - toolbars [Windows Forms], wrapping controls
 - ToolStrip control [Windows Forms], hosting controls
 ms.assetid: e2ce4990-661d-4882-a116-8a9eb575dc84
-ms.openlocfilehash: f17a0a9f8a7403abd273b9faa7b1ef78f1aff016
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: a87dab15c436302a8b87d535ee8128c1917d5011
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57704890"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59080476"
 ---
-# <a name="how-to-wrap-a-windows-forms-control-with-toolstripcontrolhost"></a>如何：Windows 窗体使用 ToolStripControlHost 包装控件
-<xref:System.Windows.Forms.ToolStripControlHost> 旨在通过使用 <xref:System.Windows.Forms.ToolStripControlHost> 构造函数或扩展 <xref:System.Windows.Forms.ToolStripControlHost> 本身启用任意 Windows 窗体控件的托管。 通过扩展 <xref:System.Windows.Forms.ToolStripControlHost> 并实现公开控件常用属性和方法的属性和方法，可轻松包装控件。 还可以公开控件在 <xref:System.Windows.Forms.ToolStripControlHost> 级别的事件。  
+# <a name="how-to-wrap-a-windows-forms-control-with-toolstripcontrolhost"></a>如何：使用 ToolStripControlHost 包装 Windows 窗体控件
+<xref:System.Windows.Forms.ToolStripControlHost> 旨在允许使用任意 Windows 窗体控件的托管<xref:System.Windows.Forms.ToolStripControlHost>构造函数或通过扩展<xref:System.Windows.Forms.ToolStripControlHost>本身。 通过扩展 <xref:System.Windows.Forms.ToolStripControlHost> 并实现公开控件常用属性和方法的属性和方法，可轻松包装控件。 还可以公开控件在 <xref:System.Windows.Forms.ToolStripControlHost> 级别的事件。  
   
 ### <a name="to-host-a-control-in-a-toolstripcontrolhost-by-derivation"></a>若要在 ToolStripControlHost 中通过派生承载控件  
   
@@ -66,6 +66,7 @@ ms.locfileid: "57704890"
  Visual Basic 或 Visual C# 生成命令行中的此示例的信息，请参阅[从命令行生成](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)或[命令行上使用 csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)。 也可以通过将代码粘贴到新的项目中生成此示例在 Visual Studio 中。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.ToolStripControlHost>
 - [ToolStrip 控件概述](toolstrip-control-overview-windows-forms.md)
 - [ToolStrip 控件体系结构](toolstrip-control-architecture.md)

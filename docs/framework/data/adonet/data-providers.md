@@ -5,23 +5,23 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 03a9fc62-2d24-491a-9fe6-d6bdb6dcb131
-ms.openlocfilehash: 0223e21702c2a108740341c331f93b85f271cf8a
-ms.sourcegitcommit: 2b986afe4ce9e13bbeec929c9737757eb61de60e
+ms.openlocfilehash: f821088375bf1df01e75de5e0c226334baca113f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56664804"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59074022"
 ---
 # <a name="net-framework-data-providers"></a>.NET Framework 数据提供程序
-[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序用于连接到数据库、执行命令和检索结果。 这些结果将被直接处理，放置在 <xref:System.Data.DataSet> 中以便根据需要向用户公开、与多个源中的数据组合，或在层之间进行远程处理。 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序是轻量的，它在数据源和代码之间创建最小的分层，并在不降低功能性的情况下提高性能。  
+[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序用于连接到数据库、执行命令和检索结果。 这些结果将被直接处理，放置在 <xref:System.Data.DataSet> 中以便根据需要向用户公开、与多个源中的数据组合，或在层之间进行远程处理。 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序是轻量，创建一个最小层之间的数据源和代码，而无需牺牲功能提高性能。  
   
  下表列出了 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]中所包含的数据提供程序。  
   
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序|描述|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据访问接口|描述|  
 |-------------------------------------------------------------------------------|-----------------|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] SQL Server 的数据提供程序|提供 Microsoft SQL Server 的数据访问。 使用 <xref:System.Data.SqlClient> 命名空间。|  
-|用于 OLE DB 的 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序|提供对使用 OLE DB 公开的数据源中数据的访问。 使用 <xref:System.Data.OleDb> 命名空间。|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]用于 ODBC 的数据提供程序|提供对使用 ODBC 公开的数据源中数据的访问。 使用 <xref:System.Data.Odbc> 命名空间。|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 用于 SQL Server 的数据提供程序|提供 Microsoft SQL Server 的数据访问。 使用 <xref:System.Data.SqlClient> 命名空间。|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 用于 OLE DB 的数据提供程序|提供对使用 OLE DB 公开的数据源中数据的访问。 使用 <xref:System.Data.OleDb> 命名空间。|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 用于 ODBC 的数据提供程序|提供对使用 ODBC 公开的数据源中数据的访问。 使用 <xref:System.Data.Odbc> 命名空间。|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 用于 Oracle 的数据提供程序|适用于 Oracle 数据源。 用于 Oracle 的 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序支持 Oracle 客户端软件 8.1.7 和更高版本，并使用 <xref:System.Data.OracleClient> 命名空间。|  
 |EntityClient 提供程序|提供对实体数据模型 (EDM) 应用程序的数据访问。 使用 <xref:System.Data.EntityClient> 命名空间。|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序适用于 SQL Server Compact 4.0。|提供的 Microsoft SQL Server Compact 4.0 数据访问。 使用 [System.Data.SqlServerCe](https://docs.microsoft.com/previous-versions/sql/compact/sql-server-compact-4.0/ec4st0e3(v=vs.100)) 命名空间。|  
@@ -32,11 +32,11 @@ ms.locfileid: "56664804"
 |对象|描述|  
 |------------|-----------------|  
 |`Connection`|建立与特定数据源的连接。 所有 `Connection` 对象的基类均为 <xref:System.Data.Common.DbConnection> 类。|  
-|`Command`|对数据源执行命令。 公开 `Parameters`，并可在 `Transaction` 范围内从 `Connection` 执行。 所有 `Command` 对象的基类均为 <xref:System.Data.Common.DbCommand> 类。|  
+|`Command`|对数据源执行命令。 公开 `Parameters` ，并可在 `Transaction` 范围内从 `Connection`执行。 所有 `Command` 对象的基类均为 <xref:System.Data.Common.DbCommand> 类。|  
 |`DataReader`|从数据源中读取只进且只读的数据流。 所有 `DataReader` 对象的基类均为 <xref:System.Data.Common.DbDataReader> 类。|  
 |`DataAdapter`|使用数据源填充 `DataSet` 并解决更新。 所有 `DataAdapter` 对象的基类均为 <xref:System.Data.Common.DbDataAdapter> 类。|  
   
- 除了此文档前面的表中所列出的核心类之外，[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序还包含下表中列出的类。  
+ 除了此文档前面的表中所列出的核心类之外， [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序还包含下表中列出的类。  
   
 |对象|描述|  
 |------------|-----------------|  
@@ -44,7 +44,7 @@ ms.locfileid: "56664804"
 |`CommandBuilder`|一个帮助器对象，它自动生成 `DataAdapter` 的命令属性或从存储过程中派生参数信息，并填充 `Parameters` 对象的 `Command` 集合。 所有 `CommandBuilder` 对象的基类均为 <xref:System.Data.Common.DbCommandBuilder> 类。|  
 |`ConnectionStringBuilder`|一个帮助器对象，它提供一种用于创建和管理由 `Connection` 对象使用的连接字符串的内容的简单方法。 所有 `ConnectionStringBuilder` 对象的基类均为 <xref:System.Data.Common.DbConnectionStringBuilder> 类。|  
 |`Parameter`|定义命令和存储过程的输入、输出和返回值参数。 所有 `Parameter` 对象的基类均为 <xref:System.Data.Common.DbParameter> 类。|  
-|`Exception`|在数据源中遇到错误时返回。 对于在客户端遇到的错误，[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序会引发一个 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 异常。 所有 `Exception` 对象的基类均为 <xref:System.Data.Common.DbException> 类。|  
+|`Exception`|在数据源中遇到错误时返回。 对于在客户端遇到的错误， [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序会引发一个 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 异常。 所有 `Exception` 对象的基类均为 <xref:System.Data.Common.DbException> 类。|  
 |`Error`|公开数据源返回的警告或错误中的信息。|  
 |`ClientPermission`|为 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序代码访问安全属性而提供。 所有 `ClientPermission` 对象的基类均为 <xref:System.Data.Common.DBDataPermission> 类。|  
   
@@ -87,9 +87,9 @@ using System.Data.SqlClient;
   
  用于 OLE DB 的 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序不支持 OLE DB 2.5 版接口。 需要对 OLE DB 2.5 接口的支持的 OLE DB 访问接口将无法与用于 OLE DB 的 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序一起正常工作。 这包括适用于 Exchange 的 Microsoft OLE DB 访问接口和用于 Internet 发布的 Microsoft OLE DB 访问接口。  
   
- 用于 OLE DB 的 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序不与用于 ODBC 的 OLE DB 访问接口 (MSDASQL) 一起使用。 若要使用 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 访问 ODBC 数据源，请使用用于 ODBC 的 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序。  
+ 用于 OLE DB 的 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序不与用于 ODBC 的 OLE DB 访问接口 (MSDASQL) 一起使用。 若要使用 [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]访问 ODBC 数据源，请使用用于 ODBC 的 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序。  
   
- 用于 OLE DB 类的[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序位于 <xref:System.Data.OleDb> 命名空间中。 下面的代码示例演示如何将 `System.Data.OleDb` 命名空间包括在您的应用程序中。  
+ [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 用于 OLE DB 类的数据提供程序位于<xref:System.Data.OleDb>命名空间。 下面的代码示例演示如何将 `System.Data.OleDb` 命名空间包括在您的应用程序中。  
   
 ```vb  
 Imports System.Data.OleDb  
@@ -110,7 +110,7 @@ using System.Data.OleDb;
 |Microsoft ODBC for Oracle|  
 |Microsoft Access 驱动程序 (*.mdb)|  
   
- 用于 ODBC 类的[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序位于 <xref:System.Data.Odbc> 命名空间中。  
+ [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 对于 ODBC 类的数据提供程序位于<xref:System.Data.Odbc>命名空间。  
   
  下面的代码示例演示如何将 `System.Data.Odbc` 命名空间包括在您的应用程序中。  
   
@@ -130,7 +130,7 @@ using System.Data.Odbc;
   
  用于 Oracle 的 [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序要求系统上安装有 Oracle 客户端软件（8.1.7 版或更高版本），才能连接到 Oracle 数据源。  
   
- 用于 Oracle 类的[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序位于 <xref:System.Data.OracleClient> 命名空间中，并包含在 `System.Data.OracleClient.dll` 程序集中。 当编译使用该数据提供程序的应用程序时，必须同时引用 `System.Data.dll` 和 `System.Data.OracleClient.dll` 。  
+ [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 用于 Oracle 类的数据提供程序位于<xref:System.Data.OracleClient>命名空间，并包含在`System.Data.OracleClient.dll`程序集。 当编译使用该数据提供程序的应用程序时，必须同时引用 `System.Data.dll` 和 `System.Data.OracleClient.dll` 。  
   
  下面的代码示例演示如何将 `System.Data.OracleClient` 命名空间包括在您的应用程序中。  
   
@@ -149,8 +149,8 @@ using System.Data.OracleClient;
   
 |提供程序|说明|  
 |--------------|-----------|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] SQL Server 的数据提供程序|建议使用 Microsoft SQL Server 的中间层应用程序。<br /><br /> 建议使用 Microsoft 数据库引擎 (MSDE) 或 SQL Server 的单层应用程序。<br /><br /> 建议为 SQL Server (SQLOLEDB) 与 OLE DB 访问接口使用[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]OLE DB 数据提供程序。|  
-|用于 OLE DB 的[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 数据提供程序|对于 SQL Server，[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]而不是此提供程序建议使用 SQL Server 的数据提供程序。<br /><br /> 建议用于使用 Microsoft Access 数据库的单层应用程序。 不建议将 Access 数据库用于中间层应用程序。|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 用于 SQL Server 的数据提供程序|建议使用 Microsoft SQL Server 的中间层应用程序。<br /><br /> 建议使用 Microsoft 数据库引擎 (MSDE) 或 SQL Server 的单层应用程序。<br /><br /> 建议为 SQL Server (SQLOLEDB) 与 OLE DB 访问接口使用[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]OLE DB 数据提供程序。|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 用于 OLE DB 的数据提供程序|对于 SQL Server，[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]而不是此提供程序建议使用 SQL Server 的数据提供程序。<br /><br /> 建议用于使用 Microsoft Access 数据库的单层应用程序。 不建议将 Access 数据库用于中间层应用程序。|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 用于 ODBC 的数据提供程序|建议用于使用 ODBC 数据源的中间层应用程序和单层应用程序。|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 用于 Oracle 的数据提供程序|建议用于使用 Oracle 数据源的中间层应用程序和单层应用程序。|  
   
@@ -158,6 +158,7 @@ using System.Data.OracleClient;
  EntityClient 提供程序可用来基于实体数据模型 (EDM) 访问数据。 与其他 .NET Framework 数据提供程序不同，该提供程序不直接与数据源进行交互， 而是使用实体 SQL 与基础数据提供程序进行通信。 有关详细信息，请参阅[针对实体框架的 EntityClient Provider](./ef/entityclient-provider-for-the-entity-framework.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [ADO.NET 概述](../../../../docs/framework/data/adonet/ado-net-overview.md)
 - [在 ADO.NET 中检索和修改数据](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [ADO.NET 托管提供程序和数据集开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET 托管提供程序和 DataSet 开发人员中心](https://go.microsoft.com/fwlink/?LinkId=217917)

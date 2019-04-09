@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 793d3996f9cbcb1a38a728ade06f775784166123
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 0ac28f28d4d284ba26fadd46e53ebeb8e5b5f3cd
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54745891"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59139576"
 ---
 # <a name="waitoption-enumeration"></a>WAIT_OPTION 枚举
 包含指示请求的公共语言运行时 (CLR) 块操作时应采取的操作主机的值。  
@@ -54,7 +54,8 @@ typedef enum {
   
  **库：** MSCorEE.dll  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [承载枚举](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

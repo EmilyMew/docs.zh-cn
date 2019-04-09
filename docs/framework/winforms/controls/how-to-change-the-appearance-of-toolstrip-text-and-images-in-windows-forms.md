@@ -1,5 +1,5 @@
 ---
-title: 如何：更改 ToolStrip 文本和图像在 Windows 窗体中的外观
+title: 如何：在 Windows 窗体中更改 ToolStrip 文本和图像的外观
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - ToolStrip control [Windows Forms], text
 - toolbars [Windows Forms], text
 ms.assetid: d62dc9d1-2edd-4dfa-aed7-1335d6e13d86
-ms.openlocfilehash: cd15e581e646f53ed56af654917c7543bf18617e
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 5c326c8f6a56c934d317305f85f4c88e95e75f8b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57705397"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59088466"
 ---
-# <a name="how-to-change-the-appearance-of-toolstrip-text-and-images-in-windows-forms"></a>如何：更改 ToolStrip 文本和图像在 Windows 窗体中的外观
+# <a name="how-to-change-the-appearance-of-toolstrip-text-and-images-in-windows-forms"></a>如何：在 Windows 窗体中更改 ToolStrip 文本和图像的外观
 您可以控制是否在显示的文本和图像<xref:System.Windows.Forms.ToolStripItem>和它们相对于彼此的对齐方式和<xref:System.Windows.Forms.ToolStrip>。  
   
 ### <a name="to-define-what-is-displayed-on-a-toolstripitem"></a>若要定义 ToolStripItem 上显示的内容  
@@ -76,6 +76,7 @@ ms.locfileid: "57705397"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.ToolStrip>
 - [ToolStrip 控件概述](toolstrip-control-overview-windows-forms.md)
 - [ToolStrip 控件体系结构](toolstrip-control-architecture.md)

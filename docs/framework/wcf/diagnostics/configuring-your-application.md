@@ -2,19 +2,19 @@
 title: 配置应用程序
 ms.date: 03/30/2017
 ms.assetid: a2f995b0-669d-4721-b00f-4561ec7eb6a4
-ms.openlocfilehash: 39d8c73809b8c2695ccebb1d69d1c016fd2313d1
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 94bf5f4bbee8bb8bb462c4bf91be75d1627ec567
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54584631"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59087165"
 ---
 # <a name="configuring-your-application"></a>配置应用程序
 Windows Communication Foundation (WCF) 使用.NET 配置系统，并且允许您在计算机和应用程序范围配置服务。  
   
  定义的 WCF 配置设置位于`<system.serviceModel>`节组。 有关如何配置 WCF 服务的详细信息，请参阅以下主题：  
   
--   [配置服务](../../../../docs/framework/wcf/configuring-services.md)  
+-   [正在配置服务](../../../../docs/framework/wcf/configuring-services.md)  
   
 -   [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md)  
   
@@ -30,6 +30,7 @@ Windows Communication Foundation (WCF) 使用.NET 配置系统，并且允许您
 >  如果右键单击该中编辑配置文件的 Visual Studio 中的 WCF Web 服务项目**解决方案资源管理器**，注意**编辑 WCF 配置**上下文菜单项缺少。 解决此问题，请单击**工具**菜单，然后选择**WCF 服务配置编辑器**。 之后，可以右键单击配置文件，并使用**编辑 WCF 配置**上下文菜单项。  
   
 ## <a name="see-also"></a>请参阅
+
 - [配置编辑器工具 (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)
-- [配置服务](../../../../docs/framework/wcf/configuring-services.md)
+- [正在配置服务](../../../../docs/framework/wcf/configuring-services.md)
 - [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md)

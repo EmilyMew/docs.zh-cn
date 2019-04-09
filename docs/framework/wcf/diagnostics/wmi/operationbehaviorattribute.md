@@ -2,12 +2,12 @@
 title: OperationBehaviorAttribute
 ms.date: 03/30/2017
 ms.assetid: 8c9b0755-9e83-411f-bdcb-61a586022797
-ms.openlocfilehash: d0bf59e6064748a045f761777a2f8f3e88f1cb5a
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 79601308c66abe43dd5a7f72bd2a05b9d2346c2b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54504322"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59115799"
 ---
 # <a name="operationbehaviorattribute"></a>OperationBehaviorAttribute
 OperationBehaviorAttribute  
@@ -28,7 +28,7 @@ class OperationBehaviorAttribute : Behavior
 ## <a name="methods"></a>方法  
  OperationBehaviorAttribute 类不定义任何方法。  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>属性  
  OperationBehaviorAttribute 类具有下列属性：  
   
 ### <a name="autodisposeparameters"></a>AutoDisposeParameters  
@@ -73,4 +73,5 @@ class OperationBehaviorAttribute : Behavior
 |命名空间|已在 root\ServiceModel 中定义|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.OperationBehaviorAttribute>

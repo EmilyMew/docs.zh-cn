@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: bf1be8d5c709f3d6e5991e4d33dde2e923291a95
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 1fd903cb4a9ce664b7a1c958a3fef0c639d6845d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54569409"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59122312"
 ---
 # <a name="corsetenc-enumeration"></a>CorSetENC 枚举
 包含一些值，用于在元数据生成期间影响行为。  
@@ -62,7 +62,8 @@ typedef enum CorSetENC {
   
  **标头：** CorHdr.h  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
-- [Metadata 枚举](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+
+- [元数据枚举](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

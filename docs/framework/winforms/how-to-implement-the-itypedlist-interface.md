@@ -10,12 +10,12 @@ helpviewer_keywords:
 - data binding [Windows Forms], implementing
 - IBindingList interface
 ms.assetid: 834cc15c-50bc-4a8b-a610-313d6a217357
-ms.openlocfilehash: df4b009ca225b4bf4290398ccd7dd252c9189915
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 2463a9c77a9836ff251e799056cc5131bf6c99e0
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57709772"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59084904"
 ---
 # <a name="how-to-implement-the-itypedlist-interface"></a>如何：实现 ITypedList 接口
 实现<xref:System.ComponentModel.ITypedList>接口实现的可绑定列表的架构。  
@@ -38,6 +38,7 @@ ms.locfileid: "57709772"
 -   对 System.Drawing 和 System.Windows.Forms 程序集的引用。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ComponentModel.ITypedList>
 - <xref:System.ComponentModel.BindingList%601>
 - <xref:System.ComponentModel.IBindingList>

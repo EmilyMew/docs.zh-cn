@@ -1,21 +1,24 @@
 ---
 title: 禁用 Visual Studio 中的 DPI 识别功能
-description: 讨论 HDPI 监视器上的 Windows 窗体设计器以及如何运行 Visual Studio 作为不识别 DPI 的进程的限制。
-ms.date: 03/19/2019
+description: 介绍 Windows 窗体设计器的 HDPI 监视器上的限制以及如何以不识别 DPI 的进程运行 Visual Studio。
+ms.date: 04/05/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-designers
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 73f2371c40facf8902958cce020a6f02047615ba
-ms.sourcegitcommit: d938c39afb9216db377d0f0ecdaa53936a851059
+ms.custom: seoapril2019
+ms.openlocfilehash: e52debea382033417afe0bd47f899af1666192bc
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58633863"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59181372"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>禁用 Visual Studio 中的 DPI 识别功能
 
 Visual Studio 是以每英寸点数 (DPI) 识别应用程序，这意味着会自动显示刻度。 如果应用程序指出它没有感知 DPI，操作系统将缩放应用程序作为位图。 此行为也被称为 DPI 虚拟化。 应用程序仍然认为它正以 100%缩放或 96 dpi。
+
+本文介绍 HDPI 监视器上的 Windows 窗体设计器的限制以及如何以不识别 DPI 的进程运行 Visual Studio。
 
 ## <a name="windows-forms-designer-on-hdpi-monitors"></a>HDPI 监视器上的 Windows 窗体设计器
 
@@ -32,11 +35,15 @@ Visual Studio 是以每英寸点数 (DPI) 识别应用程序，这意味着会�
 > [!NOTE]
 > 在 Visual Studio 2017 版本 15.8 引入了此信息栏。
 
-如果您不能在设计器中工作并不需要调整窗体布局，可以忽略信息栏，并在代码编辑器中或在其他类型的设计器中继续工作。 (还可以[禁用通知](#disable-notifications)，以便不会继续显示信息栏。)仅**Windows 窗体设计器**受到影响。 如果需要在中工作**Windows 窗体设计器**下, 一步部分可帮助您[解决该问题](#to-resolve-the-problem)。
+如果您不能在设计器中工作并不需要调整窗体布局，可以忽略信息栏，并在代码编辑器中或在其他类型的设计器中继续工作。 (还可以[禁用通知](#disable-notifications)，以便不会继续显示信息栏。)仅**Windows 窗体设计器**受到影响。 如果需要在中工作**Windows 窗体设计器**下, 一步部分可帮助您[解决该问题](#to-resolve-the-display-problem)。
 
-## <a name="to-resolve-the-problem"></a>若要解决此问题
+## <a name="to-resolve-the-display-problem"></a>若要解决显示问题
 
-有三个选项，若要解决显示问题的原因。
+有三个选项，若要解决显示问题的原因：
+
+1. [不识别 DPI 的过程中重新启动 Visual Studio](#restart-visual-studio-as-a-dpi-unaware-process)
+2. [添加一个注册表项](#add-a-registry-entry)
+3. [将缩放到 100%的设置显示设置](#set-your-display-scaling-setting-to-100)
 
 ### <a name="restart-visual-studio-as-a-dpi-unaware-process"></a>不识别 DPI 的过程中重新启动 Visual Studio
 

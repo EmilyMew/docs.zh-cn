@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
-ms.openlocfilehash: 872283f55ae6f085b2cdf5c64c229b9d459b71f8
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 73e984193f87b20e0e00d8ab92a7c0fd67f7968f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54701269"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59081549"
 ---
 # <a name="message-security-with-a-user-name-client"></a>用户名客户端的消息安全
 下图显示了 Windows Communication Foundation (WCF) 服务和客户端使用消息级安全保护。 服务使用 X.509 证书进行身份验证。 客户端使用用户名和密码进行身份验证。  
@@ -126,6 +126,7 @@ ms.locfileid: "54701269"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [安全性概述](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [用户名消息安全](../../../../docs/framework/wcf/samples/message-security-user-name.md)
 - [服务标识和身份验证](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)

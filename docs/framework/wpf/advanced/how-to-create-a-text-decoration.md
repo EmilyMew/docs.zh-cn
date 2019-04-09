@@ -16,12 +16,12 @@ helpviewer_keywords:
 - typography [WPF], text decorations
 - baseline type [WPF]
 ms.assetid: cf3cb4e7-782a-4be7-b2d4-e0935e21e4e0
-ms.openlocfilehash: 22ff91770786e39e019de307167007548396ab33
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: d586eef8d1308070da38a0a54c63c3ba64d30c8b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58411325"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59133830"
 ---
 # <a name="how-to-create-a-text-decoration"></a>如何：创建文本修饰
 一个<xref:System.Windows.TextDecoration>对象是可以添加到文本的视觉装饰。 有四种类型的文本修饰： 下划线、 基线、 删除线和上划线。 下面的示例显示了文本修饰相对于文本的位置。  
@@ -62,6 +62,7 @@ ms.locfileid: "58411325"
  [!code-xaml[TextDecorationSnippets#TextDecorationSnippets3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets3)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.TextDecoration>
 - <xref:System.Windows.Documents.Hyperlink>
 - [指定是否为超链接添加下划线](how-to-specify-whether-a-hyperlink-is-underlined.md)

@@ -2,12 +2,12 @@
 title: <msmqTransportSecurity>
 ms.date: 03/30/2017
 ms.assetid: 092e911b-ab1b-4069-a26e-6134c3299e06
-ms.openlocfilehash: a5832d0117c6560d527706443d4966ce34bb3748
-ms.sourcegitcommit: 5c1abeec15fbddcc7dbaa729fabc1f1f29f12045
+ms.openlocfilehash: fece74e76f879eff51f154eab8c8edea2c27119e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58018947"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59180123"
 ---
 # <a name="msmqtransportsecurity"></a>\<msmqTransportSecurity>
 指定自定义绑定的 MSMQ 传输的安全设置。  
@@ -55,14 +55,15 @@ ms.locfileid: "58018947"
  传输安全性的详细信息，请参阅[传输安全](../../../../../docs/framework/wcf/feature-details/transport-security.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity>
 - <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - [WCF 中的队列](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
 - [传输](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [选择传输](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [选择传输方式](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
 - [绑定](../../../../../docs/framework/wcf/bindings.md)
 - [扩展绑定](../../../../../docs/framework/wcf/extending/extending-bindings.md)
 - [自定义绑定](../../../../../docs/framework/wcf/extending/custom-bindings.md)
 - [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
-- [传输安全性](../../../../../docs/framework/wcf/feature-details/transport-security.md)
+- [传输安全](../../../../../docs/framework/wcf/feature-details/transport-security.md)

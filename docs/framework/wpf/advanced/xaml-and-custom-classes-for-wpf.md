@@ -6,18 +6,16 @@ helpviewer_keywords:
 - XAML [WPF], custom classes
 - classes [WPF], custom classes in XAML
 ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
-ms.openlocfilehash: a1de1ee80d1f88b0c0a7adfb75b96353b6861d97
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: e71946ec06eb1b4c75f30084dfdb863d8e3b093e
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57371887"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59122351"
 ---
 # <a name="xaml-and-custom-classes-for-wpf"></a>XAML 及 WPF 的自定义类
 [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] 框架中实现的 XAML 支持定义任何 [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] 语言的自定义类或结构，然后使用 XAML 标记访问类。 通常通过将自定义类型映射到 XAML 命名空间前缀，可在同一标记文件中混合使用 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 定义类型和自定义类型。 本主题讨论将自定义类用作 XAML 元素必须满足的要求。  
-  
- 
-  
+
 <a name="Custom_Classes_in_Applications_vs__in_Assemblies"></a>   
 ## <a name="custom-classes-in-applications-or-assemblies"></a>应用程序或程序集中的自定义类  
  XAML 中使用的自定义类可通过两种不同的方式进行定义：在代码隐藏或其他生成主 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 应用程序的代码内，或者在单独程序集中作为类（例如用作类库的可执行文件或 DLL）。 这些方法各有特定的优点和缺点。  
@@ -113,8 +111,9 @@ ms.locfileid: "57371887"
  某些情况下（例如对于控件作者），可能还需要确保任何可在 XAML 中实例化的对象演示文稿也可被序列化到等效的 XAML 标记。 本主题中未介绍序列化要求。 请参阅[控件创作概述](../controls/control-authoring-overview.md)和[元素树和序列化](element-tree-and-serialization.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [XAML 概述 (WPF)](xaml-overview-wpf.md)
-- [自定义依赖属性](custom-dependency-properties.md)
+- [自定义依赖项属性](custom-dependency-properties.md)
 - [控件创作概述](../controls/control-authoring-overview.md)
 - [基元素概述](base-elements-overview.md)
 - [XAML 加载和依赖项属性](xaml-loading-and-dependency-properties.md)

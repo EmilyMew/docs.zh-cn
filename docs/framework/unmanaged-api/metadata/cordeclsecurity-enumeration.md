@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: 47819740207ae94b814b3009708c2fd247688661
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5409d1b89ba3e50c4ae17ed5aa6bf063cf6c93cb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54563998"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59136963"
 ---
 # <a name="cordeclsecurity-enumeration"></a>CorDeclSecurity 枚举
 指定可以使用声明性安全执行的安全操作。  
@@ -87,7 +87,8 @@ typedef enum CorDeclSecurity {
   
  **标头：** CorHdr.h  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
-- [Metadata 枚举](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+
+- [元数据枚举](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

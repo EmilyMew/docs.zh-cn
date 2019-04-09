@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4daa08ce4bbcfe5a7242f19506811e422d0477b7
+ms.sourcegitcommit: 0aca6c5d166d7961a1e354c248495645b97a1dc5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58760724"
+---
 ### <a name="dataannotationsdatatypeattributedisableregex-app-setting-is-on-by-default-in-net-framework-472"></a>.NET Framework 4.7.2 中默认启用 "dataAnnotations:dataTypeAttribute:disableRegEx" 应用设置
 
 |   |   |

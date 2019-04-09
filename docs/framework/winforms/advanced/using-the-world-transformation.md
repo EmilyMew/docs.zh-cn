@@ -8,12 +8,12 @@ helpviewer_keywords:
 - graphics [Windows Forms], world transformation
 - world transformation [Windows Forms], examples
 ms.assetid: 1e717711-1361-448e-aa49-0f3ec43110c9
-ms.openlocfilehash: cc6bcca42e84580199f75c64087af6d98f476d4b
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: f40d7e8cb814344365e8b88c2659751903b79d77
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57715693"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59139953"
 ---
 # <a name="using-the-world-transformation"></a>使用世界变换
 世界转换是一个属性的<xref:System.Drawing.Graphics>类。 指定世界转换的数字存储在<xref:System.Drawing.Drawing2D.Matrix>对象，表示 3 × 3 矩阵。 <xref:System.Drawing.Drawing2D.Matrix>和<xref:System.Drawing.Graphics>类有多种方法来设置世界转换矩阵中的数字。  
@@ -42,6 +42,7 @@ ms.locfileid: "57715693"
  [!code-vb[System.Drawing.MiscLegacyTopics#14](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#14)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Drawing2D.Matrix>
-- [坐标系统和转换](coordinate-systems-and-transformations.md)
-- [在托管 GDI+ 中使用转换](using-transformations-in-managed-gdi.md)
+- [坐标系和坐标转换](coordinate-systems-and-transformations.md)
+- [在托管 GDI+ 中使用变换](using-transformations-in-managed-gdi.md)

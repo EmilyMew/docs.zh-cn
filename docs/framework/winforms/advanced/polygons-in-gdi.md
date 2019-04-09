@@ -9,12 +9,12 @@ helpviewer_keywords:
 - drawing [Windows Forms], polygons
 - GDI+, polygons
 ms.assetid: a72213d2-d69a-4c2b-a75c-be7b20390c13
-ms.openlocfilehash: cffbee5f73b9fe92e2f1f3c7eff2f2336d9123a5
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 2b1e3d387e4d056d9187c54dcef560544206c370
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57710077"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59132621"
 ---
 # <a name="polygons-in-gdi"></a>GDI+ 中的多边形
 多边形是闭合的形状有三个或多个直条边。 例如，一个三角形是利用三边的多边形、 矩形是具有四个边的多边形和一个五边形是有五条边的多边形。 下图显示了几个多边形。  
@@ -32,7 +32,8 @@ ms.locfileid: "57710077"
  ![Polygon](./media/aboutgdip02-art08.gif "Aboutgdip02_art08")  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Graphics?displayProperty=nameWithType>
 - <xref:System.Drawing.Pen?displayProperty=nameWithType>
-- [直线、曲线和形状](lines-curves-and-shapes.md)
+- [直线、曲线和图形](lines-curves-and-shapes.md)
 - [如何：创建钢笔](how-to-create-a-pen.md)

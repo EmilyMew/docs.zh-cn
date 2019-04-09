@@ -1,13 +1,13 @@
 ---
-title: schemeSettings 的 <remove> 元素（Uri 设置）
+title: <remove> SchemeSettings （Uri 设置） 的
 ms.date: 03/30/2017
 ms.assetid: 4095ba51-de20-4f87-b562-018abe422c91
-ms.openlocfilehash: fd137c86d7373947f57364c13eb3875cba46b269
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: f29ee86deaa150324b40f4fac12ead152553e50d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55262620"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59104970"
 ---
 # <a name="remove-element-for-schemesettings-uri-settings"></a>\<删除 > schemeSettings （Uri 设置） 的
 删除方案名称的方案设置。  
@@ -41,7 +41,7 @@ ms.locfileid: "55262620"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[\<schemeSettings> 元素（Uri 设置）](../../../../../docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md)|指定如何分析特定方案的 <xref:System.Uri>。|  
+|[\<schemeSettings > 元素 （Uri 设置）](../../../../../docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md)|指定如何分析特定方案的 <xref:System.Uri>。|  
   
 ## <a name="remarks"></a>备注  
  默认情况下，<xref:System.Uri?displayProperty=nameWithType>类取消转义百分号编码执行路径压缩前的路径分隔符。 此操作实施为针对攻击，如以下一种安全机制：  
@@ -75,6 +75,7 @@ ms.locfileid: "55262620"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - TreeView control [Windows Forms], adding shortcut menus
 - tree nodes in TreeView control [Windows Forms], shortcut menus
 ms.assetid: a23c6752-fd8f-44ad-b781-bab37962fc7c
-ms.openlocfilehash: 537593399db7deb775929cd742a749ce47890db6
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: ba29e86f62c8d56b0d300d1841a70f434087dd84
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57703605"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59100011"
 ---
 # <a name="how-to-attach-a-shortcut-menu-to-a-treeview-node"></a>如何：将快捷菜单附加到 TreeView 节点
 Windows 窗体<xref:System.Windows.Forms.TreeView>控件显示节点，类似于文件和文件夹显示在 Windows 资源管理器的左窗格中的层次结构。 通过设置<xref:System.Windows.Forms.Control.ContextMenuStrip%2A>属性，您可以区分上下文的操作向用户提供他们右键单击时<xref:System.Windows.Forms.TreeView>控件。 通过将相关联<xref:System.Windows.Forms.ContextMenuStrip>组件与单个<xref:System.Windows.Forms.TreeNode>项，可以添加到快捷菜单上功能的自定义的级别应用<xref:System.Windows.Forms.TreeView>控件。  
@@ -37,5 +37,6 @@ Windows 窗体<xref:System.Windows.Forms.TreeView>控件显示节点，类似于
  [!code-vb[System.Windows.Forms.TreeNodeContextMenuStrip#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/system.windows.forms.TreeNodeContextMenuStrip/VB/Form1.vb#1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.ContextMenuStrip>
 - [TreeView 控件](treeview-control-windows-forms.md)

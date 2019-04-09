@@ -8,12 +8,12 @@ helpviewer_keywords:
 - transformations [Windows Forms], for scaling colors
 - colors [Windows Forms], scaling
 ms.assetid: df23c887-7fd6-4b15-ad94-e30b5bd4b849
-ms.openlocfilehash: 9255dd4adba19bfef1332e5e3dfa463ee96f43f0
-ms.sourcegitcommit: 15ab532fd5e1f8073a4b678922d93b68b521bfa0
+ms.openlocfilehash: 9c8f2392137d04f56096120cec64b60c42c47419
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653985"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59107974"
 ---
 # <a name="using-transformations-to-scale-colors"></a>使用转换来调整颜色
 缩放转换将乘以一个或多个数字的四个颜色组件。 下表给出表示缩放颜色矩阵项。  
@@ -64,6 +64,7 @@ ms.locfileid: "58653985"
 |(1, 0, 1, 1)|(0.75, 0, 0.5, 1)|  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Drawing.Imaging.ColorMatrix>
 - <xref:System.Drawing.Imaging.ImageAttributes>
 - [Windows 窗体中的图形和绘制](graphics-and-drawing-in-windows-forms.md)

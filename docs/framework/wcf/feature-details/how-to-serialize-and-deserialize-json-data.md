@@ -1,13 +1,13 @@
 ---
-title: 如何：序列化和反序列化 JSON 数据
+title: 如何：对 JSON 数据进行序列化和反序列化
 ms.date: 03/25/2019
 ms.assetid: 88abc1fb-8196-4ee3-a23b-c6934144d1dd
-ms.openlocfilehash: c5da34b6ab7953dbff62ca757ba08d0c7364b4cf
-ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.openlocfilehash: 6363a8e161969c188c5dd18c425ffd42969e9adc
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58465199"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59106153"
 ---
 # <a name="how-to-serialize-and-deserialize-json-data"></a>如何：序列化和反序列化 JSON 数据
 JSON（JavaScript 对象符号）是一种高效的数据编码格式，可用于在客户端浏览器和支持 AJAX 的 Web 服务之间快速交换少量数据。  
@@ -136,5 +136,6 @@ public class TestDuplicateDataDerived : TestDuplicateDataBase
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [独立 JSON 序列化](stand-alone-json-serialization.md)
 - [支持 JSON 和其他数据传输格式](support-for-json-and-other-data-transfer-formats.md)

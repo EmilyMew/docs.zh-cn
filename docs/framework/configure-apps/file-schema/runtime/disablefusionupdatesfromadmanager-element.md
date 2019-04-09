@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: c2734060c855b59e5ff47ae674862dc57b7ddb5e
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 27c8c1cac68aca1c40826ff549d62d9636d9b0c6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55270761"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59085878"
 ---
 # <a name="disablefusionupdatesfromadmanager-element"></a>\<disableFusionUpdatesFromADManager > 元素
 指定是否禁用允许运行时主机为应用程序域重写配置设置的默认行为。  
@@ -38,7 +38,7 @@ ms.locfileid: "55270761"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|“值”|Description|  
 |-----------|-----------------|  
 |0|不要禁用重写合成设置的功能。 这是默认行为，从开始[!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)]。|  
 |1|禁用重写合成设置的功能。 这将恢复为.NET Framework 的早期版本的行为。|  
@@ -76,6 +76,7 @@ ms.locfileid: "55270761"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [运行时设置架构](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [配置文件架构](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [运行时如何定位程序集](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

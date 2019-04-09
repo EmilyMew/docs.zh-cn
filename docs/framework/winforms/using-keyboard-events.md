@@ -9,12 +9,12 @@ helpviewer_keywords:
 - keyboard events
 - events [Windows Forms], keyboard
 ms.assetid: d3f3e14b-a459-4ee6-9875-8957e34f8ee9
-ms.openlocfilehash: 6afa68295c0119cd77b91185abcf2fb9cb407590
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 9aefe6be17e5d72c86c2c47bf0d373d0a081ca76
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57719333"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59114265"
 ---
 # <a name="using-keyboard-events"></a>使用键盘事件
 大多数 Windows 窗体程序通过处理键盘事件处理键盘输入。 本主题提供对键盘事件的概述，包括有关何时使用每个事件和向每个事件提供的数据的详细信息。  另请参阅[事件处理程序概述 （Windows 窗体）](event-handlers-overview-windows-forms.md)并[事件概述 （Windows 窗体）](events-overview-windows-forms.md)。  
@@ -35,10 +35,11 @@ ms.locfileid: "57719333"
 |键盘事件|描述|结果|  
 |--------------------|-----------------|-------------|  
 |<xref:System.Windows.Forms.Control.KeyDown>|用户按下物理键时，引发此事件。|<xref:System.Windows.Forms.Control.KeyDown> 的处理程序接收：<br /><br /> <ul><li>一个 <xref:System.Windows.Forms.KeyEventArgs> 参数，它提供 <xref:System.Windows.Forms.KeyEventArgs.KeyCode%2A> 属性（该属性指定一个物理键盘按钮）。</li><li><xref:System.Windows.Forms.KeyEventArgs.Modifiers%2A> 属性（SHIFT、CTRL 或 ALT）。</li><li><xref:System.Windows.Forms.KeyEventArgs.KeyData%2A> 属性（它结合了键代码和修饰符）。 <xref:System.Windows.Forms.KeyEventArgs> 参数还提供：<br /><br /> <ul><li><xref:System.Windows.Forms.KeyEventArgs.Handled%2A> 属性，可以设置该属性以防止基础控件接收键。</li><li><xref:System.Windows.Forms.KeyEventArgs.SuppressKeyPress%2A> 属性，可用于取消该击键的 <xref:System.Windows.Forms.Control.KeyPress> 和 <xref:System.Windows.Forms.Control.KeyUp> 事件。</li></ul></li></ul>|  
-|<xref:System.Windows.Forms.Control.KeyPress>|当所按的某个键或多个键生成一个字符时，则引发此事件。 例如，用户按 SHIFT 和小写的“a”键将会生成大写字母“A”字符。|<xref:System.Windows.Forms.Control.KeyPress> 在 <xref:System.Windows.Forms.Control.KeyDown> 后引发。<br /><br /> <ul><li><xref:System.Windows.Forms.Control.KeyPress> 的处理程序接收：</li><li>一个 <xref:System.Windows.Forms.KeyPressEventArgs> 参数，它包含所按的键的字符代码。 此字符代码对每个字符键和修改键组合都是唯一的。<br /><br />     例如，“A”键将生成：<br /><br /> <ul><li>字符代码 65（如果与 SHIFT 键一起按下）</li><li>或 CAPS LOCK 键 97（如果单独按下），</li><li>以及 1（如果与 CTRL 键一起按下）。</li></ul></li></ul>|  
+|<xref:System.Windows.Forms.Control.KeyPress>|当所按的某个键或多个键生成一个字符时，则引发此事件。 例如，用户按 SHIFT 和小写的“a”键将会生成大写字母“A”字符。|<xref:System.Windows.Forms.Control.KeyPress> 后引发<xref:System.Windows.Forms.Control.KeyDown>。<br /><br /> <ul><li><xref:System.Windows.Forms.Control.KeyPress> 的处理程序接收：</li><li>一个 <xref:System.Windows.Forms.KeyPressEventArgs> 参数，它包含所按的键的字符代码。 此字符代码对每个字符键和修改键组合都是唯一的。<br /><br />     例如，“A”键将生成：<br /><br /> <ul><li>字符代码 65（如果与 SHIFT 键一起按下）</li><li>或 CAPS LOCK 键 97（如果单独按下），</li><li>以及 1（如果与 CTRL 键一起按下）。</li></ul></li></ul>|  
 |<xref:System.Windows.Forms.Control.KeyUp>|用户释放物理键时，将引发此事件。|<xref:System.Windows.Forms.Control.KeyUp> 的处理程序接收：<br /><br /> <ul><li>一个 <xref:System.Windows.Forms.KeyEventArgs> 参数：<br /><br /> <ul><li>它提供 <xref:System.Windows.Forms.KeyEventArgs.KeyCode%2A> 属性（该属性指定一个物理键盘按钮）。</li><li><xref:System.Windows.Forms.KeyEventArgs.Modifiers%2A> 属性（SHIFT、CTRL 或 ALT）。</li><li><xref:System.Globalization.SortKey.KeyData%2A> 属性（它结合了键代码和修饰符）。</li></ul></li></ul>|  
   
 ## <a name="see-also"></a>请参阅
+
 - [Windows 窗体应用程序中的键盘输入](keyboard-input-in-a-windows-forms-application.md)
 - [键盘输入工作原理](how-keyboard-input-works.md)
 - [Windows 窗体应用程序中的鼠标输入](mouse-input-in-a-windows-forms-application.md)

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 396b875a-d203-4ebe-a3a1-6a330d962e95
-ms.openlocfilehash: 9adbb4166d713cea0344c9fa58ce85e5afce086d
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3f8e13c6983b6c3a88bc1d9f559f7fac3d6342d9
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54717888"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59110079"
 ---
 # <a name="duplex-services"></a>双工服务
 双工服务协定是一种消息交换模式，其中双方终结点都可独立向对方发送消息。 因此，双工服务可以将消息发送回客户端终结点，从而提供类似事件的行为。 当客户端连接到服务并为服务提供可用来将消息发送回客户端的通道时，就会发生双工通信。 请注意，双工服务的类似事件的行为仅在会话中起作用。  
@@ -40,9 +40,7 @@ ms.locfileid: "54717888"
  服务的配置必须设置为提供同时支持会话通信和双工通信的绑定。 `wsDualHttpBinding` 元素支持会话通信，并通过提供双 HTTP 连接（一个连接对应于一个方向）来允许进行双工通信。  
   
  在客户端，必须配置一个服务器可用来连接客户端的地址，如下面的示例配置所示。  
-  
-  
-  
+
 > [!NOTE]
 >  未能使用安全会话通过身份验证的非双工客户端通常会引发 <xref:System.ServiceModel.Security.MessageSecurityException>。 但是，如果使用安全会话的双工客户端未能通过身份验证，客户端则收到 <xref:System.TimeoutException>。  
   
@@ -90,6 +88,7 @@ binding.ClientBaseAddress = New Uri("http://localhost:8000/DuplexTestUsingCode/C
 >  双工模型不自动检测服务或客户端何时关闭其通道。 因此，如果客户端意外终止，默认情况下将不会通知该服务；或者，如果客户端意外终止，将不会通知该服务。 客户端和服务可以实现自己的协议以相互通知对方（如果它们这么选择）。  
   
 ## <a name="see-also"></a>请参阅
+
 - [双工](../../../../docs/framework/wcf/samples/duplex.md)
 - [指定客户端运行时行为](../../../../docs/framework/wcf/specifying-client-run-time-behavior.md)
 - [如何：创建通道工厂并用它创建和管理通道](../../../../docs/framework/wcf/feature-details/how-to-create-a-channel-factory-and-use-it-to-create-and-manage-channels.md)

@@ -2,12 +2,12 @@
 title: SELECT (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 9a33bd0d-ded1-41e7-ba3c-305502755e3b
-ms.openlocfilehash: b7e339764e5baee93ccac64cb41d7fba43438476
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: f5bc3b795eb20551abda2104c2f399c8da10a962
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54660354"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59136013"
 ---
 # <a name="select-entity-sql"></a>SELECT (Entity SQL)
 指定查询所返回的元素。  
@@ -39,7 +39,7 @@ SELECT VALUE [ ALL | DISTINCT ] [ topSubclause ] expr FROM fromClause [ WHERE wh
  `aliasedExpr`  
  形式如下的表达式：  
   
- `expr` 作为`identifier`&#124; `expr`  
+ `expr` as `identifier` &#124; `expr`  
   
  `expr`  
  文本或表达式。  
@@ -62,7 +62,7 @@ SELECT customers.Name FROM customers AS c
  也可以使用 JOIN 语法（FULL、INNER、LEFT、OUTER、ON 和 RIGHT）。 ON 是内部联接的必需语法，但不允许用于交叉联接。  
   
 ## <a name="row-and-value-select-clauses"></a>行和值选择子句  
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 支持 SELECT 子句的两种变体。 第一种变体是行选择，由 SELECT 关键字标识，可以用于指定应提取出的一个或多个值。由于返回值的两侧会隐式添加行包装，因此查询表达式的结果始终为行的多集。  
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 支持 SELECT 子句的两个变体。 第一种变体是行选择，由 SELECT 关键字标识，可以用于指定应提取出的一个或多个值。由于返回值的两侧会隐式添加行包装，因此查询表达式的结果始终为行的多集。  
   
  行选择中的每个查询表达式都必须指定一个别名。 如果不指定别名，[!INCLUDE[esql](../../../../../../includes/esql-md.md)] 会尝试使用别名生成规则生成别名。  
   
@@ -101,6 +101,7 @@ SELECT a1, a2 FROM T1 AS a1, T2 AS a2
  [!code-csharp[DP EntityServices Concepts 2#LESS](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#less)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [查询表达式](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)
 - [实体 SQL 引用](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
 - [TOP](../../../../../../docs/framework/data/adonet/ef/language-reference/top-entity-sql.md)

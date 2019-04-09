@@ -11,12 +11,12 @@ helpviewer_keywords:
 - user input [Windows Forms], controlling
 - text [Windows Forms], controls for input
 ms.assetid: df60565e-5447-4110-92a6-be1f6ff5faa3
-ms.openlocfilehash: 9633f2f871d08b70d6286f510a9ba5cac78ae529
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: ca505b062be8c60c1dd9b08fead4855eb1eb4cd6
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57703070"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59103839"
 ---
 # <a name="walkthrough-working-with-the-maskedtextbox-control"></a>演练：使用 MaskedTextBox 控件
 本演练涉及以下任务：  
@@ -125,5 +125,6 @@ ms.locfileid: "57703070"
     ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Forms.MaskedTextBox>
 - [MaskedTextBox 控件](maskedtextbox-control-windows-forms.md)

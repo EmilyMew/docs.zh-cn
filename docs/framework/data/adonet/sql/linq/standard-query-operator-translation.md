@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a60c30fa-1e68-45fe-b984-f6abb9ede40e
-ms.openlocfilehash: 0b962df58092dc0d410bff4559180a5d77580545
-ms.sourcegitcommit: d2ccb199ae6bc5787b4762e9ea6d3f6fe88677af
+ms.openlocfilehash: 48c95411d08aefc3ecb7d8a7041ac47d44e6b9ae
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56093926"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59127941"
 ---
 # <a name="standard-query-operator-translation"></a>标准查询运算符转换
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 将标准查询运算符转换为 SQL 命令。 数据库的查询处理器决定了 SQL 转换的执行语义。  
@@ -24,7 +24,7 @@ ms.locfileid: "56093926"
 ## <a name="operator-support"></a>运算符支持  
   
 ### <a name="concat"></a>Concat  
- <xref:System.Linq.Enumerable.Concat%2A> 方法是为有序多重集定义的，其中接收方的顺序与参数的顺序相同。 <xref:System.Linq.Enumerable.Concat%2A> 的作用等效于对多重集执行 `UNION ALL`，紧接着再执行常见排序。  
+ <xref:System.Linq.Enumerable.Concat%2A> 方法是为有序多重集定义的，其中接收方的顺序与自变量的顺序相同。 <xref:System.Linq.Enumerable.Concat%2A> 充当`UNION ALL`紧接着再执行常见排序。  
   
  在产生结果前，最后一步是在 SQL 中排序。 <xref:System.Linq.Enumerable.Concat%2A> 不保留其参数的顺序。 为确保顺序合适，您必须显式对 <xref:System.Linq.Enumerable.Concat%2A> 的结果进行排序。  
   
@@ -37,7 +37,7 @@ ms.locfileid: "56093926"
  <xref:System.Linq.Enumerable.Take%2A> 并<xref:System.Linq.Enumerable.Skip%2A>方法是仅针对定义完善*有序集*。 未定义针对无序集或多重集的语义。  
   
 > [!NOTE]
->  <xref:System.Linq.Enumerable.Take%2A> 和 <xref:System.Linq.Enumerable.Skip%2A> 用在针对 SQL Server 2000 的查询中时存在一定的限制。 有关详细信息，请参阅中的"Skip 和 Take 异常在 SQL Server 2000"条目[故障排除](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)。  
+>  <xref:System.Linq.Enumerable.Take%2A> 和<xref:System.Linq.Enumerable.Skip%2A>中针对 SQL Server 2000 的查询中使用时存在一定的限制。 有关详细信息，请参阅中的"Skip 和 Take 异常在 SQL Server 2000"条目[故障排除](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)。  
   
  由于 SQL 中的排序存在限制，因此 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 会设法将这些方法的参数的排序操作移到相应方法的结果中进行。 例如，请考虑下面这个 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 查询：  
   
@@ -71,16 +71,16 @@ ORDER BY [t0].[CustomerID]
   
 |运算符|阐释|  
 |---------------|---------------|  
-|<xref:System.Linq.Enumerable.TakeWhile%2A>， <xref:System.Linq.Enumerable.SkipWhile%2A>|SQL 查询是对多重集执行的，而不是对序列执行的。 `ORDER BY` 必须是最后一个应用于结果的子句。 因此，不存在适用于这两个方法的通用转换。|  
+|<xref:System.Linq.Enumerable.TakeWhile%2A>, <xref:System.Linq.Enumerable.SkipWhile%2A>|SQL 查询是对多重集执行的，而不是对序列执行的。 `ORDER BY` 必须是最后一个子句应用于结果。 因此，不存在适用于这两个方法的通用转换。|  
 |<xref:System.Linq.Enumerable.Reverse%2A>|此方法的转换对于有序集而言是可行的，但目前 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 未对它进行转换。|  
-|<xref:System.Linq.Enumerable.Last%2A>， <xref:System.Linq.Enumerable.LastOrDefault%2A>|这些方法的转换对于有序集而言是可行的，但目前 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 未对它们进行转换。|  
-|<xref:System.Linq.Enumerable.ElementAt%2A>， <xref:System.Linq.Enumerable.ElementAtOrDefault%2A>|SQL 查询是对多重集执行的，而不是对可建立索引的序列执行的。|  
-|<xref:System.Linq.Enumerable.DefaultIfEmpty%2A>（带默认参数的重载）|一般而言，无法为任意元组指定默认值。 在某些情况下，可以通过外部联接为元组指定 Null 值。|  
+|<xref:System.Linq.Enumerable.Last%2A>, <xref:System.Linq.Enumerable.LastOrDefault%2A>|这些方法的转换对于有序集而言是可行的，但目前 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 未对它们进行转换。|  
+|<xref:System.Linq.Enumerable.ElementAt%2A>, <xref:System.Linq.Enumerable.ElementAtOrDefault%2A>|SQL 查询是对多重集执行的，而不是对可建立索引的序列执行的。|  
+|<xref:System.Linq.Enumerable.DefaultIfEmpty%2A> （带默认参数重载）|一般而言，无法为任意元组指定默认值。 在某些情况下，可以通过外部联接为元组指定 Null 值。|  
   
 ## <a name="expression-translation"></a>表达式转换  
   
 ### <a name="null-semantics"></a>Null 语义  
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 不会将 null 比较语义施加在 SQL 上。 比较运算符在语法上被转换为其 SQL 等效项。 因此，该语义反映了由服务器或连接设置定义的 SQL 语义。 例如，两个 null 值被视为默认 SQL Server 设置下不相等，但可以更改这些设置以更改语义。 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 在转换查询时不考虑服务器设置。  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 不会施加在 SQL 上的 null 比较语义。 比较运算符在语法上被转换为其 SQL 等效项。 因此，该语义反映了由服务器或连接设置定义的 SQL 语义。 例如，两个 null 值被视为默认 SQL Server 设置下不相等，但可以更改这些设置以更改语义。 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 转换查询时不考虑服务器设置。  
   
  对文本型 null 的比较被转换为相应的 SQL 版本（`is null` 或 `is not null`）。  
   
@@ -94,12 +94,12 @@ ORDER BY [t0].[CustomerID]
  同样，使用经 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 转换后的 <xref:System.Linq.Enumerable.Average%2A> 计算整数值时，所得结果的数据类型为 `integer`，而非 `double`。  
   
 ### <a name="entity-arguments"></a>实体自变量  
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 允许在 <xref:System.Linq.Enumerable.GroupBy%2A> 和 <xref:System.Linq.Enumerable.OrderBy%2A> 方法中使用实体类型。 在这些运算符的转换过程中，使用一种类型的自变量被视为等效于指定该类型的所有成员。 例如，下面的代码是等效的：  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 启用要在中使用的实体类型<xref:System.Linq.Enumerable.GroupBy%2A>和<xref:System.Linq.Enumerable.OrderBy%2A>方法。 在这些运算符的转换过程中，使用一种类型的自变量被视为等效于指定该类型的所有成员。 例如，下面的代码是等效的：  
   
  [!code-csharp[DLinqSQOTranslation#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSQOTranslation/cs/Program.cs#2)]
  [!code-vb[DLinqSQOTranslation#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSQOTranslation/vb/Module1.vb#2)]  
   
-### <a name="equatable--comparable-arguments"></a>可相等/可比较参数  
+### <a name="equatable--comparable-arguments"></a>可相等/可比较自变量  
  在以下方法的实现中，要求自变量相等：  
   
  <xref:System.Linq.Enumerable.Contains%2A>  
@@ -119,7 +119,7 @@ ORDER BY [t0].[CustomerID]
  [!code-csharp[DLinqSQOTranslation#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSQOTranslation/cs/Program.cs#3)]
  [!code-vb[DLinqSQOTranslation#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSQOTranslation/vb/Module1.vb#3)]  
   
- 以下是非平（分层）参数的一些示例。  
+ 以下是非平（分层）自变量的一些示例。  
   
  [!code-csharp[DLinqSQOTranslation#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSQOTranslation/cs/Program.cs#4)]
  [!code-vb[DLinqSQOTranslation#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSQOTranslation/vb/Module1.vb#4)]  
@@ -185,9 +185,9 @@ ORDER BY [t0].[CustomerID]
  以下 [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] 局限性（与 [!INCLUDE[sqprsqext](../../../../../../includes/sqprsqext-md.md)] 相比）会影响 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 支持。  
   
 ### <a name="cross-apply-and-outer-apply-operators"></a>Cross Apply 和 Outer Apply 运算符  
- 这些运算符在 [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] 中不可用。 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 设法通过一系列的重写来将它们替换为适当的联接。  
+ 这些运算符在 [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] 中不可用。 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 设法通过一系列的重写来将它们替换成适当的联接。  
   
- `Cross Apply` 和 `Outer Apply` 是为关系导航生成的。 可以进行这种重写的查询集定义不完善。 因此，[!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] 支持的最小查询集是不涉及关系导航的集合。  
+ `Cross Apply` 和`Outer Apply`为关系导航生成。 可以进行这种重写的查询集定义不完善。 因此，[!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] 支持的最小查询集是不涉及关系导航的集合。  
   
 ### <a name="text--ntext"></a>text / ntext  
  数据类型`text`  /  `ntext`不能针对某些查询操作中使用`varchar(max)`  /  `nvarchar(max)`，支持哪些[!INCLUDE[sqprsqext](../../../../../../includes/sqprsqext-md.md)]。  
@@ -195,10 +195,10 @@ ORDER BY [t0].[CustomerID]
  不存在解决此限制的方法。 具体而言，您不能对包含映射到 `Distinct()` 或 `text` 列的成员的任何结果使用 `ntext`。  
   
 ### <a name="behavior-triggered-by-nested-queries"></a>由嵌套查询触发的行为  
- [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)]（一直到 SP4）联编程序具有由嵌套查询触发的一些特性。 触发这些特性的 SQL 查询集定义不完善。 因此，您不能定义可能会引发 SQL Server 异常的 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 查询集。  
+ [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] （一直到 SP4) 联编程序具有由嵌套查询触发的一些特性。 触发这些特性的 SQL 查询集定义不完善。 因此，您不能定义可能会引发 SQL Server 异常的 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 查询集。  
   
 ### <a name="skip-and-take-operators"></a>Skip 和 Take 运算符  
- <xref:System.Linq.Enumerable.Take%2A> 和 <xref:System.Linq.Enumerable.Skip%2A> 用在针对 [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] 的查询中时存在一定的限制。 有关详细信息，请参阅中的"Skip 和 Take 异常在 SQL Server 2000"条目[故障排除](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)。  
+ <xref:System.Linq.Enumerable.Take%2A> 并<xref:System.Linq.Enumerable.Skip%2A>针对查询中使用时存在一定的限制[!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)]。 有关详细信息，请参阅中的"Skip 和 Take 异常在 SQL Server 2000"条目[故障排除](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)。  
   
 ## <a name="object-materialization"></a>对象具体化  
  具体化过程用一个或多个 SQL 查询返回的行创建 CLR 对象。  
@@ -207,7 +207,7 @@ ORDER BY [t0].[CustomerID]
   
     -   构造函数  
   
-    -   投影中的 `ToString` 方法  
+    -   `ToString` 投影中的方法  
   
     -   投影中的类型强制转换  
   
@@ -226,7 +226,8 @@ ORDER BY [t0].[CustomerID]
     -   <xref:System.Linq.Enumerable.ToArray%2A>  
   
 ## <a name="see-also"></a>请参阅
-- [引用](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+
+- [参考](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
 - [返回或跳过序列中的元素](../../../../../../docs/framework/data/adonet/sql/linq/return-or-skip-elements-in-a-sequence.md)
 - [连接两个序列](../../../../../../docs/framework/data/adonet/sql/linq/concatenate-two-sequences.md)
 - [返回两个序列之间的差集](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-difference-between-two-sequences.md)

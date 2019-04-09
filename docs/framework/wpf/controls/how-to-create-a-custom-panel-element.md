@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Panel control [WPF]
 - custom Panel elements [WPF]
 ms.assetid: e0df4f1e-8c07-4e86-89a3-e22acfffdc2a
-ms.openlocfilehash: 2e778adfb79a64c8f248992aee92de9471906129
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: d4fc9d76ada9f27bd52619280b323691af9382c2
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57368696"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59139563"
 ---
 # <a name="how-to-create-a-custom-panel-element"></a>如何：创建自定义 Panel 元素
 ## <a name="example"></a>示例  
@@ -29,6 +29,7 @@ ms.locfileid: "57368696"
  [!code-vb[PlotPanel#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PlotPanel/VisualBasic/PlotPanel.vb#1)]  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.Panel>
 - [面板概述](panels-overview.md)
 - [创建自定义内容换行面板示例](https://go.microsoft.com/fwlink/?LinkID=159979)

@@ -2,12 +2,12 @@
 title: <webHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 84179d77-825d-44b9-895a-ab08e7aa044d
-ms.openlocfilehash: f5955c20326cb9eaac77faae0b0d338660975a31
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 71b8255b9feda9854b0257528dcad85f6cf08d6b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57354864"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59086021"
 ---
 # <a name="webhttpbinding"></a>\<webHttpBinding>
 定义用于配置的 Windows Communication Foundation (WCF) Web 服务的响应而不是 SOAP 消息的 HTTP 请求的终结点的绑定元素。  
@@ -77,7 +77,7 @@ ms.locfileid: "57354864"
 |元素|描述|  
 |-------------|-----------------|  
 |[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|定义可由采用此绑定配置的终结点进行处理的 POX 消息的复杂性约束。 此元素的类型为 <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>。|  
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-webhttpbinding.md)|定义绑定的安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.WebHttpSecurityElement>。|  
+|[\<安全 >](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-webhttpbinding.md)|定义绑定的安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.WebHttpSecurityElement>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -91,6 +91,7 @@ ms.locfileid: "57354864"
  支持在 WCF 中联合和 ASP。AJAX 集成都构建于 Web 编程模型之上。 有关模型的详细信息，请参阅[WCF Web HTTP 编程模型](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.ServiceModel.WebHttpBinding>
 - <xref:System.ServiceModel.Configuration.WebHttpBindingElement>
 - [WCF Web HTTP 编程模型](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

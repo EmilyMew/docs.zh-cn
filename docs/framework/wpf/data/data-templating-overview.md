@@ -10,12 +10,12 @@ helpviewer_keywords:
 - templates [WPF], data
 - data templates [WPF]
 ms.assetid: 0f4d9f8c-0230-4013-bd7b-e8e7fed01b4a
-ms.openlocfilehash: 9287656349f2a10619bfe76a36ee7855d3861cba
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 98fff9ba84f386e93549fa94fe84f7b2b0fff5fd
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57376099"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59097546"
 ---
 # <a name="data-templating-overview"></a>数据模板化概述
 WPF 数据模板化模型为定义数据的表示提供了很大的灵活性。 WPF 控件具有支持自定义数据表示的内置功能。 本主题首先演示如何定义<xref:System.Windows.DataTemplate>，然后介绍其他数据模板化功能，例如选择了模板基于自定义逻辑和显示分层数据的支持。  
@@ -41,7 +41,7 @@ WPF 数据模板化模型为定义数据的表示提供了很大的灵活性。 
 ### <a name="without-a-datatemplate"></a>不提供 DataTemplate  
  无需<xref:System.Windows.DataTemplate>中，我们<xref:System.Windows.Controls.ListBox>当前如下所示：  
   
- ![数据模板化示例屏幕快照](./media/datatemplatingintro-fig1.png "DataTemplatingIntro_fig1")  
+ ![数据模板化示例屏幕截图](./media/datatemplatingintro-fig1.png "DataTemplatingIntro_fig1")  
   
  发生了什么情况是，如果没有任何特殊说明<xref:System.Windows.Controls.ListBox>默认调用`ToString`时尝试显示集合中的对象。 因此，如果`Task`对象重写`ToString`方法，则<xref:System.Windows.Controls.ListBox>显示基础集合中的每个源对象的字符串表示形式。  
   
@@ -52,7 +52,7 @@ WPF 数据模板化模型为定义数据的表示提供了很大的灵活性。 
   
  然后<xref:System.Windows.Controls.ListBox>如下所示：  
   
- ![数据模板化示例屏幕快照](./media/datatemplatingintro-fig2.png "DataTemplatingIntro_fig2")  
+ ![数据模板化示例屏幕截图](./media/datatemplatingintro-fig2.png "DataTemplatingIntro_fig2")  
   
  但是，这会受到限制且不灵活。 此外，如果要绑定到 [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] 数据，将不能重写 `ToString`。  
   
@@ -66,7 +66,7 @@ WPF 数据模板化模型为定义数据的表示提供了很大的灵活性。 
   
  现在我们<xref:System.Windows.Controls.ListBox>如下所示：  
   
- ![数据模板化示例屏幕快照](./media/datatemplatingintro-fig3.png "DataTemplatingIntro_fig3")  
+ ![数据模板化示例屏幕截图](./media/datatemplatingintro-fig3.png "DataTemplatingIntro_fig3")  
   
 <a name="defining_datatemplate_as_a_resource"></a>   
 ### <a name="creating-the-datatemplate-as-a-resource"></a>将 DataTemplate 创建为资源  
@@ -103,7 +103,7 @@ WPF 数据模板化模型为定义数据的表示提供了很大的灵活性。 
   
  以下屏幕截图显示<xref:System.Windows.Controls.ListBox>与此修改<xref:System.Windows.DataTemplate>:  
   
- ![数据模板化示例屏幕快照](./media/datatemplatingintro-fig4.png "DataTemplatingIntro_fig4")  
+ ![数据模板化示例屏幕截图](./media/datatemplatingintro-fig4.png "DataTemplatingIntro_fig4")  
   
  我们可以设置<xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A>到<xref:System.Windows.HorizontalAlignment.Stretch>上<xref:System.Windows.Controls.ListBox>以确保项的宽度占据整个空间：  
   
@@ -111,7 +111,7 @@ WPF 数据模板化模型为定义数据的表示提供了很大的灵活性。 
   
  与<xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A>属性设置为<xref:System.Windows.HorizontalAlignment.Stretch>，则<xref:System.Windows.Controls.ListBox>现在如下所示：  
   
- ![数据模板化示例屏幕快照](./media/datatemplatingintro-fig5.png "DataTemplatingIntro_fig5")  
+ ![数据模板化示例屏幕截图](./media/datatemplatingintro-fig5.png "DataTemplatingIntro_fig5")  
   
 <a name="DataTrigger_to_Apply_Property_Values"></a>   
 ### <a name="use-datatriggers-to-apply-property-values"></a>使用 DataTriggers 应用属性值  
@@ -125,7 +125,7 @@ WPF 数据模板化模型为定义数据的表示提供了很大的灵活性。 
   
  应用程序现在如下所示。 家庭任务的边界显示为黄色，办公室任务的边界显示为浅绿色：  
   
- ![数据模板化示例屏幕快照](./media/datatemplatingintro-fig6.png "DataTemplatingIntro_fig6")  
+ ![数据模板化示例屏幕截图](./media/datatemplatingintro-fig6.png "DataTemplatingIntro_fig6")  
   
  在此示例中<xref:System.Windows.DataTrigger>使用<xref:System.Windows.Setter>设置属性值。 触发器类还具有<xref:System.Windows.TriggerBase.EnterActions%2A>和<xref:System.Windows.TriggerBase.ExitActions%2A>，你可以启动一系列操作，例如动画的属性。 此外，还有<xref:System.Windows.MultiDataTrigger>类，该类允许您将更改应用根据多个数据绑定属性值。  
   
@@ -165,7 +165,7 @@ WPF 数据模板化模型为定义数据的表示提供了很大的灵活性。 
   
  使用模板选择器后，<xref:System.Windows.Controls.ListBox>现在显示，如下所示：  
   
- ![数据模板化示例屏幕快照](./media/datatemplatingintro-fig7.png "DataTemplatingIntro_fig7")  
+ ![数据模板化示例屏幕截图](./media/datatemplatingintro-fig7.png "DataTemplatingIntro_fig7")  
 
 这正是此示例要得到的结果。 有关完整示例，请参阅[数据模板化示例简介](https://github.com/Microsoft/WPF-Samples/tree/master/Data%20Binding/DataTemplatingIntro)。
 
@@ -191,9 +191,10 @@ WPF 数据模板化模型为定义数据的表示提供了很大的灵活性。 
   
  该示例表明，与使用<xref:System.Windows.HierarchicalDataTemplate>，可以轻松地显示包含其他列表的列表数据。 下面是该示例的一个屏幕快照。  
   
- ![HierarchicalDataTemplate 示例屏幕快照](./media/databinding-hierarchicaldatatemplate.png "DataBinding_HierarchicalDataTemplate")  
+ ![HierarchicalDataTemplate 示例屏幕截图](./media/databinding-hierarchicaldatatemplate.png "DataBinding_HierarchicalDataTemplate")  
   
 ## <a name="see-also"></a>请参阅
+
 - [数据绑定](../advanced/optimizing-performance-data-binding.md)
 - [查找由 DataTemplate 生成的元素](how-to-find-datatemplate-generated-elements.md)
 - [样式设置和模板化](../controls/styling-and-templating.md)

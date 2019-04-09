@@ -1,5 +1,5 @@
 ---
-title: 如何：在窗体级别处理键盘输入
+title: 如何：在窗体一级处理键盘输入
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - Windows Forms, handling keyboard input
 - keyboards [Windows Forms], form-level input
 ms.assetid: d7f8b390-dc91-42d2-ae0f-2ffa388127ad
-ms.openlocfilehash: 1b458287e5becf7f8da7cab676efdb2af1ab92b5
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: fbb6587dde53592a94887c1ea19562e06c15afe3
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57712404"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59135156"
 ---
-# <a name="how-to-handle-keyboard-input-at-the-form-level"></a>如何：在窗体级别处理键盘输入
+# <a name="how-to-handle-keyboard-input-at-the-form-level"></a>如何：在窗体一级处理键盘输入
 Windows 窗体能够在消息到达控件之前处理窗体级别的键盘消息。 本主题演示如何完成此任务。  
   
 ### <a name="to-handle-a-keyboard-message-at-the-form-level"></a>处理窗体级别的键盘消息  
@@ -43,4 +43,5 @@ Windows 窗体能够在消息到达控件之前处理窗体级别的键盘消息
  Visual Basic 或 Visual C# 生成命令行中的此示例的信息，请参阅[从命令行生成](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)或[命令行上使用 csc.exe](../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)。 也可以通过将代码粘贴到新的项目中生成此示例在 Visual Studio 中。  
 
 ## <a name="see-also"></a>请参阅
+
 - [Windows 窗体应用程序中的键盘输入](keyboard-input-in-a-windows-forms-application.md)

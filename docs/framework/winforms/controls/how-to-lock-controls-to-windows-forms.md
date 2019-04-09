@@ -1,18 +1,18 @@
 ---
-title: 如何：向 Windows 窗体的锁定控件
+title: 如何：将控件锁定到 Windows 窗体
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Forms controls, locking
 - controls [Windows Forms], locking
 ms.assetid: 94efe0d2-c14e-4d14-b903-63ea9b07e290
-ms.openlocfilehash: cff3b0a3ba547c15e7b1c896bde49931a6a3c742
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
-ms.translationtype: MT
+ms.openlocfilehash: ac02e825218f14f8479e67a79da0c86e1c9ffe11
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57702641"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59117918"
 ---
-# <a name="how-to-lock-controls-to-windows-forms"></a>如何：向 Windows 窗体的锁定控件
+# <a name="how-to-lock-controls-to-windows-forms"></a>如何：将控件锁定到 Windows 窗体
 设计 Windows 应用程序用户界面 (UI)，便可锁定控件后它们正确定位，以便不会无意中执行移动或调整其大小设置其他属性时。  
   
  此外，可以锁定和解锁所有窗体控件，这适用于许多控件与窗体，也可以解锁各个控件。 一旦已放置的所有控件在窗体上所需的位置，其所有进行锁定以防止错误的移动。  
@@ -47,8 +47,9 @@ ms.locfileid: "57702641"
 1.  在中**属性**窗口中，单击**锁定**属性，然后选择`false`。 （双击名称切换属性设置。）  
   
 ## <a name="see-also"></a>请参阅
+
 - [Windows 窗体控件](index.md)
-- [在 Windows 窗体上排列控件](arranging-controls-on-windows-forms.md)
-- [标记各个 Windows 窗体控件并创建它们的快捷键](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
+- [排列 Windows 窗体上的控件](arranging-controls-on-windows-forms.md)
+- [标记单个 Windows 窗体控件并提供它们的快捷方式](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
 - [在 Windows 窗体上使用的控件](controls-to-use-on-windows-forms.md)
-- [按功能列出的 Windows 窗体控件](windows-forms-controls-by-function.md)
+- [根据功能列出的 Windows 窗体控件](windows-forms-controls-by-function.md)

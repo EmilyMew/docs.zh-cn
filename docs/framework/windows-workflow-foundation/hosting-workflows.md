@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], hosting workflows
 ms.assetid: a99a5990-b53b-419b-9538-b1c3d1ba5db3
-ms.openlocfilehash: dc7c94bc3031a2c4c0330bd36a6b7e493ad8ce5d
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
+ms.openlocfilehash: 3b3b7b94c94096d916efb9399c82ad6ddf8b8b1b
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57709073"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59137743"
 ---
 # <a name="hosting-workflows"></a>承载工作流
 本节中的主题介绍承载工作流。  
@@ -24,13 +24,14 @@ ms.locfileid: "57709073"
  [活动树检查](activity-tree-inspection.md)  
  介绍工作流宿主作者如何使用 <xref:System.Activities.WorkflowInspectionServices> 检查工作流。  
   
- [将工作流和活动序列化到 XAML 和从中序列化工作流和活动](serializing-workflows-and-activities-to-and-from-xaml.md)  
+ [将工作流和活动序列化为 XAML 和从 XAML 序列化工作流和活动](serializing-workflows-and-activities-to-and-from-xaml.md)  
  描述如何将工作流序列化为 XAML，并使用已序列化的工作流定义。  
   
  [使用 WorkflowIdentity 和版本控制](using-workflowidentity-and-versioning.md)  
  介绍如何使用 `WorkflowIdentity` 并行承载工作流的多个版本。  
   
 ## <a name="see-also"></a>请参阅
+
 - [Windows Workflow Foundation 编程](programming.md)
 - [设计工作流](designing-workflows.md)
 - [Windows Workflow Foundation 数据模型](data-model.md)

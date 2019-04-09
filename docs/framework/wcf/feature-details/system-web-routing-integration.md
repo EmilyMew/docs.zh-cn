@@ -2,12 +2,12 @@
 title: System.Web.Routing 集成
 ms.date: 03/30/2017
 ms.assetid: 31fe2a4f-5c47-4e5d-8ee1-84c524609d41
-ms.openlocfilehash: 0ace776b8be64f42c05918bc234d39cd96bf8782
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 3d5c3d7586189e0939fd52bc2b5feac51ae00613
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54688174"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59097507"
 ---
 # <a name="systemwebrouting-integration"></a>System.Web.Routing 集成
 承载 Windows Communication Foundation (WCF) 服务在 Internet 信息服务 (IIS) 时你将一个.svc 文件放在虚拟目录中。 此 .svc 文件指定所用的服务主机工厂以及实现服务的类。 向服务发出请求时您的.svc 文件中指定 URI，例如： `http://contoso.com/EmployeeServce.svc`。 对于编写 REST 服务的程序员，此类型的 URI 并非最佳选择。 REST 服务的 URI 指定了特定资源，通常没有任何扩展。 <xref:System.Web.Routing>集成功能可用于承载响应无扩展的 Uri 的 WCF REST 服务。 详细了解路由，请参见[ASP.NET 路由](https://go.microsoft.com/fwlink/?LinkId=184660)。  
@@ -70,5 +70,6 @@ ms.locfileid: "54688174"
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [WCF Web HTTP 编程模型](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
 - [ASP.NET 路由](https://go.microsoft.com/fwlink/?LinkId=184660)

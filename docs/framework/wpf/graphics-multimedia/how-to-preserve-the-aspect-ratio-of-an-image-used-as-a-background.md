@@ -1,19 +1,19 @@
 ---
-title: 如何：保持背景图像的长宽比
+title: 如何：保持背景图像的纵横比
 ms.date: 03/30/2017
 helpviewer_keywords:
 - aspect ratios of background images [WPF], preserving
 - brushes [WPF], preserving aspect ratios of background images
 - background images [WPF], preserving aspect ratios
 ms.assetid: 28c39478-13d7-4011-80a3-8b9cc3e54478
-ms.openlocfilehash: df5632aa3d3c7dbc2442cabe1f4db7a850a1bd54
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 4ae6f1242548038bcd54b7218783e5063fa67872
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57353941"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59083240"
 ---
-# <a name="how-to-preserve-the-aspect-ratio-of-an-image-used-as-a-background"></a>如何：保持背景图像的长宽比
+# <a name="how-to-preserve-the-aspect-ratio-of-an-image-used-as-a-background"></a>如何：保持背景图像的纵横比
 此示例演示如何使用<xref:System.Windows.Media.TileBrush.Stretch%2A>属性的<xref:System.Windows.Media.ImageBrush>为了保持图像的纵横比。  
   
  默认情况下，当您使用<xref:System.Windows.Media.ImageBrush>绘制区域，其内容将进行拉伸以完全填充输出区域。 当输出区域和图像的纵横比不同时，图像就会因拉伸而失真。  
@@ -40,5 +40,6 @@ ms.locfileid: "57353941"
  此代码示例是为提供一个更大示例的一部分<xref:System.Windows.Media.ImageBrush>类。 有关完整示例，请参阅[ImageBrush 示例](https://go.microsoft.com/fwlink/?LinkID=160005)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Media.TileBrush>
-- [使用图像、绘图和视觉对象进行绘制](painting-with-images-drawings-and-visuals.md)
+- [使用图像、图形和视觉对象进行绘制](painting-with-images-drawings-and-visuals.md)

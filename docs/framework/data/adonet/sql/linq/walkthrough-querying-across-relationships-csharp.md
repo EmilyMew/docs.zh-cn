@@ -2,12 +2,12 @@
 title: 演练：跨关系查询 (C#)
 ms.date: 03/30/2017
 ms.assetid: 552abeb1-18f2-4e93-a9c6-ef7b2db30c32
-ms.openlocfilehash: a24d96c9d138f0dcd2f162dad474da01f49e45d2
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 52623b79492908a6c387715fef002d4b8927169c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54563660"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59184881"
 ---
 # <a name="walkthrough-querying-across-relationships-c"></a>演练：跨关系查询 (C#)
 本演练演示如何使用[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]*关联*来表示数据库中的外键关系。  
@@ -58,7 +58,7 @@ ms.locfileid: "54563660"
 2.  按 F5 调试应用程序。  
   
     > [!NOTE]
-    >  您可以通过注释掉 `db.Log = Console.Out;` 来消除控制台窗口中的 SQL 代码。  
+    >  你可以通过注释掉 `db.Log = Console.Out;` 来消除控制台窗口中的 SQL 代码。  
   
 3.  在控制台窗口中按 Enter，以停止调试。  
   
@@ -89,4 +89,5 @@ ms.locfileid: "54563660"
  下一个演练 ([演练：操作数据 (C#)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp.md)) 演示如何操作数据。 该演练不要求您保存本系列中已经完成的两个演练的结果。  
   
 ## <a name="see-also"></a>请参阅
+
 - [通过演练学习](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - x:Array [XAML Services]
 - XAML [XAML Services], x:Array markup extension
 ms.assetid: c5358e14-d24c-44c7-b5eb-6062a4fd981c
-ms.openlocfilehash: 4d528039245e2720f78e8817e1752d88ca94e6e0
-ms.sourcegitcommit: 5c1abeec15fbddcc7dbaa729fabc1f1f29f12045
+ms.openlocfilehash: 4f4e26eb3e5ccaf66b2173c7fc9952375c5f2a58
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58047880"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59139134"
 ---
 # <a name="xarray-markup-extension"></a>x:Array 标记扩展
 有关在 XAML 中通过标记扩展的对象的数组，提供了常规支持。 这对应于`x:ArrayExtension`[MS-XAML] 中的 XAML 类型。  
@@ -70,5 +70,6 @@ ms.locfileid: "58047880"
  对于用作数组元素的自定义类型，类还必须支持在 XAML 中作为对象元素实例化的要求。 有关详细信息，请参阅[XAML 及 WPF 的自定义类](../wpf/advanced/xaml-and-custom-classes-for-wpf.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - [标记扩展和 WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)
 - [从 WPF 迁移到 System.Xaml 的类型](types-migrated-from-wpf-to-system-xaml.md)

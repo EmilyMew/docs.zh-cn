@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: a07442d990694099c9402989b41c937360842316
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: dbb39eb768069a737f3f89c771bf02fd6bc0c3b4
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54569870"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102396"
 ---
 # <a name="corprfmonitor-enumeration"></a>COR_PRF_MONITOR 枚举
 包含用于指定探查器希望订阅的行为、功能或事件的值。  
@@ -191,9 +191,10 @@ typedef enum {
   
  **库：** CorGuids.lib  
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework 版本：** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [分析枚举](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)
 - [GetEventMask 方法](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-geteventmask-method.md)
 - [SetEventMask 方法](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-seteventmask-method.md)

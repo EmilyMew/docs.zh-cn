@@ -5,17 +5,16 @@ helpviewer_keywords:
 - controls [WPF], ToolBar
 - ToolBar control [WPF]
 ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
-ms.openlocfilehash: 6bd44e4b8406e945ea8f0913563d2f2f6e0b3822
-ms.sourcegitcommit: 7156c0b9e4ce4ce5ecf48ce3d925403b638b680c
+ms.openlocfilehash: 711d55e46fb548787976a1f966c9fbf6dc7f12d8
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58464952"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59105321"
 ---
 # <a name="toolbar-overview"></a>ToolBar 概述
 <xref:System.Windows.Controls.ToolBar> 控件是一组命令或控件通常在功能上相关的容器。 一个<xref:System.Windows.Controls.ToolBar>通常包含调用命令的按钮。  
-  
-  
+
 <a name="ToolBarControl"></a>   
 ## <a name="toolbar-control"></a>ToolBar 控件  
  <xref:System.Windows.Controls.ToolBar>控件采用从到单个行或列的按钮或其他控件栏类似于排列其名称。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.ToolBar> 控件提供一种溢出机制的任意大小约束中执行操作无法自然容纳的项放<xref:System.Windows.Controls.ToolBar>到特殊的溢出区域。 此外， [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.ToolBar>控件通常用于与相关<xref:System.Windows.Controls.ToolBarTray>提供特殊的布局行为，以及支持用于用户启动的大小和排列工具栏的控件。  
@@ -41,6 +40,7 @@ ms.locfileid: "58464952"
  [ToolBar 样式和模板](toolbar-styles-and-templates.md)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Controls.Primitives.ToolBarPanel>
 - <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>
 - [设置 ToolBar 上控件的样式](how-to-style-controls-on-a-toolbar.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 3545938d8f9a59c8f3c6d03e5e67bb5f545a4981
-ms.sourcegitcommit: 14355b4b2fe5bcf874cac96d0a9e6376b567e4c7
+ms.openlocfilehash: 2a51b9fb485da605effbad0e81b8baf5e05e382a
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55260588"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59087789"
 ---
 # <a name="userandomizedstringhashalgorithm-element"></a>\<Userandomizedstringhashalgorithm，那么 > 元素
 确定公共语言运行时是否在计算字符串的哈希代码每个应用程序域。  
@@ -42,7 +42,7 @@ ms.locfileid: "55260588"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`0`|公共语言运行时不会计算字符串的哈希代码对每个应用程序域;使用单个算法来计算字符串哈希代码。 这是默认设置。|  
 |`1`|公共语言运行时计算字符串的哈希代码对每个应用程序域。 在不同应用程序域和不同进程中的相同字符串将具有不同的哈希代码。|  
@@ -96,6 +96,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
 - <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>
 - <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>

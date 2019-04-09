@@ -1,15 +1,15 @@
 ---
-title: 如何：对象模型作为外部文件生成
+title: 如何：将对象模型作为外部文件生成
 ms.date: 03/30/2017
 ms.assetid: 2496fa06-3df4-4ecb-86c4-70a49ea08565
-ms.openlocfilehash: 44b123130b79026ed7638ccc7abeb13d8a5f55ef
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 2e439cd6628daa5b574be2049393dc2964896679
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54499166"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59095568"
 ---
-# <a name="how-to-generate-the-object-model-as-an-external-file"></a>如何：对象模型作为外部文件生成
+# <a name="how-to-generate-the-object-model-as-an-external-file"></a>如何：将对象模型作为外部文件生成
 作为基于属性的映射的替代方法，可以使用 SQLMetal 命令行工具将您的对象模型生成为外部 XML 文件。 有关详细信息，请参阅 [SqlMetal.exe（代码生成工具）](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)。 使用外部 XML 映射文件可以降低代码中的混乱程度。 您还可以通过修改该外部文件来更改行为，而无需重新编译应用程序的二进制文件。 有关详细信息，请参阅[外部映射](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)。  
   
 > [!NOTE]
@@ -49,6 +49,7 @@ sqlmetal /server:myserver /database:northwind /map:externalfile.xml
 ```  
   
 ## <a name="see-also"></a>请参阅
+
 - [创建对象模型](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
 - [外部映射](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
 - [如何：在 Visual Basic 或 C# 中生成对象模型](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md)

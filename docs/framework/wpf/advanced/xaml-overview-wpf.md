@@ -19,18 +19,16 @@ helpviewer_keywords:
 - Extensible Application Markup Language (see XAML)
 - attribute syntax [XAML]
 ms.assetid: a80db4cd-dd0f-479f-a45f-3740017c22e4
-ms.openlocfilehash: cc5e60b1a8059e58ce6d23801eb51d8b2eb414d6
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 56b97170884ef31004b06b0eb50a8d79ad1d041c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57379232"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59102825"
 ---
 # <a name="xaml-overview-wpf"></a>XAML 概述 (WPF)
 本主题介绍 XAML 语言的功能，并演示如何使用 XAML 编写 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] 应用程序。 本主题专门介绍 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 实现的 XAML。 XAML 本身是一个比 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 大的语言概念。  
-  
-  
-  
+
 <a name="what_is_xaml"></a>   
 ## <a name="what-is-xaml"></a>什么是 XAML？  
  XAML 是一种声明性标记语言。 应用于.NET Framework 编程模型，XAML 简化了创建[!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]为.NET Framework 应用程序。 可以在声明性 XAML 标记中创建可见的 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 元素，然后使用代码隐藏文件（通过分部类定义与标记相连接）将 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 定义与运行时逻辑相分离。 XAML 直接以程序集中定义的一组特定后备类型表示对象的实例化。 这与大多数其他标记语言不同，后者通常是与后备类型系统没有此类直接关系的解释语言。 XAML 实现了一个工作流，通过此工作流，各方可以采用不同的工具来处理 [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] 和应用程序的逻辑。  
@@ -205,14 +203,14 @@ ms.locfileid: "57379232"
   
  使用 `xmlns` 定义用法范围和名称范围映射的做法符合 XML 1.0 规范。 XAML 名称范围与 XML 名称范围的不同仅在于：XAML 名称范围还包含有关进行类型解析和分析 XAML 时名称范围的元素如何受类型支持的信息。  
   
- 请注意，只有在每个 XAML 文件的根元素上，`xmlns` 特性才是绝对必需的。 `xmlns` 定义将适用于根元素的所有子代元素（此行为也符合 `xmlns` 的 XML 1.0 规范）。同时允许根以下的其他元素上具有 `xmlns` 特性，这些特性将适用于定义元素的任何子代元素。 但是，频繁定义或重新定义 XAML 命名空间会导致难以阅读 XAML 标记样式。  
+ 请注意，只有在每个 XAML 文件的根元素上，`xmlns` 特性才是绝对必需的。 `xmlns` 定义将适用于根元素的所有子代元素 (此行为也符合 XML 1.0 规范`xmlns`。)`xmlns`属性还允许在其他元素，并会将应用于定义元素的任何子代元素。 但是，频繁定义或重新定义 XAML 命名空间会导致难以阅读 XAML 标记样式。  
   
  其 XAML 处理器的 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 实现包括可识别 WPF 核心程序集的基础结构。 已知 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 核心程序集包含支持指向默认 XAML 命名空间的 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 映射的类型。 这是通过项目生成文件中的配置以及 WPF 生成和项目系统实现的。 因此，为了引用来自 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 程序集的 XAML 元素，只需将默认 XAML 命名空间声明为默认 `xmlns`。  
   
 ### <a name="the-x-prefix"></a>X： 前缀  
  在之前的根元素示例中，前缀 `x:` 用于映射 XAML 命名空间 [!INCLUDE[TLA#tla_xamlxmlnsv1](../../../../includes/tlasharptla-xamlxmlnsv1-md.md)]，该命名空间是支持 XAML 语言构造的专用 XAML 命名空间。 在这整个 [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)] 的项目模板、示例以及文档中，此 `x:` 前缀用于映射该 XAML 命名空间。 XAML 语言的 XAML 命名空间包含多个将在 XAML 中频繁使用的编程构造。 下面列出了最常用的 `x:` 前缀编程构造：  
   
--   [X:key](../../xaml-services/x-key-directive.md):设置的每个资源的唯一键<xref:System.Windows.ResourceDictionary>（或其他框架中的类似字典概念）。 在典型的 WPF 应用程序标记中的所有 `x:` 用法中，`x:Key` 可能占到 90%。  
+-   [X:key](../../xaml-services/x-key-directive.md):设置的每个资源的唯一键<xref:System.Windows.ResourceDictionary>（或其他框架中的类似字典概念）。 `x:Key` 将可能占到 90%的`x:`您将看到典型的 WPF 应用程序标记中的用法。  
   
 -   [x： 类](../../xaml-services/x-class-directive.md):指定[!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)]为 XAML 页提供代码隐藏类的命名空间和类名。 必须具有这样一个类才能支持每个 WPF 编程模型的代码隐藏，因此即使没有资源，也几乎总是能看到映射的 `x:`。  
   
@@ -258,7 +256,7 @@ ms.locfileid: "57379232"
  [!code-csharp[XAMLOvwSupport#ButtonWithCodeBehindHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page3.xaml.cs#buttonwithcodebehindhandler)]
  [!code-vb[XAMLOvwSupport#ButtonWithCodeBehindHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XAMLOvwSupport/VisualBasic/Page1.xaml.vb#buttonwithcodebehindhandler)]  
   
- 请注意，代码隐藏文件使用 CLR 命名空间 `ExampleNamespace` 并将 `ExamplePage` 声明为该命名空间内的一个分部类。 这相当于 `ExampleNamespace`.`ExamplePage` 的 `x:Class` 特性值， 前者在标记根中提供。 WPF 标记编译器将通过从根元素类型派生一个类，为编译的任何 XAML 文件创建一个分部类。 在提供定义同一分部类的代码隐藏时，将在与编译的应用程序相同的命名空间和类中合并生成的代码。  
+ 请注意，代码隐藏文件使用 CLR 命名空间 `ExampleNamespace` 并将 `ExamplePage` 声明为该命名空间内的一个分部类。 这相当于`x:Class`属性的值`ExampleNamespace`。`ExamplePage` 前者在标记根中提供。 WPF 标记编译器将通过从根元素类型派生一个类，为编译的任何 XAML 文件创建一个分部类。 在提供定义同一分部类的代码隐藏时，将在与编译的应用程序相同的命名空间和类中合并生成的代码。  
   
  若要深入了解 WPF 中代码隐藏编程的要求，请参阅 [WPF 中的代码隐藏和 XAML ](code-behind-and-xaml-in-wpf.md)中的“代码隐藏、事件处理程序和分部类要求”一节。  
   
@@ -309,7 +307,7 @@ ms.locfileid: "57379232"
 ## <a name="xaml-security"></a>XAML 安全性  
  XAML 是一种直接表示对象实例化和执行的标记语言。 因此，在 XAML 中创建的元素能够像等效的生成代码那样与系统资源（如网络访问、文件系统 IO）进行交互。  
   
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 支持 [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] 安全框架[!INCLUDE[TLA#tla_cas](../../../../includes/tlasharptla-cas-md.md)]。 这意味着在 Internet 区域中运行的 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 内容具有缩减的执行权限。 “宽松型 XAML”（由 XAML 查看器在加载时解释的非编译 XAML 的页面）和 [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)] 通常在此 Internet 区域中运行，并且使用相同的权限集。  但是，加载到完全受信任的应用程序中的 XAML 与承载应用程序具有相同的系统资源访问权限。 有关详细信息，请参阅 [WPF 部分信任安全性](../wpf-partial-trust-security.md)。  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 支持[!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)]安全框架[!INCLUDE[TLA#tla_cas](../../../../includes/tlasharptla-cas-md.md)]。 这意味着在 Internet 区域中运行的 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 内容具有缩减的执行权限。 “宽松型 XAML”（由 XAML 查看器在加载时解释的非编译 XAML 的页面）和 [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)] 通常在此 Internet 区域中运行，并且使用相同的权限集。  但是，加载到完全受信任的应用程序中的 XAML 与承载应用程序具有相同的系统资源访问权限。 有关详细信息，请参阅 [WPF 部分信任安全性](../wpf-partial-trust-security.md)。  
   
 <a name="loading_xaml_from_code"></a>   
 ## <a name="loading-xaml-from-code"></a>从代码加载 XAML  
@@ -328,9 +326,10 @@ ms.locfileid: "57379232"
  [依赖属性概述](dependency-properties-overview.md)详细介绍 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 中属性的多样性，并介绍依赖属性的概念。  
   
 ## <a name="see-also"></a>请参阅
+
 - [XAML 语法详述](xaml-syntax-in-detail.md)
 - [XAML 及 WPF 的自定义类](xaml-and-custom-classes-for-wpf.md)
-- [XAML Namespace （x:）语言功能](../../xaml-services/xaml-namespace-x-language-features.md)
+- [XAML 命名空间 (x:)语言功能](../../xaml-services/xaml-namespace-x-language-features.md)
 - [WPF XAML 扩展](wpf-xaml-extensions.md)
 - [基元素概述](base-elements-overview.md)
 - [WPF 中的树](trees-in-wpf.md)

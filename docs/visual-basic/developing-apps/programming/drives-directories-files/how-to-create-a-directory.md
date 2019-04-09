@@ -5,12 +5,12 @@ helpviewer_keywords:
 - directories [Visual Basic], creating
 - folders [Visual Basic], creating
 ms.assetid: 0351a2ca-24d8-43b5-bb39-9b99e6401cff
-ms.openlocfilehash: a7ba9ea1e7762b0a4a6660339c331fa6cdeb7858
-ms.sourcegitcommit: 40364ded04fa6cdcb2b6beca7f68412e2e12f633
+ms.openlocfilehash: e94bd597b022e5e380651a62832e1f71fa72cec9
+ms.sourcegitcommit: bce0586f0cccaae6d6cbd625d5a7b824d1d3de4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56976897"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58818704"
 ---
 # <a name="how-to-create-a-directory-in-visual-basic"></a>如何：在 Visual Basic 中创建目录
 使用 `My.Computer.FileSystem` 对象的 `CreateDirectory` 方法来创建目录。  
@@ -41,5 +41,6 @@ ms.locfileid: "56976897"
 -   用户在部分信任情况下缺少权限 (<xref:System.Security.SecurityException>)。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory%2A>
 - [创建、删除和移动文件和目录](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)

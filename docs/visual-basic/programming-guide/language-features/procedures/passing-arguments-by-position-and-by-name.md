@@ -64,7 +64,7 @@ ms.locfileid: "58837307"
   
  在前面的示例中，没有多余的逗号，才可保存的位置的省略`age`自变量，因为`birth`按名称传递了。  
   
-在 Visual basic 15.5 之前的版本，在你的混合位置和名称、 位置自变量形式提供参数时都必须放在第一个。 按名称提供参数后, 剩下的自变量必须所有传递的名称。  例如，以下调用到`Display`方法会显示编译器错误[BC30241:需要命名参数](../../../misc/bc30241.md)。
+在 Visual Basic 15.5 之前的版本，在你的混合位置和名称、 位置自变量形式提供参数时都必须放在第一个。 按名称提供参数后, 剩下的自变量必须所有传递的名称。  例如，以下调用到`Display`方法会显示编译器错误[BC30241:需要命名参数](../../../misc/bc30241.md)。
 
 [!code-vb[ByNameAndPosition](../../../../../samples/snippets/visualbasic/programming-guide/language-features/passing-named-arguments/module1.vb#6)] 
 

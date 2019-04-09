@@ -10,21 +10,19 @@ helpviewer_keywords:
 - typography [WPF], packaging fonts with applications
 - packaging fonts with applications [WPF]
 ms.assetid: db15ee48-4d24-49f5-8b9d-a64460865286
-ms.openlocfilehash: e66841fe72281bf0562b2ce50925a5c3a6bb9b54
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: fb91d4b413db512021b90f0d4ba3049fe7333601
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57378864"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59123783"
 ---
 # <a name="packaging-fonts-with-applications"></a>将字体与应用程序一起打包
 本主题提供概述了如何使用包字体在[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]应用程序。  
   
 > [!NOTE]
 >  与大多数软件类型一样，字体文件也采用许可模式，而不是出售。 许可证来控制字体使用不同供应商，但一般情况下大多数许可证，包括那些涵盖字体[!INCLUDE[TLA#tla_ms#initcap](../../../../includes/tlasharptla-mssharpinitcap-md.md)]提供与应用程序和[!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]，不允许将字体嵌入应用程序中或以其他方式重新分发。 因此，开发人员有责任确保自己具备必要的许可权，可以在应用程序中嵌入相应的字体或者以其他方式重新分布。  
-  
 
-  
 <a name="introduction_to_packaging_fonts"></a>   
 ## <a name="introduction-to-packaging-fonts"></a>字体打包简介  
  您可以轻松地字体作为资源打包在您[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]应用程序显示用户界面文本和其他类型的文本基于内容。 字体可以与应用程序的程序集文件分开，也可以嵌入到这些程序集文件中。 还可以创建纯资源字体库，以供应用程序引用。  
@@ -173,6 +171,7 @@ ms.locfileid: "57378864"
 -   如果存在不正确的引用，应用程序将回退到使用可用字体。  
   
 ## <a name="see-also"></a>请参阅
+
 - <xref:System.Windows.Documents.Typography>
 - <xref:System.Windows.Media.FontFamily>
 - [Microsoft 版式：链接、 新闻和联系人](https://docs.microsoft.com/typography/)

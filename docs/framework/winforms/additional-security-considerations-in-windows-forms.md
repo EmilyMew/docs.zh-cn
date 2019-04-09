@@ -7,15 +7,15 @@ helpviewer_keywords:
 - security [Windows Forms], calling APIs
 - Clipboard [Windows Forms], securing access
 ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
-ms.openlocfilehash: 6ab7b4d8fe8366a214d70cd73e7e33cafcc584f8
-ms.sourcegitcommit: 3630c2515809e6f4b7dbb697a3354efec105a5cd
+ms.openlocfilehash: a101b5838b843f0130d16aab6eb199c7a54ca6b9
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58409388"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59139524"
 ---
 # <a name="additional-security-considerations-in-windows-forms"></a>Windows 窗体中额外的安全注意事项
-[!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 安全设置可能导致应用程序在部分信任环境中运行与在本地计算机上运行有所不同。 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 限制对关键本地资源的访问，如文件系统、网络和非托管 API 等。 安全设置会影响 Microsoft Windows API 或其他无法验证由安全系统的 Api 调用的能力。 安全性还会影响应用程序的其他方面，包括文件和数据访问以及打印。 有关在部分信任环境中访问文件和数据的详细信息，请参阅 [Windows 窗体中更加安全的文件和数据访问](more-secure-file-and-data-access-in-windows-forms.md)。 有关在部分信任环境中进行打印的详细信息，请参阅 [Windows 窗体中更加安全的打印](more-secure-printing-in-windows-forms.md)。  
+[!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 安全设置可能会导致应用程序在比部分信任环境中以不同的方式运行在本地计算机上。 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 限制对关键本地资源的访问，如文件系统、网络和非托管 API 等。 安全设置会影响 Microsoft Windows API 或其他无法验证由安全系统的 Api 调用的能力。 安全性还会影响应用程序的其他方面，包括文件和数据访问以及打印。 有关在部分信任环境中访问文件和数据的详细信息，请参阅 [Windows 窗体中更加安全的文件和数据访问](more-secure-file-and-data-access-in-windows-forms.md)。 有关在部分信任环境中进行打印的详细信息，请参阅 [Windows 窗体中更加安全的打印](more-secure-printing-in-windows-forms.md)。  
   
  以下部分介绍如何使用剪贴板、 执行窗口操作和从部分信任环境中运行的应用程序调用 Windows API。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "58409388"
 |<xref:System.Windows.Forms.Control>|-获取<xref:System.Windows.Forms.Control.Parent%2A>属性。<br />-   设置 `Region` 属性。<br />-调用<xref:System.Windows.Forms.Control.FindForm%2A>， <xref:System.Windows.Forms.Control.Focus%2A>，<xref:System.Windows.Forms.Control.FromChildHandle%2A>并<xref:System.Windows.Forms.Control.FromHandle%2A>， <xref:System.Windows.Forms.Control.PreProcessMessage%2A>， <xref:System.Windows.Forms.Control.ReflectMessage%2A>，或<xref:System.Windows.Forms.Control.SetTopLevel%2A>方法。<br />-调用<xref:System.Windows.Forms.Control.GetChildAtPoint%2A>方法如果返回的控件不是调用控件的子级。<br />-   修改容器控件内部的控件焦点。|  
 |<xref:System.Windows.Forms.Cursor>|-   设置 <xref:System.Windows.Forms.Cursor.Clip%2A> 属性。<br />-调用<xref:System.Windows.Forms.Control.Hide%2A>方法。|  
 |<xref:System.Windows.Forms.DataGrid>|-调用<xref:System.Windows.Forms.ContainerControl.ProcessTabKey%2A>方法。|  
-|<xref:System.Windows.Forms.Form>|-获取<xref:System.Windows.Forms.Form.ActiveForm%2A>或<xref:System.Windows.Forms.Form.MdiParent%2A>属性。<br />-设置<xref:System.Windows.Forms.Form.ControlBox%2A>， <xref:System.Windows.Forms.Form.ShowInTaskbar%2A>，或<xref:System.Windows.Forms.Form.TopMost%2A>属性。<br />-设置<xref:System.Windows.Forms.Form.Opacity%2A>低于 50%的属性。<br />-设置<xref:System.Windows.Forms.Form.WindowState%2A>属性设置为<xref:System.Windows.Forms.FormWindowState.Minimized>以编程方式。<br />-调用<xref:System.Windows.Forms.Form.Activate%2A>方法。<br />-使用<xref:System.Windows.Forms.FormBorderStyle.None>， <xref:System.Windows.Forms.FormBorderStyle.FixedToolWindow>，并<xref:System.Windows.Forms.FormBorderStyle.SizableToolWindow><xref:System.Windows.Forms.FormBorderStyle>枚举值。|  
+|<xref:System.Windows.Forms.Form>|-获取<xref:System.Windows.Forms.Form.ActiveForm%2A>或<xref:System.Windows.Forms.Form.MdiParent%2A>属性。<br />-设置<xref:System.Windows.Forms.Form.ControlBox%2A>， <xref:System.Windows.Forms.Form.ShowInTaskbar%2A>，或<xref:System.Windows.Forms.Form.TopMost%2A>属性。<br />-设置<xref:System.Windows.Forms.Form.Opacity%2A>低于 50%的属性。<br />-设置<xref:System.Windows.Forms.Form.WindowState%2A>属性设置为<xref:System.Windows.Forms.FormWindowState.Minimized>以编程方式。<br />-调用<xref:System.Windows.Forms.Form.Activate%2A>方法。<br />-使用<xref:System.Windows.Forms.FormBorderStyle.None>， <xref:System.Windows.Forms.FormBorderStyle.FixedToolWindow>，和<xref:System.Windows.Forms.FormBorderStyle.SizableToolWindow><xref:System.Windows.Forms.FormBorderStyle>枚举值。|  
 |<xref:System.Windows.Forms.NotifyIcon>|-使用<xref:System.Windows.Forms.NotifyIcon>组件是完全受限制。|  
   
  <xref:System.Security.Permissions.UIPermissionWindow.SafeSubWindows>在以下表中，除了限制到列出的操作<xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows>值。  
@@ -89,8 +89,9 @@ ms.locfileid: "58409388"
  调用非托管代码的权限使应用程序几乎可以执行任何操作。 因此，应该只向来自于受信任源的应用程序授予调用非托管代码的权限。 另外，根据应用程序的不同，调用非托管代码的应用程序功能块可以是可选的，或者只在完全受信任的环境中启用。 有关危险权限的详细信息，请参阅[危险权限和策略管理](../misc/dangerous-permissions-and-policy-administration.md)。 有关提升权限的详细信息，请参阅[常规安全策略管理](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ed5htz45(v=vs.100))。  
   
 ## <a name="see-also"></a>请参阅
-- [在 Windows 窗体中提高文件和数据访问的安全性](more-secure-file-and-data-access-in-windows-forms.md)
-- [Windows 窗体中更加安全的打印](more-secure-printing-in-windows-forms.md)
+
+- [Windows 窗体中更加安全的文件和数据访问](more-secure-file-and-data-access-in-windows-forms.md)
+- [Windows 窗体中的更加安全的打印](more-secure-printing-in-windows-forms.md)
 - [Windows 窗体中的安全性概述](security-in-windows-forms-overview.md)
 - [Windows 窗体安全](windows-forms-security.md)
 - [保护 ClickOnce 应用程序](/visualstudio/deployment/securing-clickonce-applications)

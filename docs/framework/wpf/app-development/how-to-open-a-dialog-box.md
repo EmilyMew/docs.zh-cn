@@ -1,5 +1,5 @@
 ---
-title: 如何：打开一个对话框
+title: 如何：打开对话框
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - opening dialog boxes [WPF]
 - dialog boxes [WPF], opening
 ms.assetid: 6b1557d2-da98-4ef4-9f68-4089f04ab9ea
-ms.openlocfilehash: 1182e22ad40b49ee13832c51986662373f36ee35
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 70ac31285dd22244b4bd6ad0d188d182eb6e6264
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57351978"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59084961"
 ---
-# <a name="how-to-open-a-dialog-box"></a>如何：打开一个对话框
+# <a name="how-to-open-a-dialog-box"></a>如何：打开对话框
 此示例演示如何以打开一个对话框。  
   
 ## <a name="example"></a>示例  
@@ -28,4 +28,5 @@ ms.locfileid: "57351978"
  调用<xref:System.Windows.Window.ShowDialog%2A>需要有权使用所有窗口和不受限制的用户输入的事件。  
   
 ## <a name="see-also"></a>请参阅
+
 - [返回对话框结果](how-to-return-a-dialog-box-result.md)

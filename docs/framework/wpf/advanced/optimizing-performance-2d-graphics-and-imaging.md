@@ -12,24 +12,23 @@ helpviewer_keywords:
 - 2-D graphics [WPF]
 - images [WPF], optimizing performance
 ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
-ms.openlocfilehash: 6ec03775f42e7f7a60d182eba134f9e1f7ba8466
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: 4fca9231872a268470c9bcfa73e7a0c0a26d300c
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57371393"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59074984"
 ---
 # <a name="optimizing-performance-2d-graphics-and-imaging"></a>优化性能：二维图形和图像处理
-[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 提供了多种可按应用程序要求进行优化的二维图形和图像处理功能。 本主题提供有关这些方面性能优化的信息。  
-  
-  
+[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 提供各种二维图形和图像处理功能，可以优化你的应用程序要求。 本主题提供有关这些方面性能优化的信息。  
+
 <a name="Drawing_and_Shapes"></a>   
 ## <a name="drawing-and-shapes"></a>绘图和形状  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 提供了<xref:System.Windows.Media.Drawing>和<xref:System.Windows.Shapes.Shape>对象来表示图形绘制内容。 但是，<xref:System.Windows.Media.Drawing>对象是相比更为简单的构造<xref:System.Windows.Shapes.Shape>对象，并提供更好的性能特征。  
   
  一个<xref:System.Windows.Shapes.Shape>，可将图形形状绘制到屏幕。 因为派生自<xref:System.Windows.FrameworkElement>类，<xref:System.Windows.Shapes.Shape>对象可以用在面板和多数控件。  
   
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 为图形和绘制服务提供多层访问。 在顶层，<xref:System.Windows.Shapes.Shape>对象是易于使用和提供许多有用的功能，如布局和事件处理。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 提供了许多现成可用的形状对象。 所有形状对象都继承自<xref:System.Windows.Shapes.Shape>类。 可用形状对象包括<xref:System.Windows.Shapes.Ellipse>， <xref:System.Windows.Shapes.Line>， <xref:System.Windows.Shapes.Path>， <xref:System.Windows.Shapes.Polygon>， <xref:System.Windows.Shapes.Polyline>，并<xref:System.Windows.Shapes.Rectangle>。  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 提供了图形和呈现服务的访问权限的多个层。 在顶层，<xref:System.Windows.Shapes.Shape>对象是易于使用和提供许多有用的功能，如布局和事件处理。 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 提供了随时可用形状对象数。 所有形状对象都继承自<xref:System.Windows.Shapes.Shape>类。 可用形状对象包括<xref:System.Windows.Shapes.Ellipse>， <xref:System.Windows.Shapes.Line>， <xref:System.Windows.Shapes.Path>， <xref:System.Windows.Shapes.Polygon>， <xref:System.Windows.Shapes.Polyline>，并<xref:System.Windows.Shapes.Rectangle>。  
   
  <xref:System.Windows.Media.Drawing> 对象，但是，并非派生<xref:System.Windows.FrameworkElement>类，并提供用于呈现形状、 图像和文本的轻量实现。  
   
@@ -67,7 +66,7 @@ ms.locfileid: "57371393"
   
 <a name="Images"></a>   
 ## <a name="images"></a>图像  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 图像处理对 [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] 先前版本的图像处理功能进行了极大改进。 显示位图或在公共控件上使用图像等图像处理功能以前主要由 Microsoft Windows 图形设备接口 (GDI) 或Microsoft Windows GDI+ 应用程序编程接口 (API) 处理。 这些 API 提供基线图像处理功能，但缺少编解码器扩展性支持和高保真图像支持等功能。 WPF 图像处理 API 已经过重新设计，克服了 GDI 和 GDI+ 的缺点，提供新的 API 集以在应用程序内显示和使用图像。  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 映像在以前版本的中的图像处理功能可以显著地提高[!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]。 显示位图或在公共控件上使用图像等图像处理功能以前主要由 Microsoft Windows 图形设备接口 (GDI) 或Microsoft Windows GDI+ 应用程序编程接口 (API) 处理。 这些 API 提供基线图像处理功能，但缺少编解码器扩展性支持和高保真图像支持等功能。 WPF 图像处理 API 已经过重新设计，克服了 GDI 和 GDI+ 的缺点，提供新的 API 集以在应用程序内显示和使用图像。  
   
  使用图像时，为使性能更佳，请考虑以下建议：  
   
@@ -100,13 +99,14 @@ ms.locfileid: "57371393"
  [!code-vb[RenderOptions#RenderOptionsSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet3)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [优化 WPF 应用程序性能](optimizing-wpf-application-performance.md)
 - [规划应用程序性能](planning-for-application-performance.md)
 - [利用硬件](optimizing-performance-taking-advantage-of-hardware.md)
 - [布局和示例](optimizing-performance-layout-and-design.md)
 - [对象行为](optimizing-performance-object-behavior.md)
 - [应用程序资源](optimizing-performance-application-resources.md)
-- [文本](optimizing-performance-text.md)
+- [Text](optimizing-performance-text.md)
 - [数据绑定](optimizing-performance-data-binding.md)
 - [其他性能建议](optimizing-performance-other-recommendations.md)
 - [动画提示和技巧](../graphics-multimedia/animation-tips-and-tricks.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - controls [WPF], appearance specified by state
 - templates [WPF], custom for existing controls
 ms.assetid: 678dd116-43a2-4b8c-82b5-6b826f126e31
-ms.openlocfilehash: 5d4b16721dd8cabc5d662538274dcb82ab734cca
-ms.sourcegitcommit: 0c48191d6d641ce88d7510e319cf38c0e35697d0
+ms.openlocfilehash: b52a63a0531d71c784ef12f29049754f4a9efddb
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57375098"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098957"
 ---
 # <a name="customizing-the-appearance-of-an-existing-control-by-creating-a-controltemplate"></a>通过创建 ControlTemplate 自定义现有控件的外观
 <a name="introduction"></a><xref:System.Windows.Controls.ControlTemplate> 指定视觉结构和控件的视觉行为。 可以通过向控件提供一个新的<xref:System.Windows.Controls.ControlTemplate> 对控件外观进行自定义。 创建 <xref:System.Windows.Controls.ControlTemplate> 时，仅替换现有控件的外观，而不会更改其功能。 例如，可在应用程序中将按钮设置为圆形而不是默认的方形，但按钮仍将引发 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件。  
@@ -31,8 +31,7 @@ ms.locfileid: "57375098"
   
  ![一个具有红色边框的按钮。](./media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
 使用自定义控件模板并将鼠标指针悬停在上方的按钮  
-  
-  
+
 <a name="prerequisites"></a>   
 ## <a name="prerequisites"></a>系统必备  
  本主题假设用户了解如何创建和使用[控件](index.md)中讨论的控件和样式。 本主题中讨论的概念适用于从继承元素<xref:System.Windows.Controls.Control>类，除<xref:System.Windows.Controls.UserControl>。 无法应用<xref:System.Windows.Controls.ControlTemplate>到<xref:System.Windows.Controls.UserControl>。  
@@ -257,9 +256,10 @@ ms.locfileid: "57375098"
   
 <a name="complete_example"></a>   
 ## <a name="complete-example"></a>完整的示例  
- 下面的示例演示的完整<xref:System.Windows.Controls.Button><xref:System.Windows.Controls.ControlTemplate>本主题中讨论。  
+ 下面的示例演示完整<xref:System.Windows.Controls.Button><xref:System.Windows.Controls.ControlTemplate>本主题中讨论。  
   
  [!code-xaml[VSMButtonTemplate#3](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#3)]  
   
 ## <a name="see-also"></a>请参阅
+
 - [样式设置和模板化](styling-and-templating.md)

@@ -2,12 +2,12 @@
 title: 使用 TryCatch 在 Flowchart 活动中进行错误处理
 ms.date: 03/30/2017
 ms.assetid: 50922964-bfe0-4ba8-9422-0e7220d514fd
-ms.openlocfilehash: 3f45d4a60de3201a3100fba3af6cc15484a1fbf0
-ms.sourcegitcommit: 160a88c8087b0e63606e6e35f9bd57fa5f69c168
-ms.translationtype: MT
+ms.openlocfilehash: e515248594088f9888c3488d83d8079ce5d13089
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57708829"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59119803"
 ---
 # <a name="fault-handling-in-a-flowchart-activity-using-trycatch"></a>使用 TryCatch 在 Flowchart 活动中进行错误处理
 此示例演示如何在复杂控制流活动中使用 <xref:System.Activities.Statements.TryCatch> 活动。
@@ -23,7 +23,7 @@ ms.locfileid: "57708829"
 
  `CreateFlowchartWithFaults` 活动使用 <xref:System.Activities.Statements.FlowSwitch%601> 活动，后者根据 `promoCode` 参数进行切换并使用以下公式计算折扣。
 
-|`promoCode` 的值|折扣 (%)|
+|值 `promoCode`|折扣 (%)|
 |--------------------------|--------------------|
 |Single|10|
 |MNK|15|
@@ -47,5 +47,6 @@ ms.locfileid: "57708829"
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Built-InActivities\FlowChartWithFaultHandling`  
   
 ## <a name="see-also"></a>请参阅
+
 - [流程图工作流](../flowchart-workflows.md)
-- [异常](../exceptions.md)
+- [Exceptions](../exceptions.md)

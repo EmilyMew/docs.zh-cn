@@ -2,12 +2,12 @@
 title: System.ServiceModel.Channels.MsmqPoisonMessageRejected
 ms.date: 03/30/2017
 ms.assetid: 0e64b9bd-1f12-43df-a189-d7be3c2bace1
-ms.openlocfilehash: c8e476ab90fda9214831fbd5beaba518f3e3bd20
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 562399c1d45dc73c7c88bd165e9f95ee1bcfa19d
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54491423"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59125076"
 ---
 # <a name="systemservicemodelchannelsmsmqpoisonmessagerejected"></a>System.ServiceModel.Channels.MsmqPoisonMessageRejected
 拒绝的病毒消息。  
@@ -18,6 +18,7 @@ ms.locfileid: "54491423"
  请参阅[病毒消息处理](https://go.microsoft.com/fwlink/?LinkId=99546)有关消息何时成为病毒和如何将服务配置为适当地处理更多详细信息。 请参阅[MQMarkMessageRejected](https://go.microsoft.com/fwlink/?LinkId=99548)有关被拒绝的消息在 MSMQ 中的含义的详细信息。  
   
 ## <a name="see-also"></a>请参阅
+
 - [跟踪](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
 - [使用跟踪来排除应用程序故障](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
 - [管理和诊断](../../../../../docs/framework/wcf/diagnostics/index.md)

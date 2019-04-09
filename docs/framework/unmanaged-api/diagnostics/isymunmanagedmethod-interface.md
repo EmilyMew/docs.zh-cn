@@ -16,12 +16,12 @@ topic_type:
 - apiref
 author: mairaw
 ms.author: mairaw
-ms.openlocfilehash: b19e5ce88ea34188b2757d2a0c313341fbf1e7e6
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: c29656a4787c674886505a3be2508470460dfc10
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54604236"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59136521"
 ---
 # <a name="isymunmanagedmethod-interface"></a>ISymUnmanagedMethod 接口
 表示符号存储区中的一个方法。 此接口可以访问的方法，而不是与类型相关的属性仅与符号相关的属性。  
@@ -45,4 +45,5 @@ ms.locfileid: "54604236"
  **标头：** CorSym.idl CorSym.h  
   
 ## <a name="see-also"></a>请参阅
+
 - [诊断符号存储区接口](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

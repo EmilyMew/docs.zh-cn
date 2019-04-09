@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - hosting services [WCF], WAS
 ms.assetid: d2b9d226-15b7-41fc-8c9a-cb651ac20ecd
-ms.openlocfilehash: 19a37b2d988ba779c4373ba296b43f6508db5925
-ms.sourcegitcommit: 6b308cf6d627d78ee36dbbae8972a310ac7fd6c8
+ms.openlocfilehash: 5b234a00f3194fcf40a33d25302cff16d5999b05
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54731265"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59082979"
 ---
 # <a name="hosting-in-windows-process-activation-service"></a>在 Windows 进程激活服务中承载
 Windows 进程激活服务 (WAS) 管理激活和包含该主机 Windows Communication Foundation (WCF) 服务的应用程序的工作进程的生存期。 WAS 进程模型通过移除对 HTTP 的依赖性使 HTTP 服务器的 [!INCLUDE[iis601](../../../../includes/iis601-md.md)] 进程模型通用化。 这使 WCF 服务能够使用 HTTP 和非 HTTP 协议，例如 Net.TCP，在宿主环境支持基于消息的激活并提供承载大量在给定计算机上的应用程序的能力。  
@@ -52,8 +52,9 @@ Windows 进程激活服务 (WAS) 管理激活和包含该主机 Windows Communic
  为了便于寻址和管理，可将应用程序组织到网站中。 运行时，还会将应用程序分组到应用程序池中。 一个应用程序池可以存放多个来自许多不同网站的应用程序。 一个应用程序池中的所有应用程序共享一组公共的运行时特征。 例如，它们都在公共语言运行库 (CLR) 的同一版本下运行，并都共享一个公共的进程标识。 每个应用程序池都与辅助进程 (w3wp.exe) 的某个实例相对应。 通过 CLR AppDomain，在共享应用程序池内运行的每个托管应用程序都独立于其他的应用程序。  
   
 ## <a name="see-also"></a>请参阅
+
 - [WAS 激活体系结构](../../../../docs/framework/wcf/feature-details/was-activation-architecture.md)
 - [配置 WAS 以用于 WCF](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)
 - [如何：安装和配置 WCF 激活组件](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)
-- [如何：承载在 WAS 中的 WCF 服务](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)
+- [如何：在 WAS 中承载 WCF 服务](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)
 - [Windows Server App Fabric 承载功能](https://go.microsoft.com/fwlink/?LinkId=201276)

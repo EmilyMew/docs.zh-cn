@@ -6,12 +6,12 @@ helpviewer_keywords:
 - grid control pattern
 - UI Automation, grid control pattern
 ms.assetid: 234d11a0-7ce7-4309-8989-2f4720e02f78
-ms.openlocfilehash: 12588e6aa108813b2d857f6818bd27a275d12597
-ms.sourcegitcommit: 58fc0e6564a37fa1b9b1b140a637e864c4cf696e
+ms.openlocfilehash: 63885e0467f79f140678ffcaa6737f40a8fa7f6f
+ms.sourcegitcommit: 5b6d778ebb269ee6684fb57ad69a8c28b06235b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57676806"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59100569"
 ---
 # <a name="implementing-the-ui-automation-grid-control-pattern"></a>实现 UI 自动化 Grid 控件模式
 > [!NOTE]
@@ -36,7 +36,7 @@ ms.locfileid: "57676806"
   
 -   隐藏的行和列（具体取决于提供程序实现）可能会在 [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] 树中加载，因此将会反映在 <xref:System.Windows.Automation.GridPattern.GridPatternInformation.RowCount%2A> 和 <xref:System.Windows.Automation.GridPattern.GridPatternInformation.ColumnCount%2A> 属性中。 如果尚未加载隐藏的行和列，则不应对它们进行计数。  
   
--   <xref:System.Windows.Automation.Provider.IGridProvider> 不会启用网格的主动操作；必须实现 <xref:System.Windows.Automation.Provider.ITransformProvider> 以启用此功能。  
+-   <xref:System.Windows.Automation.Provider.IGridProvider> 不会启用网格; 的活动操作<xref:System.Windows.Automation.Provider.ITransformProvider>必须实现以启用此功能。  
   
 -   使用 <xref:System.Windows.Automation.StructureChangedEventHandler> 来侦听对网格的结构和布局更改（如已添加、删除或合并的单元格）。  
   
@@ -48,9 +48,9 @@ ms.locfileid: "57676806"
   
 |必需的成员|类型|说明|  
 |----------------------|----------|-----------|  
-|<xref:System.Windows.Automation.Provider.IGridProvider.RowCount%2A>|属性|无|  
-|<xref:System.Windows.Automation.Provider.IGridProvider.ColumnCount%2A>|属性|无|  
-|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A>|方法|无|  
+|<xref:System.Windows.Automation.Provider.IGridProvider.RowCount%2A>|属性|None|  
+|<xref:System.Windows.Automation.Provider.IGridProvider.ColumnCount%2A>|属性|None|  
+|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A>|方法|None|  
   
  没有与此控件模式关联的事件。  
   
@@ -64,6 +64,7 @@ ms.locfileid: "57676806"
 |<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> -如果请求的行或列坐标小于零。|  
   
 ## <a name="see-also"></a>请参阅
+
 - [UI 自动化控件模式概述](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [在 UI 自动化提供程序中支持控件模式](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
 - [客户端的 UI 自动化控件模式](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
